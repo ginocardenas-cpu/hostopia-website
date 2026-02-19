@@ -10,45 +10,53 @@ const config: Config = {
     extend: {
       colors: {
         brand: {
-          navy: "#060d2e",
-          indigo: "#4338ca",
-          violet: "#6d28d9",
-          cyan: "#06b6d4",
-          orange: "#f97316",
-          "orange-light": "#fb923c",
+          charcoal: "#24282B",
+          teal: "#2CADB2",
+          "teal-dark": "#1d8f93",
+          "teal-light": "#e8f7f7",
+          gold: "#F8CF41",
+          "gold-dark": "#e0b82a",
+          "gold-light": "#fef9e6",
+          cream: "#f7f6f2",
+          "gray-light": "#f2f2f0",
         },
       },
       fontFamily: {
-        sans: ["Inter", "system-ui", "sans-serif"],
+        heading: ["Montserrat", "sans-serif"],
+        body: ["Raleway", "sans-serif"],
+      },
+      fontSize: {
+        "10xl": ["10rem", { lineHeight: "1" }],
+        "11xl": ["12rem", { lineHeight: "1" }],
       },
       backgroundImage: {
-        "hero-gradient":
-          "linear-gradient(135deg, #060d2e 0%, #1e1b4b 40%, #312e81 70%, #4c1d95 100%)",
-        "card-gradient":
-          "linear-gradient(135deg, rgba(67,56,202,0.1) 0%, rgba(109,40,217,0.1) 100%)",
-        "orange-gradient":
-          "linear-gradient(135deg, #f97316 0%, #ea580c 100%)",
-        "cyan-gradient":
-          "linear-gradient(135deg, #06b6d4 0%, #0891b2 100%)",
+        "teal-gradient": "linear-gradient(135deg, #2CADB2 0%, #1d8f93 100%)",
+        "gold-gradient": "linear-gradient(135deg, #F8CF41 0%, #e0b82a 100%)",
+        "charcoal-gradient": "linear-gradient(135deg, #24282B 0%, #1a1d20 100%)",
+        "hero-blob": "radial-gradient(ellipse at 70% 50%, rgba(44,173,178,0.15) 0%, rgba(248,207,65,0.08) 50%, transparent 70%)",
       },
       animation: {
-        "fade-up": "fadeUp 0.6s ease-out forwards",
-        "fade-in": "fadeIn 0.8s ease-out forwards",
-        float: "float 6s ease-in-out infinite",
-        "pulse-slow": "pulse 4s cubic-bezier(0.4, 0, 0.6, 1) infinite",
+        "fade-up": "fadeUp 0.7s ease-out forwards",
+        "fade-in": "fadeIn 0.7s ease-out forwards",
+        "slide-right": "slideRight 0.7s ease-out forwards",
+        "float": "float 8s ease-in-out infinite",
       },
       keyframes: {
         fadeUp: {
-          "0%": { opacity: "0", transform: "translateY(30px)" },
+          "0%": { opacity: "0", transform: "translateY(40px)" },
           "100%": { opacity: "1", transform: "translateY(0)" },
         },
         fadeIn: {
           "0%": { opacity: "0" },
           "100%": { opacity: "1" },
         },
+        slideRight: {
+          "0%": { opacity: "0", transform: "translateX(-30px)" },
+          "100%": { opacity: "1", transform: "translateX(0)" },
+        },
         float: {
-          "0%, 100%": { transform: "translateY(0px)" },
-          "50%": { transform: "translateY(-20px)" },
+          "0%, 100%": { transform: "translateY(0px) rotate(0deg)" },
+          "50%": { transform: "translateY(-30px) rotate(3deg)" },
         },
       },
     },

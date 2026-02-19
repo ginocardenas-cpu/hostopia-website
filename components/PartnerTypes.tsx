@@ -5,61 +5,90 @@ const partnerTypes = [
     icon: Building2,
     title: "Telcos & Carriers",
     description:
-      "Add high-margin digital services to your connectivity bundle. Retain customers with email, web, and ecommerce — products they use every single day.",
+      "Add high-margin digital services to your connectivity bundle. Retain customers with email, web, and ecommerce — products SMBs use every single day.",
   },
   {
     icon: Network,
     title: "Resellers & Distributors",
     description:
-      "Expand your product catalog with in-demand SMB digital tools. White-label Hostopia's platform and offer a complete suite without building anything.",
+      "Expand your catalog with in-demand SMB digital tools. White-label Hostopia's platform and offer a complete suite without building anything from scratch.",
   },
   {
     icon: Store,
     title: "Domain Registrars",
     description:
-      "Complement your domain business with email hosting, website builders, and online store capabilities. Turn one-time sales into recurring monthly revenue.",
+      "Complement your domain business with email hosting, website builders, and online stores. Turn one-time sales into monthly recurring revenue.",
   },
   {
     icon: Globe,
-    title: "ISPs & Hosting Companies",
+    title: "ISPs & Hosting Cos.",
     description:
-      "Move up the value chain. Add SMB-focused digital marketing, ecommerce, and professional services to your infrastructure business.",
+      "Move up the value chain. Add SMB-focused digital marketing, ecommerce, and professional services on top of your infrastructure business.",
   },
 ];
 
 export default function PartnerTypes() {
   return (
-    <section id="platform" className="py-24 bg-gradient-to-b from-slate-50 to-white relative">
+    <section id="platform" className="py-28" style={{ backgroundColor: "#f7f6f2" }}>
       <div className="max-w-7xl mx-auto px-6">
+
+        {/* Section header */}
         <div className="text-center mb-16">
-          <span className="inline-block text-indigo-600 text-xs font-bold tracking-widest uppercase mb-4">
-            Who We Partner With
-          </span>
-          <h2 className="text-4xl md:text-5xl font-black text-slate-900 mb-4">
+          <div className="flex items-center justify-center gap-3 mb-5">
+            <div className="w-8 h-px" style={{ backgroundColor: "#2CADB2" }} />
+            <span className="section-label">Who We Partner With</span>
+            <div className="w-8 h-px" style={{ backgroundColor: "#2CADB2" }} />
+          </div>
+          <h2
+            className="font-black leading-tight mb-4"
+            style={{
+              fontFamily: "Montserrat, sans-serif",
+              fontSize: "clamp(2.5rem, 5vw, 4rem)",
+              color: "#24282B",
+            }}
+          >
             Built for{" "}
-            <span className="bg-gradient-to-r from-indigo-600 to-violet-600 bg-clip-text text-transparent">
-              Service Providers
-            </span>
+            <span style={{ color: "#2CADB2" }}>Service Providers</span>
           </h2>
-          <p className="text-slate-500 text-lg max-w-2xl mx-auto">
-            Whether you&apos;re a national telco or a regional reseller, if you sell
-            to small businesses, Hostopia was built for you.
+          <p
+            className="text-lg max-w-xl mx-auto"
+            style={{ fontFamily: "Raleway, sans-serif", color: "#6b7280" }}
+          >
+            If you sell to small businesses, Hostopia was built for you.
           </p>
         </div>
 
+        {/* Cards */}
         <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
-          {partnerTypes.map((type) => {
+          {partnerTypes.map((type, i) => {
             const Icon = type.icon;
             return (
               <div
                 key={type.title}
-                className="group text-center rounded-3xl p-8 bg-white border border-slate-100 shadow-sm hover:shadow-xl hover:border-indigo-200 hover:-translate-y-2 transition-all duration-300"
+                className="group rounded-3xl p-8 bg-white border border-gray-100 hover:border-teal hover:shadow-xl transition-all duration-300 hover:-translate-y-2"
+                style={{ borderColor: "transparent" }}
               >
-                <div className="w-14 h-14 rounded-2xl bg-gradient-to-br from-indigo-500 to-violet-600 mx-auto mb-5 flex items-center justify-center group-hover:scale-110 transition-transform duration-300 shadow-lg shadow-indigo-500/25">
-                  <Icon size={24} className="text-white" />
+                <div
+                  className="w-12 h-12 rounded-2xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform duration-300"
+                  style={{
+                    backgroundColor: i % 2 === 0 ? "#e8f7f7" : "#fef9e6",
+                  }}
+                >
+                  <Icon
+                    size={22}
+                    style={{ color: i % 2 === 0 ? "#2CADB2" : "#e0b82a" }}
+                  />
                 </div>
-                <h3 className="font-bold text-slate-900 mb-3">{type.title}</h3>
-                <p className="text-slate-500 text-sm leading-relaxed">
+                <h3
+                  className="font-bold mb-3 text-base"
+                  style={{ fontFamily: "Montserrat, sans-serif", color: "#24282B" }}
+                >
+                  {type.title}
+                </h3>
+                <p
+                  className="text-sm leading-relaxed"
+                  style={{ fontFamily: "Raleway, sans-serif", color: "#6b7280" }}
+                >
                   {type.description}
                 </p>
               </div>
@@ -67,17 +96,17 @@ export default function PartnerTypes() {
           })}
         </div>
 
-        {/* Bottom CTA row */}
-        <div className="mt-16 text-center">
-          <p className="text-slate-500 mb-4">
-            Don&apos;t see your category? We work with a wide range of service
-            providers.
-          </p>
+        <div className="text-center mt-12">
           <a
             href="#contact"
-            className="inline-flex items-center gap-2 border-2 border-indigo-600 text-indigo-600 font-semibold px-7 py-3 rounded-full hover:bg-indigo-600 hover:text-white transition-all duration-200"
+            className="inline-flex items-center gap-2 font-semibold text-sm px-7 py-3 rounded-full border-2 transition-all duration-200 hover:scale-105"
+            style={{
+              fontFamily: "Montserrat, sans-serif",
+              borderColor: "#24282B",
+              color: "#24282B",
+            }}
           >
-            Let&apos;s Talk About Your Business
+            Don&apos;t see your category? Let&apos;s talk
           </a>
         </div>
       </div>

@@ -1,114 +1,146 @@
-import { ArrowRight, CheckCircle2, Zap } from "lucide-react";
-
-const badges = [
-  "Zero-Downtime Migrations",
-  "Bilingual Support",
-  "White-Label Ready",
-];
+import { ArrowRight } from "lucide-react";
 
 const stats = [
   { value: "500+", label: "Service Provider Partners" },
   { value: "99.99%", label: "Platform Uptime" },
   { value: "20M+", label: "Mailboxes Migrated" },
-  { value: "2", label: "Languages Supported" },
+  { value: "EN/FR", label: "Bilingual Support" },
 ];
 
 export default function Hero() {
   return (
-    <section className="relative min-h-screen bg-hero-gradient flex items-center overflow-hidden pt-20">
-      {/* Background decorative orbs */}
-      <div className="absolute top-20 left-10 w-96 h-96 rounded-full bg-indigo-600/20 blur-3xl pointer-events-none" />
-      <div className="absolute bottom-20 right-10 w-80 h-80 rounded-full bg-violet-600/20 blur-3xl pointer-events-none" />
-      <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[600px] rounded-full bg-cyan-500/5 blur-3xl pointer-events-none" />
+    <section className="relative min-h-screen flex flex-col justify-center overflow-hidden pt-20" style={{ backgroundColor: "#f7f6f2" }}>
 
-      {/* Grid overlay */}
+      {/* Decorative blobs */}
       <div
-        className="absolute inset-0 opacity-10 pointer-events-none"
+        className="absolute top-0 right-0 w-[600px] h-[600px] rounded-full pointer-events-none"
         style={{
-          backgroundImage:
-            "linear-gradient(rgba(99,102,241,0.3) 1px, transparent 1px), linear-gradient(90deg, rgba(99,102,241,0.3) 1px, transparent 1px)",
-          backgroundSize: "60px 60px",
+          background: "radial-gradient(circle, rgba(44,173,178,0.12) 0%, transparent 70%)",
+          transform: "translate(20%, -20%)",
+        }}
+      />
+      <div
+        className="absolute bottom-0 left-0 w-[400px] h-[400px] rounded-full pointer-events-none"
+        style={{
+          background: "radial-gradient(circle, rgba(248,207,65,0.1) 0%, transparent 70%)",
+          transform: "translate(-20%, 20%)",
         }}
       />
 
-      <div className="relative z-10 max-w-7xl mx-auto px-6 py-24 w-full">
-        <div className="max-w-4xl">
+      {/* Floating geometric accents */}
+      <div
+        className="absolute top-32 right-24 w-24 h-24 rounded-2xl rotate-12 opacity-40 animate-float pointer-events-none"
+        style={{ backgroundColor: "#2CADB2" }}
+      />
+      <div
+        className="absolute bottom-40 right-48 w-14 h-14 rounded-full opacity-30 pointer-events-none"
+        style={{ backgroundColor: "#F8CF41" }}
+      />
+      <div
+        className="absolute top-1/2 right-16 w-4 h-32 rounded-full opacity-20 pointer-events-none"
+        style={{ backgroundColor: "#2CADB2" }}
+      />
+
+      <div className="relative z-10 max-w-7xl mx-auto px-6 py-20 w-full">
+        <div className="max-w-5xl">
+
           {/* Eyebrow */}
-          <div className="inline-flex items-center gap-2 bg-white/10 border border-white/20 rounded-full px-4 py-2 mb-8">
-            <Zap size={14} className="text-orange-400" />
-            <span className="text-slate-300 text-xs font-semibold tracking-widest uppercase">
-              Wholesale &amp; White-Label Digital Services
-            </span>
+          <div className="flex items-center gap-3 mb-10">
+            <div className="w-8 h-px" style={{ backgroundColor: "#2CADB2" }} />
+            <span className="section-label">Wholesale &amp; White-Label Digital Services</span>
           </div>
 
-          {/* Headline */}
-          <h1 className="text-5xl md:text-7xl font-black text-white leading-[1.05] tracking-tight mb-6">
+          {/* Main headline — large editorial type */}
+          <h1
+            className="font-black leading-[1.02] tracking-tight mb-8"
+            style={{
+              fontFamily: "Montserrat, sans-serif",
+              fontSize: "clamp(3.5rem, 8vw, 7.5rem)",
+              color: "#24282B",
+            }}
+          >
             The Platform
             <br />
-            <span className="text-gradient">Behind the Brands</span>
+            <span style={{ color: "#2CADB2" }}>Behind</span> the
             <br />
-            That Power
+            Brands That
             <br />
-            Small Business.
+            Power Small
+            <br />
+            <span
+              style={{
+                textDecoration: "underline",
+                textDecorationColor: "#F8CF41",
+                textUnderlineOffset: "8px",
+                textDecorationThickness: "6px",
+              }}
+            >
+              Business.
+            </span>
           </h1>
 
           {/* Subheadline */}
-          <p className="text-lg md:text-xl text-slate-300 leading-relaxed mb-8 max-w-2xl">
-            Hostopia gives telcos, resellers, and distributors everything they
-            need to launch, grow, and retain SMB customers — email, websites,
-            ecommerce, digital marketing, and beyond. Fully white-label. Proven
-            at scale.
+          <p
+            className="text-lg md:text-xl leading-relaxed mb-10 max-w-2xl"
+            style={{ fontFamily: "Raleway, sans-serif", color: "#555a5e" }}
+          >
+            Hostopia gives telcos, resellers, and distributors a complete
+            white-label platform to launch digital services, drive new revenue,
+            and become true digital advisors to the small businesses they serve.
           </p>
-
-          {/* Feature badges */}
-          <div className="flex flex-wrap gap-3 mb-10">
-            {badges.map((badge) => (
-              <div
-                key={badge}
-                className="flex items-center gap-2 bg-white/10 border border-white/15 rounded-full px-4 py-2"
-              >
-                <CheckCircle2 size={14} className="text-cyan-400" />
-                <span className="text-slate-200 text-sm font-medium">
-                  {badge}
-                </span>
-              </div>
-            ))}
-          </div>
 
           {/* CTAs */}
           <div className="flex flex-col sm:flex-row gap-4">
             <a
               href="#partner"
-              className="group inline-flex items-center justify-center gap-2 bg-gradient-to-r from-orange-500 to-orange-600 hover:from-orange-400 hover:to-orange-500 text-white font-bold px-8 py-4 rounded-full text-base shadow-xl shadow-orange-500/30 hover:shadow-orange-500/50 transition-all duration-200 hover:scale-105"
+              className="group inline-flex items-center justify-center gap-2 font-bold px-8 py-4 rounded-full text-base transition-all duration-200 hover:scale-105 hover:shadow-xl"
+              style={{
+                fontFamily: "Montserrat, sans-serif",
+                backgroundColor: "#F8CF41",
+                color: "#24282B",
+                boxShadow: "0 4px 20px rgba(248,207,65,0.3)",
+              }}
             >
               Become a Partner
-              <ArrowRight
-                size={18}
-                className="group-hover:translate-x-1 transition-transform"
-              />
+              <ArrowRight size={18} className="group-hover:translate-x-1 transition-transform" />
             </a>
             <a
               href="#solutions"
-              className="inline-flex items-center justify-center gap-2 border border-white/25 hover:border-white/50 text-white font-semibold px-8 py-4 rounded-full text-base transition-all duration-200 hover:bg-white/5"
+              className="inline-flex items-center justify-center gap-2 font-semibold px-8 py-4 rounded-full text-base border-2 transition-all duration-200 hover:bg-white"
+              style={{
+                fontFamily: "Montserrat, sans-serif",
+                borderColor: "#24282B",
+                color: "#24282B",
+              }}
             >
               Explore Solutions
             </a>
           </div>
         </div>
 
-        {/* Stats Row */}
-        <div className="mt-20 grid grid-cols-2 md:grid-cols-4 gap-6">
-          {stats.map((stat) => (
+        {/* Stats strip */}
+        <div className="mt-24 grid grid-cols-2 md:grid-cols-4 gap-px bg-gray-200 rounded-2xl overflow-hidden shadow-sm">
+          {stats.map((stat, i) => (
             <div
               key={stat.label}
-              className="glass rounded-2xl p-6 text-center hover:bg-white/10 transition-colors duration-300"
+              className="flex flex-col items-center justify-center p-8 bg-white hover:bg-gray-50 transition-colors duration-200"
             >
-              <div className="text-3xl md:text-4xl font-black text-white mb-1">
+              <span
+                className="font-black mb-1"
+                style={{
+                  fontFamily: "Montserrat, sans-serif",
+                  fontSize: "2.25rem",
+                  color: i % 2 === 0 ? "#2CADB2" : "#24282B",
+                }}
+              >
                 {stat.value}
-              </div>
-              <div className="text-slate-400 text-xs font-medium uppercase tracking-wider">
+              </span>
+              <span
+                className="text-xs font-semibold uppercase tracking-wider text-center"
+                style={{ fontFamily: "Raleway, sans-serif", color: "#888" }}
+              >
                 {stat.label}
-              </div>
+              </span>
             </div>
           ))}
         </div>

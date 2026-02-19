@@ -1,92 +1,114 @@
 import { Megaphone, BookOpen, Target, Users2 } from "lucide-react";
 
-const gtmServices = [
+const services = [
   {
     icon: Megaphone,
+    number: "01",
     title: "Co-Branded Marketing",
     description:
       "Ready-to-use campaigns, assets, and messaging that help you take Hostopia-powered products to market fast. Digital ads, email campaigns, landing pages, and more.",
   },
   {
     icon: BookOpen,
+    number: "02",
     title: "Sales Enablement",
     description:
-      "Battle cards, pitch decks, and training programs that arm your sales teams with everything they need to have confident SMB conversations about digital services.",
+      "Battle cards, pitch decks, and training programs that arm your sales teams with everything needed to confidently sell digital services to SMBs.",
   },
   {
     icon: Target,
+    number: "03",
     title: "Product Positioning",
     description:
-      "Strategic guidance on packaging, pricing, and positioning Hostopia products within your existing portfolio. We help you find the right bundle for your market.",
+      "Strategic guidance on packaging, pricing, and positioning Hostopia products within your existing portfolio to maximize ARPU and minimize churn.",
   },
   {
     icon: Users2,
+    number: "04",
     title: "Partner Success Management",
     description:
-      "A dedicated partner success team that reviews your metrics, identifies growth opportunities, and ensures you're maximizing the value of the Hostopia platform.",
+      "A dedicated team that reviews your metrics, identifies growth opportunities, and ensures you're maximizing the full value of the Hostopia platform.",
   },
 ];
 
 export default function GoToMarket() {
   return (
-    <section className="py-24 bg-slate-950 relative overflow-hidden">
-      <div className="absolute top-0 left-0 w-full h-px bg-gradient-to-r from-transparent via-indigo-500/30 to-transparent" />
-      <div className="absolute bottom-0 left-0 w-full h-px bg-gradient-to-r from-transparent via-indigo-500/30 to-transparent" />
+    <section className="py-28" style={{ backgroundColor: "#f7f6f2" }}>
+      <div className="max-w-7xl mx-auto px-6">
 
-      <div className="relative z-10 max-w-7xl mx-auto px-6">
-        <div className="grid lg:grid-cols-2 gap-16 items-start">
-          {/* Left: Text */}
-          <div className="lg:sticky lg:top-32">
-            <span className="inline-block text-orange-400 text-xs font-bold tracking-widest uppercase mb-4">
-              Go-to-Market Services
-            </span>
-            <h2 className="text-4xl md:text-5xl font-black text-white mb-6 leading-tight">
+        {/* Header */}
+        <div className="flex flex-col md:flex-row md:items-end gap-10 justify-between mb-16">
+          <div>
+            <div className="flex items-center gap-3 mb-5">
+              <div className="w-8 h-px" style={{ backgroundColor: "#2CADB2" }} />
+              <span className="section-label">Go-to-Market Services</span>
+            </div>
+            <h2
+              className="font-black leading-tight"
+              style={{
+                fontFamily: "Montserrat, sans-serif",
+                fontSize: "clamp(2.5rem, 5vw, 4.5rem)",
+                color: "#24282B",
+              }}
+            >
               We Help You{" "}
-              <span className="text-gradient">Sell It,</span>
+              <span style={{ color: "#2CADB2" }}>Sell It,</span>
               <br />
               Not Just Build It.
             </h2>
-            <p className="text-slate-400 text-lg leading-relaxed mb-8">
-              Launching a new digital service is one thing. Building the revenue
-              engine around it is another. Hostopia&apos;s go-to-market expertise
-              helps service providers accelerate adoption, increase ARPU, and
-              reduce churn from day one.
-            </p>
-            <div className="rounded-2xl bg-white/5 border border-white/10 p-6">
-              <p className="text-slate-300 text-sm leading-relaxed">
-                <span className="text-white font-semibold">The Hostopia advantage:</span> We&apos;ve
-                helped dozens of telcos and resellers launch, package, and grow
-                digital service portfolios. That experience informs every
-                recommendation we make for your business.
-              </p>
-            </div>
           </div>
+          <p
+            className="text-base leading-relaxed max-w-sm"
+            style={{ fontFamily: "Raleway, sans-serif", color: "#6b7280" }}
+          >
+            Our go-to-market expertise helps service providers accelerate adoption, increase ARPU, and reduce churn from day one.
+          </p>
+        </div>
 
-          {/* Right: GTM service cards */}
-          <div className="grid gap-5">
-            {gtmServices.map((service, i) => {
-              const Icon = service.icon;
-              return (
-                <div
-                  key={service.title}
-                  className="group flex gap-5 rounded-2xl p-6 bg-white/5 border border-white/10 hover:border-white/20 hover:bg-white/8 transition-all duration-300"
-                >
-                  <div className="w-11 h-11 rounded-xl bg-gradient-to-br from-orange-500 to-red-600 flex items-center justify-center flex-shrink-0 group-hover:scale-110 transition-transform duration-300">
-                    <Icon size={20} className="text-white" />
+        {/* 2x2 grid */}
+        <div className="grid md:grid-cols-2 gap-6">
+          {services.map((service) => {
+            const Icon = service.icon;
+            return (
+              <div
+                key={service.title}
+                className="group rounded-3xl p-10 bg-white border border-transparent hover:border-gray-200 hover:shadow-lg transition-all duration-300"
+              >
+                <div className="flex items-start justify-between mb-6">
+                  <div
+                    className="w-12 h-12 rounded-2xl flex items-center justify-center"
+                    style={{ backgroundColor: "#e8f7f7" }}
+                  >
+                    <Icon size={22} style={{ color: "#2CADB2" }} />
                   </div>
-                  <div>
-                    <h4 className="text-white font-bold mb-2">{service.title}</h4>
-                    <p className="text-slate-400 text-sm leading-relaxed">
-                      {service.description}
-                    </p>
-                  </div>
-                  <div className="flex-shrink-0 self-start">
-                    <span className="text-slate-600 text-sm font-black">0{i + 1}</span>
-                  </div>
+                  <span
+                    className="font-black text-4xl"
+                    style={{ fontFamily: "Montserrat, sans-serif", color: "#2CADB2", opacity: 0.15 }}
+                  >
+                    {service.number}
+                  </span>
                 </div>
-              );
-            })}
-          </div>
+
+                <div
+                  className="w-8 h-0.5 mb-4 transition-all duration-300 group-hover:w-14"
+                  style={{ backgroundColor: "#F8CF41" }}
+                />
+
+                <h3
+                  className="font-black text-xl mb-3"
+                  style={{ fontFamily: "Montserrat, sans-serif", color: "#24282B" }}
+                >
+                  {service.title}
+                </h3>
+                <p
+                  className="text-sm leading-relaxed"
+                  style={{ fontFamily: "Raleway, sans-serif", color: "#6b7280" }}
+                >
+                  {service.description}
+                </p>
+              </div>
+            );
+          })}
         </div>
       </div>
     </section>

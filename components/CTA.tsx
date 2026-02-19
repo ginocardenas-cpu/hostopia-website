@@ -2,112 +2,183 @@ import { ArrowRight, Mail } from "lucide-react";
 
 export default function CTA() {
   return (
-    <section id="partner" className="py-24 bg-hero-gradient relative overflow-hidden">
-      {/* Decorative orbs */}
-      <div className="absolute top-10 left-10 w-72 h-72 rounded-full bg-violet-600/20 blur-3xl pointer-events-none" />
-      <div className="absolute bottom-10 right-10 w-72 h-72 rounded-full bg-cyan-500/15 blur-3xl pointer-events-none" />
+    <section id="partner" className="py-28 relative overflow-hidden" style={{ backgroundColor: "#F8CF41" }}>
+
+      {/* Large decorative background word */}
       <div
-        className="absolute inset-0 opacity-10 pointer-events-none"
+        className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 font-black select-none pointer-events-none whitespace-nowrap"
         style={{
-          backgroundImage:
-            "linear-gradient(rgba(99,102,241,0.3) 1px, transparent 1px), linear-gradient(90deg, rgba(99,102,241,0.3) 1px, transparent 1px)",
-          backgroundSize: "60px 60px",
+          fontFamily: "Montserrat, sans-serif",
+          fontSize: "clamp(6rem, 18vw, 16rem)",
+          color: "rgba(36,40,43,0.05)",
+          lineHeight: 1,
         }}
-      />
+      >
+        PARTNER
+      </div>
 
-      <div className="relative z-10 max-w-4xl mx-auto px-6 text-center">
-        <span className="inline-block text-orange-400 text-xs font-bold tracking-widest uppercase mb-6">
-          Ready to Grow?
-        </span>
-        <h2 className="text-4xl md:text-6xl font-black text-white mb-6 leading-tight">
-          Let&apos;s Build Your{" "}
-          <span className="text-gradient">Digital Revenue</span>{" "}
-          Engine Together.
-        </h2>
-        <p className="text-slate-300 text-lg md:text-xl leading-relaxed mb-10 max-w-2xl mx-auto">
-          Join hundreds of service providers who trust Hostopia to power their
-          digital services portfolio. Talk to our team today and discover what&apos;s
-          possible.
-        </p>
+      <div className="relative z-10 max-w-7xl mx-auto px-6">
+        <div className="grid lg:grid-cols-2 gap-16 items-start">
 
-        {/* Contact form strip */}
-        <div
-          id="contact"
-          className="glass rounded-3xl p-8 mb-8 max-w-lg mx-auto text-left"
-        >
-          <h3 className="text-white font-bold text-lg mb-5">
-            Talk to a Partner Expert
-          </h3>
-          <div className="space-y-4">
-            <div className="grid grid-cols-2 gap-3">
+          {/* Left: Headline */}
+          <div>
+            <div className="flex items-center gap-3 mb-6">
+              <div className="w-8 h-px" style={{ backgroundColor: "#24282B" }} />
+              <span className="section-label" style={{ color: "#24282B" }}>Ready to Grow?</span>
+            </div>
+
+            <h2
+              className="font-black leading-tight mb-8"
+              style={{
+                fontFamily: "Montserrat, sans-serif",
+                fontSize: "clamp(3rem, 6vw, 5.5rem)",
+                color: "#24282B",
+              }}
+            >
+              Let&apos;s Build
+              <br />
+              Your Digital
+              <br />
+              Revenue
+              <br />
+              Engine.
+            </h2>
+
+            <p
+              className="text-lg leading-relaxed mb-8"
+              style={{ fontFamily: "Raleway, sans-serif", color: "#4a4e52" }}
+            >
+              Join hundreds of service providers who trust Hostopia to power their
+              digital services portfolio. Talk to our team and discover what&apos;s possible.
+            </p>
+
+            <div className="flex flex-col gap-3">
+              {[
+                "No long-term contracts required",
+                "Dedicated partner success manager",
+                "Go live in as little as 30 days",
+              ].map((item) => (
+                <div key={item} className="flex items-center gap-3">
+                  <div className="w-2 h-2 rounded-full flex-shrink-0" style={{ backgroundColor: "#24282B" }} />
+                  <span
+                    className="text-sm font-semibold"
+                    style={{ fontFamily: "Raleway, sans-serif", color: "#24282B" }}
+                  >
+                    {item}
+                  </span>
+                </div>
+              ))}
+            </div>
+          </div>
+
+          {/* Right: Form */}
+          <div
+            id="contact"
+            className="rounded-3xl p-8"
+            style={{ backgroundColor: "#24282B" }}
+          >
+            <h3
+              className="font-black text-xl mb-6"
+              style={{ fontFamily: "Montserrat, sans-serif", color: "#ffffff" }}
+            >
+              Talk to a Partner Expert
+            </h3>
+            <div className="space-y-4">
+              <div className="grid grid-cols-2 gap-3">
+                {["First Name", "Last Name"].map((field) => (
+                  <div key={field}>
+                    <label
+                      className="text-xs font-semibold mb-1.5 block"
+                      style={{ fontFamily: "Montserrat, sans-serif", color: "#9ca3af" }}
+                    >
+                      {field}
+                    </label>
+                    <input
+                      type="text"
+                      className="w-full rounded-xl px-4 py-3 text-sm outline-none transition-colors"
+                      style={{
+                        backgroundColor: "rgba(255,255,255,0.07)",
+                        border: "1px solid rgba(255,255,255,0.12)",
+                        color: "#ffffff",
+                        fontFamily: "Raleway, sans-serif",
+                      }}
+                      placeholder={field === "First Name" ? "Jane" : "Smith"}
+                    />
+                  </div>
+                ))}
+              </div>
+
+              {[
+                { label: "Work Email", placeholder: "jane@telco.com", type: "email" },
+                { label: "Company & Role", placeholder: "VP Product, Acme Telco", type: "text" },
+              ].map((field) => (
+                <div key={field.label}>
+                  <label
+                    className="text-xs font-semibold mb-1.5 block"
+                    style={{ fontFamily: "Montserrat, sans-serif", color: "#9ca3af" }}
+                  >
+                    {field.label}
+                  </label>
+                  <input
+                    type={field.type}
+                    className="w-full rounded-xl px-4 py-3 text-sm outline-none"
+                    placeholder={field.placeholder}
+                    style={{
+                      backgroundColor: "rgba(255,255,255,0.07)",
+                      border: "1px solid rgba(255,255,255,0.12)",
+                      color: "#ffffff",
+                      fontFamily: "Raleway, sans-serif",
+                    }}
+                  />
+                </div>
+              ))}
+
               <div>
-                <label className="text-slate-400 text-xs font-medium mb-1 block">
-                  First Name
+                <label
+                  className="text-xs font-semibold mb-1.5 block"
+                  style={{ fontFamily: "Montserrat, sans-serif", color: "#9ca3af" }}
+                >
+                  What are you looking to achieve?
                 </label>
-                <input
-                  type="text"
-                  placeholder="Jane"
-                  className="w-full bg-white/10 border border-white/20 rounded-xl px-4 py-3 text-white placeholder-slate-500 text-sm outline-none focus:border-cyan-400 transition-colors"
+                <textarea
+                  rows={3}
+                  className="w-full rounded-xl px-4 py-3 text-sm outline-none resize-none"
+                  placeholder="Tell us about your goals..."
+                  style={{
+                    backgroundColor: "rgba(255,255,255,0.07)",
+                    border: "1px solid rgba(255,255,255,0.12)",
+                    color: "#ffffff",
+                    fontFamily: "Raleway, sans-serif",
+                  }}
                 />
               </div>
-              <div>
-                <label className="text-slate-400 text-xs font-medium mb-1 block">
-                  Last Name
-                </label>
-                <input
-                  type="text"
-                  placeholder="Smith"
-                  className="w-full bg-white/10 border border-white/20 rounded-xl px-4 py-3 text-white placeholder-slate-500 text-sm outline-none focus:border-cyan-400 transition-colors"
-                />
-              </div>
+
+              <button
+                className="w-full font-bold px-6 py-4 rounded-xl flex items-center justify-center gap-2 transition-all duration-200 hover:scale-[1.02]"
+                style={{
+                  fontFamily: "Montserrat, sans-serif",
+                  backgroundColor: "#F8CF41",
+                  color: "#24282B",
+                  boxShadow: "0 4px 20px rgba(248,207,65,0.3)",
+                }}
+              >
+                <Mail size={18} />
+                Send Message
+                <ArrowRight size={18} />
+              </button>
             </div>
-            <div>
-              <label className="text-slate-400 text-xs font-medium mb-1 block">
-                Work Email
-              </label>
-              <input
-                type="email"
-                placeholder="jane@telco.com"
-                className="w-full bg-white/10 border border-white/20 rounded-xl px-4 py-3 text-white placeholder-slate-500 text-sm outline-none focus:border-cyan-400 transition-colors"
-              />
-            </div>
-            <div>
-              <label className="text-slate-400 text-xs font-medium mb-1 block">
-                Company & Role
-              </label>
-              <input
-                type="text"
-                placeholder="VP Product, Acme Telco"
-                className="w-full bg-white/10 border border-white/20 rounded-xl px-4 py-3 text-white placeholder-slate-500 text-sm outline-none focus:border-cyan-400 transition-colors"
-              />
-            </div>
-            <div>
-              <label className="text-slate-400 text-xs font-medium mb-1 block">
-                What are you looking to achieve?
-              </label>
-              <textarea
-                rows={3}
-                placeholder="Tell us about your goals..."
-                className="w-full bg-white/10 border border-white/20 rounded-xl px-4 py-3 text-white placeholder-slate-500 text-sm outline-none focus:border-cyan-400 transition-colors resize-none"
-              />
-            </div>
-            <button className="w-full bg-gradient-to-r from-orange-500 to-orange-600 hover:from-orange-400 hover:to-orange-500 text-white font-bold px-6 py-4 rounded-xl flex items-center justify-center gap-2 shadow-xl shadow-orange-500/25 hover:shadow-orange-500/40 transition-all duration-200 hover:scale-[1.02]">
-              <Mail size={18} />
-              Send Message
-              <ArrowRight size={18} />
-            </button>
+
+            <p
+              className="text-center text-xs mt-4"
+              style={{ fontFamily: "Raleway, sans-serif", color: "#6b7280" }}
+            >
+              Or email us directly at{" "}
+              <a href="mailto:partners@hostopia.com" style={{ color: "#2CADB2" }}>
+                partners@hostopia.com
+              </a>
+            </p>
           </div>
         </div>
-
-        <p className="text-slate-500 text-sm">
-          Prefer email?{" "}
-          <a
-            href="mailto:partners@hostopia.com"
-            className="text-cyan-400 hover:text-cyan-300 underline"
-          >
-            partners@hostopia.com
-          </a>
-        </p>
       </div>
     </section>
   );
