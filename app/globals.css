@@ -124,3 +124,11 @@ h1, h2, h3, h4, h5, h6 {
   background: #F8CF41;
   margin: 0 0 2rem;
 }
+
+/* FAQ accordion: hide default disclosure triangle so custom chevron shows */
+#faq details summary::-webkit-details-marker {
+  display: none;
+}
+#faq details summary::marker {
+  display: none;
+}

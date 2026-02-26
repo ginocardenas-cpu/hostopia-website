@@ -4,12 +4,33 @@ const stats = [
   { value: "500+", label: "Service Provider Partners" },
   { value: "99.99%", label: "Platform Uptime" },
   { value: "20M+", label: "Mailboxes Migrated" },
-  { value: "EN/FR", label: "Bilingual Support" },
+  { value: "24/7", label: "Multilingual Support" },
 ];
 
 export default function Hero() {
   return (
     <section className="relative min-h-screen flex flex-col justify-center overflow-hidden pt-20" style={{ backgroundColor: "#f7f6f2" }}>
+
+      {/* Background video */}
+      <div className="absolute inset-0 z-0">
+        <video
+          autoPlay
+          muted
+          loop
+          playsInline
+          className="absolute inset-0 w-full h-full object-cover"
+          poster=""
+          aria-hidden
+        >
+          <source src="/Video2.mp4" type="video/mp4" />
+        </video>
+        <div
+          className="absolute inset-0 z-[1]"
+          style={{
+            background: "linear-gradient(135deg, rgba(247,246,242,0.92) 0%, rgba(247,246,242,0.85) 50%, rgba(247,246,242,0.75) 100%)",
+          }}
+        />
+      </div>
 
       {/* Decorative blobs */}
       <div

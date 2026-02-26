@@ -18,18 +18,11 @@ export default function Footer() {
           {/* Brand */}
           <div className="max-w-xs">
             <div className="flex items-center gap-2.5 mb-5">
-              <div
-                className="w-9 h-9 rounded-lg flex items-center justify-center"
-                style={{ backgroundColor: "#2CADB2" }}
-              >
-                <span className="text-white font-black text-base" style={{ fontFamily: "Montserrat, sans-serif" }}>H</span>
-              </div>
-              <span
-                className="text-xl tracking-tight"
-                style={{ fontFamily: "Montserrat, sans-serif", fontWeight: 700, color: "#ffffff" }}
-              >
-                host<span style={{ color: "#2CADB2" }}>opia</span>
-              </span>
+              <img
+                src="/logo.png"
+                alt="Hostopia"
+                className="h-10 w-auto max-w-[180px] object-contain"
+              />
             </div>
             <p
               className="text-sm leading-relaxed mb-6"

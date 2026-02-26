@@ -3,11 +3,11 @@ import { useState, useEffect } from "react";
 import { Menu, X } from "lucide-react";
 
 const navLinks = [
-  { label: "Solutions", href: "#solutions" },
-  { label: "Platform", href: "#platform" },
-  { label: "Migrations", href: "#migrations" },
-  { label: "Support", href: "#support" },
-  { label: "About", href: "#about" },
+  { label: "Solutions", href: "/products" },
+  { label: "Platform", href: "/platform" },
+  { label: "Resources", href: "/resources" },
+  { label: "Company", href: "/company" },
+  { label: "Contact", href: "/contact" },
 ];
 
 export default function Navbar() {
@@ -30,19 +30,12 @@ export default function Navbar() {
     >
       <div className="max-w-7xl mx-auto px-6 flex items-center justify-between h-18 py-4">
         {/* Logo */}
-        <a href="#" className="flex items-center gap-2.5">
-          <div
-            className="w-9 h-9 rounded-lg flex items-center justify-center"
-            style={{ backgroundColor: "#2CADB2" }}
-          >
-            <span className="text-white font-black text-base" style={{ fontFamily: "Montserrat, sans-serif" }}>H</span>
-          </div>
-          <span
-            className="text-xl tracking-tight"
-            style={{ fontFamily: "Montserrat, sans-serif", fontWeight: 700, color: "#24282B" }}
-          >
-            host<span style={{ color: "#2CADB2" }}>opia</span>
-          </span>
+        <a href="/" className="flex items-center gap-2.5 shrink-0">
+          <img
+            src="/logo.png"
+            alt="Hostopia"
+            className="h-10 min-h-[40px] w-auto max-w-[180px] object-contain object-left"
+          />
         </a>
 
         {/* Desktop Nav */}
@@ -60,16 +53,9 @@ export default function Navbar() {
         </div>
 
         {/* CTA */}
-        <div className="hidden md:flex items-center gap-4">
+        <div className="hidden md:flex items-center">
           <a
-            href="#contact"
-            className="text-sm font-medium transition-colors"
-            style={{ fontFamily: "Raleway, sans-serif", color: "#24282B" }}
-          >
-            Contact
-          </a>
-          <a
-            href="#partner"
+            href="/contact"
             className="text-sm font-bold px-5 py-2.5 rounded-full transition-all duration-200 hover:scale-105 hover:shadow-lg"
             style={{
               fontFamily: "Montserrat, sans-serif",
@@ -106,7 +92,7 @@ export default function Navbar() {
             </a>
           ))}
           <a
-            href="#partner"
+            href="/contact"
             className="text-sm font-bold px-5 py-3 rounded-full text-center mt-2"
             style={{ backgroundColor: "#F8CF41", color: "#24282B", fontFamily: "Montserrat, sans-serif" }}
             onClick={() => setOpen(false)}

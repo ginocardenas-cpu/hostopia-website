@@ -1,5 +1,5 @@
 const supportStats = [
-  { value: "EN/FR", label: "Bilingual", sub: "English & French" },
+  { value: "EN/FR/SP", label: "Multilingual", sub: "North America based" },
   { value: "24/7", label: "Availability", sub: "Always on" },
   { value: "< 60s", label: "First Reply", sub: "Response SLA" },
   { value: "98%", label: "CSAT", sub: "Satisfaction score" },
@@ -43,21 +43,10 @@ export default function BilingualSupport() {
             </h2>
 
             <p
-              className="text-lg leading-relaxed mb-5"
-              style={{ fontFamily: "Raleway, sans-serif", color: "#555a5e" }}
-            >
-              In Canada&apos;s bilingual market, seamless English and French customer support isn&apos;t optional —
-              it&apos;s a competitive necessity. Hostopia provides full bilingual support, delivered in your
-              brand&apos;s voice.
-            </p>
-
-            <p
               className="text-lg leading-relaxed mb-10"
               style={{ fontFamily: "Raleway, sans-serif", color: "#555a5e" }}
             >
-              Your customers interact with <strong style={{ color: "#24282B" }}>your brand</strong>,
-              supported by <strong style={{ color: "#24282B" }}>our people</strong>. We never break
-              the white-label experience — not in tickets, not in chat, not on the phone.
+              We believe exceptional customer interactions can provide your business a meaningful competitive advantage. Our team delivers high-quality support on your behalf while maintaining your brand voice. You benefit from defined SLAs, measurable KPIs, and full reporting to track performance. Your customers receive multilingual support across phone, chat, and email — ensuring consistent, scalable experiences wherever they do business.
             </p>
 
             <a
@@ -113,23 +102,6 @@ export default function BilingualSupport() {
                   >
                     {stat.sub}
                   </p>
-                </div>
-              ))}
-            </div>
-
-            {/* Language tags */}
-            <div className="flex gap-3 mt-6">
-              {["English", "Français"].map((lang) => (
-                <div
-                  key={lang}
-                  className="flex items-center gap-2 px-5 py-3 rounded-full border-2 font-bold text-sm"
-                  style={{
-                    fontFamily: "Montserrat, sans-serif",
-                    borderColor: "#2CADB2",
-                    color: "#2CADB2",
-                  }}
-                >
-                  {lang}
                 </div>
               ))}
             </div>
