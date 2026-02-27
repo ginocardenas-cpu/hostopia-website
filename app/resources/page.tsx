@@ -1,4 +1,5 @@
 import Link from "next/link";
+import Image from "next/image";
 import { ArrowRight, BookOpen, FileText, Rss } from "lucide-react";
 import ProductGuideForm from "@/components/ProductGuideForm";
 
@@ -126,7 +127,7 @@ export default function ResourcesPage() {
               </div>
             </div>
 
-            {/* Hostopia Product Guide + form */}
+            {/* Hostopia Product Guide + image & download */}
             <div className="grid lg:grid-cols-2 gap-12 items-start">
               <div>
                 <div
@@ -155,16 +156,31 @@ export default function ResourcesPage() {
                 </p>
               </div>
               <div
-                className="rounded-2xl p-8 border-2"
-                style={{ borderColor: "#e8f7f7", backgroundColor: "#fafafa" }}
+                className="rounded-2xl overflow-hidden border-2 shadow-lg"
+                style={{ borderColor: "#e5e7eb", backgroundColor: "#ffffff" }}
               >
-                <h3
-                  className="font-bold text-lg mb-4"
-                  style={{ fontFamily: "Montserrat, sans-serif", color: "#24282B" }}
+                <div className="relative aspect-[3/4] min-h-[280px] bg-[#24282B]">
+                  <Image
+                    src="/images/product-guide-2026.png"
+                    alt="Hostopia Product Guide 2026"
+                    fill
+                    className="object-contain object-center p-4"
+                    sizes="(max-width: 1024px) 100vw, 50vw"
+                    priority={false}
+                  />
+                </div>
+                <div
+                  className="p-6 md:p-8 border-t border-gray-200"
+                  style={{ backgroundColor: "#fafafa" }}
                 >
-                  Download the Product Guide
-                </h3>
-                <ProductGuideForm />
+                  <h3
+                    className="font-bold text-lg mb-4"
+                    style={{ fontFamily: "Montserrat, sans-serif", color: "#24282B" }}
+                  >
+                    Download the Product Guide
+                  </h3>
+                  <ProductGuideForm />
+                </div>
               </div>
             </div>
           </div>
