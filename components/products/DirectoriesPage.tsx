@@ -231,24 +231,26 @@ export default function DirectoriesPage({ label }: DirectoriesPageProps) {
             {[
               {
                 step: "01",
-                title: "Build the brand",
+                title: "Build a Brand",
                 body: "Establish a credible identity with logo, domain, and professional email.",
               },
               {
                 step: "02",
-                title: "Get online",
+                title: "Get Online",
                 body: "Launch websites and landing pages that tell the SMB's story.",
               },
               {
                 step: "03",
-                title: "Start selling",
-                body: "Enable ecommerce, bookings, and lead capture so customers can take action.",
+                title: "Get Found",
+                body: "Use OneList Plus to keep listings accurate everywhere so customers can find—and choose—them.",
+                highlightTeal: true,
+                conceptLabel: "Get Found",
+                productName: "Directories",
               },
               {
                 step: "04",
-                title: "Get found & chosen",
-                body: "Use OneList Plus to keep listings accurate everywhere so customers can find—and choose—them.",
-                highlightTeal: true,
+                title: "Grow their Business",
+                body: "Enable ecommerce, bookings, and lead capture so customers can take action.",
               },
             ].flatMap((step, index, all) => {
               const card = (
@@ -258,6 +260,8 @@ export default function DirectoriesPage({ label }: DirectoriesPageProps) {
                     title={step.title}
                     body={step.body}
                     highlightTeal={"highlightTeal" in step && step.highlightTeal}
+                    conceptLabel={"conceptLabel" in step ? step.conceptLabel : undefined}
+                    productName={"productName" in step ? step.productName : undefined}
                   />
                 </div>
               );
@@ -372,21 +376,24 @@ type LifecycleStepCardProps = {
   title: string;
   body: string;
   highlightTeal?: boolean;
+  conceptLabel?: string;
+  productName?: string;
 };
 
-function LifecycleStepCard({ step, title, body, highlightTeal }: LifecycleStepCardProps) {
+function LifecycleStepCard({ step, title, body, highlightTeal, conceptLabel, productName }: LifecycleStepCardProps) {
+  const useConceptLayout = highlightTeal && conceptLabel != null && productName != null;
   return (
     <div
       className={`rounded-2xl border-2 p-5 shadow-sm flex flex-col gap-3 ${
         highlightTeal ? "step-card-highlight" : "bg-white border-gray-200"
       }`}
     >
-      {highlightTeal && (
+      {highlightTeal && conceptLabel != null && (
         <span
           className="text-xs font-bold uppercase tracking-wider mb-1 inline-block w-fit px-2 py-0.5 rounded text-teal"
           style={{ fontFamily: "Montserrat, sans-serif", backgroundColor: "rgba(44,173,178,0.2)" }}
         >
-          Get found & chosen — Listings
+          {conceptLabel.toUpperCase()}
         </span>
       )}
       <span
@@ -402,8 +409,13 @@ function LifecycleStepCard({ step, title, body, highlightTeal }: LifecycleStepCa
         className="text-sm font-semibold"
         style={{ fontFamily: "Montserrat, sans-serif", color: "#24282B" }}
       >
-        {title}
+        {useConceptLayout ? conceptLabel : title}
       </h3>
+      {useConceptLayout && (
+        <p className="text-sm font-medium -mt-1" style={{ fontFamily: "Montserrat, sans-serif", color: "#24282B" }}>
+          {productName}
+        </p>
+      )}
       <p className="text-sm" style={{ fontFamily: "Raleway, sans-serif", color: "#4b5563" }}>
         {body}
       </p>

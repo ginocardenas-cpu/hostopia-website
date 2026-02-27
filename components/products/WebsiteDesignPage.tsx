@@ -339,23 +339,25 @@ export default function WebsiteDesignPage({ label }: WebsiteDesignPageProps) {
             {[
               {
                 step: "01",
-                title: "Build the brand",
+                title: "Build a Brand",
                 body: "Register the domain and set up domain-based email so the SMB looks polished from day one.",
               },
               {
                 step: "02",
-                title: "Get online",
+                title: "Get Online",
                 body: "Attach DIY or DIFM websites using Online Presence Builder or professional design services.",
                 highlightBlue: true,
+                conceptLabel: "Get Online",
+                productName: "Website Design",
               },
               {
                 step: "03",
-                title: "Start selling",
+                title: "Get Found",
                 body: "Layer on Online Store and SSL so SMBs can take payments and sell securely.",
               },
               {
                 step: "04",
-                title: "Get found & chosen",
+                title: "Grow their Business",
                 body: "Upsell directories, SEO assistance, and reviews tools to drive discovery and conversion.",
               },
             ].flatMap((step, index, all) => {
@@ -366,6 +368,8 @@ export default function WebsiteDesignPage({ label }: WebsiteDesignPageProps) {
                     title={step.title}
                     body={step.body}
                     highlightBlue={"highlightBlue" in step && step.highlightBlue}
+                    conceptLabel={"conceptLabel" in step ? step.conceptLabel : undefined}
+                    productName={"productName" in step ? step.productName : undefined}
                   />
                 </div>
               );
@@ -525,19 +529,22 @@ type StepCardProps = {
   title: string;
   body: string;
   highlightBlue?: boolean;
+  conceptLabel?: string;
+  productName?: string;
 };
 
-function StepCard({ step, title, body, highlightBlue }: StepCardProps) {
+function StepCard({ step, title, body, highlightBlue, conceptLabel, productName }: StepCardProps) {
+  const useConceptLayout = highlightBlue && conceptLabel != null && productName != null;
   return (
     <div
       className={`rounded-2xl border-2 p-5 shadow-sm flex flex-col gap-3 ${highlightBlue ? "step-card-highlight-blue" : "bg-white border-gray-200"}`}
     >
-      {highlightBlue && (
+      {highlightBlue && conceptLabel != null && (
         <span
           className="text-xs font-bold uppercase tracking-wider mb-1 inline-block w-fit px-2 py-0.5 rounded"
           style={{ fontFamily: "Montserrat, sans-serif", color: "#1d4ed8", backgroundColor: "rgba(37,99,235,0.2)" }}
         >
-          Start here — DIFM
+          {conceptLabel.toUpperCase()}
         </span>
       )}
       <span
@@ -553,8 +560,13 @@ function StepCard({ step, title, body, highlightBlue }: StepCardProps) {
         className="text-sm font-semibold"
         style={{ fontFamily: "Montserrat, sans-serif", color: "#24282B" }}
       >
-        {title}
+        {useConceptLayout ? conceptLabel : title}
       </h3>
+      {useConceptLayout && (
+        <p className="text-sm font-medium -mt-1" style={{ fontFamily: "Montserrat, sans-serif", color: "#24282B" }}>
+          {productName}
+        </p>
+      )}
       <p className="text-sm" style={{ fontFamily: "Raleway, sans-serif", color: "#4b5563" }}>
         {body}
       </p>

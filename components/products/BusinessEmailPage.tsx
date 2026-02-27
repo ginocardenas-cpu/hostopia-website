@@ -274,23 +274,25 @@ export default function BusinessEmailPage({ label }: BusinessEmailPageProps) {
             {[
               {
                 step: "01",
-                title: "Build the brand",
+                title: "Build a Brand",
                 body: "Pair the domain with professional, domain-based email like sales@mycompany.com to establish a credible identity.",
                 highlightTeal: true,
+                conceptLabel: "Build a Brand",
+                productName: "Business Email",
               },
               {
                 step: "02",
-                title: "Get online",
+                title: "Get Online",
                 body: "Attach hosting and websites so the SMB can promote that brand and capture demand.",
               },
               {
                 step: "03",
-                title: "Start selling",
+                title: "Get Found",
                 body: "Use email to support ecommerce, appointments, and lead follow-up alongside your other digital tools.",
               },
               {
                 step: "04",
-                title: "Grow & nurture",
+                title: "Grow their Business",
                 body: "Layer on marketing, automation, and advanced security to deepen engagement over time.",
               },
             ].flatMap((step, index, all) => {
@@ -301,6 +303,8 @@ export default function BusinessEmailPage({ label }: BusinessEmailPageProps) {
                     title={step.title}
                     body={step.body}
                     highlightTeal={"highlightTeal" in step && step.highlightTeal}
+                    conceptLabel={"conceptLabel" in step ? step.conceptLabel : undefined}
+                    productName={"productName" in step ? step.productName : undefined}
                   />
                 </div>
               );
@@ -435,21 +439,24 @@ type LifecycleStepCardProps = {
   title: string;
   body: string;
   highlightTeal?: boolean;
+  conceptLabel?: string;
+  productName?: string;
 };
 
-function LifecycleStepCard({ step, title, body, highlightTeal }: LifecycleStepCardProps) {
+function LifecycleStepCard({ step, title, body, highlightTeal, conceptLabel, productName }: LifecycleStepCardProps) {
+  const useConceptLayout = highlightTeal && conceptLabel != null && productName != null;
   return (
     <div
       className={`rounded-2xl border-2 p-5 shadow-sm flex flex-col gap-3 ${
         highlightTeal ? "step-card-highlight" : "bg-white border-gray-200"
       }`}
     >
-      {highlightTeal && (
+      {highlightTeal && conceptLabel != null && (
         <span
           className="text-xs font-bold uppercase tracking-wider mb-1 inline-block w-fit px-2 py-0.5 rounded text-teal"
           style={{ fontFamily: "Montserrat, sans-serif", backgroundColor: "rgba(44,173,178,0.2)" }}
         >
-          Build the brand — Email
+          {conceptLabel.toUpperCase()}
         </span>
       )}
       <span
@@ -465,8 +472,13 @@ function LifecycleStepCard({ step, title, body, highlightTeal }: LifecycleStepCa
         className="text-sm font-semibold"
         style={{ fontFamily: "Montserrat, sans-serif", color: "#24282B" }}
       >
-        {title}
+        {useConceptLayout ? conceptLabel : title}
       </h3>
+      {useConceptLayout && (
+        <p className="text-sm font-medium -mt-1" style={{ fontFamily: "Montserrat, sans-serif", color: "#24282B" }}>
+          {productName}
+        </p>
+      )}
       <p className="text-sm" style={{ fontFamily: "Raleway, sans-serif", color: "#4b5563" }}>
         {body}
       </p>

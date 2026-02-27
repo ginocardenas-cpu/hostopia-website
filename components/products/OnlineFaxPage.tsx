@@ -314,24 +314,26 @@ export default function OnlineFaxPage({ label }: OnlineFaxPageProps) {
             {[
               {
                 step: "01",
-                title: "Build the brand",
+                title: "Build a Brand",
                 body: "Establish the SMB identity with domains, logo, and professional email.",
               },
               {
                 step: "02",
-                title: "Get online (cloud fax)",
+                title: "Get Online",
                 body: "Move legacy fax workflows online so documents can be sent and received securely from anywhere.",
-                highlightBlue: true,
               },
               {
                 step: "03",
-                title: "Start selling & servicing",
+                title: "Get Found",
                 body: "Use fax as part of a modern communications stack alongside voice, email, and digital tools.",
               },
               {
                 step: "04",
-                title: "Scale & optimize",
+                title: "Grow their Business",
                 body: "Centralize reporting and administration as the SMB grows locations, teams, and volume.",
+                highlightBlue: true,
+                conceptLabel: "Grow their Business",
+                productName: "Online Fax",
               },
             ].flatMap((step, index, all) => {
               const card = (
@@ -341,6 +343,8 @@ export default function OnlineFaxPage({ label }: OnlineFaxPageProps) {
                     title={step.title}
                     body={step.body}
                     highlightBlue={"highlightBlue" in step && step.highlightBlue}
+                    conceptLabel={"conceptLabel" in step ? step.conceptLabel : undefined}
+                    productName={"productName" in step ? step.productName : undefined}
                   />
                 </div>
               );
@@ -473,21 +477,24 @@ type LifecycleStepCardProps = {
   title: string;
   body: string;
   highlightBlue?: boolean;
+  conceptLabel?: string;
+  productName?: string;
 };
 
-function LifecycleStepCard({ step, title, body, highlightBlue }: LifecycleStepCardProps) {
+function LifecycleStepCard({ step, title, body, highlightBlue, conceptLabel, productName }: LifecycleStepCardProps) {
+  const useConceptLayout = highlightBlue && conceptLabel != null && productName != null;
   return (
     <div
       className={`rounded-2xl border-2 p-5 shadow-sm flex flex-col gap-3 ${
         highlightBlue ? "step-card-highlight-blue" : "bg-white border-gray-200"
       }`}
     >
-      {highlightBlue && (
+      {highlightBlue && conceptLabel != null && (
         <span
           className="text-xs font-bold uppercase tracking-wider mb-1 inline-block w-fit px-2 py-0.5 rounded"
           style={{ fontFamily: "Montserrat, sans-serif", color: "#1d4ed8", backgroundColor: "rgba(37,99,235,0.2)" }}
         >
-          Get online — Online Fax
+          {conceptLabel.toUpperCase()}
         </span>
       )}
       <span
@@ -503,8 +510,13 @@ function LifecycleStepCard({ step, title, body, highlightBlue }: LifecycleStepCa
         className="text-sm font-semibold"
         style={{ fontFamily: "Montserrat, sans-serif", color: "#24282B" }}
       >
-        {title}
+        {useConceptLayout ? conceptLabel : title}
       </h3>
+      {useConceptLayout && (
+        <p className="text-sm font-medium -mt-1" style={{ fontFamily: "Montserrat, sans-serif", color: "#24282B" }}>
+          {productName}
+        </p>
+      )}
       <p className="text-sm" style={{ fontFamily: "Raleway, sans-serif", color: "#4b5563" }}>
         {body}
       </p>

@@ -321,23 +321,25 @@ export default function HostingPage({ label }: HostingPageProps) {
             {[
               {
                 step: "01",
-                title: "Build the brand",
+                title: "Build a Brand",
                 body: "Secure domains, logo, and professional email to define the SMB identity.",
               },
               {
                 step: "02",
-                title: "Get online (hosting)",
+                title: "Get Online",
                 body: "Launch websites and applications on secure, reliable hosting under your brand.",
                 highlightBlue: true,
+                conceptLabel: "Get Online",
+                productName: "Hosting",
               },
               {
                 step: "03",
-                title: "Start selling",
+                title: "Get Found",
                 body: "Use hosting as the foundation for ecommerce and application deployments.",
               },
               {
                 step: "04",
-                title: "Scale & optimize",
+                title: "Grow their Business",
                 body: "Upgrade resources, add sites, and attach additional services as the business grows.",
               },
             ].flatMap((step, index, all) => {
@@ -348,6 +350,8 @@ export default function HostingPage({ label }: HostingPageProps) {
                     title={step.title}
                     body={step.body}
                     highlightBlue={"highlightBlue" in step && step.highlightBlue}
+                    conceptLabel={"conceptLabel" in step ? step.conceptLabel : undefined}
+                    productName={"productName" in step ? step.productName : undefined}
                   />
                 </div>
               );
@@ -487,21 +491,24 @@ type LifecycleStepCardProps = {
   title: string;
   body: string;
   highlightBlue?: boolean;
+  conceptLabel?: string;
+  productName?: string;
 };
 
-function LifecycleStepCard({ step, title, body, highlightBlue }: LifecycleStepCardProps) {
+function LifecycleStepCard({ step, title, body, highlightBlue, conceptLabel, productName }: LifecycleStepCardProps) {
+  const useConceptLayout = highlightBlue && conceptLabel != null && productName != null;
   return (
     <div
       className={`rounded-2xl border-2 p-5 shadow-sm flex flex-col gap-3 ${
         highlightBlue ? "step-card-highlight-blue" : "bg-white border-gray-200"
       }`}
     >
-      {highlightBlue && (
+      {highlightBlue && conceptLabel != null && (
         <span
           className="text-xs font-bold uppercase tracking-wider mb-1 inline-block w-fit px-2 py-0.5 rounded"
           style={{ fontFamily: "Montserrat, sans-serif", color: "#1d4ed8", backgroundColor: "rgba(37,99,235,0.2)" }}
         >
-          Get online — Hosting
+          {conceptLabel.toUpperCase()}
         </span>
       )}
       <span
@@ -517,8 +524,13 @@ function LifecycleStepCard({ step, title, body, highlightBlue }: LifecycleStepCa
         className="text-sm font-semibold"
         style={{ fontFamily: "Montserrat, sans-serif", color: "#24282B" }}
       >
-        {title}
+        {useConceptLayout ? conceptLabel : title}
       </h3>
+      {useConceptLayout && (
+        <p className="text-sm font-medium -mt-1" style={{ fontFamily: "Montserrat, sans-serif", color: "#24282B" }}>
+          {productName}
+        </p>
+      )}
       <p className="text-sm" style={{ fontFamily: "Raleway, sans-serif", color: "#4b5563" }}>
         {body}
       </p>

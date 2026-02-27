@@ -289,24 +289,26 @@ export default function EcommercePage({ label }: EcommercePageProps) {
             {[
               {
                 step: "01",
-                title: "Build the brand",
+                title: "Build a Brand",
                 body: "Establish identity with domains, logo, and professional email.",
               },
               {
                 step: "02",
-                title: "Get online",
+                title: "Get Online",
                 body: "Launch a website with hosting or Online Presence Builder.",
               },
               {
                 step: "03",
-                title: "Start selling",
+                title: "Get Found",
                 body: "Add an online store to take payments, sell goods, services, gift cards, and subscriptions.",
-                highlightGold: true,
               },
               {
                 step: "04",
-                title: "Get found & grow",
+                title: "Grow their Business",
                 body: "Layer on SEO, reputation, and marketing to drive traffic and repeat sales.",
+                highlightGold: true,
+                conceptLabel: "Grow their Business",
+                productName: "Ecommerce",
               },
             ].flatMap((step, index, all) => {
               const card = (
@@ -316,6 +318,8 @@ export default function EcommercePage({ label }: EcommercePageProps) {
                     title={step.title}
                     body={step.body}
                     highlightGold={"highlightGold" in step && step.highlightGold}
+                    conceptLabel={"conceptLabel" in step ? step.conceptLabel : undefined}
+                    productName={"productName" in step ? step.productName : undefined}
                   />
                 </div>
               );
@@ -435,16 +439,19 @@ type LifecycleStepCardProps = {
   title: string;
   body: string;
   highlightGold?: boolean;
+  conceptLabel?: string;
+  productName?: string;
 };
 
-function LifecycleStepCard({ step, title, body, highlightGold }: LifecycleStepCardProps) {
+function LifecycleStepCard({ step, title, body, highlightGold, conceptLabel, productName }: LifecycleStepCardProps) {
+  const useConceptLayout = highlightGold && conceptLabel != null && productName != null;
   return (
     <div
       className={`rounded-2xl border-2 p-5 shadow-sm flex flex-col gap-3 ${
         highlightGold ? "step-card-highlight-gold" : "bg-white border-gray-200"
       }`}
     >
-      {highlightGold && (
+      {highlightGold && conceptLabel != null && (
         <span
           className="text-xs font-bold uppercase tracking-wider mb-1 inline-block w-fit px-2 py-0.5 rounded"
           style={{
@@ -453,7 +460,7 @@ function LifecycleStepCard({ step, title, body, highlightGold }: LifecycleStepCa
             backgroundColor: "rgba(248,207,65,0.3)",
           }}
         >
-          Start selling — Ecommerce
+          {conceptLabel.toUpperCase()}
         </span>
       )}
       <span
@@ -469,8 +476,13 @@ function LifecycleStepCard({ step, title, body, highlightGold }: LifecycleStepCa
         className="text-sm font-semibold"
         style={{ fontFamily: "Montserrat, sans-serif", color: "#24282B" }}
       >
-        {title}
+        {useConceptLayout ? conceptLabel : title}
       </h3>
+      {useConceptLayout && (
+        <p className="text-sm font-medium -mt-1" style={{ fontFamily: "Montserrat, sans-serif", color: "#24282B" }}>
+          {productName}
+        </p>
+      )}
       <p className="text-sm" style={{ fontFamily: "Raleway, sans-serif", color: "#4b5563" }}>
         {body}
       </p>

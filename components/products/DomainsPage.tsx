@@ -235,29 +235,38 @@ export default function DomainsPage({ label }: DomainsPageProps) {
             {[
               {
                 step: "01",
-                title: "Build the brand",
+                title: "Build a Brand",
                 body: "Register the domain and set up domain‑based email so the SMB looks polished from day one.",
                 highlight: true,
+                conceptLabel: "Build a Brand",
+                productName: "Domains",
               },
               {
                 step: "02",
-                title: "Get online",
+                title: "Get Online",
                 body: "Attach DIY or DIFM websites using Online Presence Builder or professional design services.",
               },
               {
                 step: "03",
-                title: "Start selling",
+                title: "Get Found",
                 body: "Layer on Online Store and SSL so SMBs can take payments and sell securely.",
               },
               {
                 step: "04",
-                title: "Get found & chosen",
+                title: "Grow their Business",
                 body: "Upsell directories, SEO assistance, and reviews tools to drive discovery and conversion.",
               },
             ].flatMap((step, index, all) => {
               const card = (
                 <div key={step.step} className="md:flex-1 min-w-0 flex flex-col">
-                  <StepCard step={step.step} title={step.title} body={step.body} highlight={step.highlight} />
+                  <StepCard
+                    step={step.step}
+                    title={step.title}
+                    body={step.body}
+                    highlight={step.highlight}
+                    conceptLabel={"conceptLabel" in step ? step.conceptLabel : undefined}
+                    productName={"productName" in step ? step.productName : undefined}
+                  />
                 </div>
               );
               const arrow =
@@ -421,16 +430,19 @@ type StepCardProps = {
   title: string;
   body: string;
   highlight?: boolean;
+  conceptLabel?: string;
+  productName?: string;
 };
 
-function StepCard({ step, title, body, highlight }: StepCardProps) {
+function StepCard({ step, title, body, highlight, conceptLabel, productName }: StepCardProps) {
+  const useConceptLayout = highlight && conceptLabel != null && productName != null;
   return (
     <div
       className={`rounded-2xl border-2 p-5 shadow-sm flex flex-col gap-3 ${highlight ? "step-card-highlight" : "bg-white border-gray-200"}`}
     >
-      {highlight && (
+      {highlight && conceptLabel != null && (
         <span className="text-xs font-bold uppercase tracking-wider mb-1 inline-block w-fit px-2 py-0.5 rounded text-teal" style={{ fontFamily: "Montserrat, sans-serif", backgroundColor: "rgba(44,173,178,0.25)" }}>
-          Start here — Domains
+          {conceptLabel.toUpperCase()}
         </span>
       )}
       <span
@@ -443,8 +455,13 @@ function StepCard({ step, title, body, highlight }: StepCardProps) {
         className="text-sm font-semibold"
         style={{ fontFamily: "Montserrat, sans-serif", color: "#24282B" }}
       >
-        {title}
+        {useConceptLayout ? conceptLabel : title}
       </h3>
+      {useConceptLayout && (
+        <p className="text-sm font-medium -mt-1" style={{ fontFamily: "Montserrat, sans-serif", color: "#24282B" }}>
+          {productName}
+        </p>
+      )}
       <p className="text-sm" style={{ fontFamily: "Raleway, sans-serif", color: "#4b5563" }}>
         {body}
       </p>
