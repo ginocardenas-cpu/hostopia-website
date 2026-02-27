@@ -1,0 +1,413 @@
+import Link from "next/link";
+import { ArrowRight, MapPin, Search, ListChecks, Globe2, BarChart3 } from "lucide-react";
+
+type DirectoriesPageProps = {
+  label: string;
+};
+
+export default function DirectoriesPage({ label }: DirectoriesPageProps) {
+  return (
+    <main className="pt-24 pb-20">
+      <div className="max-w-7xl mx-auto px-6">
+        {/* Breadcrumb */}
+        <nav className="text-sm text-gray-500 mb-6">
+          <Link href="/" className="hover:text-gray-700">
+            Home
+          </Link>
+          <span className="mx-2">/</span>
+          <Link href="/products" className="hover:text-gray-700">
+            Products
+          </Link>
+          <span className="mx-2">/</span>
+          <span className="text-gray-900">{label}</span>
+        </nav>
+
+        {/* Hero */}
+        <section
+          className="rounded-3xl overflow-hidden mb-16 border border-gray-100"
+          style={{ backgroundColor: "#f7f6f2" }}
+        >
+          <div className="grid md:grid-cols-2 gap-10 p-8 md:p-12 items-center">
+            <div>
+              <div className="flex items-center gap-3 mb-5">
+                <div className="w-8 h-px" style={{ backgroundColor: "#2CADB2" }} />
+                <span className="section-label">OneList Plus by Hostopia</span>
+              </div>
+              <h1
+                className="font-black leading-tight mb-4"
+                style={{
+                  fontFamily: "Montserrat, sans-serif",
+                  fontSize: "clamp(2rem, 3.5vw, 2.75rem)",
+                  color: "#24282B",
+                }}
+              >
+                OneList Plus: White-Label Local Listings Management for Service Providers
+              </h1>
+              <p
+                className="text-base md:text-lg leading-relaxed mb-4"
+                style={{ fontFamily: "Raleway, sans-serif", color: "#555a5e" }}
+              >
+                Turn local presence into predictable retention and recurring revenue.
+              </p>
+              <p
+                className="text-base leading-relaxed mb-6"
+                style={{ fontFamily: "Raleway, sans-serif", color: "#555a5e" }}
+              >
+                Most SMB customers struggle to keep their business information accurate across dozens of online
+                directories—and inconsistent listings directly impact search visibility, customer trust, and foot
+                traffic.
+              </p>
+              <div className="flex flex-wrap gap-3">
+                <Link
+                  href="/contact"
+                  className="inline-flex items-center gap-2 font-bold px-6 py-3 rounded-full text-sm md:text-base transition-all duration-200 hover:scale-105 hover:shadow-lg"
+                  style={{
+                    fontFamily: "Montserrat, sans-serif",
+                    backgroundColor: "#F8CF41",
+                    color: "#24282B",
+                  }}
+                >
+                  Book a demo
+                  <ArrowRight size={16} className="translate-x-0 group-hover:translate-x-1 transition-transform" />
+                </Link>
+                <span
+                  className="inline-flex items-center gap-2 text-xs md:text-sm px-4 py-2 rounded-full border border-gray-200"
+                  style={{ fontFamily: "Raleway, sans-serif", color: "#4b5563" }}
+                >
+                  <MapPin size={16} /> White-label local listings, powered by Hostopia
+                </span>
+              </div>
+            </div>
+
+            {/* Right column: why it matters */}
+            <div className="bg-white/80 rounded-2xl p-6 shadow-sm space-y-5">
+              <h3
+                className="text-sm font-semibold uppercase tracking-[0.2em]"
+                style={{ fontFamily: "Montserrat, sans-serif", color: "#6b7280" }}
+              >
+                Why this matters for your customers
+              </h3>
+              <ul className="space-y-3 text-sm" style={{ fontFamily: "Raleway, sans-serif", color: "#4b5563" }}>
+                <li className="flex gap-3">
+                  <Search size={18} className="mt-1 shrink-0" style={{ color: "#2CADB2" }} />
+                  <span>
+                    <strong>Support local SEO and maps</strong> with accurate listings across major directories and
+                    search engines.
+                  </span>
+                </li>
+                <li className="flex gap-3">
+                  <Globe2 size={18} className="mt-1 shrink-0" style={{ color: "#2CADB2" }} />
+                  <span>
+                    <strong>Boost customer trust</strong> by ensuring consistent business information everywhere SMBs
+                    show up online.
+                  </span>
+                </li>
+                <li className="flex gap-3">
+                  <BarChart3 size={18} className="mt-1 shrink-0" style={{ color: "#2CADB2" }} />
+                  <span>
+                    <strong>Drive more discovery and foot traffic</strong> with always-on visibility in the directories
+                    that matter most.
+                  </span>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </section>
+
+        {/* What you offer */}
+        <section className="mb-16">
+          <SectionHeading eyebrow="What you offer" title="Under your brand" />
+          <p
+            className="text-base leading-relaxed mb-6 max-w-3xl"
+            style={{ fontFamily: "Raleway, sans-serif", color: "#4b5563" }}
+          >
+            Hostopia&apos;s white-label OneList Plus gives you a scalable way to productize local presence management
+            under your own brand. It helps you activate website customers, strengthen search performance, and anchor
+            retention to always-on visibility.
+          </p>
+          <p
+            className="text-sm font-semibold mb-3"
+            style={{ fontFamily: "Montserrat, sans-serif", color: "#24282B" }}
+          >
+            You provide:
+          </p>
+          <ul
+            className="space-y-3 text-sm md:text-base mb-10"
+            style={{ fontFamily: "Raleway, sans-serif", color: "#4b5563" }}
+          >
+            <li className="flex gap-2">
+              <span className="text-teal mt-1">•</span>
+              <span>A branded listings dashboard with single sign-on.</span>
+            </li>
+            <li className="flex gap-2">
+              <span className="text-teal mt-1">•</span>
+              <span>Automated business data distribution across top directories and search platforms.</span>
+            </li>
+            <li className="flex gap-2">
+              <span className="text-teal mt-1">•</span>
+              <span>Centralized management of business info, hours, categories, and descriptions.</span>
+            </li>
+            <li className="flex gap-2">
+              <span className="text-teal mt-1">•</span>
+              <span>Monthly visibility reports showing listing status and reach.</span>
+            </li>
+          </ul>
+        </section>
+
+        {/* Key features */}
+        <section className="mb-16">
+          <SectionHeading eyebrow="Product capabilities" title="Key features of OneList Plus" />
+          <p
+            className="text-base leading-relaxed mb-8 max-w-3xl"
+            style={{ fontFamily: "Raleway, sans-serif", color: "#4b5563" }}
+          >
+            OneList Plus is built for scale and operational simplicity, giving you a turnkey listings solution.
+          </p>
+          <div className="grid md:grid-cols-3 gap-6">
+            <FeatureColumn
+              title="Directory coverage"
+              points={[
+                "Distribution to major directories including Google, Bing, Facebook, Yelp, and more.",
+                "Coverage across search engines, maps, and key local discovery platforms.",
+              ]}
+            />
+            <FeatureColumn
+              title="Data accuracy"
+              points={[
+                "Continuous sync to keep business data accurate everywhere.",
+                "Duplicate suppression and listing correction from a single source of truth.",
+              ]}
+            />
+            <FeatureColumn
+              title="Operational simplicity"
+              points={[
+                "Centralized updates from a single dashboard.",
+                "Automated reporting on listing health and reach.",
+              ]}
+            />
+          </div>
+        </section>
+
+        {/* Partner advantage */}
+        <section className="mb-16">
+          <SectionHeading eyebrow="The partner advantage" title="Recurring revenue from local presence" />
+          <p
+            className="text-base leading-relaxed mb-6 max-w-3xl"
+            style={{ fontFamily: "Raleway, sans-serif", color: "#4b5563" }}
+          >
+            OneList Plus gives you an easy-entry digital product that naturally drives attachment to SEO, reputation,
+            and website services.
+          </p>
+          <ul
+            className="space-y-3 text-sm md:text-base max-w-3xl"
+            style={{ fontFamily: "Raleway, sans-serif", color: "#4b5563" }}
+          >
+            <li className="flex gap-2">
+              <span className="text-teal mt-1">•</span>
+              <span>Monetize local presence as a recurring subscription.</span>
+            </li>
+            <li className="flex gap-2">
+              <span className="text-teal mt-1">•</span>
+              <span>Improve churn by tying your value to always-on visibility.</span>
+            </li>
+            <li className="flex gap-2">
+              <span className="text-teal mt-1">•</span>
+              <span>Position your brand as a growth partner—not just a connectivity provider.</span>
+            </li>
+          </ul>
+        </section>
+
+        {/* Lifecycle fit: highlight Get found & chosen */}
+        <section className="mb-16">
+          <SectionHeading eyebrow="Lifecycle fit" title="How OneList Plus helps SMBs get found and chosen" />
+          <p
+            className="text-base leading-relaxed mb-8 max-w-3xl"
+            style={{ fontFamily: "Raleway, sans-serif", color: "#4b5563" }}
+          >
+            Listings sit at the &quot;get found and chosen&quot; stage—turning your brand and web presence into real
+            local discovery and inbound demand.
+          </p>
+          <div className="flex flex-col gap-4 md:flex-row md:items-stretch md:gap-0">
+            {[
+              {
+                step: "01",
+                title: "Build the brand",
+                body: "Establish a credible identity with logo, domain, and professional email.",
+              },
+              {
+                step: "02",
+                title: "Get online",
+                body: "Launch websites and landing pages that tell the SMB's story.",
+              },
+              {
+                step: "03",
+                title: "Start selling",
+                body: "Enable ecommerce, bookings, and lead capture so customers can take action.",
+              },
+              {
+                step: "04",
+                title: "Get found & chosen",
+                body: "Use OneList Plus to keep listings accurate everywhere so customers can find—and choose—them.",
+                highlightTeal: true,
+              },
+            ].flatMap((step, index, all) => {
+              const card = (
+                <div key={step.step} className="md:flex-1 min-w-0 flex flex-col">
+                  <LifecycleStepCard
+                    step={step.step}
+                    title={step.title}
+                    body={step.body}
+                    highlightTeal={"highlightTeal" in step && step.highlightTeal}
+                  />
+                </div>
+              );
+              const arrow =
+                index < all.length - 1 ? (
+                  <div
+                    key={`arrow-${step.step}`}
+                    className="flex shrink-0 items-center justify-center w-8 min-w-8"
+                  >
+                    <ArrowRight className="w-7 h-7 shrink-0 text-teal" style={{ color: "#2CADB2" }} aria-hidden />
+                  </div>
+                ) : null;
+              return arrow ? [card, arrow] : [card];
+            })}
+          </div>
+        </section>
+
+        {/* Easy to launch and scale */}
+        <section className="mb-16">
+          <SectionHeading eyebrow="Operations" title="Easy to launch and scale" />
+          <p
+            className="text-base leading-relaxed mb-6 max-w-3xl"
+            style={{ fontFamily: "Raleway, sans-serif", color: "#4b5563" }}
+          >
+            OneList Plus is delivered through Hostopia&apos;s white-label platform with automated provisioning and
+            reporting—no directory relationships or manual fulfillment required.
+          </p>
+          <p
+            className="text-base leading-relaxed mb-6 max-w-3xl"
+            style={{ fontFamily: "Raleway, sans-serif", color: "#4b5563" }}
+          >
+            Your teams focus on packaging and sales while the platform handles synchronization and updates at scale.
+          </p>
+        </section>
+
+        {/* CTA */}
+        <section className="mb-10">
+          <div className="rounded-3xl p-8 md:p-10 text-white" style={{ backgroundColor: "#24282B" }}>
+            <h3
+              className="text-xl md:text-2xl font-bold mb-4"
+              style={{ fontFamily: "Montserrat, sans-serif", color: "#ffffff" }}
+            >
+              Ready to operationalize local presence at scale?
+            </h3>
+            <p
+              className="text-sm md:text-base mb-6 max-w-2xl"
+              style={{ fontFamily: "Raleway, sans-serif", color: "#d1d5db" }}
+            >
+              Connect with Hostopia to launch OneList Plus under your brand and transform listings into a recurring
+              revenue stream. Schedule a demo or talk to Partner Success to see how OneList Plus can drive activation,
+              ARPU, and retention across your SMB base.
+            </p>
+            <Link
+              href="/contact"
+              className="inline-flex items-center gap-2 font-semibold px-5 py-3 rounded-full text-sm md:text-base transition-all duration-200 hover:scale-105"
+              style={{ backgroundColor: "#F8CF41", color: "#24282B", fontFamily: "Montserrat, sans-serif" }}
+            >
+              Book a demo
+              <ArrowRight size={16} />
+            </Link>
+          </div>
+        </section>
+      </div>
+    </main>
+  );
+}
+
+type SectionHeadingProps = { eyebrow: string; title: string };
+
+function SectionHeading({ eyebrow, title }: SectionHeadingProps) {
+  return (
+    <div className="mb-8">
+      <div className="flex items-center gap-3 mb-3">
+        <div className="w-8 h-px" style={{ backgroundColor: "#2CADB2" }} />
+        <span className="section-label">{eyebrow}</span>
+      </div>
+      <h2
+        className="font-black"
+        style={{ fontFamily: "Montserrat, sans-serif", fontSize: "1.6rem", color: "#24282B" }}
+      >
+        {title}
+      </h2>
+    </div>
+  );
+}
+
+type FeatureColumnProps = { title: string; points: string[] };
+
+function FeatureColumn({ title, points }: FeatureColumnProps) {
+  return (
+    <div className="bg-white rounded-2xl border border-gray-100 p-6 shadow-sm">
+      <h3
+        className="text-sm font-semibold mb-3"
+        style={{ fontFamily: "Montserrat, sans-serif", color: "#24282B" }}
+      >
+        {title}
+      </h3>
+      <ul className="space-y-2 text-sm" style={{ fontFamily: "Raleway, sans-serif", color: "#4b5563" }}>
+        {points.map((point) => (
+          <li key={point.slice(0, 40)} className="flex gap-2">
+            <span className="text-teal mt-1">•</span>
+            <span>{point}</span>
+          </li>
+        ))}
+      </ul>
+    </div>
+  );
+}
+
+type LifecycleStepCardProps = {
+  step: string;
+  title: string;
+  body: string;
+  highlightTeal?: boolean;
+};
+
+function LifecycleStepCard({ step, title, body, highlightTeal }: LifecycleStepCardProps) {
+  return (
+    <div
+      className={`rounded-2xl border-2 p-5 shadow-sm flex flex-col gap-3 ${
+        highlightTeal ? "step-card-highlight" : "bg-white border-gray-200"
+      }`}
+    >
+      {highlightTeal && (
+        <span
+          className="text-xs font-bold uppercase tracking-wider mb-1 inline-block w-fit px-2 py-0.5 rounded text-teal"
+          style={{ fontFamily: "Montserrat, sans-serif", backgroundColor: "rgba(44,173,178,0.2)" }}
+        >
+          Get found & chosen — Listings
+        </span>
+      )}
+      <span
+        className="text-xs font-bold uppercase tracking-[0.25em]"
+        style={{
+          fontFamily: "Montserrat, sans-serif",
+          color: highlightTeal ? "#2CADB2" : "#9ca3af",
+        }}
+      >
+        {step}
+      </span>
+      <h3
+        className="text-sm font-semibold"
+        style={{ fontFamily: "Montserrat, sans-serif", color: "#24282B" }}
+      >
+        {title}
+      </h3>
+      <p className="text-sm" style={{ fontFamily: "Raleway, sans-serif", color: "#4b5563" }}>
+        {body}
+      </p>
+    </div>
+  );
+}
+

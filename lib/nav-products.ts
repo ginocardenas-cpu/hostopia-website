@@ -30,7 +30,7 @@ export const productsDropdownSections = [
     links: [
       { label: "Ecommerce", href: "/products/ecommerce", slug: "ecommerce" },
       { label: "Custom Website Development", href: "/products/custom-website-development", slug: "custom-website-development" },
-      { label: "Digital Fax", href: "/products/digital-fax", slug: "digital-fax" },
+      { label: "Online Fax", href: "/products/digital-fax", slug: "digital-fax" },
     ],
   },
 ] as const;

@@ -70,7 +70,7 @@ export default function Navbar() {
         </Link>
 
         {/* Desktop Nav */}
-        <div className="hidden md:flex items-center gap-1">
+        <div className="hidden md:flex items-center gap-8">
           {/* Products dropdown */}
           <div className="relative" ref={productsRef}>
             <button
