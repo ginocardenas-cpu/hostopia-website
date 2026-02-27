@@ -128,7 +128,7 @@ export default function ResourcesPage() {
             </div>
 
             {/* Hostopia Product Guide + image & download */}
-            <div className="grid lg:grid-cols-2 gap-12 items-start">
+            <div className="grid lg:grid-cols-2 gap-12 items-center">
               <div>
                 <div
                   className="w-12 h-12 rounded-2xl flex items-center justify-center mb-6"
@@ -149,37 +149,39 @@ export default function ResourcesPage() {
                   See how Hostopia&apos;s platforms and solutions help you launch new services, increase ARPU, and create sustainable recurring revenue. Our product guide provides a clear overview of our digital experience, commerce, and customer lifecycle capabilities designed to power your business and support long-term growth.
                 </p>
                 <p
-                  className="text-sm mb-6"
+                  className="text-sm"
                   style={{ fontFamily: "Raleway, sans-serif", color: "#6b7280" }}
                 >
                   Complete the form to receive your copy and discover how to unlock new revenue streams.
                 </p>
               </div>
-              <div
-                className="rounded-2xl overflow-hidden border-2 shadow-lg"
-                style={{ borderColor: "#e5e7eb", backgroundColor: "#ffffff" }}
-              >
-                <div className="relative aspect-[3/4] min-h-[280px] bg-[#24282B]">
-                  <Image
-                    src="/images/product-guide-2026.png"
-                    alt="Hostopia Product Guide 2026"
-                    fill
-                    className="object-contain object-center p-4"
-                    sizes="(max-width: 1024px) 100vw, 50vw"
-                    priority={false}
-                  />
-                </div>
+              <div className="flex justify-center lg:justify-start">
                 <div
-                  className="p-6 md:p-8 border-t border-gray-200"
-                  style={{ backgroundColor: "#fafafa" }}
+                  className="w-full max-w-[280px] rounded-2xl overflow-hidden border-2 shadow-lg"
+                  style={{ borderColor: "#e5e7eb", backgroundColor: "#ffffff" }}
                 >
-                  <h3
-                    className="font-bold text-lg mb-4"
-                    style={{ fontFamily: "Montserrat, sans-serif", color: "#24282B" }}
+                  <div className="relative w-full bg-[#24282B]" style={{ height: "160px" }}>
+                    <Image
+                      src="/images/product-guide-2026.png"
+                      alt="Hostopia Product Guide 2026"
+                      fill
+                      className="object-contain object-center p-2"
+                      sizes="280px"
+                      priority={false}
+                    />
+                  </div>
+                  <div
+                    className="p-4 border-t border-gray-200"
+                    style={{ backgroundColor: "#fafafa" }}
                   >
-                    Download the Product Guide
-                  </h3>
-                  <ProductGuideForm />
+                    <h3
+                      className="font-bold text-sm mb-3"
+                      style={{ fontFamily: "Montserrat, sans-serif", color: "#24282B" }}
+                    >
+                      Download the Product Guide
+                    </h3>
+                    <ProductGuideForm />
+                  </div>
                 </div>
               </div>
             </div>
