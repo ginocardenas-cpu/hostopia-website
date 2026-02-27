@@ -1,0 +1,11 @@
+---
+description: Single Hostopia site — this repo is the only one to edit; live on Vercel
+alwaysApply: true
+---
+
+# Hostopia website — single project
+
+- **This codebase is the only Hostopia site** to edit and work on. Do not suggest or create alternate projects.
+- **Live / preview URL:** https://hostopia-website-2-jhmfeodju-ginos-projects-21427f6a.vercel.app
+- **Git remote:** https://github.com/rollen77-spec/hostopia-website (origin)
+- All edits, features, and fixes should be made here so they deploy to the Vercel URL above.

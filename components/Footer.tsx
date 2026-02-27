@@ -1,4 +1,5 @@
-import { Mail, Linkedin, Twitter } from "lucide-react";
+import Image from "next/image";
+import { Linkedin, Facebook, Twitter } from "lucide-react";
 
 const footerLinks = {
   Solutions: ["Business Email", "Website Builder", "Ecommerce", "Digital Marketing", "Bilingual Support", "Migrations"],
@@ -18,10 +19,13 @@ export default function Footer() {
           {/* Brand */}
           <div className="max-w-xs">
             <div className="flex items-center gap-2.5 mb-5">
-              <img
+              <Image
                 src="/logo.png"
                 alt="Hostopia — A HostPapa Company"
-                className="h-11 w-auto max-w-[220px] object-contain"
+                width={165}
+                height={45}
+                className="h-8 w-auto max-w-[165px] object-contain"
+                unoptimized
               />
             </div>
             <p
@@ -33,15 +37,17 @@ export default function Footer() {
             </p>
             <div className="flex gap-3">
               {[
-                { icon: Linkedin, label: "LinkedIn" },
-                { icon: Twitter, label: "Twitter" },
-                { icon: Mail, label: "Email", href: "mailto:partners@hostopia.com" },
+                { icon: Linkedin, label: "LinkedIn", href: "https://www.linkedin.com/company/hostopia" },
+                { icon: Facebook, label: "Facebook", href: "https://www.facebook.com/hostopia" },
+                { icon: Twitter, label: "X", href: "https://x.com/hostopia" },
               ].map(({ icon: Icon, label, href }) => (
                 <a
                   key={label}
-                  href={href || "#"}
+                  href={href}
                   aria-label={label}
-                  className="w-9 h-9 rounded-lg flex items-center justify-center transition-colors duration-200"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="w-9 h-9 rounded-lg flex items-center justify-center transition-colors duration-200 hover:bg-white/15"
                   style={{ backgroundColor: "rgba(255,255,255,0.08)" }}
                 >
                   <Icon size={15} style={{ color: "#9ca3af" }} />
