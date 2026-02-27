@@ -20,8 +20,8 @@ export default function Footer() {
             <div className="flex items-center gap-2.5 mb-5">
               <img
                 src="/logo.png"
-                alt="Hostopia"
-                className="h-10 w-auto max-w-[180px] object-contain"
+                alt="Hostopia — A HostPapa Company"
+                className="h-11 w-auto max-w-[220px] object-contain"
               />
             </div>
             <p

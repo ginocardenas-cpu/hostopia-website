@@ -33,8 +33,8 @@ export default function Navbar() {
         <a href="/" className="flex items-center gap-2.5 shrink-0">
           <img
             src="/logo.png"
-            alt="Hostopia"
-            className="h-10 min-h-[40px] w-auto max-w-[180px] object-contain object-left"
+            alt="Hostopia — A HostPapa Company"
+            className="h-11 min-h-[44px] w-auto max-w-[220px] object-contain object-left"
           />
         </a>
 
