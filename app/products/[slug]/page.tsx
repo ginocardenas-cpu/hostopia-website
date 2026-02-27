@@ -10,6 +10,9 @@ import LogoDesignPage from "@/components/products/LogoDesignPage";
 import DirectoriesPage from "@/components/products/DirectoriesPage";
 import OnlineFaxPage from "@/components/products/OnlineFaxPage";
 import ReputationManagementPage from "@/components/products/ReputationManagementPage";
+import HostingPage from "@/components/products/HostingPage";
+import WebsiteBuilderPage from "@/components/products/WebsiteBuilderPage";
+import EcommercePage from "@/components/products/EcommercePage";
 
 type Props = { params: { slug: string } };
 
@@ -58,6 +61,32 @@ const productMeta: Record<
       "HTTPS encryption",
       "PCI compliance SSL",
       "managed SSL platform",
+    ],
+  },
+  hosting: {
+    title: "White-Label Website Hosting for SMBs | Hostopia",
+    description:
+      "Deliver secure, scalable website hosting under your brand. Support both SMB SaaS users and technical developers with Hostopia’s white-label hosting platform.",
+    keywords: [
+      "white-label website hosting",
+      "reseller hosting platform",
+      "SMB web hosting",
+      "hosting for telecom partners",
+      "managed website hosting",
+      "multi-site hosting for agencies",
+    ],
+  },
+  "website-builder": {
+    title: "Online Presence Builder & Hosting | White-Label Website Platform for Service Providers",
+    description:
+      "Launch AI-powered websites and hosting under your brand. Hostopia's Online Presence Builder helps telcos, ISPs, and MSPs activate SMBs, increase digital revenue, and scale web services without operational complexity.",
+    keywords: [
+      "white-label website builder and hosting",
+      "AI website builder for SMBs",
+      "managed website hosting for service providers",
+      "SMB website platform",
+      "white-label web hosting",
+      "small business website software",
     ],
   },
   "business-email": {
@@ -112,6 +141,20 @@ const productMeta: Record<
       "white-label reviews solution",
     ],
   },
+  ecommerce: {
+    title: "White-Label Ecommerce & Online Store Platform for SMBs | Hostopia",
+    description:
+      "Offer a fully featured online store builder under your brand. Help SMBs sell online with Hostopia's white-label ecommerce platform, integrated into your existing web and hosting portfolio.",
+    keywords: [
+      "white-label ecommerce platform",
+      "Online Store for SMBs",
+      "reseller ecommerce solution",
+      "white-label ecommerce offering",
+      "SMB online store builder",
+      "private-label online store",
+      "ecommerce for telecom partners",
+    ],
+  },
   "digital-fax": {
     title: "White-Label Online Fax for SMBs | Hostopia",
     description:
@@ -155,6 +198,12 @@ export default function ProductSlugPage({ params }: Props) {
   if (slug === "ssl") {
     return <SslPage label={label} />;
   }
+  if (slug === "hosting") {
+    return <HostingPage label={label} />;
+  }
+  if (slug === "website-builder") {
+    return <WebsiteBuilderPage label={label} />;
+  }
   if (slug === "business-email") {
     return <BusinessEmailPage label={label} />;
   }
@@ -169,6 +218,9 @@ export default function ProductSlugPage({ params }: Props) {
   }
   if (slug === "reputation-management") {
     return <ReputationManagementPage label={label} />;
+  }
+  if (slug === "ecommerce") {
+    return <EcommercePage label={label} />;
   }
 
   // Default layout for other products until they are built out

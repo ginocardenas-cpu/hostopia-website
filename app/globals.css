@@ -73,6 +73,11 @@ h1, h2, h3, h4, h5, h6 {
     border: 2px solid #2563eb !important;
   }
 
+  .step-card-highlight-gold {
+    background-color: rgba(248, 207, 65, 0.18) !important;
+    border: 2px solid #e0b82a !important;
+  }
+
   .teal-underline {
     text-decoration: underline;
     text-decoration-color: #2CADB2;
