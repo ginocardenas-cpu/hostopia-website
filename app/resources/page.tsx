@@ -90,8 +90,16 @@ export default function ResourcesPage() {
             </div>
 
             {/* Hostopia Blog */}
-            <div className="grid lg:grid-cols-2 gap-12 items-start">
-              <div className="order-2 lg:order-1 rounded-2xl p-8 lg:p-10" style={{ backgroundColor: "#fef9e6" }} />
+            <div className="grid lg:grid-cols-2 gap-12 items-center">
+              <div className="order-2 lg:order-1 relative rounded-2xl overflow-hidden aspect-[4/3] bg-gray-100">
+                <Image
+                  src="/images/blog.png"
+                  alt="Person at laptop engaging with blog content"
+                  fill
+                  className="object-cover object-center"
+                  sizes="(max-width: 1024px) 100vw, 50vw"
+                />
+              </div>
               <div className="order-1 lg:order-2">
                 <div
                   className="w-12 h-12 rounded-2xl flex items-center justify-center mb-6"
