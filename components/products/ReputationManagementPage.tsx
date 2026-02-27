@@ -1,4 +1,5 @@
 import Link from "next/link";
+import Image from "next/image";
 import { ArrowRight, Star, MessageCircle, ShieldCheck, Megaphone } from "lucide-react";
 
 type ReputationManagementPageProps = {
@@ -156,30 +157,43 @@ export default function ReputationManagementPage({ label }: ReputationManagement
         {/* Partner advantage */}
         <section className="mb-16">
           <SectionHeading eyebrow="The partner advantage" title="From being seen to being selected" />
-          <p
-            className="text-base leading-relaxed mb-6 max-w-3xl"
-            style={{ fontFamily: "Raleway, sans-serif", color: "#4b5563" }}
-          >
-            Reputation Management builds on local presence and websites to help SMBs stand out when customers compare
-            options side by side.
-          </p>
-          <ul
-            className="space-y-3 text-sm md:text-base max-w-3xl"
-            style={{ fontFamily: "Raleway, sans-serif", color: "#4b5563" }}
-          >
-            <li className="flex gap-2">
-              <span className="text-teal mt-1">•</span>
-              <span>Bundle reputation with websites, listings, and SEO to grow ARPU.</span>
-            </li>
-            <li className="flex gap-2">
-              <span className="text-teal mt-1">•</span>
-              <span>Reduce churn by tying your value to real customer outcomes and reviews.</span>
-            </li>
-            <li className="flex gap-2">
-              <span className="text-teal mt-1">•</span>
-              <span>Position your brand as a growth advisor, not just an infrastructure provider.</span>
-            </li>
-          </ul>
+          <div className="grid md:grid-cols-2 gap-10 items-center">
+            <div>
+              <p
+                className="text-base leading-relaxed mb-6"
+                style={{ fontFamily: "Raleway, sans-serif", color: "#4b5563" }}
+              >
+                Reputation Management builds on local presence and websites to help SMBs stand out when customers compare
+                options side by side.
+              </p>
+              <ul
+                className="space-y-3 text-sm md:text-base"
+                style={{ fontFamily: "Raleway, sans-serif", color: "#4b5563" }}
+              >
+                <li className="flex gap-2">
+                  <span className="text-teal mt-1">•</span>
+                  <span>Bundle reputation with websites, listings, and SEO to grow ARPU.</span>
+                </li>
+                <li className="flex gap-2">
+                  <span className="text-teal mt-1">•</span>
+                  <span>Reduce churn by tying your value to real customer outcomes and reviews.</span>
+                </li>
+                <li className="flex gap-2">
+                  <span className="text-teal mt-1">•</span>
+                  <span>Position your brand as a growth advisor, not just an infrastructure provider.</span>
+                </li>
+              </ul>
+            </div>
+            <div className="relative rounded-2xl overflow-hidden border border-gray-100 shadow-lg aspect-[4/3] bg-gray-50">
+              <Image
+                src="/images/reputation-management-hero.png"
+                alt="Team representing reputation and reach: reviews, ratings, location, and global presence"
+                fill
+                className="object-cover object-center"
+                sizes="(max-width: 768px) 100vw, 50vw"
+              />
+            </div>
+          </div>
         </section>
 
         {/* Lifecycle fit: highlight Get found & chosen */}
