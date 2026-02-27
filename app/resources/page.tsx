@@ -155,31 +155,28 @@ export default function ResourcesPage() {
                   Complete the form to receive your copy and discover how to unlock new revenue streams.
                 </p>
               </div>
-              <div className="flex justify-center lg:justify-start">
+              <div className="grid grid-cols-1 sm:grid-cols-[1fr_1fr] gap-6 items-stretch max-w-2xl">
+                <div className="relative rounded-2xl overflow-hidden border-2 shadow-lg bg-[#24282B] min-h-[280px] sm:min-h-[320px]">
+                  <Image
+                    src="/images/product-guide-2026.png"
+                    alt="Hostopia Product Guide 2026"
+                    fill
+                    className="object-contain object-center p-4"
+                    sizes="(max-width: 640px) 100vw, 320px"
+                    priority={false}
+                  />
+                </div>
                 <div
-                  className="w-full max-w-[280px] rounded-2xl overflow-hidden border-2 shadow-lg"
-                  style={{ borderColor: "#e5e7eb", backgroundColor: "#ffffff" }}
+                  className="rounded-2xl border-2 shadow-lg flex flex-col min-h-[280px] sm:min-h-[320px]"
+                  style={{ borderColor: "#e5e7eb", backgroundColor: "#fafafa" }}
                 >
-                  <div className="relative w-full bg-[#24282B]" style={{ height: "160px" }}>
-                    <Image
-                      src="/images/product-guide-2026.png"
-                      alt="Hostopia Product Guide 2026"
-                      fill
-                      className="object-contain object-center p-2"
-                      sizes="280px"
-                      priority={false}
-                    />
-                  </div>
-                  <div
-                    className="p-4 border-t border-gray-200"
-                    style={{ backgroundColor: "#fafafa" }}
+                  <h3
+                    className="font-bold text-lg pt-6 px-6 pb-2 shrink-0"
+                    style={{ fontFamily: "Montserrat, sans-serif", color: "#24282B" }}
                   >
-                    <h3
-                      className="font-bold text-sm mb-3"
-                      style={{ fontFamily: "Montserrat, sans-serif", color: "#24282B" }}
-                    >
-                      Download the Product Guide
-                    </h3>
+                    Download the Product Guide
+                  </h3>
+                  <div className="flex-1 px-6 pb-6 flex flex-col justify-center">
                     <ProductGuideForm />
                   </div>
                 </div>
