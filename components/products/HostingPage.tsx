@@ -1,4 +1,5 @@
 import Link from "next/link";
+import Image from "next/image";
 import { ArrowRight, Server, Layers, Globe2, SlidersHorizontal } from "lucide-react";
 
 type HostingPageProps = {
@@ -248,34 +249,47 @@ export default function HostingPage({ label }: HostingPageProps) {
         {/* Partner advantage */}
         <section className="mb-16">
           <SectionHeading eyebrow="The partner advantage" title="Strengthen your infrastructure portfolio" />
-          <p
-            className="text-base leading-relaxed mb-6 max-w-3xl"
-            style={{ fontFamily: "Raleway, sans-serif", color: "#4b5563" }}
-          >
-            Website Hosting reinforces your role beyond connectivity by anchoring customers on your infrastructure
-            layer.
-          </p>
-          <ul
-            className="space-y-3 text-sm md:text-base max-w-3xl"
-            style={{ fontFamily: "Raleway, sans-serif", color: "#4b5563" }}
-          >
-            <li className="flex gap-2">
-              <span className="text-teal mt-1">•</span>
-              <span>Serve both SaaS-focused SMBs and technically advanced users.</span>
-            </li>
-            <li className="flex gap-2">
-              <span className="text-teal mt-1">•</span>
-              <span>Expand recurring revenue through tiered hosting plans and add-ons.</span>
-            </li>
-            <li className="flex gap-2">
-              <span className="text-teal mt-1">•</span>
-              <span>Increase attachment by bundling domains, SSL, and email with hosting.</span>
-            </li>
-            <li className="flex gap-2">
-              <span className="text-teal mt-1">•</span>
-              <span>Retain agencies and developers managing multiple client environments.</span>
-            </li>
-          </ul>
+          <div className="grid md:grid-cols-2 gap-10 items-start">
+            <div>
+              <p
+                className="text-base leading-relaxed mb-6"
+                style={{ fontFamily: "Raleway, sans-serif", color: "#4b5563" }}
+              >
+                Website Hosting reinforces your role beyond connectivity by anchoring customers on your infrastructure
+                layer.
+              </p>
+              <ul
+                className="space-y-3 text-sm md:text-base"
+                style={{ fontFamily: "Raleway, sans-serif", color: "#4b5563" }}
+              >
+                <li className="flex gap-2">
+                  <span className="text-teal mt-1">•</span>
+                  <span>Serve both SaaS-focused SMBs and technically advanced users.</span>
+                </li>
+                <li className="flex gap-2">
+                  <span className="text-teal mt-1">•</span>
+                  <span>Expand recurring revenue through tiered hosting plans and add-ons.</span>
+                </li>
+                <li className="flex gap-2">
+                  <span className="text-teal mt-1">•</span>
+                  <span>Increase attachment by bundling domains, SSL, and email with hosting.</span>
+                </li>
+                <li className="flex gap-2">
+                  <span className="text-teal mt-1">•</span>
+                  <span>Retain agencies and developers managing multiple client environments.</span>
+                </li>
+              </ul>
+            </div>
+            <div className="relative rounded-2xl overflow-hidden border border-gray-100 shadow-lg w-full bg-gray-50 h-[280px] md:h-[320px]">
+              <Image
+                src="/images/hosting-hero.png"
+                alt="Professional in a server room with laptop—hosting and infrastructure"
+                fill
+                className="object-cover object-center"
+                sizes="(max-width: 768px) 100vw, 50vw"
+              />
+            </div>
+          </div>
         </section>
 
         {/* Ideal customers */}

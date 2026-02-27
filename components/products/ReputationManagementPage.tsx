@@ -157,7 +157,7 @@ export default function ReputationManagementPage({ label }: ReputationManagement
         {/* Partner advantage */}
         <section className="mb-16">
           <SectionHeading eyebrow="The partner advantage" title="From being seen to being selected" />
-          <div className="grid md:grid-cols-2 gap-10 items-center">
+          <div className="grid md:grid-cols-2 gap-10 items-start">
             <div>
               <p
                 className="text-base leading-relaxed mb-6"
@@ -184,7 +184,7 @@ export default function ReputationManagementPage({ label }: ReputationManagement
                 </li>
               </ul>
             </div>
-            <div className="relative rounded-2xl overflow-hidden border border-gray-100 shadow-lg aspect-[4/3] bg-gray-50">
+            <div className="relative rounded-2xl overflow-hidden border border-gray-100 shadow-lg w-full bg-gray-50 h-[280px] md:h-[320px]">
               <Image
                 src="/images/reputation-management-hero.png"
                 alt="Team representing reputation and reach: reviews, ratings, location, and global presence"
