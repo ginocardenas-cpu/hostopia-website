@@ -156,7 +156,7 @@ export default function ResourcesPage() {
                 </p>
               </div>
               <div className="grid grid-cols-1 sm:grid-cols-[1fr_1fr] gap-6 items-stretch max-w-2xl">
-                <div className="relative rounded-2xl overflow-hidden border-2 shadow-lg bg-[#24282B] min-h-[280px] sm:min-h-[320px]">
+                <div className="relative rounded-2xl overflow-hidden border-2 shadow-lg bg-[#24282B] min-h-[320px] sm:min-h-[420px]">
                   <Image
                     src="/images/product-guide-2026.png"
                     alt="Hostopia Product Guide 2026"
@@ -167,7 +167,7 @@ export default function ResourcesPage() {
                   />
                 </div>
                 <div
-                  className="rounded-2xl border-2 shadow-lg flex flex-col min-h-[280px] sm:min-h-[320px]"
+                  className="rounded-2xl border-2 shadow-lg flex flex-col min-h-[320px] sm:min-h-[420px]"
                   style={{ borderColor: "#e5e7eb", backgroundColor: "#fafafa" }}
                 >
                   <h3
