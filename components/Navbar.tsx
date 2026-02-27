@@ -86,32 +86,43 @@ export default function Navbar() {
               <ChevronDown className={`w-4 h-4 transition-transform ${productsOpen ? "rotate-180" : ""}`} />
             </button>
             {productsOpen && (
-              <div className="absolute left-0 top-full pt-1 min-w-[280px]">
-                <div className="bg-white border border-gray-100 rounded-lg shadow-lg py-3 px-2">
-                  <p className="text-xs font-bold uppercase tracking-wider text-gray-400 px-3 pb-2 mb-2 border-b border-gray-100" style={{ fontFamily: "Montserrat, sans-serif" }}>
-                    Help your customers
-                  </p>
-                  {productsDropdownSections.map((section) => (
-                    <div key={section.heading} className="mb-3 last:mb-0">
-                      <p className="text-xs font-semibold text-gray-500 px-3 py-1" style={{ fontFamily: "Montserrat, sans-serif" }}>
-                        {section.heading}
-                      </p>
-                      {section.links.map((link) => (
-                        <Link
-                          key={link.href}
-                          href={link.href}
-                          className="block text-sm py-1.5 px-3 rounded hover:bg-gray-50 transition-colors"
-                          style={{ fontFamily: "Raleway, sans-serif", color: "#24282B" }}
-                          onClick={() => setProductsOpen(false)}
-                        >
-                          {link.label}
-                        </Link>
-                      ))}
-                    </div>
-                  ))}
-                </div>
-              </div>
-            )}
+  <div className="absolute left-0 top-full pt-1 min-w-[640px]">
+    <div className="bg-white border border-gray-100 rounded-lg shadow-lg py-4 px-4">
+      <p
+        className="text-xs font-bold uppercase tracking-wider text-gray-400 pb-3 mb-3 border-b border-gray-100"
+        style={{ fontFamily: "Montserrat, sans-serif" }}
+      >
+        Help your customers
+      </p>
+
+      <div className="grid grid-cols-4 gap-x-10 gap-y-2">
+        {productsDropdownSections.map((section) => (
+          <div key={section.heading}>
+            <p
+              className="text-sm font-semibold mb-2"
+              style={{ fontFamily: "Montserrat, sans-serif", color: "#0C7E8F" }} // blue subtitle
+            >
+              {section.heading}
+            </p>
+            <div className="space-y-1">
+              {section.links.map((link) => (
+                <Link
+                  key={link.href}
+                  href={link.href}
+                  className="block text-sm py-1 pl-4 pr-2 rounded hover:bg-gray-50 transition-colors"
+                  style={{ fontFamily: "Raleway, sans-serif", color: "#24282B" }}
+                  onClick={() => setProductsOpen(false)}
+                >
+                  {link.label}
+                </Link>
+              ))}
+            </div>
+          </div>
+        ))}
+      </div>
+    </div>
+  </div>
+)}
           </div>
 
           {/* Platform dropdown */}

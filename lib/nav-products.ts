@@ -1,12 +1,14 @@
 /** Products dropdown: "Help your customers" sections and links (each = own page) */
 export const productsDropdownSections = [
   {
-    heading: "Build a Brand",
-    links: [
-      { label: "Domains", href: "/products/domains", slug: "domains" },
-      { label: "Logo Design", href: "/products/logo-design", slug: "logo-design" },
-    ],
-  },
+    {
+      heading: "Build a Brand",
+      links: [
+        { label: "Domains", href: "/products/domains", slug: "domains" },
+        { label: "Logo Design", href: "/products/logo-design", slug: "logo-design" },
+        { label: "Business Email", href: "/products/business-email", slug: "business-email" },
+      ],
+    },
   {
     heading: "Get Online",
     links: [
