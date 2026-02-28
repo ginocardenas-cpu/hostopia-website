@@ -20,7 +20,7 @@ type AnimatedRotatingWordProps = {
 
 export default function AnimatedRotatingWord({
   words = ROTATING_WORDS,
-  intervalMs = 2000,
+  intervalMs = 4000,
   className = "",
 }: AnimatedRotatingWordProps) {
   const [index, setIndex] = useState(0);
@@ -36,8 +36,13 @@ export default function AnimatedRotatingWord({
 
   return (
     <span
-      className={`relative inline-block align-baseline overflow-hidden ${className}`}
-      style={{ height: "1.15em", fontSize: "inherit" }}
+      className={`relative inline-block overflow-hidden ${className}`}
+      style={{
+        height: "1em",
+        lineHeight: 1.02,
+        fontSize: "inherit",
+        verticalAlign: "baseline",
+      }}
       aria-live="polite"
       aria-label={words[index]}
     >
@@ -48,6 +53,7 @@ export default function AnimatedRotatingWord({
         style={{
           fontFamily: "Montserrat, sans-serif",
           fontSize: "inherit",
+          lineHeight: 1.02,
         }}
       >
         {longestWord}
@@ -69,6 +75,7 @@ export default function AnimatedRotatingWord({
           style={{
             fontFamily: "Montserrat, sans-serif",
             fontSize: "inherit",
+            lineHeight: 1.02,
             color: "#24282B",
           }}
         >
