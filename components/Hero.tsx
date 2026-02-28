@@ -1,4 +1,5 @@
 import { ArrowRight } from "lucide-react";
+import AnimatedRotatingWord from "@/components/AnimatedRotatingWord";
 
 const stats = [
   { value: "500+", label: "Service Provider Partners" },
@@ -80,7 +81,8 @@ export default function Hero() {
               color: "#24282B",
             }}
           >
-            The Platform
+            The{" "}
+            <AnimatedRotatingWord />
             <br />
             <span style={{ color: "#2CADB2" }}>Behind</span> the
             <br />
