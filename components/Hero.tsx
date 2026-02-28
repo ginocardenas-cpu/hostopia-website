@@ -81,8 +81,10 @@ export default function Hero() {
               color: "#24282B",
             }}
           >
-            The{" "}
-            <AnimatedRotatingWord />
+            <span style={{ display: "inline-flex", alignItems: "baseline", flexWrap: "nowrap" }}>
+              The{" "}
+              <AnimatedRotatingWord />
+            </span>
             <br />
             <span style={{ color: "#2CADB2" }}>Behind</span> the
             <br />

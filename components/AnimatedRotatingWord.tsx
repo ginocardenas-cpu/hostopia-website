@@ -36,24 +36,26 @@ export default function AnimatedRotatingWord({
 
   return (
     <span
-      className={`relative inline-block overflow-hidden ${className}`}
+      className={`relative inline-block overflow-hidden align-baseline ${className}`}
       style={{
         height: "1em",
-        lineHeight: 1.02,
+        lineHeight: 1,
         fontSize: "inherit",
         verticalAlign: "baseline",
+        margin: 0,
+        padding: 0,
       }}
       aria-live="polite"
       aria-label={words[index]}
     >
-      {/* Invisible sizer so container has width (absolute children don't affect layout) */}
+      {/* Invisible sizer so container has width; same metrics as visible word for exact baseline match */}
       <span
         aria-hidden
         className="invisible whitespace-nowrap font-black tracking-tight"
         style={{
           fontFamily: "Montserrat, sans-serif",
           fontSize: "inherit",
-          lineHeight: 1.02,
+          lineHeight: 1,
         }}
       >
         {longestWord}
@@ -75,7 +77,7 @@ export default function AnimatedRotatingWord({
           style={{
             fontFamily: "Montserrat, sans-serif",
             fontSize: "inherit",
-            lineHeight: 1.02,
+            lineHeight: 1,
             color: "#24282B",
           }}
         >
