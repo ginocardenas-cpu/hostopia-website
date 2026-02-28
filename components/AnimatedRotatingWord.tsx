@@ -32,13 +32,26 @@ export default function AnimatedRotatingWord({
     return () => clearInterval(id);
   }, [words.length, intervalMs]);
 
+  const longestWord = words.reduce((a, b) => (a.length >= b.length ? a : b), "");
+
   return (
     <span
       className={`relative inline-block align-baseline overflow-hidden ${className}`}
-      style={{ height: "1.1em", minWidth: "min-content", fontSize: "inherit" }}
+      style={{ height: "1.15em", fontSize: "inherit" }}
       aria-live="polite"
       aria-label={words[index]}
     >
+      {/* Invisible sizer so container has width (absolute children don't affect layout) */}
+      <span
+        aria-hidden
+        className="invisible whitespace-nowrap font-black tracking-tight"
+        style={{
+          fontFamily: "Montserrat, sans-serif",
+          fontSize: "inherit",
+        }}
+      >
+        {longestWord}
+      </span>
       {words.map((word, i) => (
         <motion.span
           key={word}
