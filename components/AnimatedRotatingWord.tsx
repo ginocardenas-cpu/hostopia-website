@@ -4,12 +4,13 @@ import { useEffect, useState } from "react";
 import { motion } from "framer-motion";
 
 const ROTATING_WORDS = [
-  "Platform",
-  "Products",
-  "People",
-  "Technology",
-  "Support",
-  "Experience",
+  "Cablecos",
+  "Distributors",
+  "ISPs",
+  "Mobile Carriers",
+  "Registrars",
+  "Resellers",
+  "Telcos",
 ];
 
 type AnimatedRotatingWordProps = {
@@ -79,7 +80,7 @@ export default function AnimatedRotatingWord({
             fontFamily: "Montserrat, sans-serif",
             fontSize: "inherit",
             lineHeight: 1,
-            color: "#24282B",
+            color: "inherit",
           }}
         >
           {word}

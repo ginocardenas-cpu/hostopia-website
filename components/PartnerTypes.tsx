@@ -1,4 +1,5 @@
 import { Building2, Network, Store, Globe } from "lucide-react";
+import AnimatedRotatingWord from "@/components/AnimatedRotatingWord";
 
 const partnerTypes = [
   {
@@ -47,8 +48,10 @@ export default function PartnerTypes() {
               color: "#24282B",
             }}
           >
-            Built for{" "}
-            <span style={{ color: "#2CADB2" }}>Service Providers</span>
+            Built for
+            <span style={{ color: "#2CADB2" }}>
+              <AnimatedRotatingWord />
+            </span>
           </h2>
           <p
             className="text-lg max-w-xl mx-auto"

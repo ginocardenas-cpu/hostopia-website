@@ -347,7 +347,7 @@ export default function Navbar() {
         {/* CTA */}
         <div className="hidden md:flex items-center">
           <Link
-            href="/contact"
+            href="#partner"
             className="text-sm font-bold px-5 py-2.5 rounded-full transition-all duration-200 hover:scale-105 hover:shadow-lg"
             style={{
               fontFamily: "Montserrat, sans-serif",

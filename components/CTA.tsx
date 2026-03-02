@@ -54,9 +54,9 @@ export default function CTA() {
 
             <div className="flex flex-col gap-3">
               {[
-                "No long-term contracts required",
-                "Dedicated partner success manager",
-                "Go live in as little as 30 days",
+                "Unlock new recurring revenue",
+                "Accelerate time to market",
+                "Scale efficiently with a trusted partner",
               ].map((item) => (
                 <div key={item} className="flex items-center gap-3">
                   <div className="w-2 h-2 rounded-full flex-shrink-0" style={{ backgroundColor: "#24282B" }} />

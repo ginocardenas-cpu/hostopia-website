@@ -1,5 +1,4 @@
 import { ArrowRight } from "lucide-react";
-import AnimatedRotatingWord from "@/components/AnimatedRotatingWord";
 
 const stats = [
   { value: "500+", label: "Service Provider Partners" },
@@ -81,11 +80,6 @@ export default function Hero() {
               color: "#24282B",
             }}
           >
-            <span style={{ display: "inline-flex", alignItems: "baseline", flexWrap: "nowrap" }}>
-              The{" "}
-              <AnimatedRotatingWord />
-            </span>
-            <br />
             <span style={{ color: "#2CADB2" }}>Behind</span> the
             <br />
             Brands That
@@ -100,8 +94,17 @@ export default function Hero() {
                 textDecorationThickness: "6px",
               }}
             >
-              Business.
+              Business
             </span>
+            <sup
+              style={{
+                fontSize: "0.4em",
+                verticalAlign: "super",
+                marginLeft: "0.15em",
+              }}
+            >
+              TM
+            </sup>
           </h1>
 
           {/* Subheadline */}
