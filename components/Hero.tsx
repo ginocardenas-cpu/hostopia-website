@@ -50,14 +50,6 @@ export default function Hero() {
 
       {/* Floating geometric accents */}
       <div
-        className="absolute top-32 right-24 w-24 h-24 rounded-2xl rotate-12 opacity-40 animate-float pointer-events-none"
-        style={{ backgroundColor: "#2CADB2" }}
-      />
-      <div
-        className="absolute bottom-40 right-48 w-14 h-14 rounded-full opacity-30 pointer-events-none"
-        style={{ backgroundColor: "#F8CF41" }}
-      />
-      <div
         className="absolute top-1/2 right-16 w-4 h-32 rounded-full opacity-20 pointer-events-none"
         style={{ backgroundColor: "#2CADB2" }}
       />

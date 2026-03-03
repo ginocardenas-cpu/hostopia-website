@@ -48,9 +48,17 @@ export default function PartnerTypes() {
               color: "#24282B",
             }}
           >
-            Built for
-            <span style={{ color: "#2CADB2" }}>
-              <AnimatedRotatingWord />
+            <span
+              style={{
+                display: "inline-flex",
+                alignItems: "baseline",
+                flexWrap: "nowrap",
+              }}
+            >
+              Built for{" "}
+              <span style={{ color: "#2CADB2" }}>
+                <AnimatedRotatingWord />
+              </span>
             </span>
           </h2>
           <p

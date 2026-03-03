@@ -45,7 +45,6 @@ export default function AnimatedRotatingWord({
         verticalAlign: "baseline",
         margin: 0,
         padding: 0,
-        marginLeft: "0.28em",
       }}
       aria-live="polite"
       aria-label={words[index]}
