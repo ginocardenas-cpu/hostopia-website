@@ -33,58 +33,29 @@ export default function AnimatedRotatingWord({
     return () => clearInterval(id);
   }, [words.length, intervalMs]);
 
-  const longestWord = words.reduce((a, b) => (a.length >= b.length ? a : b), "");
+  const currentWord = words[index];
 
   return (
-    <span
-      className={`relative inline-block overflow-hidden align-baseline ${className}`}
+    <motion.span
+      key={currentWord}
+      initial={{ opacity: 0, y: 8 }}
+      animate={{ opacity: 1, y: 0 }}
+      transition={{ type: "spring", stiffness: 80, damping: 20 }}
+      className={className}
       style={{
-        height: "1em",
-        lineHeight: 1,
+        marginLeft: "0.35em",
+        fontFamily: "Montserrat, sans-serif",
         fontSize: "inherit",
+        lineHeight: 1,
+        fontWeight: 900,
+        color: "inherit",
+        display: "inline-block",
         verticalAlign: "baseline",
-        margin: 0,
-        padding: 0,
       }}
       aria-live="polite"
-      aria-label={words[index]}
+      aria-label={currentWord}
     >
-      {/* Invisible sizer so container has width; same metrics as visible word for exact baseline match */}
-      <span
-        aria-hidden
-        className="invisible whitespace-nowrap font-black tracking-tight"
-        style={{
-          fontFamily: "Montserrat, sans-serif",
-          fontSize: "inherit",
-          lineHeight: 1,
-        }}
-      >
-        {longestWord}
-      </span>
-      {words.map((word, i) => (
-        <motion.span
-          key={word}
-          className="absolute left-0 bottom-0 whitespace-nowrap font-black tracking-tight"
-          initial={false}
-          animate={
-            index === i
-              ? { y: 0, opacity: 1 }
-              : {
-                  y: index > i ? -120 : 120,
-                  opacity: 0,
-                }
-          }
-          transition={{ type: "spring", stiffness: 80, damping: 24 }}
-          style={{
-            fontFamily: "Montserrat, sans-serif",
-            fontSize: "inherit",
-            lineHeight: 1,
-            color: "inherit",
-          }}
-        >
-          {word}
-        </motion.span>
-      ))}
-    </span>
+      {currentWord}
+    </motion.span>
   );
 }
