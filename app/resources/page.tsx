@@ -47,7 +47,7 @@ export default function ResourcesPage() {
         <div className="max-w-7xl mx-auto px-6">
           <div className="space-y-16">
             {/* HostopiaConnects */}
-            <div className="grid lg:grid-cols-2 gap-12 items-start">
+            <div className="grid lg:grid-cols-2 gap-12 items-center">
               <div>
                 <div
                   className="w-12 h-12 rounded-2xl flex items-center justify-center mb-6"
@@ -83,10 +83,15 @@ export default function ResourcesPage() {
                   <ArrowRight size={18} />
                 </a>
               </div>
-              <div
-                className="rounded-2xl p-8 lg:p-10"
-                style={{ backgroundColor: "#f7f6f2" }}
-              />
+              <div className="relative rounded-2xl overflow-hidden bg-gray-100 aspect-[4/3] max-w-xl mx-auto">
+                <Image
+                  src="/images/hostopia-connects.png"
+                  alt="HostopiaConnects partner enablement hub on a laptop"
+                  fill
+                  className="object-cover object-center"
+                  sizes="(max-width: 1024px) 100vw, 50vw"
+                />
+              </div>
             </div>
 
             {/* Hostopia Blog */}

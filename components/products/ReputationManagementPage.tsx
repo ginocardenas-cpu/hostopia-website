@@ -157,7 +157,7 @@ export default function ReputationManagementPage({ label }: ReputationManagement
         {/* Partner advantage */}
         <section className="mb-16">
           <SectionHeading eyebrow="The partner advantage" title="From being seen to being selected" />
-          <div className="grid md:grid-cols-2 gap-10 items-start">
+          <div className="grid md:grid-cols-2 gap-10 items-center">
             <div>
               <p
                 className="text-base leading-relaxed mb-6"
