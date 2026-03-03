@@ -48,12 +48,6 @@ export default function Hero() {
         }}
       />
 
-      {/* Floating geometric accents */}
-      <div
-        className="absolute top-1/2 right-16 w-4 h-32 rounded-full opacity-20 pointer-events-none"
-        style={{ backgroundColor: "#2CADB2" }}
-      />
-
       <div className="relative z-10 max-w-7xl mx-auto px-6 py-20 w-full">
         <div className="max-w-5xl">
 

@@ -64,7 +64,7 @@ export default function AnimatedRotatingWord({
       {words.map((word, i) => (
         <motion.span
           key={word}
-          className="absolute left-0 top-0 whitespace-nowrap font-black tracking-tight"
+          className="absolute left-0 bottom-0 whitespace-nowrap font-black tracking-tight"
           initial={false}
           animate={
             index === i
