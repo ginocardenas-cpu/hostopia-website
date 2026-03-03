@@ -25,7 +25,7 @@ export default function Hero() {
           className="absolute inset-0 z-[1]"
           style={{
             background:
-              "linear-gradient(135deg, rgba(247,246,242,0.94) 0%, rgba(247,246,242,0.9) 40%, rgba(247,246,242,0.6) 100%)",
+              "linear-gradient(120deg, rgba(247,246,242,0.96) 0%, rgba(247,246,242,0.7) 40%, rgba(247,246,242,0.25) 100%)",
           }}
         />
       </div>
@@ -44,7 +44,7 @@ export default function Hero() {
             className="font-black leading-[1.02] tracking-tight mb-8"
             style={{
               fontFamily: "Montserrat, sans-serif",
-              fontSize: "clamp(3.5rem, 8vw, 7.5rem)",
+              fontSize: "clamp(2.5rem, 5vw, 4.5rem)",
               color: "#24282B",
             }}
           >
