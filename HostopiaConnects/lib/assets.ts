@@ -43,6 +43,8 @@ export interface Asset {
   internalOnly: boolean;
   fileUrl: string;
   lastUpdated: string; // ISO date
+  viewCount: number;
+  downloadCount: number;
 }
 
 export const journeys: { label: ProductJourney; slug: string }[] = [
@@ -179,7 +181,9 @@ export const sampleAssets: Asset[] = [
     gated: true,
     internalOnly: false,
     fileUrl: "/assets/logo-build-a-brand-overview-deck.pdf",
-    lastUpdated: "2026-03-03"
+    lastUpdated: "2026-03-03",
+    viewCount: 245,
+    downloadCount: 120
   },
   {
     id: "hosting-get-online-technical-one-pager",
@@ -199,7 +203,9 @@ export const sampleAssets: Asset[] = [
     gated: true,
     internalOnly: false,
     fileUrl: "/assets/hosting-get-online-technical-one-pager.pdf",
-    lastUpdated: "2026-03-01"
+    lastUpdated: "2026-03-01",
+    viewCount: 320,
+    downloadCount: 210
   },
   {
     id: "reputation-get-found-playbook",
@@ -219,7 +225,9 @@ export const sampleAssets: Asset[] = [
     gated: true,
     internalOnly: false,
     fileUrl: "/assets/reputation-get-found-playbook.pdf",
-    lastUpdated: "2026-02-20"
+    lastUpdated: "2026-02-20",
+    viewCount: 400,
+    downloadCount: 260
   },
   {
     id: "ecommerce-grow-business-demo-video",
@@ -239,7 +247,9 @@ export const sampleAssets: Asset[] = [
     gated: true,
     internalOnly: false,
     fileUrl: "/assets/ecommerce-grow-business-demo-video.mp4",
-    lastUpdated: "2026-02-15"
+    lastUpdated: "2026-02-15",
+    viewCount: 510,
+    downloadCount: 310
   }
 ];
 
@@ -263,6 +273,18 @@ export function getAssetsByUseCase(useCase: UseCase): Asset[] {
 export function getLatestAssets(limit = 8): Asset[] {
   return [...sampleAssets]
     .sort((a, b) => (b.lastUpdated > a.lastUpdated ? 1 : -1))
+    .slice(0, limit);
+}
+
+export function getMostViewedAssets(limit = 8): Asset[] {
+  return [...sampleAssets]
+    .sort((a, b) => b.viewCount - a.viewCount)
+    .slice(0, limit);
+}
+
+export function getMostDownloadedAssets(limit = 8): Asset[] {
+  return [...sampleAssets]
+    .sort((a, b) => b.downloadCount - a.downloadCount)
     .slice(0, limit);
 }
 
