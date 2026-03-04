@@ -26,6 +26,7 @@ export function BrowseWizard({ open, onClose }: BrowseWizardProps) {
   const [productCategories, setProductCategories] = useState<ProductCategory[]>([]);
   const [contentTypes, setContentTypes] = useState<ContentType[]>([]);
   const [useCases, setUseCases] = useState<UseCase[]>([]);
+  const [showResults, setShowResults] = useState(false);
 
   const reset = () => {
     setStep(1);
@@ -33,6 +34,7 @@ export function BrowseWizard({ open, onClose }: BrowseWizardProps) {
     setProductCategories([]);
     setContentTypes([]);
     setUseCases([]);
+    setShowResults(false);
   };
 
   const handleClose = () => {
@@ -74,23 +76,34 @@ export function BrowseWizard({ open, onClose }: BrowseWizardProps) {
         ? prev.filter((c) => c !== category)
         : [...prev, category]
     );
+    setShowResults(false);
   };
 
   const toggleContentType = (type: ContentType) => {
     setContentTypes((prev) =>
       prev.includes(type) ? prev.filter((t) => t !== type) : [...prev, type]
     );
+    setShowResults(false);
   };
 
   const toggleUseCase = (u: UseCase) => {
     setUseCases((prev) =>
       prev.includes(u) ? prev.filter((x) => x !== u) : [...prev, u]
     );
+    setShowResults(false);
   };
 
+  const pathChips: string[] = [];
+  if (journey) pathChips.push(`Journey: ${journey}`);
+  if (productCategories.length)
+    pathChips.push(`Products: ${productCategories.join(", ")}`);
+  if (contentTypes.length)
+    pathChips.push(`Content: ${contentTypes.join(", ")}`);
+  if (useCases.length) pathChips.push(`Use case: ${useCases.join(", ")}`);
+
   return (
-    <div className="fixed inset-0 z-40 flex items-start justify-center bg-black/40 backdrop-blur-sm">
-      <div className="mt-24 w-full max-w-5xl rounded-3xl bg-white shadow-2xl border border-black/10 overflow-hidden">
+    <div className="fixed inset-0 z-40 flex items-start justify-center bg-black/40 backdrop-blur-sm overflow-y-auto">
+      <div className="mt-20 mb-10 w-full max-w-5xl rounded-3xl bg-white shadow-2xl border border-black/10 overflow-hidden">
         <div className="flex items-center justify-between px-6 py-4 border-b border-black/5">
           <div>
             <p
@@ -103,7 +116,7 @@ export function BrowseWizard({ open, onClose }: BrowseWizardProps) {
               className="text-sm font-black"
               style={{ fontFamily: "Montserrat, sans-serif" }}
             >
-              Find the right asset in three steps.
+              Drill down by journey, product, and content.
             </h2>
           </div>
           <button
@@ -117,196 +130,262 @@ export function BrowseWizard({ open, onClose }: BrowseWizardProps) {
         </div>
 
         {/* Step indicators */}
-        <div className="flex items-center gap-4 px-6 py-3 border-b border-black/5 text-xs">
-          {[
-            { id: 1, label: "Journey" },
-            { id: 2, label: "Product" },
-            { id: 3, label: "Content & Use Case" }
-          ].map(({ id, label }) => {
-            const active = step === id;
-            const completed = step > id;
-            return (
-              <div key={id} className="flex items-center gap-2">
-                <button
-                  type="button"
-                  disabled={!completed && !active}
-                  onClick={() => setStep(id as Step)}
-                  className={`w-6 h-6 rounded-full flex items-center justify-center text-[11px] font-semibold ${
-                    active
-                      ? "bg-[#2CADB2] text-white"
-                      : completed
-                      ? "bg-[#2CADB2]/10 text-[#2CADB2]"
-                      : "bg-gray-100 text-gray-400"
-                  }`}
-                >
-                  {completed ? <CheckCircle2 size={14} /> : id}
-                </button>
+        <div className="px-6 py-3 border-b border-black/5 text-xs">
+          <div className="flex items-center gap-4 mb-2">
+            {[
+              { id: 1, label: "Journey" },
+              { id: 2, label: "Product" },
+              { id: 3, label: "Content & Use Case" }
+            ].map(({ id, label }) => {
+              const active = step === id;
+              const completed = step > id;
+              return (
+                <div key={id} className="flex items-center gap-2">
+                  <button
+                    type="button"
+                    disabled={!completed && !active}
+                    onClick={() => {
+                      setStep(id as Step);
+                      setShowResults(false);
+                    }}
+                    className={`w-6 h-6 rounded-full flex items-center justify-center text-[11px] font-semibold ${
+                      active
+                        ? "bg-[#2CADB2] text-white"
+                        : completed
+                        ? "bg-[#2CADB2]/10 text-[#2CADB2]"
+                        : "bg-gray-100 text-gray-400"
+                    }`}
+                  >
+                    {completed ? <CheckCircle2 size={14} /> : id}
+                  </button>
+                  <span
+                    className={`text-[11px] ${
+                      active ? "text-gray-900" : "text-gray-500"
+                    }`}
+                    style={{ fontFamily: "Raleway, sans-serif" }}
+                  >
+                    {label}
+                  </span>
+                </div>
+              );
+            })}
+            <div className="ml-auto text-[11px] text-gray-400">
+              <button
+                type="button"
+                onClick={reset}
+                className="hover:text-[#2CADB2]"
+                style={{ fontFamily: "Raleway, sans-serif" }}
+              >
+                Reset filters
+              </button>
+            </div>
+          </div>
+
+          {/* Path chips */}
+          {pathChips.length > 0 && (
+            <div className="flex flex-wrap gap-2 mt-1">
+              {pathChips.map((chip) => (
                 <span
-                  className={`text-[11px] ${
-                    active ? "text-gray-900" : "text-gray-500"
-                  }`}
+                  key={chip}
+                  className="rounded-full bg-[#f7f6f2] border border-black/5 px-3 py-1 text-[11px] text-gray-700"
                   style={{ fontFamily: "Raleway, sans-serif" }}
                 >
-                  {label}
+                  {chip}
                 </span>
-              </div>
-            );
-          })}
-          <div className="ml-auto text-[11px] text-gray-400">
-            <button
-              type="button"
-              onClick={reset}
-              className="hover:text-[#2CADB2]"
-              style={{ fontFamily: "Raleway, sans-serif" }}
-            >
-              Reset filters
-            </button>
-          </div>
+              ))}
+            </div>
+          )}
         </div>
 
-        {/* Body: steps + preview */}
-        <div className="grid md:grid-cols-[minmax(0,1.5fr)_minmax(0,1fr)] gap-0">
-          <div className="px-6 py-5 border-b md:border-b-0 md:border-r border-black/5">
-            {step === 1 && (
-              <div className="space-y-4">
-                <p
-                  className="text-xs text-gray-600 mb-2"
+        {/* Steps body */}
+        <div className="px-6 py-5 space-y-6">
+          {step === 1 && (
+            <div className="space-y-4">
+              <p
+                className="text-xs text-gray-600"
+                style={{ fontFamily: "Raleway, sans-serif" }}
+              >
+                Step 1: Select the journey that best matches where your customer
+                is today.
+              </p>
+              <div className="grid sm:grid-cols-2 gap-3">
+                {journeys.map((j) => {
+                  const selected = journey === j.label;
+                  return (
+                    <button
+                      key={j.slug}
+                      type="button"
+                      onClick={() => {
+                        setJourney(j.label);
+                        setProductCategories([]);
+                        setContentTypes([]);
+                        setUseCases([]);
+                        setShowResults(false);
+                      }}
+                      className={`text-left rounded-2xl border px-4 py-3 transition ${
+                        selected
+                          ? "border-[#2CADB2] bg-[#f0fbfa]"
+                          : "border-black/10 bg-white hover:border-[#2CADB2]/60"
+                      }`}
+                    >
+                      <p
+                        className="text-[11px] uppercase tracking-[0.18em] text-gray-400 mb-1"
+                        style={{ fontFamily: "Raleway, sans-serif" }}
+                      >
+                        Journey
+                      </p>
+                      <p
+                        className="text-sm font-black"
+                        style={{ fontFamily: "Montserrat, sans-serif" }}
+                      >
+                        {j.label}
+                      </p>
+                    </button>
+                  );
+                })}
+              </div>
+              <div className="flex justify-end pt-1 text-xs">
+                <button
+                  type="button"
+                  onClick={() => setStep(2)}
+                  disabled={!journey}
+                  className="inline-flex items-center gap-1 rounded-full px-4 py-1.5 text-[11px] font-semibold transition disabled:opacity-40 disabled:cursor-not-allowed bg-[#2CADB2] text-white"
+                  style={{ fontFamily: "Montserrat, sans-serif" }}
+                >
+                  Next: Choose products
+                  <ArrowRight size={12} />
+                </button>
+              </div>
+            </div>
+          )}
+
+          {step === 2 && (
+            <div className="space-y-4">
+              <p
+                className="text-xs text-gray-600"
+                style={{ fontFamily: "Raleway, sans-serif" }}
+              >
+                Step 2: Select one or more products you want enablement content
+                for.
+              </p>
+              <div className="grid sm:grid-cols-2 gap-3">
+                {journeyProductsForSelection.map((p) => {
+                  const selected = productCategories.includes(p.category);
+                  return (
+                    <button
+                      key={p.slug}
+                      type="button"
+                      onClick={() => toggleCategory(p.category)}
+                      className={`text-left rounded-2xl border px-4 py-3 transition ${
+                        selected
+                          ? "border-[#2CADB2] bg-[#f0fbfa]"
+                          : "border-black/10 bg-white hover:border-[#2CADB2]/60"
+                      }`}
+                    >
+                      <p
+                        className="text-[11px] uppercase tracking-[0.18em] text-gray-400 mb-1"
+                        style={{ fontFamily: "Raleway, sans-serif" }}
+                      >
+                        Product
+                      </p>
+                      <p
+                        className="text-sm font-black mb-1"
+                        style={{ fontFamily: "Montserrat, sans-serif" }}
+                      >
+                        {p.label}
+                      </p>
+                      <p
+                        className="text-[11px] text-gray-500 line-clamp-2"
+                        style={{ fontFamily: "Raleway, sans-serif" }}
+                      >
+                        {p.description}
+                      </p>
+                    </button>
+                  );
+                })}
+              </div>
+              <div className="flex justify-between items-center pt-1 text-xs">
+                <button
+                  type="button"
+                  onClick={() => setStep(1)}
+                  className="text-gray-500 hover:text-[#2CADB2]"
                   style={{ fontFamily: "Raleway, sans-serif" }}
                 >
-                  Start by choosing where your customer is in the journey.
+                  ← Back to journeys
+                </button>
+                <button
+                  type="button"
+                  onClick={() => setStep(3)}
+                  disabled={!productCategories.length}
+                  className="inline-flex items-center gap-1 rounded-full bg-[#2CADB2] text-white px-4 py-1.5 text-[11px] font-semibold disabled:opacity-40 disabled:cursor-not-allowed"
+                  style={{ fontFamily: "Montserrat, sans-serif" }}
+                >
+                  Next: Content &amp; use case
+                  <ArrowRight size={12} />
+                </button>
+              </div>
+            </div>
+          )}
+
+          {step === 3 && (
+            <div className="space-y-5">
+              <p
+                className="text-xs text-gray-600"
+                style={{ fontFamily: "Raleway, sans-serif" }}
+              >
+                Step 3: Refine by content type and use case. You can select
+                multiple options in each row.
+              </p>
+              <div>
+                <p
+                  className="text-[11px] uppercase tracking-[0.18em] text-gray-500 mb-2"
+                  style={{ fontFamily: "Raleway, sans-serif" }}
+                >
+                  Content type
                 </p>
-                <div className="grid sm:grid-cols-2 gap-3">
-                  {journeys.map((j) => {
-                    const selected = journey === j.label;
+                <div className="flex flex-wrap gap-2">
+                  {[
+                    "Presentation",
+                    "Document",
+                    "Playbook",
+                    "Video",
+                    "Training"
+                  ].map((type) => {
+                    const selected = contentTypes.includes(type as ContentType);
                     return (
                       <button
-                        key={j.slug}
+                        key={type}
                         type="button"
-                        onClick={() => {
-                          setJourney(j.label);
-                          setStep(2);
-                        }}
-                        className={`text-left rounded-2xl border px-4 py-3 transition ${
+                        onClick={() => toggleContentType(type as ContentType)}
+                        className={`rounded-full border px-3 py-1 text-[11px] font-semibold transition ${
                           selected
-                            ? "border-[#2CADB2] bg-[#f0fbfa]"
-                            : "border-black/10 bg-white hover:border-[#2CADB2]/60"
+                            ? "bg-[#2CADB2] text-white border-[#2CADB2]"
+                            : "bg-white text-gray-700 border-black/10 hover:border-[#2CADB2]/60 hover:text-[#2CADB2]"
                         }`}
+                        style={{ fontFamily: "Montserrat, sans-serif" }}
                       >
-                        <p
-                          className="text-[11px] uppercase tracking-[0.18em] text-gray-400 mb-1"
-                          style={{ fontFamily: "Raleway, sans-serif" }}
-                        >
-                          Journey
-                        </p>
-                        <p
-                          className="text-sm font-black"
-                          style={{ fontFamily: "Montserrat, sans-serif" }}
-                        >
-                          {j.label}
-                        </p>
+                        {type}
                       </button>
                     );
                   })}
                 </div>
               </div>
-            )}
-
-            {step === 2 && (
-              <div className="space-y-4">
+              <div>
                 <p
-                  className="text-xs text-gray-600 mb-2"
+                  className="text-[11px] uppercase tracking-[0.18em] text-gray-500 mb-2"
                   style={{ fontFamily: "Raleway, sans-serif" }}
                 >
-                  Choose one or more products within this journey.
+                  Use case
                 </p>
-                <div className="grid sm:grid-cols-2 gap-3">
-                  {journeyProductsForSelection.map((p) => {
-                    const selected = productCategories.includes(p.category);
-                    return (
-                      <button
-                        key={p.slug}
-                        type="button"
-                        onClick={() => toggleCategory(p.category)}
-                        className={`text-left rounded-2xl border px-4 py-3 transition ${
-                          selected
-                            ? "border-[#2CADB2] bg-[#f0fbfa]"
-                            : "border-black/10 bg-white hover:border-[#2CADB2]/60"
-                        }`}
-                      >
-                        <p
-                          className="text-[11px] uppercase tracking-[0.18em] text-gray-400 mb-1"
-                          style={{ fontFamily: "Raleway, sans-serif" }}
-                        >
-                          Product
-                        </p>
-                        <p
-                          className="text-sm font-black mb-1"
-                          style={{ fontFamily: "Montserrat, sans-serif" }}
-                        >
-                          {p.label}
-                        </p>
-                        <p
-                          className="text-[11px] text-gray-500 line-clamp-2"
-                          style={{ fontFamily: "Raleway, sans-serif" }}
-                        >
-                          {p.description}
-                        </p>
-                      </button>
-                    );
-                  })}
-                </div>
-                <div className="flex justify-between items-center pt-1 text-xs">
-                  <button
-                    type="button"
-                    onClick={() => setStep(1)}
-                    className="text-gray-500 hover:text-[#2CADB2]"
-                    style={{ fontFamily: "Raleway, sans-serif" }}
-                  >
-                    ← Back to journeys
-                  </button>
-                  <button
-                    type="button"
-                    onClick={() => setStep(3)}
-                    className="inline-flex items-center gap-1 rounded-full bg-[#2CADB2] text-white px-4 py-1.5 text-[11px] font-semibold"
-                    style={{ fontFamily: "Montserrat, sans-serif" }}
-                  >
-                    Next: Content &amp; use case
-                    <ArrowRight size={12} />
-                  </button>
-                </div>
-              </div>
-            )}
-
-            {step === 3 && (
-              <div className="space-y-5">
-                <p
-                  className="text-xs text-gray-600"
-                  style={{ fontFamily: "Raleway, sans-serif" }}
-                >
-                  Refine by content type and use case. You can select multiple
-                  options in each row.
-                </p>
-                <div>
-                  <p
-                    className="text-[11px] uppercase tracking-[0.18em] text-gray-500 mb-2"
-                    style={{ fontFamily: "Raleway, sans-serif" }}
-                  >
-                    Content type
-                  </p>
-                  <div className="flex flex-wrap gap-2">
-                    {[
-                      "Presentation",
-                      "Document",
-                      "Playbook",
-                      "Video",
-                      "Training"
-                    ].map((type) => {
-                      const selected = contentTypes.includes(type as ContentType);
+                <div className="flex flex-wrap gap-2">
+                  {["Sales", "Marketing", "Training & Onboarding", "Support"].map(
+                    (u) => {
+                      const selected = useCases.includes(u as UseCase);
                       return (
                         <button
-                          key={type}
+                          key={u}
                           type="button"
-                          onClick={() => toggleContentType(type as ContentType)}
+                          onClick={() => toggleUseCase(u as UseCase)}
                           className={`rounded-full border px-3 py-1 text-[11px] font-semibold transition ${
                             selected
                               ? "bg-[#2CADB2] text-white border-[#2CADB2]"
@@ -314,48 +393,39 @@ export function BrowseWizard({ open, onClose }: BrowseWizardProps) {
                           }`}
                           style={{ fontFamily: "Montserrat, sans-serif" }}
                         >
-                          {type}
+                          {u}
                         </button>
                       );
-                    })}
-                  </div>
-                </div>
-                <div>
-                  <p
-                    className="text-[11px] uppercase tracking-[0.18em] text-gray-500 mb-2"
-                    style={{ fontFamily: "Raleway, sans-serif" }}
-                  >
-                    Use case
-                  </p>
-                  <div className="flex flex-wrap gap-2">
-                    {["Sales", "Marketing", "Training & Onboarding", "Support"].map(
-                      (u) => {
-                        const selected = useCases.includes(u as UseCase);
-                        return (
-                          <button
-                            key={u}
-                            type="button"
-                            onClick={() => toggleUseCase(u as UseCase)}
-                            className={`rounded-full border px-3 py-1 text-[11px] font-semibold transition ${
-                              selected
-                                ? "bg-[#2CADB2] text-white border-[#2CADB2]"
-                                : "bg-white text-gray-700 border-black/10 hover:border-[#2CADB2]/60 hover:text-[#2CADB2]"
-                            }`}
-                            style={{ fontFamily: "Montserrat, sans-serif" }}
-                          >
-                            {u}
-                          </button>
-                        );
-                      }
-                    )}
-                  </div>
+                    }
+                  )}
                 </div>
               </div>
-            )}
-          </div>
+              <div className="flex justify-between items-center pt-1 text-xs">
+                <button
+                  type="button"
+                  onClick={() => setStep(2)}
+                  className="text-gray-500 hover:text-[#2CADB2]"
+                  style={{ fontFamily: "Raleway, sans-serif" }}
+                >
+                  ← Back to products
+                </button>
+                <button
+                  type="button"
+                  onClick={() => setShowResults(true)}
+                  className="inline-flex items-center gap-1 rounded-full bg-[#2CADB2] text-white px-4 py-1.5 text-[11px] font-semibold"
+                  style={{ fontFamily: "Montserrat, sans-serif" }}
+                >
+                  Show matching assets
+                  <ArrowRight size={12} />
+                </button>
+              </div>
+            </div>
+          )}
+        </div>
 
-          {/* Right column: live preview */}
-          <div className="px-6 py-5 bg-[#f7f6f2]">
+        {/* Results at the bottom */}
+        {showResults && (
+          <div className="px-6 py-5 border-t border-black/5 bg-[#f7f6f2]">
             <p
               className="text-[11px] uppercase tracking-[0.18em] text-gray-500 mb-3"
               style={{ fontFamily: "Raleway, sans-serif" }}
@@ -367,12 +437,12 @@ export function BrowseWizard({ open, onClose }: BrowseWizardProps) {
                 className="text-xs text-gray-600"
                 style={{ fontFamily: "Raleway, sans-serif" }}
               >
-                Adjust your filters to see assets here. Start by choosing a
-                journey and product.
+                No assets match these filters yet. Try removing one or more
+                options above.
               </p>
             ) : (
               <div className="space-y-3">
-                {filteredAssets.slice(0, 4).map((asset) => (
+                {filteredAssets.map((asset) => (
                   <Link
                     key={asset.id}
                     href={`/assets/${asset.slug}`}
@@ -398,17 +468,10 @@ export function BrowseWizard({ open, onClose }: BrowseWizardProps) {
                     </p>
                   </Link>
                 ))}
-                <p
-                  className="text-[11px] text-gray-500"
-                  style={{ fontFamily: "Raleway, sans-serif" }}
-                >
-                  Tip: Once we add more content, this panel can show deeper lists
-                  and quick add-to-cart actions.
-                </p>
               </div>
             )}
           </div>
-        </div>
+        )}
       </div>
     </div>
   );
