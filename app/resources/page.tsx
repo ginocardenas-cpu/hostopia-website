@@ -83,14 +83,16 @@ export default function ResourcesPage() {
                   <ArrowRight size={18} />
                 </a>
               </div>
-              <div className="relative rounded-2xl overflow-hidden bg-gray-100 aspect-[4/3] max-w-xl mx-auto">
-                <Image
-                  src="/images/hostopia-connects.png"
-                  alt="HostopiaConnects partner enablement hub on a laptop"
-                  fill
-                  className="object-cover object-center"
-                  sizes="(max-width: 1024px) 100vw, 50vw"
-                />
+              <div className="flex justify-center">
+                <div className="relative rounded-2xl overflow-hidden bg-gray-100 aspect-[4/3] w-full max-w-xl">
+                  <Image
+                    src="/images/hostopia-connects-office.png"
+                    alt="Business professionals collaborating in a modern office with digital connectivity"
+                    fill
+                    className="object-cover object-center"
+                    sizes="(max-width: 1024px) 100vw, 50vw"
+                  />
+                </div>
               </div>
             </div>
 
