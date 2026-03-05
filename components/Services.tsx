@@ -30,11 +30,15 @@ const services = [
   {
     icon: Globe,
     number: "03",
-    title: "Website Builder",
+    title: "AI Website Builder",
     tag: "SMB Essential",
     description:
-      "A drag-and-drop website builder that lets SMBs launch a professional online presence in minutes. Modern templates, SEO tools, and full white-label customization for your brand.",
-    highlights: ["500+ professional templates", "Built-in SEO & analytics", "Custom domain management"],
+      "Enable SMB customers to launch a professional website in minutes — no technical skills required. AI generates industry-specific design and content, reducing friction and accelerating time to market.",
+    highlights: [
+      "AI-generated layouts and verticalized content",
+      "Built-in SEO and analytics tools",
+      "Drag-and-drop editing with domain management",
+    ],
     accent: "#24282B",
     light: "#f2f2f0",
   },
