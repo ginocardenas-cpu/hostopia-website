@@ -1,9 +1,24 @@
-import { Mail, Globe, ShoppingCart, TrendingUp, Sparkles, ArrowUpRight } from "lucide-react";
+import { PenTool, Mail, Globe, ShoppingCart, Sparkles, ArrowUpRight } from "lucide-react";
 
 const services = [
   {
-    icon: Mail,
+    icon: PenTool,
     number: "01",
+    title: "Enhanced Logo Design",
+    tag: "High Trust Product",
+    description:
+      "Help your SMB customers launch or refresh their brand with confidence. Our white-glove logo service delivers professionally designed logos — building early trust in your portfolio.",
+    highlights: [
+      "Custom design concepts delivered quickly",
+      "Multiple revisions with expert support",
+      "Full ownership of branded assets for multi-channel use",
+    ],
+    accent: "#24282B",
+    light: "#f2f2f0",
+  },
+  {
+    icon: Mail,
+    number: "02",
     title: "Business Email",
     tag: "Core Revenue Driver",
     description:
@@ -14,7 +29,7 @@ const services = [
   },
   {
     icon: Globe,
-    number: "02",
+    number: "03",
     title: "Website Builder",
     tag: "SMB Essential",
     description:
@@ -25,7 +40,7 @@ const services = [
   },
   {
     icon: ShoppingCart,
-    number: "03",
+    number: "04",
     title: "Ecommerce",
     tag: "High-Value Upsell",
     description:
@@ -33,17 +48,6 @@ const services = [
     highlights: ["Integrated payment gateways", "Inventory & order management", "Mobile-optimized storefronts"],
     accent: "#2CADB2",
     light: "#e8f7f7",
-  },
-  {
-    icon: TrendingUp,
-    number: "04",
-    title: "Digital Marketing",
-    tag: "Stickiness Creator",
-    description:
-      "Give your customers real marketing results. SEO, social media management, Google Ads, and reputation management — packaged and branded as your own digital marketing suite.",
-    highlights: ["SEO & local search optimization", "Social media scheduling", "Review & reputation management"],
-    accent: "#24282B",
-    light: "#f2f2f0",
   },
   {
     icon: Sparkles,
