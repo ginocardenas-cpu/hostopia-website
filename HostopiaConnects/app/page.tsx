@@ -200,32 +200,51 @@ export default function Home() {
                 documents, videos, or full campaign kits.
               </p>
               <div className="grid gap-4 sm:grid-cols-2">
-                {["Videos", "Decks & Presentations", "Documents & Playbooks", "Training Modules"].map(
-                  (type) => (
-                    <button
-                      key={type}
-                      className="rounded-xl border border-black/5 bg-white px-4 py-3 text-left hover:border-[#2CADB2] hover:shadow-md transition-all duration-150"
+                {[
+                  {
+                    label: "Videos",
+                    description:
+                      "Watch marketing videos, demos, and walkthroughs that help explain our products."
+                  },
+                  {
+                    label: "Decks & Presentations",
+                    description:
+                      "Download ready-to-use slides covering product overviews."
+                  },
+                  {
+                    label: "Documents & Playbooks",
+                    description:
+                      "Explore strategy guides, documentation, and playbooks designed to support sales and marketing efforts."
+                  },
+                  {
+                    label: "Training Modules",
+                    description:
+                      "Structured learning content to help sales teams understand how to sell our products."
+                  }
+                ].map(({ label, description }) => (
+                  <button
+                    key={label}
+                    type="button"
+                    className="rounded-xl border border-black/5 bg-white px-4 py-3 text-left hover:border-[#2CADB2] hover:shadow-md transition-all duration-150"
+                  >
+                    <span
+                      className="block text-sm font-semibold mb-1"
+                      style={{ fontFamily: "Montserrat, sans-serif" }}
                     >
-                      <span
-                        className="block text-sm font-semibold mb-1"
-                        style={{ fontFamily: "Montserrat, sans-serif" }}
-                      >
-                        {type}
-                      </span>
-                      <span
-                        className="block text-lg"
-                        style={{
-                          fontFamily: "Raleway, sans-serif",
-                          color: "#555A5E",
-                          lineHeight: 1.625
-                        }}
-                      >
-                        Coming soon – filterable libraries for each content
-                        type.
-                      </span>
-                    </button>
-                  )
-                )}
+                      {label}
+                    </span>
+                    <span
+                      className="block text-sm"
+                      style={{
+                        fontFamily: "Raleway, sans-serif",
+                        color: "#555A5E",
+                        lineHeight: 1.625
+                      }}
+                    >
+                      {description}
+                    </span>
+                  </button>
+                ))}
               </div>
             </div>
 
