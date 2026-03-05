@@ -2,6 +2,26 @@
 @tailwind components;
 @tailwind utilities;
 
+@layer base {
+  :root {
+    --background: 42 33% 97%;
+    --foreground: 220 15% 13%;
+    --primary: 182 58% 42%;
+    --primary-foreground: 0 0% 100%;
+    --secondary: 45 89% 62%;
+    --secondary-foreground: 220 15% 13%;
+    --muted: 42 20% 94%;
+    --muted-foreground: 220 10% 40%;
+    --accent: 182 30% 93%;
+    --accent-foreground: 182 58% 42%;
+    --destructive: 0 84% 60%;
+    --destructive-foreground: 0 0% 100%;
+    --border: 220 10% 88%;
+    --input: 220 10% 88%;
+    --ring: 182 58% 42%;
+  }
+}
+
 html,
 body {
   font-family: theme("fontFamily.body");

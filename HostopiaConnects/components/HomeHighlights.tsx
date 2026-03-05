@@ -13,7 +13,7 @@ type TabKey = "new" | "popular" | "downloaded";
 
 const tabs: { key: TabKey; label: string; icon: React.ComponentType<any> }[] = [
   { key: "new", label: "What's New", icon: Star },
-  { key: "popular", label: "Most Popular", icon: Flame },
+  { key: "popular", label: "Most Viewed", icon: Flame },
   { key: "downloaded", label: "Most Downloaded", icon: Download }
 ];
 
@@ -63,8 +63,7 @@ export function HomeHighlights() {
                 style={{ fontFamily: "Raleway, sans-serif" }}
               >
                 {active === "new" && "Newest assets across Connects."}
-                {active === "popular" &&
-                  "Most viewed assets in the last period."}
+                {active === "popular" && "Most viewed assets in the last period."}
                 {active === "downloaded" &&
                   "Assets downloaded most frequently."}
               </div>
