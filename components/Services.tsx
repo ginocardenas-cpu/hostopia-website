@@ -1,4 +1,4 @@
-import { Mail, Globe, ShoppingCart, TrendingUp, Headphones, ArrowUpRight } from "lucide-react";
+import { Mail, Globe, ShoppingCart, TrendingUp, Sparkles, ArrowUpRight } from "lucide-react";
 
 const services = [
   {
@@ -46,13 +46,17 @@ const services = [
     light: "#f2f2f0",
   },
   {
-    icon: Headphones,
+    icon: Sparkles,
     number: "05",
-    title: "Bilingual Support",
-    tag: "Unique Differentiator",
+    title: "AI-Powered Marketing",
+    tag: "Growth Without the Agency",
     description:
-      "Full English and French bilingual customer support, delivered in your brand's voice. Our agents become your team — a white-label support experience your customers will trust.",
-    highlights: ["English & French fluency", "Branded as your support team", "Dedicated partner management"],
+      "Help SMB customers attract and retain more customers without hiring an agency. AI-powered marketing tools simplify SEO, ads, social media, and reputation management under your brand.",
+    highlights: [
+      "AI-driven SEO and local search optimization",
+      "Automated ad and social campaign management",
+      "Review monitoring with intelligent response suggestions",
+    ],
     accent: "#2CADB2",
     light: "#e8f7f7",
   },
