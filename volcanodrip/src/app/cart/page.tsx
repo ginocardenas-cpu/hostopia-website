@@ -6,12 +6,36 @@ export default function CartPage() {
           Cart
         </p>
         <h1 className="text-2xl font-medium tracking-tight sm:text-3xl">
-          Your volcanic coffee lineup.
+          The Eruption Box &amp; your lineup.
         </h1>
         <p className="max-w-2xl text-sm leading-relaxed text-neutral-600">
-          This will become the cart and checkout hub, wired back into Stripe
-          like your current Hostinger store—showing your five single origins and
-          the monthly Volcanic Origins Box subscription.
+          On your current site, subscriptions live as The Eruption Box—a
+          curated delivery of the earth&apos;s most intense flavors. Here we&apos;ll
+          bring together that subscription and your one‑time bags in a single,
+          simple checkout.
+        </p>
+      </section>
+
+      <section className="mt-12 space-y-4 text-sm text-neutral-700">
+        <h2 className="text-xs font-semibold uppercase tracking-[0.3em] text-neutral-500">
+          The eruption box
+        </h2>
+        <p>
+          A curated delivery of freshly roasted, strictly volcanic coffee,
+          delivered to your door every month.
+        </p>
+        <ul className="mt-3 space-y-1 list-disc pl-5">
+          <li>Exclusive micro‑lots that never hit the public store.</li>
+          <li>Free priority shipping across Canada &amp; the US.</li>
+          <li>Skip, pause, or cancel anytime.</li>
+          <li>Brewing notes tailored to each month&apos;s bean profile.</li>
+        </ul>
+        <p className="mt-4 text-neutral-600">
+          From your current copy:{" "}
+          <span className="italic">
+            &quot;Warning: This coffee is incredibly fresh with explosive
+            flavour.&quot;
+          </span>
         </p>
       </section>
     </main>

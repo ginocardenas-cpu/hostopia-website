@@ -6,13 +6,23 @@ export default function SourcingPage() {
           Sourcing
         </p>
         <h1 className="text-2xl font-medium tracking-tight sm:text-3xl">
-          Coffee born where the ground is still moving.
+          Our beginning in volcanic soil.
         </h1>
         <p className="max-w-2xl text-sm leading-relaxed text-neutral-600">
-          Your current site explains how Volcanodrip sources beans from fertile
-          volcanic soils around the world—places where ash, minerals, and
-          altitude create dense, sweet coffees. This page will become the long
-          form version of that story, with maps, farms, and partners.
+          It didn&apos;t start in a boardroom. It started while traveling
+          through volcanic regions around the world—drawn to rich, dark soil
+          and landscapes full of life, shaped naturally over time.
+        </p>
+        <p className="max-w-2xl text-sm leading-relaxed text-neutral-600">
+          That&apos;s where we learned a simple truth: great coffee grows where
+          conditions are challenging. Those conditions help beans develop deeper
+          flavor and genuine character, resulting in a cup that&apos;s smooth,
+          bold, and beautifully balanced.
+        </p>
+        <p className="max-w-2xl text-sm leading-relaxed text-neutral-600">
+          Volcanodrip focuses on single‑origin coffees grown in volcanic soil,
+          working with farmers who understand how altitude, ash, and climate
+          shape the cup.
         </p>
       </section>
     </main>
