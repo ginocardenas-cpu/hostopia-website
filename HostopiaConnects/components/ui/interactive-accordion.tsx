@@ -277,7 +277,7 @@ export function UniqueAccordion({ onStartOver }: UniqueAccordionProps) {
                                     icon={CircleSlash}
                                     title="None"
                                     description="Skip this filter; show assets from any stage."
-                                    selected={selectedJourneys.length === 0}
+                                    selected={false}
                                     onClick={() => setSelectedJourneys([])}
                                     index={journeys.length}
                                   />
@@ -322,7 +322,7 @@ export function UniqueAccordion({ onStartOver }: UniqueAccordionProps) {
                                     icon={CircleSlash}
                                     title="None"
                                     description="Skip this filter; show assets for any product."
-                                    selected={selectedProductCategories.length === 0}
+                                    selected={false}
                                     onClick={() => setSelectedProductCategories([])}
                                     index={productsForJourneys.length}
                                   />
@@ -365,7 +365,7 @@ export function UniqueAccordion({ onStartOver }: UniqueAccordionProps) {
                                     icon={CircleSlash}
                                     title="None"
                                     description="Skip this filter; show any content format."
-                                    selected={selectedContentTypes.length === 0}
+                                    selected={false}
                                     onClick={() => setSelectedContentTypes([])}
                                     index={contentTypesWithType.length}
                                   />
@@ -408,7 +408,7 @@ export function UniqueAccordion({ onStartOver }: UniqueAccordionProps) {
                                     icon={CircleSlash}
                                     title="None"
                                     description="Skip this filter; show assets for any workflow."
-                                    selected={selectedUseCases.length === 0}
+                                    selected={false}
                                     onClick={() => setSelectedUseCases([])}
                                     index={useCasesWithType.length}
                                   />
