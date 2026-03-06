@@ -18,6 +18,8 @@ import {
   Package,
   ChevronDown,
   ChevronRight,
+  CircleSlash,
+  RotateCcw,
 } from "lucide-react";
 import {
   journeys,
@@ -40,13 +42,7 @@ interface AccordionItem {
 }
 
 const items: AccordionItem[] = [
-  {
-    id: "journey",
-    number: "",
-    title: "Begin",
-    content:
-      "Start from where your customer is in their lifecycle and see assets organized by product journey.",
-  },
+  { id: "journey", number: "", title: "Begin", content: "" },
 ];
 
 type IconComponent = React.ComponentType<{ className?: string; size?: number | string }>;
@@ -121,9 +117,9 @@ function SelectionTile({
 }
 
 export function UniqueAccordion() {
-  const [activeId, setActiveId] = useState<string | null>("journey");
+  const [activeId, setActiveId] = useState<string | null>(null);
   const [hoveredId, setHoveredId] = useState<string | null>(null);
-  const { setResultsFromAssets, seenSlugs, markSeen } = useBrowse();
+  const { setResultsFromAssets, seenSlugs, markSeen, clearResults } = useBrowse();
   const [wizardStep, setWizardStep] = useState<1 | 2 | 3 | 4 | 5>(1);
   const [selectedJourneys, setSelectedJourneys] = useState<ProductJourney[]>([]);
   const [selectedProductCategories, setSelectedProductCategories] = useState<ProductCategory[]>([]);
@@ -291,97 +287,121 @@ export function UniqueAccordion() {
                     className="overflow-hidden"
                   >
                     <div className="pl-16 pr-6 py-4 space-y-6">
-                      <p className="text-sm text-muted-foreground leading-relaxed" style={cardStyle}>
-                        {item.content}
-                      </p>
-
                       {/* Journey: multi-step wizard with vertical selection + unified tiles */}
                       {item.id === "journey" && (
                         <div className="flex flex-col lg:flex-row gap-8">
-                          {/* Vertical selection history - only when accordion is open */}
-                          <div className="lg:w-52 flex-shrink-0">
-                            <h4 className="text-xs font-bold uppercase tracking-wider text-[#2CADB2] mb-3" style={{ fontFamily: "Montserrat, sans-serif" }}>
-                              Your selection
-                            </h4>
+                          {/* Vertical selection history – clickable steps */}
+                          <div className="lg:w-56 flex-shrink-0 space-y-4">
+                            <div className="flex items-center justify-between gap-2">
+                              <h4 className="text-xs font-bold uppercase tracking-wider text-[#2CADB2]" style={{ fontFamily: "Montserrat, sans-serif" }}>
+                                Your selection
+                              </h4>
+                              <button
+                                type="button"
+                                onClick={() => {
+                                  setSelectedJourneys([]);
+                                  setSelectedProductCategories([]);
+                                  setSelectedContentTypes([]);
+                                  setSelectedUseCases([]);
+                                  setSelectedAsset(null);
+                                  setWizardStep(1);
+                                  clearResults();
+                                }}
+                                className="inline-flex items-center gap-1.5 text-xs font-semibold text-[#555A5E] hover:text-[#2CADB2] transition-colors"
+                                style={{ fontFamily: "Montserrat, sans-serif" }}
+                              >
+                                <RotateCcw className="w-3.5 h-3.5" />
+                                Start over
+                              </button>
+                            </div>
                             <div className="space-y-3 text-sm">
-                              <div>
-                                <span className="text-gray-500 block mb-1">Journey</span>
+                              <button
+                                type="button"
+                                onClick={() => setWizardStep(1)}
+                                className="w-full text-left rounded-lg px-2 py-1.5 hover:bg-[#2CADB2]/10 transition-colors border border-transparent hover:border-[#2CADB2]/20"
+                              >
+                                <span className="font-semibold text-[#24282B]" style={{ fontFamily: "Montserrat, sans-serif" }}>Step #1 – Customer Stage</span>
                                 {selectedJourneys.length === 0 ? (
-                                  <span className="text-gray-400 italic">None yet</span>
+                                  <span className="block text-xs text-gray-400 mt-0.5">None</span>
                                 ) : (
-                                  <ul className="space-y-0.5">
+                                  <ul className="space-y-0.5 mt-1">
                                     {selectedJourneys.map((j) => (
                                       <li key={j} className="flex items-center gap-1.5">
-                                        <ChevronRight className="w-3.5 h-3.5 text-[#2CADB2] flex-shrink-0" />
+                                        <ChevronRight className="w-3 h-3 text-[#2CADB2] flex-shrink-0" />
                                         <span style={cardStyle}>{j}</span>
                                       </li>
                                     ))}
                                   </ul>
                                 )}
-                              </div>
-                              {(wizardStep >= 2 || selectedProductCategories.length > 0) && (
-                                <div>
-                                  <span className="text-gray-500 block mb-1">Products</span>
-                                  {selectedProductCategories.length === 0 ? (
-                                    <span className="text-gray-400 italic">None yet</span>
-                                  ) : (
-                                    <ul className="space-y-0.5">
-                                      {productsForJourneys
-                                        .filter((p) => selectedProductCategories.includes(p.category))
-                                        .reduce<{ label: string }[]>((acc, p) => (acc.some((x) => x.label === p.label) ? acc : [...acc, { label: p.label }]), [])
-                                        .map(({ label }) => (
-                                          <li key={label} className="flex items-center gap-1.5">
-                                            <ChevronRight className="w-3.5 h-3.5 text-[#2CADB2] flex-shrink-0" />
-                                            <span style={cardStyle}>{label}</span>
-                                          </li>
-                                        ))}
-                                    </ul>
-                                  )}
-                                </div>
-                              )}
-                              {(wizardStep >= 3 || selectedContentTypes.length > 0) && (
-                                <div>
-                                  <span className="text-gray-500 block mb-1">Content type</span>
-                                  {selectedContentTypes.length === 0 ? (
-                                    <span className="text-gray-400 italic">Any</span>
-                                  ) : (
-                                    <ul className="space-y-0.5">
-                                      {contentTypesWithType.filter((c) => selectedContentTypes.includes(c.type)).map((c) => (
-                                        <li key={c.type} className="flex items-center gap-1.5">
-                                          <ChevronRight className="w-3.5 h-3.5 text-[#2CADB2] flex-shrink-0" />
-                                          <span style={cardStyle}>{c.label}</span>
+                              </button>
+                              <button
+                                type="button"
+                                onClick={() => setWizardStep(2)}
+                                className="w-full text-left rounded-lg px-2 py-1.5 hover:bg-[#2CADB2]/10 transition-colors border border-transparent hover:border-[#2CADB2]/20"
+                              >
+                                <span className="font-semibold text-[#24282B]" style={{ fontFamily: "Montserrat, sans-serif" }}>Step #2 – Products</span>
+                                {selectedProductCategories.length === 0 ? (
+                                  <span className="block text-xs text-gray-400 mt-0.5">None</span>
+                                ) : (
+                                  <ul className="space-y-0.5 mt-1">
+                                    {productsForJourneys
+                                      .filter((p) => selectedProductCategories.includes(p.category))
+                                      .reduce<{ label: string }[]>((acc, p) => (acc.some((x) => x.label === p.label) ? acc : [...acc, { label: p.label }]), [])
+                                      .map(({ label }) => (
+                                        <li key={label} className="flex items-center gap-1.5">
+                                          <ChevronRight className="w-3 h-3 text-[#2CADB2] flex-shrink-0" />
+                                          <span style={cardStyle}>{label}</span>
                                         </li>
                                       ))}
-                                    </ul>
-                                  )}
-                                </div>
-                              )}
-                              {(wizardStep >= 4 || selectedUseCases.length > 0) && (
-                                <div>
-                                  <span className="text-gray-500 block mb-1">Workflow</span>
-                                  {selectedUseCases.length === 0 ? (
-                                    <span className="text-gray-400 italic">Any</span>
-                                  ) : (
-                                    <ul className="space-y-0.5">
-                                      {useCasesWithType.filter((u) => selectedUseCases.includes(u.type)).map((u) => (
-                                        <li key={u.type} className="flex items-center gap-1.5">
-                                          <ChevronRight className="w-3.5 h-3.5 text-[#2CADB2] flex-shrink-0" />
-                                          <span style={cardStyle}>{u.label}</span>
-                                        </li>
-                                      ))}
-                                    </ul>
-                                  )}
-                                </div>
-                              )}
+                                  </ul>
+                                )}
+                              </button>
+                              <button
+                                type="button"
+                                onClick={() => setWizardStep(3)}
+                                className="w-full text-left rounded-lg px-2 py-1.5 hover:bg-[#2CADB2]/10 transition-colors border border-transparent hover:border-[#2CADB2]/20"
+                              >
+                                <span className="font-semibold text-[#24282B]" style={{ fontFamily: "Montserrat, sans-serif" }}>Step #3 – Content Type</span>
+                                {selectedContentTypes.length === 0 ? (
+                                  <span className="block text-xs text-gray-400 mt-0.5">None</span>
+                                ) : (
+                                  <ul className="space-y-0.5 mt-1">
+                                    {contentTypesWithType.filter((c) => selectedContentTypes.includes(c.type)).map((c) => (
+                                      <li key={c.type} className="flex items-center gap-1.5">
+                                        <ChevronRight className="w-3 h-3 text-[#2CADB2] flex-shrink-0" />
+                                        <span style={cardStyle}>{c.label}</span>
+                                      </li>
+                                    ))}
+                                  </ul>
+                                )}
+                              </button>
+                              <button
+                                type="button"
+                                onClick={() => setWizardStep(4)}
+                                className="w-full text-left rounded-lg px-2 py-1.5 hover:bg-[#2CADB2]/10 transition-colors border border-transparent hover:border-[#2CADB2]/20"
+                              >
+                                <span className="font-semibold text-[#24282B]" style={{ fontFamily: "Montserrat, sans-serif" }}>Step #4 – Workflow</span>
+                                {selectedUseCases.length === 0 ? (
+                                  <span className="block text-xs text-gray-400 mt-0.5">None</span>
+                                ) : (
+                                  <ul className="space-y-0.5 mt-1">
+                                    {useCasesWithType.filter((u) => selectedUseCases.includes(u.type)).map((u) => (
+                                      <li key={u.type} className="flex items-center gap-1.5">
+                                        <ChevronRight className="w-3 h-3 text-[#2CADB2] flex-shrink-0" />
+                                        <span style={cardStyle}>{u.label}</span>
+                                      </li>
+                                    ))}
+                                  </ul>
+                                )}
+                              </button>
                             </div>
                           </div>
 
                           <div className="flex-1 min-w-0 space-y-6">
                             {wizardStep === 1 && (
                               <>
-                                <div className="mb-2">
-                                  <h3 className="text-lg font-black text-[#24282B]" style={{ fontFamily: "Montserrat, sans-serif" }}>01 — Customer Stage</h3>
-                                  <p className="text-sm mt-1" style={cardStyle}>Start from where your customer is in their lifecycle. Explore assets designed to support awareness, evaluation, purchase, and growth.</p>
+                                <div className="mb-4">
+                                  <h3 className="text-lg font-black text-[#24282B]" style={{ fontFamily: "Montserrat, sans-serif" }}>Step #1 – Customer Stage</h3>
                                 </div>
                                 <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
                                   {journeys.map((journey, i) => {
@@ -398,16 +418,23 @@ export function UniqueAccordion() {
                                       />
                                     );
                                   })}
+                                  <SelectionTile
+                                    icon={CircleSlash}
+                                    title="None"
+                                    description="Skip this filter; show assets from any stage."
+                                    selected={selectedJourneys.length === 0}
+                                    onClick={() => setSelectedJourneys([])}
+                                    index={journeys.length}
+                                  />
                                 </div>
                                 <div className="flex justify-end">
                                   <motion.button
                                     type="button"
                                     onClick={() => setWizardStep(2)}
-                                    disabled={selectedJourneys.length === 0}
-                                    className="rounded-full px-6 py-2 text-sm font-bold shadow-md disabled:opacity-50 disabled:cursor-not-allowed flex items-center gap-2"
+                                    className="rounded-full px-6 py-2 text-sm font-bold shadow-md flex items-center gap-2"
                                     style={{ fontFamily: "Montserrat, sans-serif", backgroundColor: "#2CADB2", color: "white" }}
-                                    whileHover={selectedJourneys.length > 0 ? { scale: 1.03 } : {}}
-                                    whileTap={selectedJourneys.length > 0 ? { scale: 0.98 } : {}}
+                                    whileHover={{ scale: 1.03 }}
+                                    whileTap={{ scale: 0.98 }}
                                   >
                                     Next <ChevronDown className="w-4 h-4 rotate-[-90deg]" />
                                   </motion.button>
@@ -417,9 +444,8 @@ export function UniqueAccordion() {
 
                             {wizardStep === 2 && (
                               <>
-                                <div className="mb-2">
-                                  <h3 className="text-lg font-black text-[#24282B]" style={{ fontFamily: "Montserrat, sans-serif" }}>02 — Product</h3>
-                                  <p className="text-sm mt-1" style={cardStyle}>Explore materials organized by product to quickly access the resources tied to specific solutions.</p>
+                                <div className="mb-4">
+                                  <h3 className="text-lg font-black text-[#24282B]" style={{ fontFamily: "Montserrat, sans-serif" }}>Step #2 – Products</h3>
                                 </div>
                                 <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
                                   {productsForJourneys.map((p, i) => {
@@ -436,6 +462,14 @@ export function UniqueAccordion() {
                                       />
                                     );
                                   })}
+                                  <SelectionTile
+                                    icon={CircleSlash}
+                                    title="None"
+                                    description="Skip this filter; show assets for any product."
+                                    selected={selectedProductCategories.length === 0}
+                                    onClick={() => setSelectedProductCategories([])}
+                                    index={productsForJourneys.length}
+                                  />
                                 </div>
                                 <div className="flex justify-between">
                                   <button type="button" onClick={() => setWizardStep(1)} className="text-sm font-semibold text-[#2CADB2] hover:underline" style={{ fontFamily: "Montserrat, sans-serif" }}>← Back</button>
@@ -455,9 +489,8 @@ export function UniqueAccordion() {
 
                             {wizardStep === 3 && (
                               <>
-                                <div className="mb-2">
-                                  <h3 className="text-lg font-black text-[#24282B]" style={{ fontFamily: "Montserrat, sans-serif" }}>03 — Content Type</h3>
-                                  <p className="text-sm mt-1" style={cardStyle}>Quickly jump to the format you need—presentations, documents, videos, or campaign kits.</p>
+                                <div className="mb-4">
+                                  <h3 className="text-lg font-black text-[#24282B]" style={{ fontFamily: "Montserrat, sans-serif" }}>Step #3 – Content Type</h3>
                                 </div>
                                 <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
                                   {contentTypesWithType.map(({ label, description, type, Icon }, i) => (
@@ -471,6 +504,14 @@ export function UniqueAccordion() {
                                       index={i}
                                     />
                                   ))}
+                                  <SelectionTile
+                                    icon={CircleSlash}
+                                    title="None"
+                                    description="Skip this filter; show any content format."
+                                    selected={selectedContentTypes.length === 0}
+                                    onClick={() => setSelectedContentTypes([])}
+                                    index={contentTypesWithType.length}
+                                  />
                                 </div>
                                 <div className="flex justify-between">
                                   <button type="button" onClick={() => setWizardStep(2)} className="text-sm font-semibold text-[#2CADB2] hover:underline" style={{ fontFamily: "Montserrat, sans-serif" }}>← Back</button>
@@ -490,9 +531,8 @@ export function UniqueAccordion() {
 
                             {wizardStep === 4 && (
                               <>
-                                <div className="mb-2">
-                                  <h3 className="text-lg font-black text-[#24282B]" style={{ fontFamily: "Montserrat, sans-serif" }}>04 — Browse by Workflow</h3>
-                                  <p className="text-sm mt-1" style={cardStyle}>Find assets based on the task you&apos;re trying to complete, from launching campaigns to supporting sales conversations.</p>
+                                <div className="mb-4">
+                                  <h3 className="text-lg font-black text-[#24282B]" style={{ fontFamily: "Montserrat, sans-serif" }}>Step #4 – Workflow</h3>
                                 </div>
                                 <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
                                   {useCasesWithType.map(({ label, description, type, Icon }, i) => (
@@ -506,6 +546,14 @@ export function UniqueAccordion() {
                                       index={i}
                                     />
                                   ))}
+                                  <SelectionTile
+                                    icon={CircleSlash}
+                                    title="None"
+                                    description="Skip this filter; show assets for any workflow."
+                                    selected={selectedUseCases.length === 0}
+                                    onClick={() => setSelectedUseCases([])}
+                                    index={useCasesWithType.length}
+                                  />
                                 </div>
                                 <div className="flex justify-between">
                                   <button type="button" onClick={() => setWizardStep(3)} className="text-sm font-semibold text-[#2CADB2] hover:underline" style={{ fontFamily: "Montserrat, sans-serif" }}>← Back</button>
@@ -529,9 +577,9 @@ export function UniqueAccordion() {
 
                             {wizardStep === 5 && (
                               <>
-                                <div className="mb-2">
-                                  <h3 className="text-lg font-black text-[#24282B]" style={{ fontFamily: "Montserrat, sans-serif" }}>We Found {filteredAssets.length} Asset{filteredAssets.length !== 1 ? "s" : ""} for You</h3>
-                                  <p className="text-sm mt-1" style={cardStyle}>Explore the resources below to review, download, or use. Click on them to view details.</p>
+                                <div className="mb-4">
+                                  <h3 className="text-lg font-black text-[#24282B]" style={{ fontFamily: "Montserrat, sans-serif" }}>View Your Results</h3>
+                                  <p className="text-sm mt-1" style={cardStyle}>See all matching assets, review them online, download them, or refine your filters to narrow the results.</p>
                                 </div>
                                 <div className="space-y-2 max-h-[280px] overflow-y-auto">
                                   {filteredAssets.length === 0 ? (
