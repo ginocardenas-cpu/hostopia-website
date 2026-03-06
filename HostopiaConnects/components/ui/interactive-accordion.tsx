@@ -33,7 +33,6 @@ import {
 } from "@/lib/assets";
 import { useBrowse } from "@/components/BrowseProvider";
 import { AssetDetailPanel } from "@/components/AssetDetailPanel";
-import { InteractiveHoverButton } from "@/components/ui/interactive-hover-button";
 
 type IconComponent = React.ComponentType<{ className?: string; size?: number | string }>;
 
@@ -106,8 +105,11 @@ function SelectionTile({
   );
 }
 
-export function UniqueAccordion() {
-  const [open, setOpen] = useState(false);
+interface UniqueAccordionProps {
+  onStartOver?: () => void;
+}
+
+export function UniqueAccordion({ onStartOver }: UniqueAccordionProps) {
   const { setResultsFromAssets, seenSlugs, markSeen, clearResults } = useBrowse();
   const [wizardStep, setWizardStep] = useState<1 | 2 | 3 | 4 | 5>(1);
   const [selectedJourneys, setSelectedJourneys] = useState<ProductJourney[]>([]);
@@ -138,66 +140,26 @@ export function UniqueAccordion() {
     useCases: selectedUseCases.length ? selectedUseCases : undefined,
   });
 
+  const handleStartOver = () => {
+    setSelectedJourneys([]);
+    setSelectedProductCategories([]);
+    setSelectedContentTypes([]);
+    setSelectedUseCases([]);
+    setSelectedAsset(null);
+    setWizardStep(1);
+    clearResults();
+    onStartOver?.();
+  };
+
   return (
     <div className="w-full max-w-4xl">
-      <div className="flex flex-col items-center gap-6">
-        <InteractiveHoverButton
-          text="Begin"
-          active={open}
-          onClick={() => setOpen((prev) => !prev)}
-          className="!w-auto min-w-[140px] px-6"
-        />
-      </div>
-
-      <AnimatePresence mode="wait">
-        {open && (
-          <motion.div
-            initial={{ height: 0, opacity: 0 }}
-            animate={{
-              height: "auto",
-              opacity: 1,
-              transition: {
-                height: { type: "spring", stiffness: 300, damping: 30 },
-                opacity: { duration: 0.2, delay: 0.1 },
-              },
-            }}
-            exit={{
-              height: 0,
-              opacity: 0,
-              transition: {
-                height: { type: "spring", stiffness: 300, damping: 30 },
-                opacity: { duration: 0.1 },
-              },
-            }}
-            className="overflow-hidden"
-          >
-            <div className="pt-8 space-y-6">
-              <div className="flex flex-col lg:flex-row gap-8">
-                          {/* Vertical selection history – clickable steps */}
-                          <div className="lg:w-56 flex-shrink-0 space-y-4">
-                            <div className="flex items-center justify-between gap-2">
-                              <h4 className="text-xs font-bold uppercase tracking-wider text-[#2CADB2]" style={{ fontFamily: "Montserrat, sans-serif" }}>
-                                Your selection
-                              </h4>
-                              <button
-                                type="button"
-                                onClick={() => {
-                                  setSelectedJourneys([]);
-                                  setSelectedProductCategories([]);
-                                  setSelectedContentTypes([]);
-                                  setSelectedUseCases([]);
-                                  setSelectedAsset(null);
-                                  setWizardStep(1);
-                                  clearResults();
-                                }}
-                                className="inline-flex items-center gap-1.5 text-xs font-semibold text-[#555A5E] hover:text-[#2CADB2] transition-colors"
-                                style={{ fontFamily: "Montserrat, sans-serif" }}
-                              >
-                                <RotateCcw className="w-3.5 h-3.5" />
-                                Start over
-                              </button>
-                            </div>
-                            <div className="space-y-3 text-sm">
+      <div className="flex flex-col lg:flex-row gap-8">
+        {/* Your selection – clickable steps; Start over at bottom */}
+        <div className="lg:w-56 flex-shrink-0 space-y-4">
+          <h4 className="text-xs font-bold uppercase tracking-wider text-[#2CADB2]" style={{ fontFamily: "Montserrat, sans-serif" }}>
+            Your selection
+          </h4>
+          <div className="space-y-3 text-sm">
                               <button
                                 type="button"
                                 onClick={() => setWizardStep(1)}
@@ -278,6 +240,15 @@ export function UniqueAccordion() {
                                 )}
                               </button>
                             </div>
+                            <button
+                              type="button"
+                              onClick={handleStartOver}
+                              className="mt-4 w-full inline-flex items-center justify-center gap-1.5 rounded-lg border border-[#2CADB2]/30 bg-transparent px-3 py-2 text-xs font-semibold text-[#555A5E] hover:bg-[#2CADB2]/10 hover:text-[#2CADB2] transition-colors"
+                              style={{ fontFamily: "Montserrat, sans-serif" }}
+                            >
+                              <RotateCcw className="w-3.5 h-3.5" />
+                              Start over
+                            </button>
                           </div>
 
                           <div className="flex-1 min-w-0 space-y-6">
@@ -538,10 +509,6 @@ export function UniqueAccordion() {
                             )}
                           </div>
                         </div>
-            </div>
-          </motion.div>
-        )}
-      </AnimatePresence>
     </div>
   );
 }
