@@ -33,17 +33,7 @@ import {
 } from "@/lib/assets";
 import { useBrowse } from "@/components/BrowseProvider";
 import { AssetDetailPanel } from "@/components/AssetDetailPanel";
-
-interface AccordionItem {
-  id: string;
-  number: string;
-  title: string;
-  content: string;
-}
-
-const items: AccordionItem[] = [
-  { id: "journey", number: "", title: "Begin", content: "" },
-];
+import { InteractiveHoverButton } from "@/components/ui/interactive-hover-button";
 
 type IconComponent = React.ComponentType<{ className?: string; size?: number | string }>;
 
@@ -117,8 +107,7 @@ function SelectionTile({
 }
 
 export function UniqueAccordion() {
-  const [activeId, setActiveId] = useState<string | null>(null);
-  const [hoveredId, setHoveredId] = useState<string | null>(null);
+  const [open, setOpen] = useState(false);
   const { setResultsFromAssets, seenSlugs, markSeen, clearResults } = useBrowse();
   const [wizardStep, setWizardStep] = useState<1 | 2 | 3 | 4 | 5>(1);
   const [selectedJourneys, setSelectedJourneys] = useState<ProductJourney[]>([]);
@@ -151,145 +140,39 @@ export function UniqueAccordion() {
 
   return (
     <div className="w-full max-w-4xl">
-      <div className="space-y-0">
-        {items.map((item, index) => {
-          const isActive = activeId === item.id;
-          const isHovered = hoveredId === item.id;
-          const isLast = index === items.length - 1;
+      <div className="flex flex-col items-center gap-6">
+        <InteractiveHoverButton
+          text="Begin"
+          active={open}
+          onClick={() => setOpen((prev) => !prev)}
+          className="!w-auto min-w-[140px] px-6"
+        />
+      </div>
 
-          return (
-            <div key={item.id} className={!isLast ? "pb-2" : undefined}>
-              <motion.button
-                onClick={() => setActiveId(isActive ? null : item.id)}
-                onMouseEnter={() => setHoveredId(item.id)}
-                onMouseLeave={() => setHoveredId(null)}
-                className="w-full group relative"
-                initial={false}
-                type="button"
-              >
-                <div className="flex items-center gap-6 py-4 px-1">
-                  {item.number ? (
-                    <div className="relative flex items-center justify-center w-10 h-10">
-                      <motion.div
-                        className="absolute inset-0 rounded-full bg-foreground"
-                        initial={false}
-                        animate={{
-                          scale: isActive ? 1 : isHovered ? 0.85 : 0,
-                          opacity: isActive ? 1 : isHovered ? 0.1 : 0,
-                        }}
-                        transition={{
-                          type: "spring",
-                          stiffness: 400,
-                          damping: 25,
-                        }}
-                      />
-                      <motion.span
-                        className="relative z-10 text-sm font-medium tracking-wide"
-                        animate={{
-                          color: isActive
-                            ? "var(--primary-foreground)"
-                            : "var(--muted-foreground)",
-                        }}
-                        transition={{ duration: 0.2 }}
-                      >
-                        {item.number}
-                      </motion.span>
-                    </div>
-                  ) : null}
-
-                  <motion.h3
-                    className="text-lg md:text-xl font-semibold tracking-tight"
-                    animate={{
-                      x: isActive || isHovered ? 4 : 0,
-                      color: isActive
-                        ? "var(--foreground)"
-                        : isHovered
-                          ? "var(--foreground)"
-                          : "var(--muted-foreground)",
-                    }}
-                    transition={{
-                      type: "spring",
-                      stiffness: 400,
-                      damping: 30,
-                    }}
-                  >
-                    {item.title}
-                  </motion.h3>
-
-                  <div className="ml-auto flex items-center gap-3">
-                    <motion.div
-                      className="flex items-center justify-center w-8 h-8"
-                      animate={{ rotate: isActive ? 45 : 0 }}
-                      transition={{
-                        type: "spring",
-                        stiffness: 300,
-                        damping: 20,
-                      }}
-                    >
-                      <motion.svg
-                        width="16"
-                        height="16"
-                        viewBox="0 0 16 16"
-                        fill="none"
-                        className="text-foreground"
-                        animate={{
-                          opacity: isActive || isHovered ? 1 : 0.4,
-                        }}
-                        transition={{ duration: 0.2 }}
-                      >
-                        <motion.path
-                          d="M8 1V15M1 8H15"
-                          stroke="currentColor"
-                          strokeWidth="1.5"
-                          strokeLinecap="round"
-                          initial={false}
-                        />
-                      </motion.svg>
-                    </motion.div>
-                  </div>
-                </div>
-
-                <motion.div className="absolute bottom-0 left-0 right-0 h-px bg-border origin-left" initial={false} />
-                <motion.div
-                  className="absolute bottom-0 left-0 h-px bg-foreground origin-left"
-                  initial={{ scaleX: 0 }}
-                  animate={{
-                    scaleX: isActive ? 1 : isHovered ? 0.3 : 0,
-                  }}
-                  transition={{
-                    type: "spring",
-                    stiffness: 300,
-                    damping: 30,
-                  }}
-                />
-              </motion.button>
-
-              <AnimatePresence mode="wait">
-                {isActive && (
-                  <motion.div
-                    initial={{ height: 0, opacity: 0 }}
-                    animate={{
-                      height: "auto",
-                      opacity: 1,
-                      transition: {
-                        height: { type: "spring", stiffness: 300, damping: 30 },
-                        opacity: { duration: 0.2, delay: 0.1 },
-                      },
-                    }}
-                    exit={{
-                      height: 0,
-                      opacity: 0,
-                      transition: {
-                        height: { type: "spring", stiffness: 300, damping: 30 },
-                        opacity: { duration: 0.1 },
-                      },
-                    }}
-                    className="overflow-hidden"
-                  >
-                    <div className="pl-16 pr-6 py-4 space-y-6">
-                      {/* Journey: multi-step wizard with vertical selection + unified tiles */}
-                      {item.id === "journey" && (
-                        <div className="flex flex-col lg:flex-row gap-8">
+      <AnimatePresence mode="wait">
+        {open && (
+          <motion.div
+            initial={{ height: 0, opacity: 0 }}
+            animate={{
+              height: "auto",
+              opacity: 1,
+              transition: {
+                height: { type: "spring", stiffness: 300, damping: 30 },
+                opacity: { duration: 0.2, delay: 0.1 },
+              },
+            }}
+            exit={{
+              height: 0,
+              opacity: 0,
+              transition: {
+                height: { type: "spring", stiffness: 300, damping: 30 },
+                opacity: { duration: 0.1 },
+              },
+            }}
+            className="overflow-hidden"
+          >
+            <div className="pt-8 space-y-6">
+              <div className="flex flex-col lg:flex-row gap-8">
                           {/* Vertical selection history – clickable steps */}
                           <div className="lg:w-56 flex-shrink-0 space-y-4">
                             <div className="flex items-center justify-between gap-2">
@@ -320,7 +203,7 @@ export function UniqueAccordion() {
                                 onClick={() => setWizardStep(1)}
                                 className="w-full text-left rounded-lg px-2 py-1.5 hover:bg-[#2CADB2]/10 transition-colors border border-transparent hover:border-[#2CADB2]/20"
                               >
-                                <span className="font-semibold text-[#24282B]" style={{ fontFamily: "Montserrat, sans-serif" }}>Step #1 – Customer Stage</span>
+                                <span className="font-semibold text-[#24282B]" style={{ fontFamily: "Montserrat, sans-serif" }}>01 – Customer Stage</span>
                                 {selectedJourneys.length === 0 ? (
                                   <span className="block text-xs text-gray-400 mt-0.5">None</span>
                                 ) : (
@@ -339,7 +222,7 @@ export function UniqueAccordion() {
                                 onClick={() => setWizardStep(2)}
                                 className="w-full text-left rounded-lg px-2 py-1.5 hover:bg-[#2CADB2]/10 transition-colors border border-transparent hover:border-[#2CADB2]/20"
                               >
-                                <span className="font-semibold text-[#24282B]" style={{ fontFamily: "Montserrat, sans-serif" }}>Step #2 – Products</span>
+                                <span className="font-semibold text-[#24282B]" style={{ fontFamily: "Montserrat, sans-serif" }}>02 – Products</span>
                                 {selectedProductCategories.length === 0 ? (
                                   <span className="block text-xs text-gray-400 mt-0.5">None</span>
                                 ) : (
@@ -361,7 +244,7 @@ export function UniqueAccordion() {
                                 onClick={() => setWizardStep(3)}
                                 className="w-full text-left rounded-lg px-2 py-1.5 hover:bg-[#2CADB2]/10 transition-colors border border-transparent hover:border-[#2CADB2]/20"
                               >
-                                <span className="font-semibold text-[#24282B]" style={{ fontFamily: "Montserrat, sans-serif" }}>Step #3 – Content Type</span>
+                                <span className="font-semibold text-[#24282B]" style={{ fontFamily: "Montserrat, sans-serif" }}>03 – Content Type</span>
                                 {selectedContentTypes.length === 0 ? (
                                   <span className="block text-xs text-gray-400 mt-0.5">None</span>
                                 ) : (
@@ -380,7 +263,7 @@ export function UniqueAccordion() {
                                 onClick={() => setWizardStep(4)}
                                 className="w-full text-left rounded-lg px-2 py-1.5 hover:bg-[#2CADB2]/10 transition-colors border border-transparent hover:border-[#2CADB2]/20"
                               >
-                                <span className="font-semibold text-[#24282B]" style={{ fontFamily: "Montserrat, sans-serif" }}>Step #4 – Workflow</span>
+                                <span className="font-semibold text-[#24282B]" style={{ fontFamily: "Montserrat, sans-serif" }}>04 – Workflow</span>
                                 {selectedUseCases.length === 0 ? (
                                   <span className="block text-xs text-gray-400 mt-0.5">None</span>
                                 ) : (
@@ -400,8 +283,9 @@ export function UniqueAccordion() {
                           <div className="flex-1 min-w-0 space-y-6">
                             {wizardStep === 1 && (
                               <>
-                                <div className="mb-4">
-                                  <h3 className="text-lg font-black text-[#24282B]" style={{ fontFamily: "Montserrat, sans-serif" }}>Step #1 – Customer Stage</h3>
+                                <div className="mb-4 text-center">
+                                  <h3 className="text-lg font-black text-[#24282B]" style={{ fontFamily: "Montserrat, sans-serif" }}>01 – Customer Stage</h3>
+                                  <p className="text-sm mt-2 max-w-xl mx-auto" style={cardStyle}>Start from where your customer is in their lifecycle. Explore assets designed to support awareness, evaluation, purchase, and growth.</p>
                                 </div>
                                 <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
                                   {journeys.map((journey, i) => {
@@ -444,8 +328,9 @@ export function UniqueAccordion() {
 
                             {wizardStep === 2 && (
                               <>
-                                <div className="mb-4">
-                                  <h3 className="text-lg font-black text-[#24282B]" style={{ fontFamily: "Montserrat, sans-serif" }}>Step #2 – Products</h3>
+                                <div className="mb-4 text-center">
+                                  <h3 className="text-lg font-black text-[#24282B]" style={{ fontFamily: "Montserrat, sans-serif" }}>02 – Products</h3>
+                                  <p className="text-sm mt-2 max-w-xl mx-auto" style={cardStyle}>Explore materials organized by product to quickly access the resources tied to specific solutions.</p>
                                 </div>
                                 <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
                                   {productsForJourneys.map((p, i) => {
@@ -489,8 +374,9 @@ export function UniqueAccordion() {
 
                             {wizardStep === 3 && (
                               <>
-                                <div className="mb-4">
-                                  <h3 className="text-lg font-black text-[#24282B]" style={{ fontFamily: "Montserrat, sans-serif" }}>Step #3 – Content Type</h3>
+                                <div className="mb-4 text-center">
+                                  <h3 className="text-lg font-black text-[#24282B]" style={{ fontFamily: "Montserrat, sans-serif" }}>03 – Content Type</h3>
+                                  <p className="text-sm mt-2 max-w-xl mx-auto" style={cardStyle}>Quickly jump to the format you need—presentations, documents, videos, or campaign kits.</p>
                                 </div>
                                 <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
                                   {contentTypesWithType.map(({ label, description, type, Icon }, i) => (
@@ -531,8 +417,9 @@ export function UniqueAccordion() {
 
                             {wizardStep === 4 && (
                               <>
-                                <div className="mb-4">
-                                  <h3 className="text-lg font-black text-[#24282B]" style={{ fontFamily: "Montserrat, sans-serif" }}>Step #4 – Workflow</h3>
+                                <div className="mb-4 text-center">
+                                  <h3 className="text-lg font-black text-[#24282B]" style={{ fontFamily: "Montserrat, sans-serif" }}>04 – Workflow</h3>
+                                  <p className="text-sm mt-2 max-w-xl mx-auto" style={cardStyle}>Find assets based on the task you&apos;re trying to complete, from launching campaigns to supporting sales conversations.</p>
                                 </div>
                                 <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
                                   {useCasesWithType.map(({ label, description, type, Icon }, i) => (
@@ -651,15 +538,10 @@ export function UniqueAccordion() {
                             )}
                           </div>
                         </div>
-                      )}
-                    </div>
-                  </motion.div>
-                )}
-              </AnimatePresence>
             </div>
-          );
-        })}
-      </div>
+          </motion.div>
+        )}
+      </AnimatePresence>
     </div>
   );
 }
