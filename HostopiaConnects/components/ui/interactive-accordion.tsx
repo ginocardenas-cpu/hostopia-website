@@ -49,21 +49,23 @@ const items: AccordionItem[] = [
   },
 ];
 
-const journeyIcons: Record<ProductJourney, React.ComponentType<{ className?: string; size?: number }>> = {
+type IconComponent = React.ComponentType<{ className?: string; size?: number | string }>;
+
+const journeyIcons: Record<ProductJourney, IconComponent> = {
   "Build a Brand": Palette,
   "Get Online": Globe,
   "Get Found": Search,
   "Grow their Business": TrendingUp,
 };
 
-const contentTypesWithType: { label: string; description: string; type: ContentType; Icon: React.ComponentType<{ className?: string; size?: number }> }[] = [
+const contentTypesWithType: { label: string; description: string; type: ContentType; Icon: IconComponent }[] = [
   { label: "Videos", description: "Watch marketing videos, demos, and walkthroughs that help explain our products.", type: "Video", Icon: Video },
   { label: "Decks & Presentations", description: "Download ready-to-use slides covering product overviews.", type: "Presentation", Icon: Presentation },
   { label: "Documents & Playbooks", description: "Explore strategy guides, documentation, and playbooks designed to support sales and marketing efforts.", type: "Document", Icon: FileText },
   { label: "Training Modules", description: "Structured learning content to help sales teams understand how to sell our products.", type: "Training", Icon: BookOpen },
 ];
 
-const useCasesWithType: { label: string; description: string; type: UseCase; Icon: React.ComponentType<{ className?: string; size?: number }> }[] = [
+const useCasesWithType: { label: string; description: string; type: UseCase; Icon: IconComponent }[] = [
   { label: "Sales", description: "Pitch decks, product materials, and tools designed to help your teams sell.", type: "Sales", Icon: Briefcase },
   { label: "Marketing", description: "Marketing assets, messaging frameworks, and promotional assets to drive demand.", type: "Marketing", Icon: Megaphone },
   { label: "Training", description: "Materials that help onboard new team members and keep teams up to speed.", type: "Training & Onboarding", Icon: GraduationCap },
@@ -84,7 +86,7 @@ function SelectionTile({
   onClick,
   index = 0,
 }: {
-  icon: React.ComponentType<{ className?: string; size?: number }>;
+  icon: IconComponent;
   title: string;
   description: string;
   selected: boolean;
