@@ -6,7 +6,8 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "blog:migrate": "node scripts/migrate-blog-from-hostopia.js"
   },
   "dependencies": {
     "@sanity/client": "^6.22.0",
@@ -14,7 +15,8 @@
     "lucide-react": "^0.400.0",
     "next": "14.2.5",
     "react": "^18",
-    "react-dom": "^18"
+    "react-dom": "^18",
+    "recharts": "^2.12.0"
   },
   "devDependencies": {
     "@types/node": "^20",
