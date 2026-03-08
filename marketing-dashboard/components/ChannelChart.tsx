@@ -9,7 +9,7 @@ import {
   ResponsiveContainer,
   CartesianGrid,
 } from "recharts";
-import type { TimeSeriesPoint } from "@/lib/marketing-dashboard-data";
+import type { TimeSeriesPoint } from "@/lib/sites-data";
 
 interface ChannelChartProps {
   data: TimeSeriesPoint[];
@@ -44,7 +44,7 @@ export default function ChannelChart({
             contentStyle={{
               borderRadius: "8px",
               border: "1px solid #e5e7eb",
-              fontFamily: "Raleway, sans-serif",
+              fontFamily: "Inter, sans-serif",
             }}
             formatter={(value: number) => [value.toLocaleString(), "Value"]}
           />

@@ -1,7 +1,7 @@
 "use client";
 
 import { TrendingUp, TrendingDown, Minus } from "lucide-react";
-import type { MetricSummary } from "@/lib/marketing-dashboard-data";
+import type { MetricSummary } from "@/lib/sites-data";
 
 interface MetricCardProps {
   metric: MetricSummary;

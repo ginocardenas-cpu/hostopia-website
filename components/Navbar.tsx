@@ -6,7 +6,6 @@ import { Menu, X, ChevronDown } from "lucide-react";
 import { productsDropdownSections } from "@/lib/nav-products";
 
 const navLinks = [
-  { label: "Marketing Dashboard", href: "/marketing-dashboard" },
   { label: "Resources", href: "/resources" },
   { label: "Contact Us", href: "/contact" },
 ];

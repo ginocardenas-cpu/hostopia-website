@@ -1,21 +1,19 @@
 {
-  "name": "hostopia-website",
-  "version": "0.1.0",
+  "name": "marketing-dashboard",
+  "version": "1.0.0",
   "private": true,
   "scripts": {
-    "dev": "next dev",
+    "dev": "next dev -p 3001",
     "build": "next build",
-    "start": "next start",
-    "lint": "next lint",
-    "blog:migrate": "node scripts/migrate-blog-from-hostopia.js"
+    "start": "next start -p 3001",
+    "lint": "next lint"
   },
   "dependencies": {
-    "@sanity/client": "^6.22.0",
-    "framer-motion": "^12.34.3",
     "lucide-react": "^0.400.0",
     "next": "14.2.5",
     "react": "^18",
-    "react-dom": "^18"
+    "react-dom": "^18",
+    "recharts": "^2.12.0"
   },
   "devDependencies": {
     "@types/node": "^20",
