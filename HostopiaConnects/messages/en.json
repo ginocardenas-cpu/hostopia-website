@@ -64,6 +64,7 @@
     "empty": "Your collection is empty",
     "reviewTitle": "Review your selected assets.",
     "reviewIntro": "This is your briefcase for decks, documents, and videos. When you submit the form on the right, you'll receive a single email with secure, time-limited download links for everything in My Resources.",
+    "downloadsEmail": "Downloads are delivered via email so you can easily access your selected resources anytime.",
     "emptyHint": "Browse journeys and products first, then use the",
     "addToMyResourcesBtn": "Add to My Resources",
     "emptyHintSuffix": "button on any asset detail page to see items here.",
@@ -76,6 +77,8 @@
     "optInLabel": "Subscribe to our marketing updates and product news.",
     "submitButton": "Request your download links",
     "submitHint": "Add at least one asset to My Resources before requesting your download links.",
+    "successTitle": "Your resources are on the way",
+    "successBody": "Check your inbox for an email containing secure links to download the assets you selected.",
     "remove": "Remove",
     "requestReceived": "Request received. In the full implementation, this would send a single email with secure links to all selected assets."
   },

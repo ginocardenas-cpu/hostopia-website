@@ -1,5 +1,6 @@
 "use client";
 
+import React from "react";
 import { Link } from "@/i18n/routing";
 import { useTranslations } from "next-intl";
 import { useCart } from "@/components/CartProvider";
@@ -8,11 +9,12 @@ export default function CartPage() {
   const t = useTranslations("cart");
   const { assets, removeItem, clear } = useCart();
   const hasItems = assets.length > 0;
+  const [submitted, setSubmitted] = React.useState(false);
 
   const handleSubmit: React.FormEventHandler<HTMLFormElement> = (event) => {
     event.preventDefault();
     clear();
-    alert(t("requestReceived"));
+    setSubmitted(true);
   };
 
   return (
@@ -40,6 +42,12 @@ export default function CartPage() {
               style={{ fontFamily: "Raleway, sans-serif" }}
             >
               {t("reviewIntro")}
+            </p>
+            <p
+              className="mt-3 text-sm font-semibold text-[#2CADB2]"
+              style={{ fontFamily: "Raleway, sans-serif" }}
+            >
+              {t("downloadsEmail")}
             </p>
           </div>
 
@@ -195,13 +203,30 @@ export default function CartPage() {
                 {t("submitButton")}
               </button>
 
-              {!hasItems && (
+              {!hasItems && !submitted && (
                 <p
                   className="text-[11px] text-gray-500 mt-1"
                   style={{ fontFamily: "Raleway, sans-serif" }}
                 >
                   {t("submitHint")}
                 </p>
+              )}
+
+              {submitted && (
+                <div className="mt-3 rounded-xl border border-[#2CADB2]/40 bg-[#f0fbfa] px-3 py-2">
+                  <p
+                    className="text-[11px] font-semibold text-[#2CADB2]"
+                    style={{ fontFamily: "Montserrat, sans-serif" }}
+                  >
+                    {t("successTitle")}
+                  </p>
+                  <p
+                    className="mt-1 text-[11px] text-gray-700"
+                    style={{ fontFamily: "Raleway, sans-serif" }}
+                  >
+                    {t("successBody")}
+                  </p>
+                </div>
               )}
             </form>
           </div>

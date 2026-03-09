@@ -64,6 +64,7 @@
     "empty": "Tu colección está vacía",
     "reviewTitle": "Revisa los recursos que seleccionaste.",
     "reviewIntro": "Este es tu maletín de presentaciones, documentos y videos. Al enviar el formulario de la derecha, recibirás un correo con enlaces de descarga seguros y temporales para todo lo que esté en Mis recursos.",
+    "downloadsEmail": "Las descargas se envían por correo electrónico para que puedas acceder a tus recursos seleccionados en cualquier momento.",
     "emptyHint": "Explora por etapa o producto primero; luego usa el botón",
     "addToMyResourcesBtn": "Agregar a Mis recursos",
     "emptyHintSuffix": "en cualquier recurso para ver los elementos aquí.",
@@ -76,6 +77,8 @@
     "optInLabel": "Recibir novedades de marketing y productos.",
     "submitButton": "Solicitar enlaces de descarga",
     "submitHint": "Agrega al menos un recurso a Mis recursos antes de solicitar tus enlaces de descarga.",
+    "successTitle": "Tus recursos van en camino",
+    "successBody": "Revisa tu bandeja de entrada: recibirás un correo con enlaces seguros para descargar los recursos que seleccionaste.",
     "remove": "Quitar",
     "requestReceived": "Solicitud recibida. En la implementación completa se enviaría un correo con enlaces seguros a los recursos seleccionados."
   },
