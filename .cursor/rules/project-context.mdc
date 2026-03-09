@@ -9,3 +9,11 @@ alwaysApply: true
 - **Live / preview URL:** https://hostopia-website-2-jhmfeodju-ginos-projects-21427f6a.vercel.app
 - **Git remote:** https://github.com/rollen77-spec/hostopia-website (origin)
 - All edits, features, and fixes should be made here so they deploy to the Vercel URL above.
+
+## Deploying changes
+
+- **Always push after making changes.** After editing files that should go live (e.g. pages, components, assets, config), run in the terminal:
+  1. `git add` the relevant files (only what you changed for this task)
+  2. `git commit -m "Clear message describing the change"`
+  3. `git push origin main`
+- Do this without the user having to ask. Skip only if the user explicitly says not to push or to leave changes uncommitted.
