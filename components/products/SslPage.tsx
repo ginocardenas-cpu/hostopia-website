@@ -1,5 +1,6 @@
 import Link from "next/link";
 import { ArrowRight, ShieldCheck, Lock, Globe2, CreditCard, Server, CheckCircle2 } from "lucide-react";
+import ProductSection from "./ProductSection";
 
 type SslPageProps = {
   label: string;
@@ -7,10 +8,9 @@ type SslPageProps = {
 
 export default function SslPage({ label }: SslPageProps) {
   return (
-    <main className="pt-24 pb-20">
-      <div className="max-w-7xl mx-auto px-6">
-        {/* Breadcrumb */}
-        <nav className="text-sm text-gray-500 mb-6">
+    <main className="pt-24 pb-0">
+      <div className="max-w-7xl mx-auto px-6 pt-2 pb-4">
+        <nav className="text-sm text-gray-500">
           <Link href="/" className="hover:text-gray-700">
             Home
           </Link>
@@ -21,10 +21,11 @@ export default function SslPage({ label }: SslPageProps) {
           <span className="mx-2">/</span>
           <span className="text-gray-900">{label}</span>
         </nav>
+      </div>
 
-        {/* Hero */}
+      <ProductSection variant="gray">
         <section
-          className="rounded-3xl overflow-hidden mb-16 border border-gray-100"
+          className="rounded-3xl overflow-hidden border border-gray-100"
           style={{ backgroundColor: "#f7f6f2" }}
         >
           <div className="grid md:grid-cols-2 gap-10 p-8 md:p-12 items-center">
@@ -115,10 +116,10 @@ export default function SslPage({ label }: SslPageProps) {
             </div>
           </div>
         </section>
+      </ProductSection>
 
-        {/* What you offer */}
-        <section className="mb-16">
-          <SectionHeading eyebrow="What you offer" title="Under your brand" />
+      <ProductSection variant="white">
+        <SectionHeading eyebrow="What you offer" title="Under your brand" />
           <p
             className="text-base leading-relaxed mb-6 max-w-3xl"
             style={{ fontFamily: "Raleway, sans-serif", color: "#4b5563" }}
@@ -186,11 +187,10 @@ export default function SslPage({ label }: SslPageProps) {
               body="Secures a domain and all its subdomains with one certificate, reducing complexity and cost."
             />
           </div>
-        </section>
+      </ProductSection>
 
-        {/* Platform Features */}
-        <section className="mb-16">
-          <SectionHeading eyebrow="Platform capabilities" title="Enterprise-grade SSL platform" />
+      <ProductSection variant="gray">
+        <SectionHeading eyebrow="Platform capabilities" title="Enterprise-grade SSL platform" />
           <p
             className="text-base leading-relaxed mb-8 max-w-3xl"
             style={{ fontFamily: "Raleway, sans-serif", color: "#4b5563" }}
@@ -224,11 +224,10 @@ export default function SslPage({ label }: SslPageProps) {
               ]}
             />
           </div>
-        </section>
+      </ProductSection>
 
-        {/* Partner advantage */}
-        <section className="mb-16">
-          <SectionHeading eyebrow="The partner advantage" title="High-attach, high-trust revenue" />
+      <ProductSection variant="white">
+        <SectionHeading eyebrow="The partner advantage" title="High-attach, high-trust revenue" />
           <p
             className="text-base leading-relaxed mb-6 max-w-3xl"
             style={{ fontFamily: "Raleway, sans-serif", color: "#4b5563" }}
@@ -268,11 +267,10 @@ export default function SslPage({ label }: SslPageProps) {
               </span>
             </li>
           </ul>
-        </section>
+      </ProductSection>
 
-        {/* Ideal SMB profiles */}
-        <section className="mb-16">
-          <SectionHeading eyebrow="Ideal segments" title="Ideal SMB customer profiles" />
+      <ProductSection variant="gray">
+        <SectionHeading eyebrow="Ideal segments" title="Ideal SMB customer profiles" />
           <p
             className="text-base leading-relaxed mb-8 max-w-3xl"
             style={{ fontFamily: "Raleway, sans-serif", color: "#4b5563" }}
@@ -297,11 +295,10 @@ export default function SslPage({ label }: SslPageProps) {
               body="Business sites looking to boost trust, reduce browser warnings, and support SEO with HTTPS."
             />
           </div>
-        </section>
+      </ProductSection>
 
-        {/* Lifecycle fit with blue Get Online */}
-        <section className="mb-16">
-          <SectionHeading eyebrow="Portfolio fit" title="How SSL fits your SMB portfolio" />
+      <ProductSection variant="white">
+        <SectionHeading eyebrow="Portfolio fit" title="How SSL fits your SMB portfolio" />
           <p
             className="text-base leading-relaxed mb-8 max-w-3xl"
             style={{ fontFamily: "Raleway, sans-serif", color: "#4b5563" }}
@@ -359,11 +356,10 @@ export default function SslPage({ label }: SslPageProps) {
               return arrow ? [card, arrow] : [card];
             })}
           </div>
-        </section>
+      </ProductSection>
 
-        {/* Enterprise-grade platform */}
-        <section className="mb-16">
-          <SectionHeading eyebrow="Enterprise-grade platform" title="Infrastructure behind your SSL offer" />
+      <ProductSection variant="gray">
+        <SectionHeading eyebrow="Enterprise-grade platform" title="Infrastructure behind your SSL offer" />
           <p
             className="text-base leading-relaxed mb-6 max-w-3xl"
             style={{ fontFamily: "Raleway, sans-serif", color: "#4b5563" }}
@@ -390,11 +386,10 @@ export default function SslPage({ label }: SslPageProps) {
               </span>
             </li>
           </ul>
-        </section>
+      </ProductSection>
 
-        {/* CTA */}
-        <section className="mb-10">
-          <div className="rounded-3xl p-8 md:p-10 text-white" style={{ backgroundColor: "#24282B" }}>
+      <ProductSection variant="white">
+        <div className="rounded-3xl p-8 md:p-10 text-white" style={{ backgroundColor: "#24282B" }}>
             <h3
               className="text-xl md:text-2xl font-bold mb-4"
               style={{ fontFamily: "Montserrat, sans-serif", color: "#ffffff" }}
@@ -417,8 +412,7 @@ export default function SslPage({ label }: SslPageProps) {
               <ArrowRight size={16} />
             </Link>
           </div>
-        </section>
-      </div>
+      </ProductSection>
     </main>
   );
 }

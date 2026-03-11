@@ -1,5 +1,6 @@
 import Link from "next/link";
 import { ArrowRight, ShoppingCart, CreditCard, Package, Globe2, Smartphone } from "lucide-react";
+import ProductSection from "./ProductSection";
 
 type EcommercePageProps = {
   label: string;
@@ -7,10 +8,9 @@ type EcommercePageProps = {
 
 export default function EcommercePage({ label }: EcommercePageProps) {
   return (
-    <main className="pt-24 pb-20">
-      <div className="max-w-7xl mx-auto px-6">
-        {/* Breadcrumb */}
-        <nav className="text-sm text-gray-500 mb-6">
+    <main className="pt-24 pb-0">
+      <div className="max-w-7xl mx-auto px-6 pt-2 pb-4">
+        <nav className="text-sm text-gray-500">
           <Link href="/" className="hover:text-gray-700">
             Home
           </Link>
@@ -21,10 +21,11 @@ export default function EcommercePage({ label }: EcommercePageProps) {
           <span className="mx-2">/</span>
           <span className="text-gray-900">{label}</span>
         </nav>
+      </div>
 
-        {/* Hero */}
+      <ProductSection variant="gray">
         <section
-          className="rounded-3xl overflow-hidden mb-16 border border-gray-100"
+          className="rounded-3xl overflow-hidden border border-gray-100"
           style={{ backgroundColor: "#f7f6f2" }}
         >
           <div className="grid md:grid-cols-2 gap-10 p-8 md:p-12 items-center">
@@ -121,10 +122,10 @@ export default function EcommercePage({ label }: EcommercePageProps) {
             </div>
           </div>
         </section>
+      </ProductSection>
 
-        {/* What you offer */}
-        <section className="mb-16">
-          <SectionHeading eyebrow="What you offer" title="Under your brand" />
+      <ProductSection variant="white">
+        <SectionHeading eyebrow="What you offer" title="Under your brand" />
           <p
             className="text-base leading-relaxed mb-6 max-w-3xl"
             style={{ fontFamily: "Raleway, sans-serif", color: "#4b5563" }}
@@ -157,11 +158,10 @@ export default function EcommercePage({ label }: EcommercePageProps) {
               <span>DIY and DIFM delivery models: self-serve setup or full managed service for higher-touch clients.</span>
             </li>
           </ul>
-        </section>
+      </ProductSection>
 
-        {/* Key features */}
-        <section className="mb-16">
-          <SectionHeading eyebrow="Product capabilities" title="Key features of Online Store" />
+      <ProductSection variant="gray">
+        <SectionHeading eyebrow="Product capabilities" title="Key features of Online Store" />
           <p
             className="text-base leading-relaxed mb-8 max-w-3xl"
             style={{ fontFamily: "Raleway, sans-serif", color: "#4b5563" }}
@@ -207,11 +207,10 @@ export default function EcommercePage({ label }: EcommercePageProps) {
               ]}
             />
           </div>
-        </section>
+      </ProductSection>
 
-        {/* Platform features */}
-        <section className="mb-16">
-          <SectionHeading eyebrow="Platform capabilities" title="Behind your brand" />
+      <ProductSection variant="white">
+        <SectionHeading eyebrow="Platform capabilities" title="Behind your brand" />
           <p
             className="text-base leading-relaxed mb-8 max-w-3xl"
             style={{ fontFamily: "Raleway, sans-serif", color: "#4b5563" }}
@@ -243,11 +242,10 @@ export default function EcommercePage({ label }: EcommercePageProps) {
               <span>Global hosting infrastructure with secure, high-performance transactions.</span>
             </li>
           </ul>
-        </section>
+      </ProductSection>
 
-        {/* What's included */}
-        <section className="mb-16">
-          <SectionHeading eyebrow="What's included" title="When you launch Online Store with Hostopia" />
+      <ProductSection variant="gray">
+        <SectionHeading eyebrow="What's included" title="When you launch Online Store with Hostopia" />
           <ul
             className="space-y-3 text-sm md:text-base max-w-3xl"
             style={{ fontFamily: "Raleway, sans-serif", color: "#4b5563" }}
@@ -273,11 +271,10 @@ export default function EcommercePage({ label }: EcommercePageProps) {
               <span>Partner training, sales enablement, and ongoing support.</span>
             </li>
           </ul>
-        </section>
+      </ProductSection>
 
-        {/* Lifecycle fit: highlight Start selling */}
-        <section className="mb-16">
-          <SectionHeading eyebrow="Lifecycle fit" title="How Online Store helps SMBs start selling" />
+      <ProductSection variant="white">
+        <SectionHeading eyebrow="Lifecycle fit" title="How Online Store helps SMBs start selling" />
           <p
             className="text-base leading-relaxed mb-8 max-w-3xl"
             style={{ fontFamily: "Raleway, sans-serif", color: "#4b5563" }}
@@ -335,11 +332,10 @@ export default function EcommercePage({ label }: EcommercePageProps) {
               return arrow ? [card, arrow] : [card];
             })}
           </div>
-        </section>
+      </ProductSection>
 
-        {/* CTA */}
-        <section className="mb-10">
-          <div className="rounded-3xl p-8 md:p-10 text-white" style={{ backgroundColor: "#24282B" }}>
+      <ProductSection variant="gray">
+        <div className="rounded-3xl p-8 md:p-10 text-white" style={{ backgroundColor: "#24282B" }}>
             <h3
               className="text-xl md:text-2xl font-bold mb-4"
               style={{ fontFamily: "Montserrat, sans-serif", color: "#ffffff" }}
@@ -362,8 +358,7 @@ export default function EcommercePage({ label }: EcommercePageProps) {
               <ArrowRight size={16} />
             </Link>
           </div>
-        </section>
-      </div>
+      </ProductSection>
     </main>
   );
 }

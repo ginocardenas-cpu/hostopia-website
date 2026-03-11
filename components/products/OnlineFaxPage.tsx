@@ -1,5 +1,6 @@
 import Link from "next/link";
 import { ArrowRight, Printer, ShieldCheck, Globe2, Inbox, Cpu } from "lucide-react";
+import ProductSection from "./ProductSection";
 
 type OnlineFaxPageProps = {
   label: string;
@@ -7,10 +8,9 @@ type OnlineFaxPageProps = {
 
 export default function OnlineFaxPage({ label }: OnlineFaxPageProps) {
   return (
-    <main className="pt-24 pb-20">
-      <div className="max-w-7xl mx-auto px-6">
-        {/* Breadcrumb */}
-        <nav className="text-sm text-gray-500 mb-6">
+    <main className="pt-24 pb-0">
+      <div className="max-w-7xl mx-auto px-6 pt-2 pb-4">
+        <nav className="text-sm text-gray-500">
           <Link href="/" className="hover:text-gray-700">
             Home
           </Link>
@@ -21,10 +21,11 @@ export default function OnlineFaxPage({ label }: OnlineFaxPageProps) {
           <span className="mx-2">/</span>
           <span className="text-gray-900">{label}</span>
         </nav>
+      </div>
 
-        {/* Hero */}
+      <ProductSection variant="gray">
         <section
-          className="rounded-3xl overflow-hidden mb-16 border border-gray-100"
+          className="rounded-3xl overflow-hidden border border-gray-100"
           style={{ backgroundColor: "#f7f6f2" }}
         >
           <div className="grid md:grid-cols-2 gap-10 p-8 md:p-12 items-center">
@@ -113,10 +114,10 @@ export default function OnlineFaxPage({ label }: OnlineFaxPageProps) {
             </div>
           </div>
         </section>
+      </ProductSection>
 
-        {/* What you offer */}
-        <section className="mb-16">
-          <SectionHeading eyebrow="What you offer" title="Under your brand" />
+      <ProductSection variant="white">
+        <SectionHeading eyebrow="What you offer" title="Under your brand" />
           <p
             className="text-base leading-relaxed mb-6 max-w-3xl"
             style={{ fontFamily: "Raleway, sans-serif", color: "#4b5563" }}
@@ -158,11 +159,10 @@ export default function OnlineFaxPage({ label }: OnlineFaxPageProps) {
               </span>
             </li>
           </ul>
-        </section>
+      </ProductSection>
 
-        {/* Key features */}
-        <section className="mb-16">
-          <SectionHeading eyebrow="Product capabilities" title="Key features of Online Fax" />
+      <ProductSection variant="gray">
+        <SectionHeading eyebrow="Product capabilities" title="Key features of Online Fax" />
           <p
             className="text-base leading-relaxed mb-8 max-w-3xl"
             style={{ fontFamily: "Raleway, sans-serif", color: "#4b5563" }}
@@ -193,11 +193,10 @@ export default function OnlineFaxPage({ label }: OnlineFaxPageProps) {
               ]}
             />
           </div>
-        </section>
+      </ProductSection>
 
-        {/* Platform features */}
-        <section className="mb-16">
-          <SectionHeading eyebrow="Platform capabilities" title="Telecom-grade platform behind your brand" />
+      <ProductSection variant="white">
+        <SectionHeading eyebrow="Platform capabilities" title="Telecom-grade platform behind your brand" />
           <p
             className="text-base leading-relaxed mb-8 max-w-3xl"
             style={{ fontFamily: "Raleway, sans-serif", color: "#4b5563" }}
@@ -228,11 +227,10 @@ export default function OnlineFaxPage({ label }: OnlineFaxPageProps) {
               ]}
             />
           </div>
-        </section>
+      </ProductSection>
 
-        {/* Partner advantage */}
-        <section className="mb-16">
-          <SectionHeading eyebrow="The partner advantage" title="Modernize fax and grow revenue" />
+      <ProductSection variant="gray">
+        <SectionHeading eyebrow="The partner advantage" title="Modernize fax and grow revenue" />
           <p
             className="text-base leading-relaxed mb-6 max-w-3xl"
             style={{ fontFamily: "Raleway, sans-serif", color: "#4b5563" }}
@@ -269,11 +267,10 @@ export default function OnlineFaxPage({ label }: OnlineFaxPageProps) {
               </span>
             </li>
           </ul>
-        </section>
+      </ProductSection>
 
-        {/* Ideal SMB customers */}
-        <section className="mb-16">
-          <SectionHeading eyebrow="Ideal segments" title="Ideal SMB customer profiles" />
+      <ProductSection variant="white">
+        <SectionHeading eyebrow="Ideal segments" title="Ideal SMB customer profiles" />
           <p
             className="text-base leading-relaxed mb-8 max-w-3xl"
             style={{ fontFamily: "Raleway, sans-serif", color: "#4b5563" }}
@@ -298,11 +295,10 @@ export default function OnlineFaxPage({ label }: OnlineFaxPageProps) {
               body="Any SMB ready to eliminate physical fax machines while keeping existing numbers and workflows."
             />
           </div>
-        </section>
+      </ProductSection>
 
-        {/* Lifecycle fit: highlight Get online */}
-        <section className="mb-16">
-          <SectionHeading eyebrow="Lifecycle fit" title="How Online Fax fits into your SMB portfolio" />
+      <ProductSection variant="gray">
+        <SectionHeading eyebrow="Lifecycle fit" title="How Online Fax fits into your SMB portfolio" />
           <p
             className="text-base leading-relaxed mb-8 max-w-3xl"
             style={{ fontFamily: "Raleway, sans-serif", color: "#4b5563" }}
@@ -360,11 +356,10 @@ export default function OnlineFaxPage({ label }: OnlineFaxPageProps) {
               return arrow ? [card, arrow] : [card];
             })}
           </div>
-        </section>
+      </ProductSection>
 
-        {/* Easy to launch and scale */}
-        <section className="mb-16">
-          <SectionHeading eyebrow="Operations" title="Easy to launch and scale" />
+      <ProductSection variant="white">
+        <SectionHeading eyebrow="Operations" title="Easy to launch and scale" />
           <p
             className="text-base leading-relaxed mb-6 max-w-3xl"
             style={{ fontFamily: "Raleway, sans-serif", color: "#4b5563" }}
@@ -377,13 +372,12 @@ export default function OnlineFaxPage({ label }: OnlineFaxPageProps) {
             style={{ fontFamily: "Raleway, sans-serif", color: "#4b5563" }}
           >
             SMBs activate quickly via web or email—no on-site installs needed. Hostopia supports you with onboarding,
-            training, and go-to-market guidance so your teams can confidently position Online Fax across segments.
+            training, and go-to-market guidance so your teams can confidently             position Online Fax across segments.
           </p>
-        </section>
+      </ProductSection>
 
-        {/* CTA */}
-        <section className="mb-10">
-          <div className="rounded-3xl p-8 md:p-10 text-white" style={{ backgroundColor: "#24282B" }}>
+      <ProductSection variant="gray">
+        <div className="rounded-3xl p-8 md:p-10 text-white" style={{ backgroundColor: "#24282B" }}>
             <h3
               className="text-xl md:text-2xl font-bold mb-4"
               style={{ fontFamily: "Montserrat, sans-serif", color: "#ffffff" }}
@@ -406,8 +400,7 @@ export default function OnlineFaxPage({ label }: OnlineFaxPageProps) {
               <ArrowRight size={16} />
             </Link>
           </div>
-        </section>
-      </div>
+      </ProductSection>
     </main>
   );
 }

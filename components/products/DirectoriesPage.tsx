@@ -1,6 +1,7 @@
 import Link from "next/link";
 import Image from "next/image";
 import { ArrowRight, MapPin, Search, ListChecks, Globe2, BarChart3 } from "lucide-react";
+import ProductSection from "./ProductSection";
 
 type DirectoriesPageProps = {
   label: string;
@@ -8,10 +9,9 @@ type DirectoriesPageProps = {
 
 export default function DirectoriesPage({ label }: DirectoriesPageProps) {
   return (
-    <main className="pt-24 pb-20">
-      <div className="max-w-7xl mx-auto px-6">
-        {/* Breadcrumb */}
-        <nav className="text-sm text-gray-500 mb-6">
+    <main className="pt-24 pb-0">
+      <div className="max-w-7xl mx-auto px-6 pt-2 pb-4">
+        <nav className="text-sm text-gray-500">
           <Link href="/" className="hover:text-gray-700">
             Home
           </Link>
@@ -22,10 +22,11 @@ export default function DirectoriesPage({ label }: DirectoriesPageProps) {
           <span className="mx-2">/</span>
           <span className="text-gray-900">{label}</span>
         </nav>
+      </div>
 
-        {/* Hero */}
+      <ProductSection variant="gray">
         <section
-          className="rounded-3xl overflow-hidden mb-16 border border-gray-100"
+          className="rounded-3xl overflow-hidden border border-gray-100"
           style={{ backgroundColor: "#f7f6f2" }}
         >
           <div className="grid md:grid-cols-2 gap-10 p-8 md:p-12 items-center">
@@ -114,10 +115,10 @@ export default function DirectoriesPage({ label }: DirectoriesPageProps) {
             </div>
           </div>
         </section>
+      </ProductSection>
 
-        {/* What you offer */}
-        <section className="mb-16">
-          <SectionHeading eyebrow="What you offer" title="Under your brand" />
+      <ProductSection variant="white">
+        <SectionHeading eyebrow="What you offer" title="Under your brand" />
           <p
             className="text-base leading-relaxed mb-6 max-w-3xl"
             style={{ fontFamily: "Raleway, sans-serif", color: "#4b5563" }}
@@ -153,11 +154,10 @@ export default function DirectoriesPage({ label }: DirectoriesPageProps) {
               <span>Monthly visibility reports showing listing status and reach.</span>
             </li>
           </ul>
-        </section>
+      </ProductSection>
 
-        {/* Key features */}
-        <section className="mb-16">
-          <SectionHeading eyebrow="Product capabilities" title="Key features of OneList Plus" />
+      <ProductSection variant="gray">
+        <SectionHeading eyebrow="Product capabilities" title="Key features of OneList Plus" />
           <p
             className="text-base leading-relaxed mb-8 max-w-3xl"
             style={{ fontFamily: "Raleway, sans-serif", color: "#4b5563" }}
@@ -187,11 +187,10 @@ export default function DirectoriesPage({ label }: DirectoriesPageProps) {
               ]}
             />
           </div>
-        </section>
+      </ProductSection>
 
-        {/* Partner advantage */}
-        <section className="mb-16">
-          <SectionHeading eyebrow="The partner advantage" title="Recurring revenue from local presence" />
+      <ProductSection variant="white">
+        <SectionHeading eyebrow="The partner advantage" title="Recurring revenue from local presence" />
           <div className="grid md:grid-cols-2 gap-10 items-center">
             <div>
               <p
@@ -229,11 +228,10 @@ export default function DirectoriesPage({ label }: DirectoriesPageProps) {
               />
             </div>
           </div>
-        </section>
+      </ProductSection>
 
-        {/* Lifecycle fit: highlight Get found & chosen */}
-        <section className="mb-16">
-          <SectionHeading eyebrow="Lifecycle fit" title="How OneList Plus helps SMBs get found and chosen" />
+      <ProductSection variant="gray">
+        <SectionHeading eyebrow="Lifecycle fit" title="How OneList Plus helps SMBs get found and chosen" />
           <p
             className="text-base leading-relaxed mb-8 max-w-3xl"
             style={{ fontFamily: "Raleway, sans-serif", color: "#4b5563" }}
@@ -291,11 +289,10 @@ export default function DirectoriesPage({ label }: DirectoriesPageProps) {
               return arrow ? [card, arrow] : [card];
             })}
           </div>
-        </section>
+      </ProductSection>
 
-        {/* Easy to launch and scale */}
-        <section className="mb-16">
-          <SectionHeading eyebrow="Operations" title="Easy to launch and scale" />
+      <ProductSection variant="white">
+        <SectionHeading eyebrow="Operations" title="Easy to launch and scale" />
           <p
             className="text-base leading-relaxed mb-6 max-w-3xl"
             style={{ fontFamily: "Raleway, sans-serif", color: "#4b5563" }}
@@ -309,11 +306,10 @@ export default function DirectoriesPage({ label }: DirectoriesPageProps) {
           >
             Your teams focus on packaging and sales while the platform handles synchronization and updates at scale.
           </p>
-        </section>
+      </ProductSection>
 
-        {/* CTA */}
-        <section className="mb-10">
-          <div className="rounded-3xl p-8 md:p-10 text-white" style={{ backgroundColor: "#24282B" }}>
+      <ProductSection variant="gray">
+        <div className="rounded-3xl p-8 md:p-10 text-white" style={{ backgroundColor: "#24282B" }}>
             <h3
               className="text-xl md:text-2xl font-bold mb-4"
               style={{ fontFamily: "Montserrat, sans-serif", color: "#ffffff" }}
@@ -337,8 +333,7 @@ export default function DirectoriesPage({ label }: DirectoriesPageProps) {
               <ArrowRight size={16} />
             </Link>
           </div>
-        </section>
-      </div>
+      </ProductSection>
     </main>
   );
 }

@@ -1,5 +1,6 @@
 import Link from "next/link";
 import { ArrowRight, PenTool, Image as ImageIcon, Palette, Sparkles } from "lucide-react";
+import ProductSection from "./ProductSection";
 
 type LogoDesignPageProps = {
   label: string;
@@ -7,10 +8,9 @@ type LogoDesignPageProps = {
 
 export default function LogoDesignPage({ label }: LogoDesignPageProps) {
   return (
-    <main className="pt-24 pb-20">
-      <div className="max-w-7xl mx-auto px-6">
-        {/* Breadcrumb */}
-        <nav className="text-sm text-gray-500 mb-6">
+    <main className="pt-24 pb-0">
+      <div className="max-w-7xl mx-auto px-6 pt-2 pb-4">
+        <nav className="text-sm text-gray-500">
           <Link href="/" className="hover:text-gray-700">
             Home
           </Link>
@@ -21,10 +21,11 @@ export default function LogoDesignPage({ label }: LogoDesignPageProps) {
           <span className="mx-2">/</span>
           <span className="text-gray-900">{label}</span>
         </nav>
+      </div>
 
-        {/* Hero */}
+      <ProductSection variant="gray">
         <section
-          className="rounded-3xl overflow-hidden mb-16 border border-gray-100"
+          className="rounded-3xl overflow-hidden border border-gray-100"
           style={{ backgroundColor: "#f7f6f2" }}
         >
           <div className="grid md:grid-cols-2 gap-10 p-8 md:p-12 items-center">
@@ -111,10 +112,10 @@ export default function LogoDesignPage({ label }: LogoDesignPageProps) {
             </div>
           </div>
         </section>
+      </ProductSection>
 
-        {/* What you offer */}
-        <section className="mb-16">
-          <SectionHeading eyebrow="What you offer" title="Under your brand" />
+      <ProductSection variant="white">
+        <SectionHeading eyebrow="What you offer" title="Under your brand" />
           <p
             className="text-base leading-relaxed mb-6 max-w-3xl"
             style={{ fontFamily: "Raleway, sans-serif", color: "#4b5563" }}
@@ -161,11 +162,10 @@ export default function LogoDesignPage({ label }: LogoDesignPageProps) {
               </span>
             </li>
           </ul>
-        </section>
+      </ProductSection>
 
-        {/* Partner advantage */}
-        <section className="mb-16">
-          <SectionHeading eyebrow="The partner advantage" title="Anchor your role in brand and presence" />
+      <ProductSection variant="gray">
+        <SectionHeading eyebrow="The partner advantage" title="Anchor your role in brand and presence" />
           <p
             className="text-base leading-relaxed mb-6 max-w-3xl"
             style={{ fontFamily: "Raleway, sans-serif", color: "#4b5563" }}
@@ -206,11 +206,10 @@ export default function LogoDesignPage({ label }: LogoDesignPageProps) {
               </span>
             </li>
           </ul>
-        </section>
+      </ProductSection>
 
-        {/* Portfolio fit */}
-        <section className="mb-16">
-          <SectionHeading eyebrow="Portfolio fit" title="Seamless fit in your brand and presence stack" />
+      <ProductSection variant="white">
+        <SectionHeading eyebrow="Portfolio fit" title="Seamless fit in your brand and presence stack" />
           <p
             className="text-base leading-relaxed mb-8 max-w-3xl"
             style={{ fontFamily: "Raleway, sans-serif", color: "#4b5563" }}
@@ -226,11 +225,10 @@ export default function LogoDesignPage({ label }: LogoDesignPageProps) {
             Use logo design as the starting point for cross-sell motions into web, email, ecommerce, and ongoing
             marketing—delivered within the same white-label ecosystem.
           </p>
-        </section>
+      </ProductSection>
 
-        {/* Lifecycle fit: highlight Build the brand */}
-        <section className="mb-16">
-          <SectionHeading eyebrow="Lifecycle fit" title="How logo design fits into your SMB portfolio" />
+      <ProductSection variant="gray">
+        <SectionHeading eyebrow="Lifecycle fit" title="How logo design fits into your SMB portfolio" />
           <p
             className="text-base leading-relaxed mb-8 max-w-3xl"
             style={{ fontFamily: "Raleway, sans-serif", color: "#4b5563" }}
@@ -288,11 +286,10 @@ export default function LogoDesignPage({ label }: LogoDesignPageProps) {
               return arrow ? [card, arrow] : [card];
             })}
           </div>
-        </section>
+      </ProductSection>
 
-        {/* Easy to launch */}
-        <section className="mb-16">
-          <SectionHeading eyebrow="Operations" title="Easy to launch and scale" />
+      <ProductSection variant="white">
+        <SectionHeading eyebrow="Operations" title="Easy to launch and scale" />
           <p
             className="text-base leading-relaxed mb-6 max-w-3xl"
             style={{ fontFamily: "Raleway, sans-serif", color: "#4b5563" }}
@@ -307,11 +304,10 @@ export default function LogoDesignPage({ label }: LogoDesignPageProps) {
             Our fulfillment model and processes are built to support large partner channels, so you can confidently roll
             this out across multiple markets and sales motions without adding internal overhead.
           </p>
-        </section>
+      </ProductSection>
 
-        {/* CTA */}
-        <section className="mb-10">
-          <div className="rounded-3xl p-8 md:p-10 text-white" style={{ backgroundColor: "#24282B" }}>
+      <ProductSection variant="gray">
+        <div className="rounded-3xl p-8 md:p-10 text-white" style={{ backgroundColor: "#24282B" }}>
             <h3
               className="text-xl md:text-2xl font-bold mb-4"
               style={{ fontFamily: "Montserrat, sans-serif", color: "#ffffff" }}
@@ -334,8 +330,7 @@ export default function LogoDesignPage({ label }: LogoDesignPageProps) {
               <ArrowRight size={16} />
             </Link>
           </div>
-        </section>
-      </div>
+      </ProductSection>
     </main>
   );
 }

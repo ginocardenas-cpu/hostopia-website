@@ -1,6 +1,7 @@
 import Link from "next/link";
 import Image from "next/image";
 import { ArrowRight, Star, MessageCircle, ShieldCheck, Megaphone } from "lucide-react";
+import ProductSection from "./ProductSection";
 
 type ReputationManagementPageProps = {
   label: string;
@@ -8,10 +9,9 @@ type ReputationManagementPageProps = {
 
 export default function ReputationManagementPage({ label }: ReputationManagementPageProps) {
   return (
-    <main className="pt-24 pb-20">
-      <div className="max-w-7xl mx-auto px-6">
-        {/* Breadcrumb */}
-        <nav className="text-sm text-gray-500 mb-6">
+    <main className="pt-24 pb-0">
+      <div className="max-w-7xl mx-auto px-6 pt-2 pb-4">
+        <nav className="text-sm text-gray-500">
           <Link href="/" className="hover:text-gray-700">
             Home
           </Link>
@@ -22,10 +22,11 @@ export default function ReputationManagementPage({ label }: ReputationManagement
           <span className="mx-2">/</span>
           <span className="text-gray-900">{label}</span>
         </nav>
+      </div>
 
-        {/* Hero */}
+      <ProductSection variant="gray">
         <section
-          className="rounded-3xl overflow-hidden mb-16 border border-gray-100"
+          className="rounded-3xl overflow-hidden border border-gray-100"
           style={{ backgroundColor: "#f7f6f2" }}
         >
           <div className="grid md:grid-cols-2 gap-10 p-8 md:p-12 items-center">
@@ -114,10 +115,10 @@ export default function ReputationManagementPage({ label }: ReputationManagement
             </div>
           </div>
         </section>
+      </ProductSection>
 
-        {/* What you offer */}
-        <section className="mb-16">
-          <SectionHeading eyebrow="What you offer" title="Under your brand" />
+      <ProductSection variant="white">
+        <SectionHeading eyebrow="What you offer" title="Under your brand" />
           <p
             className="text-base leading-relaxed mb-6 max-w-3xl"
             style={{ fontFamily: "Raleway, sans-serif", color: "#4b5563" }}
@@ -152,11 +153,10 @@ export default function ReputationManagementPage({ label }: ReputationManagement
               <span>Reporting on ratings trends, review volume, and channel performance.</span>
             </li>
           </ul>
-        </section>
+      </ProductSection>
 
-        {/* Partner advantage */}
-        <section className="mb-16">
-          <SectionHeading eyebrow="The partner advantage" title="From being seen to being selected" />
+      <ProductSection variant="gray">
+        <SectionHeading eyebrow="The partner advantage" title="From being seen to being selected" />
           <div className="grid md:grid-cols-2 gap-10 items-center">
             <div>
               <p
@@ -194,11 +194,10 @@ export default function ReputationManagementPage({ label }: ReputationManagement
               />
             </div>
           </div>
-        </section>
+      </ProductSection>
 
-        {/* Lifecycle fit: highlight Get found & chosen */}
-        <section className="mb-16">
-          <SectionHeading eyebrow="Lifecycle fit" title="Where reputation fits in the SMB journey" />
+      <ProductSection variant="white">
+        <SectionHeading eyebrow="Lifecycle fit" title="Where reputation fits in the SMB journey" />
           <p
             className="text-base leading-relaxed mb-8 max-w-3xl"
             style={{ fontFamily: "Raleway, sans-serif", color: "#4b5563" }}
@@ -255,11 +254,10 @@ export default function ReputationManagementPage({ label }: ReputationManagement
               return arrow ? [card, arrow] : [card];
             })}
           </div>
-        </section>
+      </ProductSection>
 
-        {/* CTA */}
-        <section className="mb-10">
-          <div className="rounded-3xl p-8 md:p-10 text-white" style={{ backgroundColor: "#24282B" }}>
+      <ProductSection variant="gray">
+        <div className="rounded-3xl p-8 md:p-10 text-white" style={{ backgroundColor: "#24282B" }}>
             <h3
               className="text-xl md:text-2xl font-bold mb-4"
               style={{ fontFamily: "Montserrat, sans-serif", color: "#ffffff" }}
@@ -282,8 +280,7 @@ export default function ReputationManagementPage({ label }: ReputationManagement
               <ArrowRight size={16} />
             </Link>
           </div>
-        </section>
-      </div>
+      </ProductSection>
     </main>
   );
 }

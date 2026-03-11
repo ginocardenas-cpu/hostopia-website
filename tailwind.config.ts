@@ -40,6 +40,8 @@ const config: Config = {
         "fade-in": "fadeIn 0.7s ease-out forwards",
         "slide-right": "slideRight 0.7s ease-out forwards",
         "float": "float 8s ease-in-out infinite",
+        "typewriter-reveal": "typewriter-reveal 2s steps(18) forwards",
+        "typewriter-cursor": "typewriter-cursor 0.5s step-end 4 forwards",
       },
       keyframes: {
         fadeUp: {
@@ -57,6 +59,14 @@ const config: Config = {
         float: {
           "0%, 100%": { transform: "translateY(0px) rotate(0deg)" },
           "50%": { transform: "translateY(-30px) rotate(3deg)" },
+        },
+        "typewriter-reveal": {
+          "0%": { maxWidth: "0ch" },
+          "100%": { maxWidth: "18ch" },
+        },
+        "typewriter-cursor": {
+          "0%, 49%": { opacity: "1" },
+          "50%, 100%": { opacity: "0" },
         },
       },
     },

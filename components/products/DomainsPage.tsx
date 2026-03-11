@@ -1,5 +1,6 @@
 import Link from "next/link";
 import { ArrowRight, Globe2, Mail, ShieldCheck, Network, LineChart } from "lucide-react";
+import ProductSection from "./ProductSection";
 
 type DomainsPageProps = {
   label: string;
@@ -7,10 +8,10 @@ type DomainsPageProps = {
 
 export default function DomainsPage({ label }: DomainsPageProps) {
   return (
-    <main className="pt-24 pb-20">
-      <div className="max-w-7xl mx-auto px-6">
-        {/* Breadcrumb */}
-        <nav className="text-sm text-gray-500 mb-6">
+    <main className="pt-24 pb-0">
+      {/* Breadcrumb */}
+      <div className="max-w-7xl mx-auto px-6 pt-2 pb-4">
+        <nav className="text-sm text-gray-500">
           <Link href="/" className="hover:text-gray-700">
             Home
           </Link>
@@ -21,10 +22,12 @@ export default function DomainsPage({ label }: DomainsPageProps) {
           <span className="mx-2">/</span>
           <span className="text-gray-900">{label}</span>
         </nav>
+      </div>
 
-        {/* Hero */}
+      {/* Hero — Section 1 (gray) */}
+      <ProductSection variant="gray">
         <section
-          className="rounded-3xl overflow-hidden mb-16 border border-gray-100"
+          className="rounded-3xl overflow-hidden border border-gray-100"
           style={{ backgroundColor: "#f7f6f2" }}
         >
           <div className="grid md:grid-cols-2 gap-10 p-8 md:p-12 items-center">
@@ -109,10 +112,11 @@ export default function DomainsPage({ label }: DomainsPageProps) {
             </div>
           </div>
         </section>
+      </ProductSection>
 
-        {/* What you offer */}
-        <section className="mb-16">
-          <div className="flex flex-col md:flex-row md:items-start gap-10">
+      {/* What you offer — Section 2 (white) */}
+      <ProductSection variant="white">
+        <div className="flex flex-col md:flex-row md:items-start gap-10">
             <div className="md:w-1/2">
               <h2
                 className="font-black mb-4"
@@ -189,11 +193,11 @@ export default function DomainsPage({ label }: DomainsPageProps) {
               />
             </div>
           </div>
-        </section>
+      </ProductSection>
 
-        {/* Key Features */}
-        <section className="mb-16">
-          <SectionHeading
+      {/* Key Features — Section 3 (gray) */}
+      <ProductSection variant="gray">
+        <SectionHeading
             eyebrow="Product capabilities"
             title="Key features for SMBs and partners"
           />
@@ -223,14 +227,14 @@ export default function DomainsPage({ label }: DomainsPageProps) {
               ]}
             />
           </div>
-        </section>
+      </ProductSection>
 
-        {/* Lifecycle & portfolio fit */}
-        <section className="mb-16">
-          <SectionHeading
-            eyebrow="Lifecycle fit"
-            title="How domains fit into your SMB portfolio"
-          />
+      {/* Lifecycle & portfolio fit — Section 4 (white) */}
+      <ProductSection variant="white">
+        <SectionHeading
+          eyebrow="Lifecycle fit"
+          title="How domains fit into your SMB portfolio"
+        />
           <div className="flex flex-col gap-4 md:flex-row md:items-stretch md:gap-0">
             {[
               {
@@ -281,11 +285,11 @@ export default function DomainsPage({ label }: DomainsPageProps) {
               return arrow ? [card, arrow] : [card];
             })}
           </div>
-        </section>
+      </ProductSection>
 
-        {/* What's included & CTA */}
-        <section className="mb-10">
-          <div className="grid md:grid-cols-[3fr,2fr] gap-10 items-center">
+      {/* What's included & CTA — Section 5 (gray) */}
+      <ProductSection variant="gray">
+        <div className="grid md:grid-cols-[3fr,2fr] gap-10 items-center">
             <div>
               <SectionHeading eyebrow="What’s included" title="Everything you need to launch a branded domains offer" />
               <ul
@@ -343,8 +347,7 @@ export default function DomainsPage({ label }: DomainsPageProps) {
               </Link>
             </div>
           </div>
-        </section>
-      </div>
+      </ProductSection>
     </main>
   );
 }

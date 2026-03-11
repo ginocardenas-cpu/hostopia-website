@@ -1,6 +1,7 @@
 import Link from "next/link";
 import Image from "next/image";
 import { ArrowRight, Server, Layers, Globe2, SlidersHorizontal } from "lucide-react";
+import ProductSection from "./ProductSection";
 
 type HostingPageProps = {
   label: string;
@@ -8,10 +9,9 @@ type HostingPageProps = {
 
 export default function HostingPage({ label }: HostingPageProps) {
   return (
-    <main className="pt-24 pb-20">
-      <div className="max-w-7xl mx-auto px-6">
-        {/* Breadcrumb */}
-        <nav className="text-sm text-gray-500 mb-6">
+    <main className="pt-24 pb-0">
+      <div className="max-w-7xl mx-auto px-6 pt-2 pb-4">
+        <nav className="text-sm text-gray-500">
           <Link href="/" className="hover:text-gray-700">
             Home
           </Link>
@@ -22,10 +22,11 @@ export default function HostingPage({ label }: HostingPageProps) {
           <span className="mx-2">/</span>
           <span className="text-gray-900">{label}</span>
         </nav>
+      </div>
 
-        {/* Hero */}
+      <ProductSection variant="gray">
         <section
-          className="rounded-3xl overflow-hidden mb-16 border border-gray-100"
+          className="rounded-3xl overflow-hidden border border-gray-100"
           style={{ backgroundColor: "#f7f6f2" }}
         >
           <div className="grid md:grid-cols-2 gap-10 p-8 md:p-12 items-center">
@@ -113,10 +114,10 @@ export default function HostingPage({ label }: HostingPageProps) {
             </div>
           </div>
         </section>
+      </ProductSection>
 
-        {/* What you offer */}
-        <section className="mb-16">
-          <SectionHeading eyebrow="What you offer" title="Under your brand" />
+      <ProductSection variant="white">
+        <SectionHeading eyebrow="What you offer" title="Under your brand" />
           <p
             className="text-base leading-relaxed mb-6 max-w-3xl"
             style={{ fontFamily: "Raleway, sans-serif", color: "#4b5563" }}
@@ -155,11 +156,10 @@ export default function HostingPage({ label }: HostingPageProps) {
               <span>Add-on services such as business email, SSL, domains, and security products.</span>
             </li>
           </ul>
-        </section>
+      </ProductSection>
 
-        {/* Key features */}
-        <section className="mb-16">
-          <SectionHeading eyebrow="Product capabilities" title="Key features of Website Hosting" />
+      <ProductSection variant="gray">
+        <SectionHeading eyebrow="Product capabilities" title="Key features of Website Hosting" />
           <p
             className="text-base leading-relaxed mb-8 max-w-3xl"
             style={{ fontFamily: "Raleway, sans-serif", color: "#4b5563" }}
@@ -189,11 +189,10 @@ export default function HostingPage({ label }: HostingPageProps) {
               ]}
             />
           </div>
-        </section>
+      </ProductSection>
 
-        {/* Agencies and developers */}
-        <section className="mb-16">
-          <SectionHeading eyebrow="For agencies and developers" title="Built for multi-site management" />
+      <ProductSection variant="white">
+        <SectionHeading eyebrow="For agencies and developers" title="Built for multi-site management" />
           <div className="grid md:grid-cols-2 gap-6">
             <FeatureColumn
               title="Multi-site hosting"
@@ -210,11 +209,10 @@ export default function HostingPage({ label }: HostingPageProps) {
               ]}
             />
           </div>
-        </section>
+      </ProductSection>
 
-        {/* Platform features */}
-        <section className="mb-16">
-          <SectionHeading eyebrow="Platform capabilities" title="Enterprise-grade infrastructure behind your brand" />
+      <ProductSection variant="gray">
+        <SectionHeading eyebrow="Platform capabilities" title="Enterprise-grade infrastructure behind your brand" />
           <p
             className="text-base leading-relaxed mb-8 max-w-3xl"
             style={{ fontFamily: "Raleway, sans-serif", color: "#4b5563" }}
@@ -244,11 +242,10 @@ export default function HostingPage({ label }: HostingPageProps) {
               ]}
             />
           </div>
-        </section>
+      </ProductSection>
 
-        {/* Partner advantage */}
-        <section className="mb-16">
-          <SectionHeading eyebrow="The partner advantage" title="Strengthen your infrastructure portfolio" />
+      <ProductSection variant="white">
+        <SectionHeading eyebrow="The partner advantage" title="Strengthen your infrastructure portfolio" />
           <div className="grid md:grid-cols-2 gap-10 items-start">
             <div>
               <p
@@ -290,11 +287,10 @@ export default function HostingPage({ label }: HostingPageProps) {
               />
             </div>
           </div>
-        </section>
+      </ProductSection>
 
-        {/* Ideal customers */}
-        <section className="mb-16">
-          <SectionHeading eyebrow="Ideal segments" title="Ideal customer profiles" />
+      <ProductSection variant="gray">
+        <SectionHeading eyebrow="Ideal segments" title="Ideal customer profiles" />
           <p
             className="text-base leading-relaxed mb-8 max-w-3xl"
             style={{ fontFamily: "Raleway, sans-serif", color: "#4b5563" }}
@@ -319,11 +315,10 @@ export default function HostingPage({ label }: HostingPageProps) {
               body="Agencies managing multiple client websites across a unified hosting layer."
             />
           </div>
-        </section>
+      </ProductSection>
 
-        {/* Lifecycle fit: highlight Get online */}
-        <section className="mb-16">
-          <SectionHeading eyebrow="Lifecycle fit" title="How hosting helps SMBs get online" />
+      <ProductSection variant="white">
+        <SectionHeading eyebrow="Lifecycle fit" title="How hosting helps SMBs get online" />
           <p
             className="text-base leading-relaxed mb-8 max-w-3xl"
             style={{ fontFamily: "Raleway, sans-serif", color: "#4b5563" }}
@@ -381,10 +376,9 @@ export default function HostingPage({ label }: HostingPageProps) {
               return arrow ? [card, arrow] : [card];
             })}
           </div>
-        </section>
+      </ProductSection>
 
-        {/* What's included */}
-        <section className="mb-10">
+      <ProductSection variant="gray">
           <SectionHeading eyebrow="What’s included" title="What’s included with Website Hosting" />
           <ul
             className="space-y-3 text-sm md:text-base max-w-3xl"
@@ -407,11 +401,10 @@ export default function HostingPage({ label }: HostingPageProps) {
               <span>Partner onboarding, sales enablement, and ongoing platform support.</span>
             </li>
           </ul>
-        </section>
+      </ProductSection>
 
-        {/* CTA */}
-        <section className="mb-10">
-          <div className="rounded-3xl p-8 md:p-10 text-white" style={{ backgroundColor: "#24282B" }}>
+      <ProductSection variant="white">
+        <div className="rounded-3xl p-8 md:p-10 text-white" style={{ backgroundColor: "#24282B" }}>
             <h3
               className="text-xl md:text-2xl font-bold mb-4"
               style={{ fontFamily: "Montserrat, sans-serif", color: "#ffffff" }}
@@ -434,8 +427,7 @@ export default function HostingPage({ label }: HostingPageProps) {
               <ArrowRight size={16} />
             </Link>
           </div>
-        </section>
-      </div>
+      </ProductSection>
     </main>
   );
 }
