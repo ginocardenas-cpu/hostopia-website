@@ -1,30 +1,40 @@
-import { Building2, Network, Store, Globe } from "lucide-react";
+import Image from "next/image";
+import Link from "next/link";
+import { ArrowRight } from "lucide-react";
 import AnimatedRotatingWord from "@/components/AnimatedRotatingWord";
 
 const partnerTypes = [
   {
-    icon: Building2,
     title: "Telcos & Carriers",
-    description:
-      "Add high-margin digital services to your connectivity bundle. Retain customers with email, web, and ecommerce — products SMBs use every single day.",
+    shortCopy: "Add high-margin digital services to your connectivity bundle.",
+    href: "/customers/telcos",
+    image:
+      "https://images.unsplash.com/photo-1544197150-b99a580bb7a8?auto=format&fit=crop&w=800&q=80",
+    alt: "Telecommunications infrastructure",
   },
   {
-    icon: Network,
     title: "Resellers & Distributors",
-    description:
-      "Expand your catalog with in-demand SMB digital tools. White-label Hostopia's platform and offer a complete suite without building anything from scratch.",
+    shortCopy: "Expand your catalog with white-label SMB digital tools.",
+    href: "/customers/resellers",
+    image:
+      "https://images.unsplash.com/photo-1553877522-43269d4ea984?auto=format&fit=crop&w=800&q=80",
+    alt: "Business partnership and distribution",
   },
   {
-    icon: Store,
     title: "Domain Registrars",
-    description:
-      "Complement your domain business with email hosting, website builders, and online stores. Turn one-time sales into monthly recurring revenue.",
+    shortCopy: "Turn one-time domain sales into monthly recurring revenue.",
+    href: "/customers/registrars",
+    image:
+      "https://images.unsplash.com/photo-1451187580459-43490279c0fa?auto=format&fit=crop&w=800&q=80",
+    alt: "Digital connectivity and domains",
   },
   {
-    icon: Globe,
     title: "ISPs & Hosting Cos.",
-    description:
-      "Move up the value chain. Add SMB-focused digital marketing, ecommerce, and professional services on top of your infrastructure business.",
+    shortCopy: "Move up the value chain with SMB digital marketing and ecommerce.",
+    href: "/customers/isps",
+    image:
+      "https://images.unsplash.com/photo-1558494949-ef010cbdcc31?auto=format&fit=crop&w=800&q=80",
+    alt: "Data center and hosting infrastructure",
   },
 ];
 
@@ -63,42 +73,52 @@ export default function PartnerTypes() {
           </p>
         </div>
 
-        {/* Cards */}
-        <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
-          {partnerTypes.map((type, i) => {
-            const Icon = type.icon;
-            return (
-              <div
-                key={type.title}
-                className="group rounded-3xl p-8 bg-white border border-gray-100 hover:border-teal hover:shadow-xl transition-all duration-300 hover:-translate-y-2"
-                style={{ borderColor: "transparent" }}
-              >
+        {/* Image card gallery */}
+        <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
+          {partnerTypes.map((type) => (
+            <Link
+              key={type.title}
+              href={type.href}
+              className="group block rounded-3xl overflow-hidden border border-gray-100 bg-white shadow-sm hover:shadow-xl transition-all duration-300 hover:-translate-y-2"
+            >
+              <div className="relative aspect-[4/3] overflow-hidden">
+                <Image
+                  src={type.image}
+                  alt={type.alt}
+                  fill
+                  className="object-cover transition-transform duration-500 group-hover:scale-105"
+                  sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 25vw"
+                />
                 <div
-                  className="w-12 h-12 rounded-2xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform duration-300"
+                  className="absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity duration-300"
                   style={{
-                    backgroundColor: i % 2 === 0 ? "#e8f7f7" : "#fef9e6",
+                    background: "linear-gradient(to top, rgba(36,40,43,0.85) 0%, transparent 50%)",
                   }}
-                >
-                  <Icon
-                    size={22}
-                    style={{ color: i % 2 === 0 ? "#2CADB2" : "#e0b82a" }}
-                  />
-                </div>
+                />
+              </div>
+              <div className="p-6">
                 <h3
-                  className="font-bold mb-3 text-base"
+                  className="font-bold mb-2 text-lg"
                   style={{ fontFamily: "Montserrat, sans-serif", color: "#24282B" }}
                 >
                   {type.title}
                 </h3>
                 <p
-                  className="text-sm leading-relaxed"
+                  className="text-sm leading-relaxed mb-4"
                   style={{ fontFamily: "Raleway, sans-serif", color: "#6b7280" }}
                 >
-                  {type.description}
+                  {type.shortCopy}
                 </p>
+                <span
+                  className="inline-flex items-center gap-2 font-semibold text-sm transition-all duration-200 group-hover:gap-3"
+                  style={{ fontFamily: "Montserrat, sans-serif", color: "#2CADB2" }}
+                >
+                  Learn more
+                  <ArrowRight size={16} />
+                </span>
               </div>
-            );
-          })}
+            </Link>
+          ))}
         </div>
 
         <div className="text-center mt-12">
