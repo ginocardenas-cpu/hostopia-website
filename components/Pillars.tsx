@@ -1,3 +1,5 @@
+import TypewriterOnScroll from "./TypewriterOnScroll";
+
 const pillars = [
   {
     number: "01",
@@ -44,18 +46,7 @@ export default function Pillars() {
             >
               Everything You Need.
               <br />
-              <span style={{ color: "#2CADB2" }} className="inline-flex items-baseline">
-                <span className="inline-block overflow-hidden whitespace-nowrap animate-typewriter-reveal">
-                  Nothing You Don&apos;t.
-                </span>
-                <span
-                  className="animate-typewriter-cursor ml-0.5"
-                  style={{ color: "#2CADB2" }}
-                  aria-hidden
-                >
-                  |
-                </span>
-              </span>
+              <TypewriterOnScroll />
             </h2>
           </div>
           <p

@@ -40,8 +40,8 @@ const config: Config = {
         "fade-in": "fadeIn 0.7s ease-out forwards",
         "slide-right": "slideRight 0.7s ease-out forwards",
         "float": "float 8s ease-in-out infinite",
-        "typewriter-reveal": "typewriter-reveal 2s steps(18) forwards",
-        "typewriter-cursor": "typewriter-cursor 0.5s step-end 4 forwards",
+        "typewriter-reveal": "typewriter-reveal 33s steps(36) infinite",
+        "typewriter-cursor": "typewriter-cursor 0.8s step-end infinite",
       },
       keyframes: {
         fadeUp: {
@@ -62,7 +62,10 @@ const config: Config = {
         },
         "typewriter-reveal": {
           "0%": { maxWidth: "0ch" },
-          "100%": { maxWidth: "18ch" },
+          "38%": { maxWidth: "18ch" },
+          "48%": { maxWidth: "18ch" },
+          "86%": { maxWidth: "0ch" },
+          "100%": { maxWidth: "0ch" },
         },
         "typewriter-cursor": {
           "0%, 49%": { opacity: "1" },
