@@ -24,17 +24,33 @@ export default function EcommercePage({ label }: EcommercePageProps) {
         </nav>
       </div>
 
-      <ProductSection variant="gray" className="!py-6 md:!py-8">
-        <section className="rounded-3xl overflow-hidden border border-gray-100" style={{ backgroundColor: "#f7f6f2" }}>
-          <div className="grid md:grid-cols-2 gap-6 md:gap-8 p-6 md:p-8 items-center">
-            {/* Left: Copy - no overlay, sits beside image */}
+      <ProductSection variant="gray" className="!py-4 md:!py-6">
+        <section className="relative rounded-3xl overflow-hidden border border-gray-100 min-h-[400px] md:min-h-[480px]">
+          {/* Hero image as full-width/height background */}
+          <div className="absolute inset-0">
+            <Image
+              src="/Ecommerce/newhero.jpg"
+              alt=""
+              fill
+              className="object-cover object-center"
+              priority
+            />
+            <div
+              className="absolute inset-0"
+              style={{
+                background: "linear-gradient(90deg, rgba(247,246,242,0.92) 0%, rgba(247,246,242,0.6) 50%, rgba(247,246,242,0.2) 100%)",
+              }}
+            />
+          </div>
+          <div className="relative z-10 grid md:grid-cols-2 gap-4 md:gap-6 p-4 md:p-6 items-center min-h-[400px] md:min-h-[480px]">
+            {/* Left: Copy */}
             <div>
-              <div className="flex items-center gap-3 mb-4">
+              <div className="flex items-center gap-3 mb-3">
                 <div className="w-8 h-px" style={{ backgroundColor: "#2CADB2" }} />
                 <span className="section-label">Online Store by Hostopia</span>
               </div>
               <h1
-                className="font-black leading-tight mb-4"
+                className="font-black leading-tight mb-3"
                 style={{
                   fontFamily: "Montserrat, sans-serif",
                   fontSize: "clamp(2rem, 3.5vw, 2.75rem)",
@@ -44,21 +60,21 @@ export default function EcommercePage({ label }: EcommercePageProps) {
                 White-Label Ecommerce & Online Store Platform
               </h1>
               <p
-                className="text-base md:text-lg leading-relaxed mb-4"
+                className="text-base md:text-lg leading-relaxed mb-3"
                 style={{ fontFamily: "Raleway, sans-serif", color: "#555a5e" }}
               >
                 SMBs face increasing pressure to sell online, expand beyond their local market, and deliver modern
                 checkout experiences—but many lack the skills, budget, or time to manage a full ecommerce stack.
               </p>
               <p
-                className="text-base leading-relaxed mb-6"
+                className="text-base leading-relaxed mb-4"
                 style={{ fontFamily: "Raleway, sans-serif", color: "#555a5e" }}
               >
                 Hostopia&apos;s white-label Online Store gives you a turnkey, mobile-ready ecommerce platform to resell
                 under your own brand. Fully integrated with Online Presence Builder, it lets SMBs start small, scale over
                 time, and keep everything connected to the websites and services they already buy from you.
               </p>
-              <div className="flex flex-col gap-3">
+              <div className="flex flex-col gap-2">
                 <Link
                   href="/contact"
                   className="inline-flex items-center gap-2 font-bold px-6 py-3 rounded-full text-sm md:text-base transition-all duration-200 hover:scale-105 hover:shadow-lg w-fit"
@@ -79,51 +95,40 @@ export default function EcommercePage({ label }: EcommercePageProps) {
                 </span>
               </div>
             </div>
-            {/* Right: Full-width hero image + overlay card on lower left of image */}
-            <div className="relative">
-              <div className="relative w-full aspect-[4/3] min-h-[320px] md:min-h-[380px]">
-                <Image
-                  src="/Ecommerce/newhero.jpg"
-                  alt="Ecommerce platform with online store on laptop and smartphone"
-                  fill
-                  className="object-cover object-center rounded-2xl"
-                  priority
-                />
-              </div>
-              <div className="absolute bottom-4 left-4 right-4 md:right-12 bg-white rounded-2xl p-5 shadow-lg border border-gray-100 z-10">
-                <h3
-                  className="text-sm font-semibold uppercase tracking-[0.2em] mb-3"
-                  style={{ fontFamily: "Montserrat, sans-serif", color: "#6b7280" }}
-                >
-                  Key benefits of Hostopia
-                </h3>
-                <ul className="space-y-2 text-sm" style={{ fontFamily: "Raleway, sans-serif", color: "#4b5563" }}>
-                  <li className="flex gap-2">
-                    <ShoppingCart size={16} className="mt-0.5 shrink-0" style={{ color: "#2CADB2" }} />
-                    <span><strong>Launch an online storefront quickly</strong> without custom development.</span>
-                  </li>
-                  <li className="flex gap-2">
-                    <Globe2 size={16} className="mt-0.5 shrink-0" style={{ color: "#2CADB2" }} />
-                    <span><strong>Sell to local and global customers</strong> with multi-currency and shipping.</span>
-                  </li>
-                  <li className="flex gap-2">
-                    <CreditCard size={16} className="mt-0.5 shrink-0" style={{ color: "#2CADB2" }} />
-                    <span><strong>Modern checkout experiences</strong> with trusted payment gateways.</span>
-                  </li>
-                  <li className="flex gap-2">
-                    <Package size={16} className="mt-0.5 shrink-0" style={{ color: "#2CADB2" }} />
-                    <span><strong>Sell goods, services, gift cards, and subscriptions</strong>—expand to social and marketplaces.</span>
-                  </li>
-                </ul>
-              </div>
+            {/* Right: Key benefits overlay card */}
+            <div className="bg-white/95 rounded-2xl p-4 shadow-lg border border-gray-100">
+              <h3
+                className="text-sm font-semibold uppercase tracking-[0.2em] mb-2"
+                style={{ fontFamily: "Montserrat, sans-serif", color: "#6b7280" }}
+              >
+                Key benefits of Hostopia
+              </h3>
+              <ul className="space-y-2 text-sm" style={{ fontFamily: "Raleway, sans-serif", color: "#4b5563" }}>
+                <li className="flex gap-2">
+                  <ShoppingCart size={16} className="mt-0.5 shrink-0" style={{ color: "#2CADB2" }} />
+                  <span><strong>Launch an online storefront quickly</strong> without custom development.</span>
+                </li>
+                <li className="flex gap-2">
+                  <Globe2 size={16} className="mt-0.5 shrink-0" style={{ color: "#2CADB2" }} />
+                  <span><strong>Sell to local and global customers</strong> with multi-currency and shipping.</span>
+                </li>
+                <li className="flex gap-2">
+                  <CreditCard size={16} className="mt-0.5 shrink-0" style={{ color: "#2CADB2" }} />
+                  <span><strong>Modern checkout experiences</strong> with trusted payment gateways.</span>
+                </li>
+                <li className="flex gap-2">
+                  <Package size={16} className="mt-0.5 shrink-0" style={{ color: "#2CADB2" }} />
+                  <span><strong>Sell goods, services, gift cards, and subscriptions</strong>—expand to social and marketplaces.</span>
+                </li>
+              </ul>
             </div>
           </div>
         </section>
       </ProductSection>
 
       <ProductSection variant="white">
-        <div className="grid md:grid-cols-2 gap-6 md:gap-8 items-center">
-          <div className="relative aspect-[4/5] min-h-[360px] md:min-h-[420px] order-2 md:order-1 my-[-1rem] md:my-[-1.5rem]">
+        <div className="grid md:grid-cols-2 gap-4 md:gap-6 items-center">
+          <div className="relative aspect-[4/5] min-h-[250px] md:min-h-[290px] order-2 md:order-1 my-[-0.5rem] md:my-[-0.75rem]">
             <Image
               src="/Ecommerce/under-your-brand.png"
               alt="Office setting with tablet displaying inventory and order management"
@@ -131,10 +136,10 @@ export default function EcommercePage({ label }: EcommercePageProps) {
               className="object-cover rounded-2xl"
             />
           </div>
-          <div className="order-1 md:order-2 py-4">
+          <div className="order-1 md:order-2 py-2">
             <SectionHeading eyebrow="What you offer" title="Under your brand" />
             <p
-              className="text-base leading-relaxed mb-6"
+              className="text-base leading-relaxed mb-4"
               style={{ fontFamily: "Raleway, sans-serif", color: "#4b5563" }}
             >
               You can package Hostopia&apos;s Online Store as a branded ecommerce add-on or core bundle with your website
@@ -170,16 +175,16 @@ export default function EcommercePage({ label }: EcommercePageProps) {
       </ProductSection>
 
       <ProductSection variant="gray">
-        <div className="mb-6">
+        <div className="mb-4">
           <SectionHeading eyebrow="Product capabilities" title="Key features of Online Store" center />
         </div>
           <p
-            className="text-base leading-relaxed mb-6 max-w-3xl mx-auto"
+            className="text-base leading-relaxed mb-4 max-w-3xl mx-auto"
             style={{ fontFamily: "Raleway, sans-serif", color: "#4b5563" }}
           >
             Online Store gives SMBs a feature-rich ecommerce solution without complexity.
           </p>
-          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-4">
+          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-3">
             <FeatureCard
               icon={<ShoppingCart size={22} />}
               title="Integrated with OPB"
@@ -201,7 +206,7 @@ export default function EcommercePage({ label }: EcommercePageProps) {
               body="Sell physical goods, digital products, gift cards, and subscriptions."
             />
           </div>
-          <div className="mt-6 grid md:grid-cols-2 gap-6">
+          <div className="mt-4 grid md:grid-cols-2 gap-4">
             <FeatureColumn
               title="Guided setup"
               points={[
@@ -221,11 +226,11 @@ export default function EcommercePage({ label }: EcommercePageProps) {
       </ProductSection>
 
       <ProductSection variant="white">
-        <div className="grid md:grid-cols-2 gap-6 md:gap-8 items-center">
-          <div className="py-4">
+        <div className="grid md:grid-cols-2 gap-4 md:gap-6 items-center">
+          <div className="py-2">
             <SectionHeading eyebrow="Platform capabilities" title="Behind your brand" />
             <p
-              className="text-base leading-relaxed mb-6"
+              className="text-base leading-relaxed mb-4"
               style={{ fontFamily: "Raleway, sans-serif", color: "#4b5563" }}
             >
               Hostopia provides the infrastructure, integrations, and management tools to deliver ecommerce at scale.
@@ -256,7 +261,7 @@ export default function EcommercePage({ label }: EcommercePageProps) {
               </li>
             </ul>
           </div>
-          <div className="relative aspect-[4/5] min-h-[360px] md:min-h-[420px] my-[-1rem] md:my-[-1.5rem]">
+          <div className="relative aspect-[4/5] min-h-[250px] md:min-h-[290px] my-[-0.5rem] md:my-[-0.75rem]">
             <Image
               src="/Ecommerce/behind-your-brand.png"
               alt="Ecommerce dashboard with analytics and product management"
@@ -268,8 +273,8 @@ export default function EcommercePage({ label }: EcommercePageProps) {
       </ProductSection>
 
       <ProductSection variant="gray">
-        <div className="grid md:grid-cols-2 gap-6 md:gap-8 items-center">
-          <div className="relative aspect-[4/5] min-h-[360px] md:min-h-[420px] order-2 md:order-1 my-[-1rem] md:my-[-1.5rem]">
+        <div className="grid md:grid-cols-2 gap-4 md:gap-6 items-center">
+          <div className="relative aspect-[4/5] min-h-[250px] md:min-h-[290px] order-2 md:order-1 my-[-0.5rem] md:my-[-0.75rem]">
             <Image
               src="/Ecommerce/launch-online-store.png"
               alt="SMB owner with product gallery and ecommerce platform"
@@ -277,7 +282,7 @@ export default function EcommercePage({ label }: EcommercePageProps) {
               className="object-cover rounded-2xl"
             />
           </div>
-          <div className="order-1 md:order-2 py-4">
+          <div className="order-1 md:order-2 py-2">
             <SectionHeading eyebrow="What's included" title="When you launch Online Store with Hostopia" />
             <ul
               className="space-y-3 text-sm md:text-base"
@@ -309,11 +314,11 @@ export default function EcommercePage({ label }: EcommercePageProps) {
       </ProductSection>
 
       <ProductSection variant="white">
-        <div className="mb-6">
+        <div className="mb-4">
           <SectionHeading eyebrow="Lifecycle fit" title="How Online Store helps SMBs start selling" center />
         </div>
           <p
-            className="text-base leading-relaxed mb-6 max-w-3xl mx-auto"
+            className="text-base leading-relaxed mb-4 max-w-3xl mx-auto"
             style={{ fontFamily: "Raleway, sans-serif", color: "#4b5563" }}
           >
             Ecommerce is where the &quot;start selling&quot; journey begins—giving businesses the tools to build and
@@ -372,7 +377,7 @@ export default function EcommercePage({ label }: EcommercePageProps) {
       </ProductSection>
 
       <ProductSection variant="gray">
-        <div className="rounded-3xl p-6 md:p-8 text-white" style={{ backgroundColor: "#24282B" }}>
+        <div className="rounded-3xl p-5 md:p-6 text-white" style={{ backgroundColor: "#24282B" }}>
             <h3
               className="text-xl md:text-2xl font-bold mb-4"
               style={{ fontFamily: "Montserrat, sans-serif", color: "#ffffff" }}
@@ -404,7 +409,7 @@ type SectionHeadingProps = { eyebrow: string; title: string; center?: boolean };
 
 function SectionHeading({ eyebrow, title, center }: SectionHeadingProps) {
   return (
-    <div className={`mb-5 ${center ? "text-center" : ""}`}>
+    <div className={`mb-3 ${center ? "text-center" : ""}`}>
       <div className={`flex items-center gap-3 mb-2 ${center ? "justify-center" : ""}`}>
         <div className="w-8 h-px" style={{ backgroundColor: "#2CADB2" }} />
         <span className="section-label">{eyebrow}</span>
@@ -423,7 +428,7 @@ type FeatureCardProps = { icon: React.ReactNode; title: string; body: string };
 
 function FeatureCard({ icon, title, body }: FeatureCardProps) {
   return (
-    <div className="rounded-2xl border border-gray-100 bg-white p-5 shadow-sm">
+    <div className="rounded-2xl border border-gray-100 bg-white p-4 shadow-sm">
       <div
         className="w-10 h-10 rounded-xl flex items-center justify-center mb-3"
         style={{ backgroundColor: "rgba(44,173,178,0.08)", color: "#2CADB2" }}
@@ -447,7 +452,7 @@ type FeatureColumnProps = { title: string; points: string[] };
 
 function FeatureColumn({ title, points }: FeatureColumnProps) {
   return (
-    <div className="bg-white rounded-2xl border border-gray-100 p-6 shadow-sm">
+    <div className="bg-white rounded-2xl border border-gray-100 p-4 shadow-sm">
       <h3
         className="text-sm font-semibold mb-3"
         style={{ fontFamily: "Montserrat, sans-serif", color: "#24282B" }}
