@@ -1,6 +1,6 @@
 import Link from "next/link";
 import Image from "next/image";
-import { ArrowRight, ShoppingCart, CreditCard, Package, Smartphone } from "lucide-react";
+import { ArrowRight, ShoppingCart, CreditCard, Package, Globe2, Smartphone } from "lucide-react";
 import ProductSection from "./ProductSection";
 
 type EcommercePageProps = {
@@ -25,11 +25,25 @@ export default function EcommercePage({ label }: EcommercePageProps) {
       </div>
 
       <ProductSection variant="gray">
-        <section
-          className="rounded-3xl overflow-hidden border border-gray-100"
-          style={{ backgroundColor: "#f7f6f2" }}
-        >
-          <div className="grid md:grid-cols-2 gap-10 p-8 md:p-12 items-center">
+        <section className="relative rounded-3xl overflow-hidden border border-gray-100 min-h-[480px] md:min-h-[520px]">
+          {/* Hero image as background */}
+          <div className="absolute inset-0 z-0">
+            <Image
+              src="/Ecommerce/hero.png"
+              alt=""
+              fill
+              className="object-cover object-right"
+              priority
+            />
+            <div
+              className="absolute inset-0 z-[1]"
+              style={{
+                background: "linear-gradient(90deg, rgba(247,246,242,0.97) 0%, rgba(247,246,242,0.85) 45%, rgba(247,246,242,0.4) 70%, transparent 100%)",
+              }}
+            />
+          </div>
+
+          <div className="relative z-10 grid md:grid-cols-2 gap-10 p-8 md:p-12 items-center min-h-[480px] md:min-h-[520px]">
             <div>
               <div className="flex items-center gap-3 mb-5">
                 <div className="w-8 h-px" style={{ backgroundColor: "#2CADB2" }} />
@@ -82,15 +96,44 @@ export default function EcommercePage({ label }: EcommercePageProps) {
               </div>
             </div>
 
-            {/* Right column: Hero image */}
-            <div className="relative aspect-[4/3] rounded-2xl overflow-hidden shadow-lg">
-              <Image
-                src="/Ecommerce/hero.png"
-                alt="Ecommerce platform with online store on laptop and smartphone"
-                fill
-                className="object-cover"
-                priority
-              />
+            {/* Right column: Why this matters */}
+            <div className="bg-white/95 rounded-2xl p-6 shadow-sm space-y-5">
+              <h3
+                className="text-sm font-semibold uppercase tracking-[0.2em]"
+                style={{ fontFamily: "Montserrat, sans-serif", color: "#6b7280" }}
+              >
+                Why this matters for SMBs
+              </h3>
+              <ul className="space-y-3 text-sm" style={{ fontFamily: "Raleway, sans-serif", color: "#4b5563" }}>
+                <li className="flex gap-3">
+                  <ShoppingCart size={18} className="mt-1 shrink-0" style={{ color: "#2CADB2" }} />
+                  <span>
+                    <strong>Launch an online storefront quickly</strong> without custom development or complex
+                    integrations.
+                  </span>
+                </li>
+                <li className="flex gap-3">
+                  <Globe2 size={18} className="mt-1 shrink-0" style={{ color: "#2CADB2" }} />
+                  <span>
+                    <strong>Sell to local and global customers</strong> with multi-currency, tax, and shipping
+                    options.
+                  </span>
+                </li>
+                <li className="flex gap-3">
+                  <CreditCard size={18} className="mt-1 shrink-0" style={{ color: "#2CADB2" }} />
+                  <span>
+                    <strong>Modern checkout experiences</strong> with trusted payment gateways and mobile-ready
+                    layouts.
+                  </span>
+                </li>
+                <li className="flex gap-3">
+                  <Package size={18} className="mt-1 shrink-0" style={{ color: "#2CADB2" }} />
+                  <span>
+                    <strong>Sell goods, services, gift cards, and subscriptions</strong>—and expand to Instagram,
+                    TikTok, Pinterest, and marketplaces like Amazon.
+                  </span>
+                </li>
+              </ul>
             </div>
           </div>
         </section>
@@ -99,7 +142,7 @@ export default function EcommercePage({ label }: EcommercePageProps) {
       <ProductSection variant="white">
         <SectionHeading eyebrow="What you offer" title="Under your brand" />
         <div className="grid md:grid-cols-2 gap-10 items-center">
-          <div className="relative aspect-[4/3] rounded-2xl overflow-hidden shadow-lg order-2 md:order-1">
+          <div className="relative aspect-[4/3] order-2 md:order-1">
             <Image
               src="/Ecommerce/under-your-brand.png"
               alt="Office setting with tablet displaying inventory and order management"
@@ -229,7 +272,7 @@ export default function EcommercePage({ label }: EcommercePageProps) {
               </li>
             </ul>
           </div>
-          <div className="relative aspect-[4/3] rounded-2xl overflow-hidden shadow-lg">
+          <div className="relative aspect-[4/3]">
             <Image
               src="/Ecommerce/behind-your-brand.png"
               alt="Ecommerce dashboard with analytics and product management"
@@ -243,7 +286,7 @@ export default function EcommercePage({ label }: EcommercePageProps) {
       <ProductSection variant="gray">
         <SectionHeading eyebrow="What's included" title="When you launch Online Store with Hostopia" />
         <div className="grid md:grid-cols-2 gap-10 items-center">
-          <div className="relative aspect-[4/3] rounded-2xl overflow-hidden shadow-lg order-2 md:order-1">
+          <div className="relative aspect-[4/3] order-2 md:order-1">
             <Image
               src="/Ecommerce/launch-online-store.png"
               alt="SMB owner with product gallery and ecommerce platform"
