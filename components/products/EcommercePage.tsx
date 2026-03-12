@@ -1,5 +1,6 @@
 import Link from "next/link";
-import { ArrowRight, ShoppingCart, CreditCard, Package, Globe2, Smartphone } from "lucide-react";
+import Image from "next/image";
+import { ArrowRight, ShoppingCart, CreditCard, Package, Smartphone } from "lucide-react";
 import ProductSection from "./ProductSection";
 
 type EcommercePageProps = {
@@ -81,44 +82,15 @@ export default function EcommercePage({ label }: EcommercePageProps) {
               </div>
             </div>
 
-            {/* Right column: Why this matters */}
-            <div className="bg-white/80 rounded-2xl p-6 shadow-sm space-y-5">
-              <h3
-                className="text-sm font-semibold uppercase tracking-[0.2em]"
-                style={{ fontFamily: "Montserrat, sans-serif", color: "#6b7280" }}
-              >
-                Why this matters for SMBs
-              </h3>
-              <ul className="space-y-3 text-sm" style={{ fontFamily: "Raleway, sans-serif", color: "#4b5563" }}>
-                <li className="flex gap-3">
-                  <ShoppingCart size={18} className="mt-1 shrink-0" style={{ color: "#2CADB2" }} />
-                  <span>
-                    <strong>Launch an online storefront quickly</strong> without custom development or complex
-                    integrations.
-                  </span>
-                </li>
-                <li className="flex gap-3">
-                  <Globe2 size={18} className="mt-1 shrink-0" style={{ color: "#2CADB2" }} />
-                  <span>
-                    <strong>Sell to local and global customers</strong> with multi-currency, tax, and shipping
-                    options.
-                  </span>
-                </li>
-                <li className="flex gap-3">
-                  <CreditCard size={18} className="mt-1 shrink-0" style={{ color: "#2CADB2" }} />
-                  <span>
-                    <strong>Modern checkout experiences</strong> with trusted payment gateways and mobile-ready
-                    layouts.
-                  </span>
-                </li>
-                <li className="flex gap-3">
-                  <Package size={18} className="mt-1 shrink-0" style={{ color: "#2CADB2" }} />
-                  <span>
-                    <strong>Sell goods, services, gift cards, and subscriptions</strong>—and expand to Instagram,
-                    TikTok, Pinterest, and marketplaces like Amazon.
-                  </span>
-                </li>
-              </ul>
+            {/* Right column: Hero image */}
+            <div className="relative aspect-[4/3] rounded-2xl overflow-hidden shadow-lg">
+              <Image
+                src="/Ecommerce/hero.png"
+                alt="Ecommerce platform with online store on laptop and smartphone"
+                fill
+                className="object-cover"
+                priority
+              />
             </div>
           </div>
         </section>
@@ -126,38 +98,50 @@ export default function EcommercePage({ label }: EcommercePageProps) {
 
       <ProductSection variant="white">
         <SectionHeading eyebrow="What you offer" title="Under your brand" />
-          <p
-            className="text-base leading-relaxed mb-6 max-w-3xl"
-            style={{ fontFamily: "Raleway, sans-serif", color: "#4b5563" }}
-          >
-            You can package Hostopia&apos;s Online Store as a branded ecommerce add-on or core bundle with your website
-            and hosting offerings.
-          </p>
-          <p
-            className="text-sm font-semibold mb-3"
-            style={{ fontFamily: "Montserrat, sans-serif", color: "#24282B" }}
-          >
-            You can offer:
-          </p>
-          <ul
-            className="space-y-3 text-sm md:text-base mb-10"
-            style={{ fontFamily: "Raleway, sans-serif", color: "#4b5563" }}
-          >
-            <li className="flex gap-2">
-              <span className="text-teal mt-1">•</span>
-              <span>
-                A fully white-label online store builder integrated into your branded dashboard and website builder.
-              </span>
-            </li>
-            <li className="flex gap-2">
-              <span className="text-teal mt-1">•</span>
-              <span>Tiered ecommerce plans that let SMBs upgrade as they add products, traffic, and revenue.</span>
-            </li>
-            <li className="flex gap-2">
-              <span className="text-teal mt-1">•</span>
-              <span>DIY and DIFM delivery models: self-serve setup or full managed service for higher-touch clients.</span>
-            </li>
-          </ul>
+        <div className="grid md:grid-cols-2 gap-10 items-center">
+          <div className="relative aspect-[4/3] rounded-2xl overflow-hidden shadow-lg order-2 md:order-1">
+            <Image
+              src="/Ecommerce/under-your-brand.png"
+              alt="Office setting with tablet displaying inventory and order management"
+              fill
+              className="object-cover"
+            />
+          </div>
+          <div className="order-1 md:order-2">
+            <p
+              className="text-base leading-relaxed mb-6"
+              style={{ fontFamily: "Raleway, sans-serif", color: "#4b5563" }}
+            >
+              You can package Hostopia&apos;s Online Store as a branded ecommerce add-on or core bundle with your website
+              and hosting offerings.
+            </p>
+            <p
+              className="text-sm font-semibold mb-3"
+              style={{ fontFamily: "Montserrat, sans-serif", color: "#24282B" }}
+            >
+              You can offer:
+            </p>
+            <ul
+              className="space-y-3 text-sm md:text-base"
+              style={{ fontFamily: "Raleway, sans-serif", color: "#4b5563" }}
+            >
+              <li className="flex gap-2">
+                <span className="text-teal mt-1">•</span>
+                <span>
+                  A fully white-label online store builder integrated into your branded dashboard and website builder.
+                </span>
+              </li>
+              <li className="flex gap-2">
+                <span className="text-teal mt-1">•</span>
+                <span>Tiered ecommerce plans that let SMBs upgrade as they add products, traffic, and revenue.</span>
+              </li>
+              <li className="flex gap-2">
+                <span className="text-teal mt-1">•</span>
+                <span>DIY and DIFM delivery models: self-serve setup or full managed service for higher-touch clients.</span>
+              </li>
+            </ul>
+          </div>
+        </div>
       </ProductSection>
 
       <ProductSection variant="gray">
@@ -211,66 +195,90 @@ export default function EcommercePage({ label }: EcommercePageProps) {
 
       <ProductSection variant="white">
         <SectionHeading eyebrow="Platform capabilities" title="Behind your brand" />
-          <p
-            className="text-base leading-relaxed mb-8 max-w-3xl"
-            style={{ fontFamily: "Raleway, sans-serif", color: "#4b5563" }}
-          >
-            Hostopia provides the infrastructure, integrations, and management tools to deliver ecommerce at scale.
-          </p>
-          <ul
-            className="space-y-3 text-sm md:text-base max-w-3xl"
-            style={{ fontFamily: "Raleway, sans-serif", color: "#4b5563" }}
-          >
-            <li className="flex gap-2">
-              <span className="text-teal mt-1">•</span>
-              <span>SSO and deep integration across website, email, and Online Store tools.</span>
-            </li>
-            <li className="flex gap-2">
-              <span className="text-teal mt-1">•</span>
-              <span>Centralized dashboard for inventory, orders, coupons, and multi-channel management.</span>
-            </li>
-            <li className="flex gap-2">
-              <span className="text-teal mt-1">•</span>
-              <span>Flexible design customization for layout, colors, fonts, and branding.</span>
-            </li>
-            <li className="flex gap-2">
-              <span className="text-teal mt-1">•</span>
-              <span>Multi-channel support: website, social, Google Shopping Ads.</span>
-            </li>
-            <li className="flex gap-2">
-              <span className="text-teal mt-1">•</span>
-              <span>Global hosting infrastructure with secure, high-performance transactions.</span>
-            </li>
-          </ul>
+        <div className="grid md:grid-cols-2 gap-10 items-center">
+          <div>
+            <p
+              className="text-base leading-relaxed mb-6"
+              style={{ fontFamily: "Raleway, sans-serif", color: "#4b5563" }}
+            >
+              Hostopia provides the infrastructure, integrations, and management tools to deliver ecommerce at scale.
+            </p>
+            <ul
+              className="space-y-3 text-sm md:text-base"
+              style={{ fontFamily: "Raleway, sans-serif", color: "#4b5563" }}
+            >
+              <li className="flex gap-2">
+                <span className="text-teal mt-1">•</span>
+                <span>SSO and deep integration across website, email, and Online Store tools.</span>
+              </li>
+              <li className="flex gap-2">
+                <span className="text-teal mt-1">•</span>
+                <span>Centralized dashboard for inventory, orders, coupons, and multi-channel management.</span>
+              </li>
+              <li className="flex gap-2">
+                <span className="text-teal mt-1">•</span>
+                <span>Flexible design customization for layout, colors, fonts, and branding.</span>
+              </li>
+              <li className="flex gap-2">
+                <span className="text-teal mt-1">•</span>
+                <span>Multi-channel support: website, social, Google Shopping Ads.</span>
+              </li>
+              <li className="flex gap-2">
+                <span className="text-teal mt-1">•</span>
+                <span>Global hosting infrastructure with secure, high-performance transactions.</span>
+              </li>
+            </ul>
+          </div>
+          <div className="relative aspect-[4/3] rounded-2xl overflow-hidden shadow-lg">
+            <Image
+              src="/Ecommerce/behind-your-brand.png"
+              alt="Ecommerce dashboard with analytics and product management"
+              fill
+              className="object-cover"
+            />
+          </div>
+        </div>
       </ProductSection>
 
       <ProductSection variant="gray">
         <SectionHeading eyebrow="What's included" title="When you launch Online Store with Hostopia" />
-          <ul
-            className="space-y-3 text-sm md:text-base max-w-3xl"
-            style={{ fontFamily: "Raleway, sans-serif", color: "#4b5563" }}
-          >
-            <li className="flex gap-2">
-              <span className="text-teal mt-1">•</span>
-              <span>White-label ecommerce platform fully integrated with Online Presence Builder.</span>
-            </li>
-            <li className="flex gap-2">
-              <span className="text-teal mt-1">•</span>
-              <span>Multi-currency, multi-gateway support (40+ payment options) with real-time shipping.</span>
-            </li>
-            <li className="flex gap-2">
-              <span className="text-teal mt-1">•</span>
-              <span>Guided setup wizard and management dashboards.</span>
-            </li>
-            <li className="flex gap-2">
-              <span className="text-teal mt-1">•</span>
-              <span>Upsell-driving features like social selling, abandoned cart recovery, and promotions.</span>
-            </li>
-            <li className="flex gap-2">
-              <span className="text-teal mt-1">•</span>
-              <span>Partner training, sales enablement, and ongoing support.</span>
-            </li>
-          </ul>
+        <div className="grid md:grid-cols-2 gap-10 items-center">
+          <div className="relative aspect-[4/3] rounded-2xl overflow-hidden shadow-lg order-2 md:order-1">
+            <Image
+              src="/Ecommerce/launch-online-store.png"
+              alt="SMB owner with product gallery and ecommerce platform"
+              fill
+              className="object-cover"
+            />
+          </div>
+          <div className="order-1 md:order-2">
+            <ul
+              className="space-y-3 text-sm md:text-base"
+              style={{ fontFamily: "Raleway, sans-serif", color: "#4b5563" }}
+            >
+              <li className="flex gap-2">
+                <span className="text-teal mt-1">•</span>
+                <span>White-label ecommerce platform fully integrated with Online Presence Builder.</span>
+              </li>
+              <li className="flex gap-2">
+                <span className="text-teal mt-1">•</span>
+                <span>Multi-currency, multi-gateway support (40+ payment options) with real-time shipping.</span>
+              </li>
+              <li className="flex gap-2">
+                <span className="text-teal mt-1">•</span>
+                <span>Guided setup wizard and management dashboards.</span>
+              </li>
+              <li className="flex gap-2">
+                <span className="text-teal mt-1">•</span>
+                <span>Upsell-driving features like social selling, abandoned cart recovery, and promotions.</span>
+              </li>
+              <li className="flex gap-2">
+                <span className="text-teal mt-1">•</span>
+                <span>Partner training, sales enablement, and ongoing support.</span>
+              </li>
+            </ul>
+          </div>
+        </div>
       </ProductSection>
 
       <ProductSection variant="white">

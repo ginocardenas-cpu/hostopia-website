@@ -8,32 +8,28 @@ const partnerTypes = [
     title: "Telcos & Carriers",
     shortCopy: "Add high-margin digital services to your connectivity bundle.",
     href: "/customers/telcos",
-    image:
-      "https://images.unsplash.com/photo-1544197150-b99a580bb7a8?auto=format&fit=crop&w=800&q=80",
+    image: "/Home%20Page%20images/homepage-telcos.png",
     alt: "Telecommunications infrastructure",
   },
   {
     title: "Resellers & Distributors",
     shortCopy: "Expand your catalog with white-label SMB digital tools.",
     href: "/customers/resellers",
-    image:
-      "https://images.unsplash.com/photo-1553877522-43269d4ea984?auto=format&fit=crop&w=800&q=80",
+    image: "/Home%20Page%20images/homepage-resellersanddistrib.png",
     alt: "Business partnership and distribution",
   },
   {
     title: "Domain Registrars",
     shortCopy: "Turn one-time domain sales into monthly recurring revenue.",
     href: "/customers/registrars",
-    image:
-      "https://images.unsplash.com/photo-1451187580459-43490279c0fa?auto=format&fit=crop&w=800&q=80",
+    image: "/Home%20Page%20images/homepage-domainregistrars.png",
     alt: "Digital connectivity and domains",
   },
   {
     title: "ISPs & Hosting Cos.",
     shortCopy: "Move up the value chain with SMB digital marketing and ecommerce.",
     href: "/customers/isps",
-    image:
-      "https://images.unsplash.com/photo-1558494949-ef010cbdcc31?auto=format&fit=crop&w=800&q=80",
+    image: "/Home%20Page%20images/homepage-isps.png",
     alt: "Data center and hosting infrastructure",
   },
 ];
