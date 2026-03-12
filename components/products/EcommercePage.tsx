@@ -11,7 +11,7 @@ export default function EcommercePage({ label }: EcommercePageProps) {
   return (
     <main className="pt-24 pb-0">
       <div className="max-w-7xl mx-auto px-6 pt-2 pb-4">
-        <nav className="text-sm text-gray-500">
+        <nav className="text-sm text-gray-500" style={{ fontFamily: "Raleway, sans-serif" }}>
           <Link href="/" className="hover:text-gray-700">
             Home
           </Link>
@@ -29,7 +29,7 @@ export default function EcommercePage({ label }: EcommercePageProps) {
           {/* Hero image as full-width/height background */}
           <div className="absolute inset-0">
             <Image
-              src="/Ecommerce/newhero.jpg"
+              src="/Ecommerce/newhero (1).jpg"
               alt=""
               fill
               className="object-cover object-right"
@@ -47,7 +47,7 @@ export default function EcommercePage({ label }: EcommercePageProps) {
             <div className="md:pb-4">
               <div className="flex items-center gap-3 mb-3">
                 <div className="w-8 h-px" style={{ backgroundColor: "#2CADB2" }} />
-                <span className="section-label">Online Store by Hostopia</span>
+                <span className="section-label" style={{ fontFamily: "Montserrat, sans-serif" }}>Online Store by Hostopia</span>
               </div>
               <h1
                 className="font-black leading-tight mb-3"
@@ -66,14 +66,6 @@ export default function EcommercePage({ label }: EcommercePageProps) {
                 SMBs face increasing pressure to sell online, expand beyond their local market, and deliver modern
                 checkout experiences—but many lack the skills, budget, or time to manage a full ecommerce stack.
               </p>
-              <p
-                className="text-base leading-relaxed mb-4"
-                style={{ fontFamily: "Raleway, sans-serif", color: "#555a5e" }}
-              >
-                Hostopia&apos;s white-label Online Store gives you a turnkey, mobile-ready ecommerce platform to resell
-                under your own brand. Fully integrated with Online Presence Builder, it lets SMBs start small, scale over
-                time, and keep everything connected to the websites and services they already buy from you.
-              </p>
               <div className="flex flex-col gap-2">
                 <Link
                   href="/contact"
@@ -87,32 +79,26 @@ export default function EcommercePage({ label }: EcommercePageProps) {
                   Book a demo
                   <ArrowRight size={16} className="translate-x-0 group-hover:translate-x-1 transition-transform" />
                 </Link>
-                <span
-                  className="text-xs md:text-sm"
-                  style={{ fontFamily: "Raleway, sans-serif", color: "#6b7280" }}
-                >
-                  Join 1000+ businesses who rely on Hostopia
-                </span>
               </div>
             </div>
-            {/* Right: Key benefits overlay card - bottom-aligned, compact */}
-            <div className="bg-white/95 rounded-xl p-3 shadow-lg border border-gray-100 self-end md:mb-4">
-              <ul className="space-y-1.5 text-sm" style={{ fontFamily: "Montserrat, sans-serif", color: "#24282B" }}>
+            {/* Right: Key benefits overlay card - bottom-aligned, compact, no excess width */}
+            <div className="bg-white/95 rounded-xl py-3 px-4 shadow-lg border border-gray-100 self-end md:mb-4 max-w-xs ml-auto">
+              <ul className="space-y-2" style={{ fontFamily: "Raleway, sans-serif", color: "#24282B" }}>
                 <li className="flex items-center gap-2">
-                  <ShoppingCart size={14} className="shrink-0" style={{ color: "#2CADB2" }} />
-                  <span className="font-semibold text-xs">Launch an online storefront quickly</span>
+                  <ShoppingCart size={16} className="shrink-0" style={{ color: "#2CADB2" }} />
+                  <span className="font-bold text-sm">Launch an online storefront quickly</span>
                 </li>
                 <li className="flex items-center gap-2">
-                  <Globe2 size={14} className="shrink-0" style={{ color: "#2CADB2" }} />
-                  <span className="font-semibold text-xs">Sell to local and global customers</span>
+                  <Globe2 size={16} className="shrink-0" style={{ color: "#2CADB2" }} />
+                  <span className="font-bold text-sm">Sell to local and global customers</span>
                 </li>
                 <li className="flex items-center gap-2">
-                  <CreditCard size={14} className="shrink-0" style={{ color: "#2CADB2" }} />
-                  <span className="font-semibold text-xs">Modern checkout experiences</span>
+                  <CreditCard size={16} className="shrink-0" style={{ color: "#2CADB2" }} />
+                  <span className="font-bold text-sm">Modern checkout experiences</span>
                 </li>
                 <li className="flex items-center gap-2">
-                  <Package size={14} className="shrink-0" style={{ color: "#2CADB2" }} />
-                  <span className="font-semibold text-xs">Sell goods, services, gift cards, and subscriptions</span>
+                  <Package size={16} className="shrink-0" style={{ color: "#2CADB2" }} />
+                  <span className="font-bold text-sm">Sell goods, services, gift cards, and subscriptions</span>
                 </li>
               </ul>
             </div>
@@ -124,7 +110,7 @@ export default function EcommercePage({ label }: EcommercePageProps) {
         <div className="grid md:grid-cols-2 gap-4 md:gap-6 items-center">
           <div className="relative aspect-[5/4] min-h-[190px] md:min-h-[220px] order-2 md:order-1">
             <Image
-              src="/Ecommerce/under-your-brand (2).png"
+              src="/Ecommerce/under-your-brand (3).png"
               alt="Office setting with tablet displaying inventory and order management"
               fill
               className="object-contain"
@@ -168,7 +154,7 @@ export default function EcommercePage({ label }: EcommercePageProps) {
         </div>
       </ProductSection>
 
-      <ProductSection variant="gray">
+      <ProductSection variant="gray" className="!py-8 md:!py-12">
         <div className="mb-4">
           <SectionHeading eyebrow="Product capabilities" title="Key features of Online Store" center />
         </div>
@@ -406,7 +392,7 @@ function SectionHeading({ eyebrow, title, center }: SectionHeadingProps) {
     <div className={`mb-3 ${center ? "text-center" : ""}`}>
       <div className={`flex items-center gap-3 mb-2 ${center ? "justify-center" : ""}`}>
         <div className="w-8 h-px" style={{ backgroundColor: "#2CADB2" }} />
-        <span className="section-label">{eyebrow}</span>
+        <span className="section-label" style={{ fontFamily: "Montserrat, sans-serif" }}>{eyebrow}</span>
       </div>
       <h2
         className="font-black"
