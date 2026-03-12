@@ -32,7 +32,7 @@ export default function EcommercePage({ label }: EcommercePageProps) {
               src="/Ecommerce/newhero.jpg"
               alt=""
               fill
-              className="object-cover object-center"
+              className="object-cover object-right"
               priority
             />
             <div
@@ -42,9 +42,9 @@ export default function EcommercePage({ label }: EcommercePageProps) {
               }}
             />
           </div>
-          <div className="relative z-10 grid md:grid-cols-2 gap-4 md:gap-6 p-4 md:p-6 items-center min-h-[400px] md:min-h-[480px]">
-            {/* Left: Copy */}
-            <div>
+          <div className="relative z-10 grid md:grid-cols-2 gap-4 md:gap-6 p-4 md:p-6 items-end min-h-[400px] md:min-h-[480px]">
+            {/* Left: Copy - aligned to bottom */}
+            <div className="md:pb-4">
               <div className="flex items-center gap-3 mb-3">
                 <div className="w-8 h-px" style={{ backgroundColor: "#2CADB2" }} />
                 <span className="section-label">Online Store by Hostopia</span>
@@ -95,30 +95,24 @@ export default function EcommercePage({ label }: EcommercePageProps) {
                 </span>
               </div>
             </div>
-            {/* Right: Key benefits overlay card */}
-            <div className="bg-white/95 rounded-2xl p-4 shadow-lg border border-gray-100">
-              <h3
-                className="text-sm font-semibold uppercase tracking-[0.2em] mb-2"
-                style={{ fontFamily: "Montserrat, sans-serif", color: "#6b7280" }}
-              >
-                Key benefits of Hostopia
-              </h3>
-              <ul className="space-y-2 text-sm" style={{ fontFamily: "Raleway, sans-serif", color: "#4b5563" }}>
-                <li className="flex gap-2">
-                  <ShoppingCart size={16} className="mt-0.5 shrink-0" style={{ color: "#2CADB2" }} />
-                  <span><strong>Launch an online storefront quickly</strong> without custom development.</span>
+            {/* Right: Key benefits overlay card - bottom-aligned, compact */}
+            <div className="bg-white/95 rounded-xl p-3 shadow-lg border border-gray-100 self-end md:mb-4">
+              <ul className="space-y-1.5 text-sm" style={{ fontFamily: "Montserrat, sans-serif", color: "#24282B" }}>
+                <li className="flex items-center gap-2">
+                  <ShoppingCart size={14} className="shrink-0" style={{ color: "#2CADB2" }} />
+                  <span className="font-semibold text-xs">Launch an online storefront quickly</span>
                 </li>
-                <li className="flex gap-2">
-                  <Globe2 size={16} className="mt-0.5 shrink-0" style={{ color: "#2CADB2" }} />
-                  <span><strong>Sell to local and global customers</strong> with multi-currency and shipping.</span>
+                <li className="flex items-center gap-2">
+                  <Globe2 size={14} className="shrink-0" style={{ color: "#2CADB2" }} />
+                  <span className="font-semibold text-xs">Sell to local and global customers</span>
                 </li>
-                <li className="flex gap-2">
-                  <CreditCard size={16} className="mt-0.5 shrink-0" style={{ color: "#2CADB2" }} />
-                  <span><strong>Modern checkout experiences</strong> with trusted payment gateways.</span>
+                <li className="flex items-center gap-2">
+                  <CreditCard size={14} className="shrink-0" style={{ color: "#2CADB2" }} />
+                  <span className="font-semibold text-xs">Modern checkout experiences</span>
                 </li>
-                <li className="flex gap-2">
-                  <Package size={16} className="mt-0.5 shrink-0" style={{ color: "#2CADB2" }} />
-                  <span><strong>Sell goods, services, gift cards, and subscriptions</strong>—expand to social and marketplaces.</span>
+                <li className="flex items-center gap-2">
+                  <Package size={14} className="shrink-0" style={{ color: "#2CADB2" }} />
+                  <span className="font-semibold text-xs">Sell goods, services, gift cards, and subscriptions</span>
                 </li>
               </ul>
             </div>
@@ -128,12 +122,12 @@ export default function EcommercePage({ label }: EcommercePageProps) {
 
       <ProductSection variant="white">
         <div className="grid md:grid-cols-2 gap-4 md:gap-6 items-center">
-          <div className="relative aspect-[4/5] min-h-[250px] md:min-h-[290px] order-2 md:order-1 my-[-0.5rem] md:my-[-0.75rem]">
+          <div className="relative aspect-[5/4] min-h-[190px] md:min-h-[220px] order-2 md:order-1">
             <Image
-              src="/Ecommerce/under-your-brand.png"
+              src="/Ecommerce/under-your-brand (2).png"
               alt="Office setting with tablet displaying inventory and order management"
               fill
-              className="object-cover rounded-2xl"
+              className="object-contain"
             />
           </div>
           <div className="order-1 md:order-2 py-2">
@@ -261,12 +255,12 @@ export default function EcommercePage({ label }: EcommercePageProps) {
               </li>
             </ul>
           </div>
-          <div className="relative aspect-[4/5] min-h-[250px] md:min-h-[290px] my-[-0.5rem] md:my-[-0.75rem]">
+          <div className="relative aspect-[5/4] min-h-[190px] md:min-h-[220px]">
             <Image
-              src="/Ecommerce/behind-your-brand.png"
+              src="/Ecommerce/behind-your-brand (2).png"
               alt="Ecommerce dashboard with analytics and product management"
               fill
-              className="object-cover rounded-2xl"
+              className="object-contain"
             />
           </div>
         </div>
@@ -274,12 +268,12 @@ export default function EcommercePage({ label }: EcommercePageProps) {
 
       <ProductSection variant="gray">
         <div className="grid md:grid-cols-2 gap-4 md:gap-6 items-center">
-          <div className="relative aspect-[4/5] min-h-[250px] md:min-h-[290px] order-2 md:order-1 my-[-0.5rem] md:my-[-0.75rem]">
+          <div className="relative aspect-[5/4] min-h-[190px] md:min-h-[220px] order-2 md:order-1">
             <Image
-              src="/Ecommerce/launch-online-store.png"
+              src="/Ecommerce/launch-online-store (1).png"
               alt="SMB owner with product gallery and ecommerce platform"
               fill
-              className="object-cover rounded-2xl"
+              className="object-contain"
             />
           </div>
           <div className="order-1 md:order-2 py-2">
