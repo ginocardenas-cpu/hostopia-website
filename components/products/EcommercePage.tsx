@@ -29,7 +29,7 @@ export default function EcommercePage({ label }: EcommercePageProps) {
           {/* Hero image as background */}
           <div className="absolute inset-0 z-0">
             <Image
-              src="/Ecommerce/hero.png"
+              src="/Ecommerce/newhero.jpg"
               alt=""
               fill
               className="object-cover object-right"
