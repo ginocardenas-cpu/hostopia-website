@@ -11,38 +11,38 @@ const navLinks = [
 ];
 
 const platformLinks = [
-  { label: "DMS", href: "/platform#dms" },
-  { label: "Portal", href: "/platform#portal" },
-  { label: "Shop", href: "/platform#shop" },
-  { label: "Signup Server", href: "/platform#signup-server" },
-  { label: "WebhostOS", href: "/platform#webhostos" },
+  { label: "DMS", description: "Domain management system", href: "/platform#dms" },
+  { label: "Portal", description: "Partner portal and billing", href: "/platform#portal" },
+  { label: "Shop", description: "White-label storefront", href: "/platform#shop" },
+  { label: "Signup Server", description: "Automated provisioning", href: "/platform#signup-server" },
+  { label: "WebhostOS", description: "Hosting control panel", href: "/platform#webhostos" },
 ];
 
 const programLinks = [
-  { label: "Channel as a Service", href: "/programs/channel-as-a-service" },
-  { label: "Partner Marketing", href: "/programs/partner-marketing" },
-  { label: "Project Management", href: "/programs/project-management" },
-  { label: "Service Management", href: "/programs/service-management" },
-  { label: "Support", href: "/programs/support" },
+  { label: "Channel as a Service", description: "Full channel support", href: "/programs/channel-as-a-service" },
+  { label: "Partner Marketing", description: "Co-marketing and enablement", href: "/programs/partner-marketing" },
+  { label: "Project Management", description: "Migration and onboarding", href: "/programs/project-management" },
+  { label: "Service Management", description: "Ongoing support", href: "/programs/service-management" },
+  { label: "Support", description: "Dedicated partner support", href: "/programs/support" },
 ];
 
 const customerTypeLinks = [
-  { label: "Cablecos", href: "/customers/cablecos" },
-  { label: "Distributors", href: "/customers/distributors" },
-  { label: "ISPs", href: "/customers/isps" },
-  { label: "Mobile Carriers", href: "/customers/mobile-carriers" },
-  { label: "Registrars", href: "/customers/registrars" },
-  { label: "Resellers", href: "/customers/resellers" },
-  { label: "Telcos", href: "/customers/telcos" },
+  { label: "Cablecos", description: "Cable operators", href: "/customers/cablecos" },
+  { label: "Distributors", description: "Distribution partners", href: "/customers/distributors" },
+  { label: "ISPs", description: "Internet service providers", href: "/customers/isps" },
+  { label: "Mobile Carriers", description: "Mobile network operators", href: "/customers/mobile-carriers" },
+  { label: "Registrars", description: "Domain registrars", href: "/customers/registrars" },
+  { label: "Resellers", description: "Value-added resellers", href: "/customers/resellers" },
+  { label: "Telcos", description: "Telecommunications companies", href: "/customers/telcos" },
 ];
 
 const customerOutcomeLinks = [
-  { label: "Bundles", href: "/customers/goals/bundles" },
-  { label: "Differentiate Core", href: "/customers/goals/differentiate-core" },
-  { label: "Grow Existing Revenues", href: "/customers/goals/grow-existing-revenues" },
-  { label: "Improve Retention", href: "/customers/goals/improve-retention" },
-  { label: "Migrate and Save", href: "/customers/goals/migrate-and-save" },
-  { label: "New Revenue Streams", href: "/customers/goals/new-revenue-streams" },
+  { label: "Bundles", description: "Bundle products for SMBs", href: "/customers/goals/bundles" },
+  { label: "Differentiate Core", description: "Differentiate core business", href: "/customers/goals/differentiate-core" },
+  { label: "Grow Existing Revenues", description: "Expand digital revenue", href: "/customers/goals/grow-existing-revenues" },
+  { label: "Improve Retention", description: "Reduce churn", href: "/customers/goals/improve-retention" },
+  { label: "Migrate and Save", description: "Migration and cost savings", href: "/customers/goals/migrate-and-save" },
+  { label: "New Revenue Streams", description: "Add digital services", href: "/customers/goals/new-revenue-streams" },
 ];
 
 export default function Navbar() {
@@ -125,43 +125,62 @@ export default function Navbar() {
               <ChevronDown className={`w-4 h-4 transition-transform ${productsOpen ? "rotate-180" : ""}`} />
             </button>
             {productsOpen && (
-  <div className="absolute left-0 top-full pt-1 min-w-[640px]">
-    <div className="bg-white border border-gray-100 rounded-lg shadow-lg py-4 px-4">
-      <p
-        className="text-xs font-bold uppercase tracking-wider text-gray-400 pb-3 mb-3 border-b border-gray-100"
-        style={{ fontFamily: "Montserrat, sans-serif" }}
-      >
-        Help your customers
-      </p>
+              <div className="absolute left-0 top-full pt-1 min-w-[640px]">
+                <div className="bg-white border border-gray-100 rounded-lg shadow-lg py-4 px-4">
+                  <p
+                    className="text-xs font-bold uppercase tracking-wider text-gray-400 pb-3 mb-3 border-b border-gray-100"
+                    style={{ fontFamily: "Montserrat, sans-serif" }}
+                  >
+                    Help your customers
+                  </p>
 
-      <div className="grid grid-cols-4 gap-x-10 gap-y-2">
-        {productsDropdownSections.map((section) => (
-          <div key={section.heading}>
-            <p
-              className="text-sm font-semibold mb-2"
-              style={{ fontFamily: "Montserrat, sans-serif", color: "#0C7E8F" }} // blue subtitle
-            >
-              {section.heading}
-            </p>
-            <div className="space-y-1">
-              {section.links.map((link) => (
-                <Link
-                  key={link.href}
-                  href={link.href}
-                  className="block text-sm py-1 pl-4 pr-2 rounded hover:bg-gray-50 transition-colors"
-                  style={{ fontFamily: "Raleway, sans-serif", color: "#24282B" }}
-                  onClick={() => setProductsOpen(false)}
-                >
-                  {link.label}
-                </Link>
-              ))}
-            </div>
-          </div>
-        ))}
-      </div>
-    </div>
-  </div>
-)}
+                  <div className="grid grid-cols-4 gap-x-10 gap-y-3">
+                    {productsDropdownSections.map((section) => (
+                      <div key={section.heading}>
+                        <p
+                          className="text-sm font-semibold mb-2"
+                          style={{ fontFamily: "Montserrat, sans-serif", color: "#2CADB2" }}
+                        >
+                          {section.heading}
+                        </p>
+                        <div className="space-y-2">
+                          {section.links.map((link) => (
+                            <Link
+                              key={link.href}
+                              href={link.href}
+                              className="block py-1 pr-2 rounded hover:bg-gray-50 transition-colors"
+                              onClick={() => setProductsOpen(false)}
+                            >
+                              <span
+                                className="text-sm font-semibold block"
+                                style={{ fontFamily: "Montserrat, sans-serif", color: "#24282B" }}
+                              >
+                                {link.label}
+                              </span>
+                              <span
+                                className="text-xs block mt-0.5"
+                                style={{ fontFamily: "Raleway, sans-serif", color: "#6b7280" }}
+                              >
+                                {link.description}
+                              </span>
+                            </Link>
+                          ))}
+                        </div>
+                      </div>
+                    ))}
+                  </div>
+
+                  <Link
+                    href="/products"
+                    className="mt-4 pt-3 border-t border-gray-100 flex items-center gap-1 text-sm font-semibold"
+                    style={{ fontFamily: "Montserrat, sans-serif", color: "#2CADB2" }}
+                    onClick={() => setProductsOpen(false)}
+                  >
+                    View all Products →
+                  </Link>
+                </div>
+              </div>
+            )}
           </div>
 
           {/* Platform dropdown */}
@@ -181,7 +200,7 @@ export default function Navbar() {
               <ChevronDown className={`w-4 h-4 transition-transform ${platformOpen ? "rotate-180" : ""}`} />
             </button>
             {platformOpen && (
-              <div className="absolute left-0 top-full pt-1 min-w-[360px]">
+              <div className="absolute left-0 top-full pt-1 min-w-[380px]">
                 <div className="bg-white border border-gray-100 rounded-lg shadow-lg py-4 px-4">
                   <p
                     className="text-xs font-bold uppercase tracking-wider text-gray-400 pb-3 mb-3 border-b border-gray-100"
@@ -189,23 +208,37 @@ export default function Navbar() {
                   >
                     Platform
                   </p>
-                  <div className="grid grid-cols-2 gap-x-8 gap-y-1">
-                    <div>
-                      <div className="space-y-1">
-                        {platformLinks.map((link) => (
-                          <Link
-                            key={link.href}
-                            href={link.href}
-                            className="block text-sm py-1 pl-3 pr-2 rounded hover:bg-gray-50 transition-colors"
-                            style={{ fontFamily: "Raleway, sans-serif", color: "#24282B" }}
-                            onClick={() => setPlatformOpen(false)}
-                          >
-                            {link.label}
-                          </Link>
-                        ))}
-                      </div>
-                    </div>
+                  <div className="space-y-2">
+                    {platformLinks.map((link) => (
+                      <Link
+                        key={link.href}
+                        href={link.href}
+                        className="block py-2 px-2 rounded hover:bg-gray-50 transition-colors"
+                        onClick={() => setPlatformOpen(false)}
+                      >
+                        <span
+                          className="text-sm font-semibold block"
+                          style={{ fontFamily: "Montserrat, sans-serif", color: "#24282B" }}
+                        >
+                          {link.label}
+                        </span>
+                        <span
+                          className="text-xs block mt-0.5"
+                          style={{ fontFamily: "Raleway, sans-serif", color: "#6b7280" }}
+                        >
+                          {link.description}
+                        </span>
+                      </Link>
+                    ))}
                   </div>
+                  <Link
+                    href="/platform"
+                    className="mt-4 pt-3 border-t border-gray-100 flex items-center gap-1 text-sm font-semibold"
+                    style={{ fontFamily: "Montserrat, sans-serif", color: "#2CADB2" }}
+                    onClick={() => setPlatformOpen(false)}
+                  >
+                    View Platform →
+                  </Link>
                 </div>
               </div>
             )}
@@ -228,7 +261,7 @@ export default function Navbar() {
               <ChevronDown className={`w-4 h-4 transition-transform ${programsOpen ? "rotate-180" : ""}`} />
             </button>
             {programsOpen && (
-              <div className="absolute left-0 top-full pt-1 min-w-[360px]">
+              <div className="absolute left-0 top-full pt-1 min-w-[380px]">
                 <div className="bg-white border border-gray-100 rounded-lg shadow-lg py-4 px-4">
                   <p
                     className="text-xs font-bold uppercase tracking-wider text-gray-400 pb-3 mb-3 border-b border-gray-100"
@@ -236,23 +269,37 @@ export default function Navbar() {
                   >
                     Programs
                   </p>
-                  <div className="grid grid-cols-1 gap-x-8 gap-y-1">
-                    <div>
-                      <div className="space-y-1">
-                        {programLinks.map((link) => (
-                          <Link
-                            key={link.href}
-                            href={link.href}
-                            className="block text-sm py-1 pl-3 pr-2 rounded hover:bg-gray-50 transition-colors"
-                            style={{ fontFamily: "Raleway, sans-serif", color: "#24282B" }}
-                            onClick={() => setProgramsOpen(false)}
-                          >
-                            {link.label}
-                          </Link>
-                        ))}
-                      </div>
-                    </div>
+                  <div className="space-y-2">
+                    {programLinks.map((link) => (
+                      <Link
+                        key={link.href}
+                        href={link.href}
+                        className="block py-2 px-2 rounded hover:bg-gray-50 transition-colors"
+                        onClick={() => setProgramsOpen(false)}
+                      >
+                        <span
+                          className="text-sm font-semibold block"
+                          style={{ fontFamily: "Montserrat, sans-serif", color: "#24282B" }}
+                        >
+                          {link.label}
+                        </span>
+                        <span
+                          className="text-xs block mt-0.5"
+                          style={{ fontFamily: "Raleway, sans-serif", color: "#6b7280" }}
+                        >
+                          {link.description}
+                        </span>
+                      </Link>
+                    ))}
                   </div>
+                  <Link
+                    href="/programs"
+                    className="mt-4 pt-3 border-t border-gray-100 flex items-center gap-1 text-sm font-semibold"
+                    style={{ fontFamily: "Montserrat, sans-serif", color: "#2CADB2" }}
+                    onClick={() => setProgramsOpen(false)}
+                  >
+                    View Programs →
+                  </Link>
                 </div>
               </div>
             )}
@@ -287,20 +334,30 @@ export default function Navbar() {
                     <div>
                       <p
                         className="text-sm font-semibold mb-2"
-                        style={{ fontFamily: "Montserrat, sans-serif", color: "#0C7E8F" }}
+                        style={{ fontFamily: "Montserrat, sans-serif", color: "#2CADB2" }}
                       >
                         Who we work with
                       </p>
-                      <div className="space-y-1">
+                      <div className="space-y-2">
                         {customerTypeLinks.map((link) => (
                           <Link
                             key={link.href}
                             href={link.href}
-                            className="block text-sm py-1 pl-4 pr-2 rounded hover:bg-gray-50 transition-colors"
-                            style={{ fontFamily: "Raleway, sans-serif", color: "#24282B" }}
+                            className="block py-1 pr-2 rounded hover:bg-gray-50 transition-colors"
                             onClick={() => setCustomersOpen(false)}
                           >
-                            {link.label}
+                            <span
+                              className="text-sm font-semibold block"
+                              style={{ fontFamily: "Montserrat, sans-serif", color: "#24282B" }}
+                            >
+                              {link.label}
+                            </span>
+                            <span
+                              className="text-xs block mt-0.5"
+                              style={{ fontFamily: "Raleway, sans-serif", color: "#6b7280" }}
+                            >
+                              {link.description}
+                            </span>
                           </Link>
                         ))}
                       </div>
@@ -308,20 +365,30 @@ export default function Navbar() {
                     <div>
                       <p
                         className="text-sm font-semibold mb-2"
-                        style={{ fontFamily: "Montserrat, sans-serif", color: "#0C7E8F" }}
+                        style={{ fontFamily: "Montserrat, sans-serif", color: "#2CADB2" }}
                       >
                         What they want
                       </p>
-                      <div className="space-y-1">
+                      <div className="space-y-2">
                         {customerOutcomeLinks.map((link) => (
                           <Link
                             key={link.href}
                             href={link.href}
-                            className="block text-sm py-1 pl-4 pr-2 rounded hover:bg-gray-50 transition-colors"
-                            style={{ fontFamily: "Raleway, sans-serif", color: "#24282B" }}
+                            className="block py-1 pr-2 rounded hover:bg-gray-50 transition-colors"
                             onClick={() => setCustomersOpen(false)}
                           >
-                            {link.label}
+                            <span
+                              className="text-sm font-semibold block"
+                              style={{ fontFamily: "Montserrat, sans-serif", color: "#24282B" }}
+                            >
+                              {link.label}
+                            </span>
+                            <span
+                              className="text-xs block mt-0.5"
+                              style={{ fontFamily: "Raleway, sans-serif", color: "#6b7280" }}
+                            >
+                              {link.description}
+                            </span>
                           </Link>
                         ))}
                       </div>
@@ -390,18 +457,22 @@ export default function Navbar() {
                 </p>
                 {productsDropdownSections.map((section) => (
                   <div key={section.heading} className="mb-3">
-                    <p className="text-xs font-semibold text-gray-500 py-1" style={{ fontFamily: "Montserrat, sans-serif" }}>
+                    <p className="text-xs font-semibold text-teal py-1" style={{ fontFamily: "Montserrat, sans-serif" }}>
                       {section.heading}
                     </p>
                     {section.links.map((link) => (
                       <Link
                         key={link.href}
                         href={link.href}
-                        className="block text-sm py-1.5 pl-2"
-                        style={{ fontFamily: "Raleway, sans-serif", color: "#24282B" }}
+                        className="block py-2 pl-2"
                         onClick={closeMobile}
                       >
-                        {link.label}
+                        <span className="text-sm font-semibold block" style={{ fontFamily: "Montserrat, sans-serif", color: "#24282B" }}>
+                          {link.label}
+                        </span>
+                        <span className="text-xs block mt-0.5" style={{ fontFamily: "Raleway, sans-serif", color: "#6b7280" }}>
+                          {link.description}
+                        </span>
                       </Link>
                     ))}
                   </div>
@@ -427,11 +498,15 @@ export default function Navbar() {
                   <Link
                     key={link.href}
                     href={link.href}
-                    className="block text-sm py-1.5 pl-2"
-                    style={{ fontFamily: "Raleway, sans-serif", color: "#24282B" }}
+                    className="block py-2 pl-2"
                     onClick={closeMobile}
                   >
-                    {link.label}
+                    <span className="text-sm font-semibold block" style={{ fontFamily: "Montserrat, sans-serif", color: "#24282B" }}>
+                      {link.label}
+                    </span>
+                    <span className="text-xs block mt-0.5" style={{ fontFamily: "Raleway, sans-serif", color: "#6b7280" }}>
+                      {link.description}
+                    </span>
                   </Link>
                 ))}
               </div>
@@ -455,11 +530,15 @@ export default function Navbar() {
                   <Link
                     key={link.href}
                     href={link.href}
-                    className="block text-sm py-1.5 pl-2"
-                    style={{ fontFamily: "Raleway, sans-serif", color: "#24282B" }}
+                    className="block py-2 pl-2"
                     onClick={closeMobile}
                   >
-                    {link.label}
+                    <span className="text-sm font-semibold block" style={{ fontFamily: "Montserrat, sans-serif", color: "#24282B" }}>
+                      {link.label}
+                    </span>
+                    <span className="text-xs block mt-0.5" style={{ fontFamily: "Raleway, sans-serif", color: "#6b7280" }}>
+                      {link.description}
+                    </span>
                   </Link>
                 ))}
               </div>
@@ -489,11 +568,15 @@ export default function Navbar() {
                   <Link
                     key={link.href}
                     href={link.href}
-                    className="block text-sm py-1.5 pl-2"
-                    style={{ fontFamily: "Raleway, sans-serif", color: "#24282B" }}
+                    className="block py-2 pl-2"
                     onClick={closeMobile}
                   >
-                    {link.label}
+                    <span className="text-sm font-semibold block" style={{ fontFamily: "Montserrat, sans-serif", color: "#24282B" }}>
+                      {link.label}
+                    </span>
+                    <span className="text-xs block mt-0.5" style={{ fontFamily: "Raleway, sans-serif", color: "#6b7280" }}>
+                      {link.description}
+                    </span>
                   </Link>
                 ))}
                 <p
@@ -506,11 +589,15 @@ export default function Navbar() {
                   <Link
                     key={link.href}
                     href={link.href}
-                    className="block text-sm py-1.5 pl-2"
-                    style={{ fontFamily: "Raleway, sans-serif", color: "#24282B" }}
+                    className="block py-2 pl-2"
                     onClick={closeMobile}
                   >
-                    {link.label}
+                    <span className="text-sm font-semibold block" style={{ fontFamily: "Montserrat, sans-serif", color: "#24282B" }}>
+                      {link.label}
+                    </span>
+                    <span className="text-xs block mt-0.5" style={{ fontFamily: "Raleway, sans-serif", color: "#6b7280" }}>
+                      {link.description}
+                    </span>
                   </Link>
                 ))}
               </div>

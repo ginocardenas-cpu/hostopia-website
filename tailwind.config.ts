@@ -40,7 +40,7 @@ const config: Config = {
         "fade-in": "fadeIn 0.7s ease-out forwards",
         "slide-right": "slideRight 0.7s ease-out forwards",
         "float": "float 8s ease-in-out infinite",
-        "typewriter-reveal": "typewriter-reveal 33s steps(36) infinite",
+        "typewriter-reveal": "typewriter-reveal 8s steps(36) infinite",
         "typewriter-cursor": "typewriter-cursor 0.8s step-end infinite",
       },
       keyframes: {

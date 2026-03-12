@@ -3,34 +3,34 @@ export const productsDropdownSections = [
   {
     heading: "Build a Brand",
     links: [
-      { label: "Domains", href: "/products/domains", slug: "domains" },
-      { label: "Logo Design", href: "/products/logo-design", slug: "logo-design" },
-      { label: "Business Email", href: "/products/business-email", slug: "business-email" },
+      { label: "Domains", description: "Domain registration and management", href: "/products/domains", slug: "domains" },
+      { label: "Logo Design", description: "Professional brand identity", href: "/products/logo-design", slug: "logo-design" },
+      { label: "Business Email", description: "Professional email for SMBs", href: "/products/business-email", slug: "business-email" },
     ],
   },
   {
     heading: "Get Online",
     links: [
-      { label: "SSL", href: "/products/ssl", slug: "ssl" },
-      { label: "Hosting", href: "/products/hosting", slug: "hosting" },
-      { label: "Website Builder", href: "/products/website-builder", slug: "website-builder" },
-      { label: "Website Design", href: "/products/website-design", slug: "website-design" },
+      { label: "SSL", description: "Security certificates for websites", href: "/products/ssl", slug: "ssl" },
+      { label: "Hosting", description: "Reliable web hosting solutions", href: "/products/hosting", slug: "hosting" },
+      { label: "Website Builder", description: "DIY website creation tools", href: "/products/website-builder", slug: "website-builder" },
+      { label: "Website Design", description: "Done-for-you website design", href: "/products/website-design", slug: "website-design" },
     ],
   },
   {
     heading: "Get Found",
     links: [
-      { label: "Directories", href: "/products/directories", slug: "directories" },
-      { label: "SEO", href: "/products/seo", slug: "seo" },
-      { label: "Reputation Management", href: "/products/reputation-management", slug: "reputation-management" },
+      { label: "Directories", description: "Local SEO & directories", href: "/products/directories", slug: "directories" },
+      { label: "SEO", description: "Search engine optimization", href: "/products/seo", slug: "seo" },
+      { label: "Reputation Management", description: "Online reviews & presence", href: "/products/reputation-management", slug: "reputation-management" },
     ],
   },
   {
     heading: "Grow their Business",
     links: [
-      { label: "Ecommerce", href: "/products/ecommerce", slug: "ecommerce" },
-      { label: "Custom Website Development", href: "/products/custom-website-development", slug: "custom-website-development" },
-      { label: "Online Fax", href: "/products/digital-fax", slug: "digital-fax" },
+      { label: "Ecommerce", description: "Online store solutions", href: "/products/ecommerce", slug: "ecommerce" },
+      { label: "Custom Website Development", description: "Custom web solutions", href: "/products/custom-website-development", slug: "custom-website-development" },
+      { label: "Online Fax", description: "Digital fax services", href: "/products/digital-fax", slug: "digital-fax" },
     ],
   },
 ] as const;
