@@ -9,102 +9,106 @@ type EcommercePageProps = {
 
 export default function EcommercePage({ label }: EcommercePageProps) {
   return (
-    <main className="pt-24 pb-0">
-      <div className="max-w-7xl mx-auto px-6 pt-2 pb-4">
-        <nav className="text-sm text-gray-500" style={{ fontFamily: "Raleway, sans-serif" }}>
-          <Link href="/" className="hover:text-gray-700">
-            Home
-          </Link>
-          <span className="mx-2">/</span>
-          <Link href="/products" className="hover:text-gray-700">
-            Products
-          </Link>
-          <span className="mx-2">/</span>
-          <span className="text-gray-900">{label}</span>
-        </nav>
-      </div>
+    <main className="pb-0">
 
-      <ProductSection variant="gray" className="!py-4 md:!py-6">
-        <section className="relative rounded-3xl overflow-hidden border border-gray-100 min-h-[400px] md:min-h-[480px]">
-          {/* Hero image as full-width/height background */}
-          <div className="absolute inset-0">
-            <Image
-              src="/Ecommerce/newhero (1).jpg"
-              alt=""
-              fill
-              className="object-cover object-right"
-              priority
-            />
-            <div
-              className="absolute inset-0"
-              style={{
-                background: "linear-gradient(90deg, rgba(247,246,242,0.92) 0%, rgba(247,246,242,0.6) 50%, rgba(247,246,242,0.2) 100%)",
-              }}
-            />
-          </div>
-          <div className="relative z-10 grid md:grid-cols-2 gap-4 md:gap-6 p-4 md:p-6 items-end min-h-[400px] md:min-h-[480px]">
-            {/* Left: Copy - aligned to bottom */}
-            <div className="md:pb-4">
-              <div className="flex items-center gap-3 mb-3">
+      {/* Full-bleed hero — same treatment as home page */}
+      <section
+        className="relative min-h-[600px] md:min-h-[700px] flex flex-col justify-end overflow-hidden pt-20"
+        style={{ backgroundColor: "#f7f6f2" }}
+      >
+        {/* Background image fills entire hero */}
+        <div className="absolute inset-0 z-0">
+          <Image
+            src="/Ecommerce/newhero (1).jpg"
+            alt=""
+            fill
+            className="object-cover object-right"
+            priority
+          />
+          <div
+            className="absolute inset-0 z-[1]"
+            style={{
+              background:
+                "linear-gradient(120deg, rgba(247,246,242,0.96) 0%, rgba(247,246,242,0.72) 45%, rgba(247,246,242,0.18) 100%)",
+            }}
+          />
+        </div>
+
+        {/* Content */}
+        <div className="relative z-10 max-w-7xl mx-auto px-6 py-16 w-full">
+
+          {/* Breadcrumb */}
+          <nav className="text-sm text-gray-500 mb-10" style={{ fontFamily: "Raleway, sans-serif" }}>
+            <Link href="/" className="hover:text-gray-700">Home</Link>
+            <span className="mx-2">/</span>
+            <Link href="/products" className="hover:text-gray-700">Products</Link>
+            <span className="mx-2">/</span>
+            <span className="text-gray-900">{label}</span>
+          </nav>
+
+          <div className="grid md:grid-cols-2 gap-8 items-end">
+            {/* Left: Copy */}
+            <div>
+              <div className="flex items-center gap-3 mb-5">
                 <div className="w-8 h-px" style={{ backgroundColor: "#2CADB2" }} />
-                <span className="section-label" style={{ fontFamily: "Montserrat, sans-serif" }}>Online Store by Hostopia</span>
+                <span className="section-label">Online Store by Hostopia</span>
               </div>
               <h1
-                className="font-black leading-tight mb-3"
+                className="font-black leading-tight mb-5"
                 style={{
                   fontFamily: "Montserrat, sans-serif",
                   fontSize: "clamp(2.25rem, 4vw, 3.5rem)",
                   color: "#24282B",
                 }}
               >
-                White-Label Ecommerce & Online Store Platform
+                White-Label Ecommerce &amp; Online Store Platform
               </h1>
               <p
-                className="text-base md:text-lg leading-relaxed mb-3"
+                className="text-base md:text-lg leading-relaxed mb-6 max-w-lg"
                 style={{ fontFamily: "Raleway, sans-serif", color: "#555a5e" }}
               >
                 SMBs face increasing pressure to sell online, expand beyond their local market, and deliver modern
                 checkout experiences—but many lack the skills, budget, or time to manage a full ecommerce stack.
               </p>
-              <div className="flex flex-col gap-2">
-                <Link
-                  href="/contact"
-                  className="inline-flex items-center gap-2 font-bold px-6 py-3 rounded-full text-sm md:text-base transition-all duration-200 hover:scale-105 hover:shadow-lg w-fit"
-                  style={{
-                    fontFamily: "Montserrat, sans-serif",
-                    backgroundColor: "#F8CF41",
-                    color: "#24282B",
-                  }}
-                >
-                  Book a demo
-                  <ArrowRight size={16} className="translate-x-0 group-hover:translate-x-1 transition-transform" />
-                </Link>
-              </div>
+              <Link
+                href="/contact"
+                className="inline-flex items-center gap-2 font-bold px-8 py-4 rounded-full text-base transition-all duration-200 hover:scale-105 hover:shadow-xl"
+                style={{
+                  fontFamily: "Montserrat, sans-serif",
+                  backgroundColor: "#F8CF41",
+                  color: "#24282B",
+                  boxShadow: "0 4px 20px rgba(248,207,65,0.3)",
+                }}
+              >
+                Book a demo
+                <ArrowRight size={18} />
+              </Link>
             </div>
-            {/* Right: Key benefits overlay card - bottom-aligned, compact, no excess width */}
-            <div className="bg-white/95 rounded-xl py-3 px-4 shadow-lg border border-gray-100 self-end md:mb-4 max-w-xs ml-auto">
-              <ul className="space-y-2" style={{ fontFamily: "Raleway, sans-serif", color: "#24282B" }}>
-                <li className="flex items-center gap-2">
-                  <ShoppingCart size={16} className="shrink-0" style={{ color: "#2CADB2" }} />
+
+            {/* Right: Key benefits card */}
+            <div className="bg-white/95 rounded-2xl py-5 px-6 shadow-lg border border-gray-100 self-end max-w-sm ml-auto">
+              <ul className="space-y-3" style={{ fontFamily: "Raleway, sans-serif", color: "#24282B" }}>
+                <li className="flex items-center gap-3">
+                  <ShoppingCart size={18} className="shrink-0" style={{ color: "#2CADB2" }} />
                   <span className="font-bold text-sm">Launch an online storefront quickly</span>
                 </li>
-                <li className="flex items-center gap-2">
-                  <Globe2 size={16} className="shrink-0" style={{ color: "#2CADB2" }} />
+                <li className="flex items-center gap-3">
+                  <Globe2 size={18} className="shrink-0" style={{ color: "#2CADB2" }} />
                   <span className="font-bold text-sm">Sell to local and global customers</span>
                 </li>
-                <li className="flex items-center gap-2">
-                  <CreditCard size={16} className="shrink-0" style={{ color: "#2CADB2" }} />
+                <li className="flex items-center gap-3">
+                  <CreditCard size={18} className="shrink-0" style={{ color: "#2CADB2" }} />
                   <span className="font-bold text-sm">Modern checkout experiences</span>
                 </li>
-                <li className="flex items-center gap-2">
-                  <Package size={16} className="shrink-0" style={{ color: "#2CADB2" }} />
+                <li className="flex items-center gap-3">
+                  <Package size={18} className="shrink-0" style={{ color: "#2CADB2" }} />
                   <span className="font-bold text-sm">Sell goods, services, gift cards, and subscriptions</span>
                 </li>
               </ul>
             </div>
           </div>
-        </section>
-      </ProductSection>
+        </div>
+      </section>
 
       <ProductSection variant="white">
         <div className="grid md:grid-cols-2 gap-4 md:gap-6 items-center">
