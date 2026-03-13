@@ -53,7 +53,7 @@ export default function EcommercePage({ label }: EcommercePageProps) {
                 className="font-black leading-tight mb-3"
                 style={{
                   fontFamily: "Montserrat, sans-serif",
-                  fontSize: "clamp(2rem, 3.5vw, 2.75rem)",
+                  fontSize: "clamp(2.25rem, 4vw, 3.5rem)",
                   color: "#24282B",
                 }}
               >
@@ -120,7 +120,7 @@ export default function EcommercePage({ label }: EcommercePageProps) {
             <SectionHeading eyebrow="What you offer" title="Under your brand" />
             <p
               className="text-base leading-relaxed mb-4"
-              style={{ fontFamily: "Raleway, sans-serif", color: "#4b5563" }}
+              style={{ fontFamily: "Raleway, sans-serif", color: "#555a5e" }}
             >
               You can package Hostopia&apos;s Online Store as a branded ecommerce add-on or core bundle with your website
               and hosting offerings.
@@ -133,7 +133,7 @@ export default function EcommercePage({ label }: EcommercePageProps) {
             </p>
             <ul
               className="space-y-3 text-sm md:text-base"
-              style={{ fontFamily: "Raleway, sans-serif", color: "#4b5563" }}
+              style={{ fontFamily: "Raleway, sans-serif", color: "#555a5e" }}
             >
               <li className="flex gap-2">
                 <span className="text-teal mt-1">•</span>
@@ -160,7 +160,7 @@ export default function EcommercePage({ label }: EcommercePageProps) {
         </div>
           <p
             className="text-base leading-relaxed mb-4 max-w-3xl mx-auto"
-            style={{ fontFamily: "Raleway, sans-serif", color: "#4b5563" }}
+            style={{ fontFamily: "Raleway, sans-serif", color: "#555a5e" }}
           >
             Online Store gives SMBs a feature-rich ecommerce solution without complexity.
           </p>
@@ -211,13 +211,13 @@ export default function EcommercePage({ label }: EcommercePageProps) {
             <SectionHeading eyebrow="Platform capabilities" title="Behind your brand" />
             <p
               className="text-base leading-relaxed mb-4"
-              style={{ fontFamily: "Raleway, sans-serif", color: "#4b5563" }}
+              style={{ fontFamily: "Raleway, sans-serif", color: "#555a5e" }}
             >
               Hostopia provides the infrastructure, integrations, and management tools to deliver ecommerce at scale.
             </p>
             <ul
               className="space-y-3 text-sm md:text-base"
-              style={{ fontFamily: "Raleway, sans-serif", color: "#4b5563" }}
+              style={{ fontFamily: "Raleway, sans-serif", color: "#555a5e" }}
             >
               <li className="flex gap-2">
                 <span className="text-teal mt-1">•</span>
@@ -266,7 +266,7 @@ export default function EcommercePage({ label }: EcommercePageProps) {
             <SectionHeading eyebrow="What's included" title="When you launch Online Store with Hostopia" />
             <ul
               className="space-y-3 text-sm md:text-base"
-              style={{ fontFamily: "Raleway, sans-serif", color: "#4b5563" }}
+              style={{ fontFamily: "Raleway, sans-serif", color: "#555a5e" }}
             >
               <li className="flex gap-2">
                 <span className="text-teal mt-1">•</span>
@@ -299,7 +299,7 @@ export default function EcommercePage({ label }: EcommercePageProps) {
         </div>
           <p
             className="text-base leading-relaxed mb-4 max-w-3xl mx-auto"
-            style={{ fontFamily: "Raleway, sans-serif", color: "#4b5563" }}
+            style={{ fontFamily: "Raleway, sans-serif", color: "#555a5e" }}
           >
             Ecommerce is where the &quot;start selling&quot; journey begins—giving businesses the tools to build and
             manage an online store, take payments for goods and services, and sell gift cards and subscriptions.
@@ -396,7 +396,7 @@ function SectionHeading({ eyebrow, title, center }: SectionHeadingProps) {
       </div>
       <h2
         className="font-black"
-        style={{ fontFamily: "Montserrat, sans-serif", fontSize: "1.6rem", color: "#24282B" }}
+        style={{ fontFamily: "Montserrat, sans-serif", fontSize: "clamp(1.75rem, 2.5vw, 2.25rem)", color: "#24282B" }}
       >
         {title}
       </h2>
@@ -421,7 +421,7 @@ function FeatureCard({ icon, title, body }: FeatureCardProps) {
       >
         {title}
       </h3>
-      <p className="text-sm" style={{ fontFamily: "Raleway, sans-serif", color: "#4b5563" }}>
+      <p className="text-sm" style={{ fontFamily: "Raleway, sans-serif", color: "#555a5e" }}>
         {body}
       </p>
     </div>
@@ -439,7 +439,7 @@ function FeatureColumn({ title, points }: FeatureColumnProps) {
       >
         {title}
       </h3>
-      <ul className="space-y-2 text-sm" style={{ fontFamily: "Raleway, sans-serif", color: "#4b5563" }}>
+      <ul className="space-y-2 text-sm" style={{ fontFamily: "Raleway, sans-serif", color: "#555a5e" }}>
         {points.map((point) => (
           <li key={point.slice(0, 40)} className="flex gap-2">
             <span className="text-teal mt-1">•</span>
@@ -500,7 +500,7 @@ function LifecycleStepCard({ step, title, body, highlightGold, conceptLabel, pro
           {productName}
         </p>
       )}
-      <p className="text-sm" style={{ fontFamily: "Raleway, sans-serif", color: "#4b5563" }}>
+      <p className="text-sm" style={{ fontFamily: "Raleway, sans-serif", color: "#555a5e" }}>
         {body}
       </p>
     </div>

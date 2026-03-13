@@ -39,7 +39,7 @@ export default function ReputationManagementPage({ label }: ReputationManagement
                 className="font-black leading-tight mb-4"
                 style={{
                   fontFamily: "Montserrat, sans-serif",
-                  fontSize: "clamp(2rem, 3.5vw, 2.75rem)",
+                  fontSize: "clamp(2.25rem, 4vw, 3.5rem)",
                   color: "#24282B",
                 }}
               >
@@ -74,7 +74,7 @@ export default function ReputationManagementPage({ label }: ReputationManagement
                 </Link>
                 <span
                   className="inline-flex items-center gap-2 text-xs md:text-sm px-4 py-2 rounded-full border border-gray-200"
-                  style={{ fontFamily: "Raleway, sans-serif", color: "#4b5563" }}
+                  style={{ fontFamily: "Raleway, sans-serif", color: "#555a5e" }}
                 >
                   <Star size={16} /> White-label reputation tools, powered by Hostopia
                 </span>
@@ -89,7 +89,7 @@ export default function ReputationManagementPage({ label }: ReputationManagement
               >
                 Why this matters for SMBs
               </h3>
-              <ul className="space-y-3 text-sm" style={{ fontFamily: "Raleway, sans-serif", color: "#4b5563" }}>
+              <ul className="space-y-3 text-sm" style={{ fontFamily: "Raleway, sans-serif", color: "#555a5e" }}>
                 <li className="flex gap-3">
                   <Star size={18} className="mt-1 shrink-0" style={{ color: "#FBBF24" }} />
                   <span>
@@ -121,7 +121,7 @@ export default function ReputationManagementPage({ label }: ReputationManagement
         <SectionHeading eyebrow="What you offer" title="Under your brand" />
           <p
             className="text-base leading-relaxed mb-6 max-w-3xl"
-            style={{ fontFamily: "Raleway, sans-serif", color: "#4b5563" }}
+            style={{ fontFamily: "Raleway, sans-serif", color: "#555a5e" }}
           >
             Offer Reputation Management as a turnkey, white-label service that helps SMBs monitor reviews, request new
             feedback, and respond from one place—fully branded as your own solution.
@@ -134,7 +134,7 @@ export default function ReputationManagementPage({ label }: ReputationManagement
           </p>
           <ul
             className="space-y-3 text-sm md:text-base mb-10"
-            style={{ fontFamily: "Raleway, sans-serif", color: "#4b5563" }}
+            style={{ fontFamily: "Raleway, sans-serif", color: "#555a5e" }}
           >
             <li className="flex gap-2">
               <span className="text-teal mt-1">•</span>
@@ -161,14 +161,14 @@ export default function ReputationManagementPage({ label }: ReputationManagement
             <div>
               <p
                 className="text-base leading-relaxed mb-6"
-                style={{ fontFamily: "Raleway, sans-serif", color: "#4b5563" }}
+                style={{ fontFamily: "Raleway, sans-serif", color: "#555a5e" }}
               >
                 Reputation Management builds on local presence and websites to help SMBs stand out when customers compare
                 options side by side.
               </p>
               <ul
                 className="space-y-3 text-sm md:text-base"
-                style={{ fontFamily: "Raleway, sans-serif", color: "#4b5563" }}
+                style={{ fontFamily: "Raleway, sans-serif", color: "#555a5e" }}
               >
                 <li className="flex gap-2">
                   <span className="text-teal mt-1">•</span>
@@ -200,7 +200,7 @@ export default function ReputationManagementPage({ label }: ReputationManagement
         <SectionHeading eyebrow="Lifecycle fit" title="Where reputation fits in the SMB journey" />
           <p
             className="text-base leading-relaxed mb-8 max-w-3xl"
-            style={{ fontFamily: "Raleway, sans-serif", color: "#4b5563" }}
+            style={{ fontFamily: "Raleway, sans-serif", color: "#555a5e" }}
           >
             Reputation Management is all about helping SMBs get found and chosen—turning presence into preference.
           </p>
@@ -296,7 +296,7 @@ function SectionHeading({ eyebrow, title }: SectionHeadingProps) {
       </div>
       <h2
         className="font-black"
-        style={{ fontFamily: "Montserrat, sans-serif", fontSize: "1.6rem", color: "#24282B" }}
+        style={{ fontFamily: "Montserrat, sans-serif", fontSize: "clamp(1.75rem, 2.5vw, 2.25rem)", color: "#24282B" }}
       >
         {title}
       </h2>
@@ -349,7 +349,7 @@ function LifecycleStepCard({ step, title, body, highlightTeal, conceptLabel, pro
           {productName}
         </p>
       )}
-      <p className="text-sm" style={{ fontFamily: "Raleway, sans-serif", color: "#4b5563" }}>
+      <p className="text-sm" style={{ fontFamily: "Raleway, sans-serif", color: "#555a5e" }}>
         {body}
       </p>
     </div>

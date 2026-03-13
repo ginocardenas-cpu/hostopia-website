@@ -38,7 +38,7 @@ export default function OnlineFaxPage({ label }: OnlineFaxPageProps) {
                 className="font-black leading-tight mb-4"
                 style={{
                   fontFamily: "Montserrat, sans-serif",
-                  fontSize: "clamp(2rem, 3.5vw, 2.75rem)",
+                  fontSize: "clamp(2.25rem, 4vw, 3.5rem)",
                   color: "#24282B",
                 }}
               >
@@ -74,7 +74,7 @@ export default function OnlineFaxPage({ label }: OnlineFaxPageProps) {
                 </Link>
                 <span
                   className="inline-flex items-center gap-2 text-xs md:text-sm px-4 py-2 rounded-full border border-gray-200"
-                  style={{ fontFamily: "Raleway, sans-serif", color: "#4b5563" }}
+                  style={{ fontFamily: "Raleway, sans-serif", color: "#555a5e" }}
                 >
                   <Printer size={16} /> White-label Online Fax, powered by Hostopia
                 </span>
@@ -89,7 +89,7 @@ export default function OnlineFaxPage({ label }: OnlineFaxPageProps) {
               >
                 Why this matters for SMBs
               </h3>
-              <ul className="space-y-3 text-sm" style={{ fontFamily: "Raleway, sans-serif", color: "#4b5563" }}>
+              <ul className="space-y-3 text-sm" style={{ fontFamily: "Raleway, sans-serif", color: "#555a5e" }}>
                 <li className="flex gap-3">
                   <Globe2 size={18} className="mt-1 shrink-0" style={{ color: "#2CADB2" }} />
                   <span>
@@ -120,7 +120,7 @@ export default function OnlineFaxPage({ label }: OnlineFaxPageProps) {
         <SectionHeading eyebrow="What you offer" title="Under your brand" />
           <p
             className="text-base leading-relaxed mb-6 max-w-3xl"
-            style={{ fontFamily: "Raleway, sans-serif", color: "#4b5563" }}
+            style={{ fontFamily: "Raleway, sans-serif", color: "#555a5e" }}
           >
             Online Fax becomes a flexible, high-attach communications service you can bundle with business internet,
             voice, and email. You control packaging, pricing, and positioning—while Hostopia powers the platform behind
@@ -134,7 +134,7 @@ export default function OnlineFaxPage({ label }: OnlineFaxPageProps) {
           </p>
           <ul
             className="space-y-3 text-sm md:text-base mb-10"
-            style={{ fontFamily: "Raleway, sans-serif", color: "#4b5563" }}
+            style={{ fontFamily: "Raleway, sans-serif", color: "#555a5e" }}
           >
             <li className="flex gap-2">
               <span className="text-teal mt-1">•</span>
@@ -165,7 +165,7 @@ export default function OnlineFaxPage({ label }: OnlineFaxPageProps) {
         <SectionHeading eyebrow="Product capabilities" title="Key features of Online Fax" />
           <p
             className="text-base leading-relaxed mb-8 max-w-3xl"
-            style={{ fontFamily: "Raleway, sans-serif", color: "#4b5563" }}
+            style={{ fontFamily: "Raleway, sans-serif", color: "#555a5e" }}
           >
             Online Fax replaces physical fax infrastructure with a secure, digital experience—without changing how SMBs
             work.
@@ -199,7 +199,7 @@ export default function OnlineFaxPage({ label }: OnlineFaxPageProps) {
         <SectionHeading eyebrow="Platform capabilities" title="Telecom-grade platform behind your brand" />
           <p
             className="text-base leading-relaxed mb-8 max-w-3xl"
-            style={{ fontFamily: "Raleway, sans-serif", color: "#4b5563" }}
+            style={{ fontFamily: "Raleway, sans-serif", color: "#555a5e" }}
           >
             Behind your brand, Hostopia delivers Online Fax on telecom-grade infrastructure built for scale and
             reliability.
@@ -233,14 +233,14 @@ export default function OnlineFaxPage({ label }: OnlineFaxPageProps) {
         <SectionHeading eyebrow="The partner advantage" title="Modernize fax and grow revenue" />
           <p
             className="text-base leading-relaxed mb-6 max-w-3xl"
-            style={{ fontFamily: "Raleway, sans-serif", color: "#4b5563" }}
+            style={{ fontFamily: "Raleway, sans-serif", color: "#555a5e" }}
           >
             Online Fax modernizes a critical but often overlooked communication channel—while driving incremental
             revenue.
           </p>
           <ul
             className="space-y-3 text-sm md:text-base max-w-3xl"
-            style={{ fontFamily: "Raleway, sans-serif", color: "#4b5563" }}
+            style={{ fontFamily: "Raleway, sans-serif", color: "#555a5e" }}
           >
             <li className="flex gap-2">
               <span className="text-teal mt-1">•</span>
@@ -273,7 +273,7 @@ export default function OnlineFaxPage({ label }: OnlineFaxPageProps) {
         <SectionHeading eyebrow="Ideal segments" title="Ideal SMB customer profiles" />
           <p
             className="text-base leading-relaxed mb-8 max-w-3xl"
-            style={{ fontFamily: "Raleway, sans-serif", color: "#4b5563" }}
+            style={{ fontFamily: "Raleway, sans-serif", color: "#555a5e" }}
           >
             Online Fax is a strong fit for SMBs handling sensitive or time-critical documents.
           </p>
@@ -301,7 +301,7 @@ export default function OnlineFaxPage({ label }: OnlineFaxPageProps) {
         <SectionHeading eyebrow="Lifecycle fit" title="How Online Fax fits into your SMB portfolio" />
           <p
             className="text-base leading-relaxed mb-8 max-w-3xl"
-            style={{ fontFamily: "Raleway, sans-serif", color: "#4b5563" }}
+            style={{ fontFamily: "Raleway, sans-serif", color: "#555a5e" }}
           >
             Online Fax lives squarely in the &quot;get online&quot; stage—helping SMBs move critical communications
             into the cloud so they can work from anywhere.
@@ -362,14 +362,14 @@ export default function OnlineFaxPage({ label }: OnlineFaxPageProps) {
         <SectionHeading eyebrow="Operations" title="Easy to launch and scale" />
           <p
             className="text-base leading-relaxed mb-6 max-w-3xl"
-            style={{ fontFamily: "Raleway, sans-serif", color: "#4b5563" }}
+            style={{ fontFamily: "Raleway, sans-serif", color: "#555a5e" }}
           >
             No new infrastructure is required. Online Fax is delivered through Hostopia&apos;s white-label platform with
             simple provisioning through your existing workflows.
           </p>
           <p
             className="text-base leading-relaxed mb-6 max-w-3xl"
-            style={{ fontFamily: "Raleway, sans-serif", color: "#4b5563" }}
+            style={{ fontFamily: "Raleway, sans-serif", color: "#555a5e" }}
           >
             SMBs activate quickly via web or email—no on-site installs needed. Hostopia supports you with onboarding,
             training, and go-to-market guidance so your teams can confidently             position Online Fax across segments.
@@ -416,7 +416,7 @@ function SectionHeading({ eyebrow, title }: SectionHeadingProps) {
       </div>
       <h2
         className="font-black"
-        style={{ fontFamily: "Montserrat, sans-serif", fontSize: "1.6rem", color: "#24282B" }}
+        style={{ fontFamily: "Montserrat, sans-serif", fontSize: "clamp(1.75rem, 2.5vw, 2.25rem)", color: "#24282B" }}
       >
         {title}
       </h2>
@@ -435,7 +435,7 @@ function FeatureColumn({ title, points }: FeatureColumnProps) {
       >
         {title}
       </h3>
-      <ul className="space-y-2 text-sm" style={{ fontFamily: "Raleway, sans-serif", color: "#4b5563" }}>
+      <ul className="space-y-2 text-sm" style={{ fontFamily: "Raleway, sans-serif", color: "#555a5e" }}>
         {points.map((point) => (
           <li key={point.slice(0, 40)} className="flex gap-2">
             <span className="text-teal mt-1">•</span>
@@ -458,7 +458,7 @@ function SegmentCard({ title, body }: SegmentCardProps) {
       >
         {title}
       </h3>
-      <p className="text-sm" style={{ fontFamily: "Raleway, sans-serif", color: "#4b5563" }}>
+      <p className="text-sm" style={{ fontFamily: "Raleway, sans-serif", color: "#555a5e" }}>
         {body}
       </p>
     </div>
@@ -510,7 +510,7 @@ function LifecycleStepCard({ step, title, body, highlightBlue, conceptLabel, pro
           {productName}
         </p>
       )}
-      <p className="text-sm" style={{ fontFamily: "Raleway, sans-serif", color: "#4b5563" }}>
+      <p className="text-sm" style={{ fontFamily: "Raleway, sans-serif", color: "#555a5e" }}>
         {body}
       </p>
     </div>

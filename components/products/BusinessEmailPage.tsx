@@ -38,7 +38,7 @@ export default function BusinessEmailPage({ label }: BusinessEmailPageProps) {
                 className="font-black leading-tight mb-4"
                 style={{
                   fontFamily: "Montserrat, sans-serif",
-                  fontSize: "clamp(2rem, 3.5vw, 2.75rem)",
+                  fontSize: "clamp(2.25rem, 4vw, 3.5rem)",
                   color: "#24282B",
                 }}
               >
@@ -74,7 +74,7 @@ export default function BusinessEmailPage({ label }: BusinessEmailPageProps) {
                 </Link>
                 <span
                   className="inline-flex items-center gap-2 text-xs md:text-sm px-4 py-2 rounded-full border border-gray-200"
-                  style={{ fontFamily: "Raleway, sans-serif", color: "#4b5563" }}
+                  style={{ fontFamily: "Raleway, sans-serif", color: "#555a5e" }}
                 >
                   <Mail size={16} /> White-label business email, powered by Hostopia
                 </span>
@@ -89,7 +89,7 @@ export default function BusinessEmailPage({ label }: BusinessEmailPageProps) {
               >
                 What your customers get
               </h3>
-              <ul className="space-y-3 text-sm" style={{ fontFamily: "Raleway, sans-serif", color: "#4b5563" }}>
+              <ul className="space-y-3 text-sm" style={{ fontFamily: "Raleway, sans-serif", color: "#555a5e" }}>
                 <li className="flex gap-3">
                   <ShieldCheck size={18} className="mt-1 shrink-0" style={{ color: "#2CADB2" }} />
                   <span>
@@ -119,7 +119,7 @@ export default function BusinessEmailPage({ label }: BusinessEmailPageProps) {
         <SectionHeading eyebrow="What you offer" title="Under your brand" />
           <p
             className="text-base leading-relaxed mb-6 max-w-3xl"
-            style={{ fontFamily: "Raleway, sans-serif", color: "#4b5563" }}
+            style={{ fontFamily: "Raleway, sans-serif", color: "#555a5e" }}
           >
             Partner with Hostopia to design flexible email packages that match your go-to-market strategy—whether
             that&apos;s the number of mailboxes you want to offer, mailbox sizes, feature tiers, or more. You can
@@ -133,7 +133,7 @@ export default function BusinessEmailPage({ label }: BusinessEmailPageProps) {
           </p>
           <ul
             className="space-y-3 text-sm md:text-base mb-10"
-            style={{ fontFamily: "Raleway, sans-serif", color: "#4b5563" }}
+            style={{ fontFamily: "Raleway, sans-serif", color: "#555a5e" }}
           >
             <li className="flex gap-2">
               <span className="text-teal mt-1">•</span>
@@ -191,14 +191,14 @@ export default function BusinessEmailPage({ label }: BusinessEmailPageProps) {
         <SectionHeading eyebrow="The partner advantage" title="A sticky, high-usage anchor product" />
           <p
             className="text-base leading-relaxed mb-6 max-w-3xl"
-            style={{ fontFamily: "Raleway, sans-serif", color: "#4b5563" }}
+            style={{ fontFamily: "Raleway, sans-serif", color: "#555a5e" }}
           >
             Business Email becomes a high-value anchor that keeps SMB customers on your platform for years while
             creating ongoing revenue opportunities.
           </p>
           <ul
             className="space-y-3 text-sm md:text-base max-w-3xl"
-            style={{ fontFamily: "Raleway, sans-serif", color: "#4b5563" }}
+            style={{ fontFamily: "Raleway, sans-serif", color: "#555a5e" }}
           >
             <li className="flex gap-2">
               <span className="text-teal mt-1">•</span>
@@ -235,7 +235,7 @@ export default function BusinessEmailPage({ label }: BusinessEmailPageProps) {
         <SectionHeading eyebrow="Ideal segments" title="Perfect for your SMB customers" />
           <p
             className="text-base leading-relaxed mb-8 max-w-3xl"
-            style={{ fontFamily: "Raleway, sans-serif", color: "#4b5563" }}
+            style={{ fontFamily: "Raleway, sans-serif", color: "#555a5e" }}
           >
             Business Email is ideal wherever credibility, security, and team coordination matter.
           </p>
@@ -263,7 +263,7 @@ export default function BusinessEmailPage({ label }: BusinessEmailPageProps) {
         <SectionHeading eyebrow="Portfolio fit" title="How Business Email fits into your SMB portfolio" />
           <p
             className="text-base leading-relaxed mb-8 max-w-3xl"
-            style={{ fontFamily: "Raleway, sans-serif", color: "#4b5563" }}
+            style={{ fontFamily: "Raleway, sans-serif", color: "#555a5e" }}
           >
             Email is a natural part of your &quot;build the brand and get online&quot; stack—anchoring domains, web
             presence, and digital services with an identity customers use every day.
@@ -324,14 +324,14 @@ export default function BusinessEmailPage({ label }: BusinessEmailPageProps) {
         <SectionHeading eyebrow="Operations" title="Easy to launch and scale" />
           <p
             className="text-base leading-relaxed mb-6 max-w-3xl"
-            style={{ fontFamily: "Raleway, sans-serif", color: "#4b5563" }}
+            style={{ fontFamily: "Raleway, sans-serif", color: "#555a5e" }}
           >
             Hostopia&apos;s platform lets you provision, manage, and report on mailboxes from a single, branded portal
             — with no new infrastructure required.
           </p>
           <p
             className="text-base leading-relaxed mb-6 max-w-3xl"
-            style={{ fontFamily: "Raleway, sans-serif", color: "#4b5563" }}
+            style={{ fontFamily: "Raleway, sans-serif", color: "#555a5e" }}
           >
             With expert email migration (including legacy platforms) and 24/7 support, you can move large bases quickly
             while minimizing risk and churn. Your team focuses on selling and relationship-building; we handle the
@@ -379,7 +379,7 @@ function SectionHeading({ eyebrow, title }: SectionHeadingProps) {
       </div>
       <h2
         className="font-black"
-        style={{ fontFamily: "Montserrat, sans-serif", fontSize: "1.6rem", color: "#24282B" }}
+        style={{ fontFamily: "Montserrat, sans-serif", fontSize: "clamp(1.75rem, 2.5vw, 2.25rem)", color: "#24282B" }}
       >
         {title}
       </h2>
@@ -404,7 +404,7 @@ function FeatureCard({ icon, title, body }: FeatureCardProps) {
       >
         {title}
       </h3>
-      <p className="text-sm" style={{ fontFamily: "Raleway, sans-serif", color: "#4b5563" }}>
+      <p className="text-sm" style={{ fontFamily: "Raleway, sans-serif", color: "#555a5e" }}>
         {body}
       </p>
     </div>
@@ -422,7 +422,7 @@ function SegmentCard({ title, body }: SegmentCardProps) {
       >
         {title}
       </h3>
-      <p className="text-sm" style={{ fontFamily: "Raleway, sans-serif", color: "#4b5563" }}>
+      <p className="text-sm" style={{ fontFamily: "Raleway, sans-serif", color: "#555a5e" }}>
         {body}
       </p>
     </div>
@@ -474,7 +474,7 @@ function LifecycleStepCard({ step, title, body, highlightTeal, conceptLabel, pro
           {productName}
         </p>
       )}
-      <p className="text-sm" style={{ fontFamily: "Raleway, sans-serif", color: "#4b5563" }}>
+      <p className="text-sm" style={{ fontFamily: "Raleway, sans-serif", color: "#555a5e" }}>
         {body}
       </p>
     </div>

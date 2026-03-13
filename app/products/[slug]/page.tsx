@@ -223,23 +223,27 @@ export default function ProductSlugPage({ params }: Props) {
     return <EcommercePage label={label} />;
   }
 
-  // Default layout for other products until they are built out
   return (
-    <main className="min-h-[60vh] pt-24 pb-16 px-6">
+    <main className="min-h-[60vh] pt-28 pb-16 px-6" style={{ backgroundColor: "#f7f6f2" }}>
       <div className="max-w-7xl mx-auto">
-        <nav className="text-sm text-gray-500 mb-6">
-          <Link href="/" className="hover:text-gray-700">
-            Home
-          </Link>
+        <nav className="text-sm mb-6" style={{ fontFamily: "Raleway, sans-serif", color: "#6b7280" }}>
+          <Link href="/" className="hover:text-[#2CADB2]">Home</Link>
           <span className="mx-2">/</span>
-          <Link href="/products" className="hover:text-gray-700">
-            Products
-          </Link>
+          <Link href="/products" className="hover:text-[#2CADB2]">Products</Link>
           <span className="mx-2">/</span>
-          <span className="text-gray-900">{label}</span>
+          <span style={{ color: "#24282B" }}>{label}</span>
         </nav>
-        <h1 className="text-3xl font-bold text-gray-900 mb-4">{label}</h1>
-        <p className="text-gray-600">Content coming soon.</p>
+        <div className="flex items-center gap-3 mb-5">
+          <div className="w-8 h-px" style={{ backgroundColor: "#2CADB2" }} />
+          <span className="section-label">Product</span>
+        </div>
+        <h1
+          className="font-black leading-tight mb-4"
+          style={{ fontFamily: "Montserrat, sans-serif", fontSize: "clamp(2rem, 4vw, 3.5rem)", color: "#24282B" }}
+        >
+          {label}
+        </h1>
+        <p style={{ fontFamily: "Raleway, sans-serif", color: "#555a5e" }}>Content coming soon.</p>
       </div>
     </main>
   );

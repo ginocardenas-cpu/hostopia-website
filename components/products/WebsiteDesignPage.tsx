@@ -47,7 +47,7 @@ export default function WebsiteDesignPage({ label }: WebsiteDesignPageProps) {
                 className="font-black leading-tight mb-4"
                 style={{
                   fontFamily: "Montserrat, sans-serif",
-                  fontSize: "clamp(2rem, 3.5vw, 2.75rem)",
+                  fontSize: "clamp(2.25rem, 4vw, 3.5rem)",
                   color: "#24282B",
                 }}
               >
@@ -83,7 +83,7 @@ export default function WebsiteDesignPage({ label }: WebsiteDesignPageProps) {
                 </Link>
                 <span
                   className="inline-flex items-center gap-2 text-xs md:text-sm px-4 py-2 rounded-full border border-gray-200"
-                  style={{ fontFamily: "Raleway, sans-serif", color: "#4b5563" }}
+                  style={{ fontFamily: "Raleway, sans-serif", color: "#555a5e" }}
                 >
                   <LayoutPanelTop size={16} /> White-label DIFM websites, powered by Hostopia
                 </span>
@@ -97,7 +97,7 @@ export default function WebsiteDesignPage({ label }: WebsiteDesignPageProps) {
               >
                 Partnering with Hostopia helps you
               </h3>
-              <ul className="space-y-3 text-sm" style={{ fontFamily: "Raleway, sans-serif", color: "#4b5563" }}>
+              <ul className="space-y-3 text-sm" style={{ fontFamily: "Raleway, sans-serif", color: "#555a5e" }}>
                 <li className="flex gap-3">
                   <Store size={18} className="mt-1 shrink-0" style={{ color: "#2CADB2" }} />
                   <span>
@@ -138,7 +138,7 @@ export default function WebsiteDesignPage({ label }: WebsiteDesignPageProps) {
           />
           <p
             className="text-base leading-relaxed mb-6 max-w-3xl"
-            style={{ fontFamily: "Raleway, sans-serif", color: "#4b5563" }}
+            style={{ fontFamily: "Raleway, sans-serif", color: "#555a5e" }}
           >
             Partner with Hostopia to deliver professional SMB website design as a fully managed, white-label service
             where your customers work with &quot;your&quot; web experts from start to finish. You decide how to price,
@@ -152,7 +152,7 @@ export default function WebsiteDesignPage({ label }: WebsiteDesignPageProps) {
           </p>
           <ul
             className="space-y-3 text-sm md:text-base mb-10"
-            style={{ fontFamily: "Raleway, sans-serif", color: "#4b5563" }}
+            style={{ fontFamily: "Raleway, sans-serif", color: "#555a5e" }}
           >
             <li className="flex gap-2">
               <span className="text-teal mt-1">•</span>
@@ -212,7 +212,7 @@ export default function WebsiteDesignPage({ label }: WebsiteDesignPageProps) {
           />
           <p
             className="text-base leading-relaxed mb-8 max-w-3xl"
-            style={{ fontFamily: "Raleway, sans-serif", color: "#4b5563" }}
+            style={{ fontFamily: "Raleway, sans-serif", color: "#555a5e" }}
           >
             DIFM Website Design combines agency-quality creative with a scalable, white-label delivery model built for
             telcos, MSPs, and service providers.
@@ -249,14 +249,14 @@ export default function WebsiteDesignPage({ label }: WebsiteDesignPageProps) {
         <SectionHeading eyebrow="The partner advantage" title="High-ARPU, low-effort growth" />
           <p
             className="text-base leading-relaxed mb-6 max-w-3xl"
-            style={{ fontFamily: "Raleway, sans-serif", color: "#4b5563" }}
+            style={{ fontFamily: "Raleway, sans-serif", color: "#555a5e" }}
           >
             DIFM Website Design becomes a high-ARPU, low-effort way to anchor SMB relationships and unlock long-term
             revenue under your brand.
           </p>
           <ul
             className="space-y-3 text-sm md:text-base max-w-3xl"
-            style={{ fontFamily: "Raleway, sans-serif", color: "#4b5563" }}
+            style={{ fontFamily: "Raleway, sans-serif", color: "#555a5e" }}
           >
             <li className="flex gap-2">
               <span className="text-teal mt-1">•</span>
@@ -293,7 +293,7 @@ export default function WebsiteDesignPage({ label }: WebsiteDesignPageProps) {
         <SectionHeading eyebrow="Ideal segments" title="Perfect for your SMB customers" />
           <p
             className="text-base leading-relaxed mb-8 max-w-3xl"
-            style={{ fontFamily: "Raleway, sans-serif", color: "#4b5563" }}
+            style={{ fontFamily: "Raleway, sans-serif", color: "#555a5e" }}
           >
             DIFM Website Design is ideal for SMB segments where time and expertise are the key barriers to getting
             online or staying current.
@@ -325,7 +325,7 @@ export default function WebsiteDesignPage({ label }: WebsiteDesignPageProps) {
           />
           <p
             className="text-base leading-relaxed mb-8 max-w-3xl"
-            style={{ fontFamily: "Raleway, sans-serif", color: "#4b5563" }}
+            style={{ fontFamily: "Raleway, sans-serif", color: "#555a5e" }}
           >
             DIFM Website Design slots into your &quot;get online and grow&quot; stack, complementing domains,
             OPB/hosting, Business Email, SSL, and marketing offers. Serve both DIY and DIFM buyers: tech-comfortable
@@ -388,7 +388,7 @@ export default function WebsiteDesignPage({ label }: WebsiteDesignPageProps) {
         <SectionHeading eyebrow="Operations" title="Easy to launch and scale" />
           <p
             className="text-base leading-relaxed mb-6 max-w-3xl"
-            style={{ fontFamily: "Raleway, sans-serif", color: "#4b5563" }}
+            style={{ fontFamily: "Raleway, sans-serif", color: "#555a5e" }}
           >
             Scale your success — we&apos;ll handle the rest. With Hostopia&apos;s white-label DIFM Website Design,
             there&apos;s no need to hire new teams or build new processes. We manage the entire workflow — from
@@ -396,7 +396,7 @@ export default function WebsiteDesignPage({ label }: WebsiteDesignPageProps) {
           </p>
           <p
             className="text-base leading-relaxed mb-6 max-w-3xl"
-            style={{ fontFamily: "Raleway, sans-serif", color: "#4b5563" }}
+            style={{ fontFamily: "Raleway, sans-serif", color: "#555a5e" }}
           >
             Your team focuses on what they do best: selling, bundling, and growing customer relationships. Behind the
             scenes, our expert Website Coordinators and designers deliver high-quality sites at scale. Plus, we provide
@@ -445,7 +445,7 @@ function SectionHeading({ eyebrow, title }: SectionHeadingProps) {
       </div>
       <h2
         className="font-black"
-        style={{ fontFamily: "Montserrat, sans-serif", fontSize: "1.6rem", color: "#24282B" }}
+        style={{ fontFamily: "Montserrat, sans-serif", fontSize: "clamp(1.75rem, 2.5vw, 2.25rem)", color: "#24282B" }}
       >
         {title}
       </h2>
@@ -470,7 +470,7 @@ function FeatureCard({ icon, title, body }: FeatureCardProps) {
       >
         {title}
       </h3>
-      <p className="text-sm" style={{ fontFamily: "Raleway, sans-serif", color: "#4b5563" }}>
+      <p className="text-sm" style={{ fontFamily: "Raleway, sans-serif", color: "#555a5e" }}>
         {body}
       </p>
     </div>
@@ -488,7 +488,7 @@ function FeatureBulletColumn({ title, points }: FeatureBulletColumnProps) {
       >
         {title}
       </h3>
-      <ul className="space-y-2 text-sm" style={{ fontFamily: "Raleway, sans-serif", color: "#4b5563" }}>
+      <ul className="space-y-2 text-sm" style={{ fontFamily: "Raleway, sans-serif", color: "#555a5e" }}>
         {points.map((point) => (
           <li key={point.slice(0, 40)} className="flex gap-2">
             <span className="text-teal mt-1">•</span>
@@ -511,7 +511,7 @@ function SegmentCard({ title, body }: SegmentCardProps) {
       >
         {title}
       </h3>
-      <p className="text-sm" style={{ fontFamily: "Raleway, sans-serif", color: "#4b5563" }}>
+      <p className="text-sm" style={{ fontFamily: "Raleway, sans-serif", color: "#555a5e" }}>
         {body}
       </p>
     </div>
@@ -561,7 +561,7 @@ function StepCard({ step, title, body, highlightBlue, conceptLabel, productName 
           {productName}
         </p>
       )}
-      <p className="text-sm" style={{ fontFamily: "Raleway, sans-serif", color: "#4b5563" }}>
+      <p className="text-sm" style={{ fontFamily: "Raleway, sans-serif", color: "#555a5e" }}>
         {body}
       </p>
     </div>

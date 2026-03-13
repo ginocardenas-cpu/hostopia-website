@@ -38,7 +38,7 @@ export default function SslPage({ label }: SslPageProps) {
                 className="font-black leading-tight mb-4"
                 style={{
                   fontFamily: "Montserrat, sans-serif",
-                  fontSize: "clamp(2rem, 3.5vw, 2.75rem)",
+                  fontSize: "clamp(2.25rem, 4vw, 3.5rem)",
                   color: "#24282B",
                 }}
               >
@@ -75,7 +75,7 @@ export default function SslPage({ label }: SslPageProps) {
                 </Link>
                 <span
                   className="inline-flex items-center gap-2 text-xs md:text-sm px-4 py-2 rounded-full border border-gray-200"
-                  style={{ fontFamily: "Raleway, sans-serif", color: "#4b5563" }}
+                  style={{ fontFamily: "Raleway, sans-serif", color: "#555a5e" }}
                 >
                   <Lock size={16} /> White-label SSL protection, powered by Hostopia
                 </span>
@@ -90,7 +90,7 @@ export default function SslPage({ label }: SslPageProps) {
               >
                 Why this matters for SMBs
               </h3>
-              <ul className="space-y-3 text-sm" style={{ fontFamily: "Raleway, sans-serif", color: "#4b5563" }}>
+              <ul className="space-y-3 text-sm" style={{ fontFamily: "Raleway, sans-serif", color: "#555a5e" }}>
                 <li className="flex gap-3">
                   <ShieldCheck size={18} className="mt-1 shrink-0" style={{ color: "#2CADB2" }} />
                   <span>
@@ -122,7 +122,7 @@ export default function SslPage({ label }: SslPageProps) {
         <SectionHeading eyebrow="What you offer" title="Under your brand" />
           <p
             className="text-base leading-relaxed mb-6 max-w-3xl"
-            style={{ fontFamily: "Raleway, sans-serif", color: "#4b5563" }}
+            style={{ fontFamily: "Raleway, sans-serif", color: "#555a5e" }}
           >
             SSL becomes a simple, trusted security add-on embedded inside your existing web, hosting, and ecommerce
             offers. Hostopia runs the SSL platform; your brand owns the experience, pricing, and support.
@@ -135,7 +135,7 @@ export default function SslPage({ label }: SslPageProps) {
           </p>
           <ul
             className="space-y-3 text-sm md:text-base mb-10"
-            style={{ fontFamily: "Raleway, sans-serif", color: "#4b5563" }}
+            style={{ fontFamily: "Raleway, sans-serif", color: "#555a5e" }}
           >
             <li className="flex gap-2">
               <span className="text-teal mt-1">•</span>
@@ -193,7 +193,7 @@ export default function SslPage({ label }: SslPageProps) {
         <SectionHeading eyebrow="Platform capabilities" title="Enterprise-grade SSL platform" />
           <p
             className="text-base leading-relaxed mb-8 max-w-3xl"
-            style={{ fontFamily: "Raleway, sans-serif", color: "#4b5563" }}
+            style={{ fontFamily: "Raleway, sans-serif", color: "#555a5e" }}
           >
             SSL is delivered through Hostopia&apos;s scalable, partner-ready platform so you can launch and grow a
             secure presence offer without building your own certificate infrastructure.
@@ -230,14 +230,14 @@ export default function SslPage({ label }: SslPageProps) {
         <SectionHeading eyebrow="The partner advantage" title="High-attach, high-trust revenue" />
           <p
             className="text-base leading-relaxed mb-6 max-w-3xl"
-            style={{ fontFamily: "Raleway, sans-serif", color: "#4b5563" }}
+            style={{ fontFamily: "Raleway, sans-serif", color: "#555a5e" }}
           >
             SSL is a natural, high-attach product that boosts revenue and stickiness while reinforcing your role as a
             trusted advisor on security.
           </p>
           <ul
             className="space-y-3 text-sm md:text-base max-w-3xl"
-            style={{ fontFamily: "Raleway, sans-serif", color: "#4b5563" }}
+            style={{ fontFamily: "Raleway, sans-serif", color: "#555a5e" }}
           >
             <li className="flex gap-2">
               <span className="text-teal mt-1">•</span>
@@ -273,7 +273,7 @@ export default function SslPage({ label }: SslPageProps) {
         <SectionHeading eyebrow="Ideal segments" title="Ideal SMB customer profiles" />
           <p
             className="text-base leading-relaxed mb-8 max-w-3xl"
-            style={{ fontFamily: "Raleway, sans-serif", color: "#4b5563" }}
+            style={{ fontFamily: "Raleway, sans-serif", color: "#555a5e" }}
           >
             These are the SMB scenarios where SSL is a must-have.
           </p>
@@ -301,7 +301,7 @@ export default function SslPage({ label }: SslPageProps) {
         <SectionHeading eyebrow="Portfolio fit" title="How SSL fits your SMB portfolio" />
           <p
             className="text-base leading-relaxed mb-8 max-w-3xl"
-            style={{ fontFamily: "Raleway, sans-serif", color: "#4b5563" }}
+            style={{ fontFamily: "Raleway, sans-serif", color: "#555a5e" }}
           >
             SSL sits at the heart of a secure online presence. It underpins domains, hosting, ecommerce, and login
             experiences—making it a key part of your &quot;get online and grow&quot; stack.
@@ -362,14 +362,14 @@ export default function SslPage({ label }: SslPageProps) {
         <SectionHeading eyebrow="Enterprise-grade platform" title="Infrastructure behind your SSL offer" />
           <p
             className="text-base leading-relaxed mb-6 max-w-3xl"
-            style={{ fontFamily: "Raleway, sans-serif", color: "#4b5563" }}
+            style={{ fontFamily: "Raleway, sans-serif", color: "#555a5e" }}
           >
             Behind your brand, Hostopia provides the infrastructure, tooling, and expertise that make SSL easy for both
             you and your customers.
           </p>
           <ul
             className="space-y-3 text-sm md:text-base max-w-3xl"
-            style={{ fontFamily: "Raleway, sans-serif", color: "#4b5563" }}
+            style={{ fontFamily: "Raleway, sans-serif", color: "#555a5e" }}
           >
             <li className="flex gap-2">
               <span className="text-teal mt-1">•</span>
@@ -428,7 +428,7 @@ function SectionHeading({ eyebrow, title }: SectionHeadingProps) {
       </div>
       <h2
         className="font-black"
-        style={{ fontFamily: "Montserrat, sans-serif", fontSize: "1.6rem", color: "#24282B" }}
+        style={{ fontFamily: "Montserrat, sans-serif", fontSize: "clamp(1.75rem, 2.5vw, 2.25rem)", color: "#24282B" }}
       >
         {title}
       </h2>
@@ -453,7 +453,7 @@ function FeatureCard({ icon, title, body }: FeatureCardProps) {
       >
         {title}
       </h3>
-      <p className="text-sm" style={{ fontFamily: "Raleway, sans-serif", color: "#4b5563" }}>
+      <p className="text-sm" style={{ fontFamily: "Raleway, sans-serif", color: "#555a5e" }}>
         {body}
       </p>
     </div>
@@ -471,7 +471,7 @@ function FeatureBulletColumn({ title, points }: FeatureBulletColumnProps) {
       >
         {title}
       </h3>
-      <ul className="space-y-2 text-sm" style={{ fontFamily: "Raleway, sans-serif", color: "#4b5563" }}>
+      <ul className="space-y-2 text-sm" style={{ fontFamily: "Raleway, sans-serif", color: "#555a5e" }}>
         {points.map((point) => (
           <li key={point.slice(0, 40)} className="flex gap-2">
             <span className="text-teal mt-1">•</span>
@@ -494,7 +494,7 @@ function SegmentCard({ title, body }: SegmentCardProps) {
       >
         {title}
       </h3>
-      <p className="text-sm" style={{ fontFamily: "Raleway, sans-serif", color: "#4b5563" }}>
+      <p className="text-sm" style={{ fontFamily: "Raleway, sans-serif", color: "#555a5e" }}>
         {body}
       </p>
     </div>
@@ -546,7 +546,7 @@ function StepCard({ step, title, body, highlightBlue, conceptLabel, productName 
           {productName}
         </p>
       )}
-      <p className="text-sm" style={{ fontFamily: "Raleway, sans-serif", color: "#4b5563" }}>
+      <p className="text-sm" style={{ fontFamily: "Raleway, sans-serif", color: "#555a5e" }}>
         {body}
       </p>
     </div>

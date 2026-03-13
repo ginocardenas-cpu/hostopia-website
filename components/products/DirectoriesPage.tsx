@@ -39,7 +39,7 @@ export default function DirectoriesPage({ label }: DirectoriesPageProps) {
                 className="font-black leading-tight mb-4"
                 style={{
                   fontFamily: "Montserrat, sans-serif",
-                  fontSize: "clamp(2rem, 3.5vw, 2.75rem)",
+                  fontSize: "clamp(2.25rem, 4vw, 3.5rem)",
                   color: "#24282B",
                 }}
               >
@@ -74,7 +74,7 @@ export default function DirectoriesPage({ label }: DirectoriesPageProps) {
                 </Link>
                 <span
                   className="inline-flex items-center gap-2 text-xs md:text-sm px-4 py-2 rounded-full border border-gray-200"
-                  style={{ fontFamily: "Raleway, sans-serif", color: "#4b5563" }}
+                  style={{ fontFamily: "Raleway, sans-serif", color: "#555a5e" }}
                 >
                   <MapPin size={16} /> White-label local listings, powered by Hostopia
                 </span>
@@ -89,7 +89,7 @@ export default function DirectoriesPage({ label }: DirectoriesPageProps) {
               >
                 Why this matters for your customers
               </h3>
-              <ul className="space-y-3 text-sm" style={{ fontFamily: "Raleway, sans-serif", color: "#4b5563" }}>
+              <ul className="space-y-3 text-sm" style={{ fontFamily: "Raleway, sans-serif", color: "#555a5e" }}>
                 <li className="flex gap-3">
                   <Search size={18} className="mt-1 shrink-0" style={{ color: "#2CADB2" }} />
                   <span>
@@ -121,7 +121,7 @@ export default function DirectoriesPage({ label }: DirectoriesPageProps) {
         <SectionHeading eyebrow="What you offer" title="Under your brand" />
           <p
             className="text-base leading-relaxed mb-6 max-w-3xl"
-            style={{ fontFamily: "Raleway, sans-serif", color: "#4b5563" }}
+            style={{ fontFamily: "Raleway, sans-serif", color: "#555a5e" }}
           >
             Hostopia&apos;s white-label OneList Plus gives you a scalable way to productize local presence management
             under your own brand. It helps you activate website customers, strengthen search performance, and anchor
@@ -135,7 +135,7 @@ export default function DirectoriesPage({ label }: DirectoriesPageProps) {
           </p>
           <ul
             className="space-y-3 text-sm md:text-base mb-10"
-            style={{ fontFamily: "Raleway, sans-serif", color: "#4b5563" }}
+            style={{ fontFamily: "Raleway, sans-serif", color: "#555a5e" }}
           >
             <li className="flex gap-2">
               <span className="text-teal mt-1">•</span>
@@ -160,7 +160,7 @@ export default function DirectoriesPage({ label }: DirectoriesPageProps) {
         <SectionHeading eyebrow="Product capabilities" title="Key features of OneList Plus" />
           <p
             className="text-base leading-relaxed mb-8 max-w-3xl"
-            style={{ fontFamily: "Raleway, sans-serif", color: "#4b5563" }}
+            style={{ fontFamily: "Raleway, sans-serif", color: "#555a5e" }}
           >
             OneList Plus is built for scale and operational simplicity, giving you a turnkey listings solution.
           </p>
@@ -195,14 +195,14 @@ export default function DirectoriesPage({ label }: DirectoriesPageProps) {
             <div>
               <p
                 className="text-base leading-relaxed mb-6"
-                style={{ fontFamily: "Raleway, sans-serif", color: "#4b5563" }}
+                style={{ fontFamily: "Raleway, sans-serif", color: "#555a5e" }}
               >
                 OneList Plus gives you an easy-entry digital product that naturally drives attachment to SEO, reputation,
                 and website services.
               </p>
               <ul
                 className="space-y-3 text-sm md:text-base"
-                style={{ fontFamily: "Raleway, sans-serif", color: "#4b5563" }}
+                style={{ fontFamily: "Raleway, sans-serif", color: "#555a5e" }}
               >
                 <li className="flex gap-2">
                   <span className="text-teal mt-1">•</span>
@@ -234,7 +234,7 @@ export default function DirectoriesPage({ label }: DirectoriesPageProps) {
         <SectionHeading eyebrow="Lifecycle fit" title="How OneList Plus helps SMBs get found and chosen" />
           <p
             className="text-base leading-relaxed mb-8 max-w-3xl"
-            style={{ fontFamily: "Raleway, sans-serif", color: "#4b5563" }}
+            style={{ fontFamily: "Raleway, sans-serif", color: "#555a5e" }}
           >
             Listings sit at the &quot;get found and chosen&quot; stage—turning your brand and web presence into real
             local discovery and inbound demand.
@@ -295,14 +295,14 @@ export default function DirectoriesPage({ label }: DirectoriesPageProps) {
         <SectionHeading eyebrow="Operations" title="Easy to launch and scale" />
           <p
             className="text-base leading-relaxed mb-6 max-w-3xl"
-            style={{ fontFamily: "Raleway, sans-serif", color: "#4b5563" }}
+            style={{ fontFamily: "Raleway, sans-serif", color: "#555a5e" }}
           >
             OneList Plus is delivered through Hostopia&apos;s white-label platform with automated provisioning and
             reporting—no directory relationships or manual fulfillment required.
           </p>
           <p
             className="text-base leading-relaxed mb-6 max-w-3xl"
-            style={{ fontFamily: "Raleway, sans-serif", color: "#4b5563" }}
+            style={{ fontFamily: "Raleway, sans-serif", color: "#555a5e" }}
           >
             Your teams focus on packaging and sales while the platform handles synchronization and updates at scale.
           </p>
@@ -349,7 +349,7 @@ function SectionHeading({ eyebrow, title }: SectionHeadingProps) {
       </div>
       <h2
         className="font-black"
-        style={{ fontFamily: "Montserrat, sans-serif", fontSize: "1.6rem", color: "#24282B" }}
+        style={{ fontFamily: "Montserrat, sans-serif", fontSize: "clamp(1.75rem, 2.5vw, 2.25rem)", color: "#24282B" }}
       >
         {title}
       </h2>
@@ -368,7 +368,7 @@ function FeatureColumn({ title, points }: FeatureColumnProps) {
       >
         {title}
       </h3>
-      <ul className="space-y-2 text-sm" style={{ fontFamily: "Raleway, sans-serif", color: "#4b5563" }}>
+      <ul className="space-y-2 text-sm" style={{ fontFamily: "Raleway, sans-serif", color: "#555a5e" }}>
         {points.map((point) => (
           <li key={point.slice(0, 40)} className="flex gap-2">
             <span className="text-teal mt-1">•</span>
@@ -425,7 +425,7 @@ function LifecycleStepCard({ step, title, body, highlightTeal, conceptLabel, pro
           {productName}
         </p>
       )}
-      <p className="text-sm" style={{ fontFamily: "Raleway, sans-serif", color: "#4b5563" }}>
+      <p className="text-sm" style={{ fontFamily: "Raleway, sans-serif", color: "#555a5e" }}>
         {body}
       </p>
     </div>

@@ -38,7 +38,7 @@ export default function WebsiteBuilderPage({ label }: WebsiteBuilderPageProps) {
                 className="font-black leading-tight mb-4"
                 style={{
                   fontFamily: "Montserrat, sans-serif",
-                  fontSize: "clamp(2rem, 3.5vw, 2.75rem)",
+                  fontSize: "clamp(2.25rem, 4vw, 3.5rem)",
                   color: "#24282B",
                 }}
               >
@@ -73,7 +73,7 @@ export default function WebsiteBuilderPage({ label }: WebsiteBuilderPageProps) {
                 </Link>
                 <span
                   className="inline-flex items-center gap-2 text-xs md:text-sm px-4 py-2 rounded-full border border-gray-200"
-                  style={{ fontFamily: "Raleway, sans-serif", color: "#4b5563" }}
+                  style={{ fontFamily: "Raleway, sans-serif", color: "#555a5e" }}
                 >
                   <Sparkles size={16} /> AI-powered websites & hosting, powered by Hostopia
                 </span>
@@ -88,7 +88,7 @@ export default function WebsiteBuilderPage({ label }: WebsiteBuilderPageProps) {
               >
                 With OPB, your SMB customers can
               </h3>
-              <ul className="space-y-3 text-sm" style={{ fontFamily: "Raleway, sans-serif", color: "#4b5563" }}>
+              <ul className="space-y-3 text-sm" style={{ fontFamily: "Raleway, sans-serif", color: "#555a5e" }}>
                 <li className="flex gap-3">
                   <LayoutPanelTop size={18} className="mt-1 shrink-0" style={{ color: "#2CADB2" }} />
                   <span>
@@ -127,7 +127,7 @@ export default function WebsiteBuilderPage({ label }: WebsiteBuilderPageProps) {
         <SectionHeading eyebrow="What you offer" title="Under your brand" />
           <p
             className="text-base leading-relaxed mb-6 max-w-3xl"
-            style={{ fontFamily: "Raleway, sans-serif", color: "#4b5563" }}
+            style={{ fontFamily: "Raleway, sans-serif", color: "#555a5e" }}
           >
             Hostopia enables you to deliver a fully white-labeled website builder and hosting experience—complete with
             your logo, URL, and customer journey—while you retain full control over pricing, packaging, and portfolio
@@ -141,7 +141,7 @@ export default function WebsiteBuilderPage({ label }: WebsiteBuilderPageProps) {
           </p>
           <ul
             className="space-y-3 text-sm md:text-base mb-10"
-            style={{ fontFamily: "Raleway, sans-serif", color: "#4b5563" }}
+            style={{ fontFamily: "Raleway, sans-serif", color: "#555a5e" }}
           >
             <li className="flex gap-2">
               <span className="text-teal mt-1">•</span>
@@ -174,7 +174,7 @@ export default function WebsiteBuilderPage({ label }: WebsiteBuilderPageProps) {
         <SectionHeading eyebrow="Product capabilities" title="Key features of Online Presence Builder" />
           <p
             className="text-base leading-relaxed mb-8 max-w-3xl"
-            style={{ fontFamily: "Raleway, sans-serif", color: "#4b5563" }}
+            style={{ fontFamily: "Raleway, sans-serif", color: "#555a5e" }}
           >
             OPB combines intuitive site creation with enterprise-grade hosting to give your SMB customers everything they
             need in one solution.
@@ -207,14 +207,14 @@ export default function WebsiteBuilderPage({ label }: WebsiteBuilderPageProps) {
         <SectionHeading eyebrow="The partner advantage" title="A foundational product in your digital portfolio" />
           <p
             className="text-base leading-relaxed mb-6 max-w-3xl"
-            style={{ fontFamily: "Raleway, sans-serif", color: "#4b5563" }}
+            style={{ fontFamily: "Raleway, sans-serif", color: "#555a5e" }}
           >
             Online Presence Builder supports both SMB acquisition and long-term growth—embedding your brand at the
             center of your SMBs&apos; digital presence.
           </p>
           <ul
             className="space-y-3 text-sm md:text-base max-w-3xl"
-            style={{ fontFamily: "Raleway, sans-serif", color: "#4b5563" }}
+            style={{ fontFamily: "Raleway, sans-serif", color: "#555a5e" }}
           >
             <li className="flex gap-2">
               <span className="text-teal mt-1">•</span>
@@ -248,7 +248,7 @@ export default function WebsiteBuilderPage({ label }: WebsiteBuilderPageProps) {
         <SectionHeading eyebrow="Ideal segments" title="Perfect for your SMB customers" />
           <p
             className="text-base leading-relaxed mb-8 max-w-3xl"
-            style={{ fontFamily: "Raleway, sans-serif", color: "#4b5563" }}
+            style={{ fontFamily: "Raleway, sans-serif", color: "#555a5e" }}
           >
             OPB is designed for the SMB segments you already serve—across industries and digital maturity levels.
           </p>
@@ -276,7 +276,7 @@ export default function WebsiteBuilderPage({ label }: WebsiteBuilderPageProps) {
         <SectionHeading eyebrow="Portfolio fit" title="Seamless fit in your portfolio" />
           <p
             className="text-base leading-relaxed mb-4 max-w-3xl"
-            style={{ fontFamily: "Raleway, sans-serif", color: "#4b5563" }}
+            style={{ fontFamily: "Raleway, sans-serif", color: "#555a5e" }}
           >
             OPB sits at the center of your brand and presence offering—alongside domains, business email, SSL, and
             marketing solutions. It gives SMBs one place to secure their domain, launch a website, connect email, and
@@ -284,7 +284,7 @@ export default function WebsiteBuilderPage({ label }: WebsiteBuilderPageProps) {
           </p>
           <p
             className="text-base leading-relaxed mb-4 max-w-3xl"
-            style={{ fontFamily: "Raleway, sans-serif", color: "#4b5563" }}
+            style={{ fontFamily: "Raleway, sans-serif", color: "#555a5e" }}
           >
             You can position DIY hosting as the default website option for new customers, a modern upgrade path for
             hosting-only or parked-domain accounts, and the foundation for expanding into SEO, reviews, and marketing
@@ -296,7 +296,7 @@ export default function WebsiteBuilderPage({ label }: WebsiteBuilderPageProps) {
         <SectionHeading eyebrow="Lifecycle fit" title="How Website Builder helps SMBs get online" />
           <p
             className="text-base leading-relaxed mb-8 max-w-3xl"
-            style={{ fontFamily: "Raleway, sans-serif", color: "#4b5563" }}
+            style={{ fontFamily: "Raleway, sans-serif", color: "#555a5e" }}
           >
             Online Presence Builder is where the &quot;get online&quot; journey begins—AI-powered sites and hosting in
             minutes, under your brand.
@@ -357,14 +357,14 @@ export default function WebsiteBuilderPage({ label }: WebsiteBuilderPageProps) {
         <SectionHeading eyebrow="Operations" title="Easy to launch and scale" />
           <p
             className="text-base leading-relaxed mb-6 max-w-3xl"
-            style={{ fontFamily: "Raleway, sans-serif", color: "#4b5563" }}
+            style={{ fontFamily: "Raleway, sans-serif", color: "#555a5e" }}
           >
             No new infrastructure or workflows are required. OPB is delivered through Hostopia&apos;s white-label
             platform with automated provisioning and a unified dashboard.
           </p>
           <p
             className="text-base leading-relaxed mb-6 max-w-3xl"
-            style={{ fontFamily: "Raleway, sans-serif", color: "#4b5563" }}
+            style={{ fontFamily: "Raleway, sans-serif", color: "#555a5e" }}
           >
             Hostopia supports you with product onboarding and configuration, migration strategy and execution, and sales
             enablement and positioning guidance. As SMB adoption grows, AI-driven onboarding and automation reduce
@@ -412,7 +412,7 @@ function SectionHeading({ eyebrow, title }: SectionHeadingProps) {
       </div>
       <h2
         className="font-black"
-        style={{ fontFamily: "Montserrat, sans-serif", fontSize: "1.6rem", color: "#24282B" }}
+        style={{ fontFamily: "Montserrat, sans-serif", fontSize: "clamp(1.75rem, 2.5vw, 2.25rem)", color: "#24282B" }}
       >
         {title}
       </h2>
@@ -437,7 +437,7 @@ function FeatureCard({ icon, title, body }: FeatureCardProps) {
       >
         {title}
       </h3>
-      <p className="text-sm" style={{ fontFamily: "Raleway, sans-serif", color: "#4b5563" }}>
+      <p className="text-sm" style={{ fontFamily: "Raleway, sans-serif", color: "#555a5e" }}>
         {body}
       </p>
     </div>
@@ -455,7 +455,7 @@ function SegmentCard({ title, body }: SegmentCardProps) {
       >
         {title}
       </h3>
-      <p className="text-sm" style={{ fontFamily: "Raleway, sans-serif", color: "#4b5563" }}>
+      <p className="text-sm" style={{ fontFamily: "Raleway, sans-serif", color: "#555a5e" }}>
         {body}
       </p>
     </div>
@@ -507,7 +507,7 @@ function LifecycleStepCard({ step, title, body, highlightBlue, conceptLabel, pro
           {productName}
         </p>
       )}
-      <p className="text-sm" style={{ fontFamily: "Raleway, sans-serif", color: "#4b5563" }}>
+      <p className="text-sm" style={{ fontFamily: "Raleway, sans-serif", color: "#555a5e" }}>
         {body}
       </p>
     </div>

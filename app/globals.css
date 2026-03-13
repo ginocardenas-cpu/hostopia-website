@@ -101,6 +101,38 @@ h1, h2, h3, h4, h5, h6 {
     color: #2CADB2;
   }
 
+  /* Typography scale — use these classes for consistent sizing across all pages */
+  .heading-display {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 900;
+    font-size: clamp(2.5rem, 5vw, 4.5rem);
+    line-height: 1.05;
+    color: #24282B;
+  }
+
+  .heading-page {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 900;
+    font-size: clamp(2.25rem, 4vw, 3.5rem);
+    line-height: 1.1;
+    color: #24282B;
+  }
+
+  .heading-section {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 900;
+    font-size: clamp(1.75rem, 2.5vw, 2.25rem);
+    line-height: 1.2;
+    color: #24282B;
+  }
+
+  .body-copy {
+    font-family: 'Raleway', sans-serif;
+    font-size: 1rem;
+    line-height: 1.75;
+    color: #555a5e;
+  }
+
   /* Scroll reveal animation classes */
   .reveal {
     opacity: 0;

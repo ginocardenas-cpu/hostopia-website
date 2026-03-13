@@ -57,12 +57,7 @@ export default async function BlogPage() {
         <div className="relative z-10 max-w-7xl mx-auto px-6">
           <div className="flex items-center gap-3 mb-5">
             <div className="w-8 h-px" style={{ backgroundColor: "#2CADB2" }} />
-            <span
-              className="text-xs font-semibold uppercase tracking-[0.2em]"
-              style={{ fontFamily: "Raleway, sans-serif", color: "#2CADB2" }}
-            >
-              Blog
-            </span>
+            <span className="section-label">Blog</span>
           </div>
           <h1
             className="font-black leading-tight mb-6 max-w-4xl"

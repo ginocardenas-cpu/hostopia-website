@@ -38,7 +38,7 @@ export default function LogoDesignPage({ label }: LogoDesignPageProps) {
                 className="font-black leading-tight mb-4"
                 style={{
                   fontFamily: "Montserrat, sans-serif",
-                  fontSize: "clamp(2rem, 3.5vw, 2.75rem)",
+                  fontSize: "clamp(2.25rem, 4vw, 3.5rem)",
                   color: "#24282B",
                 }}
               >
@@ -73,7 +73,7 @@ export default function LogoDesignPage({ label }: LogoDesignPageProps) {
                 </Link>
                 <span
                   className="inline-flex items-center gap-2 text-xs md:text-sm px-4 py-2 rounded-full border border-gray-200"
-                  style={{ fontFamily: "Raleway, sans-serif", color: "#4b5563" }}
+                  style={{ fontFamily: "Raleway, sans-serif", color: "#555a5e" }}
                 >
                   <PenTool size={16} /> White-label logo design, powered by Hostopia
                 </span>
@@ -88,7 +88,7 @@ export default function LogoDesignPage({ label }: LogoDesignPageProps) {
               >
                 Why it matters for SMBs
               </h3>
-              <ul className="space-y-3 text-sm" style={{ fontFamily: "Raleway, sans-serif", color: "#4b5563" }}>
+              <ul className="space-y-3 text-sm" style={{ fontFamily: "Raleway, sans-serif", color: "#555a5e" }}>
                 <li className="flex gap-3">
                   <Sparkles size={18} className="mt-1 shrink-0" style={{ color: "#2CADB2" }} />
                   <span>
@@ -118,7 +118,7 @@ export default function LogoDesignPage({ label }: LogoDesignPageProps) {
         <SectionHeading eyebrow="What you offer" title="Under your brand" />
           <p
             className="text-base leading-relaxed mb-6 max-w-3xl"
-            style={{ fontFamily: "Raleway, sans-serif", color: "#4b5563" }}
+            style={{ fontFamily: "Raleway, sans-serif", color: "#555a5e" }}
           >
             Partner with Hostopia to offer Professional Logo Design as a flexible, white-label creative service that
             fits your go-to-market strategy. Position it as a standalone offer, bundle it with website and email, or
@@ -132,7 +132,7 @@ export default function LogoDesignPage({ label }: LogoDesignPageProps) {
           </p>
           <ul
             className="space-y-3 text-sm md:text-base mb-10"
-            style={{ fontFamily: "Raleway, sans-serif", color: "#4b5563" }}
+            style={{ fontFamily: "Raleway, sans-serif", color: "#555a5e" }}
           >
             <li className="flex gap-2">
               <span className="text-teal mt-1">•</span>
@@ -168,14 +168,14 @@ export default function LogoDesignPage({ label }: LogoDesignPageProps) {
         <SectionHeading eyebrow="The partner advantage" title="Anchor your role in brand and presence" />
           <p
             className="text-base leading-relaxed mb-6 max-w-3xl"
-            style={{ fontFamily: "Raleway, sans-serif", color: "#4b5563" }}
+            style={{ fontFamily: "Raleway, sans-serif", color: "#555a5e" }}
           >
             Professional Logo Design is a high-value, low-lift way to deepen relationships and move from &quot;pipe
             provider&quot; to strategic brand partner.
           </p>
           <ul
             className="space-y-3 text-sm md:text-base max-w-3xl"
-            style={{ fontFamily: "Raleway, sans-serif", color: "#4b5563" }}
+            style={{ fontFamily: "Raleway, sans-serif", color: "#555a5e" }}
           >
             <li className="flex gap-2">
               <span className="text-teal mt-1">•</span>
@@ -212,7 +212,7 @@ export default function LogoDesignPage({ label }: LogoDesignPageProps) {
         <SectionHeading eyebrow="Portfolio fit" title="Seamless fit in your brand and presence stack" />
           <p
             className="text-base leading-relaxed mb-8 max-w-3xl"
-            style={{ fontFamily: "Raleway, sans-serif", color: "#4b5563" }}
+            style={{ fontFamily: "Raleway, sans-serif", color: "#555a5e" }}
           >
             Professional Logo Design plugs naturally into your &quot;brand and presence&quot; layer alongside the
             digital marketing services you already sell. It helps you move beyond pure infrastructure to become a
@@ -220,7 +220,7 @@ export default function LogoDesignPage({ label }: LogoDesignPageProps) {
           </p>
           <p
             className="text-base leading-relaxed mb-4 max-w-3xl"
-            style={{ fontFamily: "Raleway, sans-serif", color: "#4b5563" }}
+            style={{ fontFamily: "Raleway, sans-serif", color: "#555a5e" }}
           >
             Use logo design as the starting point for cross-sell motions into web, email, ecommerce, and ongoing
             marketing—delivered within the same white-label ecosystem.
@@ -231,7 +231,7 @@ export default function LogoDesignPage({ label }: LogoDesignPageProps) {
         <SectionHeading eyebrow="Lifecycle fit" title="How logo design fits into your SMB portfolio" />
           <p
             className="text-base leading-relaxed mb-8 max-w-3xl"
-            style={{ fontFamily: "Raleway, sans-serif", color: "#4b5563" }}
+            style={{ fontFamily: "Raleway, sans-serif", color: "#555a5e" }}
           >
             Logo design is one of the very first steps in establishing a brand direction—shaping how every other
             product you sell will look and perform.
@@ -292,14 +292,14 @@ export default function LogoDesignPage({ label }: LogoDesignPageProps) {
         <SectionHeading eyebrow="Operations" title="Easy to launch and scale" />
           <p
             className="text-base leading-relaxed mb-6 max-w-3xl"
-            style={{ fontFamily: "Raleway, sans-serif", color: "#4b5563" }}
+            style={{ fontFamily: "Raleway, sans-serif", color: "#555a5e" }}
           >
             You don&apos;t need to change your systems: Hostopia runs the complete Professional Logo Design workflow
             while you maintain control of packaging, pricing, sales, and billing.
           </p>
           <p
             className="text-base leading-relaxed mb-6 max-w-3xl"
-            style={{ fontFamily: "Raleway, sans-serif", color: "#4b5563" }}
+            style={{ fontFamily: "Raleway, sans-serif", color: "#555a5e" }}
           >
             Our fulfillment model and processes are built to support large partner channels, so you can confidently roll
             this out across multiple markets and sales motions without adding internal overhead.
@@ -346,7 +346,7 @@ function SectionHeading({ eyebrow, title }: SectionHeadingProps) {
       </div>
       <h2
         className="font-black"
-        style={{ fontFamily: "Montserrat, sans-serif", fontSize: "1.6rem", color: "#24282B" }}
+        style={{ fontFamily: "Montserrat, sans-serif", fontSize: "clamp(1.75rem, 2.5vw, 2.25rem)", color: "#24282B" }}
       >
         {title}
       </h2>
@@ -399,7 +399,7 @@ function LifecycleStepCard({ step, title, body, highlightTeal, conceptLabel, pro
           {productName}
         </p>
       )}
-      <p className="text-sm" style={{ fontFamily: "Raleway, sans-serif", color: "#4b5563" }}>
+      <p className="text-sm" style={{ fontFamily: "Raleway, sans-serif", color: "#555a5e" }}>
         {body}
       </p>
     </div>
