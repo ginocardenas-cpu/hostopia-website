@@ -19,7 +19,7 @@ export default function EcommercePage({ label }: EcommercePageProps) {
         {/* Background image fills entire hero */}
         <div className="absolute inset-0 z-0">
           <Image
-            src="/Ecommerce/newhero (1).jpg"
+              src="/Ecommerce/hero-1920x980.jpg"
             alt=""
             fill
             className="object-cover object-right"
