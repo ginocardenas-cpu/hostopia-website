@@ -29,7 +29,7 @@ export default function EcommercePage({ label }: EcommercePageProps) {
             className="absolute inset-0 z-[1]"
             style={{
               background:
-                "linear-gradient(120deg, rgba(247,246,242,0.96) 0%, rgba(247,246,242,0.72) 45%, rgba(247,246,242,0.18) 100%)",
+                "linear-gradient(to right, rgba(247,246,242,1) 0%, rgba(247,246,242,0.98) 35%, rgba(247,246,242,0.3) 60%, rgba(247,246,242,0) 75%)",
             }}
           />
         </div>
