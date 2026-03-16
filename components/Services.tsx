@@ -1,3 +1,4 @@
+import Image from "next/image";
 import { PenTool, Mail, Globe, ShoppingCart, Sparkles, ArrowUpRight } from "lucide-react";
 
 const services = [
@@ -81,14 +82,14 @@ export default function Services() {
             <div className="w-8 h-px" style={{ backgroundColor: "#2CADB2" }} />
             <span className="section-label">White-Label Solutions</span>
           </div>
-          <div className="flex flex-col md:flex-row md:items-end gap-8 justify-between">
+          <div className="flex flex-col md:flex-row md:items-center gap-10 justify-between">
             <h2
               className="font-black leading-tight"
               style={{
                 fontFamily: "Montserrat, sans-serif",
                 fontSize: "clamp(2.5rem, 5vw, 4.5rem)",
                 color: "#24282B",
-                maxWidth: "700px",
+                maxWidth: "600px",
               }}
             >
               Everything Your Customers
@@ -96,14 +97,25 @@ export default function Services() {
               Need to{" "}
               <span style={{ color: "#2CADB2" }}>Succeed Online</span>
             </h2>
-            <p
-              className="text-base leading-relaxed max-w-xs"
-              style={{ fontFamily: "Raleway, sans-serif", color: "#6b7280" }}
-            >
-              You set the pricing.
-              <br />
-              We power the platform.
-            </p>
+
+            {/* Section image — right of headline */}
+            <div className="relative flex-shrink-0 w-full md:w-[340px] lg:w-[400px] rounded-3xl overflow-hidden shadow-md">
+              <Image
+                src="/Home Page images/everything-your-customers-need.png"
+                alt="SMB owner celebrating their online store"
+                width={400}
+                height={320}
+                className="w-full h-auto"
+              />
+              <div
+                className="absolute bottom-4 left-4 bg-white/95 rounded-xl px-4 py-2 shadow-lg text-sm"
+                style={{ fontFamily: "Raleway, sans-serif", color: "#555a5e" }}
+              >
+                You set the pricing.
+                <br />
+                <span className="font-semibold" style={{ color: "#24282B" }}>We power the platform.</span>
+              </div>
+            </div>
           </div>
         </div>
 

@@ -1,7 +1,9 @@
+import Image from "next/image";
+
 const supportStats = [
   { value: "EN/FR/SP", label: "Multilingual", sub: "North America based" },
   { value: "24/7", label: "Availability", sub: "Always on" },
-  { value: "< 60s", label: "First Reply", sub: "Response SLA" },
+  { value: ">60s", label: "First Reply", sub: "Response SLA" },
   { value: "98%", label: "CSAT", sub: "Satisfaction score" },
 ];
 
@@ -63,26 +65,27 @@ export default function BilingualSupport() {
             </a>
           </div>
 
-          {/* Right: Stats grid + visual accent */}
+          {/* Right: Image with stats overlaid */}
           <div className="relative">
-            {/* Big background flag emoji / accent */}
-            <div
-              className="absolute -top-8 -right-8 text-9xl select-none pointer-events-none opacity-10"
-            >
-              🇨🇦
+            <div className="relative rounded-3xl overflow-hidden shadow-lg">
+              <Image
+                src="/Home Page images/support-that-sounds-like-you.png"
+                alt="Bilingual support team member with headset"
+                width={600}
+                height={520}
+                className="w-full h-auto"
+              />
             </div>
 
-            <div className="grid grid-cols-2 gap-4 relative z-10">
+            {/* Stats cards overlaid on left side of image */}
+            <div className="absolute top-0 left-4 bottom-0 flex flex-col justify-center gap-3 py-6">
               {supportStats.map((stat, i) => (
                 <div
                   key={stat.label}
-                  className="rounded-3xl p-8"
-                  style={{
-                    backgroundColor: i % 2 === 0 ? "#e8f7f7" : "#fef9e6",
-                  }}
+                  className="bg-white rounded-xl px-4 py-2 shadow-lg border border-gray-100 min-w-[130px]"
                 >
                   <p
-                    className="font-black text-3xl mb-1"
+                    className="font-black text-xl leading-none mb-0.5"
                     style={{
                       fontFamily: "Montserrat, sans-serif",
                       color: i % 2 === 0 ? "#2CADB2" : "#24282B",
@@ -91,7 +94,7 @@ export default function BilingualSupport() {
                     {stat.value}
                   </p>
                   <p
-                    className="font-bold text-sm mb-0.5"
+                    className="font-bold text-xs"
                     style={{ fontFamily: "Montserrat, sans-serif", color: "#24282B" }}
                   >
                     {stat.label}
