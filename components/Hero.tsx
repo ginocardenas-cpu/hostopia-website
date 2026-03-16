@@ -15,7 +15,7 @@ export default function Hero() {
       {/* Background image filling hero */}
       <div className="absolute inset-0 z-0">
         <Image
-          src="/images/radical-hero.png"
+          src="/Home Page images/2023-03-16-hero.png"
           alt="Bundles of white-label digital services held by a partner"
           fill
           priority
