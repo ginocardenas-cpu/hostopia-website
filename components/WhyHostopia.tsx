@@ -48,29 +48,23 @@ export default function WhyHostopia() {
                   color: "#ffffff",
                 }}
               >
-                We Don&apos;t Just Give
+                The Partner You Want
                 <br />
-                You a Platform.
-                <br />
-                <span style={{ color: "#F8CF41" }}>We Help You Win.</span>
+                <span style={{ color: "#F8CF41" }}>Behind Your Brand.</span>
               </h2>
 
               <p
                 className="text-base leading-relaxed mb-6"
                 style={{ fontFamily: "Raleway, sans-serif", color: "#9ca3af" }}
               >
-                Hostopia is more than a technology provider. We&apos;re a strategic partner
-                who understands the service provider business — the pressures, the
-                opportunities, and what it takes to make SMBs loyal customers for life.
+                Hostopia is more than a technology vendor. We&apos;re a strategic partner with 25+ years of experience in the service provider business — the pressures, the opportunities, and what it takes to make SMBs loyal customers for life.
               </p>
 
               <p
                 className="text-base leading-relaxed mb-10"
                 style={{ fontFamily: "Raleway, sans-serif", color: "#9ca3af" }}
               >
-                We&apos;ve helped dozens of telcos and resellers launch, package, and grow
-                digital service portfolios. That experience informs every recommendation
-                we make for your business.
+                We&apos;ve helped hundreds of telcos, ISPs, and resellers launch, package, and grow digital service portfolios across markets worldwide.
               </p>
 
               <a

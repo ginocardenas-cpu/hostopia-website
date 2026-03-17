@@ -42,22 +42,19 @@ export default function OnlineFaxPage({ label }: OnlineFaxPageProps) {
                   color: "#24282B",
                 }}
               >
-                White-Label Online Fax for SMBs
+                Replace Legacy Fax Machines — Keep Trusted Workflows
               </h1>
               <p
                 className="text-base md:text-lg leading-relaxed mb-4"
                 style={{ fontFamily: "Raleway, sans-serif", color: "#555a5e" }}
               >
-                Modernize fax for your SMB customers—without losing familiar workflows.
+                Many SMBs still rely on fax for contracts, medical records, and legal documents. Legacy fax machines are costly, insecure, and tied to physical offices.
               </p>
               <p
                 className="text-base leading-relaxed mb-6"
                 style={{ fontFamily: "Raleway, sans-serif", color: "#555a5e" }}
               >
-                Many SMBs still rely on fax for contracts, medical records, legal documents, and other high-stakes
-                communications. Legacy machines are costly, insecure, and tied to physical offices. A modern, cloud-based
-                fax service lets them keep trusted processes while moving to secure, compliant, location-independent
-                delivery.
+                Hostopia&apos;s white-label Online Fax lets you deliver a secure, cloud-based fax service that modernizes how your SMB customers send and receive documents — without changing the workflows they depend on. A natural add-on to your connectivity and communications portfolio.
               </p>
               <div className="flex flex-wrap gap-3">
                 <Link

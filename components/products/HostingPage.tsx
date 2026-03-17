@@ -43,21 +43,19 @@ export default function HostingPage({ label }: HostingPageProps) {
                   color: "#24282B",
                 }}
               >
-                White-Label Website Hosting for SMBs and Developers
+                Enterprise-Grade Hosting Infrastructure — Sold Under Your Brand
               </h1>
               <p
                 className="text-base md:text-lg leading-relaxed mb-4"
                 style={{ fontFamily: "Raleway, sans-serif", color: "#555a5e" }}
               >
-                While many businesses prefer a SaaS-style experience, other SMBs—including agencies and developers—need
-                secure, configurable hosting environments that meet specific technical requirements.
+                Some SMBs need more than a website builder. Agencies need multi-site management. Developers need configurable environments. Your hosting platform needs to serve them all.
               </p>
               <p
                 className="text-base leading-relaxed mb-6"
                 style={{ fontFamily: "Raleway, sans-serif", color: "#555a5e" }}
               >
-                Hostopia&apos;s white-label Website Hosting platform lets you serve both segments under your brand—from
-                easy-to-launch hosting for small businesses to advanced multi-site environments for agencies.
+                Hostopia&apos;s white-label Website Hosting lets you deliver secure, scalable infrastructure under your brand — from simple managed hosting for SMBs to advanced multi-site environments for agencies and developers. No hosting stack to build or maintain.
               </p>
               <div className="flex flex-wrap gap-3">
                 <Link

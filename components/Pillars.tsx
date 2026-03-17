@@ -3,24 +3,31 @@ import TypewriterOnScroll from "./TypewriterOnScroll";
 const pillars = [
   {
     number: "01",
-    title: "Platforms",
+    title: "New Revenue Streams",
     description:
-      "Enterprise-grade, battle-tested platforms for email, web presence, ecommerce, and digital marketing — fully white-labeled and ready for your brand identity. You set the pricing. We power everything underneath.",
+      "Turn your existing customer base into a digital services revenue engine. Every SMB in your footprint needs email, websites, ecommerce, and marketing — and they'd rather buy it from you than a third party. Hostopia gives you the platform to sell it all under your brand, with flexible pricing and packaging you control.",
     accent: "#2CADB2",
   },
   {
     number: "02",
-    title: "People",
+    title: "Digital Advisor Positioning",
     description:
-      "Dedicated teams who live and breathe the service provider business. From large-scale migrations to bilingual customer support, our people become an invisible extension of your team.",
+      "Move beyond connectivity. When you deliver branded websites, professional email, SEO, and ecommerce, you become the partner SMBs depend on for their entire digital presence — not just their internet connection. That shift from infrastructure provider to digital advisor drives higher ARPU, deeper relationships, and lower churn.",
     accent: "#F8CF41",
   },
   {
     number: "03",
-    title: "Technology",
+    title: "Proven Technology at Scale",
     description:
-      "Cutting-edge infrastructure powering millions of mailboxes and websites at proven scale. Built for reliability, security, and the enterprise demands of telcos and national resellers.",
+      "25+ years of engineering behind a cloud-based, AI-powered platform that supports millions of mailboxes and websites worldwide. Multi-language, multi-currency, and built for the enterprise demands of telcos and national resellers. You don't need to build it — it's ready now.",
     accent: "#2CADB2",
+  },
+  {
+    number: "04",
+    title: "Expert Partner Support",
+    description:
+      "Dedicated partner success teams, large-scale migration expertise with proprietary tooling, bilingual end-user support, and go-to-market enablement. Hostopia's people become an invisible extension of your team — from onboarding through ongoing optimization.",
+    accent: "#F8CF41",
   },
 ];
 
@@ -34,7 +41,7 @@ export default function Pillars() {
           <div>
             <div className="flex items-center gap-3 mb-5">
               <div className="w-8 h-px" style={{ backgroundColor: "#F8CF41" }} />
-              <span className="section-label">Our Foundation</span>
+              <span className="section-label">Why Partners Choose Hostopia</span>
             </div>
             <h2
               className="font-black leading-tight"
@@ -44,7 +51,7 @@ export default function Pillars() {
                 color: "#24282B",
               }}
             >
-              Everything You Need.
+              A Platform Built for
               <br />
               <TypewriterOnScroll />
             </h2>
@@ -53,12 +60,12 @@ export default function Pillars() {
             className="text-base leading-relaxed max-w-xs md:text-right"
             style={{ fontFamily: "Raleway, sans-serif", color: "#6b7280" }}
           >
-            Three pillars that give service providers a complete, turnkey solution for selling digital services to SMBs.
+            Four pillars that set Hostopia apart — and set your digital services business up for long-term, scalable success.
           </p>
         </div>
 
         {/* Pillars */}
-        <div className="grid md:grid-cols-3 gap-px bg-gray-100 rounded-3xl overflow-hidden">
+        <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-px bg-gray-100 rounded-3xl overflow-hidden">
           {pillars.map((pillar) => (
             <div
               key={pillar.title}
@@ -84,7 +91,7 @@ export default function Pillars() {
               />
 
               <h3
-                className="font-black mb-4 text-3xl"
+                className="font-black mb-4 text-2xl"
                 style={{ fontFamily: "Montserrat, sans-serif", color: "#24282B" }}
               >
                 {pillar.title}

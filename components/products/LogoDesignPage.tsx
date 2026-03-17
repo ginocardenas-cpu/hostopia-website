@@ -42,21 +42,19 @@ export default function LogoDesignPage({ label }: LogoDesignPageProps) {
                   color: "#24282B",
                 }}
               >
-                Professional Logo Design: White-Label Branding for SMBs
+                Agency-Quality Logos — Delivered Under Your Brand, Without an Agency
               </h1>
               <p
                 className="text-base md:text-lg leading-relaxed mb-4"
                 style={{ fontFamily: "Raleway, sans-serif", color: "#555a5e" }}
               >
-                Most small businesses struggle to create a logo that truly represents their brand—often DIY-ing it or
-                relying on outdated graphics that don&apos;t scale across channels.
+                Most SMBs DIY their logo or rely on outdated graphics that don&apos;t scale across channels. A professional logo becomes the foundation of every digital product they buy from you.
               </p>
               <p
                 className="text-base leading-relaxed mb-6"
                 style={{ fontFamily: "Raleway, sans-serif", color: "#555a5e" }}
               >
-                A modern, versatile logo becomes the cornerstone of their website, business cards, ads, and
-                social—driving better performance from every digital initiative they buy from you.
+                Hostopia&apos;s white-label Professional Logo Design gives you a managed creative service to resell under your brand. Our designers handle the entire process — from questionnaire to final delivery in 11 formats — while you own the customer relationship and the revenue.
               </p>
               <div className="flex flex-wrap gap-3">
                 <Link

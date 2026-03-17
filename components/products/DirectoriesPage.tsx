@@ -43,21 +43,19 @@ export default function DirectoriesPage({ label }: DirectoriesPageProps) {
                   color: "#24282B",
                 }}
               >
-                OneList Plus: White-Label Local Listings Management for Service Providers
+                Accurate Listings Everywhere — Managed from One Dashboard
               </h1>
               <p
                 className="text-base md:text-lg leading-relaxed mb-4"
                 style={{ fontFamily: "Raleway, sans-serif", color: "#555a5e" }}
               >
-                Turn local presence into predictable retention and recurring revenue.
+                Inconsistent business listings kill search visibility, erode customer trust, and cost SMBs foot traffic. Most can&apos;t keep up with dozens of directories manually.
               </p>
               <p
                 className="text-base leading-relaxed mb-6"
                 style={{ fontFamily: "Raleway, sans-serif", color: "#555a5e" }}
               >
-                Most SMB customers struggle to keep their business information accurate across dozens of online
-                directories—and inconsistent listings directly impact search visibility, customer trust, and foot
-                traffic.
+                OneList Plus distributes and syncs accurate business information across Google, Bing, Facebook, Yelp, and other major directories — automatically. Delivered white-label under your brand as a recurring subscription that drives retention and ARPU.
               </p>
               <div className="flex flex-wrap gap-3">
                 <Link

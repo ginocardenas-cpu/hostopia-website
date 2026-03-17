@@ -1,0 +1,107 @@
+{
+  "slug": "website-builder",
+  "label": "Website Builder",
+  "productName": "Online Presence Builder",
+
+  "seo": {
+    "primaryKeyword": "white-label AI website builder",
+    "secondaryKeywords": [
+      "AI website builder for SMBs",
+      "white-label website platform",
+      "website builder for service providers",
+      "SMB website hosting platform"
+    ],
+    "metaTitle": "White-Label AI Website Builder for Service Providers | Hostopia",
+    "metaDescription": "Launch AI-powered websites under your brand. Hostopia's Online Presence Builder helps telcos, ISPs, and MSPs activate SMBs and scale digital revenue.",
+    "urlSlug": "/products/website-builder"
+  },
+
+  "hero": {
+    "eyebrow": "Online Presence Builder by Hostopia",
+    "headline": "AI-Powered Websites Under Your Brand — Launched in Minutes, Not Months",
+    "subheadline": "Most SMBs don't fail online because they can't afford a website. They fail because building one feels too complex. OPB removes that friction entirely.",
+    "description": "Your SMB customers describe their business, and AI generates a professional, mobile-ready website — complete with copy, imagery, and layout — ready to publish. Your brand stays at the center of the entire experience.",
+    "cta": { "primary": "Book a Demo", "secondary": "Talk to Partner Success" },
+    "badge": "AI-powered websites & hosting, powered by Hostopia",
+    "sidebar": {
+      "heading": "With OPB, your SMB customers can",
+      "items": [
+        { "title": "Launch in minutes", "body": "AI generates a complete, multi-page site with industry-relevant copy, imagery, and layout from just a business name and category." },
+        { "title": "Create without skills", "body": "Built-in AI writing and image generation means no copywriter or photographer needed." },
+        { "title": "Convert visitors", "body": "Forms, maps, galleries, and calls-to-action come standard — sites that generate business, not just digital brochures." },
+        { "title": "Manage everything in one place", "body": "Website, domain, email, and services from one intuitive, partner-branded dashboard." }
+      ]
+    }
+  },
+
+  "features": {
+    "eyebrow": "What you deliver",
+    "heading": "Everything Your SMBs Need — Under Your Brand",
+    "intro": "OPB runs fully white-label — your logo, your URL, your customer portal. Hostopia is invisible.",
+    "cards": [
+      {
+        "icon": "Sparkles",
+        "title": "AI Site Generation",
+        "body": "Customers input their business details. OPB generates a complete, multi-page website with copy, imagery, layout, maps, and contact forms in under five minutes."
+      },
+      {
+        "icon": "LayoutPanelTop",
+        "title": "Drag-and-Drop Editor",
+        "body": "Responsive themes, vertical-specific templates, and pre-built content blocks for hero sections, galleries, FAQs, testimonials, and contact pages."
+      },
+      {
+        "icon": "Zap",
+        "title": "Built-In Conversion Tools",
+        "body": "Lead capture forms, Google Maps, social widgets, and clear CTAs come standard. One-click Online Store activation for ecommerce expansion."
+      },
+      {
+        "icon": "Globe2",
+        "title": "Integrated Hosting & Platform",
+        "body": "Reliable, scalable hosting included. Unlimited pages, per-page SEO settings, Google Analytics, and centralized management through your branded dashboard."
+      }
+    ]
+  },
+
+  "partnerAdvantage": {
+    "eyebrow": "The partner advantage",
+    "heading": "Built for Service Providers. Not Bolted On.",
+    "intro": "OPB turns website services from a support-heavy cost center into a scalable, AI-driven revenue engine.",
+    "items": [
+      {
+        "title": "Activate more of your base",
+        "body": "AI-driven onboarding means customers who previously abandoned DIY tools now actually finish and publish. Higher activation rates translate directly to more paying subscribers."
+      },
+      {
+        "title": "Grow revenue per customer",
+        "body": "Websites are the entry point. Once live on OPB, the path to ecommerce, SEO, listings, and email marketing is a natural conversation — not a cold pitch."
+      },
+      {
+        "title": "Reduce operational drag",
+        "body": "No web development team required. No infrastructure to maintain. AI handles it for your customers, automated provisioning handles it for your ops team."
+      },
+      {
+        "title": "Differentiate from commodity providers",
+        "body": "An AI-powered, branded website platform integrated into your existing services and billing sets you apart from standalone builders and low-cost hosting."
+      }
+    ]
+  },
+
+  "lifecycleFit": {
+    "eyebrow": "Portfolio fit",
+    "heading": "The Foundation of Your Digital Services Portfolio",
+    "intro": "OPB sits at the center of your 'Get Online' motion — the entry point that pulls the rest of your digital portfolio through.",
+    "steps": [
+      { "step": "01", "title": "Build a Brand", "body": "Domains, logo, and professional email establish the SMB identity." },
+      { "step": "02", "title": "Get Online", "body": "AI-powered websites and hosting launch in minutes under your brand.", "highlight": true, "productName": "Website Builder" },
+      { "step": "03", "title": "Get Found", "body": "SEO, directories, and reputation management drive visibility and trust." },
+      { "step": "04", "title": "Grow", "body": "Ecommerce, email marketing, and custom development fuel growth." }
+    ],
+    "positioning": "Position OPB as the default website offering for new connectivity customers, the modern upgrade path for hosting-only accounts, and the foundation for ecommerce and digital marketing expansion."
+  },
+
+  "cta": {
+    "headline": "Ready to Turn AI-Powered Websites into a Growth Engine?",
+    "body": "Connect with Hostopia to launch Online Presence Builder under your brand, activate more SMB customers, and build the digital foundation that drives long-term revenue across your portfolio.",
+    "buttonText": "Book a Demo"
+  }
+}

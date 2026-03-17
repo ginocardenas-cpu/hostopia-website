@@ -1,0 +1,109 @@
+{
+  "slug": "domains",
+  "label": "Domains",
+  "productName": "Domains",
+
+  "seo": {
+    "primaryKeyword": "white-label domain platform",
+    "secondaryKeywords": [
+      "reseller domain solution",
+      "SMB domain management",
+      "domain registration for service providers",
+      "private-label domain platform",
+      "white-label domain registration"
+    ],
+    "metaTitle": "White-Label Domains Platform for Service Providers | Hostopia",
+    "metaDescription": "Sell and manage domains under your brand. Hostopia's white-label platform turns every domain registration into a long-term SMB relationship with email, web, and security.",
+    "urlSlug": "/products/domains"
+  },
+
+  "hero": {
+    "eyebrow": "Domains by Hostopia",
+    "headline": "Every SMB Relationship Starts with a Domain — Make Sure It Starts with You",
+    "stat": "75% of consumers say domain-based email is key to trusting a business",
+    "subheadline": "Domains are where SMBs choose who powers their digital presence. When that first registration happens on your platform, everything else follows — email, websites, security, and growth services.",
+    "description": "Hostopia's white-label Domains platform lets you sell and manage domains under your brand, then seamlessly attach the services that drive long-term revenue and loyalty.",
+    "cta": { "primary": "Book a Demo", "secondary": "Talk to Partner Success" },
+    "badge": "350+ service provider partners across 34 countries",
+    "sidebar": {
+      "heading": "Your SMB customers can",
+      "items": [
+        { "title": "Find their perfect domain", "body": "Intelligent search across 24+ extensions — from .com and .net to country-specific TLDs like .ca, .mx, and .us — plus premium domain options." },
+        { "title": "Look professional instantly", "body": "Domain-based email tied to their business name builds credibility from day one." },
+        { "title": "Manage everything in one place", "body": "DNS, forwarding, auto-renewals, and expiration tracking from a single branded dashboard." },
+        { "title": "Expand when ready", "body": "Add websites, SSL, ecommerce, and marketing services seamlessly — all tied to their domain." }
+      ]
+    }
+  },
+
+  "features": {
+    "eyebrow": "What you deliver",
+    "heading": "A Complete Domain Platform — Under Your Brand",
+    "intro": "White-label search, registration, management, and upsell — fully branded with your logo, URL, and pricing.",
+    "cards": [
+      {
+        "icon": "Search",
+        "title": "Smart Domain Search & Registration",
+        "body": "Intelligent search with suggestions when first choices are taken, 24+ TLDs, flexible 1-10 year terms, and premium domain options from trusted secondary markets."
+      },
+      {
+        "icon": "Mail",
+        "title": "Integrated Domain-Based Email",
+        "body": "Professional email tied to the customer's domain activates immediately after registration — the highest-attach service in the portfolio."
+      },
+      {
+        "icon": "Settings",
+        "title": "Full Domain Management",
+        "body": "DNS settings, forwarding, auto-renewals, expiration tracking, and bulk domain transfers — everything SMBs and partners need from one dashboard."
+      },
+      {
+        "icon": "Zap",
+        "title": "Right-Time Engagement Triggers",
+        "body": "Automated in-app and email prompts after domain purchase — 'Add email,' 'Create a website,' 'Secure with SSL' — driving upsell at the moment of highest intent."
+      }
+    ]
+  },
+
+  "partnerAdvantage": {
+    "eyebrow": "The partner advantage",
+    "heading": "Your Easiest Path to Acquisition — and Your Best Lever for Retention",
+    "intro": "Domains are a low-cost entry point that feeds your entire digital services portfolio. Every registration is an opportunity to build a multi-product relationship.",
+    "items": [
+      {
+        "title": "Anchor customers from day one",
+        "body": "Domains are the most critical digital asset an SMB owns. When it lives on your platform, your brand is embedded at the foundation of their online presence."
+      },
+      {
+        "title": "Drive natural upsell",
+        "body": "Domain → email → website → SSL → ecommerce → marketing. The attach sequence is proven, and right-time engagement triggers automate the upsell motion."
+      },
+      {
+        "title": "Reduce churn structurally",
+        "body": "Migrating a domain is high-friction. Customers with a domain, email, and website on your platform have three reasons to stay — not just one."
+      },
+      {
+        "title": "Skip the registrar build",
+        "body": "Hostopia provides registrar infrastructure, DNS, management tools, and operations across 34 countries and 14 languages. You own the brand and the commercial model."
+      }
+    ]
+  },
+
+  "lifecycleFit": {
+    "eyebrow": "Portfolio fit",
+    "heading": "The Starting Point for Every SMB Journey",
+    "intro": "Domains sit at the very start of your lifecycle framework — the first product an SMB buys, and the anchor that connects everything else.",
+    "steps": [
+      { "step": "01", "title": "Build a Brand", "body": "Register the domain and activate domain-based email. This is where the relationship begins.", "highlight": true, "productName": "Domains" },
+      { "step": "02", "title": "Get Online", "body": "Add a website with Online Presence Builder, DIFM design, or custom development." },
+      { "step": "03", "title": "Get Found", "body": "Layer on SEO, directory listings, and reputation management." },
+      { "step": "04", "title": "Grow", "body": "Expand into ecommerce, email marketing, and advanced digital services." }
+    ],
+    "positioning": "Position domains as the 'start here' product — the low-cost, high-attach entry point that feeds website, email, security, and marketing upsell across the entire SMB lifecycle."
+  },
+
+  "cta": {
+    "headline": "Ready to Turn Domains into Your Next Growth Engine?",
+    "body": "Connect with Hostopia to launch your branded domain platform, bundle domains with email and web services, and turn every registration into a long-term SMB relationship.",
+    "buttonText": "Book a Demo"
+  }
+}

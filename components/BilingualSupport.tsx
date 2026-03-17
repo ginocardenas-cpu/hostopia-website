@@ -3,7 +3,7 @@ import Image from "next/image";
 const supportStats = [
   { value: "EN/FR/SP", label: "Multilingual", sub: "North America based" },
   { value: "24/7", label: "Availability", sub: "Always on" },
-  { value: ">60s", label: "First Reply", sub: "Response SLA" },
+  { value: "<60s", label: "First Reply", sub: "Response SLA" },
   { value: "98%", label: "CSAT", sub: "Satisfaction score" },
 ];
 
@@ -17,7 +17,7 @@ export default function BilingualSupport() {
           <div>
             <div className="flex items-center gap-3 mb-5">
               <div className="w-8 h-px" style={{ backgroundColor: "#F8CF41" }} />
-              <span className="section-label">Bilingual Support</span>
+              <span className="section-label">White-Label Customer Support</span>
             </div>
 
             <h2
@@ -28,9 +28,7 @@ export default function BilingualSupport() {
                 color: "#24282B",
               }}
             >
-              Support That
-              <br />
-              Sounds Like{" "}
+              24/7 Multilingual Support{" "}
               <span
                 style={{
                   color: "#2CADB2",
@@ -40,7 +38,7 @@ export default function BilingualSupport() {
                   textDecorationThickness: "4px",
                 }}
               >
-                You.
+                Under Your Brand.
               </span>
             </h2>
 
@@ -48,7 +46,7 @@ export default function BilingualSupport() {
               className="text-lg leading-relaxed mb-10"
               style={{ fontFamily: "Raleway, sans-serif", color: "#555a5e" }}
             >
-              We believe exceptional customer interactions can provide your business a meaningful competitive advantage. Our team delivers high-quality support on your behalf while maintaining your brand voice. You benefit from defined SLAs, measurable KPIs, and full reporting to track performance. Your customers receive multilingual support across phone, chat, and email — ensuring consistent, scalable experiences wherever they do business.
+              Your customers call your brand. Our team answers as your team. Phone, chat, and email — with defined SLAs, measurable KPIs, and full reporting. Exceptional customer support is a competitive advantage, not a cost center. Hostopia&apos;s multilingual support team delivers high-quality, on-brand interactions across every channel — so you can scale your customer base without scaling your headcount.
             </p>
 
             <a

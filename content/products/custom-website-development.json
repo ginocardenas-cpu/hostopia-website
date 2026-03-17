@@ -1,0 +1,103 @@
+{
+  "slug": "custom-website-development",
+  "label": "Custom Website Development",
+  "productName": "Custom Website Design",
+
+  "seo": {
+    "primaryKeyword": "white-label custom website design",
+    "secondaryKeywords": [
+      "custom WordPress website for SMBs",
+      "white-label web design service",
+      "professional website design for service providers",
+      "custom web design reseller"
+    ],
+    "metaTitle": "Custom Website Design for SMBs | White-Label WordPress | Hostopia",
+    "metaDescription": "Offer fully custom WordPress websites under your brand. Hostopia's white-label design service handles discovery through launch — no in-house agency required.",
+    "urlSlug": "/products/custom-website-development"
+  },
+
+  "hero": {
+    "eyebrow": "Custom Website Design by Hostopia",
+    "headline": "Premium Custom Websites — Delivered Under Your Brand, Built by Our Team",
+    "subheadline": "Not every SMB fits into a template. Some need advanced functionality, complex site structures, or a brand presence that stands completely on its own.",
+    "description": "Hostopia's white-label custom website design service lets you offer fully bespoke WordPress websites without building an in-house design agency. Our team manages discovery through launch — you own the customer relationship.",
+    "cta": { "primary": "Book a Demo", "secondary": "Talk to Partner Success" },
+    "badge": "Fully custom WordPress builds, white-labeled",
+    "sidebar": {
+      "heading": "What your SMB customers get",
+      "items": [
+        { "title": "Built from scratch", "body": "No templates — a fully custom website designed around their brand, business goals, and audience." },
+        { "title": "WordPress foundation", "body": "Built on WordPress for flexibility, scalability, and the ability to extend with plugins and integrations." },
+        { "title": "Collaborative process", "body": "Direct collaboration with professional designers through a structured discovery, design, and revision process." },
+        { "title": "Full ownership", "body": "The SMB owns the website, content, and database. Optional hosting and maintenance plans keep it running." }
+      ]
+    }
+  },
+
+  "features": {
+    "eyebrow": "What you deliver",
+    "heading": "A Managed Design Service — Without Managing Designers",
+    "intro": "You sell the service. We handle everything from initial discovery through launch and ongoing maintenance.",
+    "cards": [
+      {
+        "icon": "PenTool",
+        "title": "Structured Discovery & Proposal",
+        "body": "Every project starts with a documented discovery process and detailed proposal — so scope, timeline, and pricing are clear before work begins."
+      },
+      {
+        "icon": "Smartphone",
+        "title": "Mobile-Responsive, SEO-Ready Architecture",
+        "body": "Every site ships responsive, fast, and optimized for search engines from day one. Built to perform on every device and in every market."
+      },
+      {
+        "icon": "Puzzle",
+        "title": "Advanced Functionality & Integrations",
+        "body": "Third-party integrations, custom forms, booking systems, ecommerce — whatever the SMB's business requires, the build supports it."
+      },
+      {
+        "icon": "RefreshCw",
+        "title": "Optional Maintenance & Hosting",
+        "body": "Ongoing plans cover updates, backups, security patches, and hosting — turning a one-time project into recurring revenue."
+      }
+    ]
+  },
+
+  "partnerAdvantage": {
+    "eyebrow": "The partner advantage",
+    "heading": "Compete with Local Agencies — Without Building One",
+    "intro": "Custom Website Design lets you serve the SMBs that outgrow templated solutions and need a higher-touch experience.",
+    "items": [
+      {
+        "title": "Move upmarket without headcount",
+        "body": "Offer premium custom builds alongside your DIY website builder — no need to hire designers, developers, or project managers."
+      },
+      {
+        "title": "Bundle into higher-value packages",
+        "body": "Custom builds pair naturally with hosting, SSL, SEO, and ongoing maintenance — creating multi-product engagements with stronger retention."
+      },
+      {
+        "title": "Position as a full-service digital partner",
+        "body": "Offering custom design alongside your existing services signals to SMBs that you can support them at every stage of digital maturity."
+      }
+    ]
+  },
+
+  "lifecycleFit": {
+    "eyebrow": "Portfolio fit",
+    "heading": "The Premium Tier in Your Website Portfolio",
+    "intro": "Custom Website Design serves the top of your website portfolio — SMBs who need more than a builder but don't want to manage an agency relationship on their own.",
+    "steps": [
+      { "step": "01", "title": "Build a Brand", "body": "Domains, logo, and professional email establish the SMB identity." },
+      { "step": "02", "title": "Get Online", "body": "Website Builder for DIY customers, DIFM for hands-off, Custom for complex needs.", "highlight": false },
+      { "step": "03", "title": "Get Found", "body": "SEO, directories, and reputation management drive visibility." },
+      { "step": "04", "title": "Grow", "body": "Custom websites anchor ecommerce, integrations, and premium digital services.", "highlight": true, "productName": "Custom Website Design" }
+    ],
+    "positioning": "Position custom design as the upgrade path for SMBs outgrowing templates, the agency alternative for businesses needing advanced functionality, and a premium bundling anchor alongside hosting, security, and marketing services."
+  },
+
+  "cta": {
+    "headline": "Ready to Deliver Premium Custom Websites at Scale?",
+    "body": "Connect with Hostopia to launch white-label custom website design, expand your digital portfolio into higher-value engagements, and strengthen long-term SMB relationships.",
+    "buttonText": "Book a Demo"
+  }
+}

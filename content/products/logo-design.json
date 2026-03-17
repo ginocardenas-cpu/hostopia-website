@@ -1,0 +1,104 @@
+{
+  "slug": "logo-design",
+  "label": "Logo Design",
+  "productName": "Professional Logo Design",
+
+  "seo": {
+    "primaryKeyword": "white-label logo design service",
+    "secondaryKeywords": [
+      "SMB logo design",
+      "professional logo for small business",
+      "reseller logo design",
+      "white-label branding service",
+      "logo design for service providers"
+    ],
+    "metaTitle": "White-Label Professional Logo Design for Service Providers | Hostopia",
+    "metaDescription": "Offer professional logo design under your brand. Hostopia's white-label service delivers agency-quality logos to SMBs — no in-house designers required. Full ownership, all formats.",
+    "urlSlug": "/products/logo-design"
+  },
+
+  "hero": {
+    "eyebrow": "Professional Logo Design by Hostopia",
+    "headline": "Agency-Quality Logos — Delivered Under Your Brand, Without an Agency",
+    "subheadline": "Most SMBs DIY their logo or rely on outdated graphics that don't scale across channels. A professional logo becomes the foundation of every digital product they buy from you.",
+    "description": "Hostopia's white-label Professional Logo Design gives you a managed creative service to resell under your brand. Our designers handle the entire process — from questionnaire to final delivery in 11 formats — while you own the customer relationship and the revenue.",
+    "cta": { "primary": "Book a Demo", "secondary": "Talk to Partner Success" },
+    "badge": "Managed logo design, white-labeled for partners",
+    "sidebar": {
+      "heading": "Your SMB customers get",
+      "items": [
+        { "title": "Professional design expertise", "body": "Logos created by professional designers through a guided questionnaire that captures their brand vision, values, and audience." },
+        { "title": "All formats included", "body": "11 production-ready file formats — AI, EPS, PNG, JPG, PDF, ICO, and more — for web, print, signage, and social." },
+        { "title": "Fast turnaround", "body": "Initial concepts delivered in just a few business days, with structured revision rounds to finalize." },
+        { "title": "Full ownership", "body": "The SMB owns the final logo outright. No ongoing licensing fees, no usage restrictions." }
+      ]
+    }
+  },
+
+  "features": {
+    "eyebrow": "What you deliver",
+    "heading": "A Managed Creative Service — Without Managing Creatives",
+    "intro": "You sell the service and own the customer relationship. Hostopia handles the entire design workflow from intake through final delivery.",
+    "cards": [
+      {
+        "icon": "Palette",
+        "title": "Guided Creative Process",
+        "body": "A branded questionnaire and coordinator-led workflow captures each SMB's vision, values, and audience — ensuring the design hits the mark without back-and-forth."
+      },
+      {
+        "icon": "Layers",
+        "title": "Production-Ready Deliverables",
+        "body": "Every logo ships in 11 formats optimized for web, print, signage, and social media. SMBs get files they can use immediately, everywhere."
+      },
+      {
+        "icon": "Zap",
+        "title": "Fast, Structured Workflow",
+        "body": "Initial concepts in a few business days. Defined revision rounds keep the process efficient and predictable for both you and your customers."
+      },
+      {
+        "icon": "Shield",
+        "title": "Full Rights & Ownership",
+        "body": "SMBs receive complete ownership of their logo with no licensing fees. Clean IP means they can use it across any channel, any medium, forever."
+      }
+    ]
+  },
+
+  "partnerAdvantage": {
+    "eyebrow": "The partner advantage",
+    "heading": "Open New Revenue Without Hiring Designers",
+    "intro": "Professional Logo Design is a high-value, low-lift addition to your portfolio — positioning you as the partner that defined their brand, not just their infrastructure.",
+    "items": [
+      {
+        "title": "Bundle into brand launch packages",
+        "body": "Logo design pairs naturally with domains, business email, and websites. Create 'brand launch' packages that drive multi-product attachment from day one."
+      },
+      {
+        "title": "Boost ARPU and deepen relationships",
+        "body": "A high-engagement branding product that anchors SMBs to your platform. Customers who start with a logo are primed to buy the digital services that follow."
+      },
+      {
+        "title": "Scale without creative overhead",
+        "body": "Hostopia handles fulfillment, onboarding, and training. You get agency-quality output with zero designer headcount — just sell, bundle, and grow."
+      }
+    ]
+  },
+
+  "lifecycleFit": {
+    "eyebrow": "Portfolio fit",
+    "heading": "The Starting Point for Every Digital Journey",
+    "intro": "A professional logo is the first step in building a credible brand. It anchors every product that follows — websites, email, social, storefronts — making it the natural entry point in your digital portfolio.",
+    "steps": [
+      { "step": "01", "title": "Build a Brand", "body": "Professional Logo Design creates the visual identity that anchors domains, email, and every digital touchpoint.", "highlight": true, "productName": "Professional Logo Design" },
+      { "step": "02", "title": "Get Online", "body": "Websites and hosting launch the digital presence built on that brand." },
+      { "step": "03", "title": "Get Found", "body": "SEO, directories, and reputation management drive visibility." },
+      { "step": "04", "title": "Grow", "body": "Ecommerce, email marketing, and advanced services drive revenue growth." }
+    ],
+    "positioning": "Position logo design as the entry point that triggers cross-sell into domains, websites, and email. Bundle it into 'brand launch' packages that create multi-product engagements from the first sale."
+  },
+
+  "cta": {
+    "headline": "Ready to Add Professional Logo Design to Your Brand Portfolio?",
+    "body": "Connect with Hostopia to launch white-label logo design, bundle it with your digital and connectivity services, and give SMBs a professional visual identity from day one.",
+    "buttonText": "Book a Demo"
+  }
+}

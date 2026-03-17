@@ -1,0 +1,104 @@
+{
+  "slug": "website-design",
+  "label": "Website Design",
+  "productName": "DIFM Website Design",
+
+  "seo": {
+    "primaryKeyword": "white-label website design for SMBs",
+    "secondaryKeywords": [
+      "done-for-me website design",
+      "professional small business websites",
+      "managed website design service",
+      "website design for service providers",
+      "DIFM web design reseller"
+    ],
+    "metaTitle": "White-Label DIFM Website Design for Service Providers | Hostopia",
+    "metaDescription": "Launch done-for-me website design under your brand. Hostopia's managed design service delivers professional SMB websites — from consultation to launch — without building an agency.",
+    "urlSlug": "/products/website-design"
+  },
+
+  "hero": {
+    "eyebrow": "DIFM Website Design by Hostopia",
+    "headline": "Professional Websites for SMBs — Built by Our Team, Branded as Yours",
+    "subheadline": "Thousands of SMBs have no website or an outdated one that hurts credibility. Most don't have the time, skills, or interest in building it themselves.",
+    "description": "Hostopia's white-label DIFM Website Design gives you a fully managed design service to resell under your brand. Our team handles everything — consultation, design, copywriting, QA, and ongoing maintenance — while you own the customer relationship and revenue.",
+    "cta": { "primary": "Book a Demo", "secondary": "Talk to Partner Success" },
+    "badge": "Managed website design, white-labeled for partners",
+    "sidebar": {
+      "heading": "Your SMB customers get",
+      "items": [
+        { "title": "A complete done-for-me experience", "body": "1:1 consultation, professional design, copywriting, and deployment — no technical skills required." },
+        { "title": "Mobile-responsive, SEO-ready sites", "body": "Every site ships responsive across desktop, tablet, and mobile — optimized for search from day one." },
+        { "title": "Built-in business tools", "body": "Contact forms, maps, galleries, appointment schedulers, coupons, and optional Online Store setup included." },
+        { "title": "Ongoing maintenance", "body": "Monthly maintenance time keeps the site current — content updates, seasonal changes, and design refreshes handled by the team." }
+      ]
+    }
+  },
+
+  "features": {
+    "eyebrow": "What you deliver",
+    "heading": "A Managed Design Service — Without Managing Designers",
+    "intro": "You sell the service. Hostopia's team of designers, copywriters, and QA specialists handles everything from first consultation through ongoing maintenance.",
+    "cards": [
+      {
+        "icon": "PenTool",
+        "title": "Professional Design & Copywriting",
+        "body": "Industry-aligned themes, high-quality imagery, on-brand colors and fonts — plus professional copywriting that communicates the SMB's value proposition clearly."
+      },
+      {
+        "icon": "Smartphone",
+        "title": "Mobile-Responsive & Search-Optimized",
+        "body": "Every site automatically optimizes across desktop, tablet, and smartphone. Built with SEO foundations — meta tags, clean URLs, fast load times — from day one."
+      },
+      {
+        "icon": "Puzzle",
+        "title": "Flexible Packages & Add-Ons",
+        "body": "Extra pages, lead forms, interactive galleries, appointment schedulers, coupons, and Online Store setup. Packages scale from basic presence to full digital storefront."
+      },
+      {
+        "icon": "MessageSquare",
+        "title": "Private-Label Project Center",
+        "body": "SMBs review drafts, approve changes, and collaborate with their Website Coordinator — all within a branded project portal under your name."
+      }
+    ]
+  },
+
+  "partnerAdvantage": {
+    "eyebrow": "The partner advantage",
+    "heading": "Compete with Agencies — Without Building One",
+    "intro": "DIFM Website Design lets you serve the SMBs that won't use a DIY builder but don't want to find and manage a freelancer or agency on their own.",
+    "items": [
+      {
+        "title": "Acquire and upgrade customers",
+        "body": "Offer 'we build it for you' websites to SMBs who lack the time or skills. Convert non-digital customers into active digital subscribers with a hands-off experience."
+      },
+      {
+        "title": "Bundle into high-value packages",
+        "body": "DIFM pairs with domains, email, hosting, SSL, and marketing services — creating multi-product engagements with higher ARPU and stronger retention."
+      },
+      {
+        "title": "Scale without creative headcount",
+        "body": "Hostopia's fulfillment team, proprietary delivery platform, and proven QA processes handle volume. You grow revenue without growing cost."
+      }
+    ]
+  },
+
+  "lifecycleFit": {
+    "eyebrow": "Portfolio fit",
+    "heading": "The DIFM Layer in Your Website Portfolio",
+    "intro": "DIFM Website Design serves SMBs who need more than a builder but less than a custom WordPress build. It's the managed middle tier that completes your 'Get Online' stack.",
+    "steps": [
+      { "step": "01", "title": "Build a Brand", "body": "Domains, logo, and professional email establish the SMB identity." },
+      { "step": "02", "title": "Get Online", "body": "Website Builder for DIY customers, DIFM for hands-off, Custom for complex needs.", "highlight": true, "productName": "DIFM Website Design" },
+      { "step": "03", "title": "Get Found", "body": "SEO, directories, and reputation management drive visibility." },
+      { "step": "04", "title": "Grow", "body": "Ecommerce, email marketing, and advanced services drive revenue growth." }
+    ],
+    "positioning": "Position DIFM as the managed alternative for SMBs who won't use a DIY builder. Bundle with hosting, SSL, and email for a complete 'get online' package. Use it as the bridge between self-serve and custom development."
+  },
+
+  "cta": {
+    "headline": "Ready to Launch Managed Website Design Under Your Brand?",
+    "body": "Connect with Hostopia to add DIFM Website Design to your portfolio, enable your sales teams with training and scripts, and start delivering professional websites at scale.",
+    "buttonText": "Book a Demo"
+  }
+}

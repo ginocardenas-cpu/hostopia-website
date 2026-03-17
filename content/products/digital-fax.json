@@ -1,0 +1,104 @@
+{
+  "slug": "digital-fax",
+  "label": "Online Fax",
+  "productName": "Online Fax",
+
+  "seo": {
+    "primaryKeyword": "white-label online fax",
+    "secondaryKeywords": [
+      "cloud fax for SMBs",
+      "reseller fax solution",
+      "HIPAA fax solution",
+      "online fax for service providers",
+      "private-label fax service"
+    ],
+    "metaTitle": "White-Label Online Fax for Service Providers | Hostopia",
+    "metaDescription": "Offer secure, cloud-based fax under your brand. Hostopia's white-label Online Fax replaces legacy fax machines with HIPAA-aligned, email-integrated digital faxing.",
+    "urlSlug": "/products/digital-fax"
+  },
+
+  "hero": {
+    "eyebrow": "Online Fax by Hostopia",
+    "headline": "Replace Legacy Fax Machines — Keep Trusted Workflows",
+    "subheadline": "Many SMBs still rely on fax for contracts, medical records, and legal documents. Legacy fax machines are costly, insecure, and tied to physical offices.",
+    "description": "Hostopia's white-label Online Fax lets you deliver a secure, cloud-based fax service that modernizes how your SMB customers send and receive documents — without changing the workflows they depend on. A natural add-on to your connectivity and communications portfolio.",
+    "cta": { "primary": "Book a Demo", "secondary": "Talk to Partner Success" },
+    "badge": "HIPAA-aligned, cloud-based fax",
+    "sidebar": {
+      "heading": "Your SMB customers can",
+      "items": [
+        { "title": "Fax from anywhere", "body": "Send and receive faxes from any device with an internet connection — no hardware, no phone lines, no office required." },
+        { "title": "Stay compliant", "body": "Encrypted transmission and HIPAA-aligned configurations for healthcare, legal, and financial industries." },
+        { "title": "Keep existing numbers", "body": "Easy number porting migrates customers off legacy lines, or activate new local and toll-free numbers." },
+        { "title": "Simplify workflows", "body": "Email-to-fax, fax-to-email, and web portal access eliminate the need for separate fax software." }
+      ]
+    }
+  },
+
+  "features": {
+    "eyebrow": "What you deliver",
+    "heading": "Modern Fax Infrastructure — Without the Infrastructure",
+    "intro": "Online Fax replaces physical machines with a secure, digital experience that works the way SMBs already work — through email and browser.",
+    "cards": [
+      {
+        "icon": "Mail",
+        "title": "Email & Web-Based Faxing",
+        "body": "Send faxes directly from email or a web portal. Support for PDF, DOC, PPT, and image formats. No additional software required."
+      },
+      {
+        "icon": "Shield",
+        "title": "Security & Compliance",
+        "body": "Encrypted transmission with HIPAA-aligned configurations. Built for industries that handle sensitive documents — healthcare, legal, financial."
+      },
+      {
+        "icon": "Users",
+        "title": "Multi-User Plans",
+        "body": "Shared page pools for teams, admin roles, usage reporting, and per-number tracking. Scale from solo practitioners to multi-location businesses."
+      },
+      {
+        "icon": "FileText",
+        "title": "Productivity Tools",
+        "body": "Cover pages, group sends, delivery confirmations, and centralized fax logs. Everything SMBs need to manage document workflows efficiently."
+      }
+    ]
+  },
+
+  "partnerAdvantage": {
+    "eyebrow": "The partner advantage",
+    "heading": "Monetize a Critical Communication Channel",
+    "intro": "Online Fax modernizes a service SMBs can't give up — and turns it into a recurring cloud subscription on your platform.",
+    "items": [
+      {
+        "title": "Create stickier bundles",
+        "body": "Pair Online Fax with connectivity, VoIP, and business email. The more communication services on your platform, the harder it is for customers to leave."
+      },
+      {
+        "title": "Convert analog users to cloud subscriptions",
+        "body": "Migrate customers off legacy fax lines and hardware while keeping them on your network. Every converted line is new recurring revenue."
+      },
+      {
+        "title": "Low support, high attach",
+        "body": "Browser- and email-based experience means minimal support burden. Hostopia maintains the platform — you sell the service."
+      }
+    ]
+  },
+
+  "lifecycleFit": {
+    "eyebrow": "Portfolio fit",
+    "heading": "A Communications Add-On That Complements Your Core",
+    "intro": "Online Fax sits alongside business email and connectivity services — a communications layer that strengthens your bundle and increases wallet share.",
+    "steps": [
+      { "step": "01", "title": "Build a Brand", "body": "Domains, logo, and professional email establish the SMB identity." },
+      { "step": "02", "title": "Get Online", "body": "Websites and hosting launch their digital presence." },
+      { "step": "03", "title": "Get Found", "body": "SEO, directories, and reputation management drive visibility." },
+      { "step": "04", "title": "Grow", "body": "Online Fax, ecommerce, and advanced services support document-heavy and regulated industries.", "highlight": true, "productName": "Online Fax" }
+    ],
+    "positioning": "Position Online Fax as a communications bundle partner with email and VoIP, a compliance solution for regulated industries, and a modernization play to retire legacy fax hardware."
+  },
+
+  "cta": {
+    "headline": "Ready to Turn Online Fax into a High-Value Communications Add-On?",
+    "body": "Connect with Hostopia to launch your branded Online Fax service, migrate existing fax users, and bundle it with the connectivity and digital services you already sell.",
+    "buttonText": "Book a Demo"
+  }
+}

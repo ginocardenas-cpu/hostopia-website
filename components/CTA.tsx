@@ -35,28 +35,28 @@ export default function CTA() {
                 color: "#24282B",
               }}
             >
-              Let&apos;s Build
+              Launch Your
               <br />
-              Your Digital
+              White-Label
               <br />
-              Revenue
+              Digital Services
               <br />
-              Engine.
+              Portfolio.
             </h2>
 
             <p
               className="text-lg leading-relaxed mb-8"
               style={{ fontFamily: "Raleway, sans-serif", color: "#4a4e52" }}
             >
-              Join hundreds of service providers who trust Hostopia to power their
-              digital services portfolio. Talk to our team and discover what&apos;s possible.
+              Join 500+ service providers who trust Hostopia to power their digital services.
+              Talk to our team and discover how quickly you can go to market.
             </p>
 
             <div className="flex flex-col gap-3">
               {[
-                "Unlock new recurring revenue",
-                "Accelerate time to market",
-                "Scale efficiently with a trusted partner",
+                "Unlock new recurring revenue from your existing customer base",
+                "Go to market in weeks with a proven, white-label platform",
+                "Scale confidently with migration expertise and 24/7 support",
               ].map((item) => (
                 <div key={item} className="flex items-center gap-3">
                   <div className="w-2 h-2 rounded-full flex-shrink-0" style={{ backgroundColor: "#24282B" }} />

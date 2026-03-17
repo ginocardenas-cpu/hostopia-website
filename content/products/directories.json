@@ -1,0 +1,104 @@
+{
+  "slug": "directories",
+  "label": "Directories",
+  "productName": "OneList Plus",
+
+  "seo": {
+    "primaryKeyword": "white-label local listings management",
+    "secondaryKeywords": [
+      "business directory listings",
+      "local SEO for SMBs",
+      "citation management platform",
+      "local presence management",
+      "SMB listings platform"
+    ],
+    "metaTitle": "White-Label Local Listings Management for Service Providers | Hostopia",
+    "metaDescription": "Launch local listings management under your brand. OneList Plus distributes accurate business data across Google, Bing, Facebook, Yelp, and more — driving SMB visibility and retention.",
+    "urlSlug": "/products/directories"
+  },
+
+  "hero": {
+    "eyebrow": "OneList Plus by Hostopia",
+    "headline": "Accurate Listings Everywhere — Managed from One Dashboard",
+    "subheadline": "Inconsistent business listings kill search visibility, erode customer trust, and cost SMBs foot traffic. Most can't keep up with dozens of directories manually.",
+    "description": "OneList Plus distributes and syncs accurate business information across Google, Bing, Facebook, Yelp, and other major directories — automatically. Delivered white-label under your brand as a recurring subscription that drives retention and ARPU.",
+    "cta": { "primary": "Book a Demo", "secondary": "Talk to Partner Success" },
+    "badge": "Always-on directory sync, white-labeled",
+    "sidebar": {
+      "heading": "Your SMB customers get",
+      "items": [
+        { "title": "One update, everywhere", "body": "Change business info, hours, or categories once — it syncs automatically across all connected directories." },
+        { "title": "Always-on accuracy", "body": "Continuous sync suppresses duplicates, corrects errors, and keeps data consistent across every platform." },
+        { "title": "Visibility reporting", "body": "Monthly reports show listing status, reach, and health across all directories — proof that the subscription is working." },
+        { "title": "Better local SEO", "body": "Consistent citations are foundational to local search ranking. Accurate listings everywhere = better map and search visibility." }
+      ]
+    }
+  },
+
+  "features": {
+    "eyebrow": "What you deliver",
+    "heading": "Local Presence Management — Under Your Brand",
+    "intro": "OneList Plus handles the distribution, sync, and monitoring that SMBs can't manage on their own. You get a recurring revenue product with minimal support overhead.",
+    "cards": [
+      {
+        "icon": "Globe",
+        "title": "Major Directory Distribution",
+        "body": "Automated distribution to Google, Bing, Facebook, Yelp, and other top directories. SMBs get listed where their customers are searching."
+      },
+      {
+        "icon": "RefreshCw",
+        "title": "Continuous Sync & Correction",
+        "body": "Always-on synchronization suppresses duplicates, overwrites incorrect data, and ensures every listing stays accurate without manual intervention."
+      },
+      {
+        "icon": "LayoutDashboard",
+        "title": "Centralized Management",
+        "body": "One branded dashboard to update business name, address, hours, categories, and descriptions across all connected platforms simultaneously."
+      },
+      {
+        "icon": "BarChart3",
+        "title": "Automated Health Reporting",
+        "body": "Monthly reports on listing status, reach, and consistency — giving SMBs visibility and giving your team data for retention conversations."
+      }
+    ]
+  },
+
+  "partnerAdvantage": {
+    "eyebrow": "The partner advantage",
+    "heading": "Low-Support, High-Margin Recurring Revenue",
+    "intro": "OneList Plus is one of the easiest digital products to sell and one of the hardest to cancel — because the value is visible and always-on.",
+    "items": [
+      {
+        "title": "High attach with web products",
+        "body": "Every website customer benefits from accurate listings. Bundle OneList Plus with websites, SEO, and reputation management for stronger product attachment."
+      },
+      {
+        "title": "Retention through visibility",
+        "body": "SMBs see their listings stay accurate month after month. That ongoing, measurable value makes cancellation a hard decision."
+      },
+      {
+        "title": "Scale without support overhead",
+        "body": "Automated sync and distribution means no manual fulfillment, no directory relationship management, and minimal support tickets."
+      }
+    ]
+  },
+
+  "lifecycleFit": {
+    "eyebrow": "Portfolio fit",
+    "heading": "The Foundation of Local Discoverability",
+    "intro": "Accurate listings are prerequisite to effective SEO and reputation management. OneList Plus is the base layer of your 'Get Found' stack.",
+    "steps": [
+      { "step": "01", "title": "Build a Brand", "body": "Domains, logo, and professional email establish the SMB identity." },
+      { "step": "02", "title": "Get Online", "body": "Websites and hosting launch their digital presence." },
+      { "step": "03", "title": "Get Found", "body": "OneList Plus ensures accurate listings everywhere, strengthening SEO and reputation efforts.", "highlight": true, "productName": "OneList Plus" },
+      { "step": "04", "title": "Grow", "body": "Ecommerce, email marketing, and advanced services drive revenue growth." }
+    ],
+    "positioning": "Position directories as the always-on visibility product that makes SEO and reputation management work harder — a natural bundle with Search Engine Assist and Reviews Promoter."
+  },
+
+  "cta": {
+    "headline": "Ready to Turn Local Listings into Recurring Revenue?",
+    "body": "Connect with Hostopia to launch OneList Plus under your brand, bundle it with your web and marketing portfolio, and give SMBs always-on visibility across the directories that matter most.",
+    "buttonText": "Book a Demo"
+  }
+}

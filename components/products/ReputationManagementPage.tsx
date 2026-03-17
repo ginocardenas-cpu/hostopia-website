@@ -43,21 +43,19 @@ export default function ReputationManagementPage({ label }: ReputationManagement
                   color: "#24282B",
                 }}
               >
-                Reputation Management: Help SMBs Get Found & Chosen
+                Turn Happy Customers into 5-Star Reviews — Under Your Brand
               </h1>
               <p
                 className="text-base md:text-lg leading-relaxed mb-4"
                 style={{ fontFamily: "Raleway, sans-serif", color: "#555a5e" }}
               >
-                Reviews and ratings often make the difference between being discovered—and actually getting the call,
-                click, or booking.
+                Online reviews influence every buying decision. But most SMBs don&apos;t have a system to consistently request, monitor, and respond to feedback across Google, social media, and review sites.
               </p>
               <p
                 className="text-base leading-relaxed mb-6"
                 style={{ fontFamily: "Raleway, sans-serif", color: "#555a5e" }}
               >
-                Hostopia&apos;s white-label Reputation Management solution helps your SMB customers monitor, manage, and
-                improve their online reviews across key platforms so they&apos;re not just listed—they&apos;re chosen.
+                Reviews Promoter is an AI-driven reputation and social media management platform built for SMBs who need a simple way to generate trust, build social proof, and stay visible — all delivered white-label under your brand.
               </p>
               <div className="flex flex-wrap gap-3">
                 <Link

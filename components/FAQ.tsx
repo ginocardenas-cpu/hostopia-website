@@ -1,53 +1,33 @@
 const faqs = [
   {
-    question: "What white-label digital services does Hostopia provide?",
+    question: "What is Hostopia's white-label digital services platform?",
     answer:
-      "Hostopia provides a comprehensive suite of white-label digital services, including website solutions, e-commerce, productivity tools, cloud services, and customer lifecycle management platforms. Our solutions enable telecoms, ISVs, and service providers to launch branded digital offerings quickly while creating new recurring revenue streams.",
+      "Hostopia provides a complete white-label platform that lets service providers — telcos, ISPs, resellers, and MSPs — sell digital services under their own brand. The platform includes email hosting, website builders, ecommerce, SEO tools, reputation management, and more. You control the branding, pricing, and packaging. Hostopia handles provisioning, infrastructure, and optional end-user support.",
   },
   {
-    question: "How can telecom providers grow recurring revenue with Hostopia?",
+    question: "What types of service providers does Hostopia work with?",
     answer:
-      "Hostopia helps telecom providers expand beyond connectivity by offering digital services bundles tailored to SMB customers. Our platform supports cross-sell and upsell strategies, subscription management, and lifecycle marketing to increase ARPU and long-term customer retention.",
+      "Hostopia partners with telcos, cable operators, ISPs, hosting companies, domain registrars, resellers, distributors, and MSPs worldwide. If you have an established base of SMB customers and want to add digital services revenue, Hostopia was built for your business model.",
   },
   {
-    question: "Does Hostopia support SMB digital transformation?",
+    question: "How quickly can we launch digital services with Hostopia?",
     answer:
-      "Yes. Hostopia enables service providers to deliver essential SMB digital solutions such as website creation, online presence management, e-commerce, and productivity tools. These services help small businesses establish, manage, and grow their digital footprint while generating recurring revenue for our partners.",
+      "Most partners go to market within weeks. Hostopia's platform is pre-built and ready for white-labeling — no development required. Our onboarding team handles integration, branding, and training so your teams can start selling immediately.",
   },
   {
-    question: "Is Hostopia's platform fully white-labeled?",
+    question: "Can Hostopia migrate our existing email or website customers?",
     answer:
-      "Hostopia's solutions are designed to operate under your brand. From storefronts and onboarding experiences to customer communications and support, we ensure a seamless branded experience that strengthens customer loyalty and trust.",
+      "Yes. Hostopia has migrated over 20 million mailboxes using proprietary tooling that ensures zero downtime and 100% data integrity. We also handle domain transfers, website migrations, DNS migrations, and control panel transfers — at any scale.",
   },
   {
-    question: "What industries does Hostopia work with?",
+    question: "Is the platform fully white-labeled?",
     answer:
-      "Hostopia partners with telecommunications companies, ISVs, hosting providers, marketplaces, and managed service providers seeking to expand their digital services portfolio and accelerate digital transformation initiatives.",
+      "Everything is white-labeled — the customer-facing portals, admin tools, email interfaces, support interactions, and marketing materials. Your customers see your brand at every touchpoint. Hostopia operates entirely behind the scenes.",
   },
   {
-    question: "How does Hostopia integrate with existing telecom or SaaS platforms?",
+    question: "How does Hostopia help increase partner revenue?",
     answer:
-      "Our flexible API-driven architecture integrates with existing CRM systems, billing platforms, provisioning systems, and operational tools. This allows partners to streamline workflows, automate processes, and launch new digital services without disrupting their existing infrastructure.",
-  },
-  {
-    question: "Does Hostopia offer outsourced customer support services?",
-    answer:
-      "Yes. Hostopia provides multilingual, enterprise-grade outsourced customer support across phone, chat, and email. Our teams act as an extension of your organization, delivering high-quality interactions in your brand's voice while meeting defined SLAs and KPIs.",
-  },
-  {
-    question: "How quickly can service providers launch digital services with Hostopia?",
-    answer:
-      "Hostopia's modular platform and proven onboarding frameworks enable rapid deployment. Many partners can launch new digital products and white-label services in a matter of weeks, accelerating time to revenue.",
-  },
-  {
-    question: "How does Hostopia help reduce churn and improve customer retention?",
-    answer:
-      "By enabling partners to bundle value-added digital services with core offerings, Hostopia helps increase customer engagement and stickiness. Our lifecycle tools support onboarding, activation, and ongoing engagement strategies designed to improve retention and lifetime value.",
-  },
-  {
-    question: "How can I become a Hostopia partner?",
-    answer:
-      "Getting started is simple. Contact our team to discuss your business goals, customer segments, and revenue objectives. We will develop a tailored strategy to help you launch, monetize, and scale digital services within your organization.",
+      "By giving you a portfolio of 14 digital products — from domains and email to ecommerce and SEO — that bundle naturally with your core offerings. Partners typically see ARPU increases through multi-product bundling, upsell motions across the customer lifecycle, and reduced churn from deeper digital engagement.",
   },
 ];
 

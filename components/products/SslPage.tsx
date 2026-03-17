@@ -42,23 +42,19 @@ export default function SslPage({ label }: SslPageProps) {
                   color: "#24282B",
                 }}
               >
-                SSL Certificates: White-Label Website Security for Service Providers
+                Website Security That Sells Itself — Under Your Brand
               </h1>
               <p
                 className="text-base md:text-lg leading-relaxed mb-4"
                 style={{ fontFamily: "Raleway, sans-serif", color: "#555a5e" }}
               >
-                Every SMB website that collects customer data or takes payments needs encryption and visible trust
-                signals, but most owners are unsure which SSL they need or how to install it.
+                Every SMB website that collects data or takes payments needs encryption. Most owners don&apos;t know which SSL they need or how to install it.
               </p>
               <p
                 className="text-base leading-relaxed mb-6"
                 style={{ fontFamily: "Raleway, sans-serif", color: "#555a5e" }}
               >
-                SSL is an essential, low-friction add-on that protects customers, supports compliance, and strengthens
-                every other digital service you sell. Hostopia&apos;s white-label SSL Certificates let you provide
-                secure, recognized encryption to your SMB customers—directly from your brand—without building your own
-                certificate management or support infrastructure.
+                Hostopia&apos;s white-label SSL Certificates let you offer trusted encryption, visible trust signals, and PCI compliance support — directly from your brand. The highest-attach add-on in your portfolio.
               </p>
               <div className="flex flex-wrap gap-3">
                 <Link

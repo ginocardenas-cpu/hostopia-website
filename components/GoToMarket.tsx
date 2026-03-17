@@ -6,28 +6,28 @@ const services = [
     number: "01",
     title: "Co-Branded Marketing",
     description:
-      "Ready-to-use campaigns, assets, and messaging that help you take Hostopia-powered products to market fast. Digital ads, email campaigns, landing pages, and more.",
+      "Ready-to-deploy campaigns, email templates, landing pages, and digital ads — co-branded with your identity. Launch new products to market in days, not months.",
   },
   {
     icon: BookOpen,
     number: "02",
     title: "Sales Enablement",
     description:
-      "Battle cards, pitch decks, and training programs that arm your sales teams with everything needed to confidently sell digital services to SMBs.",
+      "Battle cards, pitch decks, objection handlers, and training programs built from real partner sales cycles. Your teams sell with confidence from day one.",
   },
   {
     icon: Target,
     number: "03",
-    title: "Product Positioning",
+    title: "Product Positioning & Packaging",
     description:
-      "Strategic guidance on packaging, pricing, and positioning Hostopia products within your existing portfolio to maximize ARPU and minimize churn.",
+      "Strategic guidance on how to price, bundle, and position Hostopia products within your existing portfolio. Informed by data from 500+ partner deployments.",
   },
   {
     icon: Users2,
     number: "04",
-    title: "Partner Success Management",
+    title: "Dedicated Partner Success",
     description:
-      "A dedicated team that reviews your metrics, identifies growth opportunities, and ensures you're maximizing the full value of the Hostopia platform.",
+      "A named partner success manager who reviews your metrics, identifies growth opportunities, and ensures you're getting full value from the platform — not just a help desk ticket.",
   },
 ];
 
@@ -51,17 +51,17 @@ export default function GoToMarket() {
                 color: "#24282B",
               }}
             >
-              We Help You{" "}
-              <span style={{ color: "#2CADB2" }}>Sell It,</span>
+              We Don&apos;t Just Give You
               <br />
-              Not Just Build It.
+              a Platform.{" "}
+              <span style={{ color: "#2CADB2" }}>We Help You Sell It.</span>
             </h2>
           </div>
           <p
             className="text-base leading-relaxed max-w-sm"
             style={{ fontFamily: "Raleway, sans-serif", color: "#6b7280" }}
           >
-            Our go-to-market expertise helps service providers accelerate adoption, increase ARPU, and reduce churn from day one.
+            25+ years of experience launching digital services for service providers. Our go-to-market team accelerates adoption, increases ARPU, and reduces churn from day one.
           </p>
         </div>
 

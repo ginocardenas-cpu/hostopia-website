@@ -1,0 +1,108 @@
+{
+  "slug": "hosting",
+  "label": "Hosting",
+  "productName": "Website Hosting",
+
+  "seo": {
+    "primaryKeyword": "white-label website hosting",
+    "secondaryKeywords": [
+      "reseller hosting platform",
+      "SMB web hosting for service providers",
+      "managed website hosting",
+      "multi-site hosting for agencies",
+      "white-label WordPress hosting"
+    ],
+    "metaTitle": "White-Label Website Hosting for Service Providers | Hostopia",
+    "metaDescription": "Deliver secure, scalable website hosting under your brand. Serve SMBs and agencies alike with Hostopia's white-label hosting platform — no infrastructure to build.",
+    "urlSlug": "/products/hosting"
+  },
+
+  "hero": {
+    "eyebrow": "Website Hosting by Hostopia",
+    "headline": "Enterprise-Grade Hosting Infrastructure — Sold Under Your Brand",
+    "subheadline": "Some SMBs need more than a website builder. Agencies need multi-site management. Developers need configurable environments. Your hosting platform needs to serve them all.",
+    "description": "Hostopia's white-label Website Hosting lets you deliver secure, scalable infrastructure under your brand — from simple managed hosting for SMBs to advanced multi-site environments for agencies and developers. No hosting stack to build or maintain.",
+    "cta": { "primary": "Book a Demo", "secondary": "Talk to Partner Success" },
+    "badge": "Secure hosting infrastructure, white-labeled",
+    "sidebar": {
+      "heading": "Your customers get",
+      "items": [
+        { "title": "Deploy beyond builders", "body": "Host WordPress, custom CMS sites, or any web application in a secure, managed environment." },
+        { "title": "Scale with confidence", "body": "Resource tiers grow with traffic and complexity — no surprise outages or forced migrations." },
+        { "title": "Manage multiple sites", "body": "Multi-site plans let agencies and developers manage client environments from a single dashboard." },
+        { "title": "Bundle everything", "body": "Domains, SSL, email, and ecommerce integrate directly — one platform, one brand, one bill." }
+      ]
+    }
+  },
+
+  "features": {
+    "eyebrow": "What you deliver",
+    "heading": "Hosting for Every Customer Segment — Under One Platform",
+    "intro": "Tiered plans and flexible architecture mean you serve SMBs, WordPress users, developers, and agencies from the same white-label platform.",
+    "cards": [
+      {
+        "icon": "Shield",
+        "title": "Secure, Reliable Infrastructure",
+        "body": "Enterprise-grade data centers, high-availability architecture, and performance SLAs your customers can depend on."
+      },
+      {
+        "icon": "Layers",
+        "title": "Multi-Site Management",
+        "body": "Purpose-built plans for agencies and developers managing multiple client websites — with virtualized environments, access controls, and usage visibility."
+      },
+      {
+        "icon": "Settings",
+        "title": "CMS & Custom Site Support",
+        "body": "Host WordPress, Joomla, or custom-built sites. Full control over files, databases, and configurations for technically advanced customers."
+      },
+      {
+        "icon": "Link",
+        "title": "Integrated Digital Services",
+        "body": "Domains, SSL, business email, and ecommerce plug directly into the hosting experience. Your customers manage everything from one branded dashboard."
+      }
+    ]
+  },
+
+  "partnerAdvantage": {
+    "eyebrow": "The partner advantage",
+    "heading": "Own the Infrastructure Layer — Without Building It",
+    "intro": "Hosting anchors your SMB customers on your platform. The longer they host with you, the harder it is to leave.",
+    "items": [
+      {
+        "title": "Serve every maturity level",
+        "body": "From first-time SMB website owners to agencies managing dozens of client sites — one hosting platform serves them all under your brand."
+      },
+      {
+        "title": "Drive recurring revenue through tiers and add-ons",
+        "body": "Tiered hosting plans plus bundled domains, SSL, and email create multiple revenue streams from a single customer relationship."
+      },
+      {
+        "title": "Retain technical customers",
+        "body": "Agencies and developers managing multi-site environments on your platform are deeply embedded — that's structural retention, not just contract retention."
+      },
+      {
+        "title": "Skip the infrastructure investment",
+        "body": "Hostopia provides the data centers, tooling, and operations. You get a white-label platform with automated provisioning, SSO, and centralized management."
+      }
+    ]
+  },
+
+  "lifecycleFit": {
+    "eyebrow": "Portfolio fit",
+    "heading": "The Infrastructure Foundation for Your Digital Portfolio",
+    "intro": "Hosting sits alongside Website Builder and Website Design — ensuring you can serve every customer segment from first-time SMBs to advanced agencies.",
+    "steps": [
+      { "step": "01", "title": "Build a Brand", "body": "Domains, logo, and professional email establish the SMB identity." },
+      { "step": "02", "title": "Get Online", "body": "Website Builder for DIY, Website Design for DIFM, Hosting for technical and agency customers.", "highlight": true, "productName": "Website Hosting" },
+      { "step": "03", "title": "Get Found", "body": "SEO, directories, and reputation management drive visibility." },
+      { "step": "04", "title": "Grow", "body": "Ecommerce, email marketing, and custom development fuel growth." }
+    ],
+    "positioning": "Position hosting as an upgrade path for advanced users, a foundation for ecommerce deployments, a natural attach with domains and SSL, and the core infrastructure service for agency and developer segments."
+  },
+
+  "cta": {
+    "headline": "Ready to Deliver Enterprise-Grade Hosting Under Your Brand?",
+    "body": "Connect with Hostopia to launch white-label Website Hosting, serve every customer segment from SMBs to agencies, and anchor your digital services on infrastructure your customers depend on.",
+    "buttonText": "Book a Demo"
+  }
+}

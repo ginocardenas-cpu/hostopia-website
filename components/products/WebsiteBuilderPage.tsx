@@ -42,21 +42,19 @@ export default function WebsiteBuilderPage({ label }: WebsiteBuilderPageProps) {
                   color: "#24282B",
                 }}
               >
-                White-Label Website Builder and Hosting for Service Providers
+                AI-Powered Websites Under Your Brand — Launched in Minutes, Not Months
               </h1>
               <p
                 className="text-base md:text-lg leading-relaxed mb-4"
                 style={{ fontFamily: "Raleway, sans-serif", color: "#555a5e" }}
               >
-                Your SMB customers need more than basic hosting—they need a modern, mobile-ready website that drives
-                credibility, engagement, and growth.
+                Most SMBs don&apos;t fail online because they can&apos;t afford a website. They fail because building one feels too complex. OPB removes that friction entirely.
               </p>
               <p
                 className="text-base leading-relaxed mb-6"
                 style={{ fontFamily: "Raleway, sans-serif", color: "#555a5e" }}
               >
-                Hostopia&apos;s white-label Online Presence Builder (OPB) gives you a turnkey way to deliver AI-powered
-                websites and reliable hosting under your own brand—without adding operational complexity.
+                Your SMB customers describe their business, and AI generates a professional, mobile-ready website — complete with copy, imagery, and layout — ready to publish. Your brand stays at the center of the entire experience.
               </p>
               <div className="flex flex-wrap gap-3">
                 <Link

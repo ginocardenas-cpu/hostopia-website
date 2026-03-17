@@ -53,13 +53,13 @@ export default function Migrations() {
               Large-Scale
               <br />
               Migrations.{" "}
-              <span style={{ color: "#F8CF41" }}>Zero Drama.</span>
+              <span style={{ color: "#F8CF41" }}>Zero Disruption.</span>
             </h2>
             <p
               className="text-base leading-relaxed max-w-sm"
               style={{ fontFamily: "Raleway, sans-serif", color: "#9ca3af" }}
             >
-              Switching platforms is one of the biggest risks for any service provider. Hostopia eliminates that risk entirely — at any scale.
+              Switching platforms is one of the biggest risks for any service provider. Hostopia has engineered that risk out — with proprietary tooling, proven processes, and 20 million mailboxes of experience.
             </p>
           </div>
         </div>
@@ -105,16 +105,13 @@ export default function Migrations() {
               className="leading-relaxed mb-8"
               style={{ fontFamily: "Raleway, sans-serif", color: "#9ca3af" }}
             >
-              Migrating thousands of customers from an old platform to a new one used to mean
-              risk, complaints, and churn. Hostopia has engineered that risk out of the equation
-              entirely — so you can make the switch confidently and at any scale.
+              Migrating thousands — or millions — of customers from a legacy platform to a new one used to mean risk, complaints, and churn. Hostopia's proprietary migration tooling and experienced team have eliminated that equation entirely.
             </p>
             <p
               className="leading-relaxed mb-10"
               style={{ fontFamily: "Raleway, sans-serif", color: "#9ca3af" }}
             >
-              Every email, contact, calendar event, and file is validated pre- and post-migration.
-              Your customers never know the switch happened. Business continues uninterrupted.
+              Every email, contact, calendar event, and file is validated before and after migration. Your customers never know the switch happened.
             </p>
 
             {/* Pull quote */}

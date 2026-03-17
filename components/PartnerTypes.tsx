@@ -6,31 +6,31 @@ import AnimatedRotatingWord from "@/components/AnimatedRotatingWord";
 const partnerTypes = [
   {
     title: "Telcos & Carriers",
-    shortCopy: "Add high-margin digital services to your connectivity bundle.",
+    shortCopy: "Add high-margin digital services to your connectivity bundle. Transform one-time activations into long-term digital relationships with email, websites, and marketing tools your subscribers actually use.",
     href: "/customers/telcos",
     image: "/Home%20Page%20images/homepage-telcos.png",
     alt: "Telecommunications infrastructure",
   },
   {
+    title: "ISPs & Cable Operators",
+    shortCopy: "Move beyond bandwidth. Offer branded email, website hosting, and business tools that increase wallet share and reduce churn across your residential and business customer base.",
+    href: "/customers/isps",
+    image: "/Home%20Page%20images/homepage-isps.png",
+    alt: "ISP and cable operator infrastructure",
+  },
+  {
     title: "Resellers & Distributors",
-    shortCopy: "Expand your catalog with white-label SMB digital tools.",
+    shortCopy: "Expand your catalog with white-label SMB digital services — from domains and email to full ecommerce. Hostopia handles provisioning, support, and fulfillment while you own the customer.",
     href: "/customers/resellers",
     image: "/Home%20Page%20images/homepage-resellersanddistrib.png",
     alt: "Business partnership and distribution",
   },
   {
-    title: "Domain Registrars",
-    shortCopy: "Turn one-time domain sales into monthly recurring revenue.",
-    href: "/customers/registrars",
+    title: "MSPs & Hosting Companies",
+    shortCopy: "Complement your managed services with SMB-ready digital marketing, ecommerce, and website tools. Differentiate your offer without building or maintaining new platforms.",
+    href: "/customers/msps",
     image: "/Home%20Page%20images/homepage-domainregistrars.png",
-    alt: "Digital connectivity and domains",
-  },
-  {
-    title: "ISPs & Hosting Cos.",
-    shortCopy: "Move up the value chain with SMB digital marketing and ecommerce.",
-    href: "/customers/isps",
-    image: "/Home%20Page%20images/homepage-isps.png",
-    alt: "Data center and hosting infrastructure",
+    alt: "Managed service providers and hosting companies",
   },
 ];
 
@@ -43,7 +43,7 @@ export default function PartnerTypes() {
         <div className="text-center mb-16">
           <div className="flex items-center justify-center gap-3 mb-5">
             <div className="w-8 h-px" style={{ backgroundColor: "#2CADB2" }} />
-            <span className="section-label">Who We Partner With</span>
+            <span className="section-label">Built for Service Providers Who Sell to Small Business</span>
             <div className="w-8 h-px" style={{ backgroundColor: "#2CADB2" }} />
           </div>
           <h2
@@ -65,7 +65,7 @@ export default function PartnerTypes() {
             className="text-lg max-w-xl mx-auto"
             style={{ fontFamily: "Raleway, sans-serif", color: "#6b7280" }}
           >
-            If you sell to small businesses, Hostopia was built for you.
+            If you have an established base of SMB customers and want to deliver more value — Hostopia was built for you.
           </p>
         </div>
 

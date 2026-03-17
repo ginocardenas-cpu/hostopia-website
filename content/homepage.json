@@ -1,0 +1,383 @@
+{
+  "slug": "homepage",
+  "label": "Homepage",
+
+  "seo": {
+    "primaryKeyword": "white-label digital services platform",
+    "secondaryKeywords": [
+      "white-label SMB platform",
+      "wholesale digital services for service providers",
+      "telco digital services platform",
+      "reseller email and website hosting",
+      "private-label SMB solutions",
+      "service provider revenue growth"
+    ],
+    "metaTitle": "White-Label Digital Services Platform for Service Providers | Hostopia",
+    "metaDescription": "Launch white-label email, websites, ecommerce, and digital marketing under your brand. Hostopia helps telcos, ISPs, and resellers grow revenue and become digital advisors to SMBs.",
+    "ogTitle": "Hostopia — The White-Label Digital Services Platform for Service Providers",
+    "ogDescription": "Help your customers build a brand, get online, get found, and grow — with a complete white-label digital services platform powered by Hostopia.",
+    "keywords": "white-label digital services, wholesale email hosting, private-label website builder, telco SMB platform, service provider reseller, white-label ecommerce",
+    "schema": {
+      "organization": {
+        "name": "Hostopia",
+        "foundingDate": "1999",
+        "description": "Hostopia is a wholesale, white-label provider of digital services — email, websites, ecommerce, and digital marketing — helping service providers deliver more value to SMBs worldwide.",
+        "url": "https://www.hostopia.com",
+        "industry": "Cloud Services / White-Label Digital Platform"
+      }
+    }
+  },
+
+  "hero": {
+    "eyebrow": "White-Label Digital Services Platform",
+    "headline": "Behind the Brands That Power Small Business",
+    "subheadline": "Hostopia gives telcos, ISPs, resellers, and distributors a complete white-label platform to launch digital services, grow recurring revenue, and become the digital advisor their SMB customers trust.",
+    "cta": {
+      "primary": "Become a Partner",
+      "secondary": "Explore the Platform"
+    },
+    "stats": [
+      { "value": "500+", "label": "Service Provider Partners" },
+      { "value": "99.99%", "label": "Platform Uptime" },
+      { "value": "20M+", "label": "Mailboxes Migrated" },
+      { "value": "24/7", "label": "Multilingual Support" }
+    ],
+    "notes": "Keep trademark on 'Behind the Brands That Power Small Business™' — strong, differentiated tagline. Eyebrow now carries the SEO keyword. Subheadline tightened to add ISPs and explicitly state 'recurring revenue' and 'digital advisor' (two of the four pillars)."
+  },
+
+  "pillars": {
+    "eyebrow": "Why partners choose Hostopia",
+    "headline": "A Platform Built for Service Provider Growth",
+    "subheadline": "Four pillars that set Hostopia apart — and set your digital services business up for long-term, scalable success.",
+    "pillars": [
+      {
+        "number": "01",
+        "title": "New Revenue Streams",
+        "body": "Turn your existing customer base into a digital services revenue engine. Every SMB in your footprint needs email, websites, ecommerce, and marketing — and they'd rather buy it from you than a third party. Hostopia gives you the platform to sell it all under your brand, with flexible pricing and packaging you control.",
+        "icon": "TrendingUp"
+      },
+      {
+        "number": "02",
+        "title": "Digital Advisor Positioning",
+        "body": "Move beyond connectivity. When you deliver branded websites, professional email, SEO, and ecommerce, you become the partner SMBs depend on for their entire digital presence — not just their internet connection. That shift from infrastructure provider to digital advisor drives higher ARPU, deeper relationships, and lower churn.",
+        "icon": "Compass"
+      },
+      {
+        "number": "03",
+        "title": "Proven Technology at Scale",
+        "body": "25+ years of engineering behind a cloud-based, AI-powered platform that supports millions of mailboxes and websites worldwide. Multi-language, multi-currency, and built for the enterprise demands of telcos and national resellers. You don't need to build it — it's ready now.",
+        "icon": "Server"
+      },
+      {
+        "number": "04",
+        "title": "Expert Partner Support",
+        "body": "Dedicated partner success teams, large-scale migration expertise with proprietary tooling, bilingual end-user support, and go-to-market enablement. Hostopia's people become an invisible extension of your team — from onboarding through ongoing optimization.",
+        "icon": "Users"
+      }
+    ],
+    "notes": "Replaced generic 'Platforms, People, Technology' with Hostopia's actual four-pillar value framework. Now matches the partnerAdvantage sections on every product page. Each pillar leads with a partner outcome, not a Hostopia capability."
+  },
+
+  "partnerTypes": {
+    "eyebrow": "Who we partner with",
+    "headline": "Built for Service Providers Who Sell to Small Business",
+    "subheadline": "If you have an established base of SMB customers and want to deliver more value — Hostopia was built for you.",
+    "types": [
+      {
+        "title": "Telcos & Carriers",
+        "body": "Add high-margin digital services to your connectivity bundle. Transform one-time activations into long-term digital relationships with email, websites, and marketing tools your subscribers actually use.",
+        "link": "/partners/telcos"
+      },
+      {
+        "title": "ISPs & Cable Operators",
+        "body": "Move beyond bandwidth. Offer branded email, website hosting, and business tools that increase wallet share and reduce churn across your residential and business customer base.",
+        "link": "/partners/isps"
+      },
+      {
+        "title": "Resellers & Distributors",
+        "body": "Expand your catalog with white-label SMB digital services — from domains and email to full ecommerce. Hostopia handles provisioning, support, and fulfillment while you own the customer.",
+        "link": "/partners/resellers"
+      },
+      {
+        "title": "MSPs & Hosting Companies",
+        "body": "Complement your managed services with SMB-ready digital marketing, ecommerce, and website tools. Differentiate your offer without building or maintaining new platforms.",
+        "link": "/partners/msps"
+      }
+    ],
+    "bottomCta": {
+      "text": "Don't see your category?",
+      "link": "#contact",
+      "linkText": "Let's talk"
+    },
+    "notes": "Changed 'Domain Registrars' to 'ISPs & Cable Operators' — broader and more aligned with Hostopia's actual partner base. Each card now leads with the partner outcome, not just a feature statement. Added ISPs/Cablecos since they're a core audience per the brand framework."
+  },
+
+  "services": {
+    "eyebrow": "White-label digital services",
+    "headline": "Everything Your Customers Need to Succeed Online",
+    "subheadline": "14 products across four pillars — all white-labeled, cloud-based, and provisioned through a single platform. You set the brand, pricing, and packaging. We power everything underneath.",
+    "categories": [
+      {
+        "pillar": "Build a Brand",
+        "description": "Help SMBs establish a professional identity from day one.",
+        "products": [
+          {
+            "name": "Domains",
+            "tag": "Foundation Product",
+            "description": "White-label domain registration and management. The entry point for every digital relationship — bundled with email, websites, and security.",
+            "highlights": ["400+ TLDs available", "Automated DNS management", "Seamless cross-sell into email and hosting"],
+            "link": "/products/domains"
+          },
+          {
+            "name": "Professional Logo Design",
+            "tag": "Brand Builder",
+            "description": "Managed, white-label logo design delivered by professional designers. SMBs get agency-quality branding — you get a high-value service with zero creative overhead.",
+            "highlights": ["Guided creative process", "11 production-ready formats", "Full ownership, no licensing fees"],
+            "link": "/products/logo-design"
+          },
+          {
+            "name": "Business Email",
+            "tag": "Anchor Product",
+            "description": "Enterprise-grade, white-label email hosting with flexible tiers, built-in productivity tools, and expert migration from legacy platforms. The stickiest product in your portfolio.",
+            "highlights": ["Scalable to millions of mailboxes", "Expert legacy email migration", "24/7 end-user support included"],
+            "link": "/products/business-email"
+          }
+        ]
+      },
+      {
+        "pillar": "Get Online",
+        "description": "Give SMBs the web presence they need — from DIY to fully managed.",
+        "products": [
+          {
+            "name": "Online Presence Builder",
+            "tag": "SMB Essential",
+            "description": "AI-powered, white-label website builder that lets SMBs launch professional sites in minutes. Industry-specific templates, built-in SEO, and drag-and-drop editing.",
+            "highlights": ["AI-generated layouts and content", "Built-in SEO and analytics", "No technical skills required"],
+            "link": "/products/website-builder"
+          },
+          {
+            "name": "DIFM Website Design",
+            "tag": "High-ARPU Service",
+            "description": "Fully managed website design delivered under your brand. Professional designers, copywriters, and QA handle everything — from consultation to ongoing maintenance.",
+            "highlights": ["Complete done-for-me experience", "Private-label project center", "Monthly maintenance included"],
+            "link": "/products/website-design"
+          },
+          {
+            "name": "Website Hosting",
+            "tag": "Infrastructure Layer",
+            "description": "Secure, scalable white-label hosting for both SaaS users and technical developers. WordPress, cPanel, and managed environments — all under your brand.",
+            "highlights": ["99.99% uptime SLA", "WordPress and cPanel support", "Automated backups and security"],
+            "link": "/products/hosting"
+          },
+          {
+            "name": "SSL Certificates",
+            "tag": "Trust Builder",
+            "description": "White-label SSL certificates that protect customer data, meet compliance standards, and build visible trust. A low-friction add-on that strengthens every service you sell.",
+            "highlights": ["DV, OV, and EV certificates", "Automated provisioning", "Bundled with hosting and websites"],
+            "link": "/products/ssl"
+          }
+        ]
+      },
+      {
+        "pillar": "Get Found",
+        "description": "Drive visibility, reputation, and local discovery for SMBs.",
+        "products": [
+          {
+            "name": "Search Engine Assist",
+            "tag": "Visibility Driver",
+            "description": "White-label, guided SEO platform that helps SMBs improve search rankings without agency complexity. Task-based interface makes optimization accessible to non-technical users.",
+            "highlights": ["Guided SEO task engine", "Keyword tracking and reporting", "Competitor benchmarking"],
+            "link": "/products/seo"
+          },
+          {
+            "name": "OneList Plus",
+            "tag": "Local Presence",
+            "description": "White-label local listings management across 60+ directories. Keep SMB business information accurate everywhere — driving search visibility, trust, and foot traffic.",
+            "highlights": ["60+ directory network", "Automated sync and correction", "Visibility reporting dashboard"],
+            "link": "/products/directories"
+          },
+          {
+            "name": "Reviews Promoter",
+            "tag": "Reputation Engine",
+            "description": "AI-powered reputation management and review generation. Help SMBs collect, monitor, and respond to reviews across Google, social platforms, and industry directories.",
+            "highlights": ["Automated review requests", "AI-powered response suggestions", "Centralized monitoring dashboard"],
+            "link": "/products/reputation-management"
+          }
+        ]
+      },
+      {
+        "pillar": "Grow their Business",
+        "description": "Help SMBs sell more, reach more customers, and scale their operations.",
+        "products": [
+          {
+            "name": "Online Store",
+            "tag": "Revenue Enabler",
+            "description": "White-label ecommerce platform integrated with the Website Builder. Mobile-ready storefronts with inventory management, payment processing, and marketing tools built in.",
+            "highlights": ["Integrated payment gateways", "Inventory and order management", "Mobile-optimized storefronts"],
+            "link": "/products/ecommerce"
+          },
+          {
+            "name": "Email Marketing",
+            "tag": "Engagement Tool",
+            "description": "AI-powered email marketing platform with drag-and-drop design, audience segmentation, and automated campaign workflows. Help SMBs stay connected with their customers.",
+            "highlights": ["AI-assisted content creation", "Advanced segmentation", "Automated drip campaigns"],
+            "link": "/products/email-marketing"
+          },
+          {
+            "name": "Custom Website Design",
+            "tag": "Premium Tier",
+            "description": "Fully custom WordPress websites built to SMB brand and business goals. For customers who need more than templates — with full ownership and ongoing support.",
+            "highlights": ["Custom WordPress builds", "Collaborative design process", "Full code ownership"],
+            "link": "/products/custom-website-development"
+          },
+          {
+            "name": "Online Fax",
+            "tag": "Compliance Ready",
+            "description": "Cloud-based, white-label fax that replaces legacy hardware. HIPAA-ready, email-integrated, and built for industries where fax remains a compliance requirement.",
+            "highlights": ["HIPAA-compliant delivery", "Email and web portal access", "No hardware required"],
+            "link": "/products/digital-fax"
+          }
+        ]
+      }
+    ],
+    "notes": "Restructured from 5 cherry-picked services to all 14 products organized by the four portfolio pillars — matching product page structure and nav-products.ts exactly. Each product links to its dedicated page. Tags match the positioning in the individual product page JSON files."
+  },
+
+  "migrations": {
+    "eyebrow": "Migration capabilities",
+    "headline": "Large-Scale Migrations. Zero Disruption.",
+    "subheadline": "Switching platforms is one of the biggest risks for any service provider. Hostopia has engineered that risk out — with proprietary tooling, proven processes, and 20 million mailboxes of experience.",
+    "stats": [
+      { "value": "20M+", "label": "Mailboxes Migrated" },
+      { "value": "99.99%", "label": "Uptime During Migration" },
+      { "value": "0", "label": "Minutes of Downtime" },
+      { "value": "100%", "label": "Data Integrity" }
+    ],
+    "body": "Migrating thousands — or millions — of customers from a legacy platform to a new one used to mean risk, complaints, and churn. Hostopia's proprietary migration tooling and experienced team have eliminated that equation entirely. Every email, contact, calendar event, and file is validated before and after migration. Your customers never know the switch happened.",
+    "quote": {
+      "text": "We moved 2.3 million mailboxes over a long weekend. No tickets. No complaints.",
+      "attribution": "Hostopia Migration Team"
+    },
+    "capabilities": [
+      "Email Migrations",
+      "Domain Transfers",
+      "Website Migrations",
+      "DNS Migrations",
+      "Contact & Calendar Sync",
+      "Control Panel Transfers"
+    ],
+    "notes": "Minor tightening only — this was already one of the strongest sections. Changed 'Zero Drama' to 'Zero Disruption' (more professional per brand voice). Added 'proprietary tooling' and '20 million mailboxes of experience' to subheadline for specificity."
+  },
+
+  "bilingualSupport": {
+    "eyebrow": "White-label customer support",
+    "headline": "24/7 Multilingual Support — Under Your Brand",
+    "subheadline": "Your customers call your brand. Our team answers as your team. Phone, chat, and email — with defined SLAs, measurable KPIs, and full reporting.",
+    "body": "Exceptional customer support is a competitive advantage, not a cost center. Hostopia's multilingual support team delivers high-quality, on-brand interactions across every channel — so you can scale your customer base without scaling your headcount.",
+    "cta": "Talk to Us About Support",
+    "stats": [
+      { "value": "EN / FR / SP", "label": "Multilingual, North America Based" },
+      { "value": "24/7", "label": "Always-On Availability" },
+      { "value": "<60s", "label": "First Reply SLA" },
+      { "value": "98%", "label": "Customer Satisfaction Score" }
+    ],
+    "notes": "Changed headline from 'Support That Sounds Like You' (vague/clever) to '24/7 Multilingual Support — Under Your Brand' (specific, keyword-rich). Lead with the measurable outcomes. Added 'not a cost center' framing to reposition support as a strategic asset."
+  },
+
+  "goToMarket": {
+    "eyebrow": "Go-to-market services",
+    "headline": "We Don't Just Give You a Platform. We Help You Sell It.",
+    "subheadline": "25+ years of experience launching digital services for service providers. Our go-to-market team accelerates adoption, increases ARPU, and reduces churn from day one.",
+    "services": [
+      {
+        "title": "Co-Branded Marketing",
+        "description": "Ready-to-deploy campaigns, email templates, landing pages, and digital ads — co-branded with your identity. Launch new products to market in days, not months.",
+        "icon": "Megaphone"
+      },
+      {
+        "title": "Sales Enablement",
+        "description": "Battle cards, pitch decks, objection handlers, and training programs built from real partner sales cycles. Your teams sell with confidence from day one.",
+        "icon": "Target"
+      },
+      {
+        "title": "Product Positioning & Packaging",
+        "description": "Strategic guidance on how to price, bundle, and position Hostopia products within your existing portfolio. Informed by data from 500+ partner deployments.",
+        "icon": "BarChart3"
+      },
+      {
+        "title": "Dedicated Partner Success",
+        "description": "A named partner success manager who reviews your metrics, identifies growth opportunities, and ensures you're getting full value from the platform — not just a help desk ticket.",
+        "icon": "Handshake"
+      }
+    ],
+    "notes": "Moved 'We Don't Just Give You a Platform. We Help You Win.' from WhyHostopia to here where it's more relevant. Added '25+ years' and '500+ partner deployments' for specificity. Each service now has a differentiating detail instead of generic descriptions."
+  },
+
+  "whyHostopia": {
+    "eyebrow": "Why Hostopia",
+    "headline": "The Partner You Want Behind Your Brand",
+    "body": "Hostopia is more than a technology vendor. We're a strategic partner with 25+ years of experience in the service provider business — the pressures, the opportunities, and what it takes to make SMBs loyal customers for life. We've helped hundreds of telcos, ISPs, and resellers launch, package, and grow digital service portfolios across markets worldwide.",
+    "cta": "Talk to a Partner Expert",
+    "model": [
+      { "partner": "You brand it.", "hostopia": "We build and run it." },
+      { "partner": "You set the pricing.", "hostopia": "We power the platform." },
+      { "partner": "You own the customer.", "hostopia": "We handle the complexity." },
+      { "partner": "You grow the revenue.", "hostopia": "We ensure the reliability." }
+    ],
+    "notes": "Swapped headline to 'The Partner You Want Behind Your Brand' — aligns with the 'Behind the Brands' tagline. Model section kept intact (strong as-is). Body tightened and added '25+ years' and 'markets worldwide' for specificity and global appeal."
+  },
+
+  "cta": {
+    "eyebrow": "Ready to grow?",
+    "headline": "Launch Your White-Label Digital Services Portfolio",
+    "body": "Join 500+ service providers who trust Hostopia to power their digital services. Talk to our team and discover how quickly you can go to market.",
+    "bullets": [
+      "Unlock new recurring revenue from your existing customer base",
+      "Go to market in weeks with a proven, white-label platform",
+      "Scale confidently with migration expertise and 24/7 support"
+    ],
+    "formTitle": "Talk to a Partner Expert",
+    "formFields": [
+      { "name": "firstName", "placeholder": "Jane", "label": "First Name" },
+      { "name": "lastName", "placeholder": "Smith", "label": "Last Name" },
+      { "name": "workEmail", "placeholder": "jane@telco.com", "label": "Work Email" },
+      { "name": "companyRole", "placeholder": "VP Product, Acme Telco", "label": "Company & Role" },
+      { "name": "goals", "placeholder": "Tell us about your goals...", "label": "What are you looking to achieve?" }
+    ],
+    "formButton": "Send Message",
+    "emailFallback": "Or email us directly at partners@hostopia.com",
+    "notes": "Changed headline from 'Let's Build Your Digital Revenue Engine' (vague) to 'Launch Your White-Label Digital Services Portfolio' (keyword-rich, specific). Bullets rewritten to map to the three pillars: revenue, speed-to-market, and support."
+  },
+
+  "faq": {
+    "eyebrow": "Frequently asked questions",
+    "headline": "Frequently Asked Questions",
+    "items": [
+      {
+        "question": "What is Hostopia's white-label digital services platform?",
+        "answer": "Hostopia provides a complete white-label platform that lets service providers — telcos, ISPs, resellers, and MSPs — sell digital services under their own brand. The platform includes email hosting, website builders, ecommerce, SEO tools, reputation management, and more. You control the branding, pricing, and packaging. Hostopia handles provisioning, infrastructure, and optional end-user support."
+      },
+      {
+        "question": "What types of service providers does Hostopia work with?",
+        "answer": "Hostopia partners with telcos, cable operators, ISPs, hosting companies, domain registrars, resellers, distributors, and MSPs worldwide. If you have an established base of SMB customers and want to add digital services revenue, Hostopia was built for your business model."
+      },
+      {
+        "question": "How quickly can we launch digital services with Hostopia?",
+        "answer": "Most partners go to market within weeks. Hostopia's platform is pre-built and ready for white-labeling — no development required. Our onboarding team handles integration, branding, and training so your teams can start selling immediately."
+      },
+      {
+        "question": "Can Hostopia migrate our existing email or website customers?",
+        "answer": "Yes. Hostopia has migrated over 20 million mailboxes using proprietary tooling that ensures zero downtime and 100% data integrity. We also handle domain transfers, website migrations, DNS migrations, and control panel transfers — at any scale."
+      },
+      {
+        "question": "Is the platform fully white-labeled?",
+        "answer": "Everything is white-labeled — the customer-facing portals, admin tools, email interfaces, support interactions, and marketing materials. Your customers see your brand at every touchpoint. Hostopia operates entirely behind the scenes."
+      },
+      {
+        "question": "How does Hostopia help increase partner revenue?",
+        "answer": "By giving you a portfolio of 14 digital products — from domains and email to ecommerce and SEO — that bundle naturally with your core offerings. Partners typically see ARPU increases through multi-product bundling, upsell motions across the customer lifecycle, and reduced churn from deeper digital engagement."
+      }
+    ],
+    "notes": "Cut from 10 to 6 FAQs. Each answer is shorter, more specific, and weaves in target keywords naturally. Removed generic/repetitive answers. Added migration FAQ (Hostopia's strongest differentiator). These still work with FAQPage schema markup."
+  }
+}

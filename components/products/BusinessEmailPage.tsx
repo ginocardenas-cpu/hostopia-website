@@ -42,22 +42,19 @@ export default function BusinessEmailPage({ label }: BusinessEmailPageProps) {
                   color: "#24282B",
                 }}
               >
-                Business Email: White-Label Professional Email for Service Providers
+                Secure, Professional Email — Delivered Under Your Brand
               </h1>
               <p
                 className="text-base md:text-lg leading-relaxed mb-4"
                 style={{ fontFamily: "Raleway, sans-serif", color: "#555a5e" }}
               >
-                Email remains the backbone of communication for people and businesses alike — a mission-critical tool
-                for staying connected, exchanging information, and closing deals.
+                Email is mission-critical infrastructure. Every business needs it, every customer expects it, and the provider who delivers it becomes the anchor of that relationship.
               </p>
               <p
                 className="text-base leading-relaxed mb-6"
                 style={{ fontFamily: "Raleway, sans-serif", color: "#555a5e" }}
               >
-                Give your customers the security, reliability, and professionalism they can depend on with Hostopia
-                Email. Differentiate your offering and grow customer loyalty with secure, reliable email powered by
-                Hostopia.
+                Hostopia&apos;s white-label Business Email gives you a scalable, enterprise-grade email platform to resell under your brand. Domain-based business email, consumer email, or both — with flexible packaging, expert migrations, and 24/7 end-user support.
               </p>
               <div className="flex flex-wrap gap-3">
                 <Link

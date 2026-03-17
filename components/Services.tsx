@@ -80,23 +80,31 @@ export default function Services() {
         <div className="mb-16">
           <div className="flex items-center gap-3 mb-5">
             <div className="w-8 h-px" style={{ backgroundColor: "#2CADB2" }} />
-            <span className="section-label">White-Label Solutions</span>
+            <span className="section-label">White-Label Digital Services</span>
           </div>
           <div className="flex flex-col md:flex-row md:items-center gap-10 justify-between">
-            <h2
-              className="font-black leading-tight"
-              style={{
-                fontFamily: "Montserrat, sans-serif",
-                fontSize: "clamp(2.5rem, 5vw, 4.5rem)",
-                color: "#24282B",
-                maxWidth: "600px",
-              }}
-            >
-              Everything Your Customers
-              <br />
-              Need to{" "}
-              <span style={{ color: "#2CADB2" }}>Succeed Online</span>
-            </h2>
+            <div>
+              <h2
+                className="font-black leading-tight mb-4"
+                style={{
+                  fontFamily: "Montserrat, sans-serif",
+                  fontSize: "clamp(2.5rem, 5vw, 4.5rem)",
+                  color: "#24282B",
+                  maxWidth: "600px",
+                }}
+              >
+                Everything Your Customers
+                <br />
+                Need to{" "}
+                <span style={{ color: "#2CADB2" }}>Succeed Online</span>
+              </h2>
+              <p
+                className="text-base leading-relaxed max-w-lg"
+                style={{ fontFamily: "Raleway, sans-serif", color: "#6b7280" }}
+              >
+                14 products across four pillars — all white-labeled, cloud-based, and provisioned through a single platform. You set the brand, pricing, and packaging. We power everything underneath.
+              </p>
+            </div>
 
             {/* Section image — right of headline */}
             <div className="relative flex-shrink-0 w-full md:w-[340px] lg:w-[400px] rounded-3xl overflow-hidden shadow-md">

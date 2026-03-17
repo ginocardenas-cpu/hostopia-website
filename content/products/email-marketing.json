@@ -1,0 +1,114 @@
+{
+  "slug": "email-marketing",
+  "label": "Email Marketing",
+  "productName": "Email Marketing",
+
+  "seo": {
+    "primaryKeyword": "white-label email marketing platform",
+    "secondaryKeywords": [
+      "email marketing for SMBs",
+      "branded email marketing solution",
+      "AI email marketing reseller",
+      "email marketing for service providers"
+    ],
+    "metaTitle": "White-Label Email Marketing Platform for Service Providers | Hostopia",
+    "metaDescription": "Add AI-powered email marketing to your digital portfolio. Hostopia's white-label platform lets telcos, ISPs, and MSPs drive SMB engagement and recurring revenue.",
+    "urlSlug": "/products/email-marketing"
+  },
+
+  "hero": {
+    "eyebrow": "Email Marketing by Hostopia",
+    "headline": "White-Label Email Marketing That Drives Revenue",
+    "stat": "$36 return for every $1 spent — highest ROI digital channel",
+    "subheadline": "Your SMB customers need email marketing. The question is whether they get it from you — or from a tool that has no connection to your brand.",
+    "description": "Hostopia puts an AI-powered campaign platform in their hands, under your logo — turning email into a recurring revenue stream you control.",
+    "cta": { "primary": "Book a Demo", "secondary": "Talk to Partner Success" },
+    "badge": "AI-powered email campaigns, branded as yours",
+    "sidebar": {
+      "heading": "Your SMB customers can",
+      "items": [
+        { "title": "Create campaigns in minutes", "body": "AI generates professional email copy, images, and layouts tailored to their business type." },
+        { "title": "Automate engagement", "body": "Welcome sequences, promotions, and re-engagement flows run automatically." },
+        { "title": "Grow their audience", "body": "Embeddable signup forms and list management turn website visitors into subscribers." },
+        { "title": "See what's working", "body": "Opens, clicks, and conversion analytics give visibility into campaign performance." }
+      ]
+    }
+  },
+
+  "features": {
+    "eyebrow": "What you deliver",
+    "heading": "Everything Your SMBs Need — Under Your Brand",
+    "intro": "Hostopia handles the technology. You own the customer experience.",
+    "cards": [
+      {
+        "icon": "Sparkles",
+        "title": "AI-Powered Campaign Builder",
+        "body": "Customers create professional emails in minutes using AI-generated copy, images, and layouts tailored to their business type. No design skills required."
+      },
+      {
+        "icon": "Target",
+        "title": "Smart Segmentation & Automation",
+        "body": "Automated workflows and audience segmentation deliver the right message at the right time — welcome sequences, promotions, re-engagement flows."
+      },
+      {
+        "icon": "Paintbrush",
+        "title": "Drag-and-Drop Editor",
+        "body": "Mobile-responsive templates plus custom HTML support. Simplicity for beginners, full creative control for advanced users."
+      },
+      {
+        "icon": "Users",
+        "title": "Contact & List Management",
+        "body": "Built-in subscriber forms and list management connect to their website, turning visitors into contacts automatically."
+      },
+      {
+        "icon": "BarChart3",
+        "title": "Performance Analytics",
+        "body": "Opens, clicks, conversions, and audience insights — giving SMBs visibility into what works and your team data to drive upsell conversations."
+      },
+      {
+        "icon": "Package",
+        "title": "Flexible Packaging",
+        "body": "Sell standalone or bundled with hosting and website design. You set the plans, tiers, and pricing that match your market strategy."
+      }
+    ]
+  },
+
+  "partnerAdvantage": {
+    "eyebrow": "The partner advantage",
+    "heading": "Built for Service Providers. Not Bolted On.",
+    "intro": "Email marketing that integrates into your ecosystem — not another disconnected SaaS tool for your customers.",
+    "items": [
+      {
+        "title": "Cross-sell into your base",
+        "body": "Every website and hosting customer is an email marketing prospect. Bundling drives higher attachment rates and reduces churn across your portfolio."
+      },
+      {
+        "title": "Launch without complexity",
+        "body": "Automated provisioning through Hostopia's platform. No infrastructure to build, no campaign management to staff, no onboarding bottlenecks."
+      },
+      {
+        "title": "Scale revenue, not headcount",
+        "body": "AI handles the heavy lifting for your SMB customers. Automation handles it for your operations team. You grow revenue without growing cost."
+      }
+    ]
+  },
+
+  "lifecycleFit": {
+    "eyebrow": "Portfolio fit",
+    "heading": "Email Naturally Fits Your Digital Services Stack",
+    "intro": "When you deliver email marketing through Hostopia, you capture a service your customers are already paying for elsewhere — or missing entirely.",
+    "steps": [
+      { "step": "01", "title": "Build a Brand", "body": "Domains, logo, and professional email establish the SMB identity." },
+      { "step": "02", "title": "Get Online", "body": "AI-powered websites and hosting launch their digital presence." },
+      { "step": "03", "title": "Get Found", "body": "SEO, directories, and reputation management drive visibility." },
+      { "step": "04", "title": "Grow", "body": "Email marketing, ecommerce, and custom development fuel repeat business and growth.", "highlight": true, "productName": "Email Marketing" }
+    ],
+    "positioning": "Email naturally bundles with websites, domains, and hosting — increasing product attachment and reducing churn. One dashboard, one provider, one bill."
+  },
+
+  "cta": {
+    "headline": "Ready to Add Email Marketing to Your Digital Services?",
+    "body": "Connect with Hostopia to launch branded email marketing, increase product attachment across your SMB base, and turn a proven channel into scalable recurring revenue.",
+    "buttonText": "Book a Demo"
+  }
+}

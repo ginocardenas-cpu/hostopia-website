@@ -1,0 +1,104 @@
+{
+  "slug": "business-email",
+  "label": "Business Email",
+  "productName": "Business Email",
+
+  "seo": {
+    "primaryKeyword": "white-label business email platform",
+    "secondaryKeywords": [
+      "business email for SMBs",
+      "reseller email hosting",
+      "white-label email service",
+      "professional email for small business",
+      "email platform for service providers"
+    ],
+    "metaTitle": "White-Label Business Email for Service Providers | Hostopia",
+    "metaDescription": "Deliver secure, professional business email under your brand. Hostopia's white-label email platform supports domain-based and consumer email with flexible packaging, expert migrations, and 24/7 support.",
+    "urlSlug": "/products/business-email"
+  },
+
+  "hero": {
+    "eyebrow": "Business Email by Hostopia",
+    "headline": "Secure, Professional Email — Delivered Under Your Brand",
+    "subheadline": "Email is mission-critical infrastructure. Every business needs it, every customer expects it, and the provider who delivers it becomes the anchor of that relationship.",
+    "description": "Hostopia's white-label Business Email gives you a scalable, enterprise-grade email platform to resell under your brand. Domain-based business email, consumer email, or both — with flexible packaging, expert migrations, and 24/7 end-user support.",
+    "cta": { "primary": "Book a Demo", "secondary": "Talk to Partner Success" },
+    "badge": "Enterprise-grade email, white-labeled for partners",
+    "sidebar": {
+      "heading": "Your SMB customers get",
+      "items": [
+        { "title": "Professional domain-based email", "body": "Business email on their own domain builds credibility and trust with every message sent." },
+        { "title": "Ad-free branded webmail", "body": "A modern, feature-rich webmail experience with calendars, contacts, tasks, and online storage — no ads, ever." },
+        { "title": "Enterprise-grade security", "body": "Anti-virus protection, configurable spam filtering, trusted/blocked sender lists, and optional backups." },
+        { "title": "Access anywhere", "body": "Full IMAP, POP, and SMTP support. Works with Outlook, Apple Mail, mobile clients, and webmail — any device, anywhere." }
+      ]
+    }
+  },
+
+  "features": {
+    "eyebrow": "What you deliver",
+    "heading": "A Complete Email Platform — Packaged Your Way",
+    "intro": "Hostopia handles the infrastructure, security, and support. You control the packaging, pricing, and customer experience.",
+    "cards": [
+      {
+        "icon": "Mail",
+        "title": "Flexible Email Tiers",
+        "body": "Domain-based business email, consumer email, or both. Flexible storage tiers at 3 GB, 6 GB, 9 GB, and 12 GB — so you can tailor plans, upsell premium options, and monetize overages."
+      },
+      {
+        "icon": "Shield",
+        "title": "Enterprise-Grade Security",
+        "body": "Built-in anti-virus, configurable spam filtering, trusted and blocked sender lists, and optional backup. Security that SMBs need but rarely configure on their own."
+      },
+      {
+        "icon": "Users",
+        "title": "Built-In Productivity Tools",
+        "body": "Shared calendars, contacts, tasks, and traffic alerts keep SMB teams synchronized — turning email into a lightweight collaboration platform."
+      },
+      {
+        "icon": "RefreshCw",
+        "title": "Expert Email Migration",
+        "body": "Hostopia's proprietary migration tools and experienced team move users from legacy platforms with zero downtime. No data loss, no disruption, no customer churn."
+      }
+    ]
+  },
+
+  "partnerAdvantage": {
+    "eyebrow": "The partner advantage",
+    "heading": "The Anchor Product That Holds Your Portfolio Together",
+    "intro": "Email is the highest-usage digital product in your stack. The partner who delivers it becomes the partner SMBs depend on every day.",
+    "items": [
+      {
+        "title": "Create a sticky, high-usage anchor",
+        "body": "Email is used daily. Once an SMB is on your email platform, switching costs are high and retention is strong — making it the foundation for long-term customer value."
+      },
+      {
+        "title": "Bundle with everything you sell",
+        "body": "Email pairs with domains, hosting, websites, and connectivity. Bundle it to increase ARPU, reduce churn, and deliver a single-provider experience SMBs prefer."
+      },
+      {
+        "title": "Consolidate legacy platforms",
+        "body": "Replace fragmented, outdated email systems with a single modern platform. Hostopia's migration team handles the transition — you reduce operational complexity and cost."
+      }
+    ]
+  },
+
+  "lifecycleFit": {
+    "eyebrow": "Portfolio fit",
+    "heading": "The Foundation of Every Business Relationship",
+    "intro": "Email is the first digital product most businesses use every day. It anchors the entire portfolio — from domains and websites to marketing and security.",
+    "steps": [
+      { "step": "01", "title": "Build a Brand", "body": "Business Email on a custom domain establishes professional identity from day one.", "highlight": true, "productName": "Business Email" },
+      { "step": "02", "title": "Get Online", "body": "Websites and hosting launch the digital presence." },
+      { "step": "03", "title": "Get Found", "body": "SEO, directories, and reputation management drive visibility." },
+      { "step": "04", "title": "Grow", "body": "Ecommerce, email marketing, and advanced services drive revenue growth." }
+    ],
+    "positioning": "Position email as the anchor product that bundles with everything — domains, hosting, websites, and connectivity. Every customer needs it, every product benefits from it, and switching costs keep retention high."
+  },
+
+  "cta": {
+    "headline": "Ready to Make Business Email Your Anchor Product?",
+    "body": "Connect with Hostopia to launch white-label Business Email, migrate existing users with zero downtime, and bundle it with the connectivity and digital services you already sell.",
+    "buttonText": "Book a Demo"
+  }
+}

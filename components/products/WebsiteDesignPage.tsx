@@ -51,22 +51,19 @@ export default function WebsiteDesignPage({ label }: WebsiteDesignPageProps) {
                   color: "#24282B",
                 }}
               >
-                DIFM Website Design: White-Label Professional Websites for Service Providers
+                Professional Websites for SMBs — Built by Our Team, Branded as Yours
               </h1>
               <p
                 className="text-base md:text-lg leading-relaxed mb-4"
                 style={{ fontFamily: "Raleway, sans-serif", color: "#555a5e" }}
               >
-                Boost revenue. Build loyalty. Power growth with Hostopia&apos;s Website Design service.
+                Thousands of SMBs have no website or an outdated one that hurts credibility. Most don&apos;t have the time, skills, or interest in building it themselves.
               </p>
               <p
                 className="text-base leading-relaxed mb-6"
                 style={{ fontFamily: "Raleway, sans-serif", color: "#555a5e" }}
               >
-                Thousands of SMBs still struggle online — many have no website or have outdated websites that hurt their
-                credibility and visibility. Many don&apos;t have the time to invest and prefer a do-it-for-me
-                alternative. With Hostopia&apos;s white-label DIFM Website Design service, you can deliver beautiful,
-                mobile-ready websites that convert visitors into customers — all under your brand.
+                Hostopia&apos;s white-label DIFM Website Design gives you a fully managed design service to resell under your brand. Our team handles everything — consultation, design, copywriting, QA, and ongoing maintenance — while you own the customer relationship and revenue.
               </p>
               <div className="flex flex-wrap gap-3">
                 <Link

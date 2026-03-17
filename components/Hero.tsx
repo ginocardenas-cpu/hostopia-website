@@ -74,9 +74,9 @@ export default function Hero() {
             className="text-lg md:text-xl leading-relaxed mb-10"
             style={{ fontFamily: "Raleway, sans-serif", color: "#555a5e" }}
           >
-            Hostopia gives telcos, resellers, and distributors a complete
-            white-label platform to launch digital services, drive new revenue,
-            and become true digital advisors to the small businesses they serve.
+            Hostopia gives telcos, ISPs, resellers, and distributors a complete
+            white-label platform to launch digital services, grow recurring revenue,
+            and become the digital advisor their SMB customers trust.
           </p>
 
           {/* CTAs */}

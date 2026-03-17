@@ -44,17 +44,13 @@ export default function DomainsPage({ label }: DomainsPageProps) {
                   color: "#24282B",
                 }}
               >
-                Turn domains into a powerful growth driver.
+                Every SMB Relationship Starts with a Domain — Make Sure It Starts with You
               </h1>
               <p
                 className="text-base md:text-lg leading-relaxed mb-6"
                 style={{ fontFamily: "Raleway, sans-serif", color: "#555a5e" }}
               >
-                Domains are where most businesses start their online journey—and where they decide which provider will
-                power everything that comes next. With Hostopia&apos;s{" "}
-                <span className="font-semibold">white-label Domains platform</span>, you sell and manage domains under
-                your own brand, then seamlessly attach email, websites, and security services that drive long-term
-                revenue and loyalty.
+                Domains are where SMBs choose who powers their digital presence. When that first registration happens on your platform, everything else follows — email, websites, security, and growth services. Hostopia&apos;s white-label Domains platform lets you sell and manage domains under your brand, then seamlessly attach the services that drive long-term revenue and loyalty.
               </p>
               <div className="flex flex-wrap gap-3">
                 <Link

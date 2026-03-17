@@ -1,0 +1,104 @@
+{
+  "slug": "ssl",
+  "label": "SSL",
+  "productName": "SSL Certificates",
+
+  "seo": {
+    "primaryKeyword": "white-label SSL certificates",
+    "secondaryKeywords": [
+      "SSL certificates for service providers",
+      "website security for SMBs",
+      "managed SSL platform",
+      "PCI compliance SSL",
+      "white-label website security"
+    ],
+    "metaTitle": "White-Label SSL Certificates for Service Providers | Hostopia",
+    "metaDescription": "Add trusted SSL certificates to your digital portfolio. Hostopia's white-label SSL platform lets you secure SMB websites, support PCI compliance, and grow recurring revenue.",
+    "urlSlug": "/products/ssl"
+  },
+
+  "hero": {
+    "eyebrow": "SSL Certificates by Hostopia",
+    "headline": "Website Security That Sells Itself — Under Your Brand",
+    "subheadline": "Every SMB website that collects data or takes payments needs encryption. Most owners don't know which SSL they need or how to install it.",
+    "description": "Hostopia's white-label SSL Certificates let you offer trusted encryption, visible trust signals, and PCI compliance support — directly from your brand. The highest-attach add-on in your portfolio.",
+    "cta": { "primary": "Book a Demo", "secondary": "Talk to Partner Success" },
+    "badge": "Trusted certificate authorities, white-labeled",
+    "sidebar": {
+      "heading": "Your SMB customers get",
+      "items": [
+        { "title": "Data protection", "body": "128-bit encryption protects sensitive information — logins, payments, personal data — in transit between browser and server." },
+        { "title": "Visible trust signals", "body": "Browser padlock, site seals, and (for EV) green address bar that visitors can click to verify security." },
+        { "title": "PCI compliance support", "body": "Meet basic security requirements for accepting credit cards and complying with PCI standards." },
+        { "title": "Better search rankings", "body": "Encrypted sites benefit from improved visibility on major search engines." }
+      ]
+    }
+  },
+
+  "features": {
+    "eyebrow": "What you deliver",
+    "heading": "SSL for Every SMB Scenario — One Platform",
+    "intro": "From basic blogs to high-volume ecommerce, Hostopia's SSL portfolio covers the full range of SMB security needs.",
+    "cards": [
+      {
+        "icon": "Shield",
+        "title": "Domain Validation (DV SSL)",
+        "body": "Entry-level encryption with domain validation and static site seal. Ideal for blogs, informational sites, and businesses just getting started online."
+      },
+      {
+        "icon": "Building2",
+        "title": "Organization Validation (OV SSL)",
+        "body": "Company-validated encryption with dynamic site seal and higher warranty. Recommended for commercial and public-facing business sites."
+      },
+      {
+        "icon": "ShieldCheck",
+        "title": "Extended Validation (EV SSL)",
+        "body": "Highest level of validation with company verification, green address bar, and premium warranty. Built for ecommerce and login-heavy sites."
+      },
+      {
+        "icon": "Globe",
+        "title": "Wildcard SSL",
+        "body": "Secures a domain and all subdomains (store.example.com, mail.example.com) with one certificate — reducing complexity and cost for growing businesses."
+      }
+    ]
+  },
+
+  "partnerAdvantage": {
+    "eyebrow": "The partner advantage",
+    "heading": "The Highest-Attach Add-On in Your Portfolio",
+    "intro": "SSL is essential, low-friction, and bundles with everything. Every website, every store, every hosting plan is an SSL opportunity.",
+    "items": [
+      {
+        "title": "Bundle with everything",
+        "body": "SSL pairs naturally with websites, ecommerce, hosting, and email. Bundle it into your core plans or sell it as a standalone security add-on."
+      },
+      {
+        "title": "Drive recurring revenue",
+        "body": "Annual certificate renewals create predictable, recurring subscription revenue with minimal support overhead."
+      },
+      {
+        "title": "Position as a security advisor",
+        "body": "Offering SSL alongside your digital services signals to SMBs that you care about their security — not just their hosting. That trust drives retention."
+      }
+    ]
+  },
+
+  "lifecycleFit": {
+    "eyebrow": "Portfolio fit",
+    "heading": "Security That Strengthens Every Service You Sell",
+    "intro": "SSL reinforces every other product in your portfolio — websites load with trust signals, stores meet PCI requirements, and email connections stay encrypted.",
+    "steps": [
+      { "step": "01", "title": "Build a Brand", "body": "Domains, logo, and professional email establish the SMB identity." },
+      { "step": "02", "title": "Get Online", "body": "SSL secures websites and hosting from the moment they launch.", "highlight": true, "productName": "SSL Certificates" },
+      { "step": "03", "title": "Get Found", "body": "Encrypted sites benefit from better search rankings and visitor trust." },
+      { "step": "04", "title": "Grow", "body": "EV and Wildcard SSL support ecommerce, multi-site environments, and scaling." }
+    ],
+    "positioning": "Position SSL as a default attach with every website and hosting plan, a required security layer for ecommerce, and a trust-building upsell for any SMB with a public-facing site."
+  },
+
+  "cta": {
+    "headline": "Ready to Make SSL a Default Part of Your Digital Services?",
+    "body": "Connect with Hostopia to launch white-label SSL certificates, bundle them across your web and ecommerce portfolio, and give your SMB customers the security they need to build trust online.",
+    "buttonText": "Book a Demo"
+  }
+}

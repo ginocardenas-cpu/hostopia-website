@@ -1,0 +1,104 @@
+{
+  "slug": "reputation-management",
+  "label": "Reputation Management",
+  "productName": "Reviews Promoter",
+
+  "seo": {
+    "primaryKeyword": "white-label reputation management",
+    "secondaryKeywords": [
+      "online reviews management for SMBs",
+      "review generation software",
+      "AI reputation management platform",
+      "local business reputation management",
+      "white-label reviews platform"
+    ],
+    "metaTitle": "White-Label Reputation Management for Service Providers | Hostopia",
+    "metaDescription": "Launch AI-powered reviews and reputation management under your brand. Reviews Promoter helps SMBs collect 5-star reviews, manage social media, and build trust at scale.",
+    "urlSlug": "/products/reputation-management"
+  },
+
+  "hero": {
+    "eyebrow": "Reviews Promoter by Hostopia",
+    "headline": "Turn Happy Customers into 5-Star Reviews — Under Your Brand",
+    "subheadline": "Online reviews influence every buying decision. But most SMBs don't have a system to consistently request, monitor, and respond to feedback across Google, social media, and review sites.",
+    "description": "Reviews Promoter is an AI-driven reputation and social media management platform built for SMBs who need a simple way to generate trust, build social proof, and stay visible — all delivered white-label under your brand.",
+    "cta": { "primary": "Book a Demo", "secondary": "Talk to Partner Success" },
+    "badge": "AI-powered reviews & social management",
+    "sidebar": {
+      "heading": "Your SMB customers can",
+      "items": [
+        { "title": "Collect 5-star reviews", "body": "Request reviews via text message and automatically share positive feedback across social channels." },
+        { "title": "Showcase testimonials", "body": "Embed live, positive reviews directly on their website to boost credibility and conversion." },
+        { "title": "Manage social media", "body": "Schedule posts across multiple platforms from one calendar, based on demographics, interests, and frequency." },
+        { "title": "Monitor everything in one place", "body": "Track reviews, social activity, and competitor feedback across the web — respond from a single dashboard." }
+      ]
+    }
+  },
+
+  "features": {
+    "eyebrow": "What you deliver",
+    "heading": "Reviews, Social, and Reputation — One Platform",
+    "intro": "Reviews Promoter combines review generation, social media management, and competitive tracking in a single white-label platform.",
+    "cards": [
+      {
+        "icon": "Star",
+        "title": "Automated Review Collection",
+        "body": "SMS-based review requests with automatic sharing of positive reviews to social channels. Consistent review volume without manual effort."
+      },
+      {
+        "icon": "MessageSquare",
+        "title": "Centralized Review Management",
+        "body": "Monitor and respond to reviews across Google, Facebook, Yelp, and other platforms from one dashboard. No more logging into multiple sites."
+      },
+      {
+        "icon": "Calendar",
+        "title": "Social Media Scheduling",
+        "body": "Plan and schedule branded posts across multiple social platforms. Demographic targeting, frequency control, and bulk scheduling in one calendar."
+      },
+      {
+        "icon": "Eye",
+        "title": "Competition Tracker",
+        "body": "Monitor what customers say about competitors to identify gaps, opportunities, and messaging advantages for your SMB customers."
+      }
+    ]
+  },
+
+  "partnerAdvantage": {
+    "eyebrow": "The partner advantage",
+    "heading": "Tie Your Brand to Measurable Business Outcomes",
+    "intro": "Reviews Promoter connects your brand to outcomes SMBs care about most: better ratings, more referrals, and increased revenue.",
+    "items": [
+      {
+        "title": "High-impact, recurring revenue",
+        "body": "Reputation management is a subscription SMBs renew because they see the results — higher star ratings, more review volume, and stronger social engagement."
+      },
+      {
+        "title": "Natural bundle with your digital stack",
+        "body": "Reviews Promoter pairs with websites, SEO, and directory listings. SMBs with a site, good SEO, and strong reviews have a complete local presence — all from you."
+      },
+      {
+        "title": "Capture growing marketing budgets",
+        "body": "SMBs are increasingly spending on reviews and social management. Offer it under your brand instead of losing that spend to standalone tools."
+      }
+    ]
+  },
+
+  "lifecycleFit": {
+    "eyebrow": "Portfolio fit",
+    "heading": "Trust That Amplifies Every Other Service You Sell",
+    "intro": "Strong reviews make websites convert better, SEO rank higher, and directory listings drive more traffic. Reviews Promoter amplifies the value of everything else in your portfolio.",
+    "steps": [
+      { "step": "01", "title": "Build a Brand", "body": "Domains, logo, and professional email establish the SMB identity." },
+      { "step": "02", "title": "Get Online", "body": "Website Builder, DIFM design, or hosting launches their digital presence." },
+      { "step": "03", "title": "Get Found", "body": "Reviews Promoter builds trust and social proof that drives clicks and conversions.", "highlight": true, "productName": "Reviews Promoter" },
+      { "step": "04", "title": "Grow", "body": "Ecommerce and email marketing convert the audience that reviews helped attract." }
+    ],
+    "positioning": "Position reputation management as the trust layer that makes websites, SEO, and listings work harder — a natural bundle partner with directories and Search Engine Assist."
+  },
+
+  "cta": {
+    "headline": "Ready to Turn Reviews into a White-Label Growth Driver?",
+    "body": "Connect with Hostopia to launch Reviews Promoter under your brand, bundle it with your presence and marketing portfolio, and help SMBs turn happy customers into powerful social proof.",
+    "buttonText": "Book a Demo"
+  }
+}

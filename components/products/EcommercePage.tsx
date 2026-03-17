@@ -61,14 +61,13 @@ export default function EcommercePage({ label }: EcommercePageProps) {
                   color: "#24282B",
                 }}
               >
-                White-Label Ecommerce &amp; Online Store Platform
+                Help Your SMB Customers Start Selling Online — Under Your Brand
               </h1>
               <p
                 className="text-base md:text-lg leading-relaxed mb-6 max-w-lg"
                 style={{ fontFamily: "Raleway, sans-serif", color: "#555a5e" }}
               >
-                SMBs face increasing pressure to sell online, expand beyond their local market, and deliver modern
-                checkout experiences—but many lack the skills, budget, or time to manage a full ecommerce stack.
+                SMBs face growing pressure to sell online, but most lack the skills, budget, or time to manage a full ecommerce stack. Hostopia&apos;s white-label Online Store gives you a turnkey, mobile-ready ecommerce platform to resell under your brand. Integrated with Online Presence Builder, SMBs add a store to their existing website with one click — then scale as they grow.
               </p>
               <Link
                 href="/contact"
@@ -90,19 +89,19 @@ export default function EcommercePage({ label }: EcommercePageProps) {
               <ul className="space-y-3" style={{ fontFamily: "Raleway, sans-serif", color: "#24282B" }}>
                 <li className="flex items-center gap-3">
                   <ShoppingCart size={18} className="shrink-0" style={{ color: "#2CADB2" }} />
-                  <span className="font-bold text-sm">Launch an online storefront quickly</span>
+                  <span className="font-bold text-sm">Launch a store fast with a guided 5-step setup</span>
                 </li>
                 <li className="flex items-center gap-3">
                   <Globe2 size={18} className="shrink-0" style={{ color: "#2CADB2" }} />
-                  <span className="font-bold text-sm">Sell to local and global customers</span>
+                  <span className="font-bold text-sm">Sell on website, social, Amazon, and Google Shopping</span>
                 </li>
                 <li className="flex items-center gap-3">
                   <CreditCard size={18} className="shrink-0" style={{ color: "#2CADB2" }} />
-                  <span className="font-bold text-sm">Modern checkout experiences</span>
+                  <span className="font-bold text-sm">40+ payment gateways — zero transaction fees</span>
                 </li>
                 <li className="flex items-center gap-3">
                   <Package size={18} className="shrink-0" style={{ color: "#2CADB2" }} />
-                  <span className="font-bold text-sm">Sell goods, services, gift cards, and subscriptions</span>
+                  <span className="font-bold text-sm">Sell physical goods, digital products, or services</span>
                 </li>
               </ul>
             </div>
@@ -159,51 +158,51 @@ export default function EcommercePage({ label }: EcommercePageProps) {
       </ProductSection>
 
       <ProductSection variant="gray" className="!py-8 md:!py-12">
-        <div className="mb-4">
-          <SectionHeading eyebrow="Product capabilities" title="Key features of Online Store" center />
+          <div className="mb-4">
+          <SectionHeading eyebrow="What You Deliver" title="Full-Featured Ecommerce — Without the Complexity" center />
         </div>
           <p
             className="text-base leading-relaxed mb-4 max-w-3xl mx-auto"
             style={{ fontFamily: "Raleway, sans-serif", color: "#555a5e" }}
           >
-            Online Store gives SMBs a feature-rich ecommerce solution without complexity.
+            Online Store provides everything SMBs need to sell online, integrated into the website they already have with you.
           </p>
           <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-3">
             <FeatureCard
               icon={<ShoppingCart size={22} />}
-              title="Integrated with OPB"
-              body="Add a store to existing websites with one click from Online Presence Builder."
+              title="One-Click Store Activation"
+              body="Add a fully functional online store to any Online Presence Builder website with one click. No migration, no separate platform, no disruption."
             />
             <FeatureCard
               icon={<Smartphone size={22} />}
-              title="Mobile-ready"
-              body="Seamless store and checkout experience on smartphones and tablets."
+              title="Mobile-Ready Commerce"
+              body="Responsive storefront, checkout, and product browsing optimized for smartphones and tablets — where the majority of shopping happens."
             />
             <FeatureCard
-              icon={<CreditCard size={22} />}
-              title="Global selling"
-              body="Multi-currency, real-time shipping, and 40+ payment gateways including PayPal and Square. No transaction fees."
+              icon={<Globe2 size={22} />}
+              title="Multi-Channel Selling"
+              body="Sell on the website plus Facebook, Instagram, TikTok, Pinterest, Amazon, and Google Shopping Ads — with centralized inventory and order management."
             />
             <FeatureCard
               icon={<Package size={22} />}
-              title="Product versatility"
-              body="Sell physical goods, digital products, gift cards, and subscriptions."
+              title="Revenue-Driving Tools"
+              body="Abandoned cart recovery, discount codes, promotions, social selling, and subscription support. Sell physical goods, digital products, or services."
             />
           </div>
           <div className="mt-4 grid md:grid-cols-2 gap-4">
             <FeatureColumn
-              title="Guided setup"
+              title="Guided Setup"
               points={[
-                "5-step onboarding for products, taxes, shipping, and payments.",
-                "Centralized management for inventory, orders, coupons, and channel integrations.",
+                "A guided 5-step setup wizard handles products, taxes, shipping, and payment configuration.",
+                "Centralized inventory and order management from one dashboard.",
               ]}
             />
             <FeatureColumn
-              title="Revenue-driving features"
+              title="The Partner Advantage"
               points={[
-                "Social selling on Facebook and Instagram.",
-                "Abandoned cart recovery emails, discount codes, and promotions.",
-                "CSV export for products, orders, and customers.",
+                "Every website customer is a potential store customer — expand ARPU with tiered ecommerce plans.",
+                "Bundle with websites, SSL, and marketing tools to create high-value, hard-to-replace packages.",
+                "Offer DIY and managed models — same platform, two revenue models.",
               ]}
             />
           </div>
@@ -298,40 +297,39 @@ export default function EcommercePage({ label }: EcommercePageProps) {
       </ProductSection>
 
       <ProductSection variant="white">
-        <div className="mb-4">
-          <SectionHeading eyebrow="Lifecycle fit" title="How Online Store helps SMBs start selling" center />
+          <div className="mb-4">
+          <SectionHeading eyebrow="Portfolio Fit" title="The Growth Layer in Your Digital Portfolio" center />
         </div>
           <p
             className="text-base leading-relaxed mb-4 max-w-3xl mx-auto"
             style={{ fontFamily: "Raleway, sans-serif", color: "#555a5e" }}
           >
-            Ecommerce is where the &quot;start selling&quot; journey begins—giving businesses the tools to build and
-            manage an online store, take payments for goods and services, and sell gift cards and subscriptions.
+            Online Store sits at the intersection of &quot;Get Online&quot; and &quot;Grow&quot; — the natural next step for any SMB with a website and an audience ready to buy.
           </p>
           <div className="flex flex-col gap-4 md:flex-row md:items-stretch md:gap-0">
             {[
               {
                 step: "01",
                 title: "Build a Brand",
-                body: "Establish identity with domains, logo, and professional email.",
+                body: "Domains, logo, and professional email establish the SMB identity.",
               },
               {
                 step: "02",
                 title: "Get Online",
-                body: "Launch a website with hosting or Online Presence Builder.",
+                body: "Website Builder, DIFM design, or custom development launches their presence.",
               },
               {
                 step: "03",
                 title: "Get Found",
-                body: "Add an online store to take payments, sell goods, services, gift cards, and subscriptions.",
+                body: "SEO, directories, and reputation management drive traffic to the site.",
               },
               {
                 step: "04",
                 title: "Grow their Business",
-                body: "Layer on SEO, reputation, and marketing to drive traffic and repeat sales.",
+                body: "Online Store converts that traffic into revenue with multi-channel selling.",
                 highlightGold: true,
                 conceptLabel: "Grow their Business",
-                productName: "Ecommerce",
+                productName: "Online Store",
               },
             ].flatMap((step, index, all) => {
               const card = (
@@ -366,14 +364,13 @@ export default function EcommercePage({ label }: EcommercePageProps) {
               className="text-xl md:text-2xl font-bold mb-4"
               style={{ fontFamily: "Montserrat, sans-serif", color: "#ffffff" }}
             >
-              Ready to make ecommerce a growth engine under your brand?
+              Ready to Make Ecommerce a Growth Engine Under Your Brand?
             </h3>
             <p
               className="text-sm md:text-base mb-6 max-w-2xl"
               style={{ fontFamily: "Raleway, sans-serif", color: "#d1d5db" }}
             >
-              Connect with Hostopia to launch your white-label Online Store, bundle it with web, hosting, and security
-              products, and help SMBs start selling online quickly and confidently.
+              Connect with Hostopia to launch your white-label Online Store, bundle it with web and security products, and help SMBs start selling online — quickly, confidently, and under your brand.
             </p>
             <Link
               href="/contact"
