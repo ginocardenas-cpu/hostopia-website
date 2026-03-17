@@ -13,6 +13,9 @@ import ReputationManagementPage from "@/components/products/ReputationManagement
 import HostingPage from "@/components/products/HostingPage";
 import WebsiteBuilderPage from "@/components/products/WebsiteBuilderPage";
 import EcommercePage from "@/components/products/EcommercePage";
+import SearchEnginePage from "@/components/products/SearchEnginePage";
+import EmailMarketingPage from "@/components/products/EmailMarketingPage";
+import CustomWebsitePage from "@/components/products/CustomWebsitePage";
 
 type Props = { params: { slug: string } };
 
@@ -168,6 +171,43 @@ const productMeta: Record<
       "HIPAA fax solution",
     ],
   },
+  seo: {
+    title: "White-Label SEO Platform for Service Providers | Hostopia",
+    description:
+      "Launch guided SEO under your brand. Search Engine Assist helps telcos, ISPs, and MSPs deliver task-based SEO to SMBs — driving activation, ARPU, and retention.",
+    keywords: [
+      "white-label SEO platform",
+      "SEO software for service providers",
+      "guided SEO for SMBs",
+      "white-label SEO tools",
+      "SMB search engine optimization",
+      "reseller SEO platform",
+    ],
+  },
+  "email-marketing": {
+    title: "White-Label Email Marketing Platform for Service Providers | Hostopia",
+    description:
+      "Add AI-powered email marketing to your digital portfolio. Hostopia's white-label platform lets telcos, ISPs, and MSPs drive SMB engagement and recurring revenue.",
+    keywords: [
+      "white-label email marketing platform",
+      "email marketing for SMBs",
+      "branded email marketing solution",
+      "AI email marketing reseller",
+      "email marketing for service providers",
+    ],
+  },
+  "custom-website-development": {
+    title: "Custom Website Design for SMBs | White-Label WordPress | Hostopia",
+    description:
+      "Offer fully custom WordPress websites under your brand. Hostopia's white-label design service handles discovery through launch — no in-house agency required.",
+    keywords: [
+      "white-label custom website design",
+      "custom WordPress website for SMBs",
+      "white-label web design service",
+      "professional website design for service providers",
+      "custom web design reseller",
+    ],
+  },
 };
 
 export function generateStaticParams() {
@@ -221,6 +261,15 @@ export default function ProductSlugPage({ params }: Props) {
   }
   if (slug === "ecommerce") {
     return <EcommercePage label={label} />;
+  }
+  if (slug === "seo") {
+    return <SearchEnginePage label={label} />;
+  }
+  if (slug === "email-marketing") {
+    return <EmailMarketingPage label={label} />;
+  }
+  if (slug === "custom-website-development") {
+    return <CustomWebsitePage label={label} />;
   }
 
   return (

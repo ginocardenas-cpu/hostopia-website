@@ -21,7 +21,7 @@ export const productsDropdownSections = [
     heading: "Get Found",
     links: [
       { label: "Directories", description: "Local SEO & directories", href: "/products/directories", slug: "directories" },
-      { label: "SEO", description: "Search engine optimization", href: "/products/seo", slug: "seo" },
+      { label: "Search Engine Assist", description: "Guided SEO for SMBs", href: "/products/seo", slug: "seo" },
       { label: "Reputation Management", description: "Online reviews & presence", href: "/products/reputation-management", slug: "reputation-management" },
     ],
   },
@@ -29,7 +29,8 @@ export const productsDropdownSections = [
     heading: "Grow their Business",
     links: [
       { label: "Ecommerce", description: "Online store solutions", href: "/products/ecommerce", slug: "ecommerce" },
-      { label: "Custom Website Development", description: "Custom web solutions", href: "/products/custom-website-development", slug: "custom-website-development" },
+      { label: "Email Marketing", description: "AI-powered email campaigns", href: "/products/email-marketing", slug: "email-marketing" },
+      { label: "Custom Website Development", description: "Custom WordPress websites", href: "/products/custom-website-development", slug: "custom-website-development" },
       { label: "Online Fax", description: "Digital fax services", href: "/products/digital-fax", slug: "digital-fax" },
     ],
   },
