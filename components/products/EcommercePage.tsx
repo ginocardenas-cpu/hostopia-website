@@ -9,44 +9,26 @@ type EcommercePageProps = {
 
 export default function EcommercePage({ label }: EcommercePageProps) {
   return (
-    <main className="pb-0">
+    <main className="pt-24 pb-0">
 
-      {/* Full-bleed hero — same treatment as home page */}
-      <section
-        className="relative min-h-[600px] md:min-h-[700px] flex flex-col justify-end overflow-hidden pt-20"
-        style={{ backgroundColor: "#f7f6f2" }}
-      >
-        {/* Background image fills entire hero */}
-        <div className="absolute inset-0 z-0">
-          <Image
-              src="/Ecommerce/hero-1920x980-2.jpg"
-            alt=""
-            fill
-            className="object-cover object-right"
-            priority
-          />
-          <div
-            className="absolute inset-0 z-[1]"
-            style={{
-              background:
-                "linear-gradient(to right, rgba(247,246,242,1) 0%, rgba(247,246,242,0.98) 35%, rgba(247,246,242,0.3) 60%, rgba(247,246,242,0) 75%)",
-            }}
-          />
-        </div>
+      {/* Breadcrumb */}
+      <div className="max-w-7xl mx-auto px-6 pt-2 pb-4">
+        <nav className="text-sm text-gray-500">
+          <Link href="/" className="hover:text-gray-700">Home</Link>
+          <span className="mx-2">/</span>
+          <Link href="/products" className="hover:text-gray-700">Products</Link>
+          <span className="mx-2">/</span>
+          <span className="text-gray-900">{label}</span>
+        </nav>
+      </div>
 
-        {/* Content */}
-        <div className="relative z-10 max-w-7xl mx-auto px-6 py-16 w-full">
-
-          {/* Breadcrumb */}
-          <nav className="text-sm text-gray-500 mb-10" style={{ fontFamily: "Raleway, sans-serif" }}>
-            <Link href="/" className="hover:text-gray-700">Home</Link>
-            <span className="mx-2">/</span>
-            <Link href="/products" className="hover:text-gray-700">Products</Link>
-            <span className="mx-2">/</span>
-            <span className="text-gray-900">{label}</span>
-          </nav>
-
-          <div className="grid md:grid-cols-2 gap-8 items-end">
+      {/* Hero — two-column layout */}
+      <ProductSection variant="gray">
+        <section
+          className="rounded-3xl overflow-hidden border border-gray-100"
+          style={{ backgroundColor: "#f7f6f2" }}
+        >
+          <div className="grid md:grid-cols-2 gap-10 p-8 md:p-12 items-center">
             {/* Left: Copy */}
             <div>
               <div className="flex items-center gap-3 mb-5">
@@ -64,56 +46,73 @@ export default function EcommercePage({ label }: EcommercePageProps) {
                 Help Your SMB Customers Start Selling Online — Under Your Brand
               </h1>
               <p
-                className="text-base md:text-lg leading-relaxed mb-6 max-w-lg"
+                className="text-base md:text-lg leading-relaxed mb-6"
                 style={{ fontFamily: "Raleway, sans-serif", color: "#555a5e" }}
               >
                 SMBs face growing pressure to sell online, but most lack the skills, budget, or time to manage a full ecommerce stack. Hostopia&apos;s white-label Online Store gives you a turnkey, mobile-ready ecommerce platform to resell under your brand. Integrated with Online Presence Builder, SMBs add a store to their existing website with one click — then scale as they grow.
               </p>
-              <Link
-                href="/contact"
-                className="inline-flex items-center gap-2 font-bold px-8 py-4 rounded-full text-base transition-all duration-200 hover:scale-105 hover:shadow-xl"
-                style={{
-                  fontFamily: "Montserrat, sans-serif",
-                  backgroundColor: "#F8CF41",
-                  color: "#24282B",
-                  boxShadow: "0 4px 20px rgba(248,207,65,0.3)",
-                }}
-              >
-                Book a demo
-                <ArrowRight size={18} />
-              </Link>
+              <div className="flex flex-wrap gap-3">
+                <Link
+                  href="/contact"
+                  className="inline-flex items-center gap-2 font-bold px-6 py-3 rounded-full text-sm md:text-base transition-all duration-200 hover:scale-105 hover:shadow-lg"
+                  style={{
+                    fontFamily: "Montserrat, sans-serif",
+                    backgroundColor: "#F8CF41",
+                    color: "#24282B",
+                  }}
+                >
+                  Book a demo
+                  <ArrowRight size={16} />
+                </Link>
+                <span
+                  className="inline-flex items-center gap-2 text-xs md:text-sm px-4 py-2 rounded-full border border-gray-200"
+                  style={{ fontFamily: "Raleway, sans-serif", color: "#555a5e" }}
+                >
+                  <ShoppingCart size={16} /> White-label ecommerce, powered by Hostopia
+                </span>
+              </div>
             </div>
 
-            {/* Right: Key benefits card */}
-            <div className="bg-white/95 rounded-2xl py-5 px-6 shadow-lg border border-gray-100 self-end max-w-sm ml-auto">
-              <ul className="space-y-3" style={{ fontFamily: "Raleway, sans-serif", color: "#24282B" }}>
-                <li className="flex items-center gap-3">
-                  <ShoppingCart size={18} className="shrink-0" style={{ color: "#2CADB2" }} />
-                  <span className="font-bold text-sm">Launch a store fast with a guided 5-step setup</span>
-                </li>
-                <li className="flex items-center gap-3">
-                  <Globe2 size={18} className="shrink-0" style={{ color: "#2CADB2" }} />
-                  <span className="font-bold text-sm">Sell on website, social, Amazon, and Google Shopping</span>
-                </li>
-                <li className="flex items-center gap-3">
-                  <CreditCard size={18} className="shrink-0" style={{ color: "#2CADB2" }} />
-                  <span className="font-bold text-sm">40+ payment gateways — zero transaction fees</span>
-                </li>
-                <li className="flex items-center gap-3">
-                  <Package size={18} className="shrink-0" style={{ color: "#2CADB2" }} />
-                  <span className="font-bold text-sm">Sell physical goods, digital products, or services</span>
-                </li>
-              </ul>
+            {/* Right: hero image with key benefits overlay */}
+            <div className="relative rounded-2xl overflow-hidden">
+              <Image
+                src="/Ecommerce Page/New/ecommerce-hero.jpg"
+                alt="SMB owner with online store on laptop"
+                width={700}
+                height={500}
+                className="w-full h-auto rounded-2xl"
+                priority
+              />
+              <div className="absolute bottom-4 left-4 right-4 bg-white/95 rounded-xl p-4 shadow-lg">
+                <ul className="space-y-2" style={{ fontFamily: "Raleway, sans-serif", color: "#24282B" }}>
+                  <li className="flex items-center gap-2">
+                    <ShoppingCart size={14} className="shrink-0" style={{ color: "#2CADB2" }} />
+                    <span className="font-bold text-xs">Launch a store fast with a guided 5-step setup</span>
+                  </li>
+                  <li className="flex items-center gap-2">
+                    <Globe2 size={14} className="shrink-0" style={{ color: "#2CADB2" }} />
+                    <span className="font-bold text-xs">Sell on website, social, Amazon, and Google Shopping</span>
+                  </li>
+                  <li className="flex items-center gap-2">
+                    <CreditCard size={14} className="shrink-0" style={{ color: "#2CADB2" }} />
+                    <span className="font-bold text-xs">40+ payment gateways — zero transaction fees</span>
+                  </li>
+                  <li className="flex items-center gap-2">
+                    <Package size={14} className="shrink-0" style={{ color: "#2CADB2" }} />
+                    <span className="font-bold text-xs">Sell physical goods, digital products, or services</span>
+                  </li>
+                </ul>
+              </div>
             </div>
           </div>
-        </div>
-      </section>
+        </section>
+      </ProductSection>
 
       <ProductSection variant="white">
         <div className="grid md:grid-cols-2 gap-4 md:gap-6 items-center">
           <div className="relative aspect-[5/4] min-h-[190px] md:min-h-[220px] order-2 md:order-1">
             <Image
-              src="/Ecommerce/under-your-brand (3).png"
+              src="/Ecommerce Page/New/under-your-brand.png"
               alt="Office setting with tablet displaying inventory and order management"
               fill
               className="object-contain"
@@ -246,7 +245,7 @@ export default function EcommercePage({ label }: EcommercePageProps) {
           </div>
           <div className="relative aspect-[5/4] min-h-[190px] md:min-h-[220px]">
             <Image
-              src="/Ecommerce/behind-your-brand (2).png"
+              src="/Ecommerce Page/New/behind-your-brand.png"
               alt="Ecommerce dashboard with analytics and product management"
               fill
               className="object-contain"
@@ -259,7 +258,7 @@ export default function EcommercePage({ label }: EcommercePageProps) {
         <div className="grid md:grid-cols-2 gap-4 md:gap-6 items-center">
           <div className="relative aspect-[5/4] min-h-[190px] md:min-h-[220px] order-2 md:order-1">
             <Image
-              src="/Ecommerce/launch-online-store (1).png"
+              src="/Ecommerce Page/New/When-you-launch-Online.png"
               alt="SMB owner with product gallery and ecommerce platform"
               fill
               className="object-contain"

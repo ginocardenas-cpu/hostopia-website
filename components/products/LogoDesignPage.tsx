@@ -1,4 +1,5 @@
 import Link from "next/link";
+import Image from "next/image";
 import { ArrowRight, PenTool, Image as ImageIcon, Palette, Sparkles } from "lucide-react";
 import ProductSection from "./ProductSection";
 
@@ -78,88 +79,105 @@ export default function LogoDesignPage({ label }: LogoDesignPageProps) {
               </div>
             </div>
 
-            {/* Right column: impact bullets */}
-            <div className="bg-white/80 rounded-2xl p-6 shadow-sm space-y-5">
-              <h3
-                className="text-sm font-semibold uppercase tracking-[0.2em]"
-                style={{ fontFamily: "Montserrat, sans-serif", color: "#6b7280" }}
-              >
-                Why it matters for SMBs
-              </h3>
-              <ul className="space-y-3 text-sm" style={{ fontFamily: "Raleway, sans-serif", color: "#555a5e" }}>
-                <li className="flex gap-3">
-                  <Sparkles size={18} className="mt-1 shrink-0" style={{ color: "#2CADB2" }} />
-                  <span>
-                    <strong>Builds instant credibility and trust</strong> with their own customers.
-                  </span>
-                </li>
-                <li className="flex gap-3">
-                  <ImageIcon size={18} className="mt-1 shrink-0" style={{ color: "#2CADB2" }} />
-                  <span>
-                    <strong>Unifies branding</strong> across the digital and offline touchpoints you power.
-                  </span>
-                </li>
-                <li className="flex gap-3">
-                  <Palette size={18} className="mt-1 shrink-0" style={{ color: "#2CADB2" }} />
-                  <span>
-                    <strong>Fuels better results</strong> from websites, campaigns, and ecommerce solutions you
-                    resell—helping SMBs stand out in crowded local markets.
-                  </span>
-                </li>
-              </ul>
+            {/* Right column: hero image with why-it-matters overlay */}
+            <div className="relative rounded-2xl overflow-hidden">
+              <Image
+                src="/Logo Page/logo-page-header.png"
+                alt="Professional logo design service"
+                width={700}
+                height={520}
+                className="w-full h-auto rounded-2xl"
+              />
+              <div className="absolute bottom-4 left-4 right-4 bg-white/95 rounded-xl p-4 shadow-lg">
+                <p
+                  className="text-xs font-bold uppercase tracking-[0.15em] mb-3"
+                  style={{ fontFamily: "Montserrat, sans-serif", color: "#2CADB2" }}
+                >
+                  Why it matters for SMBs
+                </p>
+                <ul className="space-y-1.5 text-xs" style={{ fontFamily: "Raleway, sans-serif", color: "#555a5e" }}>
+                  <li className="flex gap-2">
+                    <Sparkles size={13} className="mt-0.5 shrink-0" style={{ color: "#2CADB2" }} />
+                    <span><strong>Builds instant credibility and trust</strong> with their own customers.</span>
+                  </li>
+                  <li className="flex gap-2">
+                    <ImageIcon size={13} className="mt-0.5 shrink-0" style={{ color: "#2CADB2" }} />
+                    <span><strong>Unifies branding</strong> across the digital and offline touchpoints you power.</span>
+                  </li>
+                  <li className="flex gap-2">
+                    <Palette size={13} className="mt-0.5 shrink-0" style={{ color: "#2CADB2" }} />
+                    <span><strong>Fuels better results</strong> from websites, campaigns, and ecommerce solutions you resell.</span>
+                  </li>
+                </ul>
+              </div>
             </div>
           </div>
         </section>
       </ProductSection>
 
       <ProductSection variant="white">
-        <SectionHeading eyebrow="What you offer" title="Under your brand" />
-          <p
-            className="text-base leading-relaxed mb-6 max-w-3xl"
-            style={{ fontFamily: "Raleway, sans-serif", color: "#555a5e" }}
-          >
-            Partner with Hostopia to offer Professional Logo Design as a flexible, white-label creative service that
-            fits your go-to-market strategy. Position it as a standalone offer, bundle it with website and email, or
-            include it in a full &quot;brand launch&quot; package.
-          </p>
-          <p
-            className="text-sm font-semibold mb-3"
-            style={{ fontFamily: "Montserrat, sans-serif", color: "#24282B" }}
-          >
-            You can offer:
-          </p>
-          <ul
-            className="space-y-3 text-sm md:text-base mb-10"
-            style={{ fontFamily: "Raleway, sans-serif", color: "#555a5e" }}
-          >
-            <li className="flex gap-2">
-              <span className="text-teal mt-1">•</span>
-              <span>
-                White-label design expertise: professional logo designers working behind the scenes under your brand.
-              </span>
-            </li>
-            <li className="flex gap-2">
-              <span className="text-teal mt-1">•</span>
-              <span>
-                A simple, guided creative process: your branded questionnaire and coordinator-led workflow capture each
-                SMB customer&apos;s vision, values, and audience.
-              </span>
-            </li>
-            <li className="flex gap-2">
-              <span className="text-teal mt-1">•</span>
-              <span>
-                Flexible packages and deliverables: you define packages, and SMBs receive all key logo file formats for
-                web and print (11 formats including AI, EPS, PNG, JPG, PDF, ICO).
-              </span>
-            </li>
-            <li className="flex gap-2">
-              <span className="text-teal mt-1">•</span>
-              <span>
-                Fast, rights-ready outcomes: initial concepts in just a few business days, plus full ownership of the
-                final logo with no ongoing licensing fees.
-              </span>
-            </li>
-          </ul>
+        <div className="grid md:grid-cols-2 gap-10 items-center">
+          {/* Left: image */}
+          <div className="rounded-2xl overflow-hidden">
+            <Image
+              src="/Logo Page/Under-your-brand.png"
+              alt="White-label logo design delivered under your brand"
+              width={600}
+              height={500}
+              className="w-full h-auto rounded-2xl"
+            />
+          </div>
+          {/* Right: content */}
+          <div>
+            <SectionHeading eyebrow="What you offer" title="Under your brand" />
+            <p
+              className="text-base leading-relaxed mb-6"
+              style={{ fontFamily: "Raleway, sans-serif", color: "#555a5e" }}
+            >
+              Partner with Hostopia to offer Professional Logo Design as a flexible, white-label creative service that
+              fits your go-to-market strategy. Position it as a standalone offer, bundle it with website and email, or
+              include it in a full &quot;brand launch&quot; package.
+            </p>
+            <p
+              className="text-sm font-semibold mb-3"
+              style={{ fontFamily: "Montserrat, sans-serif", color: "#24282B" }}
+            >
+              You can offer:
+            </p>
+            <ul
+              className="space-y-3 text-sm md:text-base"
+              style={{ fontFamily: "Raleway, sans-serif", color: "#555a5e" }}
+            >
+              <li className="flex gap-2">
+                <span className="text-teal mt-1">•</span>
+                <span>
+                  White-label design expertise: professional logo designers working behind the scenes under your brand.
+                </span>
+              </li>
+              <li className="flex gap-2">
+                <span className="text-teal mt-1">•</span>
+                <span>
+                  A simple, guided creative process: your branded questionnaire and coordinator-led workflow capture each
+                  SMB customer&apos;s vision, values, and audience.
+                </span>
+              </li>
+              <li className="flex gap-2">
+                <span className="text-teal mt-1">•</span>
+                <span>
+                  Flexible packages and deliverables: you define packages, and SMBs receive all key logo file formats for
+                  web and print (11 formats including AI, EPS, PNG, JPG, PDF, ICO).
+                </span>
+              </li>
+              <li className="flex gap-2">
+                <span className="text-teal mt-1">•</span>
+                <span>
+                  Fast, rights-ready outcomes: initial concepts in just a few business days, plus full ownership of the
+                  final logo with no ongoing licensing fees.
+                </span>
+              </li>
+            </ul>
+          </div>
+        </div>
       </ProductSection>
 
       <ProductSection variant="gray">

@@ -15,7 +15,7 @@ export default function Hero() {
       {/* Hero image — full height, right-aligned, never stretched */}
       <div className="absolute right-0 top-0 h-full w-1/2 lg:w-[58%] hidden md:block">
         <Image
-          src="/Home Page images/2023-03-16-hero.png"
+          src="/Home Page images/New/2023-03-16-hero.png"
           alt="Bundles of white-label digital services held by a partner"
           fill
           priority

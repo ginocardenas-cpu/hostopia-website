@@ -67,7 +67,7 @@ export default function BilingualSupport() {
           <div className="relative">
             <div className="relative rounded-3xl overflow-hidden shadow-lg">
               <Image
-                src="/Home Page images/support-that-sounds-like-you.png"
+                src="/Home Page images/New/support-that-sounds-like-you.png"
                 alt="Bilingual support team member with headset"
                 width={600}
                 height={520}

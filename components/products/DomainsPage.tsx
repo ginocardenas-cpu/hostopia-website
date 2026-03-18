@@ -1,4 +1,5 @@
-import Link from "next/link";
+﻿import Link from "next/link";
+import Image from "next/image";
 import { ArrowRight, Globe2, Mail, ShieldCheck, Network, LineChart } from "lucide-react";
 import ProductSection from "./ProductSection";
 
@@ -74,37 +75,38 @@ export default function DomainsPage({ label }: DomainsPageProps) {
               </div>
             </div>
 
-            {/* Right-side stats / highlights */}
-            <div className="bg-white/80 rounded-2xl p-6 shadow-sm space-y-5">
-              <h3
-                className="text-sm font-semibold uppercase tracking-[0.2em]"
-                style={{ fontFamily: "Montserrat, sans-serif", color: "#6b7280" }}
-              >
-                Why it matters
-              </h3>
-              <ul className="space-y-3 text-sm" style={{ fontFamily: "Raleway, sans-serif", color: "#555a5e" }}>
-                <li className="flex gap-3">
-                  <Mail size={18} className="mt-1" style={{ color: "#2CADB2" }} />
-                  <span>
-                    <strong>Start with name &amp; email.</strong> Most SMBs begin online by registering a domain and
-                    setting up domain-based email before investing in websites or marketing.
-                  </span>
-                </li>
-                <li className="flex gap-3">
-                  <ShieldCheck size={18} className="mt-1" style={{ color: "#2CADB2" }} />
-                  <span>
-                    <strong>Protect the brand.</strong> Secure key extensions, common misspellings, and the domain your
-                    customers build everything on.
-                  </span>
-                </li>
-                <li className="flex gap-3">
-                  <LineChart size={18} className="mt-1" style={{ color: "#2CADB2" }} />
-                  <span>
-                    <strong>Anchor long-term ARPU.</strong> Use domains as the on-ramp to websites, ecommerce, SEO,
-                    security, and more.
-                  </span>
-                </li>
-              </ul>
+            {/* Right-side: hero image with why-it-matters overlay */}
+            <div className="relative rounded-2xl overflow-hidden">
+              <Image
+                src="/Domain Page/domains-page-header.png"
+                alt="SMB owner with domain and website"
+                width={700}
+                height={520}
+                className="w-full h-auto rounded-2xl"
+              />
+              {/* Why it matters card overlaid at bottom */}
+              <div className="absolute bottom-4 left-4 right-4 bg-white/95 rounded-xl p-4 shadow-lg">
+                <p
+                  className="text-xs font-bold uppercase tracking-[0.15em] mb-3"
+                  style={{ fontFamily: "Montserrat, sans-serif", color: "#2CADB2" }}
+                >
+                  Why it matters
+                </p>
+                <ul className="space-y-1.5 text-xs" style={{ fontFamily: "Raleway, sans-serif", color: "#555a5e" }}>
+                  <li className="flex gap-2">
+                    <Mail size={13} className="mt-0.5 shrink-0" style={{ color: "#2CADB2" }} />
+                    <span><strong>Start with name &amp; email.</strong> Most SMBs begin online by registering a domain and setting up domain-based email.</span>
+                  </li>
+                  <li className="flex gap-2">
+                    <ShieldCheck size={13} className="mt-0.5 shrink-0" style={{ color: "#2CADB2" }} />
+                    <span><strong>Protect the brand.</strong> Secure key extensions and common misspellings.</span>
+                  </li>
+                  <li className="flex gap-2">
+                    <LineChart size={13} className="mt-0.5 shrink-0" style={{ color: "#2CADB2" }} />
+                    <span><strong>Anchor long-term ARPU.</strong> Use domains as the on-ramp to websites, ecommerce, SEO, and security.</span>
+                  </li>
+                </ul>
+              </div>
             </div>
           </div>
         </section>
@@ -193,38 +195,50 @@ export default function DomainsPage({ label }: DomainsPageProps) {
 
       {/* Key Features — Section 3 (gray) */}
       <ProductSection variant="gray">
-        <SectionHeading
-            eyebrow="Product capabilities"
-            title="Key features for SMBs and partners"
-          />
-          <div className="grid md:grid-cols-3 gap-6">
-            <FeatureBulletColumn
-              title="Simple for SMBs"
-              points={[
-                "Clean domain search and registration with smart suggestions when the first choice is taken.",
-                "Clear ownership—your customers fully own their domains and can easily attach complementary products.",
-                "Guided flows that highlight next steps like “Add email” or “Create a website” after purchase.",
-              ]}
-            />
-            <FeatureBulletColumn
-              title="Powerful for providers"
-              points={[
-                "Central domain manager for registrations, expirations, DNS, and auto‑renewals across your base.",
-                "Streamlined migrations so you can consolidate domains into your platform and simplify billing.",
-                "Actionable visibility into attach rates for email, websites, SSL, and marketing products.",
-              ]}
-            />
-            <FeatureBulletColumn
-              title="Backed by Hostopia"
-              points={[
-                "Global DNS and hosting footprint across 34 countries and 14 languages.",
-                "Proven operations, migrations, and support models used by 350+ service provider partners.",
-                "Enterprise-grade infrastructure without the cost and complexity of building your own registrar.",
-              ]}
+        <div className="grid md:grid-cols-2 gap-10 items-center">
+          <div className="rounded-2xl overflow-hidden">
+            <Image
+              src="/Domain Page/key-features-for-SMBs.png"
+              alt="SMB partner exploring domain features"
+              width={600}
+              height={520}
+              className="w-full h-auto rounded-2xl"
             />
           </div>
+          <div>
+            <SectionHeading
+              eyebrow="Product capabilities"
+              title="Key features for SMBs and partners"
+            />
+            <div className="flex flex-col gap-4">
+              <FeatureBulletColumn
+                title="Simple for SMBs"
+                points={[
+                  "Clean domain search and registration with smart suggestions when the first choice is taken.",
+                  "Clear ownership — your customers fully own their domains and can easily attach complementary products.",
+                  "Guided flows that highlight next steps like 'Add email' or 'Create a website' after purchase.",
+                ]}
+              />
+              <FeatureBulletColumn
+                title="Powerful for providers"
+                points={[
+                  "Central domain manager for registrations, expirations, DNS, and auto-renewals across your base.",
+                  "Streamlined migrations so you can consolidate domains into your platform and simplify billing.",
+                  "Actionable visibility into attach rates for email, websites, SSL, and marketing products.",
+                ]}
+              />
+              <FeatureBulletColumn
+                title="Backed by Hostopia"
+                points={[
+                  "Global DNS and hosting footprint across 34 countries and 14 languages.",
+                  "Proven operations, migrations, and support models used by 350+ service provider partners.",
+                  "Enterprise-grade infrastructure without the cost and complexity of building your own registrar.",
+                ]}
+              />
+            </div>
+          </div>
+        </div>
       </ProductSection>
-
       {/* Lifecycle & portfolio fit — Section 4 (white) */}
       <ProductSection variant="white">
         <SectionHeading
