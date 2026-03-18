@@ -1,11 +1,5 @@
 import Image from "next/image";
 
-const supportStats = [
-  { value: "EN/FR/SP", label: "Multilingual", sub: "North America based" },
-  { value: "24/7", label: "Availability", sub: "Always on" },
-  { value: "<60s", label: "First Reply", sub: "Response SLA" },
-  { value: "98%", label: "CSAT", sub: "Satisfaction score" },
-];
 
 export default function BilingualSupport() {
   return (
@@ -63,49 +57,15 @@ export default function BilingualSupport() {
             </a>
           </div>
 
-          {/* Right: Image with stats overlaid */}
-          <div className="relative">
-            <div className="relative rounded-3xl overflow-hidden shadow-lg">
-              <Image
-                src="/Home Page images/New/support-that-sounds-like-you.png"
-                alt="Bilingual support team member with headset"
-                width={600}
-                height={520}
-                className="w-full h-auto"
-              />
-            </div>
-
-            {/* Stats cards overlaid on left side of image */}
-            <div className="absolute top-0 left-4 bottom-0 flex flex-col justify-center gap-3 py-6">
-              {supportStats.map((stat, i) => (
-                <div
-                  key={stat.label}
-                  className="bg-white rounded-xl px-4 py-2 shadow-lg border border-gray-100 min-w-[130px]"
-                >
-                  <p
-                    className="font-black text-xl leading-none mb-0.5"
-                    style={{
-                      fontFamily: "Montserrat, sans-serif",
-                      color: i % 2 === 0 ? "#2CADB2" : "#24282B",
-                    }}
-                  >
-                    {stat.value}
-                  </p>
-                  <p
-                    className="font-bold text-xs"
-                    style={{ fontFamily: "Montserrat, sans-serif", color: "#24282B" }}
-                  >
-                    {stat.label}
-                  </p>
-                  <p
-                    className="text-xs"
-                    style={{ fontFamily: "Raleway, sans-serif", color: "#9ca3af" }}
-                  >
-                    {stat.sub}
-                  </p>
-                </div>
-              ))}
-            </div>
+          {/* Right: Image (stats are embedded in the image itself) */}
+          <div className="rounded-3xl overflow-hidden shadow-lg">
+            <Image
+              src="/Home Page images/New/support-that-sounds-like-you.png"
+              alt="Bilingual support team member with headset and stat cards"
+              width={700}
+              height={560}
+              className="w-full h-auto"
+            />
           </div>
         </div>
       </div>

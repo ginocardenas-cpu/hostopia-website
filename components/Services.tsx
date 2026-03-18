@@ -107,12 +107,12 @@ export default function Services() {
             </div>
 
             {/* Section image — right of headline */}
-            <div className="relative flex-shrink-0 w-full md:w-[340px] lg:w-[400px] rounded-3xl overflow-hidden shadow-md">
+            <div className="relative flex-shrink-0 w-full md:w-[500px] lg:w-[580px] rounded-3xl overflow-hidden shadow-md">
               <Image
                 src="/Home Page images/New/everything-your-customers-need.png"
                 alt="SMB owner celebrating their online store"
-                width={400}
-                height={320}
+                width={580}
+                height={480}
                 className="w-full h-auto"
               />
               <div
