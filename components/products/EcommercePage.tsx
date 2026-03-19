@@ -156,7 +156,7 @@ export default function EcommercePage({ label }: EcommercePageProps) {
         </div>
       </ProductSection>
 
-      <ProductSection variant="gray" className="!py-8 md:!py-12">
+      <ProductSection variant="gray">
           <div className="mb-4">
           <SectionHeading eyebrow="What You Deliver" title="Full-Featured Ecommerce — Without the Complexity" center />
         </div>

@@ -15,7 +15,7 @@ export default function ProductSection({
 }: ProductSectionProps) {
   const bg = variant === "gray" ? { backgroundColor: "#f7f6f2" } : { backgroundColor: "#ffffff" };
   return (
-    <section className={`py-3 md:py-4 overflow-visible ${className}`} style={bg}>
+    <section className={`py-[60px] overflow-visible ${className}`} style={bg}>
       <div className="max-w-7xl mx-auto px-6">{children}</div>
     </section>
   );
