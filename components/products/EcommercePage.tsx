@@ -1,6 +1,7 @@
 import Link from "next/link";
 import Image from "next/image";
-import { ArrowRight, ShoppingCart, CreditCard, Package, Globe2, Smartphone } from "lucide-react";
+import { ArrowRight, ShoppingCart, CreditCard, Package, Globe2 } from "lucide-react";
+import { EcommerceFeature108 } from "@/components/blocks/EcommerceFeature108";
 import ProductSection from "./ProductSection";
 
 type EcommercePageProps = {
@@ -157,54 +158,24 @@ export default function EcommercePage({ label }: EcommercePageProps) {
       </ProductSection>
 
       <ProductSection variant="gray">
-          <div className="mb-4">
-          <SectionHeading eyebrow="What You Deliver" title="Full-Featured Ecommerce — Without the Complexity" center />
+        <EcommerceFeature108 />
+        <div className="mt-10 grid md:grid-cols-2 gap-4">
+          <FeatureColumn
+            title="Guided Setup"
+            points={[
+              "A guided 5-step setup wizard handles products, taxes, shipping, and payment configuration.",
+              "Centralized inventory and order management from one dashboard.",
+            ]}
+          />
+          <FeatureColumn
+            title="The Partner Advantage"
+            points={[
+              "Every website customer is a potential store customer — expand ARPU with tiered ecommerce plans.",
+              "Bundle with websites, SSL, and marketing tools to create high-value, hard-to-replace packages.",
+              "Offer DIY and managed models — same platform, two revenue models.",
+            ]}
+          />
         </div>
-          <p
-            className="text-base leading-relaxed mb-4 max-w-3xl mx-auto"
-            style={{ fontFamily: "Raleway, sans-serif", color: "#555a5e" }}
-          >
-            Online Store provides everything SMBs need to sell online, integrated into the website they already have with you.
-          </p>
-          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-3">
-            <FeatureCard
-              icon={<ShoppingCart size={22} />}
-              title="One-Click Store Activation"
-              body="Add a fully functional online store to any Online Presence Builder website with one click. No migration, no separate platform, no disruption."
-            />
-            <FeatureCard
-              icon={<Smartphone size={22} />}
-              title="Mobile-Ready Commerce"
-              body="Responsive storefront, checkout, and product browsing optimized for smartphones and tablets — where the majority of shopping happens."
-            />
-            <FeatureCard
-              icon={<Globe2 size={22} />}
-              title="Multi-Channel Selling"
-              body="Sell on the website plus Facebook, Instagram, TikTok, Pinterest, Amazon, and Google Shopping Ads — with centralized inventory and order management."
-            />
-            <FeatureCard
-              icon={<Package size={22} />}
-              title="Revenue-Driving Tools"
-              body="Abandoned cart recovery, discount codes, promotions, social selling, and subscription support. Sell physical goods, digital products, or services."
-            />
-          </div>
-          <div className="mt-4 grid md:grid-cols-2 gap-4">
-            <FeatureColumn
-              title="Guided Setup"
-              points={[
-                "A guided 5-step setup wizard handles products, taxes, shipping, and payment configuration.",
-                "Centralized inventory and order management from one dashboard.",
-              ]}
-            />
-            <FeatureColumn
-              title="The Partner Advantage"
-              points={[
-                "Every website customer is a potential store customer — expand ARPU with tiered ecommerce plans.",
-                "Bundle with websites, SSL, and marketing tools to create high-value, hard-to-replace packages.",
-                "Offer DIY and managed models — same platform, two revenue models.",
-              ]}
-            />
-          </div>
       </ProductSection>
 
       <ProductSection variant="white">
@@ -400,30 +371,6 @@ function SectionHeading({ eyebrow, title, center }: SectionHeadingProps) {
       >
         {title}
       </h2>
-    </div>
-  );
-}
-
-type FeatureCardProps = { icon: React.ReactNode; title: string; body: string };
-
-function FeatureCard({ icon, title, body }: FeatureCardProps) {
-  return (
-    <div className="rounded-2xl border border-gray-100 bg-white p-4 shadow-sm">
-      <div
-        className="w-10 h-10 rounded-xl flex items-center justify-center mb-3"
-        style={{ backgroundColor: "rgba(44,173,178,0.08)", color: "#2CADB2" }}
-      >
-        {icon}
-      </div>
-      <h3
-        className="text-sm font-semibold mb-2"
-        style={{ fontFamily: "Montserrat, sans-serif", color: "#24282B" }}
-      >
-        {title}
-      </h3>
-      <p className="text-sm" style={{ fontFamily: "Raleway, sans-serif", color: "#555a5e" }}>
-        {body}
-      </p>
     </div>
   );
 }
