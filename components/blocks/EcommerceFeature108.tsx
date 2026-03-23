@@ -1,10 +1,8 @@
 "use client";
 
 import Image from "next/image";
-import Link from "next/link";
 import { Globe2, MousePointerClick, Package, Smartphone } from "lucide-react";
 import { Badge } from "@/components/ui/badge";
-import { Button } from "@/components/ui/button";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 
 const tabs = [
@@ -128,9 +126,6 @@ export function EcommerceFeature108() {
                 >
                   {tab.content.description}
                 </p>
-                <Button asChild size="lg" className="mt-1 w-fit gap-2">
-                  <Link href="/contact">Book a demo</Link>
-                </Button>
               </div>
               <div className="relative mx-auto aspect-[4/3] w-full max-w-lg overflow-hidden rounded-xl bg-[#f7f6f2] shadow-inner lg:max-w-none">
                 <Image
