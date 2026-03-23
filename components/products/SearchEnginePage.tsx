@@ -28,7 +28,7 @@ export default function SearchEnginePage({ label }: SearchEnginePageProps) {
             <div>
               <div className="flex items-center gap-3 mb-5">
                 <div className="w-8 h-px" style={{ backgroundColor: "#2CADB2" }} />
-                <span className="section-label">Search Engine Assist by Hostopia</span>
+                <span className="section-label">Search Engine Optimization by Hostopia</span>
               </div>
               <h1
                 className="font-black leading-tight mb-4"
@@ -50,7 +50,7 @@ export default function SearchEnginePage({ label }: SearchEnginePageProps) {
                 className="text-base leading-relaxed mb-6"
                 style={{ fontFamily: "Raleway, sans-serif", color: "#555a5e" }}
               >
-                Search Engine Assist is a white-label, task-based SEO platform that walks SMBs through the actions that improve their search rankings — with customized plans, keyword tracking, and progress reporting. All under your brand.
+                Search Engine Optimization is a white-label, task-based SEO platform that walks SMBs through the actions that improve their search rankings — with customized plans, keyword tracking, and progress reporting. All under your brand.
               </p>
               <div className="flex flex-wrap gap-3">
                 <Link
@@ -119,7 +119,7 @@ export default function SearchEnginePage({ label }: SearchEnginePageProps) {
           className="text-base leading-relaxed mb-6 max-w-3xl"
           style={{ fontFamily: "Raleway, sans-serif", color: "#555a5e" }}
         >
-          Search Engine Assist is designed for non-expert SMBs and built for partners who need scale without support overhead.
+          Search Engine Optimization is designed for non-expert SMBs and built for partners who need scale without support overhead.
         </p>
         <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-4">
           <FeatureCard
@@ -151,14 +151,14 @@ export default function SearchEnginePage({ label }: SearchEnginePageProps) {
           className="text-base leading-relaxed mb-6 max-w-3xl"
           style={{ fontFamily: "Raleway, sans-serif", color: "#555a5e" }}
         >
-          SEO is one of the highest-demand digital services for SMBs. Search Engine Assist lets you offer it at scale without hiring specialists.
+          SEO is one of the highest-demand digital services for SMBs. Search Engine Optimization lets you offer it at scale without hiring specialists.
         </p>
         <div className="grid md:grid-cols-3 gap-6">
           <FeatureColumn
             title="Natural attachment to your web portfolio"
             points={[
               "Every website customer is an SEO prospect.",
-              "Bundle Search Engine Assist with websites, hosting, and OneList Plus for stronger product attachment and lower churn.",
+              "Bundle Search Engine Optimization with websites, hosting, and Directory Listings for stronger product attachment and lower churn.",
             ]}
           />
           <FeatureColumn
@@ -183,7 +183,7 @@ export default function SearchEnginePage({ label }: SearchEnginePageProps) {
           className="text-base leading-relaxed mb-8 max-w-3xl"
           style={{ fontFamily: "Raleway, sans-serif", color: "#555a5e" }}
         >
-          Once an SMB has a website live, the next question is always: how do I get found? Search Engine Assist answers that question inside your ecosystem.
+          Once an SMB has a website live, the next question is always: how do I get found? Search Engine Optimization answers that question inside your ecosystem.
         </p>
         <div className="flex flex-col gap-4 md:flex-row md:items-stretch md:gap-0">
           {[
@@ -200,10 +200,10 @@ export default function SearchEnginePage({ label }: SearchEnginePageProps) {
             {
               step: "03",
               title: "Get Found",
-              body: "Search Engine Assist guides SEO improvements month by month. Pair with OneList Plus and Reviews Promoter.",
+              body: "Search Engine Optimization guides SEO improvements month by month. Pair with Directory Listings and Reputation Management.",
               highlightTeal: true,
               conceptLabel: "Get Found",
-              productName: "Search Engine Assist",
+              productName: "Search Engine Optimization",
             },
             {
               step: "04",
@@ -249,7 +249,7 @@ export default function SearchEnginePage({ label }: SearchEnginePageProps) {
             className="text-sm md:text-base mb-6 max-w-2xl"
             style={{ fontFamily: "Raleway, sans-serif", color: "#d1d5db" }}
           >
-            Connect with Hostopia to launch Search Engine Assist under your brand, bundle it with your web and marketing portfolio, and help SMBs get found by the customers searching for them.
+            Connect with Hostopia to launch Search Engine Optimization under your brand, bundle it with your web and marketing portfolio, and help SMBs get found by the customers searching for them.
           </p>
           <Link
             href="/contact"

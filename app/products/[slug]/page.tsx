@@ -16,6 +16,7 @@ import EcommercePage from "@/components/products/EcommercePage";
 import SearchEnginePage from "@/components/products/SearchEnginePage";
 import EmailMarketingPage from "@/components/products/EmailMarketingPage";
 import CustomWebsitePage from "@/components/products/CustomWebsitePage";
+import OverviewProductPage from "@/components/products/OverviewProductPage";
 
 type Props = { params: { slug: string } };
 
@@ -119,9 +120,9 @@ const productMeta: Record<
     ],
   },
   directories: {
-    title: "OneList Plus | White-Label Local Listings Management for Service Providers",
+    title: "Directory Listings | White-Label Local Listings for Service Providers | Hostopia",
     description:
-      "Launch white-label local listings management under your brand. OneList Plus helps you drive retention and recurring revenue through always-on SMB visibility across top directories.",
+      "Expand SMB reach with accurate listings across top directories. Improve local SEO and manage all listings from a single, easy-to-use platform — under your brand.",
     keywords: [
       "white-label local listings management",
       "business directory listings",
@@ -134,7 +135,7 @@ const productMeta: Record<
   "reputation-management": {
     title: "Reputation Management | White-Label Reviews & Ratings for SMBs",
     description:
-      "Help SMBs get found and chosen with a white-label reputation management solution. Monitor, request, and respond to reviews under your brand to drive trust and conversion.",
+      "Build trust and credibility by collecting, managing, and showcasing customer reviews in one place — white-labeled for service providers.",
     keywords: [
       "white-label reputation management",
       "SMB reviews platform",
@@ -172,16 +173,48 @@ const productMeta: Record<
     ],
   },
   seo: {
-    title: "White-Label SEO Platform for Service Providers | Hostopia",
+    title: "Search Engine Optimization | White-Label SEO Platform for Service Providers | Hostopia",
     description:
-      "Launch guided SEO under your brand. Search Engine Assist helps telcos, ISPs, and MSPs deliver task-based SEO to SMBs — driving activation, ARPU, and retention.",
+      "An all-in-one SEO platform for keyword research, rank tracking, backlink analysis, competitor insights, and performance optimization — under your brand.",
     keywords: [
       "white-label SEO platform",
-      "SEO software for service providers",
-      "guided SEO for SMBs",
+      "search engine optimization for service providers",
+      "SEO software for SMBs",
+      "keyword rank tracking white label",
       "white-label SEO tools",
       "SMB search engine optimization",
       "reseller SEO platform",
+    ],
+  },
+  "brand-competitor-monitoring": {
+    title: "Brand & Competitor Monitoring for SMBs | White-Label | Hostopia",
+    description:
+      "Track what customers are saying about your brand across social, web, and media. Monitor competitors, measure sentiment, and stay ahead of market trends — under your brand.",
+    keywords: [
+      "white-label brand monitoring",
+      "competitor monitoring for SMBs",
+      "brand sentiment tracking",
+      "social listening white label",
+    ],
+  },
+  "social-media-management": {
+    title: "Social Media Management | White-Label for Service Providers | Hostopia",
+    description:
+      "Create and schedule engaging posts with AI-powered tools, including images and videos, to keep SMB audiences active and growing — delivered in your brand.",
+    keywords: [
+      "white-label social media management",
+      "SMB social posting platform",
+      "AI social content for resellers",
+    ],
+  },
+  "ppc-management": {
+    title: "PPC Management | White-Label Paid Media for Service Providers | Hostopia",
+    description:
+      "Plan, launch, and optimize ad campaigns across channels to maximize performance and ROI — under your brand, powered by Hostopia.",
+    keywords: [
+      "white-label PPC management",
+      "paid search for service providers",
+      "SMB advertising platform reseller",
     ],
   },
   "email-marketing": {
@@ -270,6 +303,36 @@ export default function ProductSlugPage({ params }: Props) {
   }
   if (slug === "custom-website-development") {
     return <CustomWebsitePage label={label} />;
+  }
+  if (slug === "brand-competitor-monitoring") {
+    return (
+      <OverviewProductPage
+        label={label}
+        eyebrow="Brand & Competitor Monitoring by Hostopia"
+        headline="Know what they're saying — and what competitors are doing"
+        description="Track what customers are saying about your brand across social, web, and media channels. Monitor competitor activity, measure sentiment, and stay ahead of market trends."
+      />
+    );
+  }
+  if (slug === "social-media-management") {
+    return (
+      <OverviewProductPage
+        label={label}
+        eyebrow="Social Media Management by Hostopia"
+        headline="Stay Active, On-Brand, and Growing on Social"
+        description="Create and schedule engaging posts with AI-powered tools, including images and videos, to keep your audience active and growing."
+      />
+    );
+  }
+  if (slug === "ppc-management") {
+    return (
+      <OverviewProductPage
+        label={label}
+        eyebrow="PPC Management by Hostopia"
+        headline="Campaigns That Scale Performance and ROI"
+        description="Plan, launch, and optimize ad campaigns across channels to maximize performance and ROI."
+      />
+    );
   }
 
   return (

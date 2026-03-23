@@ -149,6 +149,13 @@
         "description": "Give SMBs the web presence they need — from DIY to fully managed.",
         "products": [
           {
+            "name": "Brand & Competitor Monitoring",
+            "tag": "Market Intelligence",
+            "description": "Track what customers are saying about your brand across social, web, and media channels. Monitor competitor activity, measure sentiment, and stay ahead of market trends.",
+            "highlights": ["Cross-channel brand listening", "Competitor and trend signals", "Sentiment and visibility context"],
+            "link": "/products/brand-competitor-monitoring"
+          },
+          {
             "name": "Online Presence Builder",
             "tag": "SMB Essential",
             "description": "AI-powered, white-label website builder that lets SMBs launch professional sites in minutes. Industry-specific templates, built-in SEO, and drag-and-drop editing.",
@@ -183,25 +190,32 @@
         "description": "Drive visibility, reputation, and local discovery for SMBs.",
         "products": [
           {
-            "name": "Search Engine Assist",
-            "tag": "Visibility Driver",
-            "description": "White-label, guided SEO platform that helps SMBs improve search rankings without agency complexity. Task-based interface makes optimization accessible to non-technical users.",
-            "highlights": ["Guided SEO task engine", "Keyword tracking and reporting", "Competitor benchmarking"],
-            "link": "/products/seo"
+            "name": "Reputation Management",
+            "tag": "Trust Builder",
+            "description": "Build trust and credibility by collecting, managing, and showcasing customer reviews in one place.",
+            "highlights": ["Review collection and showcase", "Centralized reputation hub", "Credibility across channels"],
+            "link": "/products/reputation-management"
           },
           {
-            "name": "OneList Plus",
+            "name": "Directory Listings",
             "tag": "Local Presence",
-            "description": "White-label local listings management across 60+ directories. Keep SMB business information accurate everywhere — driving search visibility, trust, and foot traffic.",
-            "highlights": ["60+ directory network", "Automated sync and correction", "Visibility reporting dashboard"],
+            "description": "Expand your reach with accurate listings across top directories. Improve local SEO and manage all listings from a single, easy-to-use platform.",
+            "highlights": ["Accurate listings at scale", "Single dashboard control", "Stronger local SEO"],
             "link": "/products/directories"
           },
           {
-            "name": "Reviews Promoter",
-            "tag": "Reputation Engine",
-            "description": "AI-powered reputation management and review generation. Help SMBs collect, monitor, and respond to reviews across Google, social platforms, and industry directories.",
-            "highlights": ["Automated review requests", "AI-powered response suggestions", "Centralized monitoring dashboard"],
-            "link": "/products/reputation-management"
+            "name": "Social Media Management",
+            "tag": "Engagement",
+            "description": "Create and schedule engaging posts with AI-powered tools, including images and videos, to keep your audience active and growing.",
+            "highlights": ["AI-assisted content", "Scheduling across channels", "Images and video support"],
+            "link": "/products/social-media-management"
+          },
+          {
+            "name": "Search Engine Optimization",
+            "tag": "Visibility Driver",
+            "description": "An all-in-one SEO platform for keyword research, rank tracking, backlink analysis, competitor insights, and performance optimization.",
+            "highlights": ["Keyword research & rank tracking", "Backlink and competitor insights", "Performance optimization"],
+            "link": "/products/seo"
           }
         ]
       },
@@ -224,6 +238,13 @@
             "link": "/products/email-marketing"
           },
           {
+            "name": "PPC Management",
+            "tag": "Acquisition",
+            "description": "Plan, launch, and optimize ad campaigns across channels to maximize performance and ROI.",
+            "highlights": ["Cross-channel campaigns", "Ongoing optimization", "Performance and ROI focus"],
+            "link": "/products/ppc-management"
+          },
+          {
             "name": "Custom Website Design",
             "tag": "Premium Tier",
             "description": "Fully custom WordPress websites built to SMB brand and business goals. For customers who need more than templates — with full ownership and ongoing support.",
@@ -240,7 +261,7 @@
         ]
       }
     ],
-    "notes": "Restructured from 5 cherry-picked services to all 14 products organized by the four portfolio pillars — matching product page structure and nav-products.ts exactly. Each product links to its dedicated page. Tags match the positioning in the individual product page JSON files."
+    "notes": "Products organized by the four portfolio pillars — aligned with nav-products.ts. Newer additions include Brand & Competitor Monitoring, Social Media Management, PPC Management, plus nav copy updates for Directory Listings, Reputation Management, and Search Engine Optimization."
   },
 
   "migrations": {

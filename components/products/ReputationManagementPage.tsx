@@ -55,7 +55,7 @@ export default function ReputationManagementPage({ label }: ReputationManagement
                 className="text-base leading-relaxed mb-6"
                 style={{ fontFamily: "Raleway, sans-serif", color: "#555a5e" }}
               >
-                Reviews Promoter is an AI-driven reputation and social media management platform built for SMBs who need a simple way to generate trust, build social proof, and stay visible — all delivered white-label under your brand.
+                Reputation Management is an AI-driven platform built for SMBs who need a simple way to generate trust, build social proof, and stay visible — all delivered white-label under your brand.
               </p>
               <div className="flex flex-wrap gap-3">
                 <Link
