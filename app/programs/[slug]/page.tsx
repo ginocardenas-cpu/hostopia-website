@@ -1,35 +1,73 @@
-type ProgramsPageProps = {
-  params: { slug: string };
+import type { ComponentType } from "react";
+import type { Metadata } from "next";
+import { notFound } from "next/navigation";
+import channelContent from "@/content/programs/channel-as-a-service.json";
+import marketingContent from "@/content/programs/partner-marketing.json";
+import projectContent from "@/content/programs/project-management.json";
+import serviceContent from "@/content/programs/service-management.json";
+import supportContent from "@/content/programs/support.json";
+import ChannelAsAServicePage from "@/components/programs/ChannelAsAServicePage";
+import PartnerMarketingPage from "@/components/programs/PartnerMarketingPage";
+import ProjectManagementPage from "@/components/programs/ProjectManagementPage";
+import ServiceManagementPage from "@/components/programs/ServiceManagementPage";
+import SupportPage from "@/components/programs/SupportPage";
+
+type Props = { params: { slug: string } };
+
+const programMeta: Record<string, { title: string; description: string; keywords: string[] }> = {
+  "channel-as-a-service": {
+    title: channelContent.seo.metaTitle,
+    description: channelContent.seo.metaDescription,
+    keywords: [channelContent.seo.primaryKeyword, ...channelContent.seo.secondaryKeywords],
+  },
+  "partner-marketing": {
+    title: marketingContent.seo.metaTitle,
+    description: marketingContent.seo.metaDescription,
+    keywords: [marketingContent.seo.primaryKeyword, ...marketingContent.seo.secondaryKeywords],
+  },
+  "project-management": {
+    title: projectContent.seo.metaTitle,
+    description: projectContent.seo.metaDescription,
+    keywords: [projectContent.seo.primaryKeyword, ...projectContent.seo.secondaryKeywords],
+  },
+  "service-management": {
+    title: serviceContent.seo.metaTitle,
+    description: serviceContent.seo.metaDescription,
+    keywords: [serviceContent.seo.primaryKeyword, ...serviceContent.seo.secondaryKeywords],
+  },
+  support: {
+    title: supportContent.seo.metaTitle,
+    description: supportContent.seo.metaDescription,
+    keywords: [supportContent.seo.primaryKeyword, ...supportContent.seo.secondaryKeywords],
+  },
 };
 
-const PROGRAM_TITLES: Record<string, string> = {
-  "channel-as-a-service": "Channel as a Service",
-  "partner-marketing": "Partner Marketing",
-  "project-management": "Project Management",
-  "service-management": "Service Management",
-  support: "Support",
+const programComponents: Record<string, ComponentType> = {
+  "channel-as-a-service": ChannelAsAServicePage,
+  "partner-marketing": PartnerMarketingPage,
+  "project-management": ProjectManagementPage,
+  "service-management": ServiceManagementPage,
+  support: SupportPage,
 };
 
-export default function ProgramsPage({ params }: ProgramsPageProps) {
-  const title = PROGRAM_TITLES[params.slug] ?? "Program";
+export function generateStaticParams() {
+  return Object.keys(programMeta).map((slug) => ({ slug }));
+}
 
-  return (
-    <main className="min-h-[60vh] pt-28 pb-16 px-6" style={{ backgroundColor: "#f7f6f2" }}>
-      <div className="max-w-7xl mx-auto">
-        <div className="flex items-center gap-3 mb-5">
-          <div className="w-8 h-px" style={{ backgroundColor: "#2CADB2" }} />
-          <span className="section-label">Partner Programs</span>
-        </div>
-        <h1
-          className="font-black leading-tight mb-4"
-          style={{ fontFamily: "Montserrat, sans-serif", fontSize: "clamp(2rem, 4vw, 3.5rem)", color: "#24282B" }}
-        >
-          {title}
-        </h1>
-        <p style={{ fontFamily: "Raleway, sans-serif", color: "#555a5e" }}>
-          Detailed content for <strong>{title}</strong> will be added here.
-        </p>
-      </div>
-    </main>
-  );
+export function generateMetadata({ params }: Props): Metadata {
+  const meta = programMeta[params.slug];
+  if (!meta) {
+    return { title: "Programs | Hostopia" };
+  }
+  return {
+    title: meta.title,
+    description: meta.description,
+    keywords: meta.keywords,
+  };
+}
+
+export default function ProgramSlugPage({ params }: Props) {
+  const Component = programComponents[params.slug];
+  if (!Component) notFound();
+  return <Component />;
 }

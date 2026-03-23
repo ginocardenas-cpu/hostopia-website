@@ -19,6 +19,7 @@ const platformLinks = [
 ];
 
 const programLinks = [
+  { label: "Programs Overview", description: "All go-to-market programs", href: "/programs" },
   { label: "Channel as a Service", description: "Full channel support", href: "/programs/channel-as-a-service" },
   { label: "Partner Marketing", description: "Co-marketing and enablement", href: "/programs/partner-marketing" },
   { label: "Project Management", description: "Migration and onboarding", href: "/programs/project-management" },

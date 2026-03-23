@@ -1,0 +1,141 @@
+{
+  "slug": "support",
+  "label": "Support",
+  "programName": "Support",
+
+  "seo": {
+    "primaryKeyword": "white-label technical support",
+    "secondaryKeywords": [
+      "24/7 multilingual support for service providers",
+      "outsourced customer support",
+      "tiered technical support",
+      "SMB customer support white label",
+      "customer retention support"
+    ],
+    "metaTitle": "24/7 White-Label Technical Support for Service Providers | Hostopia",
+    "metaDescription": "Multilingual, multi-channel, 24/7 technical support in your brand. Level 1 through Level 3, retention programs, upsell capabilities, and full reporting.",
+    "urlSlug": "/programs/support"
+  },
+
+  "hero": {
+    "eyebrow": "Support",
+    "headline": "We Don't Service Partner Customers. We Service Customers.",
+    "subheadline": "24/7, multilingual, multi-channel technical support — entirely in your brand. From Level 1 break/fix through Level 3 escalations.",
+    "cta": { "primary": "Talk to Our Team", "secondary": "See Support Models" },
+    "image": "support-hero.jpg"
+  },
+
+  "howItWorks": {
+    "eyebrow": "How it works",
+    "heading": "Your Brand. Our Expertise. Their Satisfaction.",
+    "intro": "White-label customer support that scales with your business. Your customers never know we're involved.",
+    "cards": [
+      {
+        "icon": "Clock",
+        "title": "24/7/365 Coverage",
+        "body": "North American-based agents delivering round-the-clock support across multiple time zones."
+      },
+      {
+        "icon": "MessageCircle",
+        "title": "Multi-Channel",
+        "body": "Phone, email, and live chat — every channel staffed by agents trained on your products and brand standards."
+      },
+      {
+        "icon": "Languages",
+        "title": "Multilingual",
+        "body": "Service delivered in multiple languages for global service providers and their customers."
+      }
+    ]
+  },
+
+  "tieredSupport": {
+    "eyebrow": "Flexible models",
+    "heading": "Support Your Way",
+    "tiers": [
+      {
+        "level": "Level 1",
+        "title": "Break/Fix",
+        "body": "24/7 first-contact resolution for common technical issues, account questions, and product guidance — fully white-labeled.",
+        "icon": "Wrench"
+      },
+      {
+        "level": "Levels 2 & 3",
+        "title": "Advanced Support",
+        "body": "Platform-level troubleshooting, escalation handling, and complex technical resolution — available standalone.",
+        "icon": "Server"
+      },
+      {
+        "level": "Your Choice",
+        "title": "Flexible Combinations",
+        "body": "We run the full stack, or you handle Level 1 and we take Levels 2 and 3. We integrate with your processes either way.",
+        "icon": "Sliders"
+      }
+    ]
+  },
+
+  "upserve": {
+    "eyebrow": "More than break/fix",
+    "heading": "Support That Drives Revenue",
+    "intro": "Every customer interaction is an opportunity. We call it \"Upserve\" — and it's in our DNA.",
+    "cards": [
+      {
+        "icon": "TrendingUp",
+        "title": "Upsell in Every Interaction",
+        "body": "Agents trained to identify upgrade opportunities. A customer calling about their website might benefit from SEO. An email inquiry is a chance to introduce a premium plan."
+      },
+      {
+        "icon": "Phone",
+        "title": "Welcome-to-Service Calls",
+        "body": "Consultative onboarding to build trust, validate package selection, and introduce add-on services."
+      },
+      {
+        "icon": "Heart",
+        "title": "Retention Programs",
+        "body": "Proactive outreach to at-risk customers — addressing satisfaction issues and reinforcing value before they consider cancelling."
+      }
+    ]
+  },
+
+  "reporting": {
+    "eyebrow": "Full visibility",
+    "heading": "Complete Reporting. Total Transparency.",
+    "items": [
+      {
+        "icon": "BarChart3",
+        "title": "Performance Reporting",
+        "body": "Call volumes, resolution rates, CSAT, handle time."
+      },
+      {
+        "icon": "Bell",
+        "title": "Proactive Notifications",
+        "body": "We flag trends before they become problems."
+      },
+      {
+        "icon": "AlertCircle",
+        "title": "Escalation Desk",
+        "body": "Dedicated Partner Relations team for urgent issues."
+      },
+      {
+        "icon": "CheckCircle",
+        "title": "Quality Assurance",
+        "body": "Ongoing monitoring and coaching to maintain your brand standards."
+      }
+    ]
+  },
+
+  "stats": {
+    "heading": "Support Built for Service Providers",
+    "items": [
+      { "stat": "200+", "label": "North American-based agents" },
+      { "stat": "1M+", "label": "SMBs supported since 1999" },
+      { "stat": "24/7", "label": "Multilingual, multi-channel coverage" },
+      { "stat": "100%", "label": "White-label by default" }
+    ]
+  },
+
+  "cta": {
+    "headline": "Give Your Customers the Support They Deserve",
+    "body": "Full 24/7 coverage or Level 2/3 backup — we adapt to your model.",
+    "buttonText": "Explore Support Options"
+  }
+}

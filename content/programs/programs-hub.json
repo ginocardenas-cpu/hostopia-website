@@ -1,0 +1,65 @@
+{
+  "slug": "programs",
+  "label": "Programs",
+  "pageName": "Programs",
+
+  "seo": {
+    "primaryKeyword": "go-to-market programs service providers",
+    "secondaryKeywords": [
+      "partner enablement",
+      "digital services GTM",
+      "service provider support programs",
+      "white-label go-to-market"
+    ],
+    "metaTitle": "Go-to-Market Programs for Service Providers | Hostopia",
+    "metaDescription": "Launch faster, sell smarter, and retain more customers with Hostopia's go-to-market programs. Channel sales, partner marketing, project management, service management, and multilingual support — all in your brand.",
+    "urlSlug": "/programs"
+  },
+
+  "hero": {
+    "eyebrow": "Go-to-Market Enablement",
+    "headline": "Your Success Is Our Business",
+    "subheadline": "We embed with your teams — marketing, sales, operations, and support — so you get to market faster, sell more effectively, and keep customers longer.",
+    "cta": { "primary": "Become a Partner", "secondary": "Explore Programs" }
+  },
+
+  "intro": "Hostopia's Programs are purpose-built enablement services that extend your team's capabilities — from go-to-market planning through ongoing customer support. Each program is fully white-labeled, tracked, and delivered in your brand.",
+
+  "programCards": [
+    {
+      "slug": "channel-as-a-service",
+      "title": "Channel as a Service",
+      "description": "A turnkey sales channel, running inbound and outbound campaigns in your brand. Fully tracked. Fully yours.",
+      "icon": "Megaphone",
+      "href": "/programs/channel-as-a-service"
+    },
+    {
+      "slug": "partner-marketing",
+      "title": "Partner Marketing",
+      "description": "Demand generation, MDF management, and campaign execution. Your marketing team, extended.",
+      "icon": "Target",
+      "href": "/programs/partner-marketing"
+    },
+    {
+      "slug": "project-management",
+      "title": "Project Management",
+      "description": "Dedicated PMs for deployments, migrations, and custom implementations. On time. On scope.",
+      "icon": "ClipboardList",
+      "href": "/programs/project-management"
+    },
+    {
+      "slug": "service-management",
+      "title": "Service Management",
+      "description": "A named contact who owns your account, runs QBRs, pulls in experts, and keeps everything on track.",
+      "icon": "UserCheck",
+      "href": "/programs/service-management"
+    },
+    {
+      "slug": "support",
+      "title": "Support",
+      "description": "Multilingual, multi-channel, 24/7 technical support in your brand. Level 1 through Level 3.",
+      "icon": "Headphones",
+      "href": "/programs/support"
+    }
+  ]
+}

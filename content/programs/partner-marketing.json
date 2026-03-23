@@ -1,0 +1,111 @@
+{
+  "slug": "partner-marketing",
+  "label": "Partner Marketing",
+  "programName": "Partner Marketing",
+
+  "seo": {
+    "primaryKeyword": "partner marketing program",
+    "secondaryKeywords": [
+      "service provider marketing support",
+      "MDF management",
+      "demand generation for telcos",
+      "co-branded marketing campaigns",
+      "SMB customer acquisition",
+      "marketing development fund"
+    ],
+    "metaTitle": "Partner Marketing Programs for Service Providers | Hostopia",
+    "metaDescription": "Extend your marketing team with Hostopia. Demand generation, MDF management, campaign execution, and turnkey assets — built for service providers selling digital services to SMBs.",
+    "urlSlug": "/programs/partner-marketing"
+  },
+
+  "hero": {
+    "eyebrow": "Partner Marketing",
+    "headline": "Your Marketing Team, Extended",
+    "subheadline": "Telecom and SMB marketing expertise at your fingertips — from go-to-market strategy and campaign execution to MDF management and turnkey creative assets.",
+    "cta": { "primary": "Talk to Our Team", "secondary": "See What's Included" },
+    "image": "partner-marketing-hero.jpg"
+  },
+
+  "howItWorks": {
+    "eyebrow": "How we work with you",
+    "heading": "An Extension of Your Team",
+    "intro": "Hostopia's Partner Marketing managers work alongside your marketing and sales teams. We bring deep experience in telecom, SMB markets, and channel marketing — applied to your goals, your segments, and your competitive landscape.",
+    "cards": [
+      {
+        "icon": "Rocket",
+        "title": "Go-to-Market Strategy",
+        "body": "We help define your target market, ideal customer profile, pricing models, and distribution channels — shortening time to market and reducing risk."
+      },
+      {
+        "icon": "Target",
+        "title": "Demand Generation",
+        "body": "Lead generation, segment marketing, data enrichment, and offer strategy — executed across email, landing pages, digital ads, and direct channels."
+      },
+      {
+        "icon": "Wallet",
+        "title": "MDF Management",
+        "body": "We establish and manage Marketing Development Funds on your behalf, leveraging pre-built tools and programs at scale. Funds are proactively managed to drive results, not sit idle."
+      },
+      {
+        "icon": "Package",
+        "title": "Turnkey Creative Assets",
+        "body": "Through Hostopia Connects, access downloadable white-label materials: videos, landing pages, collateral, sales scripts, and objection handlers — all customizable to your brand."
+      }
+    ]
+  },
+
+  "lifecycle": {
+    "eyebrow": "Customer lifecycle",
+    "heading": "Programs for Every Stage",
+    "columns": [
+      {
+        "title": "Acquire",
+        "icon": "UserPlus",
+        "body": "Bundling strategies, data enrichment, segment marketing, and lead generation to bring new SMB customers into your portfolio."
+      },
+      {
+        "title": "Grow",
+        "icon": "TrendingUp",
+        "body": "Channel strategy, engagement tools, vertical marketing, and Right-Time Engagement (RTE) to automate upsell at the right moment."
+      },
+      {
+        "title": "Retain",
+        "icon": "Heart",
+        "body": "Onboarding and activation programs, value messaging, and engagement strategies that keep customers active and reduce churn."
+      }
+    ]
+  },
+
+  "differentiators": {
+    "eyebrow": "What you get",
+    "heading": "Marketing Expertise Without the Headcount",
+    "items": [
+      {
+        "icon": "User",
+        "title": "Dedicated Partner Marketing Manager",
+        "body": "A named resource who knows your business, customers, and goals."
+      },
+      {
+        "icon": "Layers",
+        "title": "Pre-Launch and Post-Launch Support",
+        "body": "From positioning through ongoing performance optimization."
+      },
+      {
+        "icon": "BarChart3",
+        "title": "Performance-Driven Programs",
+        "body": "Tracked CAC, campaign ROI, and regular reporting."
+      },
+      {
+        "icon": "Globe",
+        "title": "Global Capability",
+        "body": "Programs adapted to local markets and languages."
+      }
+    ]
+  },
+
+  "cta": {
+    "headline": "Let's Build Your Next Campaign",
+    "body": "Tell us your goals and we'll show you how Hostopia's Partner Marketing team can help — whether it's a full go-to-market plan or a single campaign.",
+    "buttonText": "Connect with Partner Marketing"
+  }
+}

@@ -1,0 +1,125 @@
+{
+  "slug": "project-management",
+  "label": "Project Management",
+  "programName": "Project Management",
+
+  "seo": {
+    "primaryKeyword": "project management for service providers",
+    "secondaryKeywords": [
+      "managed deployment services",
+      "email migration project management",
+      "white-label deployment",
+      "large-scale email migration",
+      "platform implementation"
+    ],
+    "metaTitle": "Project Management for Service Provider Deployments | Hostopia",
+    "metaDescription": "Dedicated project managers for deployments, large-scale migrations, and custom implementations. Hostopia's PM team delivers on time, on scope, on your behalf.",
+    "urlSlug": "/programs/project-management"
+  },
+
+  "hero": {
+    "eyebrow": "Project Management",
+    "headline": "Every Project. One Point of Contact.",
+    "subheadline": "A dedicated project manager for every deployment, migration, and custom implementation — on time, on scope, and on budget.",
+    "cta": { "primary": "Talk to Our Team", "secondary": "See Our Migration Track Record" },
+    "image": "project-management-hero.jpg"
+  },
+
+  "howItWorks": {
+    "eyebrow": "How it works",
+    "heading": "A Dedicated PM from Day One",
+    "intro": "Every Hostopia project gets a dedicated project manager who serves as the single point of contact between your organization and our delivery teams.",
+    "cards": [
+      {
+        "icon": "Rocket",
+        "title": "New Deployments",
+        "body": "Your PM builds the project plan, coordinates resources, manages timelines, and ensures every milestone is met — from platform configuration through go-live."
+      },
+      {
+        "icon": "ArrowRightLeft",
+        "title": "Large-Scale Migrations",
+        "body": "Over 400 successful migrations and millions of email accounts moved for major telecom providers worldwide. Your PM oversees the process using Hostopia's proprietary SNAP migration platform — eliminating downtime and minimizing customer disruption."
+      },
+      {
+        "icon": "Wrench",
+        "title": "Custom Implementations",
+        "body": "Billing integration, custom development, or specialized configuration — your PM scopes the work, coordinates delivery, and manages through UAT and deployment."
+      },
+      {
+        "icon": "Handshake",
+        "title": "Flexible Engagement",
+        "body": "We work on your behalf end-to-end, or alongside your own PM, integrating into your processes and reporting structures."
+      }
+    ]
+  },
+
+  "migrationExpertise": {
+    "eyebrow": "Migration expertise",
+    "heading": "400+ Migrations. Millions of Accounts. Minimal Disruption.",
+    "items": [
+      {
+        "icon": "Cpu",
+        "title": "SNAP Migration Platform",
+        "body": "Proprietary tooling that automates sync, eliminates downtime, and ensures continuous mail delivery."
+      },
+      {
+        "icon": "Server",
+        "title": "Legacy Platform Experience",
+        "body": "Proven success with Zimbra, Synacor, and other legacy systems."
+      },
+      {
+        "icon": "Users",
+        "title": "PIM Data Transfer",
+        "body": "Contacts, calendars, and personal data migrated alongside email."
+      },
+      {
+        "icon": "Globe",
+        "title": "DNS Independence",
+        "body": "No dependency on DNS changes, reducing risk and complexity."
+      },
+      {
+        "icon": "Activity",
+        "title": "Real-Time Monitoring",
+        "body": "Constant reporting and proactive communication throughout every phase."
+      }
+    ]
+  },
+
+  "differentiators": {
+    "eyebrow": "What you get",
+    "heading": "Structured Delivery, Not Guesswork",
+    "items": [
+      {
+        "icon": "User",
+        "title": "Named PM",
+        "body": "Accountable for delivery from kickoff to handoff."
+      },
+      {
+        "icon": "ListChecks",
+        "title": "Defined Milestones",
+        "body": "Documented deliverables, dependencies, and deadlines."
+      },
+      {
+        "icon": "FileText",
+        "title": "Weekly Status Reporting",
+        "body": "Risk registers, escalation paths, and progress updates."
+      },
+      {
+        "icon": "GitBranch",
+        "title": "Cross-Functional Coordination",
+        "body": "Engineering, support, and operations pulled in as needed."
+      },
+      {
+        "icon": "ArrowRight",
+        "title": "Clean Post-Launch Handoff",
+        "body": "Structured transition to Service Management and Support."
+      }
+    ]
+  },
+
+  "cta": {
+    "headline": "Let's Scope Your Project",
+    "body": "Hostopia's PM team has the methodology and the track record. Let's talk about your timeline.",
+    "buttonText": "Start a Project Conversation"
+  }
+}

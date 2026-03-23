@@ -1,0 +1,93 @@
+{
+  "slug": "service-management",
+  "label": "Service Management",
+  "programName": "Service Management",
+
+  "seo": {
+    "primaryKeyword": "service management for service providers",
+    "secondaryKeywords": [
+      "dedicated account management",
+      "partner success management",
+      "quarterly business review",
+      "digital services account management",
+      "partner relationship management"
+    ],
+    "metaTitle": "Dedicated Service Management for Service Providers | Hostopia",
+    "metaDescription": "A named service manager for your account — reporting, QBRs, escalations, and expert coordination. Hostopia keeps your digital services running to your satisfaction.",
+    "urlSlug": "/programs/service-management"
+  },
+
+  "hero": {
+    "eyebrow": "Service Management",
+    "headline": "Your Account. Your Advocate.",
+    "subheadline": "A dedicated service manager who knows your business, owns your satisfaction, and proactively keeps everything running.",
+    "cta": { "primary": "Talk to Our Team", "secondary": "Learn What's Included" },
+    "image": "service-management-hero.jpg"
+  },
+
+  "howItWorks": {
+    "eyebrow": "How it works",
+    "heading": "A Named Resource Who Owns Your Experience",
+    "intro": "Your service manager is your day-to-day point of contact — embedded in the details of your business, your KPIs, and your priorities.",
+    "cards": [
+      {
+        "icon": "UserCheck",
+        "title": "Day-to-Day Account Ownership",
+        "body": "One contact for questions, updates, and escalations. They coordinate across Hostopia's engineering, support, product, and operations teams so you don't have to."
+      },
+      {
+        "icon": "BarChart3",
+        "title": "Reporting and Insights",
+        "body": "Regular reporting on platform performance, support metrics, and customer activity — with context on what the data means and what action to take."
+      },
+      {
+        "icon": "CalendarCheck",
+        "title": "Quarterly Business Reviews",
+        "body": "Structured QBRs covering performance trends, opportunities, concerns, and priorities for the next quarter."
+      },
+      {
+        "icon": "Users",
+        "title": "Expert Coordination",
+        "body": "Need a migration engineer, product manager, or security specialist? Your service manager brings them to the table."
+      },
+      {
+        "icon": "AlertTriangle",
+        "title": "Proactive Issue Management",
+        "body": "Account health monitoring, early flagging, and coordinated resolution — before issues reach your customers."
+      }
+    ]
+  },
+
+  "differentiators": {
+    "eyebrow": "Why it's different",
+    "heading": "Partnership, Not Ticket Triage",
+    "items": [
+      {
+        "icon": "Shield",
+        "title": "Dedicated and Tenured",
+        "body": "Experienced, stable, and committed to your account long-term."
+      },
+      {
+        "icon": "MessageSquare",
+        "title": "Strategic Conversations",
+        "body": "Performance, growth, and optimization — not just incident resolution."
+      },
+      {
+        "icon": "PhoneCall",
+        "title": "Escalation Desk Access",
+        "body": "Direct line to Hostopia's Partner Relations team."
+      },
+      {
+        "icon": "GraduationCap",
+        "title": "Training Coordination",
+        "body": "Onsite sessions, webinars, train-the-trainer programs, and knowledgebase access."
+      }
+    ]
+  },
+
+  "cta": {
+    "headline": "Get a Service Manager Who Knows Your Business",
+    "body": "Hostopia's Service Management program gives you a named contact invested in your outcomes.",
+    "buttonText": "Request a Service Management Overview"
+  }
+}

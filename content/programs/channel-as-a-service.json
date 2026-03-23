@@ -1,0 +1,88 @@
+{
+  "slug": "channel-as-a-service",
+  "label": "Channel as a Service",
+  "programName": "Channel as a Service",
+
+  "seo": {
+    "primaryKeyword": "channel as a service",
+    "secondaryKeywords": [
+      "white-label sales channel",
+      "outsourced sales for service providers",
+      "inbound outbound sales white label",
+      "managed sales channel",
+      "service provider revenue growth"
+    ],
+    "metaTitle": "Channel as a Service for Service Providers | White-Label Sales | Hostopia",
+    "metaDescription": "Stand up a fully managed, white-label sales channel for your digital services. Hostopia runs inbound and outbound sales in your brand with full activity tracking.",
+    "urlSlug": "/programs/channel-as-a-service"
+  },
+
+  "hero": {
+    "eyebrow": "Channel as a Service",
+    "headline": "A Sales Team That Sells in Your Name",
+    "subheadline": "Hostopia builds and operates a dedicated sales channel for your digital services — fully white-labeled, fully tracked, and aligned with your revenue goals.",
+    "cta": { "primary": "Talk to Our Team", "secondary": "Download the Program Overview" },
+    "image": "channel-as-a-service-hero.jpg"
+  },
+
+  "howItWorks": {
+    "eyebrow": "How it works",
+    "heading": "Your Channel. Our People. Your Brand.",
+    "intro": "We recruit, train, and manage sales consultants who work exclusively on your digital services — under your brand, following your processes, and selling to your customers.",
+    "cards": [
+      {
+        "icon": "PhoneIncoming",
+        "title": "Inbound Sales",
+        "body": "A dedicated team that handles inquiries, qualifies leads, and converts interest into revenue — trained on your products, your brand, and your customer base."
+      },
+      {
+        "icon": "PhoneOutgoing",
+        "title": "Outbound Sales",
+        "body": "Proactive engagement with your SMB customers through targeted upsell, cross-sell, and re-engagement campaigns designed around your goals and pricing."
+      },
+      {
+        "icon": "BarChart3",
+        "title": "Full Tracking and Reporting",
+        "body": "Every call, conversion, and touchpoint is tracked. You get full visibility into pipeline activity, conversion rates, and revenue generated."
+      },
+      {
+        "icon": "ShieldCheck",
+        "title": "White-Label Execution",
+        "body": "Your customers never know we're involved. Our agents answer in your brand, use your scripts, and follow your escalation paths."
+      }
+    ]
+  },
+
+  "differentiators": {
+    "eyebrow": "Why Hostopia",
+    "heading": "Built for Service Providers, Not Generic Call Centers",
+    "items": [
+      {
+        "icon": "Building2",
+        "title": "Industry Knowledge",
+        "body": "Our teams understand the telco landscape, common objections, and what motivates SMBs to buy."
+      },
+      {
+        "icon": "Settings",
+        "title": "Your Systems, Your Processes",
+        "body": "We integrate with your CRM, ticketing, and reporting systems."
+      },
+      {
+        "icon": "ArrowUpDown",
+        "title": "Flexible Models",
+        "body": "Campaign-based, ongoing, or seasonal. Scale up or back as needed."
+      },
+      {
+        "icon": "TrendingUp",
+        "title": "Retention and Upsell Built In",
+        "body": "Every interaction is an opportunity to grow revenue, not just close a ticket."
+      }
+    ]
+  },
+
+  "cta": {
+    "headline": "Ready to Build Your Channel?",
+    "body": "Hostopia can have a branded sales channel generating pipeline in weeks. Talk to our team about how Channel as a Service fits your goals.",
+    "buttonText": "Schedule a Consultation"
+  }
+}
