@@ -1,0 +1,387 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Hostopia Image Composition Guide — Ecommerce Example</title>
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body { font-family: 'Segoe UI', system-ui, sans-serif; background: #f7f6f2; color: #24282B; }
+
+  .container { max-width: 1100px; margin: 0 auto; padding: 40px 24px; }
+
+  h1 { font-size: 28px; font-weight: 800; margin-bottom: 8px; }
+  .subtitle { font-size: 16px; color: #555a5e; margin-bottom: 48px; }
+
+  .composition-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 48px; margin-bottom: 64px; }
+  @media (max-width: 768px) { .composition-grid { grid-template-columns: 1fr; } }
+
+  .comp-card { background: #fff; border-radius: 16px; overflow: hidden; box-shadow: 0 2px 12px rgba(0,0,0,0.06); }
+  .comp-card.bad { border: 2px solid #e74c3c; }
+  .comp-card.good { border: 2px solid #2CADB2; }
+
+  .comp-label {
+    padding: 12px 20px;
+    font-weight: 700;
+    font-size: 13px;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+  }
+  .bad .comp-label { background: #fdf0ef; color: #c0392b; }
+  .good .comp-label { background: #e8f7f7; color: #1a8a8e; }
+
+  .comp-visual {
+    position: relative;
+    width: 100%;
+    aspect-ratio: 16/10;
+    overflow: hidden;
+  }
+
+  /* BAD EXAMPLE — SMB-focused */
+  .bad-scene {
+    background: linear-gradient(135deg, #fef9ef 0%, #fdf3e0 100%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    padding: 32px;
+  }
+
+  .smb-owner {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 12px;
+  }
+
+  .person-icon {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 36px;
+  }
+  .bad .person-icon { background: #f8d7da; }
+
+  .smb-phone {
+    width: 120px;
+    height: 200px;
+    background: #fff;
+    border-radius: 16px;
+    border: 2px solid #ddd;
+    padding: 8px;
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+  }
+  .phone-header { height: 12px; background: #e8e8e8; border-radius: 4px; }
+  .phone-product { display: flex; gap: 4px; flex: 1; }
+  .phone-product-img { flex: 1; background: #f0e6d3; border-radius: 4px; }
+  .phone-cart { height: 20px; background: #27ae60; border-radius: 8px; margin-top: auto; }
+
+  .bad-caption {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(192, 57, 43, 0.9);
+    color: #fff;
+    padding: 10px 16px;
+    font-size: 13px;
+    font-weight: 600;
+  }
+
+  /* GOOD EXAMPLE — Partner enablement */
+  .good-scene {
+    background: linear-gradient(135deg, #f0f4f8 0%, #e8eef3 100%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    padding: 24px;
+    gap: 24px;
+  }
+
+  .partner-side {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 8px;
+    flex-shrink: 0;
+  }
+  .good .person-icon { background: #d4edda; }
+  .partner-label {
+    font-size: 11px;
+    font-weight: 700;
+    color: #1a8a8e;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+  }
+
+  .tablet-screen {
+    width: 220px;
+    height: 160px;
+    background: #fff;
+    border-radius: 12px;
+    border: 2px solid #ccc;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    box-shadow: 0 4px 16px rgba(0,0,0,0.08);
+  }
+  .tablet-nav { height: 10px; background: #2CADB2; border-radius: 3px; opacity: 0.7; }
+  .tablet-hero-img { height: 40px; background: linear-gradient(135deg, #e8f4f5, #d5eff0); border-radius: 4px; display: flex; align-items: center; justify-content: center; font-size: 11px; color: #2CADB2; font-weight: 600; }
+  .tablet-products { display: flex; gap: 4px; flex: 1; }
+  .tablet-prod-card { flex: 1; background: #f8f8f8; border-radius: 4px; border: 1px solid #eee; display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 2px; padding: 4px; }
+  .tablet-prod-img { width: 100%; height: 20px; background: #e8e8e8; border-radius: 2px; }
+  .tablet-prod-price { font-size: 8px; color: #555; font-weight: 600; }
+  .tablet-cta { height: 16px; background: #F8CF41; border-radius: 6px; display: flex; align-items: center; justify-content: center; font-size: 8px; font-weight: 700; color: #24282B; }
+
+  .smb-side {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 8px;
+    flex-shrink: 0;
+  }
+  .smb-side .person-icon { background: #ffeeba; font-size: 28px; width: 56px; height: 56px; }
+  .smb-label { font-size: 10px; color: #888; font-weight: 600; text-transform: uppercase; }
+
+  .gesture-arrow {
+    font-size: 24px;
+    color: #2CADB2;
+    animation: point 1.5s ease-in-out infinite;
+  }
+  @keyframes point { 0%, 100% { transform: translateX(0); } 50% { transform: translateX(6px); } }
+
+  .good-caption {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(26, 138, 142, 0.9);
+    color: #fff;
+    padding: 10px 16px;
+    font-size: 13px;
+    font-weight: 600;
+  }
+
+  .comp-desc { padding: 20px; font-size: 14px; line-height: 1.6; color: #555a5e; }
+  .comp-desc strong { color: #24282B; }
+
+  /* Layer diagram */
+  .layer-section { margin-bottom: 64px; }
+  .layer-section h2 { font-size: 22px; font-weight: 700; margin-bottom: 24px; }
+
+  .layer-diagram {
+    display: flex;
+    gap: 0;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 2px 12px rgba(0,0,0,0.06);
+  }
+  .layer-box {
+    flex: 1;
+    padding: 28px 20px;
+    text-align: center;
+  }
+  .layer-box:nth-child(1) { background: #24282B; color: #fff; }
+  .layer-box:nth-child(2) { background: #2CADB2; color: #fff; }
+  .layer-box:nth-child(3) { background: #f7f6f2; color: #24282B; border: 1px solid #e0e0e0; }
+
+  .layer-num { font-size: 12px; font-weight: 700; text-transform: uppercase; letter-spacing: 0.1em; opacity: 0.7; margin-bottom: 8px; }
+  .layer-who { font-size: 20px; font-weight: 800; margin-bottom: 4px; }
+  .layer-role { font-size: 13px; opacity: 0.85; line-height: 1.5; }
+
+  /* Product grid examples */
+  .product-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); gap: 20px; margin-top: 24px; }
+  .product-example {
+    background: #fff;
+    border-radius: 12px;
+    padding: 24px;
+    border: 1px solid #e8e8e8;
+  }
+  .product-example h4 { font-size: 16px; font-weight: 700; margin-bottom: 8px; color: #24282B; }
+  .product-example .pe-desc { font-size: 13px; color: #555a5e; line-height: 1.6; margin-bottom: 12px; }
+  .product-example .pe-tags { display: flex; flex-wrap: wrap; gap: 6px; }
+  .pe-tag {
+    font-size: 11px;
+    padding: 4px 10px;
+    border-radius: 20px;
+    font-weight: 600;
+  }
+  .pe-tag.search { background: #e8f7f7; color: #1a8a8e; }
+  .pe-tag.avoid { background: #fdf0ef; color: #c0392b; }
+</style>
+</head>
+<body>
+
+<div class="container">
+
+  <h1>Hostopia Image Composition Guide</h1>
+  <p class="subtitle">How to select images that speak to service providers while showing SMB outcomes</p>
+
+  <!-- Layer Framework -->
+  <div class="layer-section">
+    <h2>The Three-Layer Framework</h2>
+    <div class="layer-diagram">
+      <div class="layer-box">
+        <div class="layer-num">Layer 1 — Foreground</div>
+        <div class="layer-who">Service Provider</div>
+        <div class="layer-role">The hero. The decision-maker. Always in focus.</div>
+      </div>
+      <div class="layer-box">
+        <div class="layer-num">Layer 2 — On Screen</div>
+        <div class="layer-who">SMB Outcome</div>
+        <div class="layer-role">The result. Visible on a device or in the background.</div>
+      </div>
+      <div class="layer-box">
+        <div class="layer-num">Layer 3 — Implied</div>
+        <div class="layer-who">Hostopia</div>
+        <div class="layer-role">The invisible enabler. Never shown. Always understood.</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Composition Comparison -->
+  <h2 style="font-size: 22px; font-weight: 700; margin-bottom: 24px;">Example: Ecommerce Product Page Hero</h2>
+
+  <div class="composition-grid">
+
+    <!-- BAD -->
+    <div class="comp-card bad">
+      <div class="comp-label">✗ Avoid — SMB-Focused</div>
+      <div class="comp-visual">
+        <div class="bad-scene">
+          <div class="smb-owner">
+            <div class="person-icon">👩‍💼</div>
+            <div style="font-size: 12px; color: #888; font-weight: 600;">SMB Owner</div>
+            <div class="smb-phone">
+              <div class="phone-header"></div>
+              <div class="phone-product">
+                <div class="phone-product-img"></div>
+                <div class="phone-product-img"></div>
+              </div>
+              <div class="phone-cart"></div>
+            </div>
+          </div>
+        </div>
+        <div class="bad-caption">Hero is the SMB — your buyer doesn't see themselves here</div>
+      </div>
+      <div class="comp-desc">
+        <strong>Why this fails:</strong> The image shows an SMB owner shopping on their phone. This is the end-customer experience. A VP of Product at a telco looks at this and thinks "this page isn't for me." It positions Hostopia as a B2C product.
+      </div>
+    </div>
+
+    <!-- GOOD -->
+    <div class="comp-card good">
+      <div class="comp-label">✓ Recommended — Partner Enablement</div>
+      <div class="comp-visual">
+        <div class="good-scene">
+          <div class="partner-side">
+            <div class="person-icon">👨‍💻</div>
+            <div class="partner-label">Service Provider</div>
+          </div>
+          <div class="gesture-arrow">→</div>
+          <div class="tablet-screen">
+            <div class="tablet-nav"></div>
+            <div class="tablet-hero-img">Online Store</div>
+            <div class="tablet-products">
+              <div class="tablet-prod-card">
+                <div class="tablet-prod-img"></div>
+                <div class="tablet-prod-price">$29.99</div>
+              </div>
+              <div class="tablet-prod-card">
+                <div class="tablet-prod-img"></div>
+                <div class="tablet-prod-price">$49.99</div>
+              </div>
+              <div class="tablet-prod-card">
+                <div class="tablet-prod-img"></div>
+                <div class="tablet-prod-price">$19.99</div>
+              </div>
+            </div>
+            <div class="tablet-cta">Add to Cart</div>
+          </div>
+          <div class="smb-side">
+            <div class="person-icon">🏪</div>
+            <div class="smb-label">SMB Customer</div>
+          </div>
+        </div>
+        <div class="good-caption">Hero is the service provider — showing the outcome they deliver</div>
+      </div>
+      <div class="comp-desc">
+        <strong>Why this works:</strong> The service provider is the subject. The ecommerce store is visible on the tablet (Layer 2 — the outcome). The SMB customer is present but secondary. The viewer (a service provider decision-maker) sees themselves in the image. Hostopia isn't shown — it's implied.
+      </div>
+    </div>
+
+  </div>
+
+  <!-- Product Examples Grid -->
+  <h2 style="font-size: 22px; font-weight: 700; margin-bottom: 8px;">Applying This Across Product Pages</h2>
+  <p style="font-size: 14px; color: #555a5e; margin-bottom: 24px;">What to search for on stock photo sites and what to avoid</p>
+
+  <div class="product-grid">
+
+    <div class="product-example">
+      <h4>Ecommerce</h4>
+      <p class="pe-desc">Two professionals reviewing an online store on a tablet. Store visible on screen, conversation is the subject.</p>
+      <div class="pe-tags">
+        <span class="pe-tag search">Search: "business tablet ecommerce demo"</span>
+        <span class="pe-tag avoid">Avoid: "online shopping woman phone"</span>
+      </div>
+    </div>
+
+    <div class="product-example">
+      <h4>Business Email</h4>
+      <p class="pe-desc">Professional at a workstation reviewing email platform dashboard showing mailbox counts and uptime metrics.</p>
+      <div class="pe-tags">
+        <span class="pe-tag search">Search: "IT manager email dashboard"</span>
+        <span class="pe-tag avoid">Avoid: "person reading email on phone"</span>
+      </div>
+    </div>
+
+    <div class="product-example">
+      <h4>Website Builder</h4>
+      <p class="pe-desc">Service provider rep and SMB owner looking at a website preview together on a laptop. The website is the context, the partnership is the story.</p>
+      <div class="pe-tags">
+        <span class="pe-tag search">Search: "client website review meeting"</span>
+        <span class="pe-tag avoid">Avoid: "woman building website alone"</span>
+      </div>
+    </div>
+
+    <div class="product-example">
+      <h4>SEO / Digital Marketing</h4>
+      <p class="pe-desc">Professional presenting search performance results — Google Analytics or ranking report visible on a large screen.</p>
+      <div class="pe-tags">
+        <span class="pe-tag search">Search: "SEO analytics presentation"</span>
+        <span class="pe-tag avoid">Avoid: "magnifying glass on search bar"</span>
+      </div>
+    </div>
+
+    <div class="product-example">
+      <h4>Channel as a Service</h4>
+      <p class="pe-desc">Sales consultant at a modern workstation on a call, with CRM pipeline dashboard visible on their screen.</p>
+      <div class="pe-tags">
+        <span class="pe-tag search">Search: "sales team CRM dashboard"</span>
+        <span class="pe-tag avoid">Avoid: "call center rows of agents"</span>
+      </div>
+    </div>
+
+    <div class="product-example">
+      <h4>Support</h4>
+      <p class="pe-desc">Professional support agent at a clean desk with headset, focused and calm. Ticketing system visible on screen.</p>
+      <div class="pe-tags">
+        <span class="pe-tag search">Search: "IT support professional workstation"</span>
+        <span class="pe-tag avoid">Avoid: "smiling woman with headset"</span>
+      </div>
+    </div>
+
+  </div>
+
+</div>
+
+</body>
+</html>

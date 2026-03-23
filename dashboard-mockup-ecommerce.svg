@@ -1,0 +1,346 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 800" width="1280" height="800">
+  <defs>
+    <linearGradient id="bgGrad" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#0f1724"/>
+      <stop offset="100%" stop-color="#141e30"/>
+    </linearGradient>
+    <linearGradient id="cardGrad" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#1a2740"/>
+      <stop offset="100%" stop-color="#172236"/>
+    </linearGradient>
+    <linearGradient id="tealGrad" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#2CADB2"/>
+      <stop offset="100%" stop-color="#249da2"/>
+    </linearGradient>
+    <linearGradient id="goldGrad" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#F8CF41"/>
+      <stop offset="100%" stop-color="#e8bf31"/>
+    </linearGradient>
+    <linearGradient id="chartBg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#1a2740" stop-opacity="0"/>
+      <stop offset="100%" stop-color="#2CADB2" stop-opacity="0.05"/>
+    </linearGradient>
+    <filter id="glow">
+      <feGaussianBlur stdDeviation="2" result="blur"/>
+      <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+    <filter id="cardShadow" x="-2%" y="-2%" width="104%" height="108%">
+      <feDropShadow dx="0" dy="2" stdDeviation="4" flood-color="#000" flood-opacity="0.2"/>
+    </filter>
+  </defs>
+
+  <!-- Background -->
+  <rect width="1280" height="800" fill="url(#bgGrad)"/>
+
+  <!-- ================================ -->
+  <!-- SIDEBAR                          -->
+  <!-- ================================ -->
+  <rect x="0" y="0" width="220" height="800" fill="#0d1320"/>
+  <rect x="219" y="0" width="1" height="800" fill="#1a2740"/>
+
+  <!-- Logo area -->
+  <rect x="24" y="24" width="36" height="36" rx="8" fill="url(#tealGrad)"/>
+  <text x="32" y="48" font-family="Arial, sans-serif" font-size="16" font-weight="800" fill="#fff">H</text>
+  <text x="72" y="48" font-family="Arial, sans-serif" font-size="15" font-weight="700" fill="#fff">Partner Portal</text>
+
+  <!-- Nav items -->
+  <!-- Active: Dashboard -->
+  <rect x="12" y="88" width="196" height="40" rx="8" fill="#1a2740"/>
+  <rect x="12" y="88" width="3" height="40" rx="2" fill="#2CADB2"/>
+  <text x="44" y="113" font-family="Arial, sans-serif" font-size="13" font-weight="600" fill="#2CADB2">Dashboard</text>
+
+  <text x="44" y="153" font-family="Arial, sans-serif" font-size="13" fill="#5a7a9a">Products</text>
+  <text x="44" y="185" font-family="Arial, sans-serif" font-size="13" fill="#5a7a9a">Customers</text>
+  <text x="44" y="217" font-family="Arial, sans-serif" font-size="13" fill="#5a7a9a">Orders</text>
+  <text x="44" y="249" font-family="Arial, sans-serif" font-size="13" fill="#5a7a9a">Marketing</text>
+  <text x="44" y="281" font-family="Arial, sans-serif" font-size="13" fill="#5a7a9a">Support</text>
+  <text x="44" y="313" font-family="Arial, sans-serif" font-size="13" fill="#5a7a9a">Reports</text>
+  <text x="44" y="345" font-family="Arial, sans-serif" font-size="13" fill="#5a7a9a">Settings</text>
+
+  <!-- Sidebar bottom — user -->
+  <rect x="12" y="740" width="196" height="48" rx="8" fill="#1a2740"/>
+  <circle cx="36" cy="764" r="14" fill="#2CADB2" opacity="0.3"/>
+  <text x="34" y="769" font-family="Arial, sans-serif" font-size="12" font-weight="700" fill="#2CADB2">JM</text>
+  <text x="58" y="759" font-family="Arial, sans-serif" font-size="11" font-weight="600" fill="#ccd8e8">James Mitchell</text>
+  <text x="58" y="774" font-family="Arial, sans-serif" font-size="10" fill="#5a7a9a">VP Digital Services</text>
+
+  <!-- ================================ -->
+  <!-- MAIN CONTENT AREA                -->
+  <!-- ================================ -->
+
+  <!-- Header bar -->
+  <text x="248" y="48" font-family="Arial, sans-serif" font-size="22" font-weight="800" fill="#fff">Ecommerce Performance</text>
+  <text x="248" y="68" font-family="Arial, sans-serif" font-size="12" fill="#5a7a9a">Real-time revenue and customer metrics across your ecommerce portfolio</text>
+
+  <!-- Time period selector -->
+  <rect x="1040" y="28" width="100" height="32" rx="6" fill="#1a2740" stroke="#2a3d55" stroke-width="1"/>
+  <text x="1060" y="49" font-family="Arial, sans-serif" font-size="11" fill="#8aa4c8">Last 30 days</text>
+  <text x="1130" y="49" font-family="Arial, sans-serif" font-size="10" fill="#5a7a9a">▼</text>
+
+  <rect x="1152" y="28" width="100" height="32" rx="6" fill="url(#tealGrad)"/>
+  <text x="1170" y="49" font-family="Arial, sans-serif" font-size="11" font-weight="700" fill="#fff">Export PDF</text>
+
+  <!-- ================================ -->
+  <!-- TOP STAT CARDS ROW               -->
+  <!-- ================================ -->
+
+  <!-- Card 1: Monthly Revenue -->
+  <g filter="url(#cardShadow)">
+    <rect x="248" y="92" width="235" height="108" rx="12" fill="url(#cardGrad)"/>
+  </g>
+  <text x="272" y="118" font-family="Arial, sans-serif" font-size="10" font-weight="700" fill="#5a7a9a" letter-spacing="0.08em">MONTHLY REVENUE</text>
+  <text x="272" y="156" font-family="Arial, sans-serif" font-size="34" font-weight="800" fill="#2CADB2" filter="url(#glow)">$284,720</text>
+  <rect x="272" y="170" width="52" height="20" rx="10" fill="#27ae60" opacity="0.15"/>
+  <text x="282" y="184" font-family="Arial, sans-serif" font-size="11" font-weight="700" fill="#27ae60">▲ 18.3%</text>
+  <text x="332" y="184" font-family="Arial, sans-serif" font-size="10" fill="#5a7a9a">vs last month</text>
+
+  <!-- Card 2: Active Stores -->
+  <g filter="url(#cardShadow)">
+    <rect x="503" y="92" width="235" height="108" rx="12" fill="url(#cardGrad)"/>
+  </g>
+  <text x="527" y="118" font-family="Arial, sans-serif" font-size="10" font-weight="700" fill="#5a7a9a" letter-spacing="0.08em">ACTIVE ONLINE STORES</text>
+  <text x="527" y="156" font-family="Arial, sans-serif" font-size="34" font-weight="800" fill="#F8CF41" filter="url(#glow)">4,218</text>
+  <rect x="527" y="170" width="52" height="20" rx="10" fill="#27ae60" opacity="0.15"/>
+  <text x="537" y="184" font-family="Arial, sans-serif" font-size="11" font-weight="700" fill="#27ae60">▲ 12.1%</text>
+  <text x="597" y="184" font-family="Arial, sans-serif" font-size="10" fill="#5a7a9a">vs last month</text>
+
+  <!-- Card 3: Avg ARPU -->
+  <g filter="url(#cardShadow)">
+    <rect x="758" y="92" width="235" height="108" rx="12" fill="url(#cardGrad)"/>
+  </g>
+  <text x="782" y="118" font-family="Arial, sans-serif" font-size="10" font-weight="700" fill="#5a7a9a" letter-spacing="0.08em">ECOMMERCE ARPU</text>
+  <text x="782" y="156" font-family="Arial, sans-serif" font-size="34" font-weight="800" fill="#fff">$67.50</text>
+  <rect x="782" y="170" width="44" height="20" rx="10" fill="#27ae60" opacity="0.15"/>
+  <text x="790" y="184" font-family="Arial, sans-serif" font-size="11" font-weight="700" fill="#27ae60">▲ 8.2%</text>
+  <text x="834" y="184" font-family="Arial, sans-serif" font-size="10" fill="#5a7a9a">vs last month</text>
+
+  <!-- Card 4: Retention Rate -->
+  <g filter="url(#cardShadow)">
+    <rect x="1013" y="92" width="235" height="108" rx="12" fill="url(#cardGrad)"/>
+  </g>
+  <text x="1037" y="118" font-family="Arial, sans-serif" font-size="10" font-weight="700" fill="#5a7a9a" letter-spacing="0.08em">RETENTION RATE</text>
+  <text x="1037" y="156" font-family="Arial, sans-serif" font-size="34" font-weight="800" fill="#fff">94.7%</text>
+  <rect x="1037" y="170" width="44" height="20" rx="10" fill="#27ae60" opacity="0.15"/>
+  <text x="1045" y="184" font-family="Arial, sans-serif" font-size="11" font-weight="700" fill="#27ae60">▲ 2.1%</text>
+  <text x="1089" y="184" font-family="Arial, sans-serif" font-size="10" fill="#5a7a9a">vs last quarter</text>
+
+
+  <!-- ================================ -->
+  <!-- REVENUE TREND CHART              -->
+  <!-- ================================ -->
+
+  <g filter="url(#cardShadow)">
+    <rect x="248" y="220" width="746" height="320" rx="12" fill="url(#cardGrad)"/>
+  </g>
+  <text x="280" y="252" font-family="Arial, sans-serif" font-size="14" font-weight="700" fill="#ccd8e8">Revenue Trend — Ecommerce</text>
+
+  <!-- Legend -->
+  <circle cx="620" cy="248" r="4" fill="#2CADB2"/>
+  <text x="630" y="252" font-family="Arial, sans-serif" font-size="10" fill="#5a7a9a">Revenue</text>
+  <circle cx="700" cy="248" r="4" fill="#F8CF41"/>
+  <text x="710" y="252" font-family="Arial, sans-serif" font-size="10" fill="#5a7a9a">New Stores</text>
+  <circle cx="790" cy="248" r="4" fill="#5a7a9a"/>
+  <text x="800" y="252" font-family="Arial, sans-serif" font-size="10" fill="#5a7a9a">Forecast</text>
+
+  <!-- Y-axis labels -->
+  <text x="280" y="290" font-family="Arial, sans-serif" font-size="9" fill="#3d5575">$350K</text>
+  <text x="280" y="340" font-family="Arial, sans-serif" font-size="9" fill="#3d5575">$280K</text>
+  <text x="280" y="390" font-family="Arial, sans-serif" font-size="9" fill="#3d5575">$210K</text>
+  <text x="280" y="440" font-family="Arial, sans-serif" font-size="9" fill="#3d5575">$140K</text>
+  <text x="280" y="490" font-family="Arial, sans-serif" font-size="9" fill="#3d5575">$70K</text>
+
+  <!-- Grid lines -->
+  <line x1="320" y1="286" x2="960" y2="286" stroke="#1e3050" stroke-width="0.5"/>
+  <line x1="320" y1="336" x2="960" y2="336" stroke="#1e3050" stroke-width="0.5"/>
+  <line x1="320" y1="386" x2="960" y2="386" stroke="#1e3050" stroke-width="0.5"/>
+  <line x1="320" y1="436" x2="960" y2="436" stroke="#1e3050" stroke-width="0.5"/>
+  <line x1="320" y1="486" x2="960" y2="486" stroke="#1e3050" stroke-width="0.5"/>
+
+  <!-- X-axis labels -->
+  <text x="340" y="516" font-family="Arial, sans-serif" font-size="9" fill="#3d5575">Oct</text>
+  <text x="410" y="516" font-family="Arial, sans-serif" font-size="9" fill="#3d5575">Nov</text>
+  <text x="480" y="516" font-family="Arial, sans-serif" font-size="9" fill="#3d5575">Dec</text>
+  <text x="550" y="516" font-family="Arial, sans-serif" font-size="9" fill="#3d5575">Jan</text>
+  <text x="620" y="516" font-family="Arial, sans-serif" font-size="9" fill="#3d5575">Feb</text>
+  <text x="690" y="516" font-family="Arial, sans-serif" font-size="9" fill="#3d5575">Mar</text>
+  <text x="760" y="516" font-family="Arial, sans-serif" font-size="9" fill="#3d5575">Apr</text>
+  <text x="830" y="516" font-family="Arial, sans-serif" font-size="9" fill="#3d5575">May</text>
+  <text x="900" y="516" font-family="Arial, sans-serif" font-size="9" fill="#3d5575">Jun</text>
+
+  <!-- Revenue area fill -->
+  <path d="M350 460 L420 440 L490 428 L560 410 L630 380 L700 350 L770 330 L770 486 L350 486 Z" fill="#2CADB2" opacity="0.08"/>
+  <!-- Revenue line -->
+  <polyline points="350,460 420,440 490,428 560,410 630,380 700,350 770,330" fill="none" stroke="#2CADB2" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+  <!-- Revenue dots -->
+  <circle cx="350" cy="460" r="4" fill="#2CADB2"/>
+  <circle cx="420" cy="440" r="4" fill="#2CADB2"/>
+  <circle cx="490" cy="428" r="4" fill="#2CADB2"/>
+  <circle cx="560" cy="410" r="4" fill="#2CADB2"/>
+  <circle cx="630" cy="380" r="4" fill="#2CADB2"/>
+  <circle cx="700" cy="350" r="4" fill="#2CADB2"/>
+  <circle cx="770" cy="330" r="5" fill="#2CADB2" filter="url(#glow)"/>
+
+  <!-- Forecast line (dashed) -->
+  <polyline points="770,330 840,310 910,290" fill="none" stroke="#5a7a9a" stroke-width="2" stroke-dasharray="6,4" stroke-linecap="round"/>
+  <circle cx="840" cy="310" r="3" fill="#5a7a9a"/>
+  <circle cx="910" cy="290" r="3" fill="#5a7a9a"/>
+
+  <!-- New stores bar overlay (gold) -->
+  <rect x="342" y="468" width="16" height="18" rx="2" fill="#F8CF41" opacity="0.5"/>
+  <rect x="412" y="462" width="16" height="24" rx="2" fill="#F8CF41" opacity="0.5"/>
+  <rect x="482" y="455" width="16" height="31" rx="2" fill="#F8CF41" opacity="0.5"/>
+  <rect x="552" y="448" width="16" height="38" rx="2" fill="#F8CF41" opacity="0.5"/>
+  <rect x="622" y="440" width="16" height="46" rx="2" fill="#F8CF41" opacity="0.6"/>
+  <rect x="692" y="430" width="16" height="56" rx="2" fill="#F8CF41" opacity="0.7"/>
+  <rect x="762" y="420" width="16" height="66" rx="2" fill="#F8CF41" opacity="0.8"/>
+
+  <!-- Current month highlight tooltip -->
+  <rect x="730" y="302" width="120" height="48" rx="8" fill="#24282B" stroke="#2CADB2" stroke-width="1"/>
+  <text x="746" y="320" font-family="Arial, sans-serif" font-size="10" fill="#5a7a9a">This Month</text>
+  <text x="746" y="340" font-family="Arial, sans-serif" font-size="16" font-weight="800" fill="#2CADB2">$284,720</text>
+
+
+  <!-- ================================ -->
+  <!-- RIGHT PANEL — TOP PLANS + LIST   -->
+  <!-- ================================ -->
+
+  <!-- Top ecommerce plans -->
+  <g filter="url(#cardShadow)">
+    <rect x="1014" y="220" width="234" height="192" rx="12" fill="url(#cardGrad)"/>
+  </g>
+  <text x="1038" y="250" font-family="Arial, sans-serif" font-size="13" font-weight="700" fill="#ccd8e8">Top Ecommerce Plans</text>
+
+  <!-- Plan 1 -->
+  <rect x="1038" y="264" width="186" height="36" rx="6" fill="#0f1724"/>
+  <circle cx="1058" cy="282" r="8" fill="#2CADB2" opacity="0.2"/>
+  <text x="1053" y="286" font-family="Arial, sans-serif" font-size="10" font-weight="700" fill="#2CADB2">1</text>
+  <text x="1074" y="278" font-family="Arial, sans-serif" font-size="11" font-weight="600" fill="#ccd8e8">Pro Store</text>
+  <text x="1074" y="292" font-family="Arial, sans-serif" font-size="9" fill="#5a7a9a">2,140 stores · $89/mo</text>
+  <text x="1190" y="285" font-family="Arial, sans-serif" font-size="11" font-weight="700" fill="#2CADB2" text-anchor="end">$190K</text>
+
+  <!-- Plan 2 -->
+  <rect x="1038" y="308" width="186" height="36" rx="6" fill="#0f1724"/>
+  <circle cx="1058" cy="326" r="8" fill="#F8CF41" opacity="0.2"/>
+  <text x="1053" y="330" font-family="Arial, sans-serif" font-size="10" font-weight="700" fill="#F8CF41">2</text>
+  <text x="1074" y="322" font-family="Arial, sans-serif" font-size="11" font-weight="600" fill="#ccd8e8">Starter Store</text>
+  <text x="1074" y="336" font-family="Arial, sans-serif" font-size="9" fill="#5a7a9a">1,450 stores · $39/mo</text>
+  <text x="1190" y="329" font-family="Arial, sans-serif" font-size="11" font-weight="700" fill="#F8CF41" text-anchor="end">$56.6K</text>
+
+  <!-- Plan 3 -->
+  <rect x="1038" y="352" width="186" height="36" rx="6" fill="#0f1724"/>
+  <circle cx="1058" cy="370" r="8" fill="#fff" opacity="0.1"/>
+  <text x="1053" y="374" font-family="Arial, sans-serif" font-size="10" font-weight="700" fill="#8aa4c8">3</text>
+  <text x="1074" y="366" font-family="Arial, sans-serif" font-size="11" font-weight="600" fill="#ccd8e8">Enterprise Store</text>
+  <text x="1074" y="380" font-family="Arial, sans-serif" font-size="9" fill="#5a7a9a">628 stores · $149/mo</text>
+  <text x="1190" y="373" font-family="Arial, sans-serif" font-size="11" font-weight="700" fill="#fff" text-anchor="end">$38.1K</text>
+
+
+  <!-- ================================ -->
+  <!-- BOTTOM ROW                       -->
+  <!-- ================================ -->
+
+  <!-- Recent activity panel -->
+  <g filter="url(#cardShadow)">
+    <rect x="1014" y="424" width="234" height="116" rx="12" fill="url(#cardGrad)"/>
+  </g>
+  <text x="1038" y="452" font-family="Arial, sans-serif" font-size="13" font-weight="700" fill="#ccd8e8">Recent Activity</text>
+
+  <!-- Activity items -->
+  <circle cx="1048" cy="476" r="4" fill="#27ae60"/>
+  <text x="1060" y="480" font-family="Arial, sans-serif" font-size="10" fill="#8aa4c8">142 new stores this week</text>
+
+  <circle cx="1048" cy="498" r="4" fill="#2CADB2"/>
+  <text x="1060" y="502" font-family="Arial, sans-serif" font-size="10" fill="#8aa4c8">Pro Store upgrades: +38</text>
+
+  <circle cx="1048" cy="520" r="4" fill="#F8CF41"/>
+  <text x="1060" y="524" font-family="Arial, sans-serif" font-size="10" fill="#8aa4c8">Avg order value up 14%</text>
+
+
+  <!-- ================================ -->
+  <!-- BOTTOM LEFT — PRODUCT MIX CHART  -->
+  <!-- ================================ -->
+
+  <g filter="url(#cardShadow)">
+    <rect x="248" y="556" width="490" height="220" rx="12" fill="url(#cardGrad)"/>
+  </g>
+  <text x="280" y="588" font-family="Arial, sans-serif" font-size="14" font-weight="700" fill="#ccd8e8">Digital Services Revenue Mix</text>
+  <text x="280" y="606" font-family="Arial, sans-serif" font-size="10" fill="#5a7a9a">Monthly recurring revenue across your portfolio</text>
+
+  <!-- Horizontal stacked bars -->
+  <!-- Ecommerce — highlighted -->
+  <text x="280" y="640" font-family="Arial, sans-serif" font-size="11" font-weight="600" fill="#F8CF41">Ecommerce</text>
+  <rect x="380" y="628" width="320" height="18" rx="4" fill="#F8CF41"/>
+  <text x="710" y="642" font-family="Arial, sans-serif" font-size="11" font-weight="700" fill="#F8CF41">$284K</text>
+
+  <!-- Email -->
+  <text x="280" y="668" font-family="Arial, sans-serif" font-size="11" fill="#8aa4c8">Business Email</text>
+  <rect x="380" y="656" width="250" height="18" rx="4" fill="#2CADB2"/>
+  <text x="640" y="670" font-family="Arial, sans-serif" font-size="11" font-weight="700" fill="#2CADB2">$218K</text>
+
+  <!-- Websites -->
+  <text x="280" y="696" font-family="Arial, sans-serif" font-size="11" fill="#8aa4c8">Website Builder</text>
+  <rect x="380" y="684" width="190" height="18" rx="4" fill="#2CADB2" opacity="0.7"/>
+  <text x="580" y="698" font-family="Arial, sans-serif" font-size="11" font-weight="700" fill="#2CADB2">$165K</text>
+
+  <!-- SEO -->
+  <text x="280" y="724" font-family="Arial, sans-serif" font-size="11" fill="#8aa4c8">SEO Services</text>
+  <rect x="380" y="712" width="110" height="18" rx="4" fill="#2CADB2" opacity="0.5"/>
+  <text x="500" y="726" font-family="Arial, sans-serif" font-size="11" font-weight="700" fill="#2CADB2">$96K</text>
+
+  <!-- Directories -->
+  <text x="280" y="752" font-family="Arial, sans-serif" font-size="11" fill="#8aa4c8">Directory Listings</text>
+  <rect x="380" y="740" width="80" height="18" rx="4" fill="#2CADB2" opacity="0.35"/>
+  <text x="470" y="754" font-family="Arial, sans-serif" font-size="11" font-weight="700" fill="#2CADB2">$72K</text>
+
+
+  <!-- ================================ -->
+  <!-- BOTTOM RIGHT — CUSTOMER HEALTH   -->
+  <!-- ================================ -->
+
+  <g filter="url(#cardShadow)">
+    <rect x="758" y="556" width="490" height="220" rx="12" fill="url(#cardGrad)"/>
+  </g>
+  <text x="790" y="588" font-family="Arial, sans-serif" font-size="14" font-weight="700" fill="#ccd8e8">Customer Health — Ecommerce</text>
+
+  <!-- Donut chart approximation -->
+  <!-- Background ring -->
+  <circle cx="870" cy="690" r="55" fill="none" stroke="#0f1724" stroke-width="14"/>
+  <!-- Active segment (green, ~75%) -->
+  <circle cx="870" cy="690" r="55" fill="none" stroke="#27ae60" stroke-width="14"
+    stroke-dasharray="260 346" stroke-dashoffset="86.5" stroke-linecap="round"/>
+  <!-- At risk (gold, ~15%) -->
+  <circle cx="870" cy="690" r="55" fill="none" stroke="#F8CF41" stroke-width="14"
+    stroke-dasharray="52 346" stroke-dashoffset="-173.5" stroke-linecap="round" opacity="0.8"/>
+  <!-- Churned (red, ~5%) -->
+  <circle cx="870" cy="690" r="55" fill="none" stroke="#e74c3c" stroke-width="14"
+    stroke-dasharray="17 346" stroke-dashoffset="-225.5" stroke-linecap="round" opacity="0.6"/>
+  <!-- Center text -->
+  <text x="870" y="685" font-family="Arial, sans-serif" font-size="20" font-weight="800" fill="#fff" text-anchor="middle">94.7%</text>
+  <text x="870" y="703" font-family="Arial, sans-serif" font-size="9" fill="#5a7a9a" text-anchor="middle">Retention</text>
+
+  <!-- Legend -->
+  <circle cx="960" cy="640" r="5" fill="#27ae60"/>
+  <text x="972" y="644" font-family="Arial, sans-serif" font-size="11" fill="#8aa4c8">Active</text>
+  <text x="1060" y="644" font-family="Arial, sans-serif" font-size="11" font-weight="700" fill="#27ae60">3,994</text>
+  <text x="1110" y="644" font-family="Arial, sans-serif" font-size="10" fill="#5a7a9a">(75%)</text>
+
+  <circle cx="960" cy="664" r="5" fill="#2CADB2"/>
+  <text x="972" y="668" font-family="Arial, sans-serif" font-size="11" fill="#8aa4c8">Engaged</text>
+  <text x="1060" y="668" font-family="Arial, sans-serif" font-size="11" font-weight="700" fill="#2CADB2">832</text>
+  <text x="1110" y="668" font-family="Arial, sans-serif" font-size="10" fill="#5a7a9a">(20%)</text>
+
+  <circle cx="960" cy="688" r="5" fill="#F8CF41"/>
+  <text x="972" y="692" font-family="Arial, sans-serif" font-size="11" fill="#8aa4c8">At Risk</text>
+  <text x="1060" y="692" font-family="Arial, sans-serif" font-size="11" font-weight="700" fill="#F8CF41">168</text>
+  <text x="1110" y="692" font-family="Arial, sans-serif" font-size="10" fill="#5a7a9a">(4%)</text>
+
+  <circle cx="960" cy="712" r="5" fill="#e74c3c" opacity="0.6"/>
+  <text x="972" y="716" font-family="Arial, sans-serif" font-size="11" fill="#8aa4c8">Churned</text>
+  <text x="1060" y="716" font-family="Arial, sans-serif" font-size="11" font-weight="700" fill="#e74c3c">56</text>
+  <text x="1110" y="716" font-family="Arial, sans-serif" font-size="10" fill="#5a7a9a">(1%)</text>
+
+  <!-- Upsell opportunity callout -->
+  <rect x="960" y="732" width="266" height="32" rx="6" fill="#2CADB2" opacity="0.1"/>
+  <text x="976" y="752" font-family="Arial, sans-serif" font-size="10" font-weight="600" fill="#2CADB2">↗ 832 accounts eligible for Pro upgrade</text>
+
+</svg>
