@@ -12,7 +12,7 @@ export const productsDropdownSections = [
     heading: "Get Online",
     links: [
       {
-        label: "Brand & Competitor Monitoring",
+        label: "Competitive Intelligence",
         description: "Brand listening and competitor insights",
         href: "/products/brand-competitor-monitoring",
         slug: "brand-competitor-monitoring",
@@ -28,25 +28,25 @@ export const productsDropdownSections = [
     links: [
       {
         label: "Reputation Management",
-        description: "Reviews and credibility in one place",
+        description: "Collect/respond to Reviews",
         href: "/products/reputation-management",
         slug: "reputation-management",
       },
       {
         label: "Directory Listings",
-        description: "Local listings and discovery",
+        description: "Local listings management",
         href: "/products/directories",
         slug: "directories",
       },
       {
         label: "Social Media Management",
-        description: "AI-assisted social scheduling",
+        description: "AI-assisted content creation/scheduling",
         href: "/products/social-media-management",
         slug: "social-media-management",
       },
       {
         label: "Search Engine Optimization",
-        description: "Keywords, ranks, and SEO performance",
+        description: "Keywords, ranking, and SEO performance",
         href: "/products/seo",
         slug: "seo",
       },

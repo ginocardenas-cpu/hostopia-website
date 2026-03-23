@@ -149,9 +149,9 @@
         "description": "Give SMBs the web presence they need — from DIY to fully managed.",
         "products": [
           {
-            "name": "Brand & Competitor Monitoring",
+            "name": "Competitive Intelligence",
             "tag": "Market Intelligence",
-            "description": "Track what customers are saying about your brand across social, web, and media channels. Monitor competitor activity, measure sentiment, and stay ahead of market trends.",
+            "description": "Brand listening and competitor insights across social, web, and media.",
             "highlights": ["Cross-channel brand listening", "Competitor and trend signals", "Sentiment and visibility context"],
             "link": "/products/brand-competitor-monitoring"
           },
@@ -192,29 +192,29 @@
           {
             "name": "Reputation Management",
             "tag": "Trust Builder",
-            "description": "Build trust and credibility by collecting, managing, and showcasing customer reviews in one place.",
-            "highlights": ["Review collection and showcase", "Centralized reputation hub", "Credibility across channels"],
+            "description": "Collect and respond to reviews — build trust and credibility in one place.",
+            "highlights": ["Review collection and responses", "Centralized reputation hub", "Credibility across channels"],
             "link": "/products/reputation-management"
           },
           {
             "name": "Directory Listings",
             "tag": "Local Presence",
-            "description": "Expand your reach with accurate listings across top directories. Improve local SEO and manage all listings from a single, easy-to-use platform.",
+            "description": "Local listings management — accurate data across top directories from one platform.",
             "highlights": ["Accurate listings at scale", "Single dashboard control", "Stronger local SEO"],
             "link": "/products/directories"
           },
           {
             "name": "Social Media Management",
             "tag": "Engagement",
-            "description": "Create and schedule engaging posts with AI-powered tools, including images and videos, to keep your audience active and growing.",
-            "highlights": ["AI-assisted content", "Scheduling across channels", "Images and video support"],
+            "description": "AI-assisted content creation and scheduling — including images and video — to grow your audience.",
+            "highlights": ["AI-assisted content", "Creation and scheduling", "Images and video support"],
             "link": "/products/social-media-management"
           },
           {
             "name": "Search Engine Optimization",
             "tag": "Visibility Driver",
-            "description": "An all-in-one SEO platform for keyword research, rank tracking, backlink analysis, competitor insights, and performance optimization.",
-            "highlights": ["Keyword research & rank tracking", "Backlink and competitor insights", "Performance optimization"],
+            "description": "Keywords, ranking, and SEO performance — research, tracking, backlinks, and optimization in one platform.",
+            "highlights": ["Keyword research & ranking", "Backlink and competitor insights", "Performance optimization"],
             "link": "/products/seo"
           }
         ]
@@ -240,7 +240,7 @@
           {
             "name": "PPC Management",
             "tag": "Acquisition",
-            "description": "Plan, launch, and optimize ad campaigns across channels to maximize performance and ROI.",
+            "description": "Paid campaigns and ROI — plan, launch, and optimize ads across channels.",
             "highlights": ["Cross-channel campaigns", "Ongoing optimization", "Performance and ROI focus"],
             "link": "/products/ppc-management"
           },
@@ -261,7 +261,7 @@
         ]
       }
     ],
-    "notes": "Products organized by the four portfolio pillars — aligned with nav-products.ts. Newer additions include Brand & Competitor Monitoring, Social Media Management, PPC Management, plus nav copy updates for Directory Listings, Reputation Management, and Search Engine Optimization."
+    "notes": "Products organized by the four portfolio pillars — aligned with nav-products.ts. Includes Competitive Intelligence, Social Media Management, PPC Management, Directory Listings, Reputation Management, and Search Engine Optimization."
   },
 
   "migrations": {

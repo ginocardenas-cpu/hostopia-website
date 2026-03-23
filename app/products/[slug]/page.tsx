@@ -122,7 +122,7 @@ const productMeta: Record<
   directories: {
     title: "Directory Listings | White-Label Local Listings for Service Providers | Hostopia",
     description:
-      "Expand SMB reach with accurate listings across top directories. Improve local SEO and manage all listings from a single, easy-to-use platform — under your brand.",
+      "Local listings management — accurate listings across top directories and stronger local SEO from one platform, under your brand.",
     keywords: [
       "white-label local listings management",
       "business directory listings",
@@ -135,7 +135,7 @@ const productMeta: Record<
   "reputation-management": {
     title: "Reputation Management | White-Label Reviews & Ratings for SMBs",
     description:
-      "Build trust and credibility by collecting, managing, and showcasing customer reviews in one place — white-labeled for service providers.",
+      "Collect and respond to reviews — manage and showcase customer feedback in one place, white-labeled for service providers.",
     keywords: [
       "white-label reputation management",
       "SMB reviews platform",
@@ -175,7 +175,7 @@ const productMeta: Record<
   seo: {
     title: "Search Engine Optimization | White-Label SEO Platform for Service Providers | Hostopia",
     description:
-      "An all-in-one SEO platform for keyword research, rank tracking, backlink analysis, competitor insights, and performance optimization — under your brand.",
+      "Keywords, ranking, and SEO performance — keyword research, rank tracking, backlinks, competitor insights, and optimization under your brand.",
     keywords: [
       "white-label SEO platform",
       "search engine optimization for service providers",
@@ -187,9 +187,9 @@ const productMeta: Record<
     ],
   },
   "brand-competitor-monitoring": {
-    title: "Brand & Competitor Monitoring for SMBs | White-Label | Hostopia",
+    title: "Competitive Intelligence for SMBs | White-Label | Hostopia",
     description:
-      "Track what customers are saying about your brand across social, web, and media. Monitor competitors, measure sentiment, and stay ahead of market trends — under your brand.",
+      "Brand listening and competitor insights — track sentiment, monitor competitors, and stay ahead of market trends under your brand.",
     keywords: [
       "white-label brand monitoring",
       "competitor monitoring for SMBs",
@@ -200,7 +200,7 @@ const productMeta: Record<
   "social-media-management": {
     title: "Social Media Management | White-Label for Service Providers | Hostopia",
     description:
-      "Create and schedule engaging posts with AI-powered tools, including images and videos, to keep SMB audiences active and growing — delivered in your brand.",
+      "AI-assisted content creation and scheduling, including images and video — keep SMB audiences active and growing under your brand.",
     keywords: [
       "white-label social media management",
       "SMB social posting platform",
@@ -210,7 +210,7 @@ const productMeta: Record<
   "ppc-management": {
     title: "PPC Management | White-Label Paid Media for Service Providers | Hostopia",
     description:
-      "Plan, launch, and optimize ad campaigns across channels to maximize performance and ROI — under your brand, powered by Hostopia.",
+      "Paid campaigns and ROI — plan, launch, and optimize ads across channels under your brand.",
     keywords: [
       "white-label PPC management",
       "paid search for service providers",
@@ -308,8 +308,8 @@ export default function ProductSlugPage({ params }: Props) {
     return (
       <OverviewProductPage
         label={label}
-        eyebrow="Brand & Competitor Monitoring by Hostopia"
-        headline="Know what they're saying — and what competitors are doing"
+        eyebrow="Competitive Intelligence by Hostopia"
+        headline="Brand listening and competitor insights"
         description="Track what customers are saying about your brand across social, web, and media channels. Monitor competitor activity, measure sentiment, and stay ahead of market trends."
       />
     );
@@ -319,7 +319,7 @@ export default function ProductSlugPage({ params }: Props) {
       <OverviewProductPage
         label={label}
         eyebrow="Social Media Management by Hostopia"
-        headline="Stay Active, On-Brand, and Growing on Social"
+        headline="AI-assisted content creation and scheduling"
         description="Create and schedule engaging posts with AI-powered tools, including images and videos, to keep your audience active and growing."
       />
     );
@@ -329,7 +329,7 @@ export default function ProductSlugPage({ params }: Props) {
       <OverviewProductPage
         label={label}
         eyebrow="PPC Management by Hostopia"
-        headline="Campaigns That Scale Performance and ROI"
+        headline="Paid campaigns and ROI"
         description="Plan, launch, and optimize ad campaigns across channels to maximize performance and ROI."
       />
     );
