@@ -4,6 +4,7 @@ import Link from "next/link";
 import type { ProductJson } from "@/lib/product-json-types";
 import ProductLucideIcon from "@/components/products/ProductLucideIcon";
 import ProductLifecycleGrid from "@/components/products/ProductLifecycleGrid";
+import { VerticalTabs } from "@/components/ui/vertical-tabs";
 
 function splitHeadline(headline: string): ReactNode {
   const parts = headline.split(/\s[—–]\s/);
@@ -62,10 +63,13 @@ function ProductImage({ src, alt, priority, className, sizes }: ProductImageProp
   );
 }
 
+const LOGO_DESIGN_SLUG = "logo-design";
+
 export default function ProductPageFromJson({ data }: { data: ProductJson }) {
   const { hero, features, partnerAdvantage, lifecycleFit, cta, media } = data;
   const heroImg = media?.heroImage;
   const contentImg = media?.contentImage;
+  const logoVerticalTabsLayout = data.slug === LOGO_DESIGN_SLUG && Boolean(hero.sidebar);
 
   return (
     <main>
@@ -138,7 +142,7 @@ export default function ProductPageFromJson({ data }: { data: ProductJson }) {
               </div>
             ) : null}
 
-            {!heroImg && hero.sidebar ? (
+            {!logoVerticalTabsLayout && !heroImg && hero.sidebar ? (
               <div className="rounded-2xl border border-gray-200/80 bg-white p-8 shadow-sm lg:ml-auto lg:max-w-md">
                 <p className="mb-6 font-montserrat text-lg font-black text-charcoal">{hero.sidebar.heading}</p>
                 <ul className="space-y-5">
@@ -152,7 +156,7 @@ export default function ProductPageFromJson({ data }: { data: ProductJson }) {
               </div>
             ) : null}
 
-            {heroImg && hero.sidebar ? (
+            {!logoVerticalTabsLayout && heroImg && hero.sidebar ? (
               <div className="mt-10 rounded-2xl border border-gray-200/80 bg-white/95 p-6 shadow-sm backdrop-blur-sm lg:mt-8 lg:max-w-md lg:self-end">
                 <p className="mb-4 font-montserrat text-base font-black text-charcoal">{hero.sidebar.heading}</p>
                 <ul className="space-y-4">
@@ -168,6 +172,21 @@ export default function ProductPageFromJson({ data }: { data: ProductJson }) {
           </div>
         </div>
       </section>
+
+      {logoVerticalTabsLayout && hero.sidebar ? (
+        <VerticalTabs
+          sectionHeading={hero.sidebar.heading}
+          items={hero.sidebar.items.map((item, i) => ({
+            id: String(i + 1).padStart(2, "0"),
+            title: item.title,
+            description: item.body,
+            imageSrc:
+              item.image?.src ??
+              "https://images.unsplash.com/photo-1626785774573-4b799315345d?q=80&w=1200&auto=format&fit=crop",
+            imageAlt: item.image?.alt ?? item.title,
+          }))}
+        />
+      ) : null}
 
       {features ? (
         <section className="bg-white py-28">

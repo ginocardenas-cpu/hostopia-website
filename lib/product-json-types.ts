@@ -13,9 +13,25 @@ export type ProductHeroCta = {
   secondary: string;
 };
 
+export type ProductMediaImage = {
+  src: string;
+  alt: string;
+  /** Wide hero / banner — defaults to true for LCP */
+  priority?: boolean;
+};
+
+export type ProductMedia = {
+  /** Large visual in hero (local `/...` or remote URL allowed in next.config) */
+  heroImage?: ProductMediaImage;
+  /** Full-width image between features and partner section */
+  contentImage?: ProductMediaImage & { caption?: string };
+};
+
 export type ProductSidebarItem = {
   title: string;
   body: string;
+  /** Optional tab gallery image (e.g. logo product vertical tabs) */
+  image?: ProductMediaImage;
 };
 
 export type ProductHero = {
@@ -77,20 +93,6 @@ export type ProductFinalCta = {
   headline: string;
   body: string;
   buttonText: string;
-};
-
-export type ProductMediaImage = {
-  src: string;
-  alt: string;
-  /** Wide hero / banner — defaults to true for LCP */
-  priority?: boolean;
-};
-
-export type ProductMedia = {
-  /** Large visual in hero (local `/...` or remote URL allowed in next.config) */
-  heroImage?: ProductMediaImage;
-  /** Full-width image between features and partner section */
-  contentImage?: ProductMediaImage & { caption?: string };
 };
 
 export type ProductJson = {
