@@ -139,7 +139,7 @@ export function VerticalTabs({ sectionHeading, items }: VerticalTabsProps) {
                             }}
                             className="overflow-hidden"
                           >
-                            <p className="max-w-sm pb-2 font-raleway text-sm font-normal leading-relaxed text-gray-500 md:text-base">
+                            <p className="max-w-none pb-2 font-raleway text-2xl font-normal leading-relaxed tracking-tight text-gray-500 md:text-3xl lg:text-4xl">
                               {item.description}
                             </p>
                           </motion.div>

@@ -41,7 +41,9 @@ export function ProductHeroAccordion({ sectionHeading, items }: ProductHeroAccor
               return (
                 <AccordionItem className="relative px-0" value={item.id} key={item.id}>
                   <AccordionTrigger className="px-5 py-5 hover:no-underline md:px-6 md:py-6">
-                    <span className="font-montserrat text-lg font-bold text-charcoal md:text-xl">{item.title}</span>
+                    <span className="font-montserrat text-2xl font-bold tracking-tight text-charcoal md:text-3xl lg:text-4xl">
+                      {item.title}
+                    </span>
                   </AccordionTrigger>
                   <AccordionContent>
                     <div
@@ -51,7 +53,9 @@ export function ProductHeroAccordion({ sectionHeading, items }: ProductHeroAccor
                       )}
                     >
                       <div className="space-y-4 px-5 py-6 md:px-6 md:py-8">
-                        <p className="font-raleway text-sm leading-relaxed text-gray-500 md:text-base">{item.content}</p>
+                        <p className="font-raleway text-2xl font-normal leading-relaxed tracking-tight text-gray-500 md:text-3xl lg:text-4xl">
+                          {item.content}
+                        </p>
                       </div>
                       {hasImage && item.imageSrc ? (
                         <div className="relative min-h-[220px] w-full border-t border-gray-200/80 md:min-h-[280px] md:border-l md:border-t-0">
