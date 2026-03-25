@@ -65,8 +65,8 @@
 
   "media": {
     "heroImage": {
-      "src": "https://images.unsplash.com/photo-1524758631624-e2822e934c1d?q=80&w=1600&auto=format&fit=crop",
-      "alt": "Local business presence and directory listings"
+      "src": "/Directory Listings/Hero image.png",
+      "alt": "OneList Plus directory listings dashboard hero"
     }
   },
 
