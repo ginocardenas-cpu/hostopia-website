@@ -3,6 +3,7 @@ import Image from "next/image";
 import Link from "next/link";
 import type { ProductJson } from "@/lib/product-json-types";
 import ProductLucideIcon from "@/components/products/ProductLucideIcon";
+import ProductLifecycleGrid from "@/components/products/ProductLifecycleGrid";
 
 function splitHeadline(headline: string): ReactNode {
   const parts = headline.split(/\s[—–]\s/);
@@ -17,6 +18,22 @@ function splitHeadline(headline: string): ReactNode {
     );
   }
   return <span className="text-charcoal">{headline}</span>;
+}
+
+/** Charcoal sections: avoid text-charcoal children (invisible on dark bg). Match Migrations — white + gold accent. */
+function splitHeadlineDark(headline: string): ReactNode {
+  const parts = headline.split(/\s[—–]\s/);
+  if (parts.length >= 2) {
+    const rest = parts.slice(1).join(" — ");
+    return (
+      <>
+        <span className="text-white">{parts[0]}</span>
+        <br />
+        <span className="text-gold">{rest}</span>
+      </>
+    );
+  }
+  return <span className="text-white">{headline}</span>;
 }
 
 type ProductImageProps = {
@@ -201,8 +218,8 @@ export default function ProductPageFromJson({ data }: { data: ProductJson }) {
               <div className="h-px w-8 bg-teal" />
               <span className="section-label">{partnerAdvantage.eyebrow}</span>
             </div>
-            <h2 className="mb-6 max-w-4xl font-montserrat text-4xl font-black leading-tight text-white md:text-5xl lg:text-6xl">
-              {splitHeadline(partnerAdvantage.heading)}
+            <h2 className="mb-6 max-w-4xl font-montserrat text-4xl font-black leading-tight md:text-5xl lg:text-6xl">
+              {splitHeadlineDark(partnerAdvantage.heading)}
             </h2>
             <p className="mb-14 max-w-3xl font-raleway text-lg leading-relaxed text-white/70">{partnerAdvantage.intro}</p>
             <div className="grid gap-10 md:grid-cols-3">
@@ -225,21 +242,7 @@ export default function ProductPageFromJson({ data }: { data: ProductJson }) {
               {lifecycleFit.heading}
             </h2>
             <p className="mb-12 max-w-3xl font-raleway text-lg leading-relaxed text-gray-500">{lifecycleFit.intro}</p>
-            <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
-              {lifecycleFit.steps.map((step) => (
-                <div
-                  key={step.step}
-                  className={`rounded-2xl border border-gray-100 bg-white p-8 transition-colors duration-300 hover:bg-gray-50 ${
-                    step.highlight ? "ring-2 ring-teal/30" : ""
-                  }`}
-                >
-                  <span className="mb-4 block font-montserrat text-7xl font-black text-gray-100">{step.step}</span>
-                  <div className="mb-4 h-1 w-12 bg-teal" />
-                  <h3 className="mb-3 font-montserrat text-xl font-black text-charcoal">{step.title}</h3>
-                  <p className="font-raleway text-sm leading-relaxed text-gray-500">{step.body}</p>
-                </div>
-              ))}
-            </div>
+            <ProductLifecycleGrid steps={lifecycleFit.steps} />
             <p className="mt-12 max-w-4xl font-raleway text-base leading-relaxed text-gray-500">{lifecycleFit.positioning}</p>
           </div>
         </section>
