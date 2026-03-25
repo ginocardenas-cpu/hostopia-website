@@ -287,16 +287,19 @@ type MarketingDarkStatsSectionProps = {
 export function MarketingDarkStatsSection({ heading, items, sectionId }: MarketingDarkStatsSectionProps) {
   return (
     <section id={sectionId} className="py-20 md:py-28" style={{ backgroundColor: MARKETING_DARK_BG }}>
-      <div className="mx-auto max-w-6xl px-6">
+      <div className="mx-auto max-w-6xl px-6 text-center">
         <h2
-          className="mx-auto mb-14 max-w-3xl text-center text-3xl font-semibold leading-tight tracking-tight text-white md:text-4xl"
+          className="mx-auto mb-14 max-w-3xl text-3xl font-semibold leading-tight tracking-tight text-white md:text-4xl"
           style={{ fontFamily: "Montserrat, sans-serif" }}
         >
           {heading}
         </h2>
-        <div className="grid grid-cols-2 gap-10 lg:grid-cols-4">
+        <ul className="mx-auto flex max-w-5xl flex-row flex-wrap justify-center gap-x-10 gap-y-12 sm:gap-x-14 md:gap-x-16">
           {items.map((item, i) => (
-            <div key={item.label} className="text-center">
+            <li
+              key={item.label}
+              className="flex w-[calc(50%-1.25rem)] max-w-[220px] flex-col items-center text-center sm:w-40 sm:max-w-none md:w-44"
+            >
               <div className="mb-3 flex justify-center">
                 <ProgramIcon name={STAT_ICON_CYCLE[i % STAT_ICON_CYCLE.length]} size={28} />
               </div>
@@ -306,9 +309,9 @@ export function MarketingDarkStatsSection({ heading, items, sectionId }: Marketi
               <p className="text-sm leading-snug text-neutral-300 md:text-base" style={{ fontFamily: "Raleway, sans-serif" }}>
                 {item.label}
               </p>
-            </div>
+            </li>
           ))}
-        </div>
+        </ul>
       </div>
     </section>
   );
