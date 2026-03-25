@@ -80,7 +80,7 @@ export function VerticalTabs({ sectionHeading, items }: VerticalTabsProps) {
         <div className="grid grid-cols-1 items-start gap-12 lg:grid-cols-12 lg:gap-16">
           <div className="order-2 flex flex-col justify-center pt-4 lg:order-1 lg:col-span-5">
             <div className="mb-10 space-y-1 lg:mb-12">
-              <h2 className="font-montserrat text-3xl font-black tracking-tight text-charcoal text-balance md:text-4xl lg:text-5xl">
+              <h2 className="max-w-4xl font-montserrat text-4xl font-black leading-tight tracking-tight text-charcoal text-balance md:text-5xl lg:text-6xl">
                 {sectionHeading}
               </h2>
             </div>
@@ -120,7 +120,7 @@ export function VerticalTabs({ sectionHeading, items }: VerticalTabsProps) {
                     <div className="flex flex-1 flex-col gap-2">
                       <span
                         className={cn(
-                          "font-montserrat text-2xl font-bold tracking-tight transition-colors duration-500 md:text-3xl lg:text-4xl",
+                          "font-montserrat text-xl font-black tracking-tight transition-colors duration-500",
                           isActive ? "text-charcoal" : ""
                         )}
                       >
@@ -139,7 +139,7 @@ export function VerticalTabs({ sectionHeading, items }: VerticalTabsProps) {
                             }}
                             className="overflow-hidden"
                           >
-                            <p className="max-w-none pb-2 font-raleway text-2xl font-normal leading-relaxed tracking-tight text-gray-500 md:text-3xl lg:text-4xl">
+                            <p className="max-w-sm pb-2 font-raleway text-sm font-normal leading-relaxed text-gray-500">
                               {item.description}
                             </p>
                           </motion.div>

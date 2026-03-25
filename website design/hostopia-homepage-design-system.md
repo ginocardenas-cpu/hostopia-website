@@ -82,7 +82,7 @@ The homepage alternates section backgrounds in this repeating rhythm. Follow thi
 | **H1** (Hero) | `72px` (`text-7xl`) | `900` (font-black) | `1.02` (`leading-[1.02]`) | `-1.8px` (`tracking-tight`) | Montserrat | Charcoal `#24282b` |
 | **H2** (Section) | `72px` (`text-7xl`) | `900` (font-black) | `1.25` (`leading-tight`) | `normal` | Montserrat | Charcoal `#24282b` |
 | **H2** (Gold banner) | `88px` | `900` (font-black) | tight | normal | Montserrat | Charcoal `#24282b` |
-| **H3** (Card title) | `24px` (`text-2xl`) | `900` (font-black) | default | normal | Montserrat | Charcoal `#24282b` |
+| **H3** (Card title — product features & lifecycle steps) | `20px` (`text-xl`) | `900` (font-black) | default | normal | Montserrat | Charcoal `#24282b` |
 | **H3** (Service card) | `20px` (`text-xl`) | `900` (font-black) | default | normal | Montserrat | Charcoal `#24282b` |
 
 ### Heading Color Accent Pattern
@@ -107,7 +107,7 @@ Headings frequently contain **one or two words highlighted in teal** to draw att
 |---------|-----------|-------------|-------------|-------|-----------|---------|
 | Hero sub-copy | `20px` (`text-xl`) | `400` | `28px` | `rgb(107, 114, 128)` (`text-gray-500`) | `36rem` (`max-w-xl`) | `text-xl text-gray-500 max-w-xl` |
 | Section description | `18px` (`text-lg`) | `400` | `28px` | `rgb(107, 114, 128)` (`text-gray-500`) | — | `text-lg text-gray-500` |
-| Feature card body | `16px` (`text-base`) | `400` | `24px` | `rgb(107, 114, 128)` (`text-gray-500`) | — | `text-gray-500 leading-relaxed` |
+| Feature card body | `14px` (`text-sm`) | `400` | relaxed | `rgb(107, 114, 128)` (`text-gray-500`) | — | `text-sm text-gray-500 leading-relaxed` (matches `ProductPageFromJson` feature cards) |
 | Stat box label | `12px` (`text-xs`) | `600` (font-semibold) | normal | `rgb(136, 136, 136)` | — | `text-xs font-semibold uppercase tracking-wider` |
 | Gold section body | `18px` (`text-lg`) | `400` | `28px` | `rgb(74, 78, 82)` | — | — |
 
@@ -524,7 +524,62 @@ When building or auditing any page, verify the following:
 
 ---
 
-## 12. Tailwind Custom Config Requirements
+## 12. Product detail pages (JSON / `ProductPageFromJson`)
+
+Product pages share typography with the **“What you deliver”** features block for secondary content patterns.
+
+### Features section (canonical reference)
+
+| Element | Classes (Tailwind) |
+|---------|-------------------|
+| Section eyebrow | `.section-label` above heading |
+| Section H2 | `font-montserrat text-4xl font-black leading-tight text-charcoal md:text-5xl lg:text-6xl` — use `splitHeadline()` for charcoal + teal line break where applicable |
+| Intro paragraph | `font-raleway text-lg leading-relaxed text-gray-500 max-w-3xl` |
+| Feature card title | `font-montserrat text-xl font-black text-charcoal` |
+| Feature card body | `font-raleway text-sm leading-relaxed text-gray-500` |
+| Card chrome | Teal Lucide icon, `h-1 w-12 bg-teal` accent bar under icon |
+
+### Vertical tabs (hero sidebar — selected slugs)
+
+Used for: `logo-design`, `ssl`, `website-builder`, `directories`, `ecommerce`, `digital-fax`.
+
+| Element | Must match |
+|---------|------------|
+| Block section title (e.g. “Your SMB customers get”) | Same scale as features **section H2**: `text-4xl md:text-5xl lg:text-6xl font-black` |
+| Row title (e.g. “Launch a store fast”) | Same as feature **card title**: `text-xl font-black` |
+| Row description | Same as feature **card body**: `text-sm text-gray-500 leading-relaxed` |
+
+Implementation: `components/ui/vertical-tabs.tsx`.
+
+### Hero accordion (hero sidebar — all other products with `hero.sidebar`)
+
+| Element | Must match |
+|---------|------------|
+| Block section title | Same as features **section H2** |
+| Accordion row title | Same as feature **card title**: `text-xl font-black` |
+| Accordion row body | Same as feature **card body**: `text-sm text-gray-500 leading-relaxed` |
+
+Implementation: `components/ui/product-hero-accordion.tsx` (Radix accordion in `components/ui/accordion.tsx`).
+
+### Section rhythm after hero
+
+When the hero sidebar is moved into vertical tabs or accordion, the next **features** section uses a cream band for separation: `bg-cream border-t border-gray-200/80` and a subtle inset top shadow (see `ProductPageFromJson`).
+
+### Portfolio fit — lifecycle grid (`ProductLifecycleGrid`)
+
+Four-column lifecycle grid with alternating teal/gold accents on step numbers and accent bars.
+
+| Rule | Detail |
+|------|--------|
+| **Portfolio fit column** | `highlight: true` in JSON **or** `step.productName` normalized-match to page `productName` |
+| **Highlight styling** | Gold border, gold-tinted gradient background, stronger step-number opacity |
+| **Portfolio fit badge** | **Only** a **charcoal** rounded box (`bg-charcoal`): **gold filled star** on top, **“Portfolio Fit”** label below in **white** (`text-sm font-semibold`). No product name, no “sits in…”, no step title inside the badge. |
+| **Lifecycle step title** | `text-xl font-black text-charcoal` (aligned with feature card titles) |
+| **Lifecycle step body** | `text-sm text-gray-500 leading-relaxed` (aligned with feature card body) |
+
+---
+
+## 13. Tailwind Custom Config Requirements
 
 Ensure `tailwind.config.js` includes these custom extensions:
 
@@ -551,4 +606,4 @@ module.exports = {
 
 ---
 
-*Document generated: March 25, 2026 — based on analysis of the Hostopia homepage at hostopia-website-cxets2acj-ginocardenas-8299s-projects.vercel.app*
+*Document updated: March 25, 2026 — includes product page patterns (vertical tabs, hero accordion, lifecycle portfolio fit). Homepage reference: hostopia-website-cxets2acj-ginocardenas-8299s-projects.vercel.app*

@@ -30,7 +30,7 @@ export function ProductHeroAccordion({ sectionHeading, items }: ProductHeroAccor
   return (
     <section className="w-full bg-white py-12 md:py-16 lg:py-24">
       <div className="mx-auto w-full max-w-7xl px-6">
-        <h2 className="mb-8 font-montserrat text-3xl font-black tracking-tight text-charcoal text-balance md:mb-10 md:text-4xl lg:text-5xl">
+        <h2 className="mb-8 max-w-4xl font-montserrat text-4xl font-black leading-tight tracking-tight text-charcoal text-balance md:mb-10 md:text-5xl lg:text-6xl">
           {sectionHeading}
         </h2>
 
@@ -41,9 +41,7 @@ export function ProductHeroAccordion({ sectionHeading, items }: ProductHeroAccor
               return (
                 <AccordionItem className="relative px-0" value={item.id} key={item.id}>
                   <AccordionTrigger className="px-5 py-5 hover:no-underline md:px-6 md:py-6">
-                    <span className="font-montserrat text-2xl font-bold tracking-tight text-charcoal md:text-3xl lg:text-4xl">
-                      {item.title}
-                    </span>
+                    <span className="font-montserrat text-xl font-black tracking-tight text-charcoal">{item.title}</span>
                   </AccordionTrigger>
                   <AccordionContent>
                     <div
@@ -53,9 +51,7 @@ export function ProductHeroAccordion({ sectionHeading, items }: ProductHeroAccor
                       )}
                     >
                       <div className="space-y-4 px-5 py-6 md:px-6 md:py-8">
-                        <p className="font-raleway text-2xl font-normal leading-relaxed tracking-tight text-gray-500 md:text-3xl lg:text-4xl">
-                          {item.content}
-                        </p>
+                        <p className="font-raleway text-sm leading-relaxed text-gray-500">{item.content}</p>
                       </div>
                       {hasImage && item.imageSrc ? (
                         <div className="relative min-h-[220px] w-full border-t border-gray-200/80 md:min-h-[280px] md:border-l md:border-t-0">

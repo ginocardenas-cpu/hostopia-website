@@ -14,7 +14,7 @@ function norm(s: string) {
 
 type Props = {
   steps: ProductLifecycleStep[];
-  /** Page product name — shown in portfolio-fit callout */
+  /** Page product name — used to detect portfolio fit when JSON matches `step.productName` */
   productLabel?: string;
 };
 
@@ -57,21 +57,12 @@ export default function ProductLifecycleGrid({ steps, productLabel }: Props) {
             )}
           >
             {isPortfolioFit ? (
-              <div className="mb-5 flex gap-2 rounded-xl border border-gold/70 bg-charcoal px-4 py-3 text-left shadow-sm">
-                <Star className="mt-0.5 h-5 w-5 shrink-0 fill-gold text-gold" aria-hidden />
-                <p className="font-raleway text-sm leading-snug text-white">
-                  <span className="font-bold text-gold">Portfolio fit</span>
-                  {productLabel ? (
-                    <>
-                      <span className="text-white/80"> — </span>
-                      <span className="font-semibold text-white">{productLabel}</span>
-                      <span className="text-white/70"> sits in </span>
-                    </>
-                  ) : (
-                    <span className="text-white/70"> — this product sits in </span>
-                  )}
-                  <span className="font-bold text-gold">{step.title}</span>
-                </p>
+              <div
+                className="mb-5 flex flex-col items-center gap-2 rounded-xl bg-charcoal px-4 py-3 text-center shadow-sm"
+                aria-label="Portfolio fit"
+              >
+                <Star className="h-5 w-5 fill-gold text-gold" aria-hidden />
+                <span className="font-raleway text-sm font-semibold text-white">Portfolio Fit</span>
               </div>
             ) : null}
 
@@ -92,8 +83,8 @@ export default function ProductLifecycleGrid({ steps, productLabel }: Props) {
               )}
               style={{ backgroundColor: accent }}
             />
-            <h3 className="mb-4 font-montserrat text-2xl font-black text-charcoal">{step.title}</h3>
-            <p className="font-raleway text-sm leading-relaxed text-gray-600">{step.body}</p>
+            <h3 className="mb-4 font-montserrat text-xl font-black text-charcoal">{step.title}</h3>
+            <p className="font-raleway text-sm leading-relaxed text-gray-500">{step.body}</p>
           </button>
         );
       })}
