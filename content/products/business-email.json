@@ -100,5 +100,18 @@
     "headline": "Ready to Make Business Email Your Anchor Product?",
     "body": "Connect with Hostopia to launch white-label Business Email, migrate existing users with zero downtime, and bundle it with the connectivity and digital services you already sell.",
     "buttonText": "Book a Demo"
+  },
+
+  "media": {
+    "heroImage": {
+      "src": "https://images.unsplash.com/photo-1563986768609-322da13575f3?w=2000&q=80",
+      "alt": "Professional working with business email on a laptop",
+      "priority": true
+    },
+    "contentImage": {
+      "src": "https://images.unsplash.com/photo-1551434678-e076c223a692?w=2400&q=80",
+      "alt": "Team collaborating on digital communication tools",
+      "caption": "Enterprise-grade email and collaboration — white-labeled for your brand."
+    }
   }
 }

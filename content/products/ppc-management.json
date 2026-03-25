@@ -1,0 +1,79 @@
+{
+  "slug": "ppc-management",
+  "label": "PPC Management",
+  "productName": "PPC Management",
+
+  "seo": {
+    "primaryKeyword": "white-label PPC management",
+    "secondaryKeywords": ["paid search for service providers", "SMB advertising platform reseller"],
+    "metaTitle": "PPC Management | White-Label Paid Media for Service Providers | Hostopia",
+    "metaDescription": "Paid campaigns and ROI — plan, launch, and optimize ads across channels under your brand.",
+    "urlSlug": "/products/ppc-management"
+  },
+
+  "hero": {
+    "eyebrow": "PPC Management by Hostopia",
+    "headline": "Paid Media That Performs — Under Your Brand",
+    "subheadline": "SMBs need leads, not complexity. Offer managed paid search and social with clear reporting and guardrails.",
+    "description": "White-label campaign setup, optimization, and reporting so your customers see ROI while you scale digital revenue without hiring a full ads agency.",
+    "cta": { "primary": "Book a Demo", "secondary": "Talk to Partner Success" },
+    "sidebar": {
+      "heading": "Your customers get",
+      "items": [
+        { "title": "Structured campaigns", "body": "Account architecture, conversion tracking, and budget discipline." },
+        { "title": "Ongoing optimization", "body": "Bid, creative, and audience refinements based on performance data." },
+        { "title": "Transparent reporting", "body": "Partner-branded dashboards and summaries for stakeholders." }
+      ]
+    }
+  },
+
+  "features": {
+    "eyebrow": "What you deliver",
+    "heading": "Managed Paid — Without the Overhead",
+    "intro": "Operational playbooks and tooling designed for service providers reselling to SMBs.",
+    "cards": [
+      { "icon": "Target", "title": "Search & social coverage", "body": "Campaign types matched to SMB goals and budgets." },
+      { "icon": "LineChart", "title": "Performance reporting", "body": "Clear KPIs, trends, and next-step recommendations." },
+      { "icon": "Shield", "title": "Policy-safe setup", "body": "Reduce disapprovals and wasted spend with proven templates." },
+      { "icon": "RefreshCw", "title": "Continuous optimization", "body": "Structured testing and budget reallocation." }
+    ]
+  },
+
+  "partnerAdvantage": {
+    "eyebrow": "The partner advantage",
+    "heading": "High-Value Digital Upsell",
+    "intro": "Paid media sits next to websites, SEO, and creative — a natural expansion once SMBs need leads at scale.",
+    "items": [
+      { "title": "Attach to web launches", "body": "Bundle landing pages with campaigns for faster proof of value." },
+      { "title": "Complement SEO", "body": "Own full-funnel: organic plus paid capture." },
+      { "title": "Expand with retainer tiers", "body": "Good-better-best packages for ongoing management." }
+    ]
+  },
+
+  "lifecycleFit": {
+    "eyebrow": "Portfolio fit",
+    "heading": "When SMBs Are Ready to Pay for Demand",
+    "intro": "Paid accelerates once the business has a credible site and offer.",
+    "steps": [
+      { "step": "01", "title": "Build a Brand", "body": "Identity and trust assets.", "highlight": false },
+      { "step": "02", "title": "Get Online", "body": "Site and hosting ready for traffic.", "highlight": false },
+      { "step": "03", "title": "Get Found", "body": "SEO and listings build baseline demand.", "highlight": false },
+      { "step": "04", "title": "Grow", "body": "PPC and lifecycle marketing scale revenue.", "highlight": true }
+    ],
+    "positioning": "Position PPC as the accelerator for SMBs with proof of product-market fit — sold with landing pages, call tracking, and monthly optimization."
+  },
+
+  "cta": {
+    "headline": "Ready to Add PPC Under Your Brand?",
+    "body": "Talk to Hostopia about white-label paid media for your partner program.",
+    "buttonText": "Contact us"
+  },
+
+  "media": {
+    "heroImage": {
+      "src": "https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=2000&q=80",
+      "alt": "Marketing analytics and paid campaign performance",
+      "priority": true
+    }
+  }
+}

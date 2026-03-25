@@ -1,21 +1,38 @@
-export default function PlatformPage() {
-  return (
-    <main className="min-h-[60vh] pt-28 pb-16 px-6" style={{ backgroundColor: "#f7f6f2" }}>
-      <div className="max-w-7xl mx-auto">
-        <div className="flex items-center gap-3 mb-5">
-          <div className="w-8 h-px" style={{ backgroundColor: "#2CADB2" }} />
-          <span className="section-label">Infrastructure</span>
-        </div>
-        <h1
-          className="font-black leading-tight mb-4"
-          style={{ fontFamily: "Montserrat, sans-serif", fontSize: "clamp(2rem, 4vw, 3.5rem)", color: "#24282B" }}
-        >
-          Platform
-        </h1>
-        <p style={{ fontFamily: "Raleway, sans-serif", color: "#6b7280" }}>
-          Content coming soon.
-        </p>
-      </div>
-    </main>
-  );
+import type { Metadata } from "next";
+import { notFound } from "next/navigation";
+import { productSlugToLabel } from "@/lib/nav-products";
+import { loadProductJson } from "@/lib/load-product-json";
+import ProductPageFromJson from "@/components/products/ProductPageFromJson";
+
+type Props = { params: { slug: string } };
+
+export function generateStaticParams() {
+  return Object.keys(productSlugToLabel).map((slug) => ({ slug }));
+}
+
+export function generateMetadata({ params }: Props): Metadata {
+  const json = loadProductJson(params.slug);
+  if (json) {
+    return {
+      title: json.seo.metaTitle,
+      description: json.seo.metaDescription,
+      keywords: [json.seo.primaryKeyword, ...json.seo.secondaryKeywords],
+    };
+  }
+  const label = productSlugToLabel[params.slug];
+  if (!label) return { title: "Product | Hostopia" };
+  return {
+    title: `${label} | Hostopia`,
+    description: `Hostopia white-label ${label} for service providers.`,
+  };
+}
+
+export default function ProductSlugPage({ params }: Props) {
+  const label = productSlugToLabel[params.slug];
+  if (!label) notFound();
+
+  const json = loadProductJson(params.slug);
+  if (!json) notFound();
+
+  return <ProductPageFromJson data={json} />;
 }

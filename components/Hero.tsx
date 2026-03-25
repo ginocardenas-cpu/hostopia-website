@@ -12,12 +12,13 @@ export default function Hero() {
   return (
     <section className="relative flex min-h-screen flex-col justify-center overflow-hidden bg-cream pt-20">
       {/* Hero image — full height, right-aligned, never stretched */}
-      <div className="absolute right-0 top-0 hidden h-full w-1/2 md:block lg:w-[58%]">
+      <div className="absolute right-0 top-0 hidden h-full w-[55%] md:block lg:w-[62%] xl:w-[58%]">
         <Image
           src="/Home Page images/New/2023-03-16-hero.png"
           alt="Bundles of white-label digital services held by a partner"
           fill
           priority
+          sizes="(max-width: 768px) 0vw, (max-width: 1280px) 62vw, 58vw"
           className="object-contain object-right"
         />
       </div>
@@ -50,11 +51,11 @@ export default function Hero() {
             customers trust.
           </p>
 
-          {/* CTAs — primary teal pill; secondary charcoal outline */}
+          {/* Primary CTA — gold pill (brand); secondary charcoal outline per design system */}
           <div className="flex flex-col gap-4 sm:flex-row">
             <a
               href="#partner"
-              className="group inline-flex items-center justify-center gap-2 rounded-full bg-teal px-8 py-4 font-raleway text-sm font-semibold uppercase tracking-wide text-white transition-colors duration-200 hover:bg-teal-dark hover:shadow-md"
+              className="group inline-flex items-center justify-center gap-2 rounded-full bg-gold px-8 py-4 font-raleway text-sm font-semibold uppercase tracking-wide text-charcoal shadow-md transition-colors duration-200 hover:bg-gold-dark hover:shadow-lg"
             >
               Become a Partner
               <ArrowRight size={18} className="transition-transform group-hover:translate-x-1" />

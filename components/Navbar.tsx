@@ -367,7 +367,7 @@ export default function Navbar() {
         <div className="hidden md:flex items-center">
           <Link
             href="#partner"
-            className="rounded-full bg-teal px-5 py-2.5 font-raleway text-sm font-semibold uppercase tracking-wide text-white transition-colors duration-200 hover:bg-teal-dark hover:shadow-md"
+            className="rounded-full bg-gold px-5 py-2.5 font-raleway text-sm font-semibold uppercase tracking-wide text-charcoal shadow-sm transition-colors duration-200 hover:bg-gold-dark hover:shadow-md"
           >
             Become a Partner
           </Link>
@@ -553,7 +553,7 @@ export default function Navbar() {
           ))}
           <Link
             href="#partner"
-            className="mt-2 rounded-full bg-teal px-5 py-3 text-center font-raleway text-sm font-semibold uppercase tracking-wide text-white transition-colors duration-200 hover:bg-teal-dark"
+            className="mt-2 rounded-full bg-gold px-5 py-3 text-center font-raleway text-sm font-semibold uppercase tracking-wide text-charcoal shadow-sm transition-colors duration-200 hover:bg-gold-dark"
             onClick={closeMobile}
           >
             Become a Partner

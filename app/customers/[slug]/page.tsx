@@ -1,21 +1,29 @@
-export default function ContactPage() {
+import type { Metadata } from "next";
+import { notFound } from "next/navigation";
+import CustomerStoryPage from "@/components/customers/CustomerStoryPage";
+import { customerTypeSlugs, getCustomerTypeContent } from "@/lib/customer-types-content";
+
+type Props = { params: { slug: string } };
+
+export function generateStaticParams() {
+  return customerTypeSlugs.map((slug) => ({ slug }));
+}
+
+export function generateMetadata({ params }: Props): Metadata {
+  const content = getCustomerTypeContent(params.slug);
+  if (!content) return { title: "Customers | Hostopia" };
+  return {
+    title: content.seo.metaTitle,
+    description: content.seo.metaDescription,
+    keywords: [content.seo.primaryKeyword, ...content.seo.secondaryKeywords],
+  };
+}
+
+export default function CustomerTypePage({ params }: Props) {
+  const content = getCustomerTypeContent(params.slug);
+  if (!content) notFound();
+
   return (
-    <main className="min-h-[60vh] pt-28 pb-16 px-6" style={{ backgroundColor: "#f7f6f2" }}>
-      <div className="max-w-7xl mx-auto">
-        <div className="flex items-center gap-3 mb-5">
-          <div className="w-8 h-px" style={{ backgroundColor: "#2CADB2" }} />
-          <span className="section-label">Get in Touch</span>
-        </div>
-        <h1
-          className="font-black leading-tight mb-4"
-          style={{ fontFamily: "Montserrat, sans-serif", fontSize: "clamp(2rem, 4vw, 3.5rem)", color: "#24282B" }}
-        >
-          Contact
-        </h1>
-        <p style={{ fontFamily: "Raleway, sans-serif", color: "#6b7280" }}>
-          Content coming soon.
-        </p>
-      </div>
-    </main>
+    <CustomerStoryPage content={content} breadcrumbGroup="Who we work with" sectionEyebrow="Who we work with" />
   );
 }

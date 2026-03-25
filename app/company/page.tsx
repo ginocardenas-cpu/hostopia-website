@@ -12,7 +12,7 @@ export default function CompanyPage() {
         >
           Company
         </h1>
-        <p style={{ fontFamily: "Raleway, sans-serif", color: "#6b7280" }}>
+        <p style={{ fontFamily: "Raleway, sans-serif", color: "#555a5e" }}>
           Content coming soon.
         </p>
       </div>
