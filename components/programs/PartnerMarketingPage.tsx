@@ -4,27 +4,22 @@ import {
   HowItWorksSection,
   LifecycleSection,
   ProgramCTADarkSection,
-  ProgramHero,
+  ProgramMarketingHero,
   ProgramsBreadcrumb,
 } from "./programSections";
 
+const imageKey = `programs-${content.slug}`;
+
 export default function PartnerMarketingPage() {
+  let splitIndex = 0;
   return (
-    <main className="pt-24 pb-0">
+    <main className="pb-0 pt-24">
       <ProgramsBreadcrumb label={content.programName} />
-      <ProgramHero
-        eyebrow={content.hero.eyebrow}
-        headline={content.hero.headline}
-        subheadline={content.hero.subheadline}
-        cta={content.hero.cta}
-        imageFilename={content.hero.image}
-        imageAlt={`${content.programName} — demand generation and MDF`}
-        secondaryHref="#how-it-works"
-      />
-      <HowItWorksSection {...content.howItWorks} />
-      <LifecycleSection {...content.lifecycle} />
+      <ProgramMarketingHero content={content} secondaryHref="#how-it-works" />
+      <HowItWorksSection {...content.howItWorks} imageKey={imageKey} />
+      <LifecycleSection {...content.lifecycle} imageKey={imageKey} splitIndex={splitIndex++} />
       <DifferentiatorsDarkSection {...content.differentiators} />
-      <ProgramCTADarkSection {...content.cta} />
+      <ProgramCTADarkSection {...content.cta} imageKey={imageKey} />
     </main>
   );
 }

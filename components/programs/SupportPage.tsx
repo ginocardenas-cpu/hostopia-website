@@ -2,7 +2,7 @@ import content from "@/content/programs/support.json";
 import {
   HowItWorksSection,
   ProgramCTADarkSection,
-  ProgramHero,
+  ProgramMarketingHero,
   ProgramsBreadcrumb,
   ReportingSection,
   StatsDarkSection,
@@ -10,25 +10,20 @@ import {
   UpserveSection,
 } from "./programSections";
 
+const imageKey = `programs-${content.slug}`;
+
 export default function SupportPage() {
+  let splitIndex = 0;
   return (
-    <main className="pt-24 pb-0">
+    <main className="pb-0 pt-24">
       <ProgramsBreadcrumb label={content.programName} />
-      <ProgramHero
-        eyebrow={content.hero.eyebrow}
-        headline={content.hero.headline}
-        subheadline={content.hero.subheadline}
-        cta={content.hero.cta}
-        imageFilename={content.hero.image}
-        imageAlt={`${content.programName} — multilingual technical support`}
-        secondaryHref="#tiered-support"
-      />
-      <HowItWorksSection {...content.howItWorks} />
-      <TieredSupportSection {...content.tieredSupport} />
-      <UpserveSection {...content.upserve} />
-      <ReportingSection {...content.reporting} />
+      <ProgramMarketingHero content={content} secondaryHref="#tiered-support" />
+      <HowItWorksSection {...content.howItWorks} imageKey={imageKey} />
+      <TieredSupportSection {...content.tieredSupport} imageKey={imageKey} splitIndex={splitIndex++} />
+      <UpserveSection {...content.upserve} imageKey={imageKey} />
+      <ReportingSection {...content.reporting} imageKey={imageKey} splitIndex={splitIndex++} />
       <StatsDarkSection {...content.stats} />
-      <ProgramCTADarkSection {...content.cta} />
+      <ProgramCTADarkSection {...content.cta} imageKey={imageKey} />
     </main>
   );
 }

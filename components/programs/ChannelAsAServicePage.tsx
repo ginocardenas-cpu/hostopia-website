@@ -3,26 +3,23 @@ import {
   DifferentiatorsDarkSection,
   HowItWorksSection,
   ProgramCTADarkSection,
-  ProgramHero,
+  ProgramMarketingHero,
   ProgramsBreadcrumb,
 } from "./programSections";
 
+const imageKey = `programs-${content.slug}`;
+
 export default function ChannelAsAServicePage() {
   return (
-    <main className="pt-24 pb-0">
+    <main className="pb-0 pt-24">
       <ProgramsBreadcrumb label={content.programName} />
-      <ProgramHero
-        eyebrow={content.hero.eyebrow}
-        headline={content.hero.headline}
-        subheadline={content.hero.subheadline}
-        cta={content.hero.cta}
-        imageFilename={content.hero.image}
-        imageAlt={`${content.programName} — white-label sales channel`}
+      <ProgramMarketingHero
+        content={content}
         secondaryHref="#how-it-works"
       />
-      <HowItWorksSection {...content.howItWorks} />
+      <HowItWorksSection {...content.howItWorks} imageKey={imageKey} />
       <DifferentiatorsDarkSection {...content.differentiators} />
-      <ProgramCTADarkSection {...content.cta} />
+      <ProgramCTADarkSection {...content.cta} imageKey={imageKey} />
     </main>
   );
 }
