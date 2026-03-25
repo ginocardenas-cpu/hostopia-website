@@ -1,0 +1,78 @@
+{
+  "slug": "msps",
+  "label": "MSPs",
+  "category": "who-we-work-with",
+
+  "seo": {
+    "primaryKeyword": "digital marketing services for MSPs",
+    "secondaryKeywords": [
+      "MSP service expansion",
+      "hosting company value-added services",
+      "white-label marketing tools for MSPs",
+      "MSP customer retention"
+    ],
+    "metaTitle": "Digital Services for MSPs & Hosting Companies | Expand Without Building | Hostopia",
+    "metaDescription": "Your managed services cover IT — but your SMB customers need marketing, websites, and ecommerce too. Hostopia gives MSPs and hosting companies white-label digital services that expand revenue without expanding your team.",
+    "urlSlug": "/customers/msps"
+  },
+
+  "hero": {
+    "eyebrow": "Hostopia for MSPs & Hosting Companies",
+    "headline": "Your Customers Trust You with Their IT. They're Going Somewhere Else for Everything Digital. That Doesn't Have To Continue.",
+    "subheadline": "35% of MSPs now cite competition as their biggest challenge — up from 29% last year. The MSPs that are pulling ahead aren't just managing networks better. They're expanding into the digital services their SMB customers are already buying from someone else.",
+    "description": "Hostopia gives MSPs and hosting companies a white-label portfolio of digital services — AI-powered websites, ecommerce, directory listings, SEO, reputation management, email marketing, and more — that complement your existing managed services without requiring you to build or staff new capabilities.",
+    "cta": { "primary": "Book a Strategy Call", "secondary": "See the Product Portfolio" }
+  },
+
+  "challenge": {
+    "heading": "The Competition Isn't Just Other MSPs Anymore",
+    "content": "The MSP market is consolidating rapidly. 74% of MSPs now prefer fewer vendors to meet technology needs, accelerating M&A that favors larger, diversified providers. Meanwhile, 68% of North American MSPs experienced revenue increases last year, but 35% cite competition as their number one challenge. Hosting companies face a parallel challenge — the infrastructure hosting market is increasingly commoditized. The companies that retain and grow customers are the ones offering value beyond the server.",
+    "callout": "Building a website builder, SEO platform, and ecommerce solution in-house would take years and millions. Partnering takes weeks.",
+    "sources": [
+      "Axcient, 2024 Cloud Services MSP Market Trends Report",
+      "CloudMore, 5 MSP Trends 2024 and Beyond",
+      "NinjaOne, Growing Your MSP 2024"
+    ]
+  },
+
+  "solution": {
+    "heading": "Complement Managed Services with Digital Growth Tools",
+    "intro": "Hostopia lets you extend managed IT into your customer's digital presence — websites, marketing, and commerce — without building or staffing new capabilities.",
+    "blocks": [
+      {
+        "heading": "The 'Digital Extension' Play",
+        "content": "Your MSP already manages the customer's network, devices, and security. Hostopia lets you extend that managed relationship into their website, online listings, search visibility, and online reputation. For hosting companies, a customer paying $30/month for hosting is a prime candidate for a $15/month AI website builder, a $20/month SEO tool, and a $25/month directory listings service. Revenue per hosting account can double or triple."
+      },
+      {
+        "heading": "Solving the 'We Need a Website' Problem",
+        "content": "Every MSP has experienced it: a client calls asking for help with their website, Google listing, or online reputation. Hostopia's productized digital services solve this cleanly. Online Presence Builder generates AI-powered sites in minutes. Search Everywhere Optimization provides guided, step-by-step SEO tasks. Reviews Promoter automates review collection and distribution. These aren't projects — they're products with predictable revenue."
+      },
+      {
+        "heading": "Winning Against Consolidation",
+        "content": "As M&A accelerates in the MSP space, the operators being acquired at premium valuations are the ones with diversified, recurring revenue. An MSP generating $100K/month in managed IT plus $40K in digital services is valued differently because the digital revenue represents a distinct customer need that isn't easily displaced."
+      }
+    ]
+  },
+
+  "outcomes": {
+    "heading": "What MSPs & Hosting Companies Achieve with Hostopia",
+    "cards": [
+      { "title": "Capture Revenue You're Currently Referring Away", "body": "Every 'we need a website' or 'help us get found online' conversation is revenue walking out the door. Hostopia turns those conversations into product sales." },
+      { "title": "Differentiate in a Crowded Market", "body": "35% of MSPs cite competition as their top challenge. Offering digital services that competitors don't gives you a distinct market position." },
+      { "title": "Increase Revenue Per Customer Without Increasing Headcount", "body": "Hostopia's products are self-serve or low-touch for end users. Your team sells and provisions; the platform delivers." },
+      { "title": "Strengthen M&A Positioning", "body": "Diversified recurring revenue from digital services increases your company's valuation and attractiveness to acquirers in a consolidating market." }
+    ]
+  },
+
+  "stats": [
+    { "value": "35%", "label": "Of MSPs cite competition as #1 challenge" },
+    { "value": "2-3x", "label": "Revenue per hosting account with digital services" },
+    { "value": "68%", "label": "Of North American MSPs saw revenue growth" }
+  ],
+
+  "cta": {
+    "headline": "Your SMB Customers Need More Than IT. Be the One Who Delivers It.",
+    "body": "See how MSPs and hosting companies use Hostopia to add digital services to their managed services portfolio — capturing new revenue, deepening customer relationships, and differentiating in a consolidating market.",
+    "buttonText": "Book a Demo"
+  }
+}

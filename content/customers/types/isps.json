@@ -1,0 +1,78 @@
+{
+  "slug": "isps",
+  "label": "ISPs",
+  "category": "who-we-work-with",
+
+  "seo": {
+    "primaryKeyword": "digital services for ISPs and cable operators",
+    "secondaryKeywords": [
+      "ISP SMB bundling",
+      "cable operator revenue diversification",
+      "broadband value-added services",
+      "white-label services for ISPs"
+    ],
+    "metaTitle": "Digital Services for ISPs & Cable Operators | Beyond Bandwidth | Hostopia",
+    "metaDescription": "Stop competing on speed alone. Hostopia helps ISPs and cable operators add white-label digital services that increase wallet share and cut broadband churn.",
+    "urlSlug": "/customers/isps"
+  },
+
+  "hero": {
+    "eyebrow": "Hostopia for ISPs & Cable Operators",
+    "headline": "Broadband Got You in the Door. Digital Services Keep You from Getting Replaced.",
+    "subheadline": "Cable providers have lost 4 percentage points of customer share in just two years, while fixed wireless and fiber overbuilders have more than doubled their market presence. When every competitor offers comparable speeds, the provider who owns more of the customer's digital life is the one that survives.",
+    "description": "Hostopia gives ISPs and cable operators a turnkey portfolio of white-label digital services — professional email, AI-powered websites, ecommerce, directory listings, SEO, and reputation management — designed to layer on top of your broadband relationship. Every product is provisioned through our platform, branded as yours, and supported by our team.",
+    "cta": { "primary": "Book a Strategy Call", "secondary": "See the Full Portfolio" }
+  },
+
+  "challenge": {
+    "heading": "The Bandwidth Commodity Crisis",
+    "content": "Broadband is converging. Cable, fiber, fixed wireless, and satellite are competing for the same customers with increasingly similar performance claims. Approximately 28% of new fiber is now being built to homes already served by both fiber and cable providers. Starlink grew from zero to nearly 2 million subscribers in three years. The first half of 2025 saw $34.5 billion in cable M&A activity as smaller operators recognized they couldn't survive the speed-and-price race alone.",
+    "callout": "An SMB paying $80/month for broadband can become a $150-200/month relationship when you add the digital tools their business actually needs.",
+    "sources": [
+      "Cartesian / FCC Broadband Deployment Data, May 2025",
+      "ITIF Broadband Convergence Report, 2025",
+      "Compare Internet ISP M&A Tracker, 2025"
+    ]
+  },
+
+  "solution": {
+    "heading": "From Bandwidth Provider to Business Partner",
+    "intro": "Hostopia gives ISPs and cable operators white-label digital services that turn bandwidth subscribers into multi-product business customers.",
+    "blocks": [
+      {
+        "heading": "The 'Welcome to Business Internet' Bundle",
+        "content": "The highest-intent moment for an ISP is when a small business signs up for business-class internet. This is the moment to offer a digital starter kit: a professional domain, business email on that domain, and an AI-generated website ready to publish. Rogers Business in Canada has adopted this approach, packaging internet, television, phone, wireless, and digital services into consolidated monthly offerings."
+      },
+      {
+        "heading": "Retention Through Digital Dependency",
+        "content": "A customer using only your internet has one switching cost. A customer using your internet, email, website hosting, directory listings, and SEO tools has five switching costs. Bundled subscriptions now account for over a third of all U.S. subscriptions, and bundling reduces churn by 15-20%."
+      },
+      {
+        "heading": "Serving the 'Underserved' SMB",
+        "content": "Most of your business internet customers are small — under 20 employees, often under 5. They don't have IT staff or marketing teams. Hostopia's products are built for exactly this customer: AI-powered website creation that takes minutes, one-click directory distribution, guided step-by-step SEO, automated review collection."
+      }
+    ]
+  },
+
+  "outcomes": {
+    "heading": "What ISPs & Cable Operators Achieve with Hostopia",
+    "cards": [
+      { "title": "Double Your Wallet Share", "body": "Move from a single broadband subscription to a multi-product digital relationship. Typical uplift: $40-120/month in additional recurring revenue per SMB customer." },
+      { "title": "Cut Churn Where It Hurts Most", "body": "Business internet customers are your highest-value accounts. Adding 2-3 digital services reduces their likelihood of switching by 15-20%, even when a competitor offers faster speeds." },
+      { "title": "Differentiate Beyond the Speed Test", "body": "Every ISP can claim fast, reliable internet. Few can offer a branded suite of business tools that help SMBs build a brand, get found, and grow. That's a competitive moat." },
+      { "title": "Monetize Existing Relationships", "body": "You already have the billing relationship, the trust, and the monthly touchpoint. Hostopia gives you the products to upsell into — without building anything yourself." }
+    ]
+  },
+
+  "stats": [
+    { "value": "10-15%", "label": "ARPU increase from bundled services" },
+    { "value": "~20%", "label": "Churn reduction (Comcast Business model)" },
+    { "value": "$34.5B", "label": "In cable M&A in first half of 2025" }
+  ],
+
+  "cta": {
+    "headline": "Your Business Internet Customers Need More Than Bandwidth. Give Them a Reason to Stay.",
+    "body": "Connect with Hostopia to see how ISPs and cable operators launch white-label digital services that increase ARPU, reduce churn, and transform broadband customers into long-term business partners.",
+    "buttonText": "Book a Demo"
+  }
+}

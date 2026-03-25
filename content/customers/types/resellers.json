@@ -1,0 +1,78 @@
+{
+  "slug": "resellers",
+  "label": "Resellers",
+  "category": "who-we-work-with",
+
+  "seo": {
+    "primaryKeyword": "white-label digital services for resellers",
+    "secondaryKeywords": [
+      "IT distributor value-added services",
+      "reseller recurring revenue",
+      "white-label SMB platform",
+      "distribution channel digital services"
+    ],
+    "metaTitle": "Digital Services for Resellers & Distributors | Recurring Revenue at Scale | Hostopia",
+    "metaDescription": "Expand your catalog with white-label SMB digital services. Hostopia helps resellers and distributors add recurring revenue from email, websites, ecommerce, and marketing tools — without building platforms.",
+    "urlSlug": "/customers/resellers"
+  },
+
+  "hero": {
+    "eyebrow": "Hostopia for Resellers & Distributors",
+    "headline": "Your Customers Already Trust You for IT. Now Give Them the Digital Services Their Businesses Demand.",
+    "subheadline": "The IT distribution model is shifting from transactional hardware and license sales to recurring, subscription-based service delivery. The resellers who adapt are growing. The ones who don't are getting acquired.",
+    "description": "Hostopia gives resellers and distributors a complete white-label digital services catalog — domains, business email, AI-powered websites, ecommerce, SEO, directory listings, and reputation management — ready to sell to your existing SMB customer base. No platform to build, no infrastructure to maintain, no technical expertise required on your end.",
+    "cta": { "primary": "Book a Strategy Call", "secondary": "See the Product Catalog" }
+  },
+
+  "challenge": {
+    "heading": "The Margin Squeeze Is Real — and Recurring Revenue Is the Way Out",
+    "content": "Traditional IT distribution operates on thin margins, high volume, and transactional relationships. The reseller market, valued at $50 billion in 2024, is projected to reach $80 billion by 2033, but that growth is being captured primarily by resellers who have shifted to subscription models. TD SYNNEX is transitioning to Everything-as-a-Service models. Ingram Micro's CEO has declared the company is evolving into a platform-driven business. Yet 97% of channel partners recognize recurring revenue as vital while most lack the platform to deliver digital services at scale.",
+    "callout": "You have the customer relationships. You have the sales teams. Now you need the products.",
+    "sources": [
+      "Market Research Intellect, Software Resellers Market Forecast 2033",
+      "TD SYNNEX Q4 2024 Earnings / AI Services Growth Report",
+      "IT Channel Oxygen, Ingram Micro CEO Statement"
+    ]
+  },
+
+  "solution": {
+    "heading": "From Product Catalog to Digital Services Engine",
+    "intro": "Hostopia adds 14+ white-label digital products to your catalog — provisioned through one platform, billed as recurring revenue, branded as yours.",
+    "blocks": [
+      {
+        "heading": "Catalog Expansion Without Complexity",
+        "content": "Adding Hostopia's digital services portfolio instantly expands your catalog to include 14+ products — from domains and email to full ecommerce and digital marketing — all provisioned through a single platform, all under your brand. When you sell a business their laptops and network equipment, you're also the natural source for their domain, email, website, and online store."
+      },
+      {
+        "heading": "Monthly Recurring Revenue at Scale",
+        "content": "Instead of recognizing revenue in one-time spikes tied to product launches and refresh cycles, resellers using Hostopia build a base of monthly recurring revenue (MRR) that compounds. A single SMB customer generating $50/month in digital services revenue produces $600/year — every year, with minimal ongoing sales effort."
+      },
+      {
+        "heading": "White-Label for Channel Integrity",
+        "content": "Hostopia's full white-label model means your customers never see Hostopia's name. Every product, every dashboard, every support interaction is branded as yours. You determine pricing, you control packaging, you own the customer relationship. This is different from referral or affiliate models — with Hostopia, you ARE the service provider."
+      }
+    ]
+  },
+
+  "outcomes": {
+    "heading": "What Resellers & Distributors Achieve with Hostopia",
+    "cards": [
+      { "title": "Build Predictable Recurring Revenue", "body": "Transform transactional customer relationships into monthly subscription income. Digital services MRR compounds as your installed base adopts more products." },
+      { "title": "Expand Without Hiring", "body": "Hostopia handles provisioning, platform management, and end-user support. Your existing sales team sells the products; we deliver and maintain them." },
+      { "title": "Increase Customer Lifetime Value", "body": "Every digital service a customer adopts raises switching costs and extends the relationship. An SMB using your email, website, and SEO isn't shopping competitors." },
+      { "title": "Future-Proof Your Business Model", "body": "The channel is consolidating fast. Resellers with recurring revenue models and diverse product portfolios are the ones being invested in — not acquired at a discount." }
+    ]
+  },
+
+  "stats": [
+    { "value": "14+", "label": "White-label products ready to sell" },
+    { "value": "$50/mo", "label": "Typical digital services revenue per SMB" },
+    { "value": "6.5%", "label": "Annual growth in reseller market" }
+  ],
+
+  "cta": {
+    "headline": "Your Customer Base Is Your Biggest Asset. Start Monetizing It Differently.",
+    "body": "See how resellers and distributors use Hostopia's white-label platform to add 14+ digital services to their catalog — generating recurring revenue without building platforms or hiring specialists.",
+    "buttonText": "Book a Demo"
+  }
+}

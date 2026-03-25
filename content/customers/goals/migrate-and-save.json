@@ -1,0 +1,72 @@
+{
+  "slug": "migrate-and-save",
+  "label": "Migrate and Save",
+  "category": "what-they-want",
+
+  "seo": {
+    "primaryKeyword": "large scale email and website migration services",
+    "secondaryKeywords": [
+      "service provider migration platform",
+      "email migration at scale",
+      "domain migration tools",
+      "minimize migration downtime"
+    ],
+    "metaTitle": "Large-Scale Migrations That Protect Revenue | Zero Disruption | Hostopia",
+    "metaDescription": "Migrating thousands of email accounts, domains, and websites is high-stakes. Hostopia's AI-powered proprietary tooling and 25+ years of migration expertise deliver at scale with minimal customer disruption.",
+    "urlSlug": "/customers/goals/migrate-and-save"
+  },
+
+  "hero": {
+    "headline": "Migrations Are the Highest-Stakes Moment in Any Service Provider Relationship. We've Done Millions of Them.",
+    "subheadline": "Whether you're consolidating acquisitions, transitioning off a legacy platform, or onboarding a competitor's customer base — the migration experience determines whether those customers stay with you or leave before they've even arrived.",
+    "description": "Hostopia has spent 25+ years building proprietary, AI-powered migration tooling purpose-built for large-scale moves of email, domains, and websites. We've migrated millions of accounts for service providers around the world — with dedicated project management, automated validation, and a relentless focus on minimizing customer disruption and downtime. This isn't a generic migration utility. It's a managed migration program with the tooling, expertise, and operational discipline to protect the customer relationships you've invested in acquiring.",
+    "cta": { "primary": "Talk to a Migration Specialist", "secondary": "See Our Migration Process" }
+  },
+
+  "challenge": {
+    "heading": "Why Most Migrations Fail — and What It Costs When They Do",
+    "content": "Large-scale migrations are technically complex, operationally risky, and customer-sensitive. Moving 50,000 email accounts means 50,000 individual business-critical communication channels that cannot go dark. Moving websites means business storefronts that can't show error pages. Moving domains means the foundation of every business's digital identity. When migrations go wrong, the fallout is immediate: customer complaints flood support, churn spikes, and the expected revenue from the migrated base evaporates before it materializes. Service providers have lost entire acquired customer bases to poorly executed migrations — turning what should have been a revenue-generating acquisition into a write-down.",
+    "callout": "The risk scales with volume. A provider migrating 100 accounts can handle issues manually. A provider migrating 100,000 accounts needs automation, validation, exception handling, and a communication framework that keeps customers informed without overwhelming support."
+  },
+
+  "solution": {
+    "heading": "AI-Powered Tooling. Dedicated Project Management. Proven at Scale.",
+    "intro": "Hostopia's migration platform is purpose-built and refined over 25+ years of large-scale migrations for service providers worldwide.",
+    "blocks": [
+      {
+        "heading": "Proprietary Migration Platform",
+        "content": "Hostopia's migration tooling handles email migration (full mailbox content, authentication settings, forwarding rules, with AI-powered validation), domain migration (bulk transfers with automated registrar unlock requests, authorization code management, and DNS record preservation), and website migration (content, databases, configurations, and dependencies with automated testing that confirms every migrated site renders correctly before cutover)."
+      },
+      {
+        "heading": "Dedicated Project Management",
+        "content": "Every Hostopia migration is assigned a dedicated project manager who coordinates the entire process — from pre-migration planning and customer communication through execution, validation, and post-migration support. The process includes pre-migration auditing (identifying accounts that need special handling), phased migration scheduling (moving accounts in waves to contain risk), real-time monitoring during execution, exception handling for accounts that don't migrate cleanly, and post-migration validation reporting."
+      },
+      {
+        "heading": "Cost Consolidation",
+        "content": "Beyond the migration itself, consolidating onto Hostopia's platform often reduces the total cost of platform operations. Service providers running legacy email systems, aging hosting infrastructure, or multiple point solutions for different digital services can consolidate onto a single platform — reducing licensing costs, support complexity, and operational overhead. The 'save' in 'migrate and save' isn't just about the migration fee. It's about the long-term operational efficiency of running on a modern, cloud-based, fully managed platform."
+      }
+    ]
+  },
+
+  "migrationScenarios": {
+    "heading": "Common Migration Paths Hostopia Supports",
+    "cards": [
+      { "title": "Acquisition Integration", "body": "You've acquired a competitor or a regional provider. Their customers are on a legacy platform. Hostopia migrates the entire base onto your branded platform — consolidating the customer relationship under your brand, your billing, and your support." },
+      { "title": "Platform Sunset", "body": "Your current email, hosting, or web platform is end-of-life. Hostopia migrates customers to our modern, cloud-based platform with minimal disruption, no data loss, and a better end-user experience on the other side." },
+      { "title": "Competitive Win-Back", "body": "You've won a large account (or a portfolio of accounts) from a competitor. Hostopia migrates their email, websites, and domains to your platform — fast enough that the customers never reconsider, and clean enough that they never complain." },
+      { "title": "Consolidation", "body": "You're running multiple platforms for different digital services (one for email, another for hosting, another for domains). Hostopia consolidates everything onto a single platform — reducing vendor management, support complexity, and operational cost." }
+    ]
+  },
+
+  "stats": [
+    { "value": "25+", "label": "Years of large-scale migration expertise" },
+    { "value": "Millions", "label": "Of accounts migrated for service providers worldwide" },
+    { "value": "AI-Powered", "label": "Proprietary migration tooling with automated validation" }
+  ],
+
+  "cta": {
+    "headline": "Migrations Don't Have to Be Risky. With the Right Partner, They're a Growth Accelerator.",
+    "body": "Talk to Hostopia about your migration scenario. Whether it's 5,000 accounts or 500,000, our team has the tooling, the expertise, and the track record to deliver on time, on budget, and without customer disruption.",
+    "buttonText": "Talk to a Migration Specialist"
+  }
+}

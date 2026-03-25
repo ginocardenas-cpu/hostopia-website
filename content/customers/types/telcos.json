@@ -1,0 +1,89 @@
+{
+  "slug": "telcos",
+  "label": "Telcos",
+  "category": "who-we-work-with",
+
+  "seo": {
+    "primaryKeyword": "white-label digital services for telcos",
+    "secondaryKeywords": [
+      "telco SMB revenue growth",
+      "telecom value-added services",
+      "telco digital bundling platform",
+      "ARPU growth digital services"
+    ],
+    "metaTitle": "Digital Services for Telcos | Turn Connectivity into Recurring SMB Revenue | Hostopia",
+    "metaDescription": "Help your telco grow beyond voice and data. Hostopia's white-label digital services platform lets telcos add email, websites, ecommerce, and marketing tools — increasing ARPU, reducing churn, and transforming SMB relationships.",
+    "urlSlug": "/customers/telcos"
+  },
+
+  "hero": {
+    "eyebrow": "Hostopia for Telecommunications Companies",
+    "headline": "Your Network Reaches Every Small Business in Town. Your Revenue Doesn't Have To Stop at Connectivity.",
+    "subheadline": "Telecom ARPU has been declining an average of 2% annually, and the industry carries the highest churn rate of any major sector — over 30% per year. The providers that are changing this trajectory are the ones selling through their network, not just selling the network itself.",
+    "description": "Hostopia gives telcos a ready-to-launch portfolio of white-label digital services — business email, websites, ecommerce, SEO, directory listings, and reputation management — that turn your existing SMB subscriber base into a recurring digital revenue stream. Every service is provisioned through the Hostopia platform, delivered under your brand, and supported by our team. You set the pricing, choose the packaging, and control the channel. We handle the technology.",
+    "cta": { "primary": "Book a Strategy Call", "secondary": "Explore the Product Portfolio" }
+  },
+
+  "challenge": {
+    "heading": "The Connectivity Trap — and How Leading Telcos Are Breaking Free",
+    "content": "Global telecom service revenue is growing at just 2.8% CAGR through 2029, barely keeping pace with inflation. Mobile ARPU is expected to fall from $6.32 in 2024 to $6.20 by 2029, and fixed broadband ARPU has flatlined at roughly $19.80 — despite years of infrastructure investment. The core business is commoditizing. Customers switch providers for $5/month in savings, and the cost of acquiring a new subscriber is 6-7x higher than retaining an existing one. Meanwhile, 64% of SMBs say they are likely to buy business tools from their telco provider — if the option existed.",
+    "callout": "Your network reaches every small business in town. Your revenue doesn't have to stop at connectivity.",
+    "sources": [
+      "PwC Global Telecom Outlook 2025-2029",
+      "vcita SMB Telco Survey, 2024",
+      "Analysys Mason SMB IT Spending Trends 2024-2029"
+    ]
+  },
+
+  "solution": {
+    "heading": "From Network Operator to Digital Growth Partner",
+    "intro": "Hostopia delivers a complete white-label platform — your brand, your pricing, your channel. We handle technology and support.",
+    "blocks": [
+      {
+        "heading": "Bundling for Activation",
+        "content": "When a new business customer activates a voice or data plan, that first interaction is your highest-leverage moment. Leading telcos use Hostopia to attach a digital services bundle at point of sale — a professional domain, business email, and a starter website — turning a single connectivity sale into a three- or four-product relationship from day one. Telus Business in Canada bundles three or more business products with priority support and a dedicated customer success manager at no additional cost. Hostopia enables this same model with digital services that SMBs immediately use and depend on."
+      },
+      {
+        "heading": "ARPU Expansion Across the Base",
+        "content": "The bigger opportunity is the thousands of existing SMB subscribers already paying for voice and data who have unmet digital needs.",
+        "bundles": [
+          { "name": "Starter Bundle", "products": "Domain + Business Email + SSL", "description": "Establishes the SMB's professional identity. Typical attach rate with connectivity: 15-25%." },
+          { "name": "Growth Bundle", "products": "Add Website Builder (Online Presence Builder) + Directory Listings (OneList Plus)", "description": "Gets the business online and discoverable. Increases monthly ARPU by $20-40." },
+          { "name": "Pro Bundle", "products": "Add SEO (Search Everywhere Optimization) + Reputation Management (Reviews Promoter) + Ecommerce (Online Store)", "description": "Full digital toolkit. Positions your telco as the SMB's complete digital partner. Monthly ARPU increase of $60-100+." }
+        ]
+      },
+      {
+        "heading": "Migration as a Competitive Weapon",
+        "content": "Many telcos acquire SMB customers through M&A, regional expansion, or competitive win-backs — but those customers arrive with email and websites hosted elsewhere. Hostopia's proprietary migration tooling, powered by AI, moves email, domains, and websites at scale with minimal disruption."
+      }
+    ]
+  },
+
+  "outcomes": {
+    "heading": "What Telcos Achieve with Hostopia",
+    "cards": [
+      { "title": "Grow ARPU Without Growing Infrastructure", "body": "Digital services carry high margins and don't require network buildout. Every dollar of digital revenue drops closer to the bottom line than every dollar of connectivity revenue." },
+      { "title": "Reduce Churn Through Product Stacking", "body": "Industry data shows bundled services reduce churn by 15-20%. An SMB customer using email, website, and listings through your platform has three reasons to stay — not one." },
+      { "title": "Compete on Value, Not Price", "body": "Fiber overbuilders and MVNOs can match your speed tiers. They can't match a bundled digital services experience delivered under a trusted brand." },
+      { "title": "Speed to Market", "body": "Building a digital services platform from scratch takes years and millions. Hostopia gets you to market in weeks with a full portfolio, white-label branding, provisioning, and support already in place." }
+    ]
+  },
+
+  "stats": [
+    { "value": "$20-100+", "label": "Monthly ARPU increase per SMB subscriber" },
+    { "value": "15-20%", "label": "Churn reduction with bundled digital services" },
+    { "value": "64%", "label": "Of SMBs likely to buy digital tools from their telco" }
+  ],
+
+  "faq": [
+    { "q": "Can telcos white-label Hostopia's digital services under their own brand?", "a": "Yes. Every Hostopia product — from business email and website builder to ecommerce and SEO — is fully white-labeled. Your customers see your brand, your pricing, and your support experience. Hostopia operates entirely behind the scenes." },
+    { "q": "How do telcos typically bundle digital services with connectivity plans?", "a": "Most telco partners create two to three tiered bundles — a starter package (domain + email), a growth package (add website + listings), and a premium package (add SEO + reputation management + ecommerce). These attach to existing voice/data plans at point of sale or through upsell campaigns to the installed base." },
+    { "q": "What is the typical ARPU impact of adding digital services to a telco's SMB portfolio?", "a": "Telcos that bundle Hostopia's digital services with connectivity typically see ARPU increases of $20-100+ per subscriber per month, depending on the package tier. Industry benchmarks show 10-15% total ARPU improvement from bundled digital services." }
+  ],
+
+  "cta": {
+    "headline": "Ready to Turn Your SMB Subscriber Base into a Digital Revenue Engine?",
+    "body": "Book a demo and see how telcos use Hostopia to launch white-label digital services that increase ARPU, reduce churn, and transform connectivity customers into long-term digital partners.",
+    "buttonText": "Book a Strategy Call"
+  }
+}

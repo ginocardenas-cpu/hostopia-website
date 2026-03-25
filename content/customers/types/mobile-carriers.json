@@ -1,0 +1,84 @@
+{
+  "slug": "mobile-carriers",
+  "label": "Mobile Carriers",
+  "category": "who-we-work-with",
+
+  "seo": {
+    "primaryKeyword": "SMB digital services for mobile carriers",
+    "secondaryKeywords": [
+      "mobile carrier value-added services",
+      "5G SMB monetization",
+      "mobile operator business tools",
+      "carrier SMB digital bundling"
+    ],
+    "metaTitle": "Digital Services for Mobile Carriers | Monetize Your SMB Base Beyond Wireless | Hostopia",
+    "metaDescription": "Your SMB subscribers carry your SIM everywhere. Now give them digital tools to run their business — websites, email, ecommerce, and marketing — all under your brand, provisioned through Hostopia.",
+    "urlSlug": "/customers/mobile-carriers"
+  },
+
+  "hero": {
+    "eyebrow": "Hostopia for Mobile Carriers",
+    "headline": "Your SMB Customers Run Their Business from Their Phone. Give Them a Business Worth Running Online.",
+    "subheadline": "Mobile value-added services represent a $184 billion market growing at 13.7% annually. Yet most mobile carriers still monetize SMBs through voice plans and data packages alone — leaving the highest-growth revenue category to third parties.",
+    "description": "Hostopia gives mobile carriers a white-label suite of digital business tools that SMB subscribers can activate, manage, and monitor from their mobile device — professional email, AI-powered websites, online stores, directory listings, SEO, and reputation management. These are cloud-based, mobile-responsive services that match how today's small business owner actually operates — from their phone, between jobs, in the gaps of a busy day. Your brand stays at the center of the experience. Hostopia provides the platform, provisioning, and support.",
+    "cta": { "primary": "Book a Strategy Call", "secondary": "Explore the Portfolio" }
+  },
+
+  "challenge": {
+    "heading": "5G Built the Highway. Digital Services Create the Toll Booths.",
+    "content": "Mobile carriers invested billions in 5G infrastructure. The monetization challenge remains: how do you generate returns on that investment beyond faster data plans? The mobile VAS market offers a clear path — $184.3 billion in 2025, growing to $209.5 billion in 2026 — but carriers need products to sell, not just pipes to sell them through. Verizon Business is already testing this model, offering up to $30/month savings when SMBs bundle 5G Business Internet with smartphone plans. AT&T launched AT&T Internet Air for Business in 2024, using fixed wireless as the entry point for broader business service bundling. T-Mobile for Business is packaging SIM-only mobile plans with add-on business services. The pattern is clear: mobile carriers are racing to become more than wireless providers. The ones that get there first — with the most complete SMB digital services portfolio — capture the recurring revenue and the customer relationship.",
+    "callout": "Your SMB subscribers carry your SIM everywhere. They manage everything from their phone. Be the carrier that gives them mobile-native business tools — not just a data plan.",
+    "sources": [
+      "Global Growth Insights, Mobile VAS Market 2025-2033",
+      "Verizon Business Solutions Bundling Offers, 2025",
+      "AT&T Internet Air for Business Launch, 2024",
+      "Ericsson Mobility Report, June 2025"
+    ]
+  },
+
+  "solution": {
+    "heading": "Turn Every Business Line into a Digital Services Relationship",
+    "intro": "Hostopia enables mobile carriers to attach digital services at wireless activation and expand through the customer lifecycle.",
+    "blocks": [
+      {
+        "heading": "Mobile-First Activation",
+        "content": "Your SMB customer activates a business wireless plan. At that moment, they're in your app, on your platform, entering their business information. Hostopia integrates with that flow to offer a digital starter package: register a domain, set up professional email, generate an AI-powered website — all completable from their phone in under 15 minutes. This matches how SMBs actually work. A plumber between service calls. A food truck owner during prep. A freelancer at a coffee shop. They need tools that work the way they do — fast, mobile, and requiring zero technical expertise."
+      },
+      {
+        "heading": "The 'Business in a Box' Concept",
+        "content": "The most compelling carrier proposition for SMBs is the complete package: you give them the phone line, the data plan, and the digital tools to run their business — all on one bill, all under one brand.",
+        "bundles": [
+          { "name": "Mobile Essentials", "products": "Domain + Business Email", "description": "The professional identity layer. Every SMB needs this. Attach at wireless activation for near-100% relevance." },
+          { "name": "Mobile Business", "products": "Add Website Builder (Online Presence Builder) + Directory Listings (OneList Plus)", "description": "Online presence and discoverability. The SMB is found by local customers across Google, Bing, Facebook, and Yelp." },
+          { "name": "Mobile Pro", "products": "Add SEO (Search Everywhere Optimization) + Reputation Management (Reviews Promoter) + Online Store", "description": "Full digital business toolkit. The SMB is running their digital operation through your carrier ecosystem." }
+        ]
+      },
+      {
+        "heading": "Data-Driven Upsell",
+        "content": "Mobile carriers have a unique advantage: you know when your SMB customers' businesses are growing. More data usage, more lines added, expanded coverage areas — all signals that the business is ready for more digital services. Hostopia's platform enables targeted upsell campaigns based on these signals, matching the right digital product to the right customer at the right moment."
+      }
+    ]
+  },
+
+  "outcomes": {
+    "heading": "What Mobile Carriers Achieve with Hostopia",
+    "cards": [
+      { "title": "Monetize 5G Investment Through Services, Not Just Speed", "body": "5G enables mobile-first business tools. Hostopia gives you the products that turn 5G infrastructure into recurring SMB revenue." },
+      { "title": "Capture the Mobile-First SMB Market", "body": "Millions of small businesses are mobile-native. They manage everything from their phone. Be the carrier that gives them mobile-native business tools — not just a data plan." },
+      { "title": "Create Multi-Product Stickiness", "body": "A wireless customer is one plan cancellation away from leaving. A wireless + email + website + listings customer has an entire digital business tied to your platform." },
+      { "title": "Compete with Big Tech, Not Just Other Carriers", "body": "Google, Wix, and Shopify are selling digital tools directly to SMBs. Position your carrier as the local, trusted alternative that bundles these tools with the wireless service they already pay you for." }
+    ]
+  },
+
+  "stats": [
+    { "value": "$184B", "label": "Mobile VAS market size, growing 13.7% annually" },
+    { "value": "15min", "label": "Time to activate a full digital starter package" },
+    { "value": "3-5x", "label": "ARPU multiplier with digital services attached" }
+  ],
+
+  "cta": {
+    "headline": "Your SMB Subscribers Are Already in Your Ecosystem. Give Them a Reason to Build Their Business There.",
+    "body": "See how mobile carriers use Hostopia to add white-label digital services to their wireless plans — creating recurring revenue, deepening relationships, and competing beyond the SIM card.",
+    "buttonText": "Book a Demo"
+  }
+}

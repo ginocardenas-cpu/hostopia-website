@@ -1,0 +1,77 @@
+{
+  "slug": "improve-retention",
+  "label": "Improve Retention",
+  "category": "what-they-want",
+
+  "seo": {
+    "primaryKeyword": "service provider customer retention strategies",
+    "secondaryKeywords": [
+      "reduce churn digital services",
+      "telco retention bundling",
+      "ISP customer retention",
+      "SMB retention through bundling"
+    ],
+    "metaTitle": "Improve Customer Retention | Reduce Churn with Digital Services | Hostopia",
+    "metaDescription": "Bundled digital services reduce churn by 15-20%. Hostopia helps service providers add email, websites, and marketing tools that make customers too invested to leave.",
+    "urlSlug": "/customers/goals/improve-retention"
+  },
+
+  "hero": {
+    "headline": "Every Product Your Customer Uses Through Your Platform Is Another Reason They Won't Leave.",
+    "subheadline": "Telecom has the highest annual churn rate of any major industry — over 30%. The cost of acquiring a replacement customer is 6-7x higher than keeping the one you have. Yet most service providers still rely on a single-product relationship that's one promotional offer away from cancellation.",
+    "description": "Hostopia's white-label digital services turn single-product subscribers into multi-product customers — the most proven method for reducing churn in any subscription business. When an SMB customer uses your broadband, your email, your website builder, and your directory listings, canceling any one of them means disrupting their entire digital operation. That's not a contract lock-in. That's genuine value dependency.",
+    "cta": { "primary": "Book a Retention Strategy Call", "secondary": "See How Bundling Reduces Churn" }
+  },
+
+  "challenge": {
+    "heading": "Why Single-Product Relationships Are a Retention Liability",
+    "content": "An SMB paying you for broadband alone has one switching cost: the minor inconvenience of changing internet providers. Their email is on Gmail. Their website is on Squarespace. Their listings are managed through Yelp. None of those services are affected when they cancel your broadband. Your service is fully replaceable. Now consider the same SMB using your broadband, your business email, your website, your directory listings, and your reputation management tool. Switching broadband providers now means migrating their email, rebuilding their website, disconnecting their directory sync, and losing their review collection workflow. The switching cost isn't $5/month in savings — it's weeks of disruption and potential customer loss.",
+    "callout": "Comcast Business demonstrated this at scale: bundled services increased ARPU by 10-15% and reduced churn by nearly 20%. Verizon's quadruple-play strategy reduced churn by 15% and increased cross-selling by 25%.",
+    "sources": [
+      "Comcast Business Earnings / Lightwave Online Analysis",
+      "Deloitte TMT Predictions 2025",
+      "vcita SMB Telco Survey, 2024"
+    ]
+  },
+
+  "solution": {
+    "heading": "Building Digital Switching Costs — Without Locking Customers In",
+    "intro": "The most effective retention strategy isn't discounting your core product — it's adding services that make the overall relationship more valuable over time.",
+    "blocks": [
+      {
+        "heading": "The Retention Ladder",
+        "content": "Month 1: Customer activates broadband + business email. Two products, moderate stickiness. Month 3: Upsell to website builder. Customer launches their business website on your platform. Three products, significantly higher switching cost. Month 6: Add directory listings. Customer's business information is synced across Google, Bing, Facebook, and Yelp through your dashboard. Four products. Month 12: Add SEO and reputation management. Customer has a year of search optimization data, keyword tracking history, and review collection running through your platform. Five products. This customer isn't leaving."
+      },
+      {
+        "heading": "Retention Through Visibility",
+        "content": "One of the most powerful retention drivers is showing customers the value they're receiving. Hostopia's products include built-in reporting and analytics. OneList Plus shows customers exactly which directories their business is listed on and the accuracy status of each. Search Everywhere Optimization tracks keyword rankings over time. Reviews Promoter counts the reviews collected and their average rating. Online Presence Builder reports on website traffic and visitor behavior. When a customer can see that your platform is actively helping their business get found, build reputation, and grow — that's a retention conversation you win every time."
+      },
+      {
+        "heading": "Proactive Churn Prevention",
+        "content": "Service providers using Hostopia's digital services gain an additional churn signal: product usage. A customer who stops logging into their website builder dashboard, or whose SEO tasks are going uncompleted, or whose review collection rate drops — these are early indicators of disengagement that your retention team can act on before the cancellation call comes. Traditional churn prevention relies on billing and payment patterns — signals that often come too late. Digital services engagement data gives you an earlier, more actionable signal."
+      }
+    ]
+  },
+
+  "retentionByProvider": {
+    "heading": "How Different Providers Use Digital Services for Retention",
+    "cards": [
+      { "provider": "Telcos", "strategy": "Bundle email and websites with voice/data plans at activation. Customers with 3+ products show 40-60% lower churn than single-product subscribers." },
+      { "provider": "ISPs & Cable Operators", "strategy": "Layer digital services on top of business internet. The customer's website, email, and online presence are all powered by the same provider as their connectivity. Switching ISPs now means switching everything." },
+      { "provider": "Registrars", "strategy": "Attach services at domain registration. First-year domain churn drops dramatically when the customer has email, a website, and listings tied to that domain." },
+      { "provider": "MSPs", "strategy": "Extend managed IT into digital marketing. When you manage a customer's network AND their online presence, you're woven into two separate but critical parts of their operation." }
+    ]
+  },
+
+  "stats": [
+    { "value": "15-20%", "label": "Churn reduction with bundled digital services" },
+    { "value": "6-7x", "label": "Cost of acquiring a new customer vs. retaining" },
+    { "value": "30%+", "label": "Annual churn rate in telecom industry" }
+  ],
+
+  "cta": {
+    "headline": "Stop Losing Customers to the Next Promotional Offer. Give Them Reasons to Stay.",
+    "body": "See how service providers use Hostopia's digital services to build multi-product relationships that reduce churn by 15-20% and increase customer lifetime value.",
+    "buttonText": "Book a Retention Strategy Call"
+  }
+}

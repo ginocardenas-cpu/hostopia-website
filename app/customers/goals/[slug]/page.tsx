@@ -1,36 +1,29 @@
-type CustomerGoalsPageProps = {
-  params: { slug: string };
-};
+import type { Metadata } from "next";
+import { notFound } from "next/navigation";
+import CustomerStoryPage from "@/components/customers/CustomerStoryPage";
+import { customerGoalSlugs, getCustomerGoalContent } from "@/lib/customer-goals-content";
 
-const GOAL_TITLES: Record<string, string> = {
-  bundles: "Bundles",
-  "differentiate-core": "Differentiate Core",
-  "grow-existing-revenues": "Grow Existing Revenues",
-  "improve-retention": "Improve Retention",
-  "migrate-and-save": "Migrate and Save",
-  "new-revenue-streams": "New Revenue Streams",
-};
+type Props = { params: { slug: string } };
 
-export default function CustomerGoalsPage({ params }: CustomerGoalsPageProps) {
-  const title = GOAL_TITLES[params.slug] ?? "Customer Goal";
+export function generateStaticParams() {
+  return customerGoalSlugs.map((slug) => ({ slug }));
+}
+
+export function generateMetadata({ params }: Props): Metadata {
+  const content = getCustomerGoalContent(params.slug);
+  if (!content) return { title: "Customer goals | Hostopia" };
+  return {
+    title: content.seo.metaTitle,
+    description: content.seo.metaDescription,
+    keywords: [content.seo.primaryKeyword, ...content.seo.secondaryKeywords],
+  };
+}
+
+export default function CustomerGoalPage({ params }: Props) {
+  const content = getCustomerGoalContent(params.slug);
+  if (!content) notFound();
 
   return (
-    <main className="min-h-[60vh] pt-28 pb-16 px-6" style={{ backgroundColor: "#f7f6f2" }}>
-      <div className="max-w-7xl mx-auto">
-        <div className="flex items-center gap-3 mb-5">
-          <div className="w-8 h-px" style={{ backgroundColor: "#2CADB2" }} />
-          <span className="section-label">Customer Goals</span>
-        </div>
-        <h1
-          className="font-black leading-tight mb-4"
-          style={{ fontFamily: "Montserrat, sans-serif", fontSize: "clamp(2rem, 4vw, 3.5rem)", color: "#24282B" }}
-        >
-          {title}
-        </h1>
-        <p style={{ fontFamily: "Raleway, sans-serif", color: "#555a5e" }}>
-          Detailed content for <strong>{title}</strong> will be added here.
-        </p>
-      </div>
-    </main>
+    <CustomerStoryPage content={content} breadcrumbGroup="What they want" sectionEyebrow="What they want" />
   );
 }

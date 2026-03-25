@@ -1,0 +1,138 @@
+{
+  "slug": "bundles",
+  "label": "Bundles",
+  "category": "what-they-want",
+
+  "seo": {
+    "primaryKeyword": "SMB digital services bundles for service providers",
+    "secondaryKeywords": [
+      "white-label digital bundles",
+      "service provider product bundling",
+      "telco SMB bundles",
+      "ISP digital services packages"
+    ],
+    "metaTitle": "Digital Service Bundles for Service Providers | Packaging That Sells | Hostopia",
+    "metaDescription": "Pre-configured digital service bundles that sell themselves. Hostopia helps service providers package email, websites, SEO, and marketing tools into tiered offerings that increase ARPU and reduce churn.",
+    "urlSlug": "/customers/goals/bundles"
+  },
+
+  "hero": {
+    "headline": "The Right Bundle Sells the Product. The Right Products Make the Bundle Unstoppable.",
+    "subheadline": "Bundled subscriptions account for over a third of all U.S. subscriptions. Customers prefer the simplicity of consolidated services — and providers prefer the ARPU lift and churn reduction that comes with them. The question isn't whether to bundle. It's what to bundle and how to package it.",
+    "description": "Hostopia's digital services portfolio is designed for bundling — modular products that combine naturally, scale in tiers, and create compounding value for both the customer and the provider. Domain + email. Website + listings. SEO + reputation management. Ecommerce + everything. Every combination reinforces the others, and every tier gives customers a reason to upgrade.",
+    "cta": { "primary": "Book a Bundle Strategy Session", "secondary": "See the Product Portfolio" }
+  },
+
+  "bundleFrameworks": {
+    "heading": "Proven Bundle Configurations by Provider Type",
+    "frameworks": [
+      {
+        "providerType": "Telco & ISP Bundles",
+        "tiers": [
+          {
+            "name": "Digital Identity",
+            "tier": 1,
+            "products": "Domain + Business Email + SSL",
+            "priceRange": "$12-18/month",
+            "target": "Every SMB subscriber. Universal need. Attach at activation.",
+            "valueStory": "Your business deserves a professional identity. Start with a domain, professional email, and security — included with your business plan."
+          },
+          {
+            "name": "Digital Presence",
+            "tier": 2,
+            "products": "Everything in Tier 1 + Website Builder + Directory Listings",
+            "priceRange": "$35-50/month",
+            "target": "SMBs ready to get online and be found. 3-6 months post-activation.",
+            "valueStory": "Launch a professional website in minutes and get listed across Google, Bing, Facebook, and 40+ directories — so customers find you everywhere they search."
+          },
+          {
+            "name": "Digital Growth",
+            "tier": 3,
+            "products": "Everything in Tier 2 + SEO + Reputation Management",
+            "priceRange": "$65-90/month",
+            "target": "Growth-stage SMBs investing in marketing. 6-12 months post-activation.",
+            "valueStory": "Drive more traffic, collect more reviews, and outrank competitors in local search — with guided tools you can manage yourself."
+          },
+          {
+            "name": "Digital Commerce",
+            "tier": 4,
+            "products": "Everything in Tier 3 + Ecommerce + Email Marketing",
+            "priceRange": "$100-150/month",
+            "target": "SMBs selling online. Revenue-driven businesses.",
+            "valueStory": "Sell online with zero transaction fees, build your customer list, and run email campaigns — all from one platform, all under one bill."
+          }
+        ]
+      },
+      {
+        "providerType": "Registrar Bundles",
+        "tiers": [
+          {
+            "name": "Get Started",
+            "trigger": "At Registration",
+            "products": "Domain + Email + SSL",
+            "approach": "Inline offer during domain checkout: 'Complete your business setup.'",
+            "conversionTrigger": "The customer just registered their domain — email and security are the obvious next step."
+          },
+          {
+            "name": "Get Online",
+            "trigger": "Post-Registration (Day 7)",
+            "products": "Add Website Builder",
+            "approach": "Email campaign: 'You registered yourbusiness.com. Now let's build your website.'",
+            "conversionTrigger": "They have the domain but no site. AI-powered builder removes the friction."
+          },
+          {
+            "name": "Get Found",
+            "trigger": "Post-Registration (Day 30)",
+            "products": "Add Directory Listings + SEO",
+            "approach": "Email campaign: 'Your website is live. Now let's make sure customers find you.'",
+            "conversionTrigger": "Site is published, natural next step is visibility."
+          }
+        ]
+      },
+      {
+        "providerType": "MSP & Hosting Bundles",
+        "tiers": [
+          {
+            "name": "Managed IT + Digital Essentials",
+            "products": "Existing Managed Services + Email + Website Hosting",
+            "conversation": "We already manage your network. Let us manage your email and website too.",
+            "revenueImpact": "$20-40/month additional per customer"
+          },
+          {
+            "name": "Managed IT + Digital Marketing",
+            "products": "Existing + Listings + SEO + Reputation",
+            "conversation": "Your IT is covered. Let's get your business found and reviewed.",
+            "revenueImpact": "$50-80/month additional per customer"
+          },
+          {
+            "name": "Managed IT + Full Digital",
+            "products": "Existing + All Hostopia Products",
+            "conversation": "One provider for everything digital. IT, web, marketing, and commerce.",
+            "revenueImpact": "$100-150/month additional per customer"
+          }
+        ]
+      }
+    ]
+  },
+
+  "whyBundlesWork": {
+    "heading": "The Economics of Bundling",
+    "perspectives": [
+      { "for": "For the customer", "benefit": "Simplicity. One provider, one dashboard, one bill. The average SMB uses 5-7 different digital tools. Consolidation saves time, reduces confusion, and creates a single point of contact." },
+      { "for": "For the provider", "benefit": "Stickiness. Comcast Business saw ARPU increase 10-15% and churn decrease nearly 20% through bundled services. Verizon's bundled strategy reduced churn by 15% and increased cross-selling by 25%." },
+      { "for": "For the relationship", "benefit": "Trust compounding. Every service a customer uses through your platform is another proof point that you deliver value. By the time they're using domain, email, website, listings, SEO, and reputation management, no competitor can displace you with a promotional offer." }
+    ]
+  },
+
+  "stats": [
+    { "value": "33%+", "label": "Of U.S. subscriptions are now bundled" },
+    { "value": "10-15%", "label": "ARPU increase from bundled services" },
+    { "value": "15-20%", "label": "Churn reduction through bundling" }
+  ],
+
+  "cta": {
+    "headline": "The Right Bundle Changes Everything — ARPU, Churn, and Customer Lifetime Value. Let's Build Yours.",
+    "body": "Hostopia's modular product portfolio is designed for flexible bundling. See how providers across telco, cable, ISP, MSP, and registrar segments create tiered packages that grow revenue and lock in loyalty.",
+    "buttonText": "Book a Bundle Strategy Session"
+  }
+}

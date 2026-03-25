@@ -1,0 +1,79 @@
+{
+  "slug": "cablecos",
+  "label": "Cablecos",
+  "category": "who-we-work-with",
+
+  "seo": {
+    "primaryKeyword": "digital services for cable operators",
+    "secondaryKeywords": [
+      "cable company SMB services",
+      "cableco revenue diversification",
+      "cable operator value-added services",
+      "cable business digital bundling"
+    ],
+    "metaTitle": "Digital Services for Cable Operators | From Subscriber to Business Partner | Hostopia",
+    "metaDescription": "Cable subscribers are cutting cords — but not cutting their need for business tools. Hostopia helps cable operators add white-label digital services that create recurring SMB revenue beyond video and broadband.",
+    "urlSlug": "/customers/cablecos"
+  },
+
+  "hero": {
+    "eyebrow": "Hostopia for Cable Operators",
+    "headline": "Video Revenue Is Declining. Broadband Is Commoditizing. Your SMB Customers Need Something You're Not Selling Yet.",
+    "subheadline": "Cable operators have lost 4 percentage points of customer share in two years, driven by cord-cutting, fiber overbuilds, and fixed wireless competition. The operators that stabilize aren't defending the old model — they're building new revenue streams from the customer relationships they already own.",
+    "description": "Hostopia gives cable operators a turnkey digital services portfolio — professional email, AI-powered websites, ecommerce, directory listings, SEO, and reputation management — designed to monetize your SMB subscriber base beyond video and broadband. Every product is white-labeled under your brand, provisioned through our platform, and supported by our team. You already have the local market presence, the brand recognition, and the billing relationship with thousands of small businesses. Hostopia gives you the products to sell through those relationships.",
+    "cta": { "primary": "Book a Strategy Call", "secondary": "Explore the Portfolio" }
+  },
+
+  "challenge": {
+    "heading": "The Cable Business Model Is Rewriting Itself. The Question Is Whether You're Writing the Next Chapter.",
+    "content": "The cable industry's traditional revenue pillars — video subscriptions and broadband — are under simultaneous pressure. Video revenue continues to decline as streaming services erode the pay-TV bundle. Broadband, once the reliable growth engine, is now facing competition from fiber overbuilders (28% of new fiber targets homes already served by cable) and fixed wireless access providers that have more than doubled market share in two years. The first half of 2025 saw $34.5 billion in cable M&A activity — a signal that the industry recognizes scale alone won't solve the structural revenue challenge. Comcast Business has pointed the way forward, identifying software sales to SMBs as the growth frontier.",
+    "callout": "For regional and mid-market cable operators, building a digital services platform from scratch isn't feasible. Partnering with Hostopia gives you the full product portfolio deployed under your brand within weeks.",
+    "sources": [
+      "Cartesian / FCC Broadband Deployment Data, 2025",
+      "Compare Internet ISP M&A Tracker, 2025",
+      "Lightwave Online, Comcast Business Growth Strategy"
+    ]
+  },
+
+  "solution": {
+    "heading": "Leverage Local Market Dominance for Digital Revenue",
+    "intro": "Cable operators have something national carriers and digital-first platforms don't: deep local market presence. Hostopia lets you capitalize on that trust.",
+    "blocks": [
+      {
+        "heading": "The Local Trust Advantage",
+        "content": "Your trucks are on the street. Your brand is on the local stadium. Your customer service team knows the community. When a local restaurant, salon, or contractor needs help getting online, your cable company is a name they already know and trust. Hostopia lets you capitalize on that trust with products that match local SMB needs. A restaurant needs a website with their menu and hours — Online Presence Builder generates it with AI in minutes. A contractor needs to be found on Google Maps — OneList Plus distributes their listing across every major directory. A salon needs more reviews — Reviews Promoter automates the ask after every appointment."
+      },
+      {
+        "heading": "Bundling Digital Services with Business Internet",
+        "content": "The Comcast Business model is instructive: bundle business internet with digital tools, increase ARPU by 10-15%, reduce churn by nearly 20%. For cable operators using Hostopia, the playbook is ready-made.",
+        "bundles": [
+          { "name": "Business Internet + Digital Essentials", "products": "Broadband + Domain + Email + SSL", "description": "The professional identity package. Positions your business internet plan as more than bandwidth." },
+          { "name": "Business Internet + Digital Growth", "products": "Add Website Builder + Directory Listings + Reputation Management", "description": "The 'get online and get found' package. Meaningful ARPU expansion." },
+          { "name": "Business Internet + Digital Pro", "products": "Add SEO + Ecommerce + Email Marketing", "description": "The complete digital business package. Your highest-tier offering for growth-oriented SMBs." }
+        ]
+      }
+    ]
+  },
+
+  "outcomes": {
+    "heading": "What Cable Operators Achieve with Hostopia",
+    "cards": [
+      { "title": "Replace Declining Video Revenue with Growing Digital Revenue", "body": "Video subscribers are leaving. SMB digital service subscribers are growing. Redirect your go-to-market energy where the growth is." },
+      { "title": "Defend Business Internet Accounts from Fiber Overbuilders", "body": "Speed alone is a losing battle. Bundled digital services create the stickiness that keeps business customers loyal even when a competitor shows up with a promotional offer." },
+      { "title": "Leverage Your Local Presence", "body": "National platforms can't match your community relationships. Local SMBs prefer working with a provider they know. Give them the digital tools to back up that preference." },
+      { "title": "Generate High-Margin Recurring Revenue", "body": "Digital services carry higher margins than broadband and require no network infrastructure investment. Every digital subscriber improves your blended margin profile." }
+    ]
+  },
+
+  "stats": [
+    { "value": "10-15%", "label": "ARPU increase from bundled digital services" },
+    { "value": "$34.5B", "label": "In cable M&A activity in first half of 2025" },
+    { "value": "~20%", "label": "Churn reduction with bundled services" }
+  ],
+
+  "cta": {
+    "headline": "Your Cable Network Connects Local Businesses. Now Connect Them to Their Customers.",
+    "body": "See how cable operators use Hostopia to launch white-label digital services that create recurring SMB revenue, defend against fiber competitors, and transform local market presence into a digital services advantage.",
+    "buttonText": "Book a Demo"
+  }
+}

@@ -1,0 +1,85 @@
+{
+  "slug": "grow-existing-revenues",
+  "label": "Grow Existing Revenues",
+  "category": "what-they-want",
+
+  "seo": {
+    "primaryKeyword": "grow existing customer revenue service providers",
+    "secondaryKeywords": [
+      "increase ARPU digital services",
+      "expand wallet share SMB",
+      "upsell digital services service providers"
+    ],
+    "metaTitle": "Grow Existing Revenue | Increase ARPU with Digital Services | Hostopia",
+    "metaDescription": "Your existing customers represent your biggest revenue opportunity. Hostopia helps service providers increase ARPU and wallet share by upselling white-label digital services to their installed base.",
+    "urlSlug": "/customers/goals/grow-existing-revenues"
+  },
+
+  "hero": {
+    "headline": "You Already Have the Customers. You Already Have the Trust. Now Capture the Revenue You've Been Leaving on the Table.",
+    "subheadline": "The average SMB spends $200-500/month on digital tools and services — domains, email, websites, SEO, listings, social media, ecommerce. For most service providers, exactly $0 of that spending flows through their platform. That's not a market you need to enter. It's revenue you need to recapture.",
+    "description": "Hostopia gives service providers the products, platform, and support to upsell digital services into their existing customer base — increasing average revenue per user (ARPU), expanding wallet share, and deepening relationships that drive long-term growth. No customer acquisition cost. No new market to penetrate. Just more revenue from the relationships you've already built.",
+    "cta": { "primary": "Calculate Your ARPU Opportunity", "secondary": "See the Product Portfolio" }
+  },
+
+  "challenge": {
+    "heading": "Your Customers Are Spending. Just Not With You.",
+    "content": "Consider a typical ISP business customer paying $80/month for broadband. That same customer is paying $12/year to GoDaddy for a domain, $6/month to Google for business email, $16/month to Squarespace for a website, $30/month to an SEO tool, $25/month to a listings service, and $20/month to a social media platform. That's $97/month in digital services spend — more than the broadband bill itself — flowing to six different providers. Your ISP could capture $40-80 of that spend through Hostopia's white-label products. The customer gets a simpler experience (one provider, one dashboard, one bill), and you get a $160-240/month relationship instead of an $80/month one.",
+    "callout": "This isn't upselling for the sake of revenue extraction. These are services the customer already uses and pays for — you're simply making it easier by consolidating them under the brand they already trust.",
+    "sources": [
+      "Analysys Mason SMB IT Spending Trends 2024-2029",
+      "PwC Global Telecom Outlook 2025-2029"
+    ]
+  },
+
+  "solution": {
+    "heading": "Practical Approaches to Growing Revenue from Your Installed Base",
+    "intro": "The most effective ARPU growth strategy is a structured upsell program that matches digital services to customer segments.",
+    "blocks": [
+      {
+        "heading": "Tiered Bundle Upsell Campaigns",
+        "segments": [
+          {
+            "segment": "New Business Customers (First 90 Days)",
+            "offer": "Digital Starter Bundle (Domain + Email + SSL) — $15-20/month",
+            "approach": "Include in the welcome/onboarding flow. Position as 'set up your professional business identity.' Highest conversion window for first-product adoption."
+          },
+          {
+            "segment": "Established Customers (6-18 Months)",
+            "offer": "Digital Growth Bundle (Add Website Builder + Directory Listings) — $30-45/month total",
+            "approach": "Trigger-based campaigns — customer renewed their plan, upgraded their service tier, or contacted support about their website. Signals of engagement and growth readiness."
+          },
+          {
+            "segment": "Power Users (18+ Months, 2+ Products)",
+            "offer": "Digital Pro Bundle (Add SEO + Reputation Management + Ecommerce) — $75-150/month total",
+            "approach": "Account manager or success team outreach. These customers already trust you with multiple products. The conversation is about growth acceleration."
+          }
+        ]
+      },
+      {
+        "heading": "Cross-Product Attach Strategies",
+        "content": "Every Hostopia product creates a natural entry point for the next: Domain registration → Business email → Website builder → Directory listings → SEO → Reputation management → Ecommerce. This is not a theoretical product ladder. It's a documented customer journey where each product increases the customer's digital maturity — and their monthly spend with you.",
+        "productLadder": [
+          { "from": "Domain registration", "to": "Business email", "reason": "Email on the domain they just registered" },
+          { "from": "Business email", "to": "Website builder", "reason": "They have the identity — now they need the presence" },
+          { "from": "Website builder", "to": "Directory listings", "reason": "They're online — now they need to be found" },
+          { "from": "Directory listings", "to": "SEO", "reason": "Listings establish accuracy — SEO drives traffic" },
+          { "from": "SEO", "to": "Reputation management", "reason": "Traffic brings customers — reputation builds trust" },
+          { "from": "Reputation management", "to": "Ecommerce", "reason": "Trust drives conversions — ecommerce captures revenue" }
+        ]
+      }
+    ]
+  },
+
+  "stats": [
+    { "value": "$200-500", "label": "Average monthly SMB spend on digital tools" },
+    { "value": "$20-100+", "label": "Monthly ARPU increase per customer" },
+    { "value": "$0", "label": "Customer acquisition cost for upselling existing base" }
+  ],
+
+  "cta": {
+    "headline": "Your Installed Base Is Your Best Growth Engine. Start It Up.",
+    "body": "See how service providers use Hostopia to increase ARPU by $20-100+ per customer per month — by upselling digital services their customers already need and use.",
+    "buttonText": "Calculate Your ARPU Opportunity"
+  }
+}

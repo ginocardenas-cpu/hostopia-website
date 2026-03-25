@@ -1,0 +1,72 @@
+{
+  "slug": "differentiate-core",
+  "label": "Differentiate Core",
+  "category": "what-they-want",
+
+  "seo": {
+    "primaryKeyword": "differentiate service provider offerings",
+    "secondaryKeywords": [
+      "competitive differentiation digital services",
+      "telco differentiation strategy",
+      "ISP competitive advantage",
+      "service provider value proposition"
+    ],
+    "metaTitle": "Differentiate Your Core Offering | Digital Services as Competitive Advantage | Hostopia",
+    "metaDescription": "Speed and price aren't differentiators anymore. Hostopia helps service providers stand out by adding white-label digital services that competitors can't match — transforming connectivity into a complete business platform.",
+    "urlSlug": "/customers/goals/differentiate-core"
+  },
+
+  "hero": {
+    "headline": "When Every Competitor Matches Your Speed, Your Price, and Your Coverage — What Makes a Customer Choose You?",
+    "subheadline": "Broadband commoditization, wireless price wars, and domain pricing races have made core services nearly interchangeable. The providers that win aren't competing harder on the same dimensions — they're competing on different ones entirely.",
+    "description": "Hostopia helps service providers create competitive differentiation that can't be replicated by matching prices or upgrading infrastructure. When your platform offers professional email, AI-powered websites, ecommerce, SEO, directory listings, and reputation management — all branded as yours — you're no longer selling connectivity or domains. You're selling a business growth platform. That's a positioning competitors need years to match.",
+    "cta": { "primary": "Book a Differentiation Strategy Call", "secondary": "See the Product Portfolio" }
+  },
+
+  "challenge": {
+    "heading": "The Commodity Trap — and Why Incremental Improvements Don't Escape It",
+    "content": "Consider the ISP market: cable, fiber, fixed wireless, and satellite providers all compete with comparable speed claims. Upgrading from 500 Mbps to 1 Gbps generates a short-lived advantage until every competitor matches it. The same dynamic plays out across every service provider category — registrars compete on domain pricing, mobile carriers compete on data plans, MSPs compete on per-device pricing. Incremental improvements within your core category don't create sustainable differentiation because competitors can match them. What they can't match — at least not quickly — is a fundamentally different value proposition.",
+    "callout": "This is the transformation AT&T Business, Comcast Business, and Telus Business are each pursuing — moving from utility provider to digital business partner. Hostopia makes this transformation accessible to any service provider, regardless of size.",
+    "sources": [
+      "PwC Global Telecom Outlook 2025-2029",
+      "ITIF Broadband Convergence Report, 2025",
+      "Deloitte TMT Predictions 2025"
+    ]
+  },
+
+  "solution": {
+    "heading": "Compete Where Others Can't Follow",
+    "intro": "The most powerful differentiation strategy is repositioning from provider to advisor — guiding SMBs through their digital journey.",
+    "blocks": [
+      {
+        "heading": "'Digital Advisor' Positioning",
+        "content": "You're not selling individual products — you're guiding SMBs through their digital journey. Your competitor sells broadband. You sell 'Business Growth Internet' — broadband + a digital services platform that helps SMBs build a brand, get online, get found, and grow. The customer isn't comparing internet speeds. They're comparing the total value of the relationship."
+      },
+      {
+        "heading": "Competitive Proof Points",
+        "content": "When an SMB is comparing two service providers, the provider that can demonstrate tangible business value beyond the core service wins. 'Sign up with Provider A and get internet. Sign up with us and get internet + a free professional website + your business listed on every major directory + guided SEO to help customers find you.' That's not a promotional discount. That's a fundamentally different offer that Provider A would need 12-18 months and significant investment to replicate."
+      },
+      {
+        "heading": "Market Positioning Examples",
+        "examples": [
+          { "provider": "A regional telco", "positioning": "Bundles digital services with voice/data plans and positions as 'the business services company' — not the phone company. Every touchpoint reinforces: we help you build and grow your business online." },
+          { "provider": "A cable operator", "positioning": "Leverages local market dominance by offering 'community digital services' — website builder, local SEO, and reputation management tailored to local businesses. National competitors can't match the local trust." },
+          { "provider": "A domain registrar", "positioning": "Transforms from 'where you buy domains' to 'where you build your digital business' by attaching email, websites, and marketing tools at every registration." },
+          { "provider": "An MSP", "positioning": "Expands from 'we manage your IT' to 'we manage your digital business' — combining infrastructure management with online presence, marketing, and commerce tools." }
+        ]
+      }
+    ]
+  },
+
+  "stats": [
+    { "value": "12-18mo", "label": "Head start before competitors can replicate" },
+    { "value": "3-5x", "label": "More value in a digital platform vs. core service alone" },
+    { "value": "14+", "label": "White-label products to differentiate your offer" }
+  ],
+
+  "cta": {
+    "headline": "Stop Competing on Price. Start Competing on Value.",
+    "body": "See how service providers use Hostopia's white-label digital services to create competitive differentiation that pricing alone can't match — and that competitors need years to replicate.",
+    "buttonText": "Book a Differentiation Strategy Call"
+  }
+}

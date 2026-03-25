@@ -1,0 +1,89 @@
+{
+  "slug": "new-revenue-streams",
+  "label": "New Revenue Streams",
+  "category": "what-they-want",
+
+  "seo": {
+    "primaryKeyword": "new digital revenue streams for service providers",
+    "secondaryKeywords": [
+      "service provider digital services revenue",
+      "white-label digital revenue",
+      "telco new revenue streams",
+      "ISP digital revenue"
+    ],
+    "metaTitle": "New Revenue Streams for Service Providers | Launch Digital Services | Hostopia",
+    "metaDescription": "Stop leaving digital services revenue on the table. Hostopia helps service providers launch white-label email, websites, ecommerce, and marketing tools — generating new recurring revenue from existing customers.",
+    "urlSlug": "/customers/goals/new-revenue-streams"
+  },
+
+  "hero": {
+    "headline": "Your Existing Customers Already Need Digital Services. Today, They're Buying Them from Someone Else.",
+    "subheadline": "90% of SMBs use digital tools to manage critical business processes. 64% say they'd buy those tools from their service provider — if the option existed. For most providers, it doesn't. That's revenue walking out the door every month.",
+    "description": "Hostopia gives service providers — telcos, ISPs, cable operators, MSPs, resellers, registrars, and mobile carriers — a ready-to-launch portfolio of white-label digital services that convert existing customer relationships into new recurring revenue streams. No platform development. No new technical expertise. No multi-year roadmap. You can be generating digital services revenue within weeks.",
+    "cta": { "primary": "Calculate Your Revenue Opportunity", "secondary": "See the Product Portfolio" }
+  },
+
+  "challenge": {
+    "heading": "The Digital Services Gap Is Measured in Billions",
+    "content": "Global SMB spending on telco-delivered digital solutions (excluding communications) reached $66 billion last year and is growing 6-8% annually through 2028. The B2B telecommunications market alone grew 13.6% year-over-year to $94.25 billion in 2025. And within the channel, the software reseller market is projected to grow from $50 billion to $80 billion by 2033. These numbers represent real SMB spending on real digital services: email, websites, domain registration, SEO, local listings, reputation management, ecommerce. Your customers are already paying for these services. The question is whether they're paying you.",
+    "callout": "A typical ISP with 10,000 business internet customers might have zero of them paying for digital services through the ISP. Meanwhile, those same 10,000 businesses are spending an average of $200-500/month across various digital tools and platforms.",
+    "sources": [
+      "Analysys Mason SMB IT Spending Trends 2024-2029",
+      "Market Research Intellect, Software Resellers Market Forecast 2033",
+      "vcita SMB Telco Survey, 2024"
+    ]
+  },
+
+  "solution": {
+    "heading": "From Zero Digital Revenue to Recurring Income — A Practical Playbook",
+    "intro": "The fastest path to digital revenue isn't launching 14 products at once. It's identifying the 2-3 services that attach most naturally to your core offering.",
+    "blocks": [
+      {
+        "heading": "Start with What Attaches Naturally",
+        "content": "If you're a telco or ISP: Start with business email. Every business customer already needs professional email. Domain-based email on your platform is the highest-conversion first product because the need is universal and immediate. If you're a registrar: The domain is your entry point. Email on the new domain is the immediate upsell — 15-30% conversion rates are typical. If you're an MSP or hosting company: The natural extension is digital marketing: SEO, directory listings, reputation management. If you're a mobile carrier: Mobile-first digital tools — domain, email, AI website — activated from the customer's phone during wireless plan setup."
+      },
+      {
+        "heading": "Real-World Revenue Scenarios",
+        "scenarios": [
+          {
+            "provider": "Regional Telco, 15,000 SMB Subscribers",
+            "details": "Launch with Business Email at $5.99/month and Website Builder at $14.99/month. At a conservative 10% attach rate for email and 5% for websites.",
+            "projections": {
+              "email": "1,500 subscribers × $5.99 = $8,985/month",
+              "websites": "750 subscribers × $14.99 = $11,243/month",
+              "year1": "~$242,000 new recurring revenue",
+              "year2": "~$480,000+ with expansion to SEO + listings + 15% base growth"
+            }
+          },
+          {
+            "provider": "Domain Registrar, 100,000 Active Domains",
+            "details": "Attach email at registration (20% conversion), website builder (8% conversion), directory listings (5% conversion).",
+            "projections": {
+              "email": "20,000 × $4.99 = $99,800/month",
+              "websites": "8,000 × $12.99 = $103,920/month",
+              "listings": "5,000 × $9.99 = $49,950/month",
+              "year1": "~$3,044,000 new recurring revenue"
+            }
+          }
+        ]
+      }
+    ]
+  },
+
+  "whyNow": {
+    "heading": "The Clock Is Ticking on Core Revenue",
+    "content": "Every service provider category is facing some form of core revenue pressure. Telco ARPU is declining 2% annually. Cable is losing video subscribers. ISPs are defending broadband against fiber overbuilds. MSPs are consolidating. Registrars are competing on domain pricing. Digital services represent the fastest path to revenue diversification because they leverage what you already have — an existing customer base, an established brand, and a billing relationship. Hostopia eliminates the only barrier that's been holding most providers back: the platform."
+  },
+
+  "stats": [
+    { "value": "$66B", "label": "SMB digital services spend annually" },
+    { "value": "64%", "label": "Of SMBs would buy digital tools from their provider" },
+    { "value": "6-8%", "label": "Annual growth in SMB digital services market" }
+  ],
+
+  "cta": {
+    "headline": "Your Customer Base Is an Untapped Revenue Stream. Let's Open It.",
+    "body": "See how service providers use Hostopia to launch white-label digital services and generate new recurring revenue from existing customer relationships — in weeks, not years.",
+    "buttonText": "Calculate Your Revenue Opportunity"
+  }
+}

@@ -1,37 +1,29 @@
-type CustomersPageProps = {
-  params: { slug: string };
-};
+import type { Metadata } from "next";
+import { notFound } from "next/navigation";
+import CustomerStoryPage from "@/components/customers/CustomerStoryPage";
+import { customerTypeSlugs, getCustomerTypeContent } from "@/lib/customer-types-content";
 
-const CUSTOMER_TYPE_TITLES: Record<string, string> = {
-  cablecos: "Cablecos",
-  distributors: "Distributors",
-  isps: "ISPs",
-  "mobile-carriers": "Mobile Carriers",
-  registrars: "Registrars",
-  resellers: "Resellers",
-  telcos: "Telcos",
-};
+type Props = { params: { slug: string } };
 
-export default function CustomersPage({ params }: CustomersPageProps) {
-  const title = CUSTOMER_TYPE_TITLES[params.slug] ?? "Customer Type";
+export function generateStaticParams() {
+  return customerTypeSlugs.map((slug) => ({ slug }));
+}
+
+export function generateMetadata({ params }: Props): Metadata {
+  const content = getCustomerTypeContent(params.slug);
+  if (!content) return { title: "Customers | Hostopia" };
+  return {
+    title: content.seo.metaTitle,
+    description: content.seo.metaDescription,
+    keywords: [content.seo.primaryKeyword, ...content.seo.secondaryKeywords],
+  };
+}
+
+export default function CustomerTypePage({ params }: Props) {
+  const content = getCustomerTypeContent(params.slug);
+  if (!content) notFound();
 
   return (
-    <main className="min-h-[60vh] pt-28 pb-16 px-6" style={{ backgroundColor: "#f7f6f2" }}>
-      <div className="max-w-7xl mx-auto">
-        <div className="flex items-center gap-3 mb-5">
-          <div className="w-8 h-px" style={{ backgroundColor: "#2CADB2" }} />
-          <span className="section-label">Who We Serve</span>
-        </div>
-        <h1
-          className="font-black leading-tight mb-4"
-          style={{ fontFamily: "Montserrat, sans-serif", fontSize: "clamp(2rem, 4vw, 3.5rem)", color: "#24282B" }}
-        >
-          {title}
-        </h1>
-        <p style={{ fontFamily: "Raleway, sans-serif", color: "#555a5e" }}>
-          Detailed content for <strong>{title}</strong> will be added here.
-        </p>
-      </div>
-    </main>
+    <CustomerStoryPage content={content} breadcrumbGroup="Who we work with" sectionEyebrow="Who we work with" />
   );
 }
