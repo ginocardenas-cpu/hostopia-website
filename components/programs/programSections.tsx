@@ -14,12 +14,12 @@ import {
 export function ProgramsBreadcrumb({ label }: { label: string }) {
   return (
     <div className="mx-auto max-w-6xl px-6 pb-4 pt-2">
-      <nav className="text-sm text-neutral-500" style={{ fontFamily: "Raleway, sans-serif" }}>
-        <Link href="/" className="hover:text-[#2CADB2]">
+      <nav className="font-raleway text-sm text-gray-500">
+        <Link href="/" className="hover:text-teal">
           Home
         </Link>
         <span className="mx-2">/</span>
-        <Link href="/programs" className="hover:text-[#2CADB2]">
+        <Link href="/programs" className="hover:text-teal">
           Programs
         </Link>
         <span className="mx-2">/</span>
@@ -56,7 +56,7 @@ export function ProgramMarketingHero({
       primaryCta={content.hero.cta.primary}
       details={
         <p className="mt-4 text-sm text-neutral-500">
-          <Link href={secondaryHref} className="font-medium text-[#2CADB2] hover:underline">
+          <Link href={secondaryHref} className="font-medium text-teal hover:underline">
             {content.hero.cta.secondary}
           </Link>
         </p>
@@ -93,13 +93,13 @@ export function HowItWorksSection({ eyebrow, heading, intro, cards, imageKey }: 
           {cards.map((card) => (
             <div
               key={card.title}
-              className="rounded-2xl border border-neutral-200/80 bg-[#fafaf9] p-6 text-left shadow-sm"
+              className="rounded-2xl border border-neutral-200/80 bg-gray-50 p-6 text-left shadow-sm"
             >
               <ProgramIcon name={card.icon} className="mb-4" />
-              <h3 className="mb-2 text-lg font-semibold text-[#24282B]" style={{ fontFamily: "Montserrat, sans-serif" }}>
+              <h3 className="mb-2 font-montserrat text-lg font-black text-charcoal">
                 {card.title}
               </h3>
-              <p className="text-base leading-relaxed text-neutral-600" style={{ fontFamily: "Raleway, sans-serif" }}>
+              <p className="text-base leading-relaxed text-gray-500 font-raleway">
                 {card.body}
               </p>
             </div>
@@ -140,7 +140,7 @@ export function LifecycleSection({
       slug={imageKey}
       salt={3}
       splitIndex={splitIndex}
-      bgClass="bg-[#fafaf9]"
+      bgClass="bg-gray-50"
       kicker={eyebrow}
       title={heading}
       blurb=""
@@ -149,10 +149,10 @@ export function LifecycleSection({
           {columns.map((col) => (
             <div key={col.title} className="flex flex-col">
               <ProgramIcon name={col.icon} className="mb-4" />
-              <h3 className="mb-3 text-xl font-semibold text-[#24282B]" style={{ fontFamily: "Montserrat, sans-serif" }}>
+              <h3 className="mb-3 font-montserrat text-xl font-black text-charcoal">
                 {col.title}
               </h3>
-              <p className="flex-1 text-base leading-relaxed text-neutral-600" style={{ fontFamily: "Raleway, sans-serif" }}>
+              <p className="flex-1 text-base leading-relaxed text-gray-500 font-raleway">
                 {col.body}
               </p>
             </div>
@@ -194,10 +194,10 @@ export function MigrationExpertiseSection({
             <div key={item.title} className="flex gap-4">
               <ProgramIcon name={item.icon} className="mt-1 shrink-0" />
               <div>
-                <h3 className="mb-1 text-base font-semibold text-[#24282B]" style={{ fontFamily: "Montserrat, sans-serif" }}>
+                <h3 className="mb-1 font-montserrat text-base font-black text-charcoal">
                   {item.title}
                 </h3>
-                <p className="text-sm leading-relaxed text-neutral-600 md:text-base" style={{ fontFamily: "Raleway, sans-serif" }}>
+                <p className="text-sm leading-relaxed text-neutral-600 md:text-base font-raleway">
                   {item.body}
                 </p>
               </div>
@@ -237,15 +237,15 @@ export function TieredSupportSection({
       details={
         <div className="grid gap-6 md:grid-cols-3">
           {tiers.map((tier) => (
-            <div key={tier.level} className="rounded-2xl border border-neutral-200/80 bg-[#fafaf9] p-8 shadow-sm">
-              <p className="mb-2 text-xs font-bold uppercase tracking-wider text-[#2CADB2]" style={{ fontFamily: "Montserrat, sans-serif" }}>
+            <div key={tier.level} className="rounded-2xl border border-neutral-200/80 bg-gray-50 p-8 shadow-sm">
+              <p className="section-label mb-2">
                 {tier.level}
               </p>
               <ProgramIcon name={tier.icon} className="mb-4" />
-              <h3 className="mb-3 text-lg font-semibold text-[#24282B]" style={{ fontFamily: "Montserrat, sans-serif" }}>
+              <h3 className="mb-3 font-montserrat text-lg font-black text-charcoal">
                 {tier.title}
               </h3>
-              <p className="text-base leading-relaxed text-neutral-600" style={{ fontFamily: "Raleway, sans-serif" }}>
+              <p className="text-base leading-relaxed text-gray-500 font-raleway">
                 {tier.body}
               </p>
             </div>
@@ -268,7 +268,7 @@ export function UpserveSection({ eyebrow, heading, intro, cards, imageKey }: Ups
     <MarketingCenteredSection
       slug={imageKey}
       salt={6}
-      bgClass="bg-[#fafaf9]"
+      bgClass="bg-gray-50"
       kicker={eyebrow}
       title={heading}
       blurb={intro}
@@ -279,10 +279,10 @@ export function UpserveSection({ eyebrow, heading, intro, cards, imageKey }: Ups
           {cards.map((card) => (
             <div key={card.title} className="rounded-2xl border border-neutral-200/80 bg-white p-6 shadow-sm">
               <ProgramIcon name={card.icon} className="mb-4" />
-              <h3 className="mb-2 text-lg font-semibold text-[#24282B]" style={{ fontFamily: "Montserrat, sans-serif" }}>
+              <h3 className="mb-2 font-montserrat text-lg font-black text-charcoal">
                 {card.title}
               </h3>
-              <p className="text-base leading-relaxed text-neutral-600" style={{ fontFamily: "Raleway, sans-serif" }}>
+              <p className="text-base leading-relaxed text-gray-500 font-raleway">
                 {card.body}
               </p>
             </div>
@@ -321,10 +321,10 @@ export function ReportingSection({
             <div key={item.title} className="flex gap-4">
               <ProgramIcon name={item.icon} className="mt-1 shrink-0" />
               <div>
-                <h3 className="mb-1 text-base font-semibold text-[#24282B]" style={{ fontFamily: "Montserrat, sans-serif" }}>
+                <h3 className="mb-1 font-montserrat text-base font-black text-charcoal">
                   {item.title}
                 </h3>
-                <p className="text-sm leading-relaxed text-neutral-600 md:text-base" style={{ fontFamily: "Raleway, sans-serif" }}>
+                <p className="text-sm leading-relaxed text-neutral-600 md:text-base font-raleway">
                   {item.body}
                 </p>
               </div>

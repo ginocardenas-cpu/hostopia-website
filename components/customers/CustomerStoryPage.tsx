@@ -84,7 +84,7 @@ function resolveFirstCentered(content: CustomerStoryContent): FirstCentered | nu
           ) : null}
           {ch.callout ? (
             <blockquote
-              className="border-l-4 pl-5 text-base font-medium italic text-[#24282B]"
+              className="border-l-4 pl-5 font-raleway text-base font-medium italic text-charcoal"
               style={{ borderColor: MARKETING_ACCENT }}
             >
               {ch.callout}
@@ -171,7 +171,7 @@ export default function CustomerStoryPage({ content, breadcrumbGroup, sectionEye
         slug={content.slug}
         salt={2}
         splitIndex={nextSplitIndex()}
-        bgClass="bg-[#f4f4f2]"
+        bgClass="bg-cream"
         kicker="The solution"
         title={solution.heading}
         blurb={lead}
@@ -214,7 +214,7 @@ export default function CustomerStoryPage({ content, breadcrumbGroup, sectionEye
           slug={content.slug}
           salt={10 + i}
           splitIndex={nextSplitIndex()}
-          bgClass={i % 2 === 0 ? "bg-white" : "bg-[#fafaf9]"}
+          bgClass={i % 2 === 0 ? "bg-white" : "bg-gray-50"}
           kicker="Deep dive"
           title={block.heading}
           blurb={blurb}
@@ -231,7 +231,7 @@ export default function CustomerStoryPage({ content, breadcrumbGroup, sectionEye
         slug={content.slug}
         salt={20}
         splitIndex={nextSplitIndex()}
-        bgClass="bg-[#f4f4f2]"
+        bgClass="bg-cream"
         kicker="Bundle architecture"
         title={bundleFrameworks.heading}
         blurb="Tiered frameworks align SKUs with provider types so bundles stay simple to sell and defend."
@@ -243,7 +243,7 @@ export default function CustomerStoryPage({ content, breadcrumbGroup, sectionEye
   if (whyBundlesWork) {
     if (isBundlesGoalPage) {
       middleNodes.push(
-        <section key="why-bundles-synced" className="scroll-mt-28 bg-white py-20 md:py-28">
+        <section key="why-bundles-synced" className="scroll-mt-28 bg-white py-28">
           <div className="mx-auto max-w-6xl px-6">
             <BundlesEconomicsCarousel
               heading={whyBundlesWork.heading}
@@ -281,7 +281,7 @@ export default function CustomerStoryPage({ content, breadcrumbGroup, sectionEye
         slug={content.slug}
         salt={22}
         splitIndex={nextSplitIndex()}
-        bgClass="bg-[#fafaf9]"
+        bgClass="bg-gray-50"
         kicker="Why now"
         title={whyNow.heading}
         blurb={lead}
@@ -316,7 +316,7 @@ export default function CustomerStoryPage({ content, breadcrumbGroup, sectionEye
         slug={content.slug}
         salt={24}
         splitIndex={nextSplitIndex()}
-        bgClass="bg-[#f4f4f2]"
+        bgClass="bg-cream"
         kicker="Migration"
         title={migrationScenarios.heading}
         blurb="Platform, timing, and economics for each path — with plays you can operationalize with sales and success teams."
@@ -324,7 +324,7 @@ export default function CustomerStoryPage({ content, breadcrumbGroup, sectionEye
           <div className="grid gap-4 sm:grid-cols-2">
             {migrationScenarios.cards.map((card) => (
               <div key={card.title} className="rounded-xl border border-neutral-200/80 bg-white p-5">
-                <h3 className="mb-2 text-base font-semibold text-[#24282B]" style={{ fontFamily: "Montserrat, sans-serif" }}>
+                <h3 className="mb-2 font-montserrat text-base font-black text-charcoal">
                   {card.title}
                 </h3>
                 <p className="text-sm leading-relaxed text-neutral-600" style={{ fontFamily: "Raleway, sans-serif" }}>
@@ -352,9 +352,9 @@ export default function CustomerStoryPage({ content, breadcrumbGroup, sectionEye
         appendBeforeImage={
           <div className="grid gap-4 sm:grid-cols-2">
             {retentionByProvider.cards.map((card, i) => (
-              <div key={i} className="rounded-xl border border-neutral-200/80 bg-[#fafaf9] p-5">
+              <div key={i} className="rounded-xl border border-neutral-200/80 bg-gray-50 p-5">
                 {"provider" in card && card.provider ? (
-                  <h3 className="mb-2 text-base font-semibold" style={{ color: MARKETING_ACCENT, fontFamily: "Montserrat, sans-serif" }}>
+                  <h3 className="mb-2 font-montserrat text-base font-black text-teal">
                     {card.provider}
                   </h3>
                 ) : null}
@@ -398,7 +398,7 @@ export default function CustomerStoryPage({ content, breadcrumbGroup, sectionEye
           <div className="space-y-8">
             {faq.map((item) => (
               <div key={item.q.slice(0, 48)}>
-                <h3 className="mb-2 text-base font-semibold text-[#24282B]" style={{ fontFamily: "Montserrat, sans-serif" }}>
+                <h3 className="mb-2 font-montserrat text-base font-black text-charcoal">
                   {item.q}
                 </h3>
                 <p className="text-sm leading-relaxed text-neutral-600" style={{ fontFamily: "Raleway, sans-serif" }}>
@@ -416,7 +416,7 @@ export default function CustomerStoryPage({ content, breadcrumbGroup, sectionEye
     <main className="pb-0 pt-24">
       <div className="mx-auto max-w-6xl px-6 pb-6 pt-2">
         <nav className="text-sm text-neutral-500" style={{ fontFamily: "Raleway, sans-serif" }}>
-          <Link href="/" className="hover:text-[#2CADB2]">
+          <Link href="/" className="hover:text-teal">
             Home
           </Link>
           <span className="mx-2">/</span>
@@ -443,7 +443,7 @@ export default function CustomerStoryPage({ content, breadcrumbGroup, sectionEye
               </CollapsibleDetails>
             ) : null}
             <p className={`text-sm text-neutral-500 ${heroRest.length > 24 ? "mt-4" : "mt-6"}`}>
-              <Link href={secondaryHref} className="font-medium text-[#2CADB2] hover:underline">
+              <Link href={secondaryHref} className="font-medium text-teal hover:underline">
                 {hero.cta.secondary}
               </Link>
             </p>

@@ -12,7 +12,7 @@ export default function ProductsPage() {
         >
           Products
         </h1>
-        <p style={{ fontFamily: "Raleway, sans-serif", color: "#555a5e" }}>
+        <p style={{ fontFamily: "Raleway, sans-serif", color: "#6b7280" }}>
           Content coming soon.
         </p>
       </div>

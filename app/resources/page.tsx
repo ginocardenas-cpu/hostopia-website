@@ -35,7 +35,7 @@ export default function ResourcesPage() {
           </h1>
           <p
             className="text-lg leading-relaxed max-w-3xl"
-            style={{ fontFamily: "Raleway, sans-serif", color: "#555a5e" }}
+            style={{ fontFamily: "Raleway, sans-serif", color: "#6b7280" }}
           >
             Explore tools, insights, and enablement designed to help telecoms, ISVs, resellers, and service providers grow recurring revenue, strengthen customer relationships, and accelerate time to market. Our resource center gives you access to the content and expertise needed to build, launch, and scale digital services with confidence.
           </p>
@@ -43,7 +43,7 @@ export default function ResourcesPage() {
       </section>
 
       {/* Resource cards */}
-      <section className="py-20 bg-white">
+      <section className="bg-white py-28">
         <div className="max-w-7xl mx-auto px-6">
           <div className="space-y-16">
             {/* HostopiaConnects */}
@@ -63,7 +63,7 @@ export default function ResourcesPage() {
                 </h2>
                 <p
                   className="text-lg leading-relaxed mb-6"
-                  style={{ fontFamily: "Raleway, sans-serif", color: "#555a5e" }}
+                  style={{ fontFamily: "Raleway, sans-serif", color: "#6b7280" }}
                 >
                   HostopiaConnects is your partner enablement hub, designed to support your go-to-market strategy. Access a comprehensive library of ready-to-use sales and marketing assets, including product sheets, presentations, campaign materials, videos, and customer-facing content. Equip your teams with proven resources to drive demand, improve sales productivity, and expand wallet share across your customer base.
                 </p>
@@ -122,7 +122,7 @@ export default function ResourcesPage() {
                 </h2>
                 <p
                   className="text-lg leading-relaxed mb-6"
-                  style={{ fontFamily: "Raleway, sans-serif", color: "#555a5e" }}
+                  style={{ fontFamily: "Raleway, sans-serif", color: "#6b7280" }}
                 >
                   Stay ahead of industry trends and discover new growth opportunities. The Hostopia Blog delivers insights on digital transformation, cloud and SaaS monetization, customer lifecycle management, and partner success strategies. Learn how leading telecoms, ISVs, and service providers are evolving their portfolios to stay competitive in a rapidly changing market.
                 </p>
@@ -159,7 +159,7 @@ export default function ResourcesPage() {
                 </h2>
                 <p
                   className="text-lg leading-relaxed mb-4"
-                  style={{ fontFamily: "Raleway, sans-serif", color: "#555a5e" }}
+                  style={{ fontFamily: "Raleway, sans-serif", color: "#6b7280" }}
                 >
                   See how Hostopia&apos;s platforms and solutions help you launch new services, increase ARPU, and create sustainable recurring revenue. Our product guide provides a clear overview of our digital experience, commerce, and customer lifecycle capabilities designed to power your business and support long-term growth.
                 </p>

@@ -38,9 +38,9 @@ export default function BilingualSupport() {
 
             <p
               className="text-lg leading-relaxed mb-10"
-              style={{ fontFamily: "Raleway, sans-serif", color: "#555a5e" }}
+              style={{ fontFamily: "Raleway, sans-serif", color: "#6b7280" }}
             >
-              Your customers call your brand. Our team answers as your team. Phone, chat, and email — with defined SLAs, measurable KPIs, and full reporting. Exceptional customer support is a competitive advantage, not a cost center. Hostopia&apos;s multilingual support team delivers high-quality, on-brand interactions across every channel — so you can scale your customer base without scaling your headcount.
+              Your customers call your brand. Our team answers as your team. Phone, chat, and email â€” with defined SLAs, measurable KPIs, and full reporting. Exceptional customer support is a competitive advantage, not a cost center. Hostopia&apos;s multilingual support team delivers high-quality, on-brand interactions across every channel â€” so you can scale your customer base without scaling your headcount.
             </p>
 
             <a

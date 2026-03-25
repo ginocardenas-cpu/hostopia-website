@@ -10,10 +10,9 @@ const stats = [
 
 export default function Hero() {
   return (
-    <section className="relative min-h-screen flex flex-col justify-center overflow-hidden pt-20" style={{ backgroundColor: "#f7f6f2" }}>
-
+    <section className="relative flex min-h-screen flex-col justify-center overflow-hidden bg-cream pt-20">
       {/* Hero image — full height, right-aligned, never stretched */}
-      <div className="absolute right-0 top-0 h-full w-1/2 lg:w-[58%] hidden md:block">
+      <div className="absolute right-0 top-0 hidden h-full w-1/2 md:block lg:w-[58%]">
         <Image
           src="/Home Page images/New/2023-03-16-hero.png"
           alt="Bundles of white-label digital services held by a partner"
@@ -24,84 +23,45 @@ export default function Hero() {
       </div>
 
       {/* Content */}
-      <div className="relative z-10 max-w-7xl mx-auto px-6 py-20 w-full">
+      <div className="relative z-10 mx-auto w-full max-w-7xl px-6 py-20">
         <div className="max-w-xl">
-
           {/* Eyebrow */}
-          <div className="flex items-center gap-3 mb-10">
-            <div className="w-8 h-px" style={{ backgroundColor: "#2CADB2" }} />
+          <div className="mb-10 flex items-center gap-3">
+            <div className="h-px w-8 bg-teal" />
             <span className="section-label">Wholesale &amp; White-Label Digital Services</span>
           </div>
 
-          {/* Main headline */}
-          <h1
-            className="font-black leading-[1.02] tracking-tight mb-8"
-            style={{
-              fontFamily: "Montserrat, sans-serif",
-              fontSize: "clamp(2.5rem, 5vw, 4.5rem)",
-              color: "#24282B",
-            }}
-          >
-            <span style={{ color: "#2CADB2" }}>Behind</span> the
+          {/* Main headline — H1: Montserrat black, 72px scale, teal accents per design system */}
+          <h1 className="mb-8 font-montserrat text-5xl font-black leading-[1.02] tracking-tight text-charcoal sm:text-6xl lg:text-7xl">
+            Behind the
             <br />
-            Brands That
+            <span className="text-teal">Brands</span> That
             <br />
-            Power Small
+            <span className="text-teal">Power</span> Small
             <br />
-            <span
-              style={{
-                textDecoration: "underline",
-                textDecorationColor: "#F8CF41",
-                textUnderlineOffset: "8px",
-                textDecorationThickness: "6px",
-              }}
-            >
-              Business
-            </span>
-            <sup
-              style={{
-                fontSize: "0.4em",
-                verticalAlign: "super",
-                marginLeft: "0.15em",
-              }}
-            >
-              TM
-            </sup>
+            Business
+            <sup className="ml-[0.15em] align-super text-[0.4em]">TM</sup>
           </h1>
 
-          {/* Subheadline */}
-          <p
-            className="text-lg md:text-xl leading-relaxed mb-10"
-            style={{ fontFamily: "Raleway, sans-serif", color: "#555a5e" }}
-          >
-            Hostopia gives telcos, ISPs, resellers, and distributors a complete
-            white-label platform to launch digital services, grow recurring revenue,
-            and become the digital advisor their SMB customers trust.
+          {/* Subheadline — 20px, gray-500, max-w-xl */}
+          <p className="mb-10 max-w-xl font-raleway text-xl leading-7 text-gray-500">
+            Hostopia gives telcos, ISPs, resellers, and distributors a complete white-label platform to
+            launch digital services, grow recurring revenue, and become the digital advisor their SMB
+            customers trust.
           </p>
 
-          {/* CTAs */}
-          <div className="flex flex-col sm:flex-row gap-4">
+          {/* CTAs — primary teal pill; secondary charcoal outline */}
+          <div className="flex flex-col gap-4 sm:flex-row">
             <a
               href="#partner"
-              className="group inline-flex items-center justify-center gap-2 font-bold px-8 py-4 rounded-full text-base transition-all duration-200 hover:scale-105 hover:shadow-xl"
-              style={{
-                fontFamily: "Montserrat, sans-serif",
-                backgroundColor: "#F8CF41",
-                color: "#24282B",
-                boxShadow: "0 4px 20px rgba(248,207,65,0.3)",
-              }}
+              className="group inline-flex items-center justify-center gap-2 rounded-full bg-teal px-8 py-4 font-raleway text-sm font-semibold uppercase tracking-wide text-white transition-colors duration-200 hover:bg-teal-dark hover:shadow-md"
             >
               Become a Partner
-              <ArrowRight size={18} className="group-hover:translate-x-1 transition-transform" />
+              <ArrowRight size={18} className="transition-transform group-hover:translate-x-1" />
             </a>
             <a
               href="#solutions"
-              className="inline-flex items-center justify-center gap-2 font-semibold px-8 py-4 rounded-full text-base border-2 transition-all duration-200 hover:bg-white"
-              style={{
-                fontFamily: "Montserrat, sans-serif",
-                borderColor: "#24282B",
-                color: "#24282B",
-              }}
+              className="inline-flex items-center justify-center gap-2 rounded-full border-2 border-charcoal bg-transparent px-8 py-4 font-raleway text-sm font-semibold uppercase tracking-wide text-charcoal transition-colors duration-200 hover:bg-white"
             >
               Explore Solutions
             </a>
@@ -109,26 +69,14 @@ export default function Hero() {
         </div>
 
         {/* Stats strip */}
-        <div className="mt-24 grid grid-cols-2 md:grid-cols-4 gap-px bg-gray-200 rounded-2xl overflow-hidden shadow-sm">
-          {stats.map((stat, i) => (
+        <div className="mt-24 grid grid-cols-2 gap-px overflow-hidden rounded-2xl bg-gray-200 shadow-sm md:grid-cols-4">
+          {stats.map((stat) => (
             <div
               key={stat.label}
-              className="flex flex-col items-center justify-center p-8 bg-white hover:bg-gray-50 transition-colors duration-200"
+              className="flex flex-col items-center justify-center bg-white p-8 transition-colors duration-200 hover:bg-gray-50"
             >
-              <span
-                className="font-black mb-1"
-                style={{
-                  fontFamily: "Montserrat, sans-serif",
-                  fontSize: "2.25rem",
-                  color: i % 2 === 0 ? "#2CADB2" : "#24282B",
-                }}
-              >
-                {stat.value}
-              </span>
-              <span
-                className="text-xs font-semibold uppercase tracking-wider text-center"
-                style={{ fontFamily: "Raleway, sans-serif", color: "#888" }}
-              >
+              <span className="mb-1 font-montserrat text-4xl font-black text-teal">{stat.value}</span>
+              <span className="text-center font-raleway text-xs font-semibold uppercase tracking-wider text-[#888888]">
                 {stat.label}
               </span>
             </div>

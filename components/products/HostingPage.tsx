@@ -43,19 +43,19 @@ export default function HostingPage({ label }: HostingPageProps) {
                   color: "#24282B",
                 }}
               >
-                Enterprise-Grade Hosting Infrastructure — Sold Under Your Brand
+                Enterprise-Grade Hosting Infrastructure â€” Sold Under Your Brand
               </h1>
               <p
                 className="text-base md:text-lg leading-relaxed mb-4"
-                style={{ fontFamily: "Raleway, sans-serif", color: "#555a5e" }}
+                style={{ fontFamily: "Raleway, sans-serif", color: "#6b7280" }}
               >
                 Some SMBs need more than a website builder. Agencies need multi-site management. Developers need configurable environments. Your hosting platform needs to serve them all.
               </p>
               <p
                 className="text-base leading-relaxed mb-6"
-                style={{ fontFamily: "Raleway, sans-serif", color: "#555a5e" }}
+                style={{ fontFamily: "Raleway, sans-serif", color: "#6b7280" }}
               >
-                Hostopia&apos;s white-label Website Hosting lets you deliver secure, scalable infrastructure under your brand — from simple managed hosting for SMBs to advanced multi-site environments for agencies and developers. No hosting stack to build or maintain.
+                Hostopia&apos;s white-label Website Hosting lets you deliver secure, scalable infrastructure under your brand â€” from simple managed hosting for SMBs to advanced multi-site environments for agencies and developers. No hosting stack to build or maintain.
               </p>
               <div className="flex flex-wrap gap-3">
                 <Link
@@ -72,7 +72,7 @@ export default function HostingPage({ label }: HostingPageProps) {
                 </Link>
                 <span
                   className="inline-flex items-center gap-2 text-xs md:text-sm px-4 py-2 rounded-full border border-gray-200"
-                  style={{ fontFamily: "Raleway, sans-serif", color: "#555a5e" }}
+                  style={{ fontFamily: "Raleway, sans-serif", color: "#6b7280" }}
                 >
                   <Server size={16} /> White-label hosting, powered by Hostopia
                 </span>
@@ -87,7 +87,7 @@ export default function HostingPage({ label }: HostingPageProps) {
               >
                 Why this matters for SMBs and developers
               </h3>
-              <ul className="space-y-3 text-sm" style={{ fontFamily: "Raleway, sans-serif", color: "#555a5e" }}>
+              <ul className="space-y-3 text-sm" style={{ fontFamily: "Raleway, sans-serif", color: "#6b7280" }}>
                 <li className="flex gap-3">
                   <Globe2 size={18} className="mt-1 shrink-0" style={{ color: "#2CADB2" }} />
                   <span>
@@ -118,9 +118,9 @@ export default function HostingPage({ label }: HostingPageProps) {
         <SectionHeading eyebrow="What you offer" title="Under your brand" />
           <p
             className="text-base leading-relaxed mb-6 max-w-3xl"
-            style={{ fontFamily: "Raleway, sans-serif", color: "#555a5e" }}
+            style={{ fontFamily: "Raleway, sans-serif", color: "#6b7280" }}
           >
-            Website Hosting becomes a core infrastructure layer in your digital portfolio—supporting both SMB SaaS users
+            Website Hosting becomes a core infrastructure layer in your digital portfolioâ€”supporting both SMB SaaS users
             and technical developers under your brand.
           </p>
           <p
@@ -131,26 +131,26 @@ export default function HostingPage({ label }: HostingPageProps) {
           </p>
           <ul
             className="space-y-3 text-sm md:text-base mb-10"
-            style={{ fontFamily: "Raleway, sans-serif", color: "#555a5e" }}
+            style={{ fontFamily: "Raleway, sans-serif", color: "#6b7280" }}
           >
             <li className="flex gap-2">
-              <span className="text-teal mt-1">•</span>
+              <span className="text-teal mt-1">â€¢</span>
               <span>Fully white-label hosting plans branded and sold under your name.</span>
             </li>
             <li className="flex gap-2">
-              <span className="text-teal mt-1">•</span>
+              <span className="text-teal mt-1">â€¢</span>
               <span>Tiered hosting packages to meet varying storage, performance, and technical needs.</span>
             </li>
             <li className="flex gap-2">
-              <span className="text-teal mt-1">•</span>
+              <span className="text-teal mt-1">â€¢</span>
               <span>Hosting for CMS platforms and custom-built websites.</span>
             </li>
             <li className="flex gap-2">
-              <span className="text-teal mt-1">•</span>
+              <span className="text-teal mt-1">â€¢</span>
               <span>Multi-site hosting plans for agencies and developers managing multiple clients.</span>
             </li>
             <li className="flex gap-2">
-              <span className="text-teal mt-1">•</span>
+              <span className="text-teal mt-1">â€¢</span>
               <span>Add-on services such as business email, SSL, domains, and security products.</span>
             </li>
           </ul>
@@ -160,7 +160,7 @@ export default function HostingPage({ label }: HostingPageProps) {
         <SectionHeading eyebrow="Product capabilities" title="Key features of Website Hosting" />
           <p
             className="text-base leading-relaxed mb-8 max-w-3xl"
-            style={{ fontFamily: "Raleway, sans-serif", color: "#555a5e" }}
+            style={{ fontFamily: "Raleway, sans-serif", color: "#6b7280" }}
           >
             Hostopia&apos;s hosting platform supports both simplicity and technical flexibility.
           </p>
@@ -213,7 +213,7 @@ export default function HostingPage({ label }: HostingPageProps) {
         <SectionHeading eyebrow="Platform capabilities" title="Enterprise-grade infrastructure behind your brand" />
           <p
             className="text-base leading-relaxed mb-8 max-w-3xl"
-            style={{ fontFamily: "Raleway, sans-serif", color: "#555a5e" }}
+            style={{ fontFamily: "Raleway, sans-serif", color: "#6b7280" }}
           >
             Behind your brand, Hostopia delivers hosting infrastructure designed for scale and reliability.
           </p>
@@ -248,29 +248,29 @@ export default function HostingPage({ label }: HostingPageProps) {
             <div>
               <p
                 className="text-base leading-relaxed mb-6"
-                style={{ fontFamily: "Raleway, sans-serif", color: "#555a5e" }}
+                style={{ fontFamily: "Raleway, sans-serif", color: "#6b7280" }}
               >
                 Website Hosting reinforces your role beyond connectivity by anchoring customers on your infrastructure
                 layer.
               </p>
               <ul
                 className="space-y-3 text-sm md:text-base"
-                style={{ fontFamily: "Raleway, sans-serif", color: "#555a5e" }}
+                style={{ fontFamily: "Raleway, sans-serif", color: "#6b7280" }}
               >
                 <li className="flex gap-2">
-                  <span className="text-teal mt-1">•</span>
+                  <span className="text-teal mt-1">â€¢</span>
                   <span>Serve both SaaS-focused SMBs and technically advanced users.</span>
                 </li>
                 <li className="flex gap-2">
-                  <span className="text-teal mt-1">•</span>
+                  <span className="text-teal mt-1">â€¢</span>
                   <span>Expand recurring revenue through tiered hosting plans and add-ons.</span>
                 </li>
                 <li className="flex gap-2">
-                  <span className="text-teal mt-1">•</span>
+                  <span className="text-teal mt-1">â€¢</span>
                   <span>Increase attachment by bundling domains, SSL, and email with hosting.</span>
                 </li>
                 <li className="flex gap-2">
-                  <span className="text-teal mt-1">•</span>
+                  <span className="text-teal mt-1">â€¢</span>
                   <span>Retain agencies and developers managing multiple client environments.</span>
                 </li>
               </ul>
@@ -278,7 +278,7 @@ export default function HostingPage({ label }: HostingPageProps) {
             <div className="relative rounded-2xl overflow-hidden border border-gray-100 shadow-lg w-full bg-gray-50 h-[280px] md:h-[320px]">
               <Image
                 src="/images/hosting-hero.png"
-                alt="Professional in a server room with laptop—hosting and infrastructure"
+                alt="Professional in a server room with laptopâ€”hosting and infrastructure"
                 fill
                 className="object-cover object-center"
                 sizes="(max-width: 768px) 100vw, 50vw"
@@ -291,7 +291,7 @@ export default function HostingPage({ label }: HostingPageProps) {
         <SectionHeading eyebrow="Ideal segments" title="Ideal customer profiles" />
           <p
             className="text-base leading-relaxed mb-8 max-w-3xl"
-            style={{ fontFamily: "Raleway, sans-serif", color: "#555a5e" }}
+            style={{ fontFamily: "Raleway, sans-serif", color: "#6b7280" }}
           >
             Website Hosting is ideal for SMBs and partners that need more than a simple builder.
           </p>
@@ -319,9 +319,9 @@ export default function HostingPage({ label }: HostingPageProps) {
         <SectionHeading eyebrow="Lifecycle fit" title="How hosting helps SMBs get online" />
           <p
             className="text-base leading-relaxed mb-8 max-w-3xl"
-            style={{ fontFamily: "Raleway, sans-serif", color: "#555a5e" }}
+            style={{ fontFamily: "Raleway, sans-serif", color: "#6b7280" }}
           >
-            Website Hosting anchors the &quot;get online&quot; stage—powering websites and applications with secure,
+            Website Hosting anchors the &quot;get online&quot; stageâ€”powering websites and applications with secure,
             scalable infrastructure.
           </p>
           <div className="flex flex-col gap-4 md:flex-row md:items-stretch md:gap-0">
@@ -377,25 +377,25 @@ export default function HostingPage({ label }: HostingPageProps) {
       </ProductSection>
 
       <ProductSection variant="gray">
-          <SectionHeading eyebrow="What’s included" title="What’s included with Website Hosting" />
+          <SectionHeading eyebrow="Whatâ€™s included" title="Whatâ€™s included with Website Hosting" />
           <ul
             className="space-y-3 text-sm md:text-base max-w-3xl"
-            style={{ fontFamily: "Raleway, sans-serif", color: "#555a5e" }}
+            style={{ fontFamily: "Raleway, sans-serif", color: "#6b7280" }}
           >
             <li className="flex gap-2">
-              <span className="text-teal mt-1">•</span>
+              <span className="text-teal mt-1">â€¢</span>
               <span>White-label hosting plans and management tools.</span>
             </li>
             <li className="flex gap-2">
-              <span className="text-teal mt-1">•</span>
+              <span className="text-teal mt-1">â€¢</span>
               <span>Multi-site options for agencies and developers.</span>
             </li>
             <li className="flex gap-2">
-              <span className="text-teal mt-1">•</span>
+              <span className="text-teal mt-1">â€¢</span>
               <span>Integration with domains, SSL, email, and ecommerce products.</span>
             </li>
             <li className="flex gap-2">
-              <span className="text-teal mt-1">•</span>
+              <span className="text-teal mt-1">â€¢</span>
               <span>Partner onboarding, sales enablement, and ongoing platform support.</span>
             </li>
           </ul>
@@ -460,10 +460,10 @@ function FeatureColumn({ title, points }: FeatureColumnProps) {
       >
         {title}
       </h3>
-      <ul className="space-y-2 text-sm" style={{ fontFamily: "Raleway, sans-serif", color: "#555a5e" }}>
+      <ul className="space-y-2 text-sm" style={{ fontFamily: "Raleway, sans-serif", color: "#6b7280" }}>
         {points.map((point) => (
           <li key={point.slice(0, 40)} className="flex gap-2">
-            <span className="text-teal mt-1">•</span>
+            <span className="text-teal mt-1">â€¢</span>
             <span>{point}</span>
           </li>
         ))}
@@ -483,7 +483,7 @@ function SegmentCard({ title, body }: SegmentCardProps) {
       >
         {title}
       </h3>
-      <p className="text-sm" style={{ fontFamily: "Raleway, sans-serif", color: "#555a5e" }}>
+      <p className="text-sm" style={{ fontFamily: "Raleway, sans-serif", color: "#6b7280" }}>
         {body}
       </p>
     </div>
@@ -535,7 +535,7 @@ function LifecycleStepCard({ step, title, body, highlightBlue, conceptLabel, pro
           {productName}
         </p>
       )}
-      <p className="text-sm" style={{ fontFamily: "Raleway, sans-serif", color: "#555a5e" }}>
+      <p className="text-sm" style={{ fontFamily: "Raleway, sans-serif", color: "#6b7280" }}>
         {body}
       </p>
     </div>

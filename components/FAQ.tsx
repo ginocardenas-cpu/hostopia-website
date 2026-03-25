@@ -2,7 +2,7 @@ const faqs = [
   {
     question: "What is Hostopia's white-label digital services platform?",
     answer:
-      "Hostopia provides a complete white-label platform that lets service providers — telcos, ISPs, resellers, and MSPs — sell digital services under their own brand. The platform includes email hosting, website builders, ecommerce, SEO tools, reputation management, and more. You control the branding, pricing, and packaging. Hostopia handles provisioning, infrastructure, and optional end-user support.",
+      "Hostopia provides a complete white-label platform that lets service providers â€” telcos, ISPs, resellers, and MSPs â€” sell digital services under their own brand. The platform includes email hosting, website builders, ecommerce, SEO tools, reputation management, and more. You control the branding, pricing, and packaging. Hostopia handles provisioning, infrastructure, and optional end-user support.",
   },
   {
     question: "What types of service providers does Hostopia work with?",
@@ -12,22 +12,22 @@ const faqs = [
   {
     question: "How quickly can we launch digital services with Hostopia?",
     answer:
-      "Most partners go to market within weeks. Hostopia's platform is pre-built and ready for white-labeling — no development required. Our onboarding team handles integration, branding, and training so your teams can start selling immediately.",
+      "Most partners go to market within weeks. Hostopia's platform is pre-built and ready for white-labeling â€” no development required. Our onboarding team handles integration, branding, and training so your teams can start selling immediately.",
   },
   {
     question: "Can Hostopia migrate our existing email or website customers?",
     answer:
-      "Yes. Hostopia has migrated over 20 million mailboxes using proprietary tooling that ensures zero downtime and 100% data integrity. We also handle domain transfers, website migrations, DNS migrations, and control panel transfers — at any scale.",
+      "Yes. Hostopia has migrated over 20 million mailboxes using proprietary tooling that ensures zero downtime and 100% data integrity. We also handle domain transfers, website migrations, DNS migrations, and control panel transfers â€” at any scale.",
   },
   {
     question: "Is the platform fully white-labeled?",
     answer:
-      "Everything is white-labeled — the customer-facing portals, admin tools, email interfaces, support interactions, and marketing materials. Your customers see your brand at every touchpoint. Hostopia operates entirely behind the scenes.",
+      "Everything is white-labeled â€” the customer-facing portals, admin tools, email interfaces, support interactions, and marketing materials. Your customers see your brand at every touchpoint. Hostopia operates entirely behind the scenes.",
   },
   {
     question: "How does Hostopia help increase partner revenue?",
     answer:
-      "By giving you a portfolio of 14 digital products — from domains and email to ecommerce and SEO — that bundle naturally with your core offerings. Partners typically see ARPU increases through multi-product bundling, upsell motions across the customer lifecycle, and reduced churn from deeper digital engagement.",
+      "By giving you a portfolio of 14 digital products â€” from domains and email to ecommerce and SEO â€” that bundle naturally with your core offerings. Partners typically see ARPU increases through multi-product bundling, upsell motions across the customer lifecycle, and reduced churn from deeper digital engagement.",
   },
 ];
 
@@ -94,7 +94,7 @@ export default function FAQ() {
               </summary>
               <div
                 className="px-6 pb-5 pt-0"
-                style={{ fontFamily: "Raleway, sans-serif", color: "#555a5e" }}
+                style={{ fontFamily: "Raleway, sans-serif", color: "#6b7280" }}
               >
                 <p className="text-base leading-relaxed pl-0">{faq.answer}</p>
               </div>

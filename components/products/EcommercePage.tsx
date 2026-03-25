@@ -23,7 +23,7 @@ export default function EcommercePage({ label }: EcommercePageProps) {
         </nav>
       </div>
 
-      {/* Hero — two-column layout */}
+      {/* Hero â€” two-column layout */}
       <ProductSection variant="gray">
         <section
           className="rounded-3xl overflow-hidden border border-gray-100"
@@ -44,13 +44,13 @@ export default function EcommercePage({ label }: EcommercePageProps) {
                   color: "#24282B",
                 }}
               >
-                Help Your SMB Customers Start Selling Online — Under Your Brand
+                Help Your SMB Customers Start Selling Online â€” Under Your Brand
               </h1>
               <p
                 className="text-base md:text-lg leading-relaxed mb-6"
-                style={{ fontFamily: "Raleway, sans-serif", color: "#555a5e" }}
+                style={{ fontFamily: "Raleway, sans-serif", color: "#6b7280" }}
               >
-                SMBs face growing pressure to sell online, but most lack the skills, budget, or time to manage a full ecommerce stack. Hostopia&apos;s white-label Online Store gives you a turnkey, mobile-ready ecommerce platform to resell under your brand. Integrated with Online Presence Builder, SMBs add a store to their existing website with one click — then scale as they grow.
+                SMBs face growing pressure to sell online, but most lack the skills, budget, or time to manage a full ecommerce stack. Hostopia&apos;s white-label Online Store gives you a turnkey, mobile-ready ecommerce platform to resell under your brand. Integrated with Online Presence Builder, SMBs add a store to their existing website with one click â€” then scale as they grow.
               </p>
               <div className="flex flex-wrap gap-3">
                 <Link
@@ -67,7 +67,7 @@ export default function EcommercePage({ label }: EcommercePageProps) {
                 </Link>
                 <span
                   className="inline-flex items-center gap-2 text-xs md:text-sm px-4 py-2 rounded-full border border-gray-200"
-                  style={{ fontFamily: "Raleway, sans-serif", color: "#555a5e" }}
+                  style={{ fontFamily: "Raleway, sans-serif", color: "#6b7280" }}
                 >
                   <ShoppingCart size={16} /> White-label ecommerce, powered by Hostopia
                 </span>
@@ -96,7 +96,7 @@ export default function EcommercePage({ label }: EcommercePageProps) {
                   </li>
                   <li className="flex items-center gap-2">
                     <CreditCard size={14} className="shrink-0" style={{ color: "#2CADB2" }} />
-                    <span className="font-bold text-xs">40+ payment gateways — zero transaction fees</span>
+                    <span className="font-bold text-xs">40+ payment gateways â€” zero transaction fees</span>
                   </li>
                   <li className="flex items-center gap-2">
                     <Package size={14} className="shrink-0" style={{ color: "#2CADB2" }} />
@@ -123,7 +123,7 @@ export default function EcommercePage({ label }: EcommercePageProps) {
             <SectionHeading eyebrow="What you offer" title="Under your brand" />
             <p
               className="text-base leading-relaxed mb-4"
-              style={{ fontFamily: "Raleway, sans-serif", color: "#555a5e" }}
+              style={{ fontFamily: "Raleway, sans-serif", color: "#6b7280" }}
             >
               You can package Hostopia&apos;s Online Store as a branded ecommerce add-on or core bundle with your website
               and hosting offerings.
@@ -136,20 +136,20 @@ export default function EcommercePage({ label }: EcommercePageProps) {
             </p>
             <ul
               className="space-y-3 text-sm md:text-base"
-              style={{ fontFamily: "Raleway, sans-serif", color: "#555a5e" }}
+              style={{ fontFamily: "Raleway, sans-serif", color: "#6b7280" }}
             >
               <li className="flex gap-2">
-                <span className="text-teal mt-1">•</span>
+                <span className="text-teal mt-1">â€¢</span>
                 <span>
                   A fully white-label online store builder integrated into your branded dashboard and website builder.
                 </span>
               </li>
               <li className="flex gap-2">
-                <span className="text-teal mt-1">•</span>
+                <span className="text-teal mt-1">â€¢</span>
                 <span>Tiered ecommerce plans that let SMBs upgrade as they add products, traffic, and revenue.</span>
               </li>
               <li className="flex gap-2">
-                <span className="text-teal mt-1">•</span>
+                <span className="text-teal mt-1">â€¢</span>
                 <span>DIY and DIFM delivery models: self-serve setup or full managed service for higher-touch clients.</span>
               </li>
             </ul>
@@ -170,9 +170,9 @@ export default function EcommercePage({ label }: EcommercePageProps) {
           <FeatureColumn
             title="The Partner Advantage"
             points={[
-              "Every website customer is a potential store customer — expand ARPU with tiered ecommerce plans.",
+              "Every website customer is a potential store customer â€” expand ARPU with tiered ecommerce plans.",
               "Bundle with websites, SSL, and marketing tools to create high-value, hard-to-replace packages.",
-              "Offer DIY and managed models — same platform, two revenue models.",
+              "Offer DIY and managed models â€” same platform, two revenue models.",
             ]}
           />
         </div>
@@ -184,32 +184,32 @@ export default function EcommercePage({ label }: EcommercePageProps) {
             <SectionHeading eyebrow="Platform capabilities" title="Behind your brand" />
             <p
               className="text-base leading-relaxed mb-4"
-              style={{ fontFamily: "Raleway, sans-serif", color: "#555a5e" }}
+              style={{ fontFamily: "Raleway, sans-serif", color: "#6b7280" }}
             >
               Hostopia provides the infrastructure, integrations, and management tools to deliver ecommerce at scale.
             </p>
             <ul
               className="space-y-3 text-sm md:text-base"
-              style={{ fontFamily: "Raleway, sans-serif", color: "#555a5e" }}
+              style={{ fontFamily: "Raleway, sans-serif", color: "#6b7280" }}
             >
               <li className="flex gap-2">
-                <span className="text-teal mt-1">•</span>
+                <span className="text-teal mt-1">â€¢</span>
                 <span>SSO and deep integration across website, email, and Online Store tools.</span>
               </li>
               <li className="flex gap-2">
-                <span className="text-teal mt-1">•</span>
+                <span className="text-teal mt-1">â€¢</span>
                 <span>Centralized dashboard for inventory, orders, coupons, and multi-channel management.</span>
               </li>
               <li className="flex gap-2">
-                <span className="text-teal mt-1">•</span>
+                <span className="text-teal mt-1">â€¢</span>
                 <span>Flexible design customization for layout, colors, fonts, and branding.</span>
               </li>
               <li className="flex gap-2">
-                <span className="text-teal mt-1">•</span>
+                <span className="text-teal mt-1">â€¢</span>
                 <span>Multi-channel support: website, social, Google Shopping Ads.</span>
               </li>
               <li className="flex gap-2">
-                <span className="text-teal mt-1">•</span>
+                <span className="text-teal mt-1">â€¢</span>
                 <span>Global hosting infrastructure with secure, high-performance transactions.</span>
               </li>
             </ul>
@@ -239,26 +239,26 @@ export default function EcommercePage({ label }: EcommercePageProps) {
             <SectionHeading eyebrow="What's included" title="When you launch Online Store with Hostopia" />
             <ul
               className="space-y-3 text-sm md:text-base"
-              style={{ fontFamily: "Raleway, sans-serif", color: "#555a5e" }}
+              style={{ fontFamily: "Raleway, sans-serif", color: "#6b7280" }}
             >
               <li className="flex gap-2">
-                <span className="text-teal mt-1">•</span>
+                <span className="text-teal mt-1">â€¢</span>
                 <span>White-label ecommerce platform fully integrated with Online Presence Builder.</span>
               </li>
               <li className="flex gap-2">
-                <span className="text-teal mt-1">•</span>
+                <span className="text-teal mt-1">â€¢</span>
                 <span>Multi-currency, multi-gateway support (40+ payment options) with real-time shipping.</span>
               </li>
               <li className="flex gap-2">
-                <span className="text-teal mt-1">•</span>
+                <span className="text-teal mt-1">â€¢</span>
                 <span>Guided setup wizard and management dashboards.</span>
               </li>
               <li className="flex gap-2">
-                <span className="text-teal mt-1">•</span>
+                <span className="text-teal mt-1">â€¢</span>
                 <span>Upsell-driving features like social selling, abandoned cart recovery, and promotions.</span>
               </li>
               <li className="flex gap-2">
-                <span className="text-teal mt-1">•</span>
+                <span className="text-teal mt-1">â€¢</span>
                 <span>Partner training, sales enablement, and ongoing support.</span>
               </li>
             </ul>
@@ -272,9 +272,9 @@ export default function EcommercePage({ label }: EcommercePageProps) {
         </div>
           <p
             className="text-base leading-relaxed mb-4 max-w-3xl mx-auto"
-            style={{ fontFamily: "Raleway, sans-serif", color: "#555a5e" }}
+            style={{ fontFamily: "Raleway, sans-serif", color: "#6b7280" }}
           >
-            Online Store sits at the intersection of &quot;Get Online&quot; and &quot;Grow&quot; — the natural next step for any SMB with a website and an audience ready to buy.
+            Online Store sits at the intersection of &quot;Get Online&quot; and &quot;Grow&quot; â€” the natural next step for any SMB with a website and an audience ready to buy.
           </p>
           <div className="flex flex-col gap-4 md:flex-row md:items-stretch md:gap-0">
             {[
@@ -340,7 +340,7 @@ export default function EcommercePage({ label }: EcommercePageProps) {
               className="text-sm md:text-base mb-6 max-w-2xl"
               style={{ fontFamily: "Raleway, sans-serif", color: "#d1d5db" }}
             >
-              Connect with Hostopia to launch your white-label Online Store, bundle it with web and security products, and help SMBs start selling online — quickly, confidently, and under your brand.
+              Connect with Hostopia to launch your white-label Online Store, bundle it with web and security products, and help SMBs start selling online â€” quickly, confidently, and under your brand.
             </p>
             <Link
               href="/contact"
@@ -386,10 +386,10 @@ function FeatureColumn({ title, points }: FeatureColumnProps) {
       >
         {title}
       </h3>
-      <ul className="space-y-2 text-sm" style={{ fontFamily: "Raleway, sans-serif", color: "#555a5e" }}>
+      <ul className="space-y-2 text-sm" style={{ fontFamily: "Raleway, sans-serif", color: "#6b7280" }}>
         {points.map((point) => (
           <li key={point.slice(0, 40)} className="flex gap-2">
-            <span className="text-teal mt-1">•</span>
+            <span className="text-teal mt-1">â€¢</span>
             <span>{point}</span>
           </li>
         ))}
@@ -447,7 +447,7 @@ function LifecycleStepCard({ step, title, body, highlightGold, conceptLabel, pro
           {productName}
         </p>
       )}
-      <p className="text-sm" style={{ fontFamily: "Raleway, sans-serif", color: "#555a5e" }}>
+      <p className="text-sm" style={{ fontFamily: "Raleway, sans-serif", color: "#6b7280" }}>
         {body}
       </p>
     </div>

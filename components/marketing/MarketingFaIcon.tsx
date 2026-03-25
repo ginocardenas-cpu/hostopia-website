@@ -45,7 +45,7 @@ export function MarketingFaIcon({ name, className = "", size = 26 }: MarketingFa
     <FontAwesomeIcon
       icon={icon}
       className={className}
-      style={{ color: "#2CADB2", width: size, height: size }}
+      style={{ color: "#2cadb2", width: size, height: size }}
       aria-hidden
     />
   );

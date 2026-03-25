@@ -46,7 +46,7 @@ export default function ProgramsHubPage() {
             </h1>
             <p
               className="text-base md:text-lg leading-relaxed mb-8"
-              style={{ fontFamily: "Raleway, sans-serif", color: "#555a5e" }}
+              style={{ fontFamily: "Raleway, sans-serif", color: "#6b7280" }}
             >
               {hub.hero.subheadline}
             </p>
@@ -82,7 +82,7 @@ export default function ProgramsHubPage() {
       <ProductSection variant="white">
         <p
           className="text-lg leading-relaxed max-w-3xl mb-12"
-          style={{ fontFamily: "Raleway, sans-serif", color: "#555a5e" }}
+          style={{ fontFamily: "Raleway, sans-serif", color: "#6b7280" }}
         >
           {hub.intro}
         </p>
@@ -100,7 +100,7 @@ export default function ProgramsHubPage() {
               >
                 {card.title}
               </h2>
-              <p className="text-base leading-relaxed mb-4" style={{ fontFamily: "Raleway, sans-serif", color: "#555a5e" }}>
+              <p className="text-base leading-relaxed mb-4" style={{ fontFamily: "Raleway, sans-serif", color: "#6b7280" }}>
                 {card.description}
               </p>
               <span

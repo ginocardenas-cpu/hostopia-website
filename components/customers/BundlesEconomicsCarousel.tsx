@@ -139,7 +139,7 @@ export default function BundlesEconomicsCarousel({
               className={`rounded-2xl border p-6 text-left shadow-sm transition-colors duration-300 ${
                 active
                   ? "border-[#2CADB2] bg-[#e8faf9] shadow-lg shadow-[#2CADB2]/15 ring-2 ring-[#2CADB2]/25"
-                  : "border-neutral-200/80 bg-[#fafaf9]"
+                  : "border-neutral-200/80 bg-gray-50"
               }`}
             >
               <p className="mb-2 text-sm font-semibold" style={{ color: ACCENT, fontFamily: "Montserrat, sans-serif" }}>

@@ -5,10 +5,10 @@
 @tailwind utilities;
 
 :root {
-  --charcoal: #24282B;
-  --teal: #2CADB2;
+  --charcoal: #24282b;
+  --teal: #2cadb2;
   --teal-dark: #1d8f93;
-  --gold: #F8CF41;
+  --gold: #f8cf41;
   --gold-dark: #e0b82a;
   --cream: #f7f6f2;
 }
@@ -26,7 +26,7 @@ html {
 body {
   font-family: 'Raleway', system-ui, sans-serif;
   background: #ffffff;
-  color: #24282B;
+  color: var(--charcoal);
   -webkit-font-smoothing: antialiased;
 }
 
@@ -35,70 +35,44 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 @layer utilities {
-  .text-teal {
-    color: #2CADB2;
-  }
-
-  .text-gold {
-    color: #F8CF41;
-  }
-
-  .text-charcoal {
-    color: #24282B;
-  }
-
-  .bg-cream {
-    background-color: #f7f6f2;
-  }
-
-  .bg-teal {
-    background-color: #2CADB2;
-  }
-
-  .bg-gold {
-    background-color: #F8CF41;
-  }
-
-  .bg-charcoal {
-    background-color: #24282B;
-  }
-
   .step-card-highlight {
     background-color: rgba(44, 173, 178, 0.18) !important;
-    border: 2px solid #2CADB2 !important;
+    border: 2px solid var(--teal) !important;
   }
 
+  /* Alternate highlight — palette-compliant (replaces ad-hoc blue) */
   .step-card-highlight-blue {
-    background-color: rgba(37, 99, 235, 0.14) !important;
-    border: 2px solid #2563eb !important;
+    background-color: rgba(44, 173, 178, 0.12) !important;
+    border: 2px solid var(--teal-dark) !important;
   }
 
   .step-card-highlight-gold {
     background-color: rgba(248, 207, 65, 0.18) !important;
-    border: 2px solid #e0b82a !important;
+    border: 2px solid var(--gold-dark) !important;
   }
 
   .teal-underline {
     text-decoration: underline;
-    text-decoration-color: #2CADB2;
+    text-decoration-color: var(--teal);
     text-underline-offset: 6px;
     text-decoration-thickness: 4px;
   }
 
   .gold-underline {
     text-decoration: underline;
-    text-decoration-color: #F8CF41;
+    text-decoration-color: var(--gold);
     text-underline-offset: 6px;
     text-decoration-thickness: 4px;
   }
 
+  /* Eyebrow: Raleway, teal, tracking per design system */
   .section-label {
-    font-family: 'Montserrat', sans-serif;
+    font-family: 'Raleway', sans-serif;
     font-size: 0.7rem;
     font-weight: 700;
-    letter-spacing: 0.2em;
+    letter-spacing: 0.14em;
     text-transform: uppercase;
-    color: #2CADB2;
+    color: var(--teal);
   }
 
   /* Typography scale — use these classes for consistent sizing across all pages */
@@ -107,7 +81,7 @@ h1, h2, h3, h4, h5, h6 {
     font-weight: 900;
     font-size: clamp(2.5rem, 5vw, 4.5rem);
     line-height: 1.05;
-    color: #24282B;
+    color: var(--charcoal);
   }
 
   .heading-page {
@@ -115,7 +89,7 @@ h1, h2, h3, h4, h5, h6 {
     font-weight: 900;
     font-size: clamp(2.25rem, 4vw, 3.5rem);
     line-height: 1.1;
-    color: #24282B;
+    color: var(--charcoal);
   }
 
   .heading-section {
@@ -123,21 +97,21 @@ h1, h2, h3, h4, h5, h6 {
     font-weight: 900;
     font-size: clamp(1.75rem, 2.5vw, 2.25rem);
     line-height: 1.2;
-    color: #24282B;
+    color: var(--charcoal);
   }
 
   .body-copy {
     font-family: 'Raleway', sans-serif;
     font-size: 1rem;
     line-height: 1.75;
-    color: #555a5e;
+    color: rgb(107, 114, 128);
   }
 
   /* Scroll reveal animation classes */
   .reveal {
     opacity: 0;
-    transform: translateY(40px);
-    transition: opacity 0.7s ease-out, transform 0.7s ease-out;
+    transform: translateY(20px);
+    transition: opacity 0.6s ease-out, transform 0.6s ease-out;
   }
 
   .reveal.visible {
@@ -154,21 +128,21 @@ h1, h2, h3, h4, h5, h6 {
 /* Custom scrollbar */
 ::-webkit-scrollbar { width: 6px; }
 ::-webkit-scrollbar-track { background: #f7f6f2; }
-::-webkit-scrollbar-thumb { background: #2CADB2; border-radius: 3px; }
+::-webkit-scrollbar-thumb { background: var(--teal); border-radius: 3px; }
 ::-webkit-scrollbar-thumb:hover { background: #1d8f93; }
 
 /* Section dividers */
 .divider {
   width: 60px;
   height: 3px;
-  background: #2CADB2;
+  background: var(--teal);
   margin: 0 auto 2rem;
 }
 
 .divider-left {
   width: 60px;
   height: 3px;
-  background: #F8CF41;
+  background: var(--gold);
   margin: 0 0 2rem;
 }
 

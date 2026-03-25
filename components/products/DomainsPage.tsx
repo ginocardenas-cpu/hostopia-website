@@ -1,4 +1,4 @@
-﻿import Link from "next/link";
+import Link from "next/link";
 import Image from "next/image";
 import { ArrowRight, Globe2, Mail, ShieldCheck, Network, LineChart } from "lucide-react";
 import ProductSection from "./ProductSection";
@@ -49,7 +49,7 @@ export default function DomainsPage({ label }: DomainsPageProps) {
               </h1>
               <p
                 className="text-base md:text-lg leading-relaxed mb-6"
-                style={{ fontFamily: "Raleway, sans-serif", color: "#555a5e" }}
+                style={{ fontFamily: "Raleway, sans-serif", color: "#6b7280" }}
               >
                 Domains are where SMBs choose who powers their digital presence. When that first registration happens on your platform, everything else follows — email, websites, security, and growth services. Hostopia&apos;s white-label Domains platform lets you sell and manage domains under your brand, then seamlessly attach the services that drive long-term revenue and loyalty.
               </p>
@@ -68,7 +68,7 @@ export default function DomainsPage({ label }: DomainsPageProps) {
                 </Link>
                 <span
                   className="inline-flex items-center gap-2 text-xs md:text-sm px-4 py-2 rounded-full border border-gray-200"
-                  style={{ fontFamily: "Raleway, sans-serif", color: "#555a5e" }}
+                  style={{ fontFamily: "Raleway, sans-serif", color: "#6b7280" }}
                 >
                   <Globe2 size={16} /> White-label domain experiences, powered by Hostopia
                 </span>
@@ -92,7 +92,7 @@ export default function DomainsPage({ label }: DomainsPageProps) {
                 >
                   Why it matters
                 </p>
-                <ul className="space-y-1.5 text-xs" style={{ fontFamily: "Raleway, sans-serif", color: "#555a5e" }}>
+                <ul className="space-y-1.5 text-xs" style={{ fontFamily: "Raleway, sans-serif", color: "#6b7280" }}>
                   <li className="flex gap-2">
                     <Mail size={13} className="mt-0.5 shrink-0" style={{ color: "#2CADB2" }} />
                     <span><strong>Start with name &amp; email.</strong> Most SMBs begin online by registering a domain and setting up domain-based email.</span>
@@ -124,13 +124,13 @@ export default function DomainsPage({ label }: DomainsPageProps) {
               </h2>
               <p
                 className="text-sm md:text-base leading-relaxed mb-4"
-                style={{ fontFamily: "Raleway, sans-serif", color: "#555a5e" }}
+                style={{ fontFamily: "Raleway, sans-serif", color: "#6b7280" }}
               >
                 Package domains as a simple, high-attach “start here” product that feeds the rest of your digital
                 portfolio. Hostopia runs the domain infrastructure and tooling; your brand owns the experience and the
                 commercial model.
               </p>
-              <ul className="space-y-3 text-sm md:text-base" style={{ fontFamily: "Raleway, sans-serif", color: "#555a5e" }}>
+              <ul className="space-y-3 text-sm md:text-base" style={{ fontFamily: "Raleway, sans-serif", color: "#6b7280" }}>
                 <li className="flex gap-2">
                   <span className="text-teal mt-1">•</span>
                   <span>
@@ -304,7 +304,7 @@ export default function DomainsPage({ label }: DomainsPageProps) {
               <SectionHeading eyebrow="What’s included" title="Everything you need to launch a branded domains offer" />
               <ul
                 className="space-y-3 text-sm md:text-base"
-                style={{ fontFamily: "Raleway, sans-serif", color: "#555a5e" }}
+                style={{ fontFamily: "Raleway, sans-serif", color: "#6b7280" }}
               >
                 <li className="flex gap-2">
                   <span className="text-teal mt-1">•</span>
@@ -383,7 +383,7 @@ function FeatureCard({ icon, title, body }: FeatureCardProps) {
       >
         {title}
       </h3>
-      <p className="text-sm" style={{ fontFamily: "Raleway, sans-serif", color: "#555a5e" }}>
+      <p className="text-sm" style={{ fontFamily: "Raleway, sans-serif", color: "#6b7280" }}>
         {body}
       </p>
     </div>
@@ -426,7 +426,7 @@ function FeatureBulletColumn({ title, points }: FeatureBulletColumnProps) {
       >
         {title}
       </h3>
-      <ul className="space-y-2 text-sm" style={{ fontFamily: "Raleway, sans-serif", color: "#555a5e" }}>
+      <ul className="space-y-2 text-sm" style={{ fontFamily: "Raleway, sans-serif", color: "#6b7280" }}>
         {points.map((point) => (
           <li key={point} className="flex gap-2">
             <span className="text-teal mt-1">•</span>
@@ -475,7 +475,7 @@ function StepCard({ step, title, body, highlight, conceptLabel, productName }: S
           {productName}
         </p>
       )}
-      <p className="text-sm" style={{ fontFamily: "Raleway, sans-serif", color: "#555a5e" }}>
+      <p className="text-sm" style={{ fontFamily: "Raleway, sans-serif", color: "#6b7280" }}>
         {body}
       </p>
     </div>

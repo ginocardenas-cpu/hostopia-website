@@ -14,7 +14,7 @@ const tabs = [
       badge: "Online Store",
       title: "One-click store activation",
       description:
-        "Add a fully functional online store to any Online Presence Builder website with one click. No migration, no separate platform, no disruption — SMBs start selling under your brand immediately.",
+        "Add a fully functional online store to any Online Presence Builder website with one click. No migration, no separate platform, no disruption â€” SMBs start selling under your brand immediately.",
       imageSrc:
         "https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?w=900&h=700&fit=crop&q=80",
       imageAlt: "Retail checkout and ecommerce setup",
@@ -28,7 +28,7 @@ const tabs = [
       badge: "Every device",
       title: "Mobile-ready commerce",
       description:
-        "Responsive storefront, checkout, and product browsing optimized for smartphones and tablets — where the majority of shopping happens — so your customers never lose a sale on the go.",
+        "Responsive storefront, checkout, and product browsing optimized for smartphones and tablets â€” where the majority of shopping happens â€” so your customers never lose a sale on the go.",
       imageSrc:
         "https://images.unsplash.com/photo-1512941937669-90a1b58e7e9c?w=900&h=700&fit=crop&q=80",
       imageAlt: "Customer shopping on a smartphone",
@@ -42,7 +42,7 @@ const tabs = [
       badge: "Omnichannel",
       title: "Multi-channel selling",
       description:
-        "Sell on the website plus Facebook, Instagram, TikTok, Pinterest, Amazon, and Google Shopping — with centralized inventory and order management so nothing falls through the cracks.",
+        "Sell on the website plus Facebook, Instagram, TikTok, Pinterest, Amazon, and Google Shopping â€” with centralized inventory and order management so nothing falls through the cracks.",
       imageSrc:
         "https://images.unsplash.com/photo-1556761175-5973dc0f32e7?w=900&h=700&fit=crop&q=80",
       imageAlt: "Team collaborating on digital commerce",
@@ -56,7 +56,7 @@ const tabs = [
       badge: "Growth",
       title: "Revenue-driving tools",
       description:
-        "Abandoned cart recovery, discount codes, promotions, social selling, and subscription support. Sell physical goods, digital products, or services — all tuned to grow average order value and retention.",
+        "Abandoned cart recovery, discount codes, promotions, social selling, and subscription support. Sell physical goods, digital products, or services â€” all tuned to grow average order value and retention.",
       imageSrc:
         "https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=900&h=700&fit=crop&q=80",
       imageAlt: "Analytics and business growth on laptop",
@@ -75,10 +75,10 @@ export function EcommerceFeature108() {
           className="max-w-3xl text-2xl font-bold leading-tight text-[#24282B] md:text-3xl lg:text-4xl"
           style={{ fontFamily: "Montserrat, sans-serif" }}
         >
-          Full-featured ecommerce — without the complexity
+          Full-featured ecommerce â€” without the complexity
         </h2>
         <p
-          className="max-w-2xl text-base text-[#555a5e] md:text-lg"
+          className="max-w-2xl text-base text-gray-500 md:text-lg"
           style={{ fontFamily: "Raleway, sans-serif" }}
         >
           Online Store gives SMBs everything they need to sell online, integrated into the site they already have with
@@ -121,7 +121,7 @@ export function EcommerceFeature108() {
                   {tab.content.title}
                 </h3>
                 <p
-                  className="text-base leading-relaxed text-[#555a5e] lg:text-lg"
+                  className="text-base leading-relaxed text-gray-500 lg:text-lg"
                   style={{ fontFamily: "Raleway, sans-serif" }}
                 >
                   {tab.content.description}

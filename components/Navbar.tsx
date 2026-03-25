@@ -119,8 +119,7 @@ export default function Navbar() {
                 setProgramsOpen(false);
                 setCustomersOpen(false);
               }}
-              className="flex items-center gap-1 px-3 py-2 text-sm font-medium transition-colors duration-200 hover:text-teal rounded"
-              style={{ fontFamily: "Raleway, sans-serif", color: "#24282B" }}
+              className="flex items-center gap-1 rounded px-3 py-2 font-raleway text-sm font-medium text-charcoal transition-colors duration-200 hover:text-teal"
             >
               Products
               <ChevronDown className={`w-4 h-4 transition-transform ${productsOpen ? "rotate-180" : ""}`} />
@@ -129,8 +128,7 @@ export default function Navbar() {
               <div className="absolute left-0 top-full pt-1 min-w-[640px]">
                 <div className="bg-white border border-gray-100 rounded-lg shadow-lg py-4 px-4">
                   <p
-                    className="text-xs font-bold uppercase tracking-wider text-gray-400 pb-3 mb-3 border-b border-gray-100"
-                    style={{ fontFamily: "Montserrat, sans-serif" }}
+                    className="mb-3 border-b border-gray-100 pb-3 font-raleway text-xs font-bold uppercase tracking-wider text-gray-400"
                   >
                     Help your customers
                   </p>
@@ -139,8 +137,7 @@ export default function Navbar() {
                     {productsDropdownSections.map((section) => (
                       <div key={section.heading}>
                         <p
-                          className="text-sm font-semibold mb-2"
-                          style={{ fontFamily: "Montserrat, sans-serif", color: "#2CADB2" }}
+                          className="mb-2 font-raleway text-sm font-semibold text-teal"
                         >
                           {section.heading}
                         </p>
@@ -152,16 +149,10 @@ export default function Navbar() {
                               className="block py-1 pr-2 rounded hover:bg-gray-50 transition-colors"
                               onClick={() => setProductsOpen(false)}
                             >
-                              <span
-                                className="text-sm font-semibold block"
-                                style={{ fontFamily: "Montserrat, sans-serif", color: "#24282B" }}
-                              >
+                              <span className="block font-raleway text-sm font-semibold text-charcoal">
                                 {link.label}
                               </span>
-                              <span
-                                className="text-xs block mt-0.5"
-                                style={{ fontFamily: "Raleway, sans-serif", color: "#6b7280" }}
-                              >
+                              <span className="mt-0.5 block font-raleway text-xs text-gray-500">
                                 {link.description}
                               </span>
                             </Link>
@@ -173,8 +164,7 @@ export default function Navbar() {
 
                   <Link
                     href="/products"
-                    className="mt-4 pt-3 border-t border-gray-100 flex items-center gap-1 text-sm font-semibold"
-                    style={{ fontFamily: "Montserrat, sans-serif", color: "#2CADB2" }}
+                    className="mt-4 flex items-center gap-1 border-t border-gray-100 pt-3 font-raleway text-sm font-semibold text-teal"
                     onClick={() => setProductsOpen(false)}
                   >
                     View all Products →
@@ -194,8 +184,7 @@ export default function Navbar() {
                 setProgramsOpen(false);
                 setCustomersOpen(false);
               }}
-              className="flex items-center gap-1 px-3 py-2 text-sm font-medium transition-colors duration-200 hover:text-teal rounded"
-              style={{ fontFamily: "Raleway, sans-serif", color: "#24282B" }}
+              className="flex items-center gap-1 rounded px-3 py-2 font-raleway text-sm font-medium text-charcoal transition-colors duration-200 hover:text-teal"
             >
               Platform
               <ChevronDown className={`w-4 h-4 transition-transform ${platformOpen ? "rotate-180" : ""}`} />
@@ -204,8 +193,7 @@ export default function Navbar() {
               <div className="absolute left-0 top-full pt-1 min-w-[380px]">
                 <div className="bg-white border border-gray-100 rounded-lg shadow-lg py-4 px-4">
                   <p
-                    className="text-xs font-bold uppercase tracking-wider text-gray-400 pb-3 mb-3 border-b border-gray-100"
-                    style={{ fontFamily: "Montserrat, sans-serif" }}
+                    className="mb-3 border-b border-gray-100 pb-3 font-raleway text-xs font-bold uppercase tracking-wider text-gray-400"
                   >
                     Platform
                   </p>
@@ -217,16 +205,10 @@ export default function Navbar() {
                         className="block py-2 px-2 rounded hover:bg-gray-50 transition-colors"
                         onClick={() => setPlatformOpen(false)}
                       >
-                        <span
-                          className="text-sm font-semibold block"
-                          style={{ fontFamily: "Montserrat, sans-serif", color: "#24282B" }}
-                        >
+                        <span className="block font-raleway text-sm font-semibold text-charcoal">
                           {link.label}
                         </span>
-                        <span
-                          className="text-xs block mt-0.5"
-                          style={{ fontFamily: "Raleway, sans-serif", color: "#6b7280" }}
-                        >
+                        <span className="mt-0.5 block font-raleway text-xs text-gray-500">
                           {link.description}
                         </span>
                       </Link>
@@ -234,8 +216,7 @@ export default function Navbar() {
                   </div>
                   <Link
                     href="/platform"
-                    className="mt-4 pt-3 border-t border-gray-100 flex items-center gap-1 text-sm font-semibold"
-                    style={{ fontFamily: "Montserrat, sans-serif", color: "#2CADB2" }}
+                    className="mt-4 flex items-center gap-1 border-t border-gray-100 pt-3 font-raleway text-sm font-semibold text-teal"
                     onClick={() => setPlatformOpen(false)}
                   >
                     View Platform →
@@ -255,8 +236,7 @@ export default function Navbar() {
                 setPlatformOpen(false);
                 setCustomersOpen(false);
               }}
-              className="flex items-center gap-1 px-3 py-2 text-sm font-medium transition-colors duration-200 hover:text-teal rounded"
-              style={{ fontFamily: "Raleway, sans-serif", color: "#24282B" }}
+              className="flex items-center gap-1 rounded px-3 py-2 font-raleway text-sm font-medium text-charcoal transition-colors duration-200 hover:text-teal"
             >
               Programs
               <ChevronDown className={`w-4 h-4 transition-transform ${programsOpen ? "rotate-180" : ""}`} />
@@ -265,8 +245,7 @@ export default function Navbar() {
               <div className="absolute left-0 top-full pt-1 min-w-[380px]">
                 <div className="bg-white border border-gray-100 rounded-lg shadow-lg py-4 px-4">
                   <p
-                    className="text-xs font-bold uppercase tracking-wider text-gray-400 pb-3 mb-3 border-b border-gray-100"
-                    style={{ fontFamily: "Montserrat, sans-serif" }}
+                    className="mb-3 border-b border-gray-100 pb-3 font-raleway text-xs font-bold uppercase tracking-wider text-gray-400"
                   >
                     Programs
                   </p>
@@ -278,16 +257,10 @@ export default function Navbar() {
                         className="block py-2 px-2 rounded hover:bg-gray-50 transition-colors"
                         onClick={() => setProgramsOpen(false)}
                       >
-                        <span
-                          className="text-sm font-semibold block"
-                          style={{ fontFamily: "Montserrat, sans-serif", color: "#24282B" }}
-                        >
+                        <span className="block font-raleway text-sm font-semibold text-charcoal">
                           {link.label}
                         </span>
-                        <span
-                          className="text-xs block mt-0.5"
-                          style={{ fontFamily: "Raleway, sans-serif", color: "#6b7280" }}
-                        >
+                        <span className="mt-0.5 block font-raleway text-xs text-gray-500">
                           {link.description}
                         </span>
                       </Link>
@@ -295,8 +268,7 @@ export default function Navbar() {
                   </div>
                   <Link
                     href="/programs"
-                    className="mt-4 pt-3 border-t border-gray-100 flex items-center gap-1 text-sm font-semibold"
-                    style={{ fontFamily: "Montserrat, sans-serif", color: "#2CADB2" }}
+                    className="mt-4 flex items-center gap-1 border-t border-gray-100 pt-3 font-raleway text-sm font-semibold text-teal"
                     onClick={() => setProgramsOpen(false)}
                   >
                     View Programs →
@@ -316,8 +288,7 @@ export default function Navbar() {
                 setPlatformOpen(false);
                 setProgramsOpen(false);
               }}
-              className="flex items-center gap-1 px-3 py-2 text-sm font-medium transition-colors duration-200 hover:text-teal rounded"
-              style={{ fontFamily: "Raleway, sans-serif", color: "#24282B" }}
+              className="flex items-center gap-1 rounded px-3 py-2 font-raleway text-sm font-medium text-charcoal transition-colors duration-200 hover:text-teal"
             >
               Customers
               <ChevronDown className={`w-4 h-4 transition-transform ${customersOpen ? "rotate-180" : ""}`} />
@@ -326,17 +297,13 @@ export default function Navbar() {
               <div className="absolute left-0 top-full pt-1 min-w-[640px]">
                 <div className="bg-white border border-gray-100 rounded-lg shadow-lg py-4 px-4">
                   <p
-                    className="text-xs font-bold uppercase tracking-wider text-gray-400 pb-3 mb-3 border-b border-gray-100"
-                    style={{ fontFamily: "Montserrat, sans-serif" }}
+                    className="mb-3 border-b border-gray-100 pb-3 font-raleway text-xs font-bold uppercase tracking-wider text-gray-400"
                   >
                     Customers
                   </p>
                   <div className="grid grid-cols-2 gap-x-10 gap-y-2">
                     <div>
-                      <p
-                        className="text-sm font-semibold mb-2"
-                        style={{ fontFamily: "Montserrat, sans-serif", color: "#2CADB2" }}
-                      >
+                      <p className="mb-2 font-raleway text-sm font-semibold text-teal">
                         Who we work with
                       </p>
                       <div className="space-y-2">
@@ -347,16 +314,10 @@ export default function Navbar() {
                             className="block py-1 pr-2 rounded hover:bg-gray-50 transition-colors"
                             onClick={() => setCustomersOpen(false)}
                           >
-                            <span
-                              className="text-sm font-semibold block"
-                              style={{ fontFamily: "Montserrat, sans-serif", color: "#24282B" }}
-                            >
+                            <span className="block font-raleway text-sm font-semibold text-charcoal">
                               {link.label}
                             </span>
-                            <span
-                              className="text-xs block mt-0.5"
-                              style={{ fontFamily: "Raleway, sans-serif", color: "#6b7280" }}
-                            >
+                            <span className="mt-0.5 block font-raleway text-xs text-gray-500">
                               {link.description}
                             </span>
                           </Link>
@@ -364,10 +325,7 @@ export default function Navbar() {
                       </div>
                     </div>
                     <div>
-                      <p
-                        className="text-sm font-semibold mb-2"
-                        style={{ fontFamily: "Montserrat, sans-serif", color: "#2CADB2" }}
-                      >
+                      <p className="mb-2 font-raleway text-sm font-semibold text-teal">
                         What they want
                       </p>
                       <div className="space-y-2">
@@ -378,16 +336,10 @@ export default function Navbar() {
                             className="block py-1 pr-2 rounded hover:bg-gray-50 transition-colors"
                             onClick={() => setCustomersOpen(false)}
                           >
-                            <span
-                              className="text-sm font-semibold block"
-                              style={{ fontFamily: "Montserrat, sans-serif", color: "#24282B" }}
-                            >
+                            <span className="block font-raleway text-sm font-semibold text-charcoal">
                               {link.label}
                             </span>
-                            <span
-                              className="text-xs block mt-0.5"
-                              style={{ fontFamily: "Raleway, sans-serif", color: "#6b7280" }}
-                            >
+                            <span className="mt-0.5 block font-raleway text-xs text-gray-500">
                               {link.description}
                             </span>
                           </Link>
@@ -404,8 +356,7 @@ export default function Navbar() {
             <Link
               key={link.label}
               href={link.href}
-              className="px-3 py-2 text-sm font-medium transition-colors duration-200 hover:text-teal rounded"
-              style={{ fontFamily: "Raleway, sans-serif", color: "#24282B" }}
+              className="rounded px-3 py-2 font-raleway text-sm font-medium text-charcoal transition-colors duration-200 hover:text-teal"
             >
               {link.label}
             </Link>
@@ -416,12 +367,7 @@ export default function Navbar() {
         <div className="hidden md:flex items-center">
           <Link
             href="#partner"
-            className="text-sm font-bold px-5 py-2.5 rounded-full transition-all duration-200 hover:scale-105 hover:shadow-lg"
-            style={{
-              fontFamily: "Montserrat, sans-serif",
-              backgroundColor: "#F8CF41",
-              color: "#24282B",
-            }}
+            className="rounded-full bg-teal px-5 py-2.5 font-raleway text-sm font-semibold uppercase tracking-wide text-white transition-colors duration-200 hover:bg-teal-dark hover:shadow-md"
           >
             Become a Partner
           </Link>
@@ -429,9 +375,9 @@ export default function Navbar() {
 
         {/* Mobile toggle */}
         <button
-          className="md:hidden p-2"
+          type="button"
+          className="p-2 text-charcoal md:hidden"
           onClick={() => setOpen(!open)}
-          style={{ color: "#24282B" }}
         >
           {open ? <X size={22} /> : <Menu size={22} />}
         </button>
@@ -444,8 +390,7 @@ export default function Navbar() {
           <div>
             <button
               type="button"
-              className="flex items-center justify-between w-full text-sm font-medium py-2 border-b border-gray-50"
-              style={{ fontFamily: "Raleway, sans-serif", color: "#24282B" }}
+              className="flex w-full items-center justify-between border-b border-gray-50 py-2 font-raleway text-sm font-medium text-charcoal"
               onClick={() => setProductsOpen(!productsOpen)}
             >
               Products
@@ -453,12 +398,12 @@ export default function Navbar() {
             </button>
             {productsOpen && (
               <div className="pl-3 py-2 border-b border-gray-50">
-                <p className="text-xs font-bold uppercase tracking-wider text-gray-400 pb-2" style={{ fontFamily: "Montserrat, sans-serif" }}>
+                <p className="pb-2 font-raleway text-xs font-bold uppercase tracking-wider text-gray-400">
                   Help your customers
                 </p>
                 {productsDropdownSections.map((section) => (
                   <div key={section.heading} className="mb-3">
-                    <p className="text-xs font-semibold text-teal py-1" style={{ fontFamily: "Montserrat, sans-serif" }}>
+                    <p className="py-1 font-raleway text-xs font-semibold text-teal">
                       {section.heading}
                     </p>
                     {section.links.map((link) => (
@@ -468,10 +413,10 @@ export default function Navbar() {
                         className="block py-2 pl-2"
                         onClick={closeMobile}
                       >
-                        <span className="text-sm font-semibold block" style={{ fontFamily: "Montserrat, sans-serif", color: "#24282B" }}>
+                        <span className="block font-raleway text-sm font-semibold text-charcoal">
                           {link.label}
                         </span>
-                        <span className="text-xs block mt-0.5" style={{ fontFamily: "Raleway, sans-serif", color: "#6b7280" }}>
+                        <span className="mt-0.5 block font-raleway text-xs text-gray-500">
                           {link.description}
                         </span>
                       </Link>
@@ -486,8 +431,7 @@ export default function Navbar() {
           <div>
             <button
               type="button"
-              className="flex items-center justify-between w-full text-sm font-medium py-2 border-b border-gray-50"
-              style={{ fontFamily: "Raleway, sans-serif", color: "#24282B" }}
+              className="flex w-full items-center justify-between border-b border-gray-50 py-2 font-raleway text-sm font-medium text-charcoal"
               onClick={() => setPlatformOpen(!platformOpen)}
             >
               Platform
@@ -502,10 +446,10 @@ export default function Navbar() {
                     className="block py-2 pl-2"
                     onClick={closeMobile}
                   >
-                    <span className="text-sm font-semibold block" style={{ fontFamily: "Montserrat, sans-serif", color: "#24282B" }}>
+                    <span className="block font-raleway text-sm font-semibold text-charcoal">
                       {link.label}
                     </span>
-                    <span className="text-xs block mt-0.5" style={{ fontFamily: "Raleway, sans-serif", color: "#6b7280" }}>
+                    <span className="mt-0.5 block font-raleway text-xs text-gray-500">
                       {link.description}
                     </span>
                   </Link>
@@ -518,8 +462,7 @@ export default function Navbar() {
           <div>
             <button
               type="button"
-              className="flex items-center justify-between w-full text-sm font-medium py-2 border-b border-gray-50"
-              style={{ fontFamily: "Raleway, sans-serif", color: "#24282B" }}
+              className="flex w-full items-center justify-between border-b border-gray-50 py-2 font-raleway text-sm font-medium text-charcoal"
               onClick={() => setProgramsOpen(!programsOpen)}
             >
               Programs
@@ -534,10 +477,10 @@ export default function Navbar() {
                     className="block py-2 pl-2"
                     onClick={closeMobile}
                   >
-                    <span className="text-sm font-semibold block" style={{ fontFamily: "Montserrat, sans-serif", color: "#24282B" }}>
+                    <span className="block font-raleway text-sm font-semibold text-charcoal">
                       {link.label}
                     </span>
-                    <span className="text-xs block mt-0.5" style={{ fontFamily: "Raleway, sans-serif", color: "#6b7280" }}>
+                    <span className="mt-0.5 block font-raleway text-xs text-gray-500">
                       {link.description}
                     </span>
                   </Link>
@@ -550,8 +493,7 @@ export default function Navbar() {
           <div>
             <button
               type="button"
-              className="flex items-center justify-between w-full text-sm font-medium py-2 border-b border-gray-50"
-              style={{ fontFamily: "Raleway, sans-serif", color: "#24282B" }}
+              className="flex w-full items-center justify-between border-b border-gray-50 py-2 font-raleway text-sm font-medium text-charcoal"
               onClick={() => setCustomersOpen(!customersOpen)}
             >
               Customers
@@ -559,10 +501,7 @@ export default function Navbar() {
             </button>
             {customersOpen && (
               <div className="pl-3 py-2 border-b border-gray-50">
-                <p
-                  className="text-xs font-bold uppercase tracking-wider text-gray-400 pb-2"
-                  style={{ fontFamily: "Montserrat, sans-serif" }}
-                >
+                <p className="pb-2 font-raleway text-xs font-bold uppercase tracking-wider text-gray-400">
                   Who we work with
                 </p>
                 {customerTypeLinks.map((link) => (
@@ -572,18 +511,15 @@ export default function Navbar() {
                     className="block py-2 pl-2"
                     onClick={closeMobile}
                   >
-                    <span className="text-sm font-semibold block" style={{ fontFamily: "Montserrat, sans-serif", color: "#24282B" }}>
+                    <span className="block font-raleway text-sm font-semibold text-charcoal">
                       {link.label}
                     </span>
-                    <span className="text-xs block mt-0.5" style={{ fontFamily: "Raleway, sans-serif", color: "#6b7280" }}>
+                    <span className="mt-0.5 block font-raleway text-xs text-gray-500">
                       {link.description}
                     </span>
                   </Link>
                 ))}
-                <p
-                  className="text-xs font-bold uppercase tracking-wider text-gray-400 pt-3 pb-2"
-                  style={{ fontFamily: "Montserrat, sans-serif" }}
-                >
+                <p className="pb-2 pt-3 font-raleway text-xs font-bold uppercase tracking-wider text-gray-400">
                   What they want
                 </p>
                 {customerOutcomeLinks.map((link) => (
@@ -593,10 +529,10 @@ export default function Navbar() {
                     className="block py-2 pl-2"
                     onClick={closeMobile}
                   >
-                    <span className="text-sm font-semibold block" style={{ fontFamily: "Montserrat, sans-serif", color: "#24282B" }}>
+                    <span className="block font-raleway text-sm font-semibold text-charcoal">
                       {link.label}
                     </span>
-                    <span className="text-xs block mt-0.5" style={{ fontFamily: "Raleway, sans-serif", color: "#6b7280" }}>
+                    <span className="mt-0.5 block font-raleway text-xs text-gray-500">
                       {link.description}
                     </span>
                   </Link>
@@ -609,17 +545,15 @@ export default function Navbar() {
             <Link
               key={link.label}
               href={link.href}
-              className="text-sm font-medium py-2 border-b border-gray-50"
-              style={{ fontFamily: "Raleway, sans-serif", color: "#24282B" }}
+              className="border-b border-gray-50 py-2 font-raleway text-sm font-medium text-charcoal"
               onClick={closeMobile}
             >
               {link.label}
             </Link>
           ))}
           <Link
-            href="/contact"
-            className="text-sm font-bold px-5 py-3 rounded-full text-center mt-2"
-            style={{ backgroundColor: "#F8CF41", color: "#24282B", fontFamily: "Montserrat, sans-serif" }}
+            href="#partner"
+            className="mt-2 rounded-full bg-teal px-5 py-3 text-center font-raleway text-sm font-semibold uppercase tracking-wide text-white transition-colors duration-200 hover:bg-teal-dark"
             onClick={closeMobile}
           >
             Become a Partner

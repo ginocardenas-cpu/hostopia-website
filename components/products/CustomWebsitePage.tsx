@@ -38,19 +38,19 @@ export default function CustomWebsitePage({ label }: CustomWebsitePageProps) {
                   color: "#24282B",
                 }}
               >
-                Premium Custom Websites — Delivered Under Your Brand, Built by Our Team
+                Premium Custom Websites â€” Delivered Under Your Brand, Built by Our Team
               </h1>
               <p
                 className="text-base md:text-lg leading-relaxed mb-4"
-                style={{ fontFamily: "Raleway, sans-serif", color: "#555a5e" }}
+                style={{ fontFamily: "Raleway, sans-serif", color: "#6b7280" }}
               >
                 Not every SMB fits into a template. Some need advanced functionality, complex site structures, or a brand presence that stands completely on its own.
               </p>
               <p
                 className="text-base leading-relaxed mb-6"
-                style={{ fontFamily: "Raleway, sans-serif", color: "#555a5e" }}
+                style={{ fontFamily: "Raleway, sans-serif", color: "#6b7280" }}
               >
-                Hostopia&apos;s white-label custom website design service lets you offer fully bespoke WordPress websites without building an in-house design agency. Our team manages discovery through launch — you own the customer relationship.
+                Hostopia&apos;s white-label custom website design service lets you offer fully bespoke WordPress websites without building an in-house design agency. Our team manages discovery through launch â€” you own the customer relationship.
               </p>
               <div className="flex flex-wrap gap-3">
                 <Link
@@ -67,7 +67,7 @@ export default function CustomWebsitePage({ label }: CustomWebsitePageProps) {
                 </Link>
                 <span
                   className="inline-flex items-center gap-2 text-xs md:text-sm px-4 py-2 rounded-full border border-gray-200"
-                  style={{ fontFamily: "Raleway, sans-serif", color: "#555a5e" }}
+                  style={{ fontFamily: "Raleway, sans-serif", color: "#6b7280" }}
                 >
                   <Code2 size={16} /> Custom WordPress builds, white-labeled for partners
                 </span>
@@ -82,29 +82,29 @@ export default function CustomWebsitePage({ label }: CustomWebsitePageProps) {
               >
                 What your SMB customers get
               </h3>
-              <ul className="space-y-3 text-sm" style={{ fontFamily: "Raleway, sans-serif", color: "#555a5e" }}>
+              <ul className="space-y-3 text-sm" style={{ fontFamily: "Raleway, sans-serif", color: "#6b7280" }}>
                 <li className="flex gap-3">
                   <PenTool size={18} className="mt-1 shrink-0" style={{ color: "#2CADB2" }} />
                   <span>
-                    <strong>Built from scratch</strong> — no templates. A fully custom website designed around their brand, business goals, and audience.
+                    <strong>Built from scratch</strong> â€” no templates. A fully custom website designed around their brand, business goals, and audience.
                   </span>
                 </li>
                 <li className="flex gap-3">
                   <Layers size={18} className="mt-1 shrink-0" style={{ color: "#2CADB2" }} />
                   <span>
-                    <strong>WordPress foundation</strong> — built for flexibility, scalability, and the ability to extend with plugins and integrations.
+                    <strong>WordPress foundation</strong> â€” built for flexibility, scalability, and the ability to extend with plugins and integrations.
                   </span>
                 </li>
                 <li className="flex gap-3">
                   <Puzzle size={18} className="mt-1 shrink-0" style={{ color: "#2CADB2" }} />
                   <span>
-                    <strong>Collaborative process</strong> — direct collaboration with professional designers through a structured discovery, design, and revision process.
+                    <strong>Collaborative process</strong> â€” direct collaboration with professional designers through a structured discovery, design, and revision process.
                   </span>
                 </li>
                 <li className="flex gap-3">
                   <RefreshCw size={18} className="mt-1 shrink-0" style={{ color: "#2CADB2" }} />
                   <span>
-                    <strong>Full ownership</strong> — the SMB owns the website, content, and database. Optional hosting and maintenance plans keep it running.
+                    <strong>Full ownership</strong> â€” the SMB owns the website, content, and database. Optional hosting and maintenance plans keep it running.
                   </span>
                 </li>
               </ul>
@@ -114,10 +114,10 @@ export default function CustomWebsitePage({ label }: CustomWebsitePageProps) {
       </ProductSection>
 
       <ProductSection variant="white">
-        <SectionHeading eyebrow="What You Deliver" title="A Managed Design Service — Without Managing Designers" />
+        <SectionHeading eyebrow="What You Deliver" title="A Managed Design Service â€” Without Managing Designers" />
         <p
           className="text-base leading-relaxed mb-6 max-w-3xl"
-          style={{ fontFamily: "Raleway, sans-serif", color: "#555a5e" }}
+          style={{ fontFamily: "Raleway, sans-serif", color: "#6b7280" }}
         >
           You sell the service. We handle everything from initial discovery through launch and ongoing maintenance.
         </p>
@@ -125,7 +125,7 @@ export default function CustomWebsitePage({ label }: CustomWebsitePageProps) {
           <FeatureCard
             icon={<PenTool size={22} />}
             title="Structured Discovery & Proposal"
-            body="Every project starts with a documented discovery process and detailed proposal — so scope, timeline, and pricing are clear before work begins."
+            body="Every project starts with a documented discovery process and detailed proposal â€” so scope, timeline, and pricing are clear before work begins."
           />
           <FeatureCard
             icon={<Smartphone size={22} />}
@@ -135,21 +135,21 @@ export default function CustomWebsitePage({ label }: CustomWebsitePageProps) {
           <FeatureCard
             icon={<Puzzle size={22} />}
             title="Advanced Functionality & Integrations"
-            body="Third-party integrations, custom forms, booking systems, ecommerce — whatever the SMB's business requires, the build supports it."
+            body="Third-party integrations, custom forms, booking systems, ecommerce â€” whatever the SMB's business requires, the build supports it."
           />
           <FeatureCard
             icon={<RefreshCw size={22} />}
             title="Optional Maintenance & Hosting"
-            body="Ongoing plans cover updates, backups, security patches, and hosting — turning a one-time project into recurring revenue."
+            body="Ongoing plans cover updates, backups, security patches, and hosting â€” turning a one-time project into recurring revenue."
           />
         </div>
       </ProductSection>
 
       <ProductSection variant="gray">
-        <SectionHeading eyebrow="The Partner Advantage" title="Compete with Local Agencies — Without Building One" />
+        <SectionHeading eyebrow="The Partner Advantage" title="Compete with Local Agencies â€” Without Building One" />
         <p
           className="text-base leading-relaxed mb-6 max-w-3xl"
-          style={{ fontFamily: "Raleway, sans-serif", color: "#555a5e" }}
+          style={{ fontFamily: "Raleway, sans-serif", color: "#6b7280" }}
         >
           Custom Website Design lets you serve the SMBs that outgrow templated solutions and need a higher-touch experience.
         </p>
@@ -181,7 +181,7 @@ export default function CustomWebsitePage({ label }: CustomWebsitePageProps) {
         <SectionHeading eyebrow="Portfolio Fit" title="The Premium Tier in Your Website Portfolio" />
         <p
           className="text-base leading-relaxed mb-8 max-w-3xl"
-          style={{ fontFamily: "Raleway, sans-serif", color: "#555a5e" }}
+          style={{ fontFamily: "Raleway, sans-serif", color: "#6b7280" }}
         >
           Custom Website Design serves SMBs who need more than a builder but don&apos;t want to manage an agency relationship on their own.
         </p>
@@ -301,7 +301,7 @@ function FeatureCard({ icon, title, body }: FeatureCardProps) {
       >
         {title}
       </h3>
-      <p className="text-sm" style={{ fontFamily: "Raleway, sans-serif", color: "#555a5e" }}>
+      <p className="text-sm" style={{ fontFamily: "Raleway, sans-serif", color: "#6b7280" }}>
         {body}
       </p>
     </div>
@@ -319,10 +319,10 @@ function FeatureColumn({ title, points }: FeatureColumnProps) {
       >
         {title}
       </h3>
-      <ul className="space-y-2 text-sm" style={{ fontFamily: "Raleway, sans-serif", color: "#555a5e" }}>
+      <ul className="space-y-2 text-sm" style={{ fontFamily: "Raleway, sans-serif", color: "#6b7280" }}>
         {points.map((point) => (
           <li key={point.slice(0, 40)} className="flex gap-2">
-            <span style={{ color: "#2CADB2" }}>•</span>
+            <span style={{ color: "#2CADB2" }}>â€¢</span>
             <span>{point}</span>
           </li>
         ))}
@@ -373,7 +373,7 @@ function LifecycleStepCard({ step, title, body, highlightTeal, conceptLabel, pro
           {productName}
         </p>
       )}
-      <p className="text-sm" style={{ fontFamily: "Raleway, sans-serif", color: "#555a5e" }}>
+      <p className="text-sm" style={{ fontFamily: "Raleway, sans-serif", color: "#6b7280" }}>
         {body}
       </p>
     </div>

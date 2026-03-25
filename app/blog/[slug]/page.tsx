@@ -72,7 +72,7 @@ export default async function BlogPostPage({
           <Link
             href="/blog"
             className="inline-flex items-center gap-2 text-sm font-semibold mb-8 hover:text-[#2CADB2] transition-colors"
-            style={{ fontFamily: "Montserrat, sans-serif", color: "#555a5e" }}
+            style={{ fontFamily: "Montserrat, sans-serif", color: "#6b7280" }}
           >
             <ArrowLeft size={16} />
             Back to Blog
@@ -109,7 +109,7 @@ export default async function BlogPostPage({
           {post.excerpt && (
             <p
               className="mt-4 text-lg leading-relaxed"
-              style={{ fontFamily: "Raleway, sans-serif", color: "#555a5e" }}
+              style={{ fontFamily: "Raleway, sans-serif", color: "#6b7280" }}
             >
               {post.excerpt}
             </p>

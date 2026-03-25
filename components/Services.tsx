@@ -8,7 +8,7 @@ const services = [
     title: "Enhanced Logo Design",
     tag: "High Trust Product",
     description:
-      "Help your SMB customers launch or refresh their brand with confidence. Our white-glove logo service delivers professionally designed logos — building early trust in your portfolio.",
+      "Help your SMB customers launch or refresh their brand with confidence. Our white-glove logo service delivers professionally designed logos â€” building early trust in your portfolio.",
     highlights: [
       "Custom design concepts delivered quickly",
       "Multiple revisions with expert support",
@@ -23,7 +23,7 @@ const services = [
     title: "Business Email",
     tag: "Core Revenue Driver",
     description:
-      "Professional email hosting at enterprise scale. Give your SMB customers the reliability they demand — advanced spam filtering, calendar sync, and full admin controls. All under your brand.",
+      "Professional email hosting at enterprise scale. Give your SMB customers the reliability they demand â€” advanced spam filtering, calendar sync, and full admin controls. All under your brand.",
     highlights: ["Scalable to millions of mailboxes", "Advanced spam & threat protection", "Admin portal & reseller controls"],
     accent: "#2CADB2",
     light: "#e8f7f7",
@@ -34,7 +34,7 @@ const services = [
     title: "AI Website Builder",
     tag: "SMB Essential",
     description:
-      "Enable SMB customers to launch a professional website in minutes — no technical skills required. AI generates industry-specific design and content, reducing friction and accelerating time to market.",
+      "Enable SMB customers to launch a professional website in minutes â€” no technical skills required. AI generates industry-specific design and content, reducing friction and accelerating time to market.",
     highlights: [
       "AI-generated layouts and verticalized content",
       "Built-in SEO and analytics tools",
@@ -49,7 +49,7 @@ const services = [
     title: "Ecommerce",
     tag: "High-Value Upsell",
     description:
-      "A full-featured online store platform that empowers SMBs to sell products and services with ease. Inventory management, payment processing, and marketing tools — built in.",
+      "A full-featured online store platform that empowers SMBs to sell products and services with ease. Inventory management, payment processing, and marketing tools â€” built in.",
     highlights: ["Integrated payment gateways", "Inventory & order management", "Mobile-optimized storefronts"],
     accent: "#2CADB2",
     light: "#e8f7f7",
@@ -102,11 +102,11 @@ export default function Services() {
                 className="text-base leading-relaxed max-w-lg"
                 style={{ fontFamily: "Raleway, sans-serif", color: "#6b7280" }}
               >
-                14 products across four pillars — all white-labeled, cloud-based, and provisioned through a single platform. You set the brand, pricing, and packaging. We power everything underneath.
+                14 products across four pillars â€” all white-labeled, cloud-based, and provisioned through a single platform. You set the brand, pricing, and packaging. We power everything underneath.
               </p>
             </div>
 
-            {/* Section image — right of headline */}
+            {/* Section image â€” right of headline */}
             <div className="relative flex-shrink-0 w-full md:w-[500px] lg:w-[580px] rounded-3xl overflow-hidden shadow-md">
               <Image
                 src="/Home Page images/New/everything-your-customers-need.png"
@@ -117,7 +117,7 @@ export default function Services() {
               />
               <div
                 className="absolute bottom-4 left-4 bg-white/95 rounded-xl px-4 py-2 shadow-lg text-sm"
-                style={{ fontFamily: "Raleway, sans-serif", color: "#555a5e" }}
+                style={{ fontFamily: "Raleway, sans-serif", color: "#6b7280" }}
               >
                 You set the pricing.
                 <br />
@@ -127,7 +127,7 @@ export default function Services() {
           </div>
         </div>
 
-        {/* Services list — editorial style */}
+        {/* Services list â€” editorial style */}
         <div className="space-y-px bg-gray-100 rounded-3xl overflow-hidden">
           {services.map((service) => {
             const Icon = service.icon;

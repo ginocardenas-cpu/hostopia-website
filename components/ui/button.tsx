@@ -4,18 +4,19 @@ import { cva, type VariantProps } from "class-variance-authority";
 import { cn } from "@/lib/utils";
 
 const buttonVariants = cva(
-  "inline-flex items-center justify-center whitespace-nowrap rounded-full text-sm font-bold ring-offset-white transition-all focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#2CADB2] focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50",
+  "inline-flex items-center justify-center whitespace-nowrap rounded-full font-raleway text-sm font-semibold uppercase tracking-wide ring-offset-white transition-colors duration-200 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-teal focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50",
   {
     variants: {
       variant: {
-        default: "bg-[#F8CF41] text-[#24282B] hover:bg-[#e0b82a] hover:shadow-md",
-        outline: "border-2 border-[#24282B] bg-transparent text-[#24282B] hover:bg-white",
-        ghost: "text-[#2CADB2] hover:bg-[#e8f7f7]",
+        default: "bg-teal text-white hover:bg-teal-dark",
+        gold: "bg-gold text-charcoal hover:bg-gold-dark hover:shadow-md",
+        outline: "border-2 border-charcoal bg-transparent text-charcoal hover:bg-white",
+        ghost: "text-teal hover:bg-brand-teal-light",
       },
       size: {
         default: "h-10 px-5 py-2",
         sm: "h-9 px-4 text-xs",
-        lg: "h-12 px-8 text-base",
+        lg: "h-12 px-8 py-4 text-base normal-case font-semibold",
         icon: "h-10 w-10",
       },
     },

@@ -9,12 +9,19 @@ const config: Config = {
   theme: {
     extend: {
       colors: {
+        /* Canonical palette — matches hostopia-homepage-design-system.md */
+        charcoal: "#24282b",
+        teal: "#2cadb2",
+        "teal-dark": "#1d8f93",
+        gold: "#f8cf41",
+        "gold-dark": "#e0b82a",
+        cream: "#f7f6f2",
         brand: {
-          charcoal: "#24282B",
-          teal: "#2CADB2",
+          charcoal: "#24282b",
+          teal: "#2cadb2",
           "teal-dark": "#1d8f93",
           "teal-light": "#e8f7f7",
-          gold: "#F8CF41",
+          gold: "#f8cf41",
           "gold-dark": "#e0b82a",
           "gold-light": "#fef9e6",
           cream: "#f7f6f2",
@@ -24,15 +31,17 @@ const config: Config = {
       fontFamily: {
         heading: ["Montserrat", "sans-serif"],
         body: ["Raleway", "sans-serif"],
+        montserrat: ["Montserrat", "sans-serif"],
+        raleway: ["Raleway", "sans-serif"],
       },
       fontSize: {
         "10xl": ["10rem", { lineHeight: "1" }],
         "11xl": ["12rem", { lineHeight: "1" }],
       },
       backgroundImage: {
-        "teal-gradient": "linear-gradient(135deg, #2CADB2 0%, #1d8f93 100%)",
-        "gold-gradient": "linear-gradient(135deg, #F8CF41 0%, #e0b82a 100%)",
-        "charcoal-gradient": "linear-gradient(135deg, #24282B 0%, #1a1d20 100%)",
+        "teal-gradient": "linear-gradient(135deg, #2cadb2 0%, #1d8f93 100%)",
+        "gold-gradient": "linear-gradient(135deg, #f8cf41 0%, #e0b82a 100%)",
+        "charcoal-gradient": "linear-gradient(135deg, #24282b 0%, #1a1d20 100%)",
         "hero-blob": "radial-gradient(ellipse at 70% 50%, rgba(44,173,178,0.15) 0%, rgba(248,207,65,0.08) 50%, transparent 70%)",
       },
       animation: {
@@ -45,7 +54,7 @@ const config: Config = {
       },
       keyframes: {
         fadeUp: {
-          "0%": { opacity: "0", transform: "translateY(40px)" },
+          "0%": { opacity: "0", transform: "translateY(20px)" },
           "100%": { opacity: "1", transform: "translateY(0)" },
         },
         fadeIn: {

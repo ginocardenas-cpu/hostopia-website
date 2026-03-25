@@ -31,7 +31,7 @@ export default function ProductGuideForm() {
         </p>
         <p
           className="text-base mb-6"
-          style={{ fontFamily: "Raleway, sans-serif", color: "#555a5e" }}
+          style={{ fontFamily: "Raleway, sans-serif", color: "#6b7280" }}
         >
           Your copy of the Product Guide is ready. Click below to download.
         </p>
@@ -127,7 +127,7 @@ export default function ProductGuideForm() {
           boxShadow: "0 4px 20px rgba(44,173,178,0.3)",
         }}
       >
-        {loading ? "Sending…" : "Submit & Download"}
+        {loading ? "Sendingâ€¦" : "Submit & Download"}
       </button>
     </form>
   );

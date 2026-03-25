@@ -5,9 +5,9 @@ import CustomerStaticImage from "@/components/customers/CustomerStaticImage";
 import { MarketingFaIcon } from "@/components/marketing/MarketingFaIcon";
 import { ProgramIcon } from "@/components/programs/programIcon";
 
-export const MARKETING_ACCENT = "#2CADB2";
-export const MARKETING_GOLD = "#F8CF41";
-export const MARKETING_DARK_BG = "#24282B";
+export const MARKETING_ACCENT = "#2cadb2";
+export const MARKETING_GOLD = "#f8cf41";
+export const MARKETING_DARK_BG = "#24282b";
 
 export function heroImageOnLeft(slug: string): boolean {
   let h = 0;
@@ -19,8 +19,7 @@ export function SectionCta({ href, children }: { href: string; children: ReactNo
   return (
     <Link
       href={href}
-      className="inline-flex w-fit items-center gap-2 rounded-full px-7 py-3 text-sm font-semibold text-[#24282B] shadow-sm transition hover:scale-[1.02] hover:shadow-md"
-      style={{ fontFamily: "Montserrat, sans-serif", backgroundColor: MARKETING_GOLD }}
+      className="inline-flex w-fit items-center gap-2 rounded-full bg-gold px-8 py-4 font-raleway text-sm font-semibold uppercase tracking-wide text-charcoal shadow-sm transition-colors duration-200 hover:bg-gold-dark hover:shadow-md"
     >
       {children}
       <ArrowRight className="h-4 w-4" aria-hidden />
@@ -40,7 +39,7 @@ export function CollapsibleDetails({
   const wrap = align === "center" ? "justify-center" : "";
   return (
     <details className={`group mt-8 border-t border-neutral-200/80 pt-6 ${align === "center" ? "text-center" : "text-left"}`}>
-      <summary className="cursor-pointer list-none text-sm font-semibold text-[#2CADB2] transition hover:text-[#249a9f] [&::-webkit-details-marker]:hidden">
+      <summary className="cursor-pointer list-none font-raleway text-sm font-semibold text-teal transition-colors hover:text-teal-dark [&::-webkit-details-marker]:hidden">
         <span className={`inline-flex items-center gap-2 ${wrap}`}>
           {label}
           <span className="text-neutral-400 transition group-open:rotate-180">▼</span>
@@ -74,21 +73,17 @@ export function MarketingHeroSplit({
   primaryHref = "/contact",
   details,
   visual,
-  className = "bg-[#fafaf9]",
+  className = "bg-gray-50",
 }: MarketingHeroSplitProps) {
   const reverse = !imageOnLeft;
   const copy = (
     <div className="flex flex-col justify-center">
-      <p className="mb-4 text-xs font-semibold uppercase tracking-[0.2em]" style={{ fontFamily: "Montserrat, sans-serif", color: MARKETING_ACCENT }}>
-        {eyebrow}
-      </p>
-      <h1 className="mb-5 text-3xl font-semibold tracking-tight text-[#24282B] md:text-4xl lg:text-5xl" style={{ fontFamily: "Montserrat, sans-serif" }}>
+      <span className="section-label mb-4">{eyebrow}</span>
+      <h1 className="mb-5 font-montserrat text-4xl font-black tracking-tight text-charcoal md:text-5xl lg:text-6xl">
         {headline}
       </h1>
       {blurb ? (
-        <p className="mb-8 max-w-lg text-lg leading-relaxed text-neutral-600" style={{ fontFamily: "Raleway, sans-serif" }}>
-          {blurb}
-        </p>
+        <p className="mb-8 max-w-lg font-raleway text-lg leading-relaxed text-gray-500">{blurb}</p>
       ) : null}
       <SectionCta href={primaryHref}>{primaryCta}</SectionCta>
       {details}
@@ -96,8 +91,8 @@ export function MarketingHeroSplit({
   );
 
   return (
-    <section id={id} className={`scroll-mt-28 py-20 md:py-28 ${className}`}>
-      <div className="mx-auto max-w-6xl px-6">
+    <section id={id} className={`scroll-mt-28 py-28 ${className}`}>
+      <div className="mx-auto max-w-7xl px-6">
         <div className="grid items-center gap-12 md:grid-cols-2 md:gap-16 lg:gap-20">
           {reverse ? (
             <>
@@ -146,18 +141,14 @@ export function MarketingCenteredSection({
 }: MarketingCenteredSectionProps) {
   const wrap = maxTextWidth === "3xl" ? "max-w-3xl mx-auto" : "mx-auto max-w-6xl";
   return (
-    <section id={sectionId} className={`scroll-mt-28 py-20 md:py-28 ${bgClass}`}>
+    <section id={sectionId} className={`scroll-mt-28 py-28 ${bgClass}`}>
       <div className={`px-6 text-center ${wrap}`}>
-        <p className="mb-4 text-xs font-semibold uppercase tracking-[0.2em]" style={{ fontFamily: "Montserrat, sans-serif", color: MARKETING_ACCENT }}>
-          {kicker}
-        </p>
-        <h2 className="mb-5 text-3xl font-semibold tracking-tight text-[#24282B] md:text-4xl" style={{ fontFamily: "Montserrat, sans-serif" }}>
+        <span className="section-label mb-4 inline-block">{kicker}</span>
+        <h2 className="mb-5 font-montserrat text-4xl font-black tracking-tight text-charcoal md:text-5xl lg:text-6xl">
           {title}
         </h2>
         {blurb ? (
-          <p className="mx-auto mb-6 max-w-2xl text-lg leading-relaxed text-neutral-600" style={{ fontFamily: "Raleway, sans-serif" }}>
-            {blurb}
-          </p>
+          <p className="mx-auto mb-6 max-w-2xl font-raleway text-lg leading-relaxed text-gray-500">{blurb}</p>
         ) : null}
         {appendBeforeImage ? <div className="mx-auto mb-10 max-w-3xl text-left">{appendBeforeImage}</div> : null}
         {details}
@@ -202,16 +193,12 @@ export function MarketingSplitSection({
   const viz = visual ?? defaultVisual;
   const copy = (
     <div className="flex flex-col justify-center">
-      <p className="mb-4 text-xs font-semibold uppercase tracking-[0.2em]" style={{ fontFamily: "Montserrat, sans-serif", color: MARKETING_ACCENT }}>
-        {kicker}
-      </p>
-      <h2 className="mb-5 text-3xl font-semibold tracking-tight text-[#24282B] md:text-4xl" style={{ fontFamily: "Montserrat, sans-serif" }}>
+      <span className="section-label mb-4">{kicker}</span>
+      <h2 className="mb-5 font-montserrat text-4xl font-black tracking-tight text-charcoal md:text-5xl lg:text-6xl">
         {title}
       </h2>
       {blurb ? (
-        <p className="mb-6 max-w-lg text-lg leading-relaxed text-neutral-600" style={{ fontFamily: "Raleway, sans-serif" }}>
-          {blurb}
-        </p>
+        <p className="mb-6 max-w-lg font-raleway text-lg leading-relaxed text-gray-500">{blurb}</p>
       ) : null}
       {appendBeforeImage ? <div className="mb-6 max-w-xl">{appendBeforeImage}</div> : null}
       {details}
@@ -219,8 +206,8 @@ export function MarketingSplitSection({
   );
 
   return (
-    <section id={sectionId} className={`scroll-mt-28 py-20 md:py-28 ${bgClass}`}>
-      <div className="mx-auto max-w-6xl px-6">
+    <section id={sectionId} className={`scroll-mt-28 py-28 ${bgClass}`}>
+      <div className="mx-auto max-w-7xl px-6">
         <div className="grid items-center gap-12 md:grid-cols-2 md:gap-16 lg:gap-20">
           {visualOnLeft ? (
             <>
@@ -260,18 +247,13 @@ export function MarketingDarkIconSection({
   useFontAwesomeIcons = false,
 }: MarketingDarkIconSectionProps) {
   return (
-    <section id={sectionId} className="scroll-mt-28 py-20 md:py-28" style={{ backgroundColor: MARKETING_DARK_BG }}>
-      <div className="mx-auto max-w-6xl px-6">
+    <section id={sectionId} className="scroll-mt-28 bg-charcoal py-28">
+      <div className="mx-auto max-w-7xl px-6">
         <div className="mb-5 flex items-center gap-3">
-          <div className="h-px w-8" style={{ backgroundColor: MARKETING_ACCENT }} />
-          <span className="text-xs font-semibold uppercase tracking-[0.2em] text-neutral-400" style={{ fontFamily: "Montserrat, sans-serif" }}>
-            {eyebrow}
-          </span>
+          <div className="h-px w-8 bg-teal" />
+          <span className="section-label">{eyebrow}</span>
         </div>
-        <h2
-          className="mb-10 max-w-3xl text-3xl font-semibold leading-tight tracking-tight text-white md:text-4xl"
-          style={{ fontFamily: "Montserrat, sans-serif" }}
-        >
+        <h2 className="mb-10 max-w-3xl font-montserrat text-4xl font-black leading-tight tracking-tight text-white md:text-5xl lg:text-6xl">
           {heading}
         </h2>
         <div className="grid gap-6 md:grid-cols-2">
@@ -282,12 +264,8 @@ export function MarketingDarkIconSection({
               ) : (
                 <ProgramIcon name={item.icon} className="mb-4" size={26} />
               )}
-              <h3 className="mb-2 text-lg font-semibold text-white" style={{ fontFamily: "Montserrat, sans-serif" }}>
-                {item.title}
-              </h3>
-              <p className="text-base leading-relaxed text-neutral-300" style={{ fontFamily: "Raleway, sans-serif" }}>
-                {item.body}
-              </p>
+              <h3 className="mb-2 font-montserrat text-lg font-black text-white">{item.title}</h3>
+              <p className="font-raleway text-base leading-relaxed text-white/70">{item.body}</p>
             </div>
           ))}
         </div>
@@ -307,12 +285,9 @@ type MarketingDarkStatsSectionProps = {
 
 export function MarketingDarkStatsSection({ heading, items, sectionId, useFontAwesomeIcons = false }: MarketingDarkStatsSectionProps) {
   return (
-    <section id={sectionId} className="py-20 md:py-28" style={{ backgroundColor: MARKETING_DARK_BG }}>
-      <div className="mx-auto max-w-6xl px-6 text-center">
-        <h2
-          className="mx-auto mb-14 max-w-3xl text-3xl font-semibold leading-tight tracking-tight text-white md:text-4xl"
-          style={{ fontFamily: "Montserrat, sans-serif" }}
-        >
+    <section id={sectionId} className="bg-charcoal py-28">
+      <div className="mx-auto max-w-7xl px-6 text-center">
+        <h2 className="mx-auto mb-14 max-w-3xl font-montserrat text-4xl font-black leading-tight tracking-tight text-white md:text-5xl lg:text-6xl">
           {heading}
         </h2>
         <ul className="mx-auto flex max-w-5xl flex-row flex-wrap justify-center gap-x-10 gap-y-12 sm:gap-x-14 md:gap-x-16">
@@ -328,12 +303,8 @@ export function MarketingDarkStatsSection({ heading, items, sectionId, useFontAw
                   <ProgramIcon name={STAT_ICON_CYCLE[i % STAT_ICON_CYCLE.length]} size={28} />
                 )}
               </div>
-              <p className="mb-2 text-3xl font-semibold md:text-4xl" style={{ fontFamily: "Montserrat, sans-serif", color: MARKETING_ACCENT }}>
-                {item.stat}
-              </p>
-              <p className="text-sm leading-snug text-neutral-300 md:text-base" style={{ fontFamily: "Raleway, sans-serif" }}>
-                {item.label}
-              </p>
+              <p className="mb-2 font-montserrat text-3xl font-black text-teal md:text-4xl">{item.stat}</p>
+              <p className="font-raleway text-sm leading-snug text-white/70 md:text-base">{item.label}</p>
             </li>
           ))}
         </ul>
@@ -382,17 +353,11 @@ export function MarketingPreFooterLight({
   details,
 }: MarketingPreFooterLightProps) {
   return (
-    <section className="bg-[#fafaf9] py-20 md:py-28">
+    <section className="bg-gray-50 py-28">
       <div className="mx-auto max-w-3xl px-6 text-center">
-        <p className="mb-4 text-xs font-semibold uppercase tracking-[0.2em]" style={{ fontFamily: "Montserrat, sans-serif", color: MARKETING_ACCENT }}>
-          {kicker}
-        </p>
-        <h2 className="mb-5 text-3xl font-semibold tracking-tight text-[#24282B] md:text-4xl" style={{ fontFamily: "Montserrat, sans-serif" }}>
-          {headline}
-        </h2>
-        <p className="mx-auto mb-8 max-w-2xl text-lg leading-relaxed text-neutral-600" style={{ fontFamily: "Raleway, sans-serif" }}>
-          {body}
-        </p>
+        <span className="section-label mb-4 inline-block">{kicker}</span>
+        <h2 className="mb-5 font-montserrat text-4xl font-black tracking-tight text-charcoal md:text-5xl">{headline}</h2>
+        <p className="mx-auto mb-8 max-w-2xl font-raleway text-lg leading-relaxed text-gray-500">{body}</p>
         <SectionCta href="/contact">{buttonText}</SectionCta>
         {details}
         <div className="mx-auto mt-12 max-w-5xl">

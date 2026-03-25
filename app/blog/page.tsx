@@ -71,7 +71,7 @@ export default async function BlogPage() {
           </h1>
           <p
             className="text-lg leading-relaxed max-w-3xl"
-            style={{ fontFamily: "Raleway, sans-serif", color: "#555a5e" }}
+            style={{ fontFamily: "Raleway, sans-serif", color: "#6b7280" }}
           >
             Stay ahead of industry trends and discover new growth opportunities.
             Insights on digital transformation, cloud and SaaS monetization,
@@ -81,7 +81,7 @@ export default async function BlogPage() {
       </section>
 
       {/* Posts grid */}
-      <section className="py-20 bg-white">
+      <section className="bg-white py-28">
         <div className="max-w-7xl mx-auto px-6">
           {posts.length === 0 ? (
             <div
@@ -97,7 +97,7 @@ export default async function BlogPage() {
               </h2>
               <p
                 className="text-base max-w-md mx-auto"
-                style={{ fontFamily: "Raleway, sans-serif", color: "#555a5e" }}
+                style={{ fontFamily: "Raleway, sans-serif", color: "#6b7280" }}
               >
                 Blog posts are managed in the CMS. Add a &quot;post&quot; type in
                 Sanity and publish posts to see them here. See BLOG-CMS.md for
@@ -173,7 +173,7 @@ export default async function BlogPage() {
                       {post.excerpt && (
                         <p
                           className="text-sm line-clamp-3"
-                          style={{ fontFamily: "Raleway, sans-serif", color: "#555a5e" }}
+                          style={{ fontFamily: "Raleway, sans-serif", color: "#6b7280" }}
                         >
                           {post.excerpt}
                         </p>
