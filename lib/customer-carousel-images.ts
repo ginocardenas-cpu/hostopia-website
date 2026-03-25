@@ -51,3 +51,8 @@ export function getCustomerCarouselImages(slug: string, salt: number): { src: st
   }
   return out;
 }
+
+/** Single deterministic hero / section image (no rotation) */
+export function getCustomerStaticImage(slug: string, salt: number): { src: string; alt: string } {
+  return getCustomerCarouselImages(slug, salt)[0];
+}

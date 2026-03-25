@@ -10,9 +10,17 @@ export type CarouselImage = { src: string; alt: string };
 type CustomerImageCarouselProps = {
   images: CarouselImage[];
   className?: string;
+  /** When false, only arrows/dots advance the slide (default). */
+  autoplay?: boolean;
+  autoplayMs?: number;
 };
 
-export default function CustomerImageCarousel({ images, className = "" }: CustomerImageCarouselProps) {
+export default function CustomerImageCarousel({
+  images,
+  className = "",
+  autoplay = false,
+  autoplayMs = 8000,
+}: CustomerImageCarouselProps) {
   const [index, setIndex] = useState(0);
   const len = images.length;
   const safeLen = Math.max(len, 1);
@@ -25,10 +33,10 @@ export default function CustomerImageCarousel({ images, className = "" }: Custom
   );
 
   useEffect(() => {
-    if (len <= 1) return;
-    const t = setInterval(() => go(1), 6500);
+    if (!autoplay || len <= 1) return;
+    const t = setInterval(() => go(1), autoplayMs);
     return () => clearInterval(t);
-  }, [len, go]);
+  }, [autoplay, autoplayMs, len, go]);
 
   if (len === 0) {
     return (
@@ -42,7 +50,7 @@ export default function CustomerImageCarousel({ images, className = "" }: Custom
 
   return (
     <div className={`relative ${className}`}>
-      <div className="relative aspect-[4/3] overflow-hidden rounded-2xl bg-neutral-100 shadow-lg shadow-neutral-300/40 ring-1 ring-black/[0.06]">
+      <div className="relative aspect-[16/10] overflow-hidden rounded-2xl bg-neutral-100 shadow-xl shadow-neutral-300/40 ring-1 ring-black/[0.06]">
         <AnimatePresence initial={false} mode="wait">
           <motion.div
             key={current.src + index}
@@ -57,7 +65,7 @@ export default function CustomerImageCarousel({ images, className = "" }: Custom
               alt={current.alt}
               fill
               className="object-cover"
-              sizes="(max-width: 768px) 100vw, 480px"
+              sizes="(max-width: 768px) 100vw, 960px"
             />
           </motion.div>
         </AnimatePresence>
