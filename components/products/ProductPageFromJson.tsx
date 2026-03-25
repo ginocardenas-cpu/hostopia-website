@@ -5,6 +5,7 @@ import type { ProductJson } from "@/lib/product-json-types";
 import ProductLucideIcon from "@/components/products/ProductLucideIcon";
 import ProductLifecycleGrid from "@/components/products/ProductLifecycleGrid";
 import { VerticalTabs } from "@/components/ui/vertical-tabs";
+import { cn } from "@/lib/utils";
 
 function splitHeadline(headline: string): ReactNode {
   const parts = headline.split(/\s[—–]\s/);
@@ -63,13 +64,21 @@ function ProductImage({ src, alt, priority, className, sizes }: ProductImageProp
   );
 }
 
-const LOGO_DESIGN_SLUG = "logo-design";
+/** Hero image + vertical tabs below hero (sidebar copy moves out of hero). */
+const VERTICAL_TABS_LAYOUT_SLUGS = new Set([
+  "logo-design",
+  "ssl",
+  "website-builder",
+  "directories",
+  "ecommerce",
+  "digital-fax",
+]);
 
 export default function ProductPageFromJson({ data }: { data: ProductJson }) {
   const { hero, features, partnerAdvantage, lifecycleFit, cta, media } = data;
   const heroImg = media?.heroImage;
   const contentImg = media?.contentImage;
-  const logoVerticalTabsLayout = data.slug === LOGO_DESIGN_SLUG && Boolean(hero.sidebar);
+  const verticalTabsLayout = VERTICAL_TABS_LAYOUT_SLUGS.has(data.slug) && Boolean(hero.sidebar);
 
   return (
     <main>
@@ -142,7 +151,7 @@ export default function ProductPageFromJson({ data }: { data: ProductJson }) {
               </div>
             ) : null}
 
-            {!logoVerticalTabsLayout && !heroImg && hero.sidebar ? (
+            {!verticalTabsLayout && !heroImg && hero.sidebar ? (
               <div className="rounded-2xl border border-gray-200/80 bg-white p-8 shadow-sm lg:ml-auto lg:max-w-md">
                 <p className="mb-6 font-montserrat text-lg font-black text-charcoal">{hero.sidebar.heading}</p>
                 <ul className="space-y-5">
@@ -156,7 +165,7 @@ export default function ProductPageFromJson({ data }: { data: ProductJson }) {
               </div>
             ) : null}
 
-            {!logoVerticalTabsLayout && heroImg && hero.sidebar ? (
+            {!verticalTabsLayout && heroImg && hero.sidebar ? (
               <div className="mt-10 rounded-2xl border border-gray-200/80 bg-white/95 p-6 shadow-sm backdrop-blur-sm lg:mt-8 lg:max-w-md lg:self-end">
                 <p className="mb-4 font-montserrat text-base font-black text-charcoal">{hero.sidebar.heading}</p>
                 <ul className="space-y-4">
@@ -173,7 +182,7 @@ export default function ProductPageFromJson({ data }: { data: ProductJson }) {
         </div>
       </section>
 
-      {logoVerticalTabsLayout && hero.sidebar ? (
+      {verticalTabsLayout && hero.sidebar ? (
         <VerticalTabs
           sectionHeading={hero.sidebar.heading}
           items={hero.sidebar.items.map((item, i) => ({
@@ -189,7 +198,14 @@ export default function ProductPageFromJson({ data }: { data: ProductJson }) {
       ) : null}
 
       {features ? (
-        <section className="bg-white py-28">
+        <section
+          className={cn(
+            "py-28",
+            verticalTabsLayout
+              ? "border-t border-gray-200/80 bg-cream shadow-[inset_0_12px_24px_-12px_rgba(36,40,43,0.08)]"
+              : "bg-white"
+          )}
+        >
           <div className="mx-auto max-w-7xl px-6">
             <span className="section-label mb-4 inline-block">{features.eyebrow}</span>
             <h2 className="mb-6 max-w-4xl font-montserrat text-4xl font-black leading-tight text-charcoal md:text-5xl lg:text-6xl">

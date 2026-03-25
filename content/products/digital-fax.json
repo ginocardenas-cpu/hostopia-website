@@ -27,11 +27,46 @@
     "sidebar": {
       "heading": "Your SMB customers can",
       "items": [
-        { "title": "Fax from anywhere", "body": "Send and receive faxes from any device with an internet connection — no hardware, no phone lines, no office required." },
-        { "title": "Stay compliant", "body": "Encrypted transmission and HIPAA-aligned configurations for healthcare, legal, and financial industries." },
-        { "title": "Keep existing numbers", "body": "Easy number porting migrates customers off legacy lines, or activate new local and toll-free numbers." },
-        { "title": "Simplify workflows", "body": "Email-to-fax, fax-to-email, and web portal access eliminate the need for separate fax software." }
+        {
+          "title": "Fax from anywhere",
+          "body": "Send and receive faxes from any device with an internet connection — no hardware, no phone lines, no office required.",
+          "image": {
+            "src": "https://images.unsplash.com/photo-1512941937669-90a1b58e7e9c?q=80&w=1200&auto=format&fit=crop",
+            "alt": "Working remotely with mobile and cloud tools"
+          }
+        },
+        {
+          "title": "Stay compliant",
+          "body": "Encrypted transmission and HIPAA-aligned configurations for healthcare, legal, and financial industries.",
+          "image": {
+            "src": "https://images.unsplash.com/photo-1576091160399-112ba8d25d1d?q=80&w=1200&auto=format&fit=crop",
+            "alt": "Healthcare compliance and secure communications"
+          }
+        },
+        {
+          "title": "Keep existing numbers",
+          "body": "Easy number porting migrates customers off legacy lines, or activate new local and toll-free numbers.",
+          "image": {
+            "src": "https://images.unsplash.com/photo-1555421689-491a97ff2040?q=80&w=1200&auto=format&fit=crop",
+            "alt": "Business phone and fax number management"
+          }
+        },
+        {
+          "title": "Simplify workflows",
+          "body": "Email-to-fax, fax-to-email, and web portal access eliminate the need for separate fax software.",
+          "image": {
+            "src": "https://images.unsplash.com/photo-1586281380349-633531d88871?q=80&w=1200&auto=format&fit=crop",
+            "alt": "Documents and streamlined office workflows"
+          }
+        }
       ]
+    }
+  },
+
+  "media": {
+    "heroImage": {
+      "src": "https://images.unsplash.com/photo-1586953208448-b95a79798f07?q=80&w=1600&auto=format&fit=crop",
+      "alt": "Modern digital fax and document transmission"
     }
   },
 

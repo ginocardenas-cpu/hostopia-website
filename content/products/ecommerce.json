@@ -27,11 +27,46 @@
     "sidebar": {
       "heading": "Your SMB customers can",
       "items": [
-        { "title": "Launch a store fast", "body": "A guided 5-step setup wizard handles products, taxes, shipping, and payment configuration." },
-        { "title": "Sell everywhere", "body": "Website, Facebook, Instagram, TikTok, Pinterest, Amazon, and Google Shopping — all from one dashboard." },
-        { "title": "Accept any payment", "body": "40+ gateways including PayPal and Square, with multi-currency and real-time shipping support." },
-        { "title": "Keep full margins", "body": "Zero transaction fees. SMBs retain every dollar of margin on every sale." }
+        {
+          "title": "Launch a store fast",
+          "body": "A guided 5-step setup wizard handles products, taxes, shipping, and payment configuration.",
+          "image": {
+            "src": "https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?q=80&w=1200&auto=format&fit=crop",
+            "alt": "Quick online store setup and checkout"
+          }
+        },
+        {
+          "title": "Sell everywhere",
+          "body": "Website, Facebook, Instagram, TikTok, Pinterest, Amazon, and Google Shopping — all from one dashboard.",
+          "image": {
+            "src": "https://images.unsplash.com/photo-1611162616305-69b3cf1bfe93?q=80&w=1200&auto=format&fit=crop",
+            "alt": "Multi-channel social and online selling"
+          }
+        },
+        {
+          "title": "Accept any payment",
+          "body": "40+ gateways including PayPal and Square, with multi-currency and real-time shipping support.",
+          "image": {
+            "src": "https://images.unsplash.com/photo-1563013544-824ae1b704d3?q=80&w=1200&auto=format&fit=crop",
+            "alt": "Payment terminals and ecommerce checkout"
+          }
+        },
+        {
+          "title": "Keep full margins",
+          "body": "Zero transaction fees. SMBs retain every dollar of margin on every sale.",
+          "image": {
+            "src": "https://images.unsplash.com/photo-1579621970563-ebec7560ff3e?q=80&w=1200&auto=format&fit=crop",
+            "alt": "Revenue growth and healthy business margins"
+          }
+        }
       ]
+    }
+  },
+
+  "media": {
+    "heroImage": {
+      "src": "https://images.unsplash.com/photo-1556740758-90de374c12ad?q=80&w=1600&auto=format&fit=crop",
+      "alt": "Ecommerce online store and retail selling"
     }
   },
 
