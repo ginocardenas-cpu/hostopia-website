@@ -20,16 +20,28 @@ function splitHeadline(headline: string): ReactNode {
   return <span className="text-charcoal">{headline}</span>;
 }
 
-/** Charcoal sections: avoid text-charcoal children (invisible on dark bg). Match Migrations — white + gold accent. */
+/**
+ * Charcoal sections: line 1 white, line 2 gold (Migrations-style).
+ * 1) Split on em/en dash. 2) Else split on first ". " (two sentences).
+ */
 function splitHeadlineDark(headline: string): ReactNode {
-  const parts = headline.split(/\s[—–]\s/);
-  if (parts.length >= 2) {
-    const rest = parts.slice(1).join(" — ");
+  const byEm = headline.split(/\s[—–]\s/);
+  if (byEm.length >= 2) {
     return (
       <>
-        <span className="text-white">{parts[0]}</span>
+        <span className="text-white">{byEm[0]}</span>
         <br />
-        <span className="text-gold">{rest}</span>
+        <span className="text-gold">{byEm.slice(1).join(" — ")}</span>
+      </>
+    );
+  }
+  const bySentence = headline.match(/^(.+?)\.\s+(\S.*)$/);
+  if (bySentence && bySentence[2].length >= 2) {
+    return (
+      <>
+        <span className="text-white">{bySentence[1]}.</span>
+        <br />
+        <span className="text-gold">{bySentence[2]}</span>
       </>
     );
   }
@@ -77,10 +89,6 @@ export default function ProductPageFromJson({ data }: { data: ProductJson }) {
               <div className="h-px w-8 bg-teal" />
               <span className="section-label">{hero.eyebrow}</span>
             </div>
-
-            {hero.stat ? (
-              <p className="mb-4 font-raleway text-sm font-semibold uppercase tracking-wide text-teal">{hero.stat}</p>
-            ) : null}
 
             <h1 className="mb-6 font-montserrat text-4xl font-black leading-[1.05] tracking-tight sm:text-5xl lg:text-6xl xl:text-7xl">
               {splitHeadline(hero.headline)}
@@ -214,10 +222,6 @@ export default function ProductPageFromJson({ data }: { data: ProductJson }) {
       {partnerAdvantage ? (
         <section className="bg-charcoal py-28">
           <div className="mx-auto max-w-7xl px-6">
-            <div className="mb-6 flex items-center gap-3">
-              <div className="h-px w-8 bg-teal" />
-              <span className="section-label">{partnerAdvantage.eyebrow}</span>
-            </div>
             <h2 className="mb-6 max-w-4xl font-montserrat text-4xl font-black leading-tight md:text-5xl lg:text-6xl">
               {splitHeadlineDark(partnerAdvantage.heading)}
             </h2>
@@ -242,7 +246,7 @@ export default function ProductPageFromJson({ data }: { data: ProductJson }) {
               {lifecycleFit.heading}
             </h2>
             <p className="mb-12 max-w-3xl font-raleway text-lg leading-relaxed text-gray-500">{lifecycleFit.intro}</p>
-            <ProductLifecycleGrid steps={lifecycleFit.steps} />
+            <ProductLifecycleGrid steps={lifecycleFit.steps} productLabel={data.productName} />
             <p className="mt-12 max-w-4xl font-raleway text-base leading-relaxed text-gray-500">{lifecycleFit.positioning}</p>
           </div>
         </section>
@@ -251,8 +255,8 @@ export default function ProductPageFromJson({ data }: { data: ProductJson }) {
       {cta ? (
         <section className="bg-charcoal py-28">
           <div className="mx-auto max-w-4xl px-6 text-center">
-            <h2 className="mb-6 font-montserrat text-3xl font-black leading-tight text-white md:text-4xl lg:text-5xl">
-              {cta.headline}
+            <h2 className="mb-6 font-montserrat text-3xl font-black leading-tight md:text-4xl lg:text-5xl">
+              {splitHeadlineDark(cta.headline)}
             </h2>
             <p className="mb-10 font-raleway text-lg leading-relaxed text-white/70">{cta.body}</p>
             <Link

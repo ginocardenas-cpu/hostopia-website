@@ -92,7 +92,7 @@
     "intro": "OPB sits at the center of your 'Get Online' motion — the entry point that pulls the rest of your digital portfolio through.",
     "steps": [
       { "step": "01", "title": "Build a Brand", "body": "Domains, logo, and professional email establish the SMB identity." },
-      { "step": "02", "title": "Get Online", "body": "AI-powered websites and hosting launch in minutes under your brand.", "highlight": true, "productName": "Website Builder" },
+      { "step": "02", "title": "Get Online", "body": "AI-powered websites and hosting launch in minutes under your brand.", "highlight": true, "productName": "Online Presence Builder" },
       { "step": "03", "title": "Get Found", "body": "SEO, directories, and reputation management drive visibility and trust." },
       { "step": "04", "title": "Grow", "body": "Ecommerce, email marketing, and custom development fuel growth." }
     ],
