@@ -211,10 +211,10 @@
             "link": "/products/social-media-management"
           },
           {
-            "name": "Search Engine Optimization",
+            "name": "Search Everywhere Optimization",
             "tag": "Visibility Driver",
-            "description": "Keywords, ranking, and SEO performance — research, tracking, backlinks, and optimization in one platform.",
-            "highlights": ["Keyword research & ranking", "Backlink and competitor insights", "Performance optimization"],
+            "description": "Keywords, ranking, and SEO, GEO, and AEO performance — research, tracking, backlinks, and optimization in one platform.",
+            "highlights": ["Keyword research & ranking", "SEO, GEO, and AEO coverage", "Backlinks and competitor insights"],
             "link": "/products/seo"
           }
         ]
@@ -261,7 +261,7 @@
         ]
       }
     ],
-    "notes": "Products organized by the four portfolio pillars — aligned with nav-products.ts. Includes Competitive Intelligence, Social Media Management, PPC Management, Directory Listings, Reputation Management, and Search Engine Optimization."
+    "notes": "Products organized by the four portfolio pillars — aligned with nav-products.ts. Includes Competitive Intelligence, Social Media Management, PPC Management, Directory Listings, Reputation Management, and Search Everywhere Optimization."
   },
 
   "migrations": {

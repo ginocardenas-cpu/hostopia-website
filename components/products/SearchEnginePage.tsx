@@ -28,29 +28,35 @@ export default function SearchEnginePage({ label }: SearchEnginePageProps) {
             <div>
               <div className="flex items-center gap-3 mb-5">
                 <div className="w-8 h-px" style={{ backgroundColor: "#2CADB2" }} />
-                <span className="section-label">Search Engine Optimization by Hostopia</span>
+                <span className="section-label">Search Everywhere Optimization by Hostopia</span>
               </div>
               <h1
-                className="font-black leading-tight mb-4"
+                className="font-black leading-tight mb-3"
                 style={{
                   fontFamily: "Montserrat, sans-serif",
                   fontSize: "clamp(2.25rem, 4vw, 3.5rem)",
                   color: "#24282B",
                 }}
               >
-                Guided SEO That SMBs Actually Use — Under Your Brand
+                Search Everywhere Optimization
               </h1>
+              <p
+                className="text-lg md:text-xl font-semibold leading-snug mb-5"
+                style={{ fontFamily: "Montserrat, sans-serif", color: "#2CADB2" }}
+              >
+                Keywords, ranking, and SEO, GEO, and AEO performance
+              </p>
               <p
                 className="text-base md:text-lg leading-relaxed mb-4"
                 style={{ fontFamily: "Raleway, sans-serif", color: "#555a5e" }}
               >
-                Most SMBs know they should invest in SEO. They don&apos;t have the expertise or budget to do it. Agency-grade tools are overkill. They need guided, step-by-step SEO they can execute themselves.
+                Most SMBs need to show up in traditional search, local and maps (GEO), and AI-driven answer surfaces (AEO) — without agency budgets. They need guided, step-by-step optimization they can actually execute.
               </p>
               <p
                 className="text-base leading-relaxed mb-6"
                 style={{ fontFamily: "Raleway, sans-serif", color: "#555a5e" }}
               >
-                Search Engine Optimization is a white-label, task-based SEO platform that walks SMBs through the actions that improve their search rankings — with customized plans, keyword tracking, and progress reporting. All under your brand.
+                Search Everywhere Optimization is a white-label, task-based platform that walks SMBs through the actions that improve visibility everywhere they&apos;re found — with customized plans, keyword tracking, and progress reporting. All under your brand.
               </p>
               <div className="flex flex-wrap gap-3">
                 <Link
@@ -69,7 +75,7 @@ export default function SearchEnginePage({ label }: SearchEnginePageProps) {
                   className="inline-flex items-center gap-2 text-xs md:text-sm px-4 py-2 rounded-full border border-gray-200"
                   style={{ fontFamily: "Raleway, sans-serif", color: "#555a5e" }}
                 >
-                  <Search size={16} /> White-label SEO platform, powered by Hostopia
+                  <Search size={16} /> White-label SEO, GEO &amp; AEO, powered by Hostopia
                 </span>
               </div>
             </div>
@@ -119,7 +125,7 @@ export default function SearchEnginePage({ label }: SearchEnginePageProps) {
           className="text-base leading-relaxed mb-6 max-w-3xl"
           style={{ fontFamily: "Raleway, sans-serif", color: "#555a5e" }}
         >
-          Search Engine Optimization is designed for non-expert SMBs and built for partners who need scale without support overhead.
+          Search Everywhere Optimization is designed for non-expert SMBs and built for partners who need scale without support overhead.
         </p>
         <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-4">
           <FeatureCard
@@ -151,14 +157,14 @@ export default function SearchEnginePage({ label }: SearchEnginePageProps) {
           className="text-base leading-relaxed mb-6 max-w-3xl"
           style={{ fontFamily: "Raleway, sans-serif", color: "#555a5e" }}
         >
-          SEO is one of the highest-demand digital services for SMBs. Search Engine Optimization lets you offer it at scale without hiring specialists.
+          SEO is one of the highest-demand digital services for SMBs. Search Everywhere Optimization lets you offer it at scale without hiring specialists.
         </p>
         <div className="grid md:grid-cols-3 gap-6">
           <FeatureColumn
             title="Natural attachment to your web portfolio"
             points={[
               "Every website customer is an SEO prospect.",
-              "Bundle Search Engine Optimization with websites, hosting, and Directory Listings for stronger product attachment and lower churn.",
+              "Bundle Search Everywhere Optimization with websites, hosting, and Directory Listings for stronger product attachment and lower churn.",
             ]}
           />
           <FeatureColumn
@@ -183,7 +189,7 @@ export default function SearchEnginePage({ label }: SearchEnginePageProps) {
           className="text-base leading-relaxed mb-8 max-w-3xl"
           style={{ fontFamily: "Raleway, sans-serif", color: "#555a5e" }}
         >
-          Once an SMB has a website live, the next question is always: how do I get found? Search Engine Optimization answers that question inside your ecosystem.
+          Once an SMB has a website live, the next question is always: how do I get found? Search Everywhere Optimization answers that question inside your ecosystem.
         </p>
         <div className="flex flex-col gap-4 md:flex-row md:items-stretch md:gap-0">
           {[
@@ -200,10 +206,10 @@ export default function SearchEnginePage({ label }: SearchEnginePageProps) {
             {
               step: "03",
               title: "Get Found",
-              body: "Search Engine Optimization guides SEO improvements month by month. Pair with Directory Listings and Reputation Management.",
+              body: "Search Everywhere Optimization guides SEO improvements month by month. Pair with Directory Listings and Reputation Management.",
               highlightTeal: true,
               conceptLabel: "Get Found",
-              productName: "Search Engine Optimization",
+              productName: "Search Everywhere Optimization",
             },
             {
               step: "04",
@@ -243,13 +249,13 @@ export default function SearchEnginePage({ label }: SearchEnginePageProps) {
             className="text-xl md:text-2xl font-bold mb-4"
             style={{ fontFamily: "Montserrat, sans-serif", color: "#ffffff" }}
           >
-            Ready to Turn SEO into a Scalable Revenue Stream?
+            Ready to Turn Search Everywhere Optimization into a Scalable Revenue Stream?
           </h3>
           <p
             className="text-sm md:text-base mb-6 max-w-2xl"
             style={{ fontFamily: "Raleway, sans-serif", color: "#d1d5db" }}
           >
-            Connect with Hostopia to launch Search Engine Optimization under your brand, bundle it with your web and marketing portfolio, and help SMBs get found by the customers searching for them.
+            Connect with Hostopia to launch Search Everywhere Optimization under your brand, bundle it with your web and marketing portfolio, and help SMBs get found by the customers searching for them.
           </p>
           <Link
             href="/contact"

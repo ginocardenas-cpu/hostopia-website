@@ -1,27 +1,28 @@
 {
   "slug": "seo",
   "label": "SEO",
-  "productName": "Search Engine Assist",
+  "productName": "Search Everywhere Optimization",
 
   "seo": {
     "primaryKeyword": "white-label SEO platform",
     "secondaryKeywords": [
+      "GEO local search optimization",
+      "answer engine optimization AEO",
       "SEO software for service providers",
       "guided SEO for SMBs",
       "white-label SEO tools",
-      "SMB search engine optimization",
       "reseller SEO platform"
     ],
-    "metaTitle": "White-Label SEO Platform for Service Providers | Hostopia",
-    "metaDescription": "Launch guided SEO under your brand. Search Engine Assist helps telcos, ISPs, and MSPs deliver task-based SEO to SMBs — driving activation, ARPU, and retention.",
+    "metaTitle": "Search Everywhere Optimization | White-Label SEO, GEO & AEO | Hostopia",
+    "metaDescription": "Keywords, ranking, and SEO, GEO, and AEO performance under your brand. Search Everywhere Optimization helps service providers deliver task-based visibility for SMBs.",
     "urlSlug": "/products/seo"
   },
 
   "hero": {
-    "eyebrow": "Search Engine Assist by Hostopia",
-    "headline": "Guided SEO That SMBs Actually Use — Under Your Brand",
-    "subheadline": "Most SMBs know they should invest in SEO. They don't have the expertise or budget to do it. Agency-grade tools are overkill. They need guided, step-by-step SEO they can execute themselves.",
-    "description": "Search Engine Assist is a white-label, task-based SEO platform that walks SMBs through the actions that improve their search rankings — with customized plans, keyword tracking, and progress reporting. All under your brand.",
+    "eyebrow": "Search Everywhere Optimization by Hostopia",
+    "headline": "Search Everywhere Optimization",
+    "subheadline": "Keywords, ranking, and SEO, GEO, and AEO performance.",
+    "description": "Search Everywhere Optimization is a white-label, task-based platform that walks SMBs through the actions that improve visibility in search, local/maps, and answer engines — with customized plans, keyword tracking, and progress reporting. All under your brand.",
     "cta": { "primary": "Book a Demo", "secondary": "Talk to Partner Success" },
     "badge": "DIY SEO platform, white-labeled for partners",
     "sidebar": {
@@ -38,7 +39,7 @@
   "features": {
     "eyebrow": "What you deliver",
     "heading": "SEO Made Simple for SMBs — Scalable for You",
-    "intro": "Search Engine Assist is designed for non-expert SMBs and built for partners who need scale without support overhead.",
+    "intro": "Search Everywhere Optimization is designed for non-expert SMBs and built for partners who need scale without support overhead.",
     "cards": [
       {
         "icon": "Map",
@@ -66,11 +67,11 @@
   "partnerAdvantage": {
     "eyebrow": "The partner advantage",
     "heading": "Capture SMB SEO Spend — Without Building an Agency",
-    "intro": "SEO is one of the highest-demand digital services for SMBs. Search Engine Assist lets you offer it at scale without hiring specialists.",
+    "intro": "SEO is one of the highest-demand digital services for SMBs. Search Everywhere Optimization lets you offer it at scale without hiring specialists.",
     "items": [
       {
         "title": "Natural attachment to your web portfolio",
-        "body": "Every website customer is an SEO prospect. Bundle Search Engine Assist with websites, hosting, and OneList Plus for stronger product attachment and lower churn."
+        "body": "Every website customer is an SEO prospect. Bundle Search Everywhere Optimization with websites, hosting, and OneList Plus for stronger product attachment and lower churn."
       },
       {
         "title": "Recurring revenue with low support overhead",
@@ -86,11 +87,11 @@
   "lifecycleFit": {
     "eyebrow": "Portfolio fit",
     "heading": "The Next Step After Getting Online",
-    "intro": "Once an SMB has a website live, the next question is always: how do I get found? Search Engine Assist answers that question inside your ecosystem.",
+    "intro": "Once an SMB has a website live, the next question is always: how do I get found? Search Everywhere Optimization answers that question inside your ecosystem.",
     "steps": [
       { "step": "01", "title": "Build a Brand", "body": "Domains, logo, and professional email establish the SMB identity." },
       { "step": "02", "title": "Get Online", "body": "Website Builder, DIFM, or custom development launches their digital presence." },
-      { "step": "03", "title": "Get Found", "body": "Search Engine Assist guides SEO improvements month by month. Pair with OneList Plus and Reviews Promoter.", "highlight": true, "productName": "Search Engine Assist" },
+      { "step": "03", "title": "Get Found", "body": "Search Everywhere Optimization guides SEO improvements month by month. Pair with OneList Plus and Reviews Promoter.", "highlight": true, "productName": "Search Everywhere Optimization" },
       { "step": "04", "title": "Grow", "body": "Ecommerce, email marketing, and advanced services fuel business growth." }
     ],
     "positioning": "Position SEO as the natural next step after website launch, a bundle partner with directories and reputation management, and a recurring subscription that ties your value to measurable search performance."
@@ -98,7 +99,7 @@
 
   "cta": {
     "headline": "Ready to Turn SEO into a Scalable Revenue Stream?",
-    "body": "Connect with Hostopia to launch Search Engine Assist under your brand, bundle it with your web and marketing portfolio, and help SMBs get found by the customers searching for them.",
+    "body": "Connect with Hostopia to launch Search Everywhere Optimization under your brand, bundle it with your web and marketing portfolio, and help SMBs get found by the customers searching for them.",
     "buttonText": "Book a Demo"
   }
 }

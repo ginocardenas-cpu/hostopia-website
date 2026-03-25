@@ -173,16 +173,16 @@ const productMeta: Record<
     ],
   },
   seo: {
-    title: "Search Engine Optimization | White-Label SEO Platform for Service Providers | Hostopia",
+    title: "Search Everywhere Optimization | White-Label SEO, GEO & AEO | Hostopia",
     description:
-      "Keywords, ranking, and SEO performance — keyword research, rank tracking, backlinks, competitor insights, and optimization under your brand.",
+      "Keywords, ranking, and SEO, GEO, and AEO performance — keyword research, rank tracking, backlinks, competitor insights, and optimization under your brand.",
     keywords: [
       "white-label SEO platform",
-      "search engine optimization for service providers",
+      "GEO local optimization",
+      "answer engine optimization AEO",
+      "search everywhere optimization",
       "SEO software for SMBs",
       "keyword rank tracking white label",
-      "white-label SEO tools",
-      "SMB search engine optimization",
       "reseller SEO platform",
     ],
   },

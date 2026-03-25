@@ -45,8 +45,8 @@ export const productsDropdownSections = [
         slug: "social-media-management",
       },
       {
-        label: "Search Engine Optimization",
-        description: "Keywords, ranking, and SEO performance",
+        label: "Search Everywhere Optimization",
+        description: "Keywords, ranking, SEO/GEO, and AEO performance",
         href: "/products/seo",
         slug: "seo",
       },

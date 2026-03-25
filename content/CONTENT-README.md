@@ -86,7 +86,7 @@ All 14 product pages are complete. Each file maps to a slug in `lib/nav-products
 ### Get Found
 | File | Product | Slug | Status |
 |------|---------|------|--------|
-| `seo.json` | Search Engine Assist | `seo` | NEW — needs component + nav entry |
+| `seo.json` | Search Everywhere Optimization | `seo` | NEW — needs component + nav entry |
 | `directories.json` | OneList Plus | `directories` | Rewrite of existing page |
 | `reputation-management.json` | Reviews Promoter | `reputation-management` | Rewrite of existing page |
 
@@ -99,7 +99,7 @@ All 14 product pages are complete. Each file maps to a slug in `lib/nav-products
 
 ## Notes
 
-- **New components needed**: Email Marketing, SEO (Search Engine Assist), and Custom Website Design exist in `nav-products.ts` but don't have dedicated page components yet
+- **New components needed**: Email Marketing, SEO (Search Everywhere Optimization), and Custom Website Design exist in `nav-products.ts` but don't have dedicated page components yet
 - Content is written for service provider partners (Hostopia's B2B audience), not end SMBs
 - All copy follows Hostopia brand voice: professional, educational, partner-empowering, specific
 - Each JSON includes an `seo` object — use it to update `productMeta` in `app/products/[slug]/page.tsx`
