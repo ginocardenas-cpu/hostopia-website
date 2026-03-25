@@ -1,6 +1,9 @@
 import Link from "next/link";
+import type { ReactNode } from "react";
 import { ArrowRight } from "lucide-react";
-import ProductSection from "@/components/products/ProductSection";
+import CustomerImageCarousel from "@/components/customers/CustomerImageCarousel";
+import { BundleFrameworksDetail, SolutionBlockDetail } from "@/components/customers/customerSolutionDetail";
+import { getCustomerCarouselImages } from "@/lib/customer-carousel-images";
 import type { CustomerStoryContent, SolutionBlock } from "@/lib/customer-story-types";
 
 type CustomerStoryPageProps = {
@@ -9,146 +12,137 @@ type CustomerStoryPageProps = {
   sectionEyebrow: string;
 };
 
-function formatFieldLabel(key: string): string {
-  return key
-    .replace(/([A-Z])/g, " $1")
-    .replace(/^./, (c) => c.toUpperCase())
-    .trim();
+const ACCENT = "#2CADB2";
+const GOLD = "#F8CF41";
+
+function toBlurb(text: string, maxLen = 220): string {
+  const t = text.replace(/\s+/g, " ").trim();
+  if (!t) return "";
+  if (t.length <= maxLen) return t;
+  const cut = t.slice(0, maxLen);
+  const lastSpace = cut.lastIndexOf(" ");
+  return (lastSpace > 40 ? cut.slice(0, lastSpace) : cut).trim() + "…";
+}
+
+function firstSentence(text: string): string {
+  const t = text.replace(/\s+/g, " ").trim();
+  const m = t.match(/^(.+?[.!?])(\s|$)/);
+  return m ? m[1] : toBlurb(t, 160);
 }
 
 function secondaryCtaHref(label: string): string {
-  const t = label.toLowerCase();
-  if (t.includes("portfolio") || t.includes("product")) return "/products";
+  const low = label.toLowerCase();
+  if (low.includes("portfolio") || low.includes("product")) return "/products";
   return "#customer-solution";
 }
 
-function SolutionBlockBody({ block }: { block: SolutionBlock }) {
+function SectionCta({ href, children }: { href: string; children: ReactNode }) {
   return (
-    <div className="space-y-6">
-      {block.content ? (
-        <p className="text-base leading-relaxed" style={{ fontFamily: "Raleway, sans-serif", color: "#555a5e" }}>
-          {block.content}
-        </p>
-      ) : null}
-
-      {block.bundles && block.bundles.length > 0 ? (
-        <div className="overflow-x-auto rounded-xl border border-gray-100 bg-white">
-          <table className="w-full text-left text-sm">
-            <thead>
-              <tr className="border-b border-gray-100 bg-[#f7f6f2]">
-                <th className="px-4 py-3 font-heading font-semibold text-[#24282B]">Bundle</th>
-                <th className="px-4 py-3 font-heading font-semibold text-[#24282B]">Products</th>
-                <th className="px-4 py-3 font-heading font-semibold text-[#24282B]">Impact</th>
-              </tr>
-            </thead>
-            <tbody>
-              {block.bundles.map((b) => (
-                <tr key={b.name} className="border-b border-gray-50 last:border-0">
-                  <td className="px-4 py-3 font-semibold text-[#24282B]" style={{ fontFamily: "Montserrat, sans-serif" }}>
-                    {b.name}
-                  </td>
-                  <td className="px-4 py-3" style={{ fontFamily: "Raleway, sans-serif", color: "#555a5e" }}>
-                    {b.products}
-                  </td>
-                  <td className="px-4 py-3" style={{ fontFamily: "Raleway, sans-serif", color: "#555a5e" }}>
-                    {b.description}
-                  </td>
-                </tr>
-              ))}
-            </tbody>
-          </table>
-        </div>
-      ) : null}
-
-      {block.scenarios && block.scenarios.length > 0 ? (
-        <div className="space-y-6">
-          {block.scenarios.map((s) => (
-            <div key={s.provider} className="rounded-xl border border-gray-100 bg-white p-5 shadow-sm">
-              <h4 className="text-lg font-bold text-[#24282B] mb-2" style={{ fontFamily: "Montserrat, sans-serif" }}>
-                {s.provider}
-              </h4>
-              <p className="text-sm mb-4" style={{ fontFamily: "Raleway, sans-serif", color: "#555a5e" }}>
-                {s.details}
-              </p>
-              <dl className="grid gap-2 text-sm" style={{ fontFamily: "Raleway, sans-serif", color: "#555a5e" }}>
-                {Object.entries(s.projections).map(([k, v]) => (
-                  <div key={k} className="flex flex-wrap gap-2">
-                    <dt className="font-semibold text-[#24282B]">{formatFieldLabel(k)}:</dt>
-                    <dd>{v}</dd>
-                  </div>
-                ))}
-              </dl>
-            </div>
-          ))}
-        </div>
-      ) : null}
-
-      {block.segments && block.segments.length > 0 ? (
-        <div className="space-y-4">
-          {block.segments.map((seg, i) => (
-            <div key={i} className="rounded-xl border border-gray-100 bg-white p-5 shadow-sm">
-              {Object.entries(seg).map(([k, v]) => (
-                <p key={k} className="mb-2 last:mb-0 text-sm" style={{ fontFamily: "Raleway, sans-serif", color: "#555a5e" }}>
-                  <span className="font-semibold text-[#24282B]" style={{ fontFamily: "Montserrat, sans-serif" }}>
-                    {formatFieldLabel(k)}:{" "}
-                  </span>
-                  {v}
-                </p>
-              ))}
-            </div>
-          ))}
-        </div>
-      ) : null}
-
-      {block.examples && block.examples.length > 0 ? (
-        <ul className="space-y-4">
-          {block.examples.map((ex) => (
-            <li key={ex.provider} className="rounded-xl border border-gray-100 bg-white p-5 shadow-sm">
-              <p className="font-bold text-[#24282B] mb-2" style={{ fontFamily: "Montserrat, sans-serif" }}>
-                {ex.provider}
-              </p>
-              <p className="text-sm leading-relaxed" style={{ fontFamily: "Raleway, sans-serif", color: "#555a5e" }}>
-                {ex.positioning}
-              </p>
-            </li>
-          ))}
-        </ul>
-      ) : null}
-
-      {block.productLadder && block.productLadder.length > 0 ? (
-        <div className="rounded-xl border border-[#2CADB2]/30 bg-[#e8f7f7]/40 p-5">
-          <ul className="space-y-3">
-            {block.productLadder.map((r, i) => (
-              <li key={i} className="text-sm" style={{ fontFamily: "Raleway, sans-serif", color: "#555a5e" }}>
-                <span className="font-semibold text-[#24282B]">
-                  {r.from} → {r.to}
-                </span>
-                <span className="text-[#2CADB2]"> — </span>
-                {r.reason}
-              </li>
-            ))}
-          </ul>
-        </div>
-      ) : null}
-    </div>
+    <Link
+      href={href}
+      className="inline-flex w-fit items-center gap-2 rounded-full px-7 py-3 text-sm font-semibold text-[#24282B] shadow-sm transition hover:scale-[1.02] hover:shadow-md"
+      style={{ fontFamily: "Montserrat, sans-serif", backgroundColor: GOLD }}
+    >
+      {children}
+      <ArrowRight className="h-4 w-4" aria-hidden />
+    </Link>
   );
 }
 
-function TierObjectCard({ tier }: { tier: Record<string, string | number> }) {
+function CollapsibleDetails({ label, children }: { label: string; children: ReactNode }) {
   return (
-    <div className="rounded-xl border border-gray-100 bg-white p-5 shadow-sm">
-      <ul className="space-y-2 text-sm" style={{ fontFamily: "Raleway, sans-serif", color: "#555a5e" }}>
-        {Object.entries(tier).map(([k, v]) => (
-          <li key={k}>
-            <span className="font-semibold text-[#24282B]" style={{ fontFamily: "Montserrat, sans-serif" }}>
-              {formatFieldLabel(k)}:{" "}
-            </span>
-            {String(v)}
-          </li>
-        ))}
-      </ul>
+    <details className="group mt-8 border-t border-neutral-200/80 pt-6">
+      <summary className="cursor-pointer list-none text-sm font-semibold text-[#2CADB2] transition hover:text-[#249a9f] [&::-webkit-details-marker]:hidden">
+        <span className="inline-flex items-center gap-2">
+          {label}
+          <span className="text-neutral-400 transition group-open:rotate-180">▼</span>
+        </span>
+      </summary>
+      <div className="mt-5">{children}</div>
+    </details>
+  );
+}
+
+function SplitSection({
+  slug,
+  salt,
+  reverse,
+  bgClass,
+  kicker,
+  title,
+  blurb,
+  ctaHref,
+  ctaLabel,
+  details,
+  sectionId,
+}: {
+  slug: string;
+  salt: number;
+  reverse: boolean;
+  bgClass: string;
+  kicker: string;
+  title: string;
+  blurb: string;
+  ctaHref: string;
+  ctaLabel: string;
+  details?: ReactNode;
+  sectionId?: string;
+}) {
+  const images = getCustomerCarouselImages(slug, salt);
+  const copy = (
+    <div className="flex flex-col justify-center">
+      <p
+        className="mb-4 text-xs font-semibold uppercase tracking-[0.2em]"
+        style={{ fontFamily: "Montserrat, sans-serif", color: ACCENT }}
+      >
+        {kicker}
+      </p>
+      <h2
+        className="mb-5 text-3xl font-semibold tracking-tight text-[#24282B] md:text-4xl"
+        style={{ fontFamily: "Montserrat, sans-serif" }}
+      >
+        {title}
+      </h2>
+      {blurb ? (
+        <p className="mb-8 max-w-lg text-lg leading-relaxed text-neutral-600" style={{ fontFamily: "Raleway, sans-serif" }}>
+          {blurb}
+        </p>
+      ) : null}
+      <SectionCta href={ctaHref}>{ctaLabel}</SectionCta>
+      {details}
     </div>
   );
+  const visual = <CustomerImageCarousel images={images} />;
+
+  return (
+    <section id={sectionId} className={`scroll-mt-28 py-20 md:py-28 ${bgClass}`}>
+      <div className="mx-auto max-w-6xl px-6">
+        <div className="grid items-center gap-12 md:grid-cols-2 md:gap-16 lg:gap-20">
+          {reverse ? (
+            <>
+              {copy}
+              {visual}
+            </>
+          ) : (
+            <>
+              {visual}
+              {copy}
+            </>
+          )}
+        </div>
+      </div>
+    </section>
+  );
+}
+
+function blockLeadBlurb(block: SolutionBlock): string {
+  if (block.content) return toBlurb(block.content);
+  if (block.bundles?.length) return "A practical bundle matrix maps each package to products and commercial impact.";
+  if (block.scenarios?.length) return "Scenario-level projections show how the motion plays out by provider type.";
+  if (block.segments?.length) return "Segment-specific plays you can operationalize with your sales and marketing teams.";
+  if (block.examples?.length) return "Real-world positioning examples from comparable provider archetypes.";
+  if (block.productLadder?.length) return "Step-up paths from entry SKUs to higher-value services, with clear rationale.";
+  return "Open the full breakdown for tables, scenarios, and frameworks.";
 }
 
 export default function CustomerStoryPage({ content, breadcrumbGroup, sectionEyebrow }: CustomerStoryPageProps) {
@@ -156,403 +150,395 @@ export default function CustomerStoryPage({ content, breadcrumbGroup, sectionEye
     content;
 
   const secondaryHref = secondaryCtaHref(hero.cta.secondary);
+  let flip = false;
+  const nextFlip = () => {
+    const r = flip;
+    flip = !flip;
+    return r;
+  };
 
   return (
-    <main className="pt-24 pb-0">
-      <div className="max-w-7xl mx-auto px-6 pt-2 pb-4">
-        <nav className="text-sm text-gray-500" style={{ fontFamily: "Raleway, sans-serif" }}>
+    <main className="pb-0 pt-24">
+      <div className="mx-auto max-w-6xl px-6 pb-6 pt-2">
+        <nav className="text-sm text-neutral-500" style={{ fontFamily: "Raleway, sans-serif" }}>
           <Link href="/" className="hover:text-[#2CADB2]">
             Home
           </Link>
           <span className="mx-2">/</span>
-          <span className="text-gray-600">{breadcrumbGroup}</span>
+          <span className="text-neutral-600">{breadcrumbGroup}</span>
           <span className="mx-2">/</span>
-          <span className="text-gray-900">{content.label}</span>
+          <span className="text-neutral-900">{content.label}</span>
         </nav>
       </div>
 
-      <ProductSection variant="gray">
-        <section
-          className="rounded-3xl overflow-hidden border border-gray-100 p-8 md:p-12"
-          style={{ backgroundColor: "#f7f6f2" }}
-        >
-          <div className="max-w-4xl">
-            <div className="flex items-center gap-3 mb-5">
-              <div className="w-8 h-px" style={{ backgroundColor: "#2CADB2" }} />
-              <span className="section-label">{hero.eyebrow ?? sectionEyebrow}</span>
-            </div>
-            <h1
-              className="font-black leading-tight mb-4"
-              style={{
-                fontFamily: "Montserrat, sans-serif",
-                fontSize: "clamp(2rem, 4vw, 3.25rem)",
-                color: "#24282B",
-              }}
-            >
-              {hero.headline}
-            </h1>
-            <p
-              className="text-lg md:text-xl font-semibold leading-snug mb-4"
-              style={{ fontFamily: "Montserrat, sans-serif", color: "#2CADB2" }}
-            >
-              {hero.subheadline}
-            </p>
-            <p
-              className="text-base md:text-lg leading-relaxed mb-8"
-              style={{ fontFamily: "Raleway, sans-serif", color: "#555a5e" }}
-            >
+      <SplitSection
+        slug={content.slug}
+        salt={0}
+        reverse={nextFlip()}
+        bgClass="bg-[#fafaf9]"
+        kicker={hero.eyebrow ?? sectionEyebrow}
+        title={hero.headline}
+        blurb={[firstSentence(hero.subheadline), toBlurb(hero.description, 180)].filter(Boolean).join(" ")}
+        ctaHref="/contact"
+        ctaLabel={hero.cta.primary}
+        sectionId="customer-hero"
+        details={
+          <CollapsibleDetails label="More about this audience">
+            <p className="text-neutral-600 leading-relaxed" style={{ fontFamily: "Raleway, sans-serif" }}>
               {hero.description}
             </p>
-            <div className="flex flex-wrap gap-3">
-              <Link
-                href="/contact"
-                className="inline-flex items-center gap-2 font-bold px-8 py-3 rounded-full text-sm md:text-base transition-all duration-200 hover:scale-105 hover:shadow-lg"
-                style={{
-                  fontFamily: "Montserrat, sans-serif",
-                  backgroundColor: "#F8CF41",
-                  color: "#24282B",
-                }}
-              >
-                {hero.cta.primary}
-                <ArrowRight size={16} />
-              </Link>
-              <a
-                href={secondaryHref}
-                className="inline-flex items-center justify-center font-semibold px-8 py-3 rounded-full text-sm md:text-base border-2 transition-all duration-200 hover:bg-white/80"
-                style={{
-                  fontFamily: "Montserrat, sans-serif",
-                  borderColor: "#24282B",
-                  color: "#24282B",
-                }}
-              >
+            <p className="mt-4 text-sm text-neutral-500">
+              <Link href={secondaryHref} className="font-medium text-[#2CADB2] hover:underline">
                 {hero.cta.secondary}
-              </a>
-            </div>
-          </div>
-        </section>
-      </ProductSection>
+              </Link>
+            </p>
+          </CollapsibleDetails>
+        }
+      />
 
       {challenge ? (
-        <ProductSection variant="white">
-          <section id="customer-challenge" className="scroll-mt-28 max-w-4xl">
-            <div className="flex items-center gap-3 mb-5">
-              <div className="w-8 h-px" style={{ backgroundColor: "#2CADB2" }} />
-              <span className="section-label">The challenge</span>
-            </div>
-            <h2
-              className="font-bold leading-tight mb-4"
-              style={{
-                fontFamily: "Montserrat, sans-serif",
-                fontSize: "clamp(1.5rem, 3vw, 2.25rem)",
-                color: "#24282B",
-              }}
-            >
-              {challenge.heading}
-            </h2>
-            <p className="text-base md:text-lg leading-relaxed mb-6" style={{ fontFamily: "Raleway, sans-serif", color: "#555a5e" }}>
-              {challenge.content}
-            </p>
-            {challenge.callout ? (
-              <blockquote
-                className="border-l-4 pl-5 py-2 text-base md:text-lg font-medium italic"
-                style={{ borderColor: "#2CADB2", fontFamily: "Raleway, sans-serif", color: "#24282B" }}
-              >
-                {challenge.callout}
-              </blockquote>
-            ) : null}
-            {challenge.sources && challenge.sources.length > 0 ? (
-              <div className="mt-8 pt-6 border-t border-gray-100">
-                <p className="text-xs font-bold uppercase tracking-wider text-gray-400 mb-3" style={{ fontFamily: "Montserrat, sans-serif" }}>
-                  Sources
-                </p>
-                <ul className="space-y-2 text-sm text-gray-600" style={{ fontFamily: "Raleway, sans-serif" }}>
-                  {challenge.sources.map((s) => (
-                    <li key={s}>{s}</li>
-                  ))}
-                </ul>
-              </div>
-            ) : null}
-          </section>
-        </ProductSection>
+        <SplitSection
+          slug={content.slug}
+          salt={1}
+          reverse={nextFlip()}
+          bgClass="bg-white"
+          kicker="The challenge"
+          title={challenge.heading}
+          blurb={toBlurb(challenge.content)}
+          ctaHref="/contact"
+          ctaLabel="Discuss your situation"
+          sectionId="customer-challenge"
+          details={
+            <CollapsibleDetails label="Context, sources, and pull quote">
+              <p className="text-neutral-600 leading-relaxed" style={{ fontFamily: "Raleway, sans-serif" }}>
+                {challenge.content}
+              </p>
+              {challenge.callout ? (
+                <blockquote className="mt-6 border-l-4 pl-5 text-base font-medium italic text-[#24282B]" style={{ borderColor: ACCENT }}>
+                  {challenge.callout}
+                </blockquote>
+              ) : null}
+              {challenge.sources && challenge.sources.length > 0 ? (
+                <div className="mt-6">
+                  <p className="mb-2 text-xs font-bold uppercase tracking-wider text-neutral-400" style={{ fontFamily: "Montserrat, sans-serif" }}>
+                    Sources
+                  </p>
+                  <ul className="space-y-1 text-sm text-neutral-600" style={{ fontFamily: "Raleway, sans-serif" }}>
+                    {challenge.sources.map((s) => (
+                      <li key={s}>{s}</li>
+                    ))}
+                  </ul>
+                </div>
+              ) : null}
+            </CollapsibleDetails>
+          }
+        />
       ) : null}
 
       {solution ? (
-        <ProductSection variant="gray">
-          <section id="customer-solution" className="scroll-mt-28">
-            <div className="flex items-center gap-3 mb-5">
-              <div className="w-8 h-px" style={{ backgroundColor: "#2CADB2" }} />
-              <span className="section-label">The solution</span>
-            </div>
-            <h2
-              className="font-bold leading-tight mb-4 max-w-3xl"
-              style={{
-                fontFamily: "Montserrat, sans-serif",
-                fontSize: "clamp(1.5rem, 3vw, 2.25rem)",
-                color: "#24282B",
-              }}
-            >
-              {solution.heading}
-            </h2>
-            <p className="text-base md:text-lg leading-relaxed mb-10 max-w-3xl" style={{ fontFamily: "Raleway, sans-serif", color: "#555a5e" }}>
-              {solution.intro}
-            </p>
-            <div className="space-y-12">
-              {solution.blocks.map((block) => (
-                <div key={block.heading}>
-                  <h3
-                    className="text-xl font-bold mb-4"
-                    style={{ fontFamily: "Montserrat, sans-serif", color: "#24282B" }}
-                  >
-                    {block.heading}
-                  </h3>
-                  <SolutionBlockBody block={block} />
-                </div>
-              ))}
-            </div>
-          </section>
-        </ProductSection>
+        <>
+          <SplitSection
+            slug={content.slug}
+            salt={2}
+            reverse={nextFlip()}
+            bgClass="bg-[#f4f4f2]"
+            kicker="The solution"
+            title={solution.heading}
+            blurb={toBlurb(solution.intro)}
+            ctaHref="/contact"
+            ctaLabel="See how we partner"
+            sectionId="customer-solution"
+            details={
+              <CollapsibleDetails label="Full solution overview">
+                <p className="text-neutral-600 leading-relaxed" style={{ fontFamily: "Raleway, sans-serif" }}>
+                  {solution.intro}
+                </p>
+              </CollapsibleDetails>
+            }
+          />
+          {solution.blocks.map((block, i) => (
+            <SplitSection
+              key={block.heading}
+              slug={content.slug}
+              salt={10 + i}
+              reverse={nextFlip()}
+              bgClass={i % 2 === 0 ? "bg-white" : "bg-[#fafaf9]"}
+              kicker="Deep dive"
+              title={block.heading}
+              blurb={blockLeadBlurb(block)}
+              ctaHref="/contact"
+              ctaLabel="Explore with our team"
+              details={
+                <CollapsibleDetails label="Tables, scenarios, and frameworks">
+                  <SolutionBlockDetail block={block} />
+                </CollapsibleDetails>
+              }
+            />
+          ))}
+        </>
       ) : null}
 
       {bundleFrameworks ? (
-        <ProductSection variant="white">
-          <section className="scroll-mt-28">
-            <h2
-              className="font-bold leading-tight mb-8"
-              style={{
-                fontFamily: "Montserrat, sans-serif",
-                fontSize: "clamp(1.5rem, 3vw, 2.25rem)",
-                color: "#24282B",
-              }}
-            >
-              {bundleFrameworks.heading}
-            </h2>
-            <div className="space-y-12">
-              {bundleFrameworks.frameworks.map((fw) => (
-                <div key={fw.providerType}>
-                  <h3 className="text-lg font-bold mb-4 text-[#2CADB2]" style={{ fontFamily: "Montserrat, sans-serif" }}>
-                    {fw.providerType}
-                  </h3>
-                  <div className="grid gap-4 md:grid-cols-2">
-                    {fw.tiers.map((tier, i) => (
-                      <TierObjectCard key={i} tier={tier} />
-                    ))}
-                  </div>
-                </div>
-              ))}
-            </div>
-          </section>
-        </ProductSection>
+        <SplitSection
+          slug={content.slug}
+          salt={20}
+          reverse={nextFlip()}
+          bgClass="bg-[#f4f4f2]"
+          kicker="Bundle architecture"
+          title={bundleFrameworks.heading}
+          blurb="Tiered frameworks align SKUs with provider types so bundles stay simple to sell and defend."
+          ctaHref="/contact"
+          ctaLabel="Review frameworks"
+          details={
+            <CollapsibleDetails label="All tiers and provider types">
+              <BundleFrameworksDetail bundleFrameworks={bundleFrameworks} />
+            </CollapsibleDetails>
+          }
+        />
       ) : null}
 
       {whyBundlesWork ? (
-        <ProductSection variant="gray">
-          <section>
-            <h2
-              className="font-bold leading-tight mb-8"
-              style={{
-                fontFamily: "Montserrat, sans-serif",
-                fontSize: "clamp(1.5rem, 3vw, 2.25rem)",
-                color: "#24282B",
-              }}
-            >
-              {whyBundlesWork.heading}
-            </h2>
-            <div className="grid md:grid-cols-3 gap-6">
-              {whyBundlesWork.perspectives.map((p) => (
-                <div key={p.for} className="rounded-xl border border-gray-100 bg-white p-6 shadow-sm">
-                  <p className="font-bold text-[#2CADB2] mb-3" style={{ fontFamily: "Montserrat, sans-serif" }}>
-                    {p.for}
-                  </p>
-                  <p className="text-sm leading-relaxed" style={{ fontFamily: "Raleway, sans-serif", color: "#555a5e" }}>
-                    {p.benefit}
-                  </p>
-                </div>
-              ))}
-            </div>
-          </section>
-        </ProductSection>
+        <SplitSection
+          slug={content.slug}
+          salt={21}
+          reverse={nextFlip()}
+          bgClass="bg-white"
+          kicker="Why bundles work"
+          title={whyBundlesWork.heading}
+          blurb={toBlurb(whyBundlesWork.perspectives.map((p) => p.benefit).join(" "), 200)}
+          ctaHref="/contact"
+          ctaLabel="Build a bundle plan"
+          details={
+            <CollapsibleDetails label="Perspectives by stakeholder">
+              <div className="grid gap-4 sm:grid-cols-3">
+                {whyBundlesWork.perspectives.map((p) => (
+                  <div key={p.for} className="rounded-xl border border-neutral-200/80 bg-[#fafaf9] p-5">
+                    <p className="mb-2 text-sm font-semibold" style={{ color: ACCENT, fontFamily: "Montserrat, sans-serif" }}>
+                      {p.for}
+                    </p>
+                    <p className="text-sm leading-relaxed text-neutral-600" style={{ fontFamily: "Raleway, sans-serif" }}>
+                      {p.benefit}
+                    </p>
+                  </div>
+                ))}
+              </div>
+            </CollapsibleDetails>
+          }
+        />
       ) : null}
 
       {whyNow ? (
-        <ProductSection variant="white">
-          <section className="max-w-4xl">
-            <h2
-              className="font-bold leading-tight mb-4"
-              style={{
-                fontFamily: "Montserrat, sans-serif",
-                fontSize: "clamp(1.5rem, 3vw, 2.25rem)",
-                color: "#24282B",
-              }}
-            >
-              {whyNow.heading}
-            </h2>
-            <p className="text-base md:text-lg leading-relaxed" style={{ fontFamily: "Raleway, sans-serif", color: "#555a5e" }}>
-              {whyNow.content}
-            </p>
-          </section>
-        </ProductSection>
+        <SplitSection
+          slug={content.slug}
+          salt={22}
+          reverse={nextFlip()}
+          bgClass="bg-[#fafaf9]"
+          kicker="Why now"
+          title={whyNow.heading}
+          blurb={toBlurb(whyNow.content)}
+          ctaHref="/contact"
+          ctaLabel="Plan your timeline"
+          details={
+            <CollapsibleDetails label="Full narrative">
+              <p className="text-neutral-600 leading-relaxed" style={{ fontFamily: "Raleway, sans-serif" }}>
+                {whyNow.content}
+              </p>
+            </CollapsibleDetails>
+          }
+        />
       ) : null}
 
       {outcomes ? (
-        <ProductSection variant="gray">
-          <section>
-            <h2
-              className="font-bold leading-tight mb-8 text-center max-w-3xl mx-auto"
-              style={{
-                fontFamily: "Montserrat, sans-serif",
-                fontSize: "clamp(1.5rem, 3vw, 2.25rem)",
-                color: "#24282B",
-              }}
-            >
-              {outcomes.heading}
-            </h2>
-            <div className="grid md:grid-cols-2 gap-6">
-              {outcomes.cards.map((card) => (
-                <div key={card.title} className="rounded-xl border border-gray-100 bg-white p-6 shadow-sm">
-                  <h3 className="text-lg font-bold mb-2" style={{ fontFamily: "Montserrat, sans-serif", color: "#24282B" }}>
-                    {card.title}
-                  </h3>
-                  <p className="text-sm leading-relaxed" style={{ fontFamily: "Raleway, sans-serif", color: "#555a5e" }}>
-                    {card.body}
-                  </p>
-                </div>
-              ))}
-            </div>
-          </section>
-        </ProductSection>
+        <SplitSection
+          slug={content.slug}
+          salt={23}
+          reverse={nextFlip()}
+          bgClass="bg-white"
+          kicker="Outcomes"
+          title={outcomes.heading}
+          blurb={outcomes.cards[0] ? firstSentence(outcomes.cards[0].body) : toBlurb(outcomes.heading)}
+          ctaHref="/contact"
+          ctaLabel="Model your outcomes"
+          details={
+            <CollapsibleDetails label="All outcome areas">
+              <div className="grid gap-4 sm:grid-cols-2">
+                {outcomes.cards.map((card) => (
+                  <div key={card.title} className="rounded-xl border border-neutral-200/80 bg-[#fafaf9] p-5">
+                    <h3 className="mb-2 text-base font-semibold text-[#24282B]" style={{ fontFamily: "Montserrat, sans-serif" }}>
+                      {card.title}
+                    </h3>
+                    <p className="text-sm leading-relaxed text-neutral-600" style={{ fontFamily: "Raleway, sans-serif" }}>
+                      {card.body}
+                    </p>
+                  </div>
+                ))}
+              </div>
+            </CollapsibleDetails>
+          }
+        />
       ) : null}
 
       {migrationScenarios ? (
-        <ProductSection variant="white">
-          <section>
-            <h2
-              className="font-bold leading-tight mb-8"
-              style={{
-                fontFamily: "Montserrat, sans-serif",
-                fontSize: "clamp(1.5rem, 3vw, 2.25rem)",
-                color: "#24282B",
-              }}
-            >
-              {migrationScenarios.heading}
-            </h2>
-            <div className="grid md:grid-cols-2 gap-6">
-              {migrationScenarios.cards.map((card) => (
-                <div key={card.title} className="rounded-xl border border-gray-100 bg-[#f7f6f2] p-6">
-                  <h3 className="text-lg font-bold mb-2" style={{ fontFamily: "Montserrat, sans-serif", color: "#24282B" }}>
-                    {card.title}
-                  </h3>
-                  <p className="text-sm leading-relaxed" style={{ fontFamily: "Raleway, sans-serif", color: "#555a5e" }}>
-                    {card.body}
-                  </p>
-                </div>
-              ))}
-            </div>
-          </section>
-        </ProductSection>
+        <SplitSection
+          slug={content.slug}
+          salt={24}
+          reverse={nextFlip()}
+          bgClass="bg-[#f4f4f2]"
+          kicker="Migration"
+          title={migrationScenarios.heading}
+          blurb={
+            migrationScenarios.cards[0]
+              ? firstSentence(migrationScenarios.cards[0].body)
+              : "How teams consolidate or win back base with a managed migration motion."
+          }
+          ctaHref="/contact"
+          ctaLabel="Talk migrations"
+          details={
+            <CollapsibleDetails label="All scenarios">
+              <div className="grid gap-4 sm:grid-cols-2">
+                {migrationScenarios.cards.map((card) => (
+                  <div key={card.title} className="rounded-xl border border-neutral-200/80 bg-white p-5">
+                    <h3 className="mb-2 text-base font-semibold text-[#24282B]" style={{ fontFamily: "Montserrat, sans-serif" }}>
+                      {card.title}
+                    </h3>
+                    <p className="text-sm leading-relaxed text-neutral-600" style={{ fontFamily: "Raleway, sans-serif" }}>
+                      {card.body}
+                    </p>
+                  </div>
+                ))}
+              </div>
+            </CollapsibleDetails>
+          }
+        />
       ) : null}
 
       {retentionByProvider ? (
-        <ProductSection variant="gray">
-          <section>
-            <h2
-              className="font-bold leading-tight mb-8"
-              style={{
-                fontFamily: "Montserrat, sans-serif",
-                fontSize: "clamp(1.5rem, 3vw, 2.25rem)",
-                color: "#24282B",
-              }}
-            >
-              {retentionByProvider.heading}
-            </h2>
-            <div className="grid md:grid-cols-2 gap-6">
-              {retentionByProvider.cards.map((card, i) => (
-                <div key={i} className="rounded-xl border border-gray-100 bg-white p-6 shadow-sm">
-                  {"provider" in card && card.provider ? (
-                    <h3 className="text-lg font-bold mb-2 text-[#2CADB2]" style={{ fontFamily: "Montserrat, sans-serif" }}>
-                      {card.provider}
-                    </h3>
-                  ) : null}
-                  {"strategy" in card && card.strategy ? (
-                    <p className="text-sm leading-relaxed" style={{ fontFamily: "Raleway, sans-serif", color: "#555a5e" }}>
-                      {card.strategy}
-                    </p>
-                  ) : null}
-                </div>
-              ))}
-            </div>
-          </section>
-        </ProductSection>
+        <SplitSection
+          slug={content.slug}
+          salt={25}
+          reverse={nextFlip()}
+          bgClass="bg-white"
+          kicker="Retention"
+          title={retentionByProvider.heading}
+          blurb="Keep revenue sticky with bundles, lifecycle touchpoints, and provider-specific plays."
+          ctaHref="/contact"
+          ctaLabel="Strengthen retention"
+          details={
+            <CollapsibleDetails label="Plays by provider type">
+              <div className="grid gap-4 sm:grid-cols-2">
+                {retentionByProvider.cards.map((card, i) => (
+                  <div key={i} className="rounded-xl border border-neutral-200/80 bg-[#fafaf9] p-5">
+                    {"provider" in card && card.provider ? (
+                      <h3 className="mb-2 text-base font-semibold" style={{ color: ACCENT, fontFamily: "Montserrat, sans-serif" }}>
+                        {card.provider}
+                      </h3>
+                    ) : null}
+                    {"strategy" in card && card.strategy ? (
+                      <p className="text-sm leading-relaxed text-neutral-600" style={{ fontFamily: "Raleway, sans-serif" }}>
+                        {card.strategy}
+                      </p>
+                    ) : null}
+                  </div>
+                ))}
+              </div>
+            </CollapsibleDetails>
+          }
+        />
       ) : null}
 
       {stats && stats.length > 0 ? (
-        <section className="py-[60px]" style={{ backgroundColor: "#24282B" }}>
-          <div className="max-w-7xl mx-auto px-6">
-            <div className="grid grid-cols-2 lg:grid-cols-3 gap-8">
-              {stats.map((s) => (
-                <div key={s.label} className="text-center">
-                  <p className="font-black text-2xl md:text-3xl mb-2" style={{ fontFamily: "Montserrat, sans-serif", color: "#2CADB2" }}>
-                    {s.value}
-                  </p>
-                  <p className="text-sm md:text-base text-gray-300" style={{ fontFamily: "Raleway, sans-serif" }}>
-                    {s.label}
-                  </p>
+        <section className="bg-[#f4f4f2] py-20 md:py-28">
+          <div className="mx-auto max-w-6xl px-6">
+            <div className="grid items-center gap-12 md:grid-cols-2 md:gap-16">
+              <CustomerImageCarousel images={getCustomerCarouselImages(content.slug, 30)} />
+              <div>
+                <p
+                  className="mb-4 text-xs font-semibold uppercase tracking-[0.2em]"
+                  style={{ fontFamily: "Montserrat, sans-serif", color: ACCENT }}
+                >
+                  Signal
+                </p>
+                <h2 className="mb-10 text-3xl font-semibold tracking-tight text-[#24282B] md:text-4xl" style={{ fontFamily: "Montserrat, sans-serif" }}>
+                  By the numbers
+                </h2>
+                <div className="grid grid-cols-2 gap-8">
+                  {stats.map((s) => (
+                    <div key={s.label}>
+                      <p className="text-2xl font-semibold md:text-3xl" style={{ fontFamily: "Montserrat, sans-serif", color: ACCENT }}>
+                        {s.value}
+                      </p>
+                      <p className="mt-1 text-sm leading-snug text-neutral-600" style={{ fontFamily: "Raleway, sans-serif" }}>
+                        {s.label}
+                      </p>
+                    </div>
+                  ))}
                 </div>
-              ))}
+                <div className="mt-10">
+                  <SectionCta href="/contact">Validate with our team</SectionCta>
+                </div>
+              </div>
             </div>
           </div>
         </section>
       ) : null}
 
       {faq && faq.length > 0 ? (
-        <ProductSection variant="white">
-          <section className="max-w-3xl">
-            <div className="flex items-center gap-3 mb-8">
-              <div className="w-8 h-px" style={{ backgroundColor: "#2CADB2" }} />
-              <span className="section-label">FAQ</span>
-            </div>
-            <div className="space-y-8">
-              {faq.map((item) => (
-                <div key={item.q.slice(0, 48)}>
-                  <h3 className="text-lg font-bold mb-2" style={{ fontFamily: "Montserrat, sans-serif", color: "#24282B" }}>
-                    {item.q}
-                  </h3>
-                  <p className="text-sm md:text-base leading-relaxed" style={{ fontFamily: "Raleway, sans-serif", color: "#555a5e" }}>
-                    {item.a}
-                  </p>
-                </div>
-              ))}
-            </div>
-          </section>
-        </ProductSection>
+        <SplitSection
+          slug={content.slug}
+          salt={31}
+          reverse={nextFlip()}
+          bgClass="bg-white"
+          kicker="FAQ"
+          title="Questions we hear often"
+          blurb={toBlurb(faq[0].a, 200)}
+          ctaHref="/contact"
+          ctaLabel="Ask us anything"
+          details={
+            <CollapsibleDetails label="All questions">
+              <div className="space-y-8">
+                {faq.map((item) => (
+                  <div key={item.q.slice(0, 48)}>
+                    <h3 className="mb-2 text-base font-semibold text-[#24282B]" style={{ fontFamily: "Montserrat, sans-serif" }}>
+                      {item.q}
+                    </h3>
+                    <p className="text-sm leading-relaxed text-neutral-600" style={{ fontFamily: "Raleway, sans-serif" }}>
+                      {item.a}
+                    </p>
+                  </div>
+                ))}
+              </div>
+            </CollapsibleDetails>
+          }
+        />
       ) : null}
 
-      <section className="py-[60px]" style={{ backgroundColor: "#24282B" }}>
-        <div className="max-w-7xl mx-auto px-6 text-center">
-          <h2
-            className="font-bold leading-tight mb-4 max-w-3xl mx-auto"
-            style={{
-              fontFamily: "Montserrat, sans-serif",
-              fontSize: "clamp(1.5rem, 3vw, 2.25rem)",
-              color: "#ffffff",
-            }}
-          >
-            {cta.headline}
-          </h2>
-          <p className="text-base md:text-lg leading-relaxed mb-8 max-w-2xl mx-auto text-gray-300" style={{ fontFamily: "Raleway, sans-serif" }}>
-            {cta.body}
-          </p>
-          <Link
-            href="/contact"
-            className="inline-flex items-center gap-2 font-bold px-8 py-3 rounded-full text-sm md:text-base transition-all duration-200 hover:scale-105"
-            style={{
-              fontFamily: "Montserrat, sans-serif",
-              backgroundColor: "#F8CF41",
-              color: "#24282B",
-            }}
-          >
-            {cta.buttonText}
-            <ArrowRight size={16} />
-          </Link>
+      <section className="bg-[#fafaf9] py-20 md:py-28">
+        <div className="mx-auto max-w-6xl px-6">
+          <div className="grid items-center gap-12 md:grid-cols-2 md:gap-16">
+            <div className="order-2 md:order-1">
+              <p
+                className="mb-4 text-xs font-semibold uppercase tracking-[0.2em]"
+                style={{ fontFamily: "Montserrat, sans-serif", color: ACCENT }}
+              >
+                Next step
+              </p>
+              <h2 className="mb-5 text-3xl font-semibold tracking-tight text-[#24282B] md:text-4xl" style={{ fontFamily: "Montserrat, sans-serif" }}>
+                {cta.headline}
+              </h2>
+              <p className="mb-8 max-w-lg text-lg leading-relaxed text-neutral-600" style={{ fontFamily: "Raleway, sans-serif" }}>
+                {toBlurb(cta.body, 240)}
+              </p>
+              <SectionCta href="/contact">{cta.buttonText}</SectionCta>
+              <CollapsibleDetails label="Full message">
+                <p className="text-neutral-600 leading-relaxed" style={{ fontFamily: "Raleway, sans-serif" }}>
+                  {cta.body}
+                </p>
+              </CollapsibleDetails>
+            </div>
+            <div className="order-1 md:order-2">
+              <CustomerImageCarousel images={getCustomerCarouselImages(content.slug, 40)} />
+            </div>
+          </div>
         </div>
       </section>
     </main>
