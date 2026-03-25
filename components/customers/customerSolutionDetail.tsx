@@ -7,10 +7,17 @@ function formatFieldLabel(key: string): string {
     .trim();
 }
 
-export function SolutionBlockDetail({ block }: { block: SolutionBlock }) {
+export function SolutionBlockDetail({
+  block,
+  skipContentParagraph,
+}: {
+  block: SolutionBlock;
+  /** When the intro paragraph is shown in the section blurb, omit it here to avoid duplication. */
+  skipContentParagraph?: boolean;
+}) {
   return (
     <div className="space-y-6 pt-2 text-sm leading-relaxed text-neutral-600">
-      {block.content ? <p>{block.content}</p> : null}
+      {block.content && !skipContentParagraph ? <p>{block.content}</p> : null}
 
       {block.bundles && block.bundles.length > 0 ? (
         <div className="overflow-x-auto rounded-xl border border-neutral-200/80 bg-white">

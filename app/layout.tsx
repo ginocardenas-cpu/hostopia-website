@@ -1,5 +1,8 @@
 import type { Metadata } from "next";
+import { config } from "@fortawesome/fontawesome-svg-core";
 import "./globals.css";
+
+config.autoAddCss = false;
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 

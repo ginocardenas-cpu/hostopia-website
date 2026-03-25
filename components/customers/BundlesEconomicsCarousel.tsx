@@ -123,16 +123,24 @@ export default function BundlesEconomicsCarousel({
         ) : null}
       </div>
 
-      <div className="grid gap-4 md:grid-cols-3">
-        {perspectives.map((_, boxIdx) => {
-          const p = perspectives[(index + boxIdx) % n];
+      <div className="grid gap-4 md:grid-cols-3 md:items-stretch">
+        {perspectives.map((p, i) => {
+          const active = i === index;
           return (
             <motion.div
-              key={`${index}-${boxIdx}`}
-              initial={{ opacity: 0.45, y: 8 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.35, delay: boxIdx * 0.07 }}
-              className="rounded-2xl border border-neutral-200/80 bg-[#fafaf9] p-6 text-left shadow-sm"
+              key={p.for}
+              layout
+              initial={false}
+              animate={{
+                scale: active ? 1 : 0.98,
+                opacity: active ? 1 : 0.88,
+              }}
+              transition={{ type: "spring", stiffness: 380, damping: 28 }}
+              className={`rounded-2xl border p-6 text-left shadow-sm transition-colors duration-300 ${
+                active
+                  ? "border-[#2CADB2] bg-[#e8faf9] shadow-lg shadow-[#2CADB2]/15 ring-2 ring-[#2CADB2]/25"
+                  : "border-neutral-200/80 bg-[#fafaf9]"
+              }`}
             >
               <p className="mb-2 text-sm font-semibold" style={{ color: ACCENT, fontFamily: "Montserrat, sans-serif" }}>
                 {p.for}

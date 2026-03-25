@@ -2,6 +2,7 @@ import Link from "next/link";
 import type { ReactNode } from "react";
 import { ArrowRight } from "lucide-react";
 import CustomerStaticImage from "@/components/customers/CustomerStaticImage";
+import { MarketingFaIcon } from "@/components/marketing/MarketingFaIcon";
 import { ProgramIcon } from "@/components/programs/programIcon";
 
 export const MARKETING_ACCENT = "#2CADB2";
@@ -122,6 +123,8 @@ type MarketingCenteredSectionProps = {
   kicker: string;
   title: string;
   blurb: string;
+  /** Rich content after the blurb, before the hero image (not inside a collapsible). */
+  appendBeforeImage?: ReactNode;
   details?: ReactNode;
   afterImage?: ReactNode;
   sectionId?: string;
@@ -135,6 +138,7 @@ export function MarketingCenteredSection({
   kicker,
   title,
   blurb,
+  appendBeforeImage,
   details,
   afterImage,
   sectionId,
@@ -155,6 +159,7 @@ export function MarketingCenteredSection({
             {blurb}
           </p>
         ) : null}
+        {appendBeforeImage ? <div className="mx-auto mb-10 max-w-3xl text-left">{appendBeforeImage}</div> : null}
         {details}
         <div className="mt-12">
           <CustomerStaticImage slug={slug} salt={salt} className="w-full" />
@@ -173,6 +178,7 @@ type MarketingSplitSectionProps = {
   kicker: string;
   title: string;
   blurb: string;
+  appendBeforeImage?: ReactNode;
   details?: ReactNode;
   sectionId?: string;
   visual?: ReactNode;
@@ -186,6 +192,7 @@ export function MarketingSplitSection({
   kicker,
   title,
   blurb,
+  appendBeforeImage,
   details,
   sectionId,
   visual,
@@ -206,6 +213,7 @@ export function MarketingSplitSection({
           {blurb}
         </p>
       ) : null}
+      {appendBeforeImage ? <div className="mb-6 max-w-xl">{appendBeforeImage}</div> : null}
       {details}
     </div>
   );
@@ -240,9 +248,17 @@ type MarketingDarkIconSectionProps = {
   heading: string;
   items: DarkIconItem[];
   sectionId?: string;
+  /** Customer story pages use Font Awesome for a distinct, polished B2B icon treatment. */
+  useFontAwesomeIcons?: boolean;
 };
 
-export function MarketingDarkIconSection({ eyebrow, heading, items, sectionId }: MarketingDarkIconSectionProps) {
+export function MarketingDarkIconSection({
+  eyebrow,
+  heading,
+  items,
+  sectionId,
+  useFontAwesomeIcons = false,
+}: MarketingDarkIconSectionProps) {
   return (
     <section id={sectionId} className="scroll-mt-28 py-20 md:py-28" style={{ backgroundColor: MARKETING_DARK_BG }}>
       <div className="mx-auto max-w-6xl px-6">
@@ -261,7 +277,11 @@ export function MarketingDarkIconSection({ eyebrow, heading, items, sectionId }:
         <div className="grid gap-6 md:grid-cols-2">
           {items.map((item) => (
             <div key={item.title} className="rounded-2xl border border-white/10 bg-white/5 p-6">
-              <ProgramIcon name={item.icon} className="mb-4" size={26} />
+              {useFontAwesomeIcons ? (
+                <MarketingFaIcon name={item.icon} className="mb-4" size={26} />
+              ) : (
+                <ProgramIcon name={item.icon} className="mb-4" size={26} />
+              )}
               <h3 className="mb-2 text-lg font-semibold text-white" style={{ fontFamily: "Montserrat, sans-serif" }}>
                 {item.title}
               </h3>
@@ -282,9 +302,10 @@ type MarketingDarkStatsSectionProps = {
   heading: string;
   items: StatLine[];
   sectionId?: string;
+  useFontAwesomeIcons?: boolean;
 };
 
-export function MarketingDarkStatsSection({ heading, items, sectionId }: MarketingDarkStatsSectionProps) {
+export function MarketingDarkStatsSection({ heading, items, sectionId, useFontAwesomeIcons = false }: MarketingDarkStatsSectionProps) {
   return (
     <section id={sectionId} className="py-20 md:py-28" style={{ backgroundColor: MARKETING_DARK_BG }}>
       <div className="mx-auto max-w-6xl px-6 text-center">
@@ -301,7 +322,11 @@ export function MarketingDarkStatsSection({ heading, items, sectionId }: Marketi
               className="flex w-[calc(50%-1.25rem)] max-w-[220px] flex-col items-center text-center sm:w-40 sm:max-w-none md:w-44"
             >
               <div className="mb-3 flex justify-center">
-                <ProgramIcon name={STAT_ICON_CYCLE[i % STAT_ICON_CYCLE.length]} size={28} />
+                {useFontAwesomeIcons ? (
+                  <MarketingFaIcon name={STAT_ICON_CYCLE[i % STAT_ICON_CYCLE.length]} size={28} />
+                ) : (
+                  <ProgramIcon name={STAT_ICON_CYCLE[i % STAT_ICON_CYCLE.length]} size={28} />
+                )}
               </div>
               <p className="mb-2 text-3xl font-semibold md:text-4xl" style={{ fontFamily: "Montserrat, sans-serif", color: MARKETING_ACCENT }}>
                 {item.stat}
@@ -322,15 +347,18 @@ export function MarketingDarkStatsSectionFromCustomer({
   heading,
   stats,
   sectionId,
+  useFontAwesomeIcons,
 }: {
   heading: string;
   stats: Array<{ value: string; label: string }>;
   sectionId?: string;
+  useFontAwesomeIcons?: boolean;
 }) {
   return MarketingDarkStatsSection({
     heading,
     items: stats.map((s) => ({ stat: s.value, label: s.label })),
     sectionId,
+    useFontAwesomeIcons,
   });
 }
 

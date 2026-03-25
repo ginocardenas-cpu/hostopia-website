@@ -4,6 +4,7 @@ import BundlesEconomicsCarousel from "@/components/customers/BundlesEconomicsCar
 import CustomerStaticImage from "@/components/customers/CustomerStaticImage";
 import { BundleFrameworksDetail, SolutionBlockDetail } from "@/components/customers/customerSolutionDetail";
 import { getCustomerCarouselImages } from "@/lib/customer-carousel-images";
+import { splitLeadRest } from "@/lib/customer-copy-split";
 import {
   CollapsibleDetails,
   heroImageOnLeft,
@@ -35,12 +36,6 @@ function toBlurb(text: string, maxLen = 220): string {
   return (lastSpace > 40 ? cut.slice(0, lastSpace) : cut).trim() + "…";
 }
 
-function firstSentence(text: string): string {
-  const t = text.replace(/\s+/g, " ").trim();
-  const m = t.match(/^(.+?[.!?])(\s|$)/);
-  return m ? m[1] : toBlurb(t, 160);
-}
-
 function secondaryCtaHref(label: string): string {
   const low = label.toLowerCase();
   if (low.includes("portfolio") || low.includes("product")) return "/products";
@@ -54,17 +49,7 @@ function blockLeadBlurb(block: SolutionBlock): string {
   if (block.segments?.length) return "Segment-specific plays you can operationalize with your sales and marketing teams.";
   if (block.examples?.length) return "Real-world positioning examples from comparable provider archetypes.";
   if (block.productLadder?.length) return "Step-up paths from entry SKUs to higher-value services, with clear rationale.";
-  return "Open the full breakdown for tables, scenarios, and frameworks.";
-}
-
-function solutionIntroDetails(solution: CustomerSolution) {
-  return (
-    <CollapsibleDetails label="Full solution overview">
-      <p className="text-neutral-600 leading-relaxed" style={{ fontFamily: "Raleway, sans-serif" }}>
-        {solution.intro}
-      </p>
-    </CollapsibleDetails>
-  );
+  return "Structured breakdowns, tables, and frameworks for this topic.";
 }
 
 type FirstCentered = {
@@ -73,7 +58,7 @@ type FirstCentered = {
   blurb: string;
   salt: number;
   sectionId?: string;
-  details: ReactNode;
+  appendBeforeImage: ReactNode;
   consumesBundleFrameworks: boolean;
   consumesSolutionIntro: boolean;
 };
@@ -81,30 +66,36 @@ type FirstCentered = {
 function resolveFirstCentered(content: CustomerStoryContent): FirstCentered | null {
   if (content.challenge) {
     const ch = content.challenge;
+    const { lead, rest } = splitLeadRest(ch.content, 2);
     return {
       kicker: "The challenge",
       title: ch.heading,
-      blurb: toBlurb(ch.content),
+      blurb: lead,
       salt: 1,
       sectionId: "customer-challenge",
       consumesBundleFrameworks: false,
       consumesSolutionIntro: false,
-      details: (
-        <CollapsibleDetails label="Context, sources, and pull quote">
-          <p className="text-neutral-600 leading-relaxed" style={{ fontFamily: "Raleway, sans-serif" }}>
-            {ch.content}
-          </p>
+      appendBeforeImage: (
+        <div className="space-y-6">
+          {rest ? (
+            <p className="leading-relaxed text-neutral-600" style={{ fontFamily: "Raleway, sans-serif" }}>
+              {rest}
+            </p>
+          ) : null}
           {ch.callout ? (
             <blockquote
-              className="mt-6 border-l-4 pl-5 text-base font-medium italic text-[#24282B]"
+              className="border-l-4 pl-5 text-base font-medium italic text-[#24282B]"
               style={{ borderColor: MARKETING_ACCENT }}
             >
               {ch.callout}
             </blockquote>
           ) : null}
           {ch.sources && ch.sources.length > 0 ? (
-            <div className="mt-6">
-              <p className="mb-2 text-xs font-bold uppercase tracking-wider text-neutral-400" style={{ fontFamily: "Montserrat, sans-serif" }}>
+            <div>
+              <p
+                className="mb-2 text-xs font-bold uppercase tracking-wider text-neutral-400"
+                style={{ fontFamily: "Montserrat, sans-serif" }}
+              >
                 Sources
               </p>
               <ul className="space-y-1 text-sm text-neutral-600" style={{ fontFamily: "Raleway, sans-serif" }}>
@@ -114,21 +105,27 @@ function resolveFirstCentered(content: CustomerStoryContent): FirstCentered | nu
               </ul>
             </div>
           ) : null}
-        </CollapsibleDetails>
+        </div>
       ),
     };
   }
   if (content.solution) {
     const sol = content.solution;
+    const { lead, rest } = splitLeadRest(sol.intro, 2);
     return {
       kicker: "The solution",
       title: sol.heading,
-      blurb: toBlurb(sol.intro),
+      blurb: lead,
       salt: 2,
       sectionId: "customer-solution",
       consumesBundleFrameworks: false,
       consumesSolutionIntro: true,
-      details: solutionIntroDetails(sol),
+      appendBeforeImage:
+        rest ? (
+          <p className="leading-relaxed text-neutral-600" style={{ fontFamily: "Raleway, sans-serif" }}>
+            {rest}
+          </p>
+        ) : null,
     };
   }
   if (content.bundleFrameworks) {
@@ -140,11 +137,7 @@ function resolveFirstCentered(content: CustomerStoryContent): FirstCentered | nu
       salt: 20,
       consumesBundleFrameworks: true,
       consumesSolutionIntro: false,
-      details: (
-        <CollapsibleDetails label="All tiers and provider types">
-          <BundleFrameworksDetail bundleFrameworks={bf} />
-        </CollapsibleDetails>
-      ),
+      appendBeforeImage: <BundleFrameworksDetail bundleFrameworks={bf} />,
     };
   }
   return null;
@@ -158,6 +151,10 @@ export default function CustomerStoryPage({ content, breadcrumbGroup, sectionEye
   const isBundlesGoalPage = content.slug === BUNDLES_GOAL_SLUG;
   const firstCentered = resolveFirstCentered(content);
 
+  const heroNarrative = [hero.subheadline, hero.description].filter(Boolean).join(" ");
+  const { lead: heroLead, rest: heroRest } = splitLeadRest(heroNarrative, 3);
+  const { lead: ctaLead, rest: ctaRest } = splitLeadRest(cta.body, 2);
+
   let splitIdx = 0;
   const nextSplitIndex = () => splitIdx++;
 
@@ -167,6 +164,7 @@ export default function CustomerStoryPage({ content, breadcrumbGroup, sectionEye
   const middleNodes: ReactNode[] = [];
 
   if (challenge && solution && !skipSolutionIntro) {
+    const { lead, rest } = splitLeadRest(solution.intro, 2);
     middleNodes.push(
       <MarketingSplitSection
         key="solution-intro"
@@ -176,15 +174,40 @@ export default function CustomerStoryPage({ content, breadcrumbGroup, sectionEye
         bgClass="bg-[#f4f4f2]"
         kicker="The solution"
         title={solution.heading}
-        blurb={toBlurb(solution.intro)}
+        blurb={lead}
+        appendBeforeImage={
+          rest ? (
+            <p className="text-sm leading-relaxed text-neutral-600" style={{ fontFamily: "Raleway, sans-serif" }}>
+              {rest}
+            </p>
+          ) : null
+        }
         sectionId="customer-solution"
-        details={solutionIntroDetails(solution)}
       />,
     );
   }
 
   if (solution) {
     solution.blocks.forEach((block, i) => {
+      let blurb: string;
+      let appendBeforeImage: ReactNode;
+      if (block.content) {
+        const { lead, rest } = splitLeadRest(block.content, 2);
+        blurb = lead;
+        appendBeforeImage = (
+          <>
+            {rest ? (
+              <p className="mb-6 text-sm leading-relaxed text-neutral-600" style={{ fontFamily: "Raleway, sans-serif" }}>
+                {rest}
+              </p>
+            ) : null}
+            <SolutionBlockDetail block={block} skipContentParagraph />
+          </>
+        );
+      } else {
+        blurb = blockLeadBlurb(block);
+        appendBeforeImage = <SolutionBlockDetail block={block} />;
+      }
       middleNodes.push(
         <MarketingSplitSection
           key={`block-${block.heading}`}
@@ -194,12 +217,8 @@ export default function CustomerStoryPage({ content, breadcrumbGroup, sectionEye
           bgClass={i % 2 === 0 ? "bg-white" : "bg-[#fafaf9]"}
           kicker="Deep dive"
           title={block.heading}
-          blurb={blockLeadBlurb(block)}
-          details={
-            <CollapsibleDetails label="Tables, scenarios, and frameworks">
-              <SolutionBlockDetail block={block} />
-            </CollapsibleDetails>
-          }
+          blurb={blurb}
+          appendBeforeImage={appendBeforeImage}
         />,
       );
     });
@@ -216,11 +235,7 @@ export default function CustomerStoryPage({ content, breadcrumbGroup, sectionEye
         kicker="Bundle architecture"
         title={bundleFrameworks.heading}
         blurb="Tiered frameworks align SKUs with provider types so bundles stay simple to sell and defend."
-        details={
-          <CollapsibleDetails label="All tiers and provider types">
-            <BundleFrameworksDetail bundleFrameworks={bundleFrameworks} />
-          </CollapsibleDetails>
-        }
+        appendBeforeImage={<BundleFrameworksDetail bundleFrameworks={bundleFrameworks} />}
       />,
     );
   }
@@ -238,20 +253,6 @@ export default function CustomerStoryPage({ content, breadcrumbGroup, sectionEye
               autoplay
               autoplayMs={9000}
             />
-            <CollapsibleDetails label="Full perspective copy" align="center">
-              <div className="mx-auto mt-2 max-w-3xl space-y-6">
-                {whyBundlesWork.perspectives.map((p) => (
-                  <div key={p.for}>
-                    <p className="mb-1 text-sm font-semibold" style={{ color: MARKETING_ACCENT, fontFamily: "Montserrat, sans-serif" }}>
-                      {p.for}
-                    </p>
-                    <p className="text-sm leading-relaxed text-neutral-600" style={{ fontFamily: "Raleway, sans-serif" }}>
-                      {p.benefit}
-                    </p>
-                  </div>
-                ))}
-              </div>
-            </CollapsibleDetails>
           </div>
         </section>,
       );
@@ -261,6 +262,7 @@ export default function CustomerStoryPage({ content, breadcrumbGroup, sectionEye
           key="why-bundles"
           eyebrow="Why bundles work"
           heading={whyBundlesWork.heading}
+          useFontAwesomeIcons
           items={whyBundlesWork.perspectives.map((p, i) => ({
             icon: ["User", "Building2", "Handshake"][i % 3],
             title: p.for,
@@ -272,6 +274,7 @@ export default function CustomerStoryPage({ content, breadcrumbGroup, sectionEye
   }
 
   if (whyNow) {
+    const { lead, rest } = splitLeadRest(whyNow.content, 2);
     middleNodes.push(
       <MarketingSplitSection
         key="why-now"
@@ -281,13 +284,13 @@ export default function CustomerStoryPage({ content, breadcrumbGroup, sectionEye
         bgClass="bg-[#fafaf9]"
         kicker="Why now"
         title={whyNow.heading}
-        blurb={toBlurb(whyNow.content)}
-        details={
-          <CollapsibleDetails label="Full narrative">
-            <p className="text-neutral-600 leading-relaxed" style={{ fontFamily: "Raleway, sans-serif" }}>
-              {whyNow.content}
+        blurb={lead}
+        appendBeforeImage={
+          rest ? (
+            <p className="text-sm leading-relaxed text-neutral-600" style={{ fontFamily: "Raleway, sans-serif" }}>
+              {rest}
             </p>
-          </CollapsibleDetails>
+          ) : null
         }
       />,
     );
@@ -299,6 +302,7 @@ export default function CustomerStoryPage({ content, breadcrumbGroup, sectionEye
         key="outcomes"
         eyebrow="Outcomes"
         heading={outcomes.heading}
+        useFontAwesomeIcons
         items={outcomeCardsToDarkItems(outcomes.cards)}
         sectionId="customer-outcomes"
       />,
@@ -315,26 +319,20 @@ export default function CustomerStoryPage({ content, breadcrumbGroup, sectionEye
         bgClass="bg-[#f4f4f2]"
         kicker="Migration"
         title={migrationScenarios.heading}
-        blurb={
-          migrationScenarios.cards[0]
-            ? firstSentence(migrationScenarios.cards[0].body)
-            : "How teams consolidate or win back base with a managed migration motion."
-        }
-        details={
-          <CollapsibleDetails label="All scenarios">
-            <div className="grid gap-4 sm:grid-cols-2">
-              {migrationScenarios.cards.map((card) => (
-                <div key={card.title} className="rounded-xl border border-neutral-200/80 bg-white p-5">
-                  <h3 className="mb-2 text-base font-semibold text-[#24282B]" style={{ fontFamily: "Montserrat, sans-serif" }}>
-                    {card.title}
-                  </h3>
-                  <p className="text-sm leading-relaxed text-neutral-600" style={{ fontFamily: "Raleway, sans-serif" }}>
-                    {card.body}
-                  </p>
-                </div>
-              ))}
-            </div>
-          </CollapsibleDetails>
+        blurb="Platform, timing, and economics for each path — with plays you can operationalize with sales and success teams."
+        appendBeforeImage={
+          <div className="grid gap-4 sm:grid-cols-2">
+            {migrationScenarios.cards.map((card) => (
+              <div key={card.title} className="rounded-xl border border-neutral-200/80 bg-white p-5">
+                <h3 className="mb-2 text-base font-semibold text-[#24282B]" style={{ fontFamily: "Montserrat, sans-serif" }}>
+                  {card.title}
+                </h3>
+                <p className="text-sm leading-relaxed text-neutral-600" style={{ fontFamily: "Raleway, sans-serif" }}>
+                  {card.body}
+                </p>
+              </div>
+            ))}
+          </div>
         }
       />,
     );
@@ -350,26 +348,24 @@ export default function CustomerStoryPage({ content, breadcrumbGroup, sectionEye
         bgClass="bg-white"
         kicker="Retention"
         title={retentionByProvider.heading}
-        blurb="Keep revenue sticky with bundles, lifecycle touchpoints, and provider-specific plays."
-        details={
-          <CollapsibleDetails label="Plays by provider type">
-            <div className="grid gap-4 sm:grid-cols-2">
-              {retentionByProvider.cards.map((card, i) => (
-                <div key={i} className="rounded-xl border border-neutral-200/80 bg-[#fafaf9] p-5">
-                  {"provider" in card && card.provider ? (
-                    <h3 className="mb-2 text-base font-semibold" style={{ color: MARKETING_ACCENT, fontFamily: "Montserrat, sans-serif" }}>
-                      {card.provider}
-                    </h3>
-                  ) : null}
-                  {"strategy" in card && card.strategy ? (
-                    <p className="text-sm leading-relaxed text-neutral-600" style={{ fontFamily: "Raleway, sans-serif" }}>
-                      {card.strategy}
-                    </p>
-                  ) : null}
-                </div>
-              ))}
-            </div>
-          </CollapsibleDetails>
+        blurb="Keep revenue sticky with bundles, lifecycle touchpoints, and provider-specific retention plays."
+        appendBeforeImage={
+          <div className="grid gap-4 sm:grid-cols-2">
+            {retentionByProvider.cards.map((card, i) => (
+              <div key={i} className="rounded-xl border border-neutral-200/80 bg-[#fafaf9] p-5">
+                {"provider" in card && card.provider ? (
+                  <h3 className="mb-2 text-base font-semibold" style={{ color: MARKETING_ACCENT, fontFamily: "Montserrat, sans-serif" }}>
+                    {card.provider}
+                  </h3>
+                ) : null}
+                {"strategy" in card && card.strategy ? (
+                  <p className="text-sm leading-relaxed text-neutral-600" style={{ fontFamily: "Raleway, sans-serif" }}>
+                    {card.strategy}
+                  </p>
+                ) : null}
+              </div>
+            ))}
+          </div>
         }
       />,
     );
@@ -382,6 +378,7 @@ export default function CustomerStoryPage({ content, breadcrumbGroup, sectionEye
         heading="By the numbers"
         stats={stats}
         sectionId="customer-stats"
+        useFontAwesomeIcons
       />,
     );
   }
@@ -396,22 +393,20 @@ export default function CustomerStoryPage({ content, breadcrumbGroup, sectionEye
         bgClass="bg-white"
         kicker="FAQ"
         title="Questions we hear often"
-        blurb={toBlurb(faq[0].a, 200)}
-        details={
-          <CollapsibleDetails label="All questions">
-            <div className="space-y-8">
-              {faq.map((item) => (
-                <div key={item.q.slice(0, 48)}>
-                  <h3 className="mb-2 text-base font-semibold text-[#24282B]" style={{ fontFamily: "Montserrat, sans-serif" }}>
-                    {item.q}
-                  </h3>
-                  <p className="text-sm leading-relaxed text-neutral-600" style={{ fontFamily: "Raleway, sans-serif" }}>
-                    {item.a}
-                  </p>
-                </div>
-              ))}
-            </div>
-          </CollapsibleDetails>
+        blurb="Straight answers on how we work with provider teams and programs."
+        appendBeforeImage={
+          <div className="space-y-8">
+            {faq.map((item) => (
+              <div key={item.q.slice(0, 48)}>
+                <h3 className="mb-2 text-base font-semibold text-[#24282B]" style={{ fontFamily: "Montserrat, sans-serif" }}>
+                  {item.q}
+                </h3>
+                <p className="text-sm leading-relaxed text-neutral-600" style={{ fontFamily: "Raleway, sans-serif" }}>
+                  {item.a}
+                </p>
+              </div>
+            ))}
+          </div>
         }
       />,
     );
@@ -436,19 +431,23 @@ export default function CustomerStoryPage({ content, breadcrumbGroup, sectionEye
         imageOnLeft={heroImageOnLeft(content.slug)}
         eyebrow={hero.eyebrow ?? sectionEyebrow}
         headline={hero.headline}
-        blurb={[firstSentence(hero.subheadline), toBlurb(hero.description, 180)].filter(Boolean).join(" ")}
+        blurb={heroLead}
         primaryCta={hero.cta.primary}
         details={
-          <CollapsibleDetails label="More about this audience">
-            <p className="text-neutral-600 leading-relaxed" style={{ fontFamily: "Raleway, sans-serif" }}>
-              {hero.description}
-            </p>
-            <p className="mt-4 text-sm text-neutral-500">
+          <>
+            {heroRest.length > 24 ? (
+              <CollapsibleDetails label="Continue reading">
+                <p className="text-neutral-600 leading-relaxed" style={{ fontFamily: "Raleway, sans-serif" }}>
+                  {heroRest}
+                </p>
+              </CollapsibleDetails>
+            ) : null}
+            <p className={`text-sm text-neutral-500 ${heroRest.length > 24 ? "mt-4" : "mt-6"}`}>
               <Link href={secondaryHref} className="font-medium text-[#2CADB2] hover:underline">
                 {hero.cta.secondary}
               </Link>
             </p>
-          </CollapsibleDetails>
+          </>
         }
         visual={<CustomerStaticImage slug={content.slug} salt={0} priority className="w-full" />}
       />
@@ -461,7 +460,7 @@ export default function CustomerStoryPage({ content, breadcrumbGroup, sectionEye
           kicker={firstCentered.kicker}
           title={firstCentered.title}
           blurb={firstCentered.blurb}
-          details={firstCentered.details}
+          appendBeforeImage={firstCentered.appendBeforeImage}
           sectionId={firstCentered.sectionId}
         />
       ) : null}
@@ -470,15 +469,17 @@ export default function CustomerStoryPage({ content, breadcrumbGroup, sectionEye
 
       <MarketingPreFooterLight
         headline={cta.headline}
-        body={toBlurb(cta.body, 280)}
+        body={ctaLead}
         buttonText={cta.buttonText}
         slug={content.slug}
         details={
-          <CollapsibleDetails label="Full message">
-            <p className="text-neutral-600 leading-relaxed" style={{ fontFamily: "Raleway, sans-serif" }}>
-              {cta.body}
-            </p>
-          </CollapsibleDetails>
+          ctaRest.length > 24 ? (
+            <CollapsibleDetails label="More detail">
+              <p className="text-neutral-600 leading-relaxed" style={{ fontFamily: "Raleway, sans-serif" }}>
+                {ctaRest}
+              </p>
+            </CollapsibleDetails>
+          ) : undefined
         }
       />
     </main>
