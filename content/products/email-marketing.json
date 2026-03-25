@@ -26,11 +26,46 @@
     "sidebar": {
       "heading": "Your SMB customers can",
       "items": [
-        { "title": "Create campaigns in minutes", "body": "AI generates professional email copy, images, and layouts tailored to their business type." },
-        { "title": "Automate engagement", "body": "Welcome sequences, promotions, and re-engagement flows run automatically." },
-        { "title": "Grow their audience", "body": "Embeddable signup forms and list management turn website visitors into subscribers." },
-        { "title": "See what's working", "body": "Opens, clicks, and conversion analytics give visibility into campaign performance." }
+        {
+          "title": "Create campaigns in minutes",
+          "body": "AI generates professional email copy, images, and layouts tailored to their business type.",
+          "image": {
+            "src": "https://images.unsplash.com/photo-1552664730-d307ca884978?q=80&w=1200&auto=format&fit=crop",
+            "alt": "Email marketing campaign creation"
+          }
+        },
+        {
+          "title": "Automate engagement",
+          "body": "Welcome sequences, promotions, and re-engagement flows run automatically.",
+          "image": {
+            "src": "https://images.unsplash.com/photo-1516321318423-f06f85e504b3?q=80&w=1200&auto=format&fit=crop",
+            "alt": "Marketing automation and email sequences"
+          }
+        },
+        {
+          "title": "Grow their audience",
+          "body": "Embeddable signup forms and list management turn website visitors into subscribers.",
+          "image": {
+            "src": "https://images.unsplash.com/photo-1434030216411-0b793f4b4173?q=80&w=1200&auto=format&fit=crop",
+            "alt": "Newsletter signup and list growth"
+          }
+        },
+        {
+          "title": "See what's working",
+          "body": "Opens, clicks, and conversion analytics give visibility into campaign performance.",
+          "image": {
+            "src": "https://images.unsplash.com/photo-1551288049-bebda4e38f71?q=80&w=1200&auto=format&fit=crop",
+            "alt": "Email analytics and performance metrics"
+          }
+        }
       ]
+    }
+  },
+
+  "media": {
+    "heroImage": {
+      "src": "https://images.unsplash.com/photo-1596526131083-e8c633c948d2?q=80&w=1600&auto=format&fit=crop",
+      "alt": "Email marketing on laptop and mobile"
     }
   },
 

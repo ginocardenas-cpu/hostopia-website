@@ -5,6 +5,7 @@ import type { ProductJson } from "@/lib/product-json-types";
 import ProductLucideIcon from "@/components/products/ProductLucideIcon";
 import ProductLifecycleGrid from "@/components/products/ProductLifecycleGrid";
 import { VerticalTabs } from "@/components/ui/vertical-tabs";
+import { ProductHeroAccordion } from "@/components/ui/product-hero-accordion";
 import { cn } from "@/lib/utils";
 
 function splitHeadline(headline: string): ReactNode {
@@ -79,12 +80,19 @@ export default function ProductPageFromJson({ data }: { data: ProductJson }) {
   const heroImg = media?.heroImage;
   const contentImg = media?.contentImage;
   const verticalTabsLayout = VERTICAL_TABS_LAYOUT_SLUGS.has(data.slug) && Boolean(hero.sidebar);
+  const heroAccordionLayout = !verticalTabsLayout && Boolean(hero.sidebar);
+  const sidebarBelowHero = verticalTabsLayout || heroAccordionLayout;
 
   return (
     <main>
       {/* Hero — homepage rhythm: cream, large optional image column */}
       <section className="relative overflow-hidden bg-cream pt-28">
-        <div className="mx-auto grid max-w-7xl items-center gap-10 px-6 pb-16 lg:grid-cols-2 lg:gap-14 lg:pb-28">
+        <div
+          className={cn(
+            "mx-auto grid max-w-7xl items-center gap-10 px-6 pb-16",
+            heroImg || !sidebarBelowHero ? "lg:grid-cols-2 lg:gap-14 lg:pb-28" : "lg:pb-28"
+          )}
+        >
           <div className="relative z-10 max-w-xl lg:max-w-none">
             <nav className="mb-8 font-raleway text-sm text-gray-500">
               <Link href="/" className="hover:text-teal">
@@ -151,7 +159,7 @@ export default function ProductPageFromJson({ data }: { data: ProductJson }) {
               </div>
             ) : null}
 
-            {!verticalTabsLayout && !heroImg && hero.sidebar ? (
+            {!sidebarBelowHero && !heroImg && hero.sidebar ? (
               <div className="rounded-2xl border border-gray-200/80 bg-white p-8 shadow-sm lg:ml-auto lg:max-w-md">
                 <p className="mb-6 font-montserrat text-lg font-black text-charcoal">{hero.sidebar.heading}</p>
                 <ul className="space-y-5">
@@ -165,7 +173,7 @@ export default function ProductPageFromJson({ data }: { data: ProductJson }) {
               </div>
             ) : null}
 
-            {!verticalTabsLayout && heroImg && hero.sidebar ? (
+            {!sidebarBelowHero && heroImg && hero.sidebar ? (
               <div className="mt-10 rounded-2xl border border-gray-200/80 bg-white/95 p-6 shadow-sm backdrop-blur-sm lg:mt-8 lg:max-w-md lg:self-end">
                 <p className="mb-4 font-montserrat text-base font-black text-charcoal">{hero.sidebar.heading}</p>
                 <ul className="space-y-4">
@@ -197,11 +205,24 @@ export default function ProductPageFromJson({ data }: { data: ProductJson }) {
         />
       ) : null}
 
+      {heroAccordionLayout && hero.sidebar ? (
+        <ProductHeroAccordion
+          sectionHeading={hero.sidebar.heading}
+          items={hero.sidebar.items.map((item, i) => ({
+            id: String(i + 1).padStart(2, "0"),
+            title: item.title,
+            content: item.body,
+            imageSrc: item.image?.src,
+            imageAlt: item.image?.alt,
+          }))}
+        />
+      ) : null}
+
       {features ? (
         <section
           className={cn(
             "py-28",
-            verticalTabsLayout
+            sidebarBelowHero
               ? "border-t border-gray-200/80 bg-cream shadow-[inset_0_12px_24px_-12px_rgba(36,40,43,0.08)]"
               : "bg-white"
           )}

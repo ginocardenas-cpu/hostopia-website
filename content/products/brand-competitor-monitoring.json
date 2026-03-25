@@ -20,10 +20,38 @@
     "sidebar": {
       "heading": "Your customers can",
       "items": [
-        { "title": "Monitor brand health", "body": "See mentions, sentiment, and trends across channels in one partner-branded view." },
-        { "title": "Watch competitors", "body": "Benchmark campaigns, offers, and positioning to stay a step ahead." },
-        { "title": "Act on alerts", "body": "Surface spikes, risks, and opportunities so SMBs respond quickly." }
+        {
+          "title": "Monitor brand health",
+          "body": "See mentions, sentiment, and trends across channels in one partner-branded view.",
+          "image": {
+            "src": "https://images.unsplash.com/photo-1551288049-bebda4e38f71?q=80&w=1200&auto=format&fit=crop",
+            "alt": "Brand monitoring and analytics dashboard"
+          }
+        },
+        {
+          "title": "Watch competitors",
+          "body": "Benchmark campaigns, offers, and positioning to stay a step ahead.",
+          "image": {
+            "src": "https://images.unsplash.com/photo-1552664730-d307ca884978?q=80&w=1200&auto=format&fit=crop",
+            "alt": "Competitive market analysis"
+          }
+        },
+        {
+          "title": "Act on alerts",
+          "body": "Surface spikes, risks, and opportunities so SMBs respond quickly.",
+          "image": {
+            "src": "https://images.unsplash.com/photo-1516321318423-f06f85e504b3?q=80&w=1200&auto=format&fit=crop",
+            "alt": "Real-time notifications and alerts"
+          }
+        }
       ]
+    }
+  },
+
+  "media": {
+    "heroImage": {
+      "src": "https://images.unsplash.com/photo-1551288049-bebda4e38f71?q=80&w=1600&auto=format&fit=crop",
+      "alt": "Competitive intelligence and brand listening"
     }
   },
 

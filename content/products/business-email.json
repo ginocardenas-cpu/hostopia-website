@@ -27,11 +27,46 @@
     "sidebar": {
       "heading": "Your SMB customers get",
       "items": [
-        { "title": "Professional domain-based email", "body": "Business email on their own domain builds credibility and trust with every message sent." },
-        { "title": "Ad-free branded webmail", "body": "A modern, feature-rich webmail experience with calendars, contacts, tasks, and online storage — no ads, ever." },
-        { "title": "Enterprise-grade security", "body": "Anti-virus protection, configurable spam filtering, trusted/blocked sender lists, and optional backups." },
-        { "title": "Access anywhere", "body": "Full IMAP, POP, and SMTP support. Works with Outlook, Apple Mail, mobile clients, and webmail — any device, anywhere." }
+        {
+          "title": "Professional domain-based email",
+          "body": "Business email on their own domain builds credibility and trust with every message sent.",
+          "image": {
+            "src": "https://images.unsplash.com/photo-1563986768609-322da13575f3?q=80&w=1200&auto=format&fit=crop",
+            "alt": "Professional business email communication"
+          }
+        },
+        {
+          "title": "Ad-free branded webmail",
+          "body": "A modern, feature-rich webmail experience with calendars, contacts, tasks, and online storage — no ads, ever.",
+          "image": {
+            "src": "https://images.unsplash.com/photo-1611926653458-09294b3142bf?q=80&w=1200&auto=format&fit=crop",
+            "alt": "Clean webmail and calendar interface"
+          }
+        },
+        {
+          "title": "Enterprise-grade security",
+          "body": "Anti-virus protection, configurable spam filtering, trusted/blocked sender lists, and optional backups.",
+          "image": {
+            "src": "https://images.unsplash.com/photo-1563013544-824ae1b704d3?q=80&w=1200&auto=format&fit=crop",
+            "alt": "Secure email and infrastructure"
+          }
+        },
+        {
+          "title": "Access anywhere",
+          "body": "Full IMAP, POP, and SMTP support. Works with Outlook, Apple Mail, mobile clients, and webmail — any device, anywhere.",
+          "image": {
+            "src": "https://images.unsplash.com/photo-1512941937669-90a1b58e7e9c?q=80&w=1200&auto=format&fit=crop",
+            "alt": "Email on phone and laptop anywhere"
+          }
+        }
       ]
+    }
+  },
+
+  "media": {
+    "heroImage": {
+      "src": "https://images.unsplash.com/photo-1557200134-90327ee9fafa?q=80&w=1600&auto=format&fit=crop",
+      "alt": "Business email and collaboration"
     }
   },
 

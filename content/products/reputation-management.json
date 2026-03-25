@@ -27,11 +27,46 @@
     "sidebar": {
       "heading": "Your SMB customers can",
       "items": [
-        { "title": "Collect 5-star reviews", "body": "Request reviews via text message and automatically share positive feedback across social channels." },
-        { "title": "Showcase testimonials", "body": "Embed live, positive reviews directly on their website to boost credibility and conversion." },
-        { "title": "Manage social media", "body": "Schedule posts across multiple platforms from one calendar, based on demographics, interests, and frequency." },
-        { "title": "Monitor everything in one place", "body": "Track reviews, social activity, and competitor feedback across the web — respond from a single dashboard." }
+        {
+          "title": "Collect 5-star reviews",
+          "body": "Request reviews via text message and automatically share positive feedback across social channels.",
+          "image": {
+            "src": "https://images.unsplash.com/photo-1521737604893-d14cc237f11d?q=80&w=1200&auto=format&fit=crop",
+            "alt": "Happy customers and five-star reviews"
+          }
+        },
+        {
+          "title": "Showcase testimonials",
+          "body": "Embed live, positive reviews directly on their website to boost credibility and conversion.",
+          "image": {
+            "src": "https://images.unsplash.com/photo-1467232004584-a241de8bcf5d?q=80&w=1200&auto=format&fit=crop",
+            "alt": "Website testimonials and social proof"
+          }
+        },
+        {
+          "title": "Manage social media",
+          "body": "Schedule posts across multiple platforms from one calendar, based on demographics, interests, and frequency.",
+          "image": {
+            "src": "https://images.unsplash.com/photo-1611162616305-69b3cf1bfe93?q=80&w=1200&auto=format&fit=crop",
+            "alt": "Social media scheduling and content"
+          }
+        },
+        {
+          "title": "Monitor everything in one place",
+          "body": "Track reviews, social activity, and competitor feedback across the web — respond from a single dashboard.",
+          "image": {
+            "src": "https://images.unsplash.com/photo-1551288049-bebda4e38f71?q=80&w=1200&auto=format&fit=crop",
+            "alt": "Reputation and reviews dashboard"
+          }
+        }
       ]
+    }
+  },
+
+  "media": {
+    "heroImage": {
+      "src": "https://images.unsplash.com/photo-1521737604893-d14cc237f11d?q=80&w=1600&auto=format&fit=crop",
+      "alt": "Online reputation and customer reviews"
     }
   },
 

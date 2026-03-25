@@ -26,11 +26,46 @@
     "sidebar": {
       "heading": "What your SMB customers get",
       "items": [
-        { "title": "Built from scratch", "body": "No templates — a fully custom website designed around their brand, business goals, and audience." },
-        { "title": "WordPress foundation", "body": "Built on WordPress for flexibility, scalability, and the ability to extend with plugins and integrations." },
-        { "title": "Collaborative process", "body": "Direct collaboration with professional designers through a structured discovery, design, and revision process." },
-        { "title": "Full ownership", "body": "The SMB owns the website, content, and database. Optional hosting and maintenance plans keep it running." }
+        {
+          "title": "Built from scratch",
+          "body": "No templates — a fully custom website designed around their brand, business goals, and audience.",
+          "image": {
+            "src": "https://images.unsplash.com/photo-1504639725590-34d0984388bd?q=80&w=1200&auto=format&fit=crop",
+            "alt": "Custom web development and coding"
+          }
+        },
+        {
+          "title": "WordPress foundation",
+          "body": "Built on WordPress for flexibility, scalability, and the ability to extend with plugins and integrations.",
+          "image": {
+            "src": "https://images.unsplash.com/photo-1616469829581-73993eb86b00?q=80&w=1200&auto=format&fit=crop",
+            "alt": "WordPress development workspace"
+          }
+        },
+        {
+          "title": "Collaborative process",
+          "body": "Direct collaboration with professional designers through a structured discovery, design, and revision process.",
+          "image": {
+            "src": "https://images.unsplash.com/photo-1561070791-2526d30994b5?q=80&w=1200&auto=format&fit=crop",
+            "alt": "Design collaboration and review"
+          }
+        },
+        {
+          "title": "Full ownership",
+          "body": "The SMB owns the website, content, and database. Optional hosting and maintenance plans keep it running.",
+          "image": {
+            "src": "https://images.unsplash.com/photo-1450101499163-c8848c66ca85?q=80&w=1200&auto=format&fit=crop",
+            "alt": "Business ownership and handoff"
+          }
+        }
       ]
+    }
+  },
+
+  "media": {
+    "heroImage": {
+      "src": "https://images.unsplash.com/photo-1461749280684-dccba630e2f6?q=80&w=1600&auto=format&fit=crop",
+      "alt": "Custom website development and code"
     }
   },
 

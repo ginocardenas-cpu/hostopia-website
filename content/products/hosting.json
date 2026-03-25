@@ -27,11 +27,46 @@
     "sidebar": {
       "heading": "Your customers get",
       "items": [
-        { "title": "Deploy beyond builders", "body": "Host WordPress, custom CMS sites, or any web application in a secure, managed environment." },
-        { "title": "Scale with confidence", "body": "Resource tiers grow with traffic and complexity — no surprise outages or forced migrations." },
-        { "title": "Manage multiple sites", "body": "Multi-site plans let agencies and developers manage client environments from a single dashboard." },
-        { "title": "Bundle everything", "body": "Domains, SSL, email, and ecommerce integrate directly — one platform, one brand, one bill." }
+        {
+          "title": "Deploy beyond builders",
+          "body": "Host WordPress, custom CMS sites, or any web application in a secure, managed environment.",
+          "image": {
+            "src": "https://images.unsplash.com/photo-1558494949-ef010cbdcc31?q=80&w=1200&auto=format&fit=crop",
+            "alt": "Server infrastructure and web hosting"
+          }
+        },
+        {
+          "title": "Scale with confidence",
+          "body": "Resource tiers grow with traffic and complexity — no surprise outages or forced migrations.",
+          "image": {
+            "src": "https://images.unsplash.com/photo-1451187580459-43490279c0fa?q=80&w=1200&auto=format&fit=crop",
+            "alt": "Scalable cloud and network capacity"
+          }
+        },
+        {
+          "title": "Manage multiple sites",
+          "body": "Multi-site plans let agencies and developers manage client environments from a single dashboard.",
+          "image": {
+            "src": "https://images.unsplash.com/photo-1551288049-bebda4e38f71?q=80&w=1200&auto=format&fit=crop",
+            "alt": "Multi-site hosting dashboard"
+          }
+        },
+        {
+          "title": "Bundle everything",
+          "body": "Domains, SSL, email, and ecommerce integrate directly — one platform, one brand, one bill.",
+          "image": {
+            "src": "https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?q=80&w=1200&auto=format&fit=crop",
+            "alt": "Integrated digital services bundle"
+          }
+        }
       ]
+    }
+  },
+
+  "media": {
+    "heroImage": {
+      "src": "https://images.unsplash.com/photo-1558494949-ef010cbdcc31?q=80&w=1600&auto=format&fit=crop",
+      "alt": "Website hosting and data center"
     }
   },
 
