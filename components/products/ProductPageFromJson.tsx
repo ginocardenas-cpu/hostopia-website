@@ -6,6 +6,7 @@ import ProductLucideIcon from "@/components/products/ProductLucideIcon";
 import ProductLifecycleGrid from "@/components/products/ProductLifecycleGrid";
 import { VerticalTabs } from "@/components/ui/vertical-tabs";
 import { ProductHeroAccordion } from "@/components/ui/product-hero-accordion";
+import { AnimatedTabs } from "@/components/ui/animated-tabs";
 import { cn } from "@/lib/utils";
 
 function splitHeadline(headline: string): ReactNode {
@@ -75,13 +76,17 @@ const VERTICAL_TABS_LAYOUT_SLUGS = new Set([
   "digital-fax",
 ]);
 
+const EMAIL_MARKETING_SLUG = "email-marketing";
+
 export default function ProductPageFromJson({ data }: { data: ProductJson }) {
   const { hero, features, partnerAdvantage, lifecycleFit, cta, media } = data;
   const heroImg = media?.heroImage;
   const contentImg = media?.contentImage;
   const verticalTabsLayout = VERTICAL_TABS_LAYOUT_SLUGS.has(data.slug) && Boolean(hero.sidebar);
-  const heroAccordionLayout = !verticalTabsLayout && Boolean(hero.sidebar);
-  const sidebarBelowHero = verticalTabsLayout || heroAccordionLayout;
+  const emailMarketingAnimatedTabs = data.slug === EMAIL_MARKETING_SLUG && Boolean(hero.sidebar);
+  const heroAccordionLayout =
+    !verticalTabsLayout && Boolean(hero.sidebar) && !emailMarketingAnimatedTabs;
+  const sidebarBelowHero = verticalTabsLayout || heroAccordionLayout || emailMarketingAnimatedTabs;
 
   return (
     <main>
@@ -216,6 +221,26 @@ export default function ProductPageFromJson({ data }: { data: ProductJson }) {
             imageAlt: item.image?.alt,
           }))}
         />
+      ) : null}
+
+      {emailMarketingAnimatedTabs && hero.sidebar ? (
+        <section className="w-full bg-white py-12 md:py-16 lg:py-24">
+          <div className="mx-auto max-w-7xl px-6">
+            <h2 className="mb-8 max-w-4xl font-montserrat text-4xl font-black leading-tight tracking-tight text-charcoal text-balance md:mb-10 md:text-5xl lg:text-6xl">
+              {hero.sidebar.heading}
+            </h2>
+            <AnimatedTabs
+              layoutIdPrefix="email-marketing-hero"
+              tabs={hero.sidebar.items.map((item, i) => ({
+                id: `em-${i + 1}`,
+                label: item.title,
+                body: item.body,
+                imageSrc: item.image?.src,
+                imageAlt: item.image?.alt,
+              }))}
+            />
+          </div>
+        </section>
       ) : null}
 
       {features ? (
