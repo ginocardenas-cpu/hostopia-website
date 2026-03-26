@@ -9,6 +9,7 @@ import { ProductHeroAccordion } from "@/components/ui/product-hero-accordion";
 import { FeatureCarousel } from "@/components/ui/feature-carousel";
 import { InteractiveImageAccordion } from "@/components/ui/interactive-image-accordion";
 import { ImageComparison } from "@/components/ui/image-comparison-slider";
+import { ThreeDMarquee } from "@/components/ui/three-d-marquee";
 import { cn } from "@/lib/utils";
 
 function splitHeadline(headline: string): ReactNode {
@@ -87,6 +88,7 @@ const FALLBACK_SIDEBAR_IMAGE =
 export default function ProductPageFromJson({ data }: { data: ProductJson }) {
   const { hero, features, partnerAdvantage, lifecycleFit, cta, media } = data;
   const beforeAfter = media?.beforeAfter;
+  const templateMarquee = media?.templateMarquee;
   const heroImg = media?.heroImage;
   const contentImg = media?.contentImage;
   const verticalTabsLayout = VERTICAL_TABS_LAYOUT_SLUGS.has(data.slug) && Boolean(hero.sidebar);
@@ -301,6 +303,25 @@ export default function ProductPageFromJson({ data }: { data: ProductJson }) {
                 </div>
               ))}
             </div>
+          </div>
+        </section>
+      ) : null}
+
+      {templateMarquee?.images?.length ? (
+        <section className="border-t border-gray-200/80 bg-white py-16 md:py-24">
+          <div className="mx-auto max-w-7xl px-6">
+            {templateMarquee.eyebrow ? (
+              <span className="section-label mb-4 inline-block">{templateMarquee.eyebrow}</span>
+            ) : null}
+            {templateMarquee.heading ? (
+              <h2 className="mb-4 max-w-4xl font-montserrat text-3xl font-black leading-tight text-charcoal md:text-4xl lg:text-5xl">
+                {templateMarquee.heading}
+              </h2>
+            ) : null}
+            {templateMarquee.intro ? (
+              <p className="mb-10 max-w-3xl font-raleway text-lg leading-relaxed text-gray-500">{templateMarquee.intro}</p>
+            ) : null}
+            <ThreeDMarquee images={templateMarquee.images} />
           </div>
         </section>
       ) : null}

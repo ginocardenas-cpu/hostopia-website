@@ -66,6 +66,25 @@
     "heroImage": {
       "src": "https://images.unsplash.com/photo-1547658719-da2b51169166?q=80&w=1600&auto=format&fit=crop",
       "alt": "Modern website builder and design on a laptop"
+    },
+    "templateMarquee": {
+      "eyebrow": "Template library",
+      "heading": "Styles for every industry",
+      "intro": "From professional services to retail and trades — responsive themes and layouts SMBs can launch fast, all under your brand.",
+      "images": [
+        { "src": "https://images.unsplash.com/photo-1460925895917-afdab827c52f?q=80&w=800&auto=format&fit=crop", "alt": "Clean analytics dashboard template" },
+        { "src": "https://images.unsplash.com/photo-1499951360447-b19be8fe80f5?q=80&w=800&auto=format&fit=crop", "alt": "Minimal creative portfolio layout" },
+        { "src": "https://images.unsplash.com/photo-1517694712202-14dd9538aa97?q=80&w=800&auto=format&fit=crop", "alt": "Developer workspace website theme" },
+        { "src": "https://images.unsplash.com/photo-1551434678-e076c223a692?q=80&w=800&auto=format&fit=crop", "alt": "Team collaboration landing page" },
+        { "src": "https://images.unsplash.com/photo-1551288049-bebda4e38f71?q=80&w=800&auto=format&fit=crop", "alt": "Business metrics dashboard template" },
+        { "src": "https://images.unsplash.com/photo-1467232004584-a241de8bcf5d?q=80&w=800&auto=format&fit=crop", "alt": "Modern web design mockup" },
+        { "src": "https://images.unsplash.com/photo-1504639725590-34d0984388bf?q=80&w=800&auto=format&fit=crop", "alt": "Code and design workspace" },
+        { "src": "https://images.unsplash.com/photo-1522542550221-31fd19575a2d?q=80&w=800&auto=format&fit=crop", "alt": "Creative studio website style" },
+        { "src": "https://images.unsplash.com/photo-1556740758-90de374c12ad?q=80&w=800&auto=format&fit=crop", "alt": "Ecommerce storefront template" },
+        { "src": "https://images.unsplash.com/photo-1552664730-d307ca884978?q=80&w=800&auto=format&fit=crop", "alt": "Marketing campaign landing page" },
+        { "src": "https://images.unsplash.com/photo-1516321318423-f06f85e504b3?q=80&w=800&auto=format&fit=crop", "alt": "Newsletter and content template" },
+        { "src": "https://images.unsplash.com/photo-1486312338219-ce68d2c6f44d?q=80&w=800&auto=format&fit=crop", "alt": "Laptop with website editing" }
+      ]
     }
   },
 

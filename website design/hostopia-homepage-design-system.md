@@ -569,9 +569,13 @@ Implementation: `components/ui/product-hero-accordion.tsx` (Radix accordion in `
 
 **Only** `/products/business-email` uses the **interactive image accordion** instead of the hero accordion: section heading (`hero.sidebar.heading`, e.g. “Your SMB customers get”) stays at the top; **left column** shows the active item’s **title** + **body** (updates on hover/click); **right column** is a horizontal strip of image panels that expand/collapse (inactive columns show a vertical title label). JSON: same `hero.sidebar.items` (`title`, `body`, `image`). Implementation: `components/ui/interactive-image-accordion.tsx`.
 
+### 3D template marquee (optional `media.templateMarquee`)
+
+Any product JSON may include `media.templateMarquee` with `images` (array of `{ src, alt }`), plus optional `eyebrow`, `heading`, and `intro`. When `images` is non-empty, a **3D marquee** section renders **after** the “What you deliver” / `features` block and **before** optional `media.beforeAfter` and other media sections. Implementation: `components/ui/three-d-marquee.tsx` (`ThreeDMarquee`). Currently used on **Website Builder** (`/products/website-builder`).
+
 ### Before / after image comparison (optional `media.beforeAfter`)
 
-Any product JSON may include `media.beforeAfter` with `before` and `after` images (each `src` + `alt`), plus optional `eyebrow`, `heading`, and `intro`. When present, a **comparison slider** section renders **after** the “What you deliver” / `features` block and **before** `contentImage` / partner sections. Left side of the slider = **before** (weaker/dated); right = **after** (improved). Implementation: `components/ui/image-comparison-slider.tsx` (`ImageComparison`). Currently used on **Website Design** (`/products/website-design`).
+Any product JSON may include `media.beforeAfter` with `before` and `after` images (each `src` + `alt`), plus optional `eyebrow`, `heading`, and `intro`. When present, a **comparison slider** section renders **after** the `features` block (and **after** `templateMarquee`, if present) and **before** `contentImage` / partner sections. Left side of the slider = **before** (weaker/dated); right = **after** (improved). Implementation: `components/ui/image-comparison-slider.tsx` (`ImageComparison`). Currently used on **Website Design** (`/products/website-design`).
 
 ### Section rhythm after hero
 
@@ -618,4 +622,4 @@ module.exports = {
 
 ---
 
-*Document updated: March 25, 2026 — includes product page patterns (vertical tabs, hero accordion, lifecycle portfolio fit). Homepage reference: hostopia-website-cxets2acj-ginocardenas-8299s-projects.vercel.app*
+*Document updated: March 26, 2026 — includes `media.templateMarquee` (3D marquee on Website Builder). Homepage reference: hostopia-website-cxets2acj-ginocardenas-8299s-projects.vercel.app*

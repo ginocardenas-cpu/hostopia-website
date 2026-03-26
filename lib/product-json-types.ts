@@ -28,6 +28,18 @@ export type ProductBeforeAfter = {
   intro?: string;
 };
 
+export type ProductTemplateMarqueeImage = {
+  src: string;
+  alt: string;
+};
+
+export type ProductTemplateMarquee = {
+  eyebrow?: string;
+  heading?: string;
+  intro?: string;
+  images: ProductTemplateMarqueeImage[];
+};
+
 export type ProductMedia = {
   /** Large visual in hero (local `/...` or remote URL allowed in next.config) */
   heroImage?: ProductMediaImage;
@@ -35,6 +47,8 @@ export type ProductMedia = {
   contentImage?: ProductMediaImage & { caption?: string };
   /** Optional before/after comparison (e.g. website-design) — rendered after features */
   beforeAfter?: ProductBeforeAfter;
+  /** Optional 3D template marquee (e.g. website-builder) — rendered after features */
+  templateMarquee?: ProductTemplateMarquee;
 };
 
 export type ProductSidebarItem = {
