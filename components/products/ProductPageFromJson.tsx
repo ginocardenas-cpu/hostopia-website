@@ -8,6 +8,7 @@ import { VerticalTabs } from "@/components/ui/vertical-tabs";
 import { ProductHeroAccordion } from "@/components/ui/product-hero-accordion";
 import { FeatureCarousel } from "@/components/ui/feature-carousel";
 import { InteractiveImageAccordion } from "@/components/ui/interactive-image-accordion";
+import { ImageComparison } from "@/components/ui/image-comparison-slider";
 import { cn } from "@/lib/utils";
 
 function splitHeadline(headline: string): ReactNode {
@@ -85,6 +86,7 @@ const FALLBACK_SIDEBAR_IMAGE =
 
 export default function ProductPageFromJson({ data }: { data: ProductJson }) {
   const { hero, features, partnerAdvantage, lifecycleFit, cta, media } = data;
+  const beforeAfter = media?.beforeAfter;
   const heroImg = media?.heroImage;
   const contentImg = media?.contentImage;
   const verticalTabsLayout = VERTICAL_TABS_LAYOUT_SLUGS.has(data.slug) && Boolean(hero.sidebar);
@@ -299,6 +301,30 @@ export default function ProductPageFromJson({ data }: { data: ProductJson }) {
                 </div>
               ))}
             </div>
+          </div>
+        </section>
+      ) : null}
+
+      {beforeAfter ? (
+        <section className="border-t border-gray-100 bg-white py-16 md:py-24">
+          <div className="mx-auto max-w-7xl px-6">
+            {beforeAfter.eyebrow ? (
+              <span className="section-label mb-4 inline-block">{beforeAfter.eyebrow}</span>
+            ) : null}
+            {beforeAfter.heading ? (
+              <h2 className="mb-4 max-w-4xl font-montserrat text-3xl font-black leading-tight text-charcoal md:text-4xl lg:text-5xl">
+                {beforeAfter.heading}
+              </h2>
+            ) : null}
+            {beforeAfter.intro ? (
+              <p className="mb-10 max-w-3xl font-raleway text-lg leading-relaxed text-gray-500">{beforeAfter.intro}</p>
+            ) : null}
+            <ImageComparison
+              beforeImage={beforeAfter.before.src}
+              afterImage={beforeAfter.after.src}
+              altBefore={beforeAfter.before.alt}
+              altAfter={beforeAfter.after.alt}
+            />
           </div>
         </section>
       ) : null}

@@ -20,11 +20,21 @@ export type ProductMediaImage = {
   priority?: boolean;
 };
 
+export type ProductBeforeAfter = {
+  before: ProductMediaImage;
+  after: ProductMediaImage;
+  eyebrow?: string;
+  heading?: string;
+  intro?: string;
+};
+
 export type ProductMedia = {
   /** Large visual in hero (local `/...` or remote URL allowed in next.config) */
   heroImage?: ProductMediaImage;
   /** Full-width image between features and partner section */
   contentImage?: ProductMediaImage & { caption?: string };
+  /** Optional before/after comparison (e.g. website-design) — rendered after features */
+  beforeAfter?: ProductBeforeAfter;
 };
 
 export type ProductSidebarItem = {
