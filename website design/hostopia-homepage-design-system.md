@@ -565,9 +565,13 @@ Implementation: `components/ui/product-hero-accordion.tsx` (Radix accordion in `
 
 **Only** `/products/hosting` uses the **feature carousel** instead of the hero accordion for `hero.sidebar`: teal left column with stacked pill “chips” (labels = item titles, Lucide icons), right column with stacked image cards and gradient caption (description = item body). Data comes from the same JSON shape as other sidebars (`title`, `body`, optional `image`). Section title = `hero.sidebar.heading` (e.g. “Your customers get”). Auto-advance with pause on hover. Implementation: `components/ui/feature-carousel.tsx`.
 
+### Business Email — interactive image accordion (exception)
+
+**Only** `/products/business-email` uses the **interactive image accordion** instead of the hero accordion: section heading (`hero.sidebar.heading`, e.g. “Your SMB customers get”) stays at the top; **left column** shows the active item’s **title** + **body** (updates on hover/click); **right column** is a horizontal strip of image panels that expand/collapse (inactive columns show a vertical title label). JSON: same `hero.sidebar.items` (`title`, `body`, `image`). Implementation: `components/ui/interactive-image-accordion.tsx`.
+
 ### Section rhythm after hero
 
-When the hero sidebar is moved into vertical tabs, accordion, or hosting feature carousel, the next **features** section uses a cream band for separation: `bg-cream border-t border-gray-200/80` and a subtle inset top shadow (see `ProductPageFromJson`).
+When the hero sidebar is moved into vertical tabs, accordion, hosting feature carousel, or business-email interactive accordion, the next **features** section uses a cream band for separation: `bg-cream border-t border-gray-200/80` and a subtle inset top shadow (see `ProductPageFromJson`).
 
 ### Portfolio fit — lifecycle grid (`ProductLifecycleGrid`)
 

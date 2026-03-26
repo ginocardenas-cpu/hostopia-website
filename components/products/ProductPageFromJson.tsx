@@ -7,6 +7,7 @@ import ProductLifecycleGrid from "@/components/products/ProductLifecycleGrid";
 import { VerticalTabs } from "@/components/ui/vertical-tabs";
 import { ProductHeroAccordion } from "@/components/ui/product-hero-accordion";
 import { FeatureCarousel } from "@/components/ui/feature-carousel";
+import { InteractiveImageAccordion } from "@/components/ui/interactive-image-accordion";
 import { cn } from "@/lib/utils";
 
 function splitHeadline(headline: string): ReactNode {
@@ -77,6 +78,7 @@ const VERTICAL_TABS_LAYOUT_SLUGS = new Set([
 ]);
 
 const HOSTING_SLUG = "hosting";
+const BUSINESS_EMAIL_SLUG = "business-email";
 
 const FALLBACK_SIDEBAR_IMAGE =
   "https://images.unsplash.com/photo-1626785774573-4b799315345d?q=80&w=1200&auto=format&fit=crop";
@@ -87,9 +89,14 @@ export default function ProductPageFromJson({ data }: { data: ProductJson }) {
   const contentImg = media?.contentImage;
   const verticalTabsLayout = VERTICAL_TABS_LAYOUT_SLUGS.has(data.slug) && Boolean(hero.sidebar);
   const hostingFeatureCarousel = data.slug === HOSTING_SLUG && Boolean(hero.sidebar);
+  const businessEmailImageAccordion = data.slug === BUSINESS_EMAIL_SLUG && Boolean(hero.sidebar);
   const heroAccordionLayout =
-    !verticalTabsLayout && Boolean(hero.sidebar) && !hostingFeatureCarousel;
-  const sidebarBelowHero = verticalTabsLayout || heroAccordionLayout || hostingFeatureCarousel;
+    !verticalTabsLayout &&
+    Boolean(hero.sidebar) &&
+    !hostingFeatureCarousel &&
+    !businessEmailImageAccordion;
+  const sidebarBelowHero =
+    verticalTabsLayout || heroAccordionLayout || hostingFeatureCarousel || businessEmailImageAccordion;
 
   return (
     <main>
@@ -237,6 +244,23 @@ export default function ProductPageFromJson({ data }: { data: ProductJson }) {
                 id: `host-${i + 1}`,
                 label: item.title,
                 description: item.body,
+                imageSrc: item.image?.src ?? FALLBACK_SIDEBAR_IMAGE,
+                imageAlt: item.image?.alt ?? item.title,
+              }))}
+            />
+          </div>
+        </section>
+      ) : null}
+
+      {businessEmailImageAccordion && hero.sidebar ? (
+        <section className="w-full bg-white py-12 md:py-16 lg:py-24">
+          <div className="mx-auto max-w-7xl px-6">
+            <InteractiveImageAccordion
+              sectionHeading={hero.sidebar.heading}
+              items={hero.sidebar.items.map((item, i) => ({
+                id: `be-${i + 1}`,
+                title: item.title,
+                body: item.body,
                 imageSrc: item.image?.src ?? FALLBACK_SIDEBAR_IMAGE,
                 imageAlt: item.image?.alt ?? item.title,
               }))}
