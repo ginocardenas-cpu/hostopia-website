@@ -6,8 +6,8 @@ import { cn } from "@/lib/utils";
 import type { ProductLifecycleStep } from "@/lib/product-json-types";
 
 /**
- * One accent per lifecycle column (brand palette): teal, green, orange, medium gray.
- * Cycles if a product ever defines more than four steps.
+ * One accent per lifecycle column (fixed order). Full HEX/RGB + shading spec:
+ * `website design/hostopia-homepage-design-system.md` → “Lifecycle grid — color & shading specification”.
  */
 const STEP_ACCENTS = ["#2cadb2", "#66bc29", "#ff8400", "#97999b"] as const;
 

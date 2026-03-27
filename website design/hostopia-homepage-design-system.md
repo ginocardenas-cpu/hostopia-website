@@ -583,7 +583,7 @@ When the hero sidebar is moved into vertical tabs, accordion, hosting feature ca
 
 ### Portfolio fit — lifecycle grid (`ProductLifecycleGrid`)
 
-Four **separate cards** in a flex row/column with **chevrons** between steps (down on small screens, right on `lg+`). Each step uses a **distinct brand accent** (in order): **teal** `#2cadb2`, **green** `#66bc29`, **orange** `#ff8400`, **medium gray** `#97999b` (cycles if more than four steps). **Section label** “Portfolio fit” still comes from `lifecycleFit.eyebrow` above the grid; the **portfolio-fit step** also gets a **floating charcoal tab** (gold star + “Portfolio Fit”) on the top edge of that card only.
+Four **separate cards** in a flex row/column with **chevrons** between steps (down on small screens, right on `lg+`). Implementation: `components/products/ProductLifecycleGrid.tsx` (accent list: `STEP_ACCENTS`). **Section label** “Portfolio fit” comes from `lifecycleFit.eyebrow` above the grid; the **portfolio-fit** step also gets a **floating charcoal tab** (gold star + “Portfolio Fit”) on the top edge of that card only.
 
 | Rule | Detail |
 |------|--------|
@@ -592,6 +592,64 @@ Four **separate cards** in a flex row/column with **chevrons** between steps (do
 | **Per-card chrome** | Rounded card (`rounded-2xl`), light border, **bottom accent bar** full width in that column’s color. **Chevron** between steps: down on small screens, right on `lg+`. |
 | **Lifecycle step title** | `text-xl font-black text-charcoal` (aligned with feature card titles) |
 | **Lifecycle step body** | `text-sm text-gray-500 leading-relaxed` (aligned with feature card body) |
+
+#### Lifecycle grid — color & shading specification (marketing & Hostopia Connects)
+
+Use this table when reproducing the UI in **slides, PDFs, one-pagers**, or when **grouping or tagging content by lifecycle lane** in other systems (e.g. Hostopia Connects document libraries). The **four accents are fixed in order** for positions 1–4; a fifth step reuses teal (same cycle as the site).
+
+| Position | Role (semantic) | Accent name | HEX | RGB | Brand guide note |
+|----------|-----------------|-------------|-----|-----|------------------|
+| **01** | First lifecycle stage (e.g. brand / foundation) | **Secondary teal** | `#2cadb2` | `44, 173, 178` | Secondary palette — “blue” / digital energy |
+| **02** | Second stage | **Tertiary green** | `#66bc29` | `102, 188, 41` | Tertiary accent — growth / “go” |
+| **03** | Third stage | **Tertiary orange** | `#ff8400` | `255, 132, 0` | Tertiary accent — momentum / attention |
+| **04** | Fourth stage | **Medium gray** | `#97999b` | `151, 153, 155` | Secondary palette — neutral / maturity |
+
+**Default card (all steps):**
+
+| Element | Value |
+|---------|--------|
+| Card fill | **White** `#ffffff` |
+| Card border | **Gray** at ~90% opacity on white → `border-gray-200/90` (Tailwind gray-200 ≈ `#e5e7eb`, used as soft edge) |
+| Hover border | `border-gray-300` |
+| Default shadow | `shadow-sm` |
+| Hover shadow | `shadow-md` |
+| Large step numeral | Accent color at **18% opacity** (`opacity: 0.18`) |
+| Title | **Charcoal** `#24282b` |
+| Body | **Gray-500** (Tailwind default ≈ `#6b7280`) |
+| Bottom accent bar | Solid **accent** for that position, height **6px** (`h-1.5`) |
+| Short underline under numeral | Solid **accent**, animates width on hover/expand |
+
+**Portfolio Fit (highlighted) card — extra treatments:**
+
+| Element | Value |
+|---------|--------|
+| Outer border | **Teal** at 35% opacity (`border-teal/35`) |
+| Ring | **Teal** at 25% (`ring-1 ring-teal/25`) |
+| Drop shadow | `shadow-lg` + `shadow-charcoal/10` |
+| Large screens | **Scale** `1.04`, **translate up** `-translate-y-1` |
+| Inner content area | **Cream** at 80% (`bg-cream/80`) — cream = `#f7f6f2` |
+| Left rail | **Teal** at 80% (`border-l-teal/80`), **4px** wide |
+| Large step numeral | Same accent hue at **50% opacity** |
+| Floating tab | **Charcoal** `#24282b` background; **Gold** star `#f8cf41`; label **white** |
+
+**Interaction (non–portfolio-fit step, expanded):**
+
+| Element | Value |
+|---------|--------|
+| Inset focus | **2px** inset ring in the **step accent** at ~60% opacity (implementation: accent HEX + `99` alpha suffix) |
+
+**Progression arrows (between cards):**
+
+| Element | Value |
+|---------|--------|
+| Icon color | **Teal** at **45%** (`text-teal/45`) |
+| Mobile | `ChevronDown`; **desktop** `lg+`: `ChevronRight` |
+
+**Positioning content in Hostopia Connects (and similar):**
+
+- Treat **position 01–04** as **stable lifecycle lanes**, not product names: reuse the same four HEX values for **folder colors, tags, or section headers** so materials align with the website’s portfolio story.
+- A given **product** “sits” in **one** lane on a page (the Portfolio Fit step); **all four colors** still appear in every lifecycle section to show the full journey.
+- For **print**, prefer **solid accents** for bars and numerals; use **cream 80% + teal rail** only when showing the highlighted step, to match the digital treatment.
 
 ---
 
@@ -610,6 +668,11 @@ module.exports = {
         gold: '#f8cf41',
         'gold-dark': '#e0b82a',
         cream: '#f7f6f2',
+        brand: {
+          green: '#66bc29',
+          orange: '#ff8400',
+          'gray-medium': '#97999b',
+        },
       },
       fontFamily: {
         montserrat: ['Montserrat', 'sans-serif'],
@@ -622,4 +685,4 @@ module.exports = {
 
 ---
 
-*Document updated: March 26, 2026 — includes lifecycle grid four-accent cards and `media.templateMarquee` (3D marquee on Website Builder). Homepage reference: hostopia-website-cxets2acj-ginocardenas-8299s-projects.vercel.app*
+*Document updated: March 26, 2026 — includes lifecycle grid color/shading spec (marketing & Hostopia Connects) and `media.templateMarquee` (3D marquee on Website Builder). Homepage reference: hostopia-website-cxets2acj-ginocardenas-8299s-projects.vercel.app*
