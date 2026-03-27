@@ -575,7 +575,14 @@ Any product JSON may include `media.templateMarquee` with `images` (array of `{ 
 
 ### Customer logo showcase (optional `media.logoShowcase`)
 
-Any product JSON may include `media.logoShowcase` with `images` (`src`, `alt`, optional `height` in px for scaling), plus optional `eyebrow`, `heading`, `intro`, and optional **`ctaLabel`** / **`ctaHref`** (defaults: “Meet our customers” → `/customers/telcos`). When `images` is non-empty, a **four-column logo grid** with **staggered blur-in animation** (Framer Motion) renders **after** the `features` block and **before** `templateMarquee`, `beforeAfter`, `contentImage`, and **partner advantage**. **Hover** blurs/dims the grid and reveals the CTA link. Implementation: `components/ui/customers-section.tsx` (`CustomersSection`, `embedded`) + `components/ui/animated-group.tsx` (`AnimatedGroup`). Logos use plain `<img>` (SVG/PNG URLs from JSON — e.g. `public/` paths or HTTPS CDNs). Currently used on **Logo Design** (`/products/logo-design`).
+Any product JSON may include `media.logoShowcase` with `images` (`src`, `alt`, optional `height` in px), plus optional `eyebrow`, `heading`, `intro`, and optional **`ctaLabel`** / **`ctaHref`** (defaults: “Meet our customers” → `/customers/telcos`). Renders **after** `features` and **before** `templateMarquee`, `beforeAfter`, `contentImage`, and **partner advantage**.
+
+| `layout` | Behavior |
+|----------|----------|
+| **`ticker`** (default if omitted) | **Infinite horizontal strip**: duplicated row, CSS `logoTicker` animation (~**50s** full loop by default, set **`tickerDurationSec`** 25–120). **Pause on hover**. **Edge fades** (white gradient). **`prefers-reduced-motion`**: static wrapped row, no scroll. CTA link **below** the strip. Implementation: `components/ui/logo-ticker.tsx`. |
+| **`grid`** | Four-column **staggered blur-in** (Framer Motion); **hover** blurs grid + centers CTA. `components/ui/customers-section.tsx` + `components/ui/animated-group.tsx`. |
+
+Logos use plain `<img>` (SVG/PNG from JSON). **Logo Design** (`/products/logo-design`) uses **`layout`: `ticker`** and **`tickerDurationSec`: 50** by default.
 
 ### Before / after image comparison (optional `media.beforeAfter`)
 

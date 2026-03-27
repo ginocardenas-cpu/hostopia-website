@@ -54,6 +54,12 @@ export type ProductLogoShowcase = {
   /** Defaults: “Meet our customers” → `/customers/telcos` */
   ctaLabel?: string;
   ctaHref?: string;
+  /**
+   * `ticker` — slow infinite horizontal scroll (default). `grid` — staggered `CustomersSection`.
+   */
+  layout?: "ticker" | "grid";
+  /** Logo ticker loop length in seconds (default 50). Only used when `layout` is not `grid`. */
+  tickerDurationSec?: number;
   images: ProductLogoShowcaseImage[];
 };
 

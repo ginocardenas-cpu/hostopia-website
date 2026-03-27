@@ -69,6 +69,8 @@
       "alt": "Professional logo and brand identity design concepts"
     },
     "logoShowcase": {
+      "layout": "ticker",
+      "tickerDurationSec": 50,
       "eyebrow": "Customer work",
       "heading": "Logos designed for real businesses",
       "intro": "Representative marks from our design teams — the kind of professional identity SMBs use across web, print, and social.",

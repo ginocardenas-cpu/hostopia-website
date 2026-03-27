@@ -57,8 +57,14 @@ const config: Config = {
         "typewriter-cursor": "typewriter-cursor 0.8s step-end infinite",
         "accordion-down": "accordion-down 0.2s ease-out",
         "accordion-up": "accordion-up 0.2s ease-out",
+        /** Seamless logo row; duration overridden inline for slower loops */
+        "logo-ticker": "logoTicker 50s linear infinite",
       },
       keyframes: {
+        logoTicker: {
+          "0%": { transform: "translateX(0)" },
+          "100%": { transform: "translateX(-50%)" },
+        },
         "accordion-down": {
           from: { height: "0" },
           to: { height: "var(--radix-accordion-content-height)" },
