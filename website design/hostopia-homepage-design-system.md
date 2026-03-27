@@ -583,13 +583,13 @@ When the hero sidebar is moved into vertical tabs, accordion, hosting feature ca
 
 ### Portfolio fit — lifecycle grid (`ProductLifecycleGrid`)
 
-Four **separate cards** in a responsive grid (`gap-4` / `lg:gap-5`), not a single merged panel. Each step uses a **distinct brand accent** (in order): **teal** `#2cadb2`, **green** `#66bc29`, **orange** `#ff8400`, **medium gray** `#97999b` (cycles if more than four steps). **Section label** “Portfolio fit” comes from `lifecycleFit.eyebrow` above the grid in `ProductPageFromJson` — **no badge inside the card**.
+Four **separate cards** in a flex row/column with **chevrons** between steps (down on small screens, right on `lg+`). Each step uses a **distinct brand accent** (in order): **teal** `#2cadb2`, **green** `#66bc29`, **orange** `#ff8400`, **medium gray** `#97999b` (cycles if more than four steps). **Section label** “Portfolio fit” still comes from `lifecycleFit.eyebrow` above the grid; the **portfolio-fit step** also gets a **floating charcoal tab** (gold star + “Portfolio Fit”) on the top edge of that card only.
 
 | Rule | Detail |
 |------|--------|
 | **Portfolio fit column** | `highlight: true` in JSON **or** `step.productName` normalized-match to page `productName` |
-| **Highlight styling** | Slight **scale** and **lift** on large screens (`lg:scale-[1.04] lg:-translate-y-1`), **teal-tinted border/ring**, **shadow** — **no gold/yellow fill** (avoids clash with column accents). Stronger step-number opacity than non-highlight steps. |
-| **Per-card chrome** | Rounded card (`rounded-2xl`), light border, **bottom accent bar** full width in that column’s color. |
+| **Highlight styling** | Slight **scale** and **lift** on large screens (`lg:scale-[1.04] lg:-translate-y-1`), **teal-tinted border/ring**, **shadow** — **no gold/yellow fill** on the card body (star uses brand gold). Stronger step-number opacity than non-highlight steps. **Floating tab** on top center: charcoal pill, gold star, “Portfolio Fit” in white. Subtle **cream panel** + **teal left rail** inside the card. |
+| **Per-card chrome** | Rounded card (`rounded-2xl`), light border, **bottom accent bar** full width in that column’s color. **Chevron** between steps: down on small screens, right on `lg+`. |
 | **Lifecycle step title** | `text-xl font-black text-charcoal` (aligned with feature card titles) |
 | **Lifecycle step body** | `text-sm text-gray-500 leading-relaxed` (aligned with feature card body) |
 
