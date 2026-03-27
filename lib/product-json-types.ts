@@ -40,6 +40,14 @@ export type ProductTemplateMarquee = {
   images: ProductTemplateMarqueeImage[];
 };
 
+/** Customer logo gallery — same image shape as template marquee; rendered as a grid (e.g. logo-design). */
+export type ProductLogoShowcase = {
+  eyebrow?: string;
+  heading?: string;
+  intro?: string;
+  images: ProductTemplateMarqueeImage[];
+};
+
 export type ProductMedia = {
   /** Large visual in hero (local `/...` or remote URL allowed in next.config) */
   heroImage?: ProductMediaImage;
@@ -49,6 +57,8 @@ export type ProductMedia = {
   beforeAfter?: ProductBeforeAfter;
   /** Optional 3D template marquee (e.g. website-builder) — rendered after features */
   templateMarquee?: ProductTemplateMarquee;
+  /** Optional customer logo grid (e.g. logo-design) — after features, before partner section */
+  logoShowcase?: ProductLogoShowcase;
 };
 
 export type ProductSidebarItem = {

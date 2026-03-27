@@ -573,6 +573,10 @@ Implementation: `components/ui/product-hero-accordion.tsx` (Radix accordion in `
 
 Any product JSON may include `media.templateMarquee` with `images` (array of `{ src, alt }`), plus optional `eyebrow`, `heading`, and `intro`. When `images` is non-empty, a **3D marquee** section renders **after** the “What you deliver” / `features` block and **before** optional `media.beforeAfter` and other media sections. Implementation: `components/ui/three-d-marquee.tsx` (`ThreeDMarquee`). Currently used on **Website Builder** (`/products/website-builder`).
 
+### Customer logo showcase (optional `media.logoShowcase`)
+
+Any product JSON may include `media.logoShowcase` with the same shape as `templateMarquee`: `images` (`{ src, alt }` each), plus optional `eyebrow`, `heading`, and `intro`. When `images` is non-empty, a **responsive logo grid** renders **after** the `features` block and **before** `templateMarquee`, `beforeAfter`, `contentImage`, and the **partner advantage** section — i.e. between “What you deliver” and “The partner advantage.” Images use `next/image` with **object-contain** on white cards. Implementation: `components/products/CustomerLogoShowcase.tsx`. Currently used on **Logo Design** (`/products/logo-design`). Host customer logo PNGs/SVGs in `public/` or use allowed remote URLs in `next.config.js`.
+
 ### Before / after image comparison (optional `media.beforeAfter`)
 
 Any product JSON may include `media.beforeAfter` with `before` and `after` images (each `src` + `alt`), plus optional `eyebrow`, `heading`, and `intro`. When present, a **comparison slider** section renders **after** the `features` block (and **after** `templateMarquee`, if present) and **before** `contentImage` / partner sections. Left side of the slider = **before** (weaker/dated); right = **after** (improved). Implementation: `components/ui/image-comparison-slider.tsx` (`ImageComparison`). Currently used on **Website Design** (`/products/website-design`).
@@ -685,4 +689,4 @@ module.exports = {
 
 ---
 
-*Document updated: March 26, 2026 — includes lifecycle grid color/shading spec (marketing & Hostopia Connects) and `media.templateMarquee` (3D marquee on Website Builder). Homepage reference: hostopia-website-cxets2acj-ginocardenas-8299s-projects.vercel.app*
+*Document updated: March 26, 2026 — includes `media.logoShowcase`, lifecycle grid color/shading spec (marketing & Hostopia Connects), and `media.templateMarquee` (3D marquee on Website Builder). Homepage reference: hostopia-website-cxets2acj-ginocardenas-8299s-projects.vercel.app*

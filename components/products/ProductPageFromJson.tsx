@@ -4,6 +4,7 @@ import Link from "next/link";
 import type { ProductJson } from "@/lib/product-json-types";
 import ProductLucideIcon from "@/components/products/ProductLucideIcon";
 import ProductLifecycleGrid from "@/components/products/ProductLifecycleGrid";
+import CustomerLogoShowcase from "@/components/products/CustomerLogoShowcase";
 import { VerticalTabs } from "@/components/ui/vertical-tabs";
 import { ProductHeroAccordion } from "@/components/ui/product-hero-accordion";
 import { FeatureCarousel } from "@/components/ui/feature-carousel";
@@ -89,6 +90,7 @@ export default function ProductPageFromJson({ data }: { data: ProductJson }) {
   const { hero, features, partnerAdvantage, lifecycleFit, cta, media } = data;
   const beforeAfter = media?.beforeAfter;
   const templateMarquee = media?.templateMarquee;
+  const logoShowcase = media?.logoShowcase;
   const heroImg = media?.heroImage;
   const contentImg = media?.contentImage;
   const verticalTabsLayout = VERTICAL_TABS_LAYOUT_SLUGS.has(data.slug) && Boolean(hero.sidebar);
@@ -303,6 +305,25 @@ export default function ProductPageFromJson({ data }: { data: ProductJson }) {
                 </div>
               ))}
             </div>
+          </div>
+        </section>
+      ) : null}
+
+      {logoShowcase?.images?.length ? (
+        <section className="border-t border-gray-200/80 bg-white py-16 md:py-24">
+          <div className="mx-auto max-w-7xl px-6">
+            {logoShowcase.eyebrow ? (
+              <span className="section-label mb-4 inline-block">{logoShowcase.eyebrow}</span>
+            ) : null}
+            {logoShowcase.heading ? (
+              <h2 className="mb-4 max-w-4xl font-montserrat text-3xl font-black leading-tight text-charcoal md:text-4xl lg:text-5xl">
+                {logoShowcase.heading}
+              </h2>
+            ) : null}
+            {logoShowcase.intro ? (
+              <p className="mb-10 max-w-3xl font-raleway text-lg leading-relaxed text-gray-500">{logoShowcase.intro}</p>
+            ) : null}
+            <CustomerLogoShowcase images={logoShowcase.images} />
           </div>
         </section>
       ) : null}
