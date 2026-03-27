@@ -606,14 +606,14 @@ Four **separate cards** in a flex row/column with **chevrons** between steps (do
 
 #### Lifecycle grid — color & shading specification (marketing & Hostopia Connects)
 
-Use this table when reproducing the UI in **slides, PDFs, one-pagers**, or when **grouping or tagging content by lifecycle lane** in other systems (e.g. Hostopia Connects document libraries). The **four accents are fixed in order** for positions 1–4; a fifth step reuses teal (same cycle as the site).
+Use this table when reproducing the UI in **slides, PDFs, one-pagers**, or when **grouping or tagging content by lifecycle lane** in other systems (e.g. Hostopia Connects document libraries). The **four accents are fixed in order** for positions 1–4; a fifth step **cycles** back to orange.
 
 | Position | Role (semantic) | Accent name | HEX | RGB | Brand guide note |
 |----------|-----------------|-------------|-----|-----|------------------|
-| **01** | First lifecycle stage (e.g. brand / foundation) | **Secondary teal** | `#2cadb2` | `44, 173, 178` | Secondary palette — “blue” / digital energy |
-| **02** | Second stage | **Tertiary green** | `#66bc29` | `102, 188, 41` | Tertiary accent — growth / “go” |
-| **03** | Third stage | **Tertiary orange** | `#ff8400` | `255, 132, 0` | Tertiary accent — momentum / attention |
-| **04** | Fourth stage | **Medium gray** | `#97999b` | `151, 153, 155` | Secondary palette — neutral / maturity |
+| **01** | Build a Brand | **Tertiary orange** | `#ff8400` | `255, 132, 0` | Tertiary accent — warmth / brand spark |
+| **02** | Get Online | **Tertiary green** | `#66bc29` | `102, 188, 41` | Tertiary accent — growth / “go” |
+| **03** | Get Found | **Medium gray** | `#97999b` | `151, 153, 155` | Secondary palette — neutral / discoverability |
+| **04** | Grow | **Secondary teal** | `#2cadb2` | `44, 173, 178` | Secondary palette — digital energy / scale |
 
 **Default card (all steps):**
 

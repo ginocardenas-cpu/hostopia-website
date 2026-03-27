@@ -9,7 +9,8 @@ import type { ProductLifecycleStep } from "@/lib/product-json-types";
  * One accent per lifecycle column (fixed order). Full HEX/RGB + shading spec:
  * `website design/hostopia-homepage-design-system.md` → “Lifecycle grid — color & shading specification”.
  */
-const STEP_ACCENTS = ["#2cadb2", "#66bc29", "#ff8400", "#97999b"] as const;
+/** 01 Build a Brand → orange; 02 Get Online → green; 03 Get Found → gray; 04 Grow → teal */
+const STEP_ACCENTS = ["#ff8400", "#66bc29", "#97999b", "#2cadb2"] as const;
 
 function norm(s: string) {
   return s.trim().toLowerCase().replace(/\s+/g, " ");
