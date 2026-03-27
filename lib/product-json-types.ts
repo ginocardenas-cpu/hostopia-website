@@ -40,12 +40,21 @@ export type ProductTemplateMarquee = {
   images: ProductTemplateMarqueeImage[];
 };
 
-/** Customer logo gallery — same image shape as template marquee; rendered as a grid (e.g. logo-design). */
+/** Logo row + stagger animation (`CustomersSection`). Optional per-logo height (px) for SVG/raster balance. */
+export type ProductLogoShowcaseImage = {
+  src: string;
+  alt: string;
+  height?: number;
+};
+
 export type ProductLogoShowcase = {
   eyebrow?: string;
   heading?: string;
   intro?: string;
-  images: ProductTemplateMarqueeImage[];
+  /** Defaults: “Meet our customers” → `/customers/telcos` */
+  ctaLabel?: string;
+  ctaHref?: string;
+  images: ProductLogoShowcaseImage[];
 };
 
 export type ProductMedia = {

@@ -4,7 +4,7 @@ import Link from "next/link";
 import type { ProductJson } from "@/lib/product-json-types";
 import ProductLucideIcon from "@/components/products/ProductLucideIcon";
 import ProductLifecycleGrid from "@/components/products/ProductLifecycleGrid";
-import CustomerLogoShowcase from "@/components/products/CustomerLogoShowcase";
+import { CustomersSection } from "@/components/ui/customers-section";
 import { VerticalTabs } from "@/components/ui/vertical-tabs";
 import { ProductHeroAccordion } from "@/components/ui/product-hero-accordion";
 import { FeatureCarousel } from "@/components/ui/feature-carousel";
@@ -323,7 +323,16 @@ export default function ProductPageFromJson({ data }: { data: ProductJson }) {
             {logoShowcase.intro ? (
               <p className="mb-10 max-w-3xl font-raleway text-lg leading-relaxed text-gray-500">{logoShowcase.intro}</p>
             ) : null}
-            <CustomerLogoShowcase images={logoShowcase.images} />
+            <CustomersSection
+              embedded
+              customers={logoShowcase.images.map((img) => ({
+                src: img.src,
+                alt: img.alt,
+                height: img.height ?? 24,
+              }))}
+              ctaHref={logoShowcase.ctaHref ?? "/customers/telcos"}
+              ctaLabel={logoShowcase.ctaLabel ?? "Meet our customers"}
+            />
           </div>
         </section>
       ) : null}

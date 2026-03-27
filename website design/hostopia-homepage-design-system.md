@@ -575,7 +575,7 @@ Any product JSON may include `media.templateMarquee` with `images` (array of `{ 
 
 ### Customer logo showcase (optional `media.logoShowcase`)
 
-Any product JSON may include `media.logoShowcase` with the same shape as `templateMarquee`: `images` (`{ src, alt }` each), plus optional `eyebrow`, `heading`, and `intro`. When `images` is non-empty, a **responsive logo grid** renders **after** the `features` block and **before** `templateMarquee`, `beforeAfter`, `contentImage`, and the **partner advantage** section — i.e. between “What you deliver” and “The partner advantage.” Images use `next/image` with **object-contain** on white cards. Implementation: `components/products/CustomerLogoShowcase.tsx`. Currently used on **Logo Design** (`/products/logo-design`). Host customer logo PNGs/SVGs in `public/` or use allowed remote URLs in `next.config.js`.
+Any product JSON may include `media.logoShowcase` with `images` (`src`, `alt`, optional `height` in px for scaling), plus optional `eyebrow`, `heading`, `intro`, and optional **`ctaLabel`** / **`ctaHref`** (defaults: “Meet our customers” → `/customers/telcos`). When `images` is non-empty, a **four-column logo grid** with **staggered blur-in animation** (Framer Motion) renders **after** the `features` block and **before** `templateMarquee`, `beforeAfter`, `contentImage`, and **partner advantage**. **Hover** blurs/dims the grid and reveals the CTA link. Implementation: `components/ui/customers-section.tsx` (`CustomersSection`, `embedded`) + `components/ui/animated-group.tsx` (`AnimatedGroup`). Logos use plain `<img>` (SVG/PNG URLs from JSON — e.g. `public/` paths or HTTPS CDNs). Currently used on **Logo Design** (`/products/logo-design`).
 
 ### Before / after image comparison (optional `media.beforeAfter`)
 

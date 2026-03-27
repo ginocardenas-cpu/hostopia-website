@@ -72,39 +72,17 @@
       "eyebrow": "Customer work",
       "heading": "Logos designed for real businesses",
       "intro": "Representative marks from our design teams — the kind of professional identity SMBs use across web, print, and social.",
+      "ctaLabel": "Meet our customers",
+      "ctaHref": "/customers/telcos",
       "images": [
-        {
-          "src": "https://images.unsplash.com/photo-1611162617474-5b21e879e113?q=80&w=800&auto=format&fit=crop",
-          "alt": "Bold brand mark on dark background"
-        },
-        {
-          "src": "https://images.unsplash.com/photo-1561070791-2526d30994b5?q=80&w=800&auto=format&fit=crop",
-          "alt": "Creative brand identity sketch concepts"
-        },
-        {
-          "src": "https://images.unsplash.com/photo-1558655146-9f40138edfeb?q=80&w=800&auto=format&fit=crop",
-          "alt": "Minimal logo design workspace"
-        },
-        {
-          "src": "https://images.unsplash.com/photo-1586718522365-00796df06a84?q=80&w=800&auto=format&fit=crop",
-          "alt": "Colorful brand style exploration"
-        },
-        {
-          "src": "https://images.unsplash.com/photo-1600137173299-fbb0a785e17d?q=80&w=800&auto=format&fit=crop",
-          "alt": "Modern geometric logo study"
-        },
-        {
-          "src": "https://images.unsplash.com/photo-1559028012-481c04fa702d?q=80&w=800&auto=format&fit=crop",
-          "alt": "Brand guidelines and logo applications"
-        },
-        {
-          "src": "https://images.unsplash.com/photo-1626785774573-4b799315345d?q=80&w=800&auto=format&fit=crop",
-          "alt": "Professional logo presentation mockup"
-        },
-        {
-          "src": "https://images.unsplash.com/photo-1542744173-8e7e53415bb0?q=80&w=800&auto=format&fit=crop",
-          "alt": "Business branding and identity design"
-        }
+        { "src": "https://html.tailus.io/blocks/customers/nvidia.svg", "alt": "Sample customer logo", "height": 20 },
+        { "src": "https://html.tailus.io/blocks/customers/column.svg", "alt": "Sample customer logo", "height": 16 },
+        { "src": "https://html.tailus.io/blocks/customers/github.svg", "alt": "Sample customer logo", "height": 16 },
+        { "src": "https://html.tailus.io/blocks/customers/nike.svg", "alt": "Sample customer logo", "height": 20 },
+        { "src": "https://html.tailus.io/blocks/customers/lemonsqueezy.svg", "alt": "Sample customer logo", "height": 20 },
+        { "src": "https://html.tailus.io/blocks/customers/laravel.svg", "alt": "Sample customer logo", "height": 16 },
+        { "src": "https://html.tailus.io/blocks/customers/lilly.svg", "alt": "Sample customer logo", "height": 28 },
+        { "src": "https://html.tailus.io/blocks/customers/openai.svg", "alt": "Sample customer logo", "height": 24 }
       ]
     }
   },
