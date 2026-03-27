@@ -524,6 +524,16 @@ When building or auditing any page, verify the following:
 
 ---
 
+## 11b. Vimeo video blocks (homepage + products)
+
+- **Homepage:** `content/home-vimeo.json` (loaded by `loadHomeVimeo()`). Set `"enabled": false` to hide the block without deleting config.
+- **Product pages:** optional `media.vimeoOverview` in `content/products/*.json` — same fields as below. Renders **immediately after the hero** when `vimeoId` is valid.
+- **Fields:** `vimeoId` (numeric id or full `vimeo.com/...` URL), optional `eyebrow`, `title`, `description`, optional `posterSrc` / `posterAlt` (Unsplash or `public/`; falls back to teal/gold gradient if no poster), optional `playLabel`.
+- **UX:** 16:9 **poster** with gradient overlay + **teal play** control; opens **Radix Dialog** with `player.vimeo.com` iframe (**autoplay on open**, `dnt=1`). Iframe mounts only while the dialog is open.
+- **Implementation:** `components/VimeoVideoSection.tsx`, `components/ui/dialog.tsx`, `lib/vimeo-id.ts`, `lib/vimeo-video-types.ts`.
+
+---
+
 ## 12. Product detail pages (JSON / `ProductPageFromJson`)
 
 Product pages share typography with the **“What you deliver”** features block for secondary content patterns.
@@ -696,4 +706,4 @@ module.exports = {
 
 ---
 
-*Document updated: March 26, 2026 — includes `media.logoShowcase`, lifecycle grid color/shading spec (marketing & Hostopia Connects), and `media.templateMarquee` (3D marquee on Website Builder). Homepage reference: hostopia-website-cxets2acj-ginocardenas-8299s-projects.vercel.app*
+*Document updated: March 26, 2026 — includes Vimeo blocks (`home-vimeo.json`, `media.vimeoOverview`), `media.logoShowcase`, lifecycle grid spec, and `media.templateMarquee`. Homepage reference: hostopia-website-cxets2acj-ginocardenas-8299s-projects.vercel.app*

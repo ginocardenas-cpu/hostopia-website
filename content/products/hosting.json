@@ -67,6 +67,15 @@
     "heroImage": {
       "src": "https://images.unsplash.com/photo-1558494949-ef010cbdcc31?q=80&w=1600&auto=format&fit=crop",
       "alt": "Website hosting and data center"
+    },
+    "vimeoOverview": {
+      "vimeoId": "76979871",
+      "eyebrow": "See it in action",
+      "title": "Website Hosting built for partners and SMBs",
+      "description": "A quick overview of how Hostopia hosting fits your white-label stack. Update the Vimeo ID in product JSON when your video is live.",
+      "posterSrc": "https://images.unsplash.com/photo-1558494949-ef010cbdcc31?q=80&w=1600&auto=format&fit=crop",
+      "posterAlt": "Website hosting and data center",
+      "playLabel": "Play hosting overview"
     }
   },
 

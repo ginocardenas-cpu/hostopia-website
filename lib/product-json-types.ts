@@ -1,5 +1,7 @@
 /** Shape of `content/products/*.json` — optional blocks for flexible authoring */
 
+import type { VimeoVideoContent } from "@/lib/vimeo-video-types";
+
 export type ProductSeo = {
   primaryKeyword: string;
   secondaryKeywords: string[];
@@ -74,6 +76,8 @@ export type ProductMedia = {
   templateMarquee?: ProductTemplateMarquee;
   /** Optional customer logo grid (e.g. logo-design) — after features, before partner section */
   logoShowcase?: ProductLogoShowcase;
+  /** Vimeo overview — after hero (e.g. hosting). */
+  vimeoOverview?: VimeoVideoContent;
 };
 
 export type ProductSidebarItem = {

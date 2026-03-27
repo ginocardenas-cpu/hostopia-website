@@ -12,7 +12,9 @@ import { FeatureCarousel } from "@/components/ui/feature-carousel";
 import { InteractiveImageAccordion } from "@/components/ui/interactive-image-accordion";
 import { ImageComparison } from "@/components/ui/image-comparison-slider";
 import { ThreeDMarquee } from "@/components/ui/three-d-marquee";
+import { VimeoVideoSection } from "@/components/VimeoVideoSection";
 import { cn } from "@/lib/utils";
+import { normalizeVimeoId } from "@/lib/vimeo-id";
 
 function splitHeadline(headline: string): ReactNode {
   const parts = headline.split(/\s[—–]\s/);
@@ -94,6 +96,8 @@ export default function ProductPageFromJson({ data }: { data: ProductJson }) {
   const logoShowcase = media?.logoShowcase;
   const heroImg = media?.heroImage;
   const contentImg = media?.contentImage;
+  const vimeoOverview = media?.vimeoOverview;
+  const showVimeoOverview = Boolean(vimeoOverview && normalizeVimeoId(vimeoOverview.vimeoId));
   const verticalTabsLayout = VERTICAL_TABS_LAYOUT_SLUGS.has(data.slug) && Boolean(hero.sidebar);
   const hostingFeatureCarousel = data.slug === HOSTING_SLUG && Boolean(hero.sidebar);
   const businessEmailImageAccordion = data.slug === BUSINESS_EMAIL_SLUG && Boolean(hero.sidebar);
@@ -211,6 +215,18 @@ export default function ProductPageFromJson({ data }: { data: ProductJson }) {
           </div>
         </div>
       </section>
+
+      {showVimeoOverview && vimeoOverview ? (
+        <VimeoVideoSection
+          vimeoId={vimeoOverview.vimeoId}
+          eyebrow={vimeoOverview.eyebrow ?? "See it in action"}
+          title={vimeoOverview.title}
+          description={vimeoOverview.description}
+          posterSrc={vimeoOverview.posterSrc}
+          posterAlt={vimeoOverview.posterAlt}
+          playLabel={vimeoOverview.playLabel ?? "Play product video"}
+        />
+      ) : null}
 
       {verticalTabsLayout && hero.sidebar ? (
         <VerticalTabs

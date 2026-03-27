@@ -8,11 +8,26 @@ import GoToMarket from "@/components/GoToMarket";
 import WhyHostopia from "@/components/WhyHostopia";
 import CTA from "@/components/CTA";
 import FAQ from "@/components/FAQ";
+import { VimeoVideoSection } from "@/components/VimeoVideoSection";
+import { loadHomeVimeo } from "@/lib/load-home-vimeo";
 
 export default function Home() {
+  const homeVimeo = loadHomeVimeo();
+
   return (
     <main>
       <Hero />
+      {homeVimeo ? (
+        <VimeoVideoSection
+          vimeoId={homeVimeo.vimeoId}
+          eyebrow={homeVimeo.eyebrow}
+          title={homeVimeo.title}
+          description={homeVimeo.description}
+          posterSrc={homeVimeo.posterSrc}
+          posterAlt={homeVimeo.posterAlt}
+          playLabel={homeVimeo.playLabel}
+        />
+      ) : null}
       <Pillars />
       <PartnerTypes />
       <Services />
