@@ -583,13 +583,13 @@ When the hero sidebar is moved into vertical tabs, accordion, hosting feature ca
 
 ### Portfolio fit — lifecycle grid (`ProductLifecycleGrid`)
 
-Four-column lifecycle grid with alternating teal/gold accents on step numbers and accent bars.
+Four **separate cards** in a responsive grid (`gap-4` / `lg:gap-5`), not a single merged panel. Each step uses a **distinct brand accent** (in order): **teal** `#2cadb2`, **green** `#66bc29`, **orange** `#ff8400`, **medium gray** `#97999b` (cycles if more than four steps). **Section label** “Portfolio fit” comes from `lifecycleFit.eyebrow` above the grid in `ProductPageFromJson` — **no badge inside the card**.
 
 | Rule | Detail |
 |------|--------|
 | **Portfolio fit column** | `highlight: true` in JSON **or** `step.productName` normalized-match to page `productName` |
-| **Highlight styling** | Gold border, gold-tinted gradient background, stronger step-number opacity |
-| **Portfolio fit badge** | **Only** a **charcoal** rounded box (`bg-charcoal`): **gold filled star** on top, **“Portfolio Fit”** label below in **white** (`text-sm font-semibold`). No product name, no “sits in…”, no step title inside the badge. |
+| **Highlight styling** | Slight **scale** and **lift** on large screens (`lg:scale-[1.04] lg:-translate-y-1`), **teal-tinted border/ring**, **shadow** — **no gold/yellow fill** (avoids clash with column accents). Stronger step-number opacity than non-highlight steps. |
+| **Per-card chrome** | Rounded card (`rounded-2xl`), light border, **bottom accent bar** full width in that column’s color. |
 | **Lifecycle step title** | `text-xl font-black text-charcoal` (aligned with feature card titles) |
 | **Lifecycle step body** | `text-sm text-gray-500 leading-relaxed` (aligned with feature card body) |
 
@@ -622,4 +622,4 @@ module.exports = {
 
 ---
 
-*Document updated: March 26, 2026 — includes `media.templateMarquee` (3D marquee on Website Builder). Homepage reference: hostopia-website-cxets2acj-ginocardenas-8299s-projects.vercel.app*
+*Document updated: March 26, 2026 — includes lifecycle grid four-accent cards and `media.templateMarquee` (3D marquee on Website Builder). Homepage reference: hostopia-website-cxets2acj-ginocardenas-8299s-projects.vercel.app*

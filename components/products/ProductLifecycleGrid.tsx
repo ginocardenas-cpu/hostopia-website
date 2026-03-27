@@ -1,12 +1,14 @@
 "use client";
 
 import { useState, useCallback } from "react";
-import { Star } from "lucide-react";
 import { cn } from "@/lib/utils";
 import type { ProductLifecycleStep } from "@/lib/product-json-types";
 
-/** Match homepage Pillars: teal / gold alternation */
-const ACCENT = ["#2cadb2", "#f8cf41"] as const;
+/**
+ * One accent per lifecycle column (brand palette): teal, green, orange, medium gray.
+ * Cycles if a product ever defines more than four steps.
+ */
+const STEP_ACCENTS = ["#2cadb2", "#66bc29", "#ff8400", "#97999b"] as const;
 
 function norm(s: string) {
   return s.trim().toLowerCase().replace(/\s+/g, " ");
@@ -32,16 +34,16 @@ export default function ProductLifecycleGrid({ steps, productLabel }: Props) {
   }, []);
 
   return (
-    <div className="grid gap-px overflow-hidden rounded-3xl bg-gray-100 md:grid-cols-2 lg:grid-cols-4">
+    <div className="grid grid-cols-1 gap-4 md:grid-cols-2 lg:grid-cols-4 lg:items-stretch lg:gap-5">
       {steps.map((step, i) => {
-        const accent = ACCENT[i % 2];
+        const accent = STEP_ACCENTS[i % STEP_ACCENTS.length];
         const isExpanded = expanded[step.step] ?? false;
         const nameMatch =
           !!productLabel &&
           !!step.productName &&
           norm(step.productName) === norm(productLabel);
         const isPortfolioFit = !!step.highlight || nameMatch;
-        const showTealRing = !isPortfolioFit && isExpanded;
+        const showAccentRing = !isPortfolioFit && isExpanded;
 
         return (
           <button
@@ -49,42 +51,44 @@ export default function ProductLifecycleGrid({ steps, productLabel }: Props) {
             type="button"
             onClick={() => toggle(step.step)}
             className={cn(
-              "group relative w-full cursor-pointer overflow-hidden p-10 text-left transition-colors duration-300 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-teal focus-visible:ring-offset-2",
-              isPortfolioFit
-                ? "z-[1] border-2 border-gold bg-gradient-to-b from-gold/40 via-amber-50/90 to-white shadow-md hover:from-gold/45 hover:to-amber-50"
-                : "bg-white hover:bg-gray-50",
-              showTealRing && "ring-2 ring-inset ring-teal/50",
+              "group relative flex w-full cursor-pointer flex-col overflow-hidden rounded-2xl border bg-white text-left shadow-sm transition-all duration-300",
+              "focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-teal focus-visible:ring-offset-2",
+              "border-gray-200/90 hover:border-gray-300 hover:shadow-md",
+              isPortfolioFit &&
+                "z-[1] border-teal/35 shadow-lg shadow-charcoal/10 ring-1 ring-teal/25 lg:scale-[1.04] lg:-translate-y-1",
             )}
+            style={
+              showAccentRing
+                ? { boxShadow: `inset 0 0 0 2px ${accent}99` }
+                : undefined
+            }
           >
-            {isPortfolioFit ? (
-              <div
-                className="mb-5 flex flex-col items-center gap-2 rounded-xl bg-charcoal px-4 py-3 text-center shadow-sm"
-                aria-label="Portfolio fit"
+            <div className="flex flex-1 flex-col p-8 pt-9 lg:p-9">
+              <span
+                className="mb-5 block select-none font-montserrat font-black leading-none"
+                style={{
+                  fontSize: "clamp(3.25rem, 8vw, 5rem)",
+                  color: accent,
+                  opacity: isPortfolioFit ? 0.5 : 0.18,
+                }}
               >
-                <Star className="h-5 w-5 fill-gold text-gold" aria-hidden />
-                <span className="font-raleway text-sm font-semibold text-white">Portfolio Fit</span>
-              </div>
-            ) : null}
-
-            <span
-              className="mb-6 block select-none font-montserrat font-black leading-none"
-              style={{
-                fontSize: "5rem",
-                color: accent,
-                opacity: isPortfolioFit ? 0.42 : 0.12,
-              }}
-            >
-              {step.step}
-            </span>
+                {step.step}
+              </span>
+              <div
+                className={cn(
+                  "mb-6 h-1 rounded-full transition-all duration-300 ease-out",
+                  isExpanded ? "w-16" : "w-10 group-hover:w-16",
+                )}
+                style={{ backgroundColor: accent }}
+              />
+              <h3 className="mb-4 font-montserrat text-xl font-black text-charcoal">{step.title}</h3>
+              <p className="font-raleway text-sm leading-relaxed text-gray-500">{step.body}</p>
+            </div>
             <div
-              className={cn(
-                "mb-6 h-1 rounded-full transition-all duration-300 ease-out",
-                isExpanded ? "w-16" : "w-10 group-hover:w-16",
-              )}
+              className="h-1.5 w-full shrink-0"
               style={{ backgroundColor: accent }}
+              aria-hidden
             />
-            <h3 className="mb-4 font-montserrat text-xl font-black text-charcoal">{step.title}</h3>
-            <p className="font-raleway text-sm leading-relaxed text-gray-500">{step.body}</p>
           </button>
         );
       })}

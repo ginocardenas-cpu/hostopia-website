@@ -26,6 +26,10 @@ const config: Config = {
           "gold-light": "#fef9e6",
           cream: "#f7f6f2",
           "gray-light": "#f2f2f0",
+          /** Tertiary / secondary accents — lifecycle grid, sparing UI */
+          green: "#66bc29",
+          orange: "#ff8400",
+          "gray-medium": "#97999b",
         },
       },
       fontFamily: {
