@@ -41,7 +41,7 @@ export default function Pillars() {
           <div>
             <div className="flex items-center gap-3 mb-5">
               <div className="w-8 h-px" style={{ backgroundColor: "#F8CF41" }} />
-              <span className="section-label">Why Partners Choose Hostopia</span>
+              <span className="section-label">Why Service Providers choose Hostopia</span>
             </div>
             <h2
               className="font-black leading-tight"
@@ -51,7 +51,7 @@ export default function Pillars() {
                 color: "#24282B",
               }}
             >
-              A Platform Built for
+              Everything You Need /
               <br />
               <TypewriterOnScroll />
             </h2>
