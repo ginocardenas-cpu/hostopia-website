@@ -1,62 +1,71 @@
 {
   "slug": "directories",
   "label": "Directories",
-  "productName": "OneList Plus",
+  "productName": "Directory Listings",
 
   "seo": {
-    "primaryKeyword": "white-label local listings management",
+    "primaryKeyword": "white-label directory listings management",
     "secondaryKeywords": [
-      "business directory listings",
+      "business directory listings platform",
       "local SEO for SMBs",
       "citation management platform",
       "local presence management",
-      "SMB listings platform"
+      "SMB listings platform",
+      "AI social media management white label"
     ],
-    "metaTitle": "White-Label Local Listings Management for Service Providers | Hostopia",
-    "metaDescription": "Launch local listings management under your brand. OneList Plus distributes accurate business data across Google, Bing, Facebook, Yelp, and more — driving SMB visibility and retention.",
+    "metaTitle": "White-Label Directory Listings & Social Management for Service Providers | Hostopia",
+    "metaDescription": "Launch directory listings and AI-powered social media management under your brand. Help SMBs manage profiles across Google, Facebook, Instagram, and top directories from one platform.",
     "urlSlug": "/products/directories"
   },
 
   "hero": {
-    "eyebrow": "OneList Plus by Hostopia",
-    "headline": "Accurate Listings Everywhere — Managed from One Dashboard",
-    "subheadline": "Inconsistent business listings kill search visibility, erode customer trust, and cost SMBs foot traffic. Most can't keep up with dozens of directories manually.",
-    "description": "OneList Plus distributes and syncs accurate business information across Google, Bing, Facebook, Yelp, and other major directories — automatically. Delivered white-label under your brand as a recurring subscription that drives retention and ARPU.",
+    "eyebrow": "Directory Listings by Hostopia",
+    "headline": "The Complete Foundation for Your Clients to Establish and Grow Their Online Presence",
+    "subheadline": "Most SMBs struggle to manage their online profiles, social media, and directory listings across dozens of platforms. Inconsistent information erodes search visibility, customer trust, and foot traffic.",
+    "description": "Hostopia's Directory Listings platform enables businesses to monitor their brand and competitors while effectively managing online profiles, SEO monitoring, and social media. It's designed to boost their digital footprint across search engines, social platforms, and directories — making businesses easily discoverable and competitive. Delivered white-label as part of the Online Marketing Center Essentials plan.",
     "cta": { "primary": "Book a Demo", "secondary": "Talk to Partner Success" },
-    "badge": "Always-on directory sync, white-labeled",
+    "badge": "Online Marketing Center — Essentials Plan",
     "sidebar": {
-      "heading": "Your SMB customers get",
+      "heading": "Your SMB customers can",
       "items": [
         {
-          "title": "One update, everywhere",
-          "body": "Change business info, hours, or categories once — it syncs automatically across all connected directories.",
+          "title": "Save time managing all social media in one place",
+          "body": "Instead of logging into Facebook, Instagram, and Google separately, SMBs manage everything from a single dashboard. Schedule posts, respond to comments, and track engagement across all platforms without the time drain of switching between apps — freeing up hours every week to focus on running their business.",
+          "image": {
+            "src": "https://images.unsplash.com/photo-1611162616305-69b3cf1bfe93?q=80&w=1200&auto=format&fit=crop",
+            "alt": "Social media management from a single dashboard"
+          }
+        },
+        {
+          "title": "Post consistently with scheduling and automation",
+          "body": "Consistency is key to social media success, but most SMBs can't commit to daily posting. Built-in scheduling tools let businesses plan content days or weeks in advance, with automation ensuring a steady stream of posts goes live on the right platforms at the right times — even when they're busy serving customers.",
           "image": {
             "src": "https://images.unsplash.com/photo-1522542550221-31fd19575a2d?q=80&w=1200&auto=format&fit=crop",
-            "alt": "Syncing business data across platforms"
+            "alt": "Content scheduling and social media automation"
           }
         },
         {
-          "title": "Always-on accuracy",
-          "body": "Continuous sync suppresses duplicates, corrects errors, and keeps data consistent across every platform.",
-          "image": {
-            "src": "https://images.unsplash.com/photo-1551434678-e076c223a692?q=80&w=1200&auto=format&fit=crop",
-            "alt": "Accurate listings and data consistency"
-          }
-        },
-        {
-          "title": "Visibility reporting",
-          "body": "Monthly reports show listing status, reach, and health across all directories — proof that the subscription is working.",
+          "title": "Get powerful insights into what's working",
+          "body": "A smart dashboard provides a full overview of reviews, mentions, and ad performance in one place. SMBs can see which posts drive the most engagement, how their listings are performing, and where their brand stands compared to competitors — turning raw data into clear direction on where to invest their time and marketing budget.",
           "image": {
             "src": "https://images.unsplash.com/photo-1551288049-bebda4e38f71?q=80&w=1200&auto=format&fit=crop",
-            "alt": "Listing performance and visibility reports"
+            "alt": "Marketing analytics and performance insights"
           }
         },
         {
-          "title": "Better local SEO",
-          "body": "Consistent citations are foundational to local search ranking. Accurate listings everywhere = better map and search visibility.",
+          "title": "Create professional content with AI",
+          "body": "Not every SMB owner is a copywriter or designer. The AI post generator creates and manages professional, on-brand content for Meta and Google platforms — ready to edit, customize, and publish. Businesses produce social content that looks and reads like it came from a marketing team, without the cost of hiring one.",
           "image": {
-            "src": "https://images.unsplash.com/photo-1524661135-423aae34c233?q=80&w=1200&auto=format&fit=crop",
-            "alt": "Local search and maps discovery"
+            "src": "https://images.unsplash.com/photo-1677442136019-21780ecad995?q=80&w=1200&auto=format&fit=crop",
+            "alt": "AI-powered content creation for social media"
+          }
+        },
+        {
+          "title": "Stay on top of reviews with AI auto-reply",
+          "body": "Customer reviews appear on Google, Facebook, and Instagram at all hours. AI auto-reply ensures every review gets a timely, professional response — maintaining the engagement and responsiveness that builds trust with prospective customers. SMBs protect their reputation around the clock without being tethered to notifications.",
+          "image": {
+            "src": "https://images.unsplash.com/photo-1516321318423-f06f85e504b3?q=80&w=1200&auto=format&fit=crop",
+            "alt": "AI-powered review response automation"
           }
         }
       ]
@@ -66,54 +75,63 @@
   "media": {
     "heroImage": {
       "src": "/Directory Listings/Hero image v2.png",
-      "alt": "OneList Plus directory listings dashboard hero"
+      "alt": "Directory Listings platform dashboard showing social media and listing management"
     }
   },
 
   "features": {
     "eyebrow": "What you deliver",
-    "heading": "Local Presence Management — Under Your Brand",
-    "intro": "OneList Plus handles the distribution, sync, and monitoring that SMBs can't manage on their own. You get a recurring revenue product with minimal support overhead.",
+    "heading": "Listings, Social, and SEO Monitoring — One Platform Under Your Brand",
+    "intro": "Directory Listings combines local presence management with AI-powered social media tools and SEO monitoring. You deliver a comprehensive digital foundation that SMBs actually use — and that drives recurring revenue with minimal support overhead.",
     "cards": [
       {
-        "icon": "Globe",
-        "title": "Major Directory Distribution",
-        "body": "Automated distribution to Google, Bing, Facebook, Yelp, and other top directories. SMBs get listed where their customers are searching."
-      },
-      {
-        "icon": "RefreshCw",
-        "title": "Continuous Sync & Correction",
-        "body": "Always-on synchronization suppresses duplicates, overwrites incorrect data, and ensures every listing stays accurate without manual intervention."
+        "icon": "Sparkles",
+        "title": "AI Auto-Reply",
+        "body": "Automatically respond to Facebook, Instagram, and Google reviews with AI-generated replies that maintain a professional, timely presence. SMBs stay responsive without the manual effort of monitoring and replying to every review individually."
       },
       {
         "icon": "LayoutDashboard",
-        "title": "Centralized Management",
-        "body": "One branded dashboard to update business name, address, hours, categories, and descriptions across all connected platforms simultaneously."
+        "title": "Smart Dashboard",
+        "body": "A full overview of reviews, mentions, and ad performance in one centralized view. SMBs see everything that matters to their online presence at a glance — no more piecing together data from multiple platforms."
       },
       {
-        "icon": "BarChart3",
-        "title": "Automated Health Reporting",
-        "body": "Monthly reports on listing status, reach, and consistency — giving SMBs visibility and giving your team data for retention conversations."
+        "icon": "Globe",
+        "title": "Top Listings Sync",
+        "body": "Coordinate and synchronize business listings across Google, Facebook, and Instagram seamlessly. One update flows everywhere, ensuring accurate, consistent business information across the platforms that drive the most visibility."
+      },
+      {
+        "icon": "Bot",
+        "title": "AI Post Generator",
+        "body": "Edit and manage AI-generated content for Meta and Google platforms. SMBs produce professional social content without needing creative expertise — saving time while maintaining a consistent, active online presence."
+      },
+      {
+        "icon": "Search",
+        "title": "SEO Essentials",
+        "body": "Monitor key SEO performance with integrated scoring and feedback. SMBs get a clear picture of their search visibility health and actionable recommendations to improve rankings — building awareness of SEO value that opens the door to premium plans."
       }
     ]
   },
 
   "partnerAdvantage": {
     "eyebrow": "The partner advantage",
-    "heading": "Low-Support, High-Margin Recurring Revenue",
-    "intro": "OneList Plus is one of the easiest digital products to sell and one of the hardest to cancel — because the value is visible and always-on.",
+    "heading": "High Value, Low Cost — The Perfect Foundation Product",
+    "intro": "Directory Listings is your highest-attach digital product. It bundles naturally with everything else you sell, costs little to support, and creates the engagement that keeps customers in your ecosystem.",
     "items": [
       {
-        "title": "High attach with web products",
-        "body": "Every website customer benefits from accurate listings. Bundle OneList Plus with websites, SEO, and reputation management for stronger product attachment."
+        "title": "High value, comprehensive feature set at low cost",
+        "body": "AI-powered social management, directory sync, review auto-reply, and SEO monitoring in a single plan. Deliver premium marketing capabilities that justify a recurring subscription — with margins that make the unit economics work at any scale."
       },
       {
-        "title": "Retention through visibility",
-        "body": "SMBs see their listings stay accurate month after month. That ongoing, measurable value makes cancellation a hard decision."
+        "title": "Reduce churn with engaging essential tools",
+        "body": "When SMBs manage their social media, reviews, and listings through your platform daily, they become deeply embedded in your ecosystem. That regular usage creates the kind of stickiness that pure connectivity products can't match."
       },
       {
-        "title": "Scale without support overhead",
-        "body": "Automated sync and distribution means no manual fulfillment, no directory relationship management, and minimal support tickets."
+        "title": "Bundle opportunity with hosting and website builder",
+        "body": "Every website customer needs listings, social media management, and SEO. Bundle Directory Listings with your hosting and website builder to create higher-ARPU packages that deliver more value and are harder for competitors to unbundle."
+      },
+      {
+        "title": "Foundation for upselling to advanced features",
+        "body": "The Essentials plan is the natural stepping stone to reputation management, full SEO, advertising, and the complete marketing suite. Customers who see results from basic tools become buyers of advanced ones."
       }
     ]
   },
@@ -121,19 +139,19 @@
   "lifecycleFit": {
     "eyebrow": "Portfolio fit",
     "heading": "The Foundation of Local Discoverability",
-    "intro": "Accurate listings are prerequisite to effective SEO and reputation management. OneList Plus is the base layer of your 'Get Found' stack.",
+    "intro": "Accurate listings and active social profiles are prerequisites for effective SEO and reputation management. Directory Listings is the base layer of your 'Get Found' stack — the product that makes everything else work harder.",
     "steps": [
       { "step": "01", "title": "Build a Brand", "body": "Domains, logo, and professional email establish the SMB identity." },
       { "step": "02", "title": "Get Online", "body": "Websites and hosting launch their digital presence." },
-      { "step": "03", "title": "Get Found", "body": "OneList Plus ensures accurate listings everywhere, strengthening SEO and reputation efforts.", "highlight": true, "productName": "OneList Plus" },
-      { "step": "04", "title": "Grow", "body": "Ecommerce, email marketing, and advanced services drive revenue growth." }
+      { "step": "03", "title": "Get Found", "body": "Directory Listings ensures accurate profiles everywhere, with AI-powered social management and SEO monitoring driving visibility.", "highlight": true, "productName": "Directory Listings" },
+      { "step": "04", "title": "Grow", "body": "Ecommerce, email marketing, and advanced advertising drive revenue growth." }
     ],
-    "positioning": "Position directories as the always-on visibility product that makes SEO and reputation management work harder — a natural bundle with Search Everywhere Optimization and Reviews Promoter."
+    "positioning": "Position Directory Listings as the always-on visibility and social management product that makes SEO and reputation management work harder — a natural bundle with websites, hosting, and your full marketing portfolio."
   },
 
   "cta": {
-    "headline": "Ready to Turn Local Listings into Recurring Revenue?",
-    "body": "Connect with Hostopia to launch OneList Plus under your brand, bundle it with your web and marketing portfolio, and give SMBs always-on visibility across the directories that matter most.",
+    "headline": "Ready to Turn Listings and Social Management into Recurring Revenue?",
+    "body": "Connect with Hostopia to launch Directory Listings under your brand. Bundle it with your web portfolio and give SMBs the complete foundation they need to manage their online presence — from directory accuracy to AI-powered social media.",
     "buttonText": "Book a Demo"
   }
 }
