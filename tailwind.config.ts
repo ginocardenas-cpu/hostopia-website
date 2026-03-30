@@ -91,8 +91,8 @@ const config: Config = {
         },
         "typewriter-reveal": {
           "0%": { maxWidth: "0ch" },
-          "38%": { maxWidth: "18ch" },
-          "48%": { maxWidth: "18ch" },
+          "38%": { maxWidth: "17ch" },
+          "48%": { maxWidth: "17ch" },
           "86%": { maxWidth: "0ch" },
           "100%": { maxWidth: "0ch" },
         },

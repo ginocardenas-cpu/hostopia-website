@@ -31,7 +31,7 @@ export default function TypewriterOnScroll() {
           hasTriggered ? "animate-typewriter-reveal" : "max-w-0"
         }`}
       >
-        Nothing You Don&apos;t.
+        Nothing You Don&apos;t
       </span>
       {hasTriggered && (
         <span

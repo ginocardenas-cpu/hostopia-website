@@ -51,7 +51,7 @@ export default function Pillars() {
                 color: "#24282B",
               }}
             >
-              Everything You Need /
+              Everything You Need
               <br />
               <TypewriterOnScroll />
             </h2>
