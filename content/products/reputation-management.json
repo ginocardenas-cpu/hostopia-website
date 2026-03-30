@@ -1,62 +1,71 @@
 {
   "slug": "reputation-management",
   "label": "Reputation Management",
-  "productName": "Reviews Promoter",
+  "productName": "Reputation Management",
 
   "seo": {
     "primaryKeyword": "white-label reputation management",
     "secondaryKeywords": [
       "online reviews management for SMBs",
+      "AI review response platform",
       "review generation software",
       "AI reputation management platform",
       "local business reputation management",
       "white-label reviews platform"
     ],
-    "metaTitle": "White-Label Reputation Management for Service Providers | Hostopia",
-    "metaDescription": "Launch AI-powered reviews and reputation management under your brand. Reviews Promoter helps SMBs collect 5-star reviews, manage social media, and build trust at scale.",
+    "metaTitle": "White-Label Reputation Management & AI Reviews for Service Providers | Hostopia",
+    "metaDescription": "Launch AI-powered review management under your brand. Help SMBs generate reviews, respond with AI, showcase credibility, and benchmark against competitors — all from one platform.",
     "urlSlug": "/products/reputation-management"
   },
 
   "hero": {
-    "eyebrow": "Reviews Promoter by Hostopia",
-    "headline": "Turn Happy Customers into 5-Star Reviews — Under Your Brand",
-    "subheadline": "Online reviews influence every buying decision. But most SMBs don't have a system to consistently request, monitor, and respond to feedback across Google, social media, and review sites.",
-    "description": "Reviews Promoter is an AI-driven reputation and social media management platform built for SMBs who need a simple way to generate trust, build social proof, and stay visible — all delivered white-label under your brand.",
+    "eyebrow": "Reputation Management by Hostopia",
+    "headline": "Build Credibility and Protect Your Clients' Online Reputation Across All Platforms",
+    "subheadline": "Online reviews influence every buying decision. But most SMBs don't have a system to consistently generate, monitor, and respond to feedback across Google, social media, and review sites — and a single unanswered negative review can cost them customers.",
+    "description": "Hostopia's Reputation Management combines powerful review management tools with advanced AI capabilities and competitive monitoring. This platform helps businesses track reviews, respond intelligently with AI, and showcase their credibility through reputation widgets and automated responses — all while monitoring brand and competitor activity. Delivered white-label as part of the Online Marketing Center Trust plan.",
     "cta": { "primary": "Book a Demo", "secondary": "Talk to Partner Success" },
-    "badge": "AI-powered reviews & social management",
+    "badge": "Online Marketing Center — Trust Plan",
     "sidebar": {
       "heading": "Your SMB customers can",
       "items": [
         {
-          "title": "Collect 5-star reviews",
-          "body": "Request reviews via text message and automatically share positive feedback across social channels.",
+          "title": "Protect their reputation with alerts and AI-powered responses",
+          "body": "Every new review triggers an alert, and AI generates professional, contextually appropriate responses in seconds. SMBs stay on top of their reputation around the clock — addressing negative feedback before it escalates and thanking positive reviewers promptly. The result is a business that appears engaged, responsive, and trustworthy to every prospective customer reading reviews.",
           "image": {
             "src": "https://images.unsplash.com/photo-1521737604893-d14cc237f11d?q=80&w=1200&auto=format&fit=crop",
-            "alt": "Happy customers and five-star reviews"
+            "alt": "AI-powered review response and reputation alerts"
           }
         },
         {
-          "title": "Showcase testimonials",
-          "body": "Embed live, positive reviews directly on their website to boost credibility and conversion.",
+          "title": "Build trust with reputation widgets on their website",
+          "body": "Embed live review scores, testimonials, and star ratings directly on their business website. These widgets act as real-time social proof — showing prospective customers that this is a business others trust and recommend. It's the difference between telling visitors you're great and letting your customers say it for you, with verified, constantly updated credibility on every page.",
           "image": {
             "src": "https://images.unsplash.com/photo-1467232004584-a241de8bcf5d?q=80&w=1200&auto=format&fit=crop",
-            "alt": "Website testimonials and social proof"
+            "alt": "Website reputation widgets and trust badges"
           }
         },
         {
-          "title": "Manage social media",
-          "body": "Schedule posts across multiple platforms from one calendar, based on demographics, interests, and frequency.",
+          "title": "Save time with automated AI review replies",
+          "body": "Manually responding to every review across Google, Facebook, and other platforms is a full-time job most SMBs can't afford. AI-powered automated replies handle the volume — generating thoughtful, on-brand responses that maintain professionalism and consistency. Business owners get back hours every week while their online reputation stays actively managed.",
           "image": {
-            "src": "https://images.unsplash.com/photo-1611162616305-69b3cf1bfe93?q=80&w=1200&auto=format&fit=crop",
-            "alt": "Social media scheduling and content"
+            "src": "https://images.unsplash.com/photo-1677442136019-21780ecad995?q=80&w=1200&auto=format&fit=crop",
+            "alt": "Automated AI review management saving time"
           }
         },
         {
-          "title": "Monitor everything in one place",
-          "body": "Track reviews, social activity, and competitor feedback across the web — respond from a single dashboard.",
+          "title": "Benchmark reputation against competitors",
+          "body": "Competitive reputation intelligence shows SMBs exactly where they stand relative to their local competitors. See how your star ratings, review volume, and response rates compare — identify gaps to close and strengths to amplify. This competitive context turns abstract reputation scores into a concrete action plan for outperforming the businesses down the street.",
+          "image": {
+            "src": "https://images.unsplash.com/photo-1552664730-d307ca884978?q=80&w=1200&auto=format&fit=crop",
+            "alt": "Competitive reputation benchmarking and analysis"
+          }
+        },
+        {
+          "title": "Turn customer feedback into a growth engine",
+          "body": "Review generation tools actively solicit feedback from satisfied customers, amplifying the positive voices that drive new business. Combined with AI-driven sentiment analysis that turns raw feedback into actionable strategy, SMBs don't just manage their reputation — they systematically build it. More reviews, better ratings, and deeper customer insight compound over time into a measurable competitive advantage.",
           "image": {
             "src": "https://images.unsplash.com/photo-1551288049-bebda4e38f71?q=80&w=1200&auto=format&fit=crop",
-            "alt": "Reputation and reviews dashboard"
+            "alt": "Review generation and customer feedback analytics"
           }
         }
       ]
@@ -66,54 +75,63 @@
   "media": {
     "heroImage": {
       "src": "/Reputation Management/Reputation Management hero.png",
-      "alt": "Reviews Promoter reputation and reviews hero"
+      "alt": "Reputation Management platform dashboard showing reviews and AI responses"
     }
   },
 
   "features": {
     "eyebrow": "What you deliver",
-    "heading": "Reviews, Social, and Reputation — One Platform",
-    "intro": "Reviews Promoter combines review generation, social media management, and competitive tracking in a single white-label platform.",
+    "heading": "Reviews, Trust, and Brand Monitoring — One AI-Powered Platform",
+    "intro": "Reputation Management combines review generation, AI-powered response management, competitive benchmarking, and sentiment analysis in a single white-label platform that addresses one of the most critical SMB pain points.",
     "cards": [
       {
-        "icon": "Star",
-        "title": "Automated Review Collection",
-        "body": "SMS-based review requests with automatic sharing of positive reviews to social channels. Consistent review volume without manual effort."
+        "icon": "TrendingUp",
+        "title": "Review Generation & Amplification",
+        "body": "Turn customer feedback into a growth engine. Actively solicit reviews from satisfied customers and automatically amplify positive feedback across social channels — building the review volume and star ratings that drive purchasing decisions."
       },
       {
-        "icon": "MessageSquare",
-        "title": "Centralized Review Management",
-        "body": "Monitor and respond to reviews across Google, Facebook, Yelp, and other platforms from one dashboard. No more logging into multiple sites."
+        "icon": "Sparkles",
+        "title": "AI-Powered Review Management",
+        "body": "Be responsive without manual effort. AI generates contextually appropriate, professional review responses across all platforms — maintaining consistent engagement that builds trust with both existing and prospective customers."
       },
       {
-        "icon": "Calendar",
-        "title": "Social Media Scheduling",
-        "body": "Plan and schedule branded posts across multiple social platforms. Demographic targeting, frequency control, and bulk scheduling in one calendar."
+        "icon": "LayoutDashboard",
+        "title": "Centralized Reputation Control",
+        "body": "Manage everything from one place. Monitor, respond to, and analyze reviews across Google, Facebook, Yelp, and other platforms from a single branded dashboard — no more logging into multiple sites or missing feedback."
       },
       {
-        "icon": "Eye",
-        "title": "Competition Tracker",
-        "body": "Monitor what customers say about competitors to identify gaps, opportunities, and messaging advantages for your SMB customers."
+        "icon": "Trophy",
+        "title": "Competitive Reputation Intelligence",
+        "body": "Identify gaps and opportunities to outperform competitors. Compare star ratings, review volume, response rates, and sentiment against local competitors to understand where your SMB clients stand and where they can win."
+      },
+      {
+        "icon": "BarChart3",
+        "title": "AI-Driven Insights & Sentiment Analysis",
+        "body": "Turn raw feedback into actionable strategy. AI analyzes review themes, sentiment trends, and customer satisfaction patterns — surfacing the insights SMBs need to improve their products, services, and customer experience."
       }
     ]
   },
 
   "partnerAdvantage": {
     "eyebrow": "The partner advantage",
-    "heading": "Tie Your Brand to Measurable Business Outcomes",
-    "intro": "Reviews Promoter connects your brand to outcomes SMBs care about most: better ratings, more referrals, and increased revenue.",
+    "heading": "Address the #1 SMB Pain Point — Under Your Brand",
+    "intro": "Online reputation is the marketing challenge every SMB understands but few can manage effectively. Reputation Management gives you a high-demand, high-retention product with advanced AI differentiation.",
     "items": [
       {
-        "title": "High-impact, recurring revenue",
-        "body": "Reputation management is a subscription SMBs renew because they see the results — higher star ratings, more review volume, and stronger social engagement."
+        "title": "Address a critical SMB pain point",
+        "body": "Reputation is the #1 concern for local businesses. Offering AI-powered reputation management positions your brand as the solution to a problem every SMB experiences — driving demand that practically sells itself."
       },
       {
-        "title": "Natural bundle with your digital stack",
-        "body": "Reviews Promoter pairs with websites, SEO, and directory listings. SMBs with a site, good SEO, and strong reviews have a complete local presence — all from you."
+        "title": "High retention value with daily engagement",
+        "body": "Reviews arrive constantly, making reputation management an always-on service. SMBs who rely on AI-powered review responses and reputation monitoring renew because cancellation means losing control of their public perception."
       },
       {
-        "title": "Capture growing marketing budgets",
-        "body": "SMBs are increasingly spending on reviews and social management. Offer it under your brand instead of losing that spend to standalone tools."
+        "title": "Differentiation with advanced AI features",
+        "body": "AI-powered responses, sentiment analysis, and brand monitoring set your offering apart from basic review monitoring tools. The technology depth creates a competitive moat that standalone point solutions can't match."
+      },
+      {
+        "title": "Easy setup and integration",
+        "body": "Fast onboarding means quick time-to-value for partners and customers alike. Reputation Management integrates seamlessly with the broader Online Marketing Center, making it easy to activate alongside existing products."
       }
     ]
   },
@@ -121,19 +139,19 @@
   "lifecycleFit": {
     "eyebrow": "Portfolio fit",
     "heading": "Trust That Amplifies Every Other Service You Sell",
-    "intro": "Strong reviews make websites convert better, SEO rank higher, and directory listings drive more traffic. Reviews Promoter amplifies the value of everything else in your portfolio.",
+    "intro": "Strong reviews make websites convert better, SEO rank higher, and directory listings drive more traffic. Reputation Management amplifies the value of everything else in your portfolio — it's the trust layer that turns visibility into revenue.",
     "steps": [
       { "step": "01", "title": "Build a Brand", "body": "Domains, logo, and professional email establish the SMB identity." },
       { "step": "02", "title": "Get Online", "body": "Website Builder, DIFM design, or hosting launches their digital presence." },
-      { "step": "03", "title": "Get Found", "body": "Reviews Promoter builds trust and social proof that drives clicks and conversions.", "highlight": true, "productName": "Reviews Promoter" },
-      { "step": "04", "title": "Grow", "body": "Ecommerce and email marketing convert the audience that reviews helped attract." }
+      { "step": "03", "title": "Get Found", "body": "Reputation Management builds the trust and social proof that turn clicks into customers.", "highlight": true, "productName": "Reputation Management" },
+      { "step": "04", "title": "Grow", "body": "Ecommerce and advertising convert the audience that a strong reputation helped attract." }
     ],
-    "positioning": "Position reputation management as the trust layer that makes websites, SEO, and listings work harder — a natural bundle partner with directories and Search Everywhere Optimization."
+    "positioning": "Position Reputation Management as the trust layer that makes websites, SEO, and listings work harder — a natural bundle partner with directories and Search Everywhere Optimization, and the AI-powered differentiator in your marketing portfolio."
   },
 
   "cta": {
-    "headline": "Ready to Turn Reviews into a White-Label Growth Driver?",
-    "body": "Connect with Hostopia to launch Reviews Promoter under your brand, bundle it with your presence and marketing portfolio, and help SMBs turn happy customers into powerful social proof.",
+    "headline": "Ready to Turn Reputation into a White-Label Growth Driver?",
+    "body": "Connect with Hostopia to launch Reputation Management under your brand. Give your SMB customers the AI-powered tools they need to generate reviews, respond intelligently, and build the credibility that drives real business growth.",
     "buttonText": "Book a Demo"
   }
 }

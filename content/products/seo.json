@@ -1,63 +1,71 @@
 {
   "slug": "seo",
   "label": "SEO",
-  "productName": "Search Everywhere Optimization",
+  "productName": "Search Engine Optimization",
 
   "seo": {
     "primaryKeyword": "white-label SEO platform",
     "secondaryKeywords": [
-      "GEO local search optimization",
-      "answer engine optimization AEO",
+      "AI-powered SEO for SMBs",
+      "search engine optimization reseller",
       "SEO software for service providers",
-      "guided SEO for SMBs",
-      "white-label SEO tools",
-      "reseller SEO platform"
+      "AI campaign creation platform",
+      "white-label digital advertising",
+      "multi-channel advertising platform"
     ],
-    "metaTitle": "Search Everywhere Optimization | White-Label SEO, GEO & AEO | Hostopia",
-    "metaDescription": "Keywords, ranking, and SEO, GEO, and AEO performance under your brand. Search Everywhere Optimization helps service providers deliver task-based visibility for SMBs.",
+    "metaTitle": "Search Engine Optimization & AI Advertising | White-Label | Hostopia",
+    "metaDescription": "Amplify your clients' reach with AI-powered advertising and advanced social media management. Launch high-performing campaigns across Google Ads and social channels under your brand.",
     "urlSlug": "/products/seo"
   },
 
   "hero": {
-    "eyebrow": "Search Everywhere Optimization by Hostopia",
-    "headline": "Search Everywhere Optimization",
-    "subheadline": "Keywords, ranking, and SEO, GEO, and AEO performance.",
-    "description": "Search Everywhere Optimization is a white-label, task-based platform that walks SMBs through the actions that improve visibility in search, local/maps, and answer engines — with customized plans, keyword tracking, and progress reporting. All under your brand.",
+    "eyebrow": "Search Engine Optimization by Hostopia",
+    "headline": "Amplify Your Clients' Reach with AI-Powered Advertising and Advanced Social Media Management",
+    "subheadline": "SMBs know they need to advertise, but few have the expertise to create effective campaigns, manage budgets across platforms, or measure what's actually working. They need a way to turn content into customers — without the complexity.",
+    "description": "Hostopia's Search Engine Optimization platform delivers comprehensive digital advertising capabilities combined with sophisticated social media tools. This package enables businesses to turn their best content into high-performing ads, manage multi-platform campaigns, and leverage AI to maximize engagement and ROI across Google Ads and social channels. Delivered white-label as part of the Online Marketing Center Boost plan.",
     "cta": { "primary": "Book a Demo", "secondary": "Talk to Partner Success" },
-    "badge": "DIY SEO platform, white-labeled for partners",
+    "badge": "Online Marketing Center — Boost Plan",
     "sidebar": {
       "heading": "Your SMB customers can",
       "items": [
         {
-          "title": "Follow a clear SEO roadmap",
-          "body": "Customized plans based on their industry, location, website platform, and current rankings — no guesswork.",
+          "title": "Maximize reach across all platforms",
+          "body": "SMBs can advertise across Google, Facebook, Instagram, and other major platforms from a single interface — reaching potential customers wherever they spend time online. Multi-channel advertising activation means businesses aren't limited to one platform or audience. They can target search intent, social engagement, and display visibility simultaneously, expanding their reach without managing separate ad accounts on each platform.",
           "image": {
-            "src": "https://images.unsplash.com/photo-1432888622747-4eb9a8f2d1f7?q=80&w=1200&auto=format&fit=crop",
-            "alt": "SEO strategy and search growth"
+            "src": "https://images.unsplash.com/photo-1533750349088-cd871a92f312?q=80&w=1200&auto=format&fit=crop",
+            "alt": "Multi-channel advertising across search and social platforms"
           }
         },
         {
-          "title": "Execute tasks step by step",
-          "body": "Guided instructions and video walkthroughs for every SEO action, built for non-experts.",
+          "title": "Launch AI-powered advertising campaigns",
+          "body": "AI takes the guesswork out of advertising. It generates compelling ad headlines, descriptions, and targeting parameters based on the business category and goals — so SMBs can launch high-performing campaigns without needing marketing expertise. What used to require an agency or weeks of trial-and-error now takes minutes, with AI continuously optimizing for better results over time.",
           "image": {
-            "src": "https://images.unsplash.com/photo-1504868584819-f8e8b4b6d7e3?q=80&w=1200&auto=format&fit=crop",
-            "alt": "Step-by-step SEO tasks and checklist"
+            "src": "https://images.unsplash.com/photo-1677442136019-21780ecad995?q=80&w=1200&auto=format&fit=crop",
+            "alt": "AI-powered campaign creation and optimization"
           }
         },
         {
-          "title": "Track keyword rankings",
-          "body": "Monitor up to 20 keywords with search volume, competitiveness, and ranking history data.",
+          "title": "Maintain complete campaign control",
+          "body": "Full budget and campaign control means SMBs decide exactly how much to spend, where to spend it, and when to adjust. Set daily or monthly budgets, pause campaigns instantly, allocate spend across channels, and shift resources to what's performing best. The platform balances AI automation with hands-on control — so businesses get the efficiency of smart technology without losing oversight of their advertising investment.",
           "image": {
             "src": "https://images.unsplash.com/photo-1460925895917-afdab827c52f?q=80&w=1200&auto=format&fit=crop",
-            "alt": "Keyword tracking and analytics"
+            "alt": "Campaign budget management and control dashboard"
           }
         },
         {
-          "title": "See measurable progress",
-          "body": "Monthly reports show completed tasks, ranking improvements, and recommended next steps.",
+          "title": "See proven ROI with performance intelligence",
+          "body": "Clear, actionable reporting shows exactly what's working and what isn't. Performance intelligence and optimization tools track clicks, conversions, cost-per-lead, and ROI across every channel — giving SMBs the data they need to make informed decisions about their advertising spend. No more wondering whether ads are generating results; every dollar is accounted for with transparent metrics.",
           "image": {
             "src": "https://images.unsplash.com/photo-1551288049-bebda4e38f71?q=80&w=1200&auto=format&fit=crop",
-            "alt": "SEO progress reporting dashboard"
+            "alt": "Advertising ROI and performance analytics"
+          }
+        },
+        {
+          "title": "Turn content into immediate traffic and growth",
+          "body": "Traffic and visibility acceleration transforms existing content — blog posts, product pages, promotions — into paid advertising that drives immediate results. Instead of waiting months for organic reach to build, SMBs can boost their best-performing content to targeted audiences right away. It bridges the gap between having a great online presence and actually driving the foot traffic, phone calls, and purchases that grow the business.",
+          "image": {
+            "src": "https://images.unsplash.com/photo-1504868584819-f8e8b4b6d7e3?q=80&w=1200&auto=format&fit=crop",
+            "alt": "Content promotion and traffic acceleration"
           }
         }
       ]
@@ -67,74 +75,83 @@
   "media": {
     "heroImage": {
       "src": "https://images.unsplash.com/photo-1504868584819-f8e8b4b6d7e3?q=80&w=1600&auto=format&fit=crop",
-      "alt": "Search optimization and analytics"
+      "alt": "SEO and digital advertising platform dashboard"
     }
   },
 
   "features": {
     "eyebrow": "What you deliver",
-    "heading": "SEO Made Simple for SMBs — Scalable for You",
-    "intro": "Search Everywhere Optimization is designed for non-expert SMBs and built for partners who need scale without support overhead.",
+    "heading": "AI-Powered Advertising and Campaign Management — Under Your Brand",
+    "intro": "Search Engine Optimization gives your SMB customers enterprise-level advertising capabilities with small-business simplicity. Every tool is designed to remove complexity while maximizing results across search and social channels.",
     "cards": [
       {
-        "icon": "Map",
-        "title": "Customized SEO Plans",
-        "body": "Onboarding generates a tailored roadmap based on industry, geography, website platform, and current search performance — so every SMB starts with relevant actions."
+        "icon": "Sparkles",
+        "title": "AI-Powered Campaign Creation",
+        "body": "Launch high-performing campaigns without marketing expertise. AI generates compelling ad headlines, descriptions, and targeting — getting SMBs from idea to live campaign in minutes, not weeks."
       },
       {
-        "icon": "ListChecks",
-        "title": "Guided Task Execution",
-        "body": "Step-by-step instructions with clear explanations and video walkthroughs. SMBs complete SEO tasks month by month without needing to understand the technical details."
+        "icon": "Layers",
+        "title": "Multi-Channel Advertising Activation",
+        "body": "Reach customers across search and social — instantly. Manage Google Ads, Facebook, Instagram, and other platforms from one interface with centralized budget control and unified reporting."
       },
       {
-        "icon": "BarChart3",
-        "title": "Keyword & Ranking Tracking",
-        "body": "Keyword recommendations based on search volume and competitiveness. Ranking history, indexing checks for Google and Bing, and local competitor benchmarking."
+        "icon": "Eye",
+        "title": "Traffic & Visibility Acceleration",
+        "body": "Turn content into immediate growth. Boost top-performing pages, posts, and promotions to targeted audiences, bridging the gap between organic visibility and the traffic SMBs need to grow now."
       },
       {
-        "icon": "FileText",
-        "title": "Automated Reporting",
-        "body": "Monthly email reports showing ranking progress, completed tasks, and next steps — giving SMBs visibility and giving your team data for upsell conversations."
+        "icon": "Settings",
+        "title": "Full Budget & Campaign Control",
+        "body": "Balance automation with oversight. Set budgets, pause campaigns, reallocate spend, and adjust targeting in real time — giving SMBs the control they want with the AI optimization they need."
+      },
+      {
+        "icon": "LineChart",
+        "title": "Performance Intelligence & Optimization",
+        "body": "Know what's working to outperform competitors. Track clicks, conversions, and cost-per-lead across every channel with clear dashboards and actionable recommendations that improve results over time."
       }
     ]
   },
 
   "partnerAdvantage": {
     "eyebrow": "The partner advantage",
-    "heading": "Capture SMB SEO Spend — Without Building an Agency",
-    "intro": "SEO is one of the highest-demand digital services for SMBs. Search Everywhere Optimization lets you offer it at scale without hiring specialists.",
+    "heading": "The Revenue Accelerator in Your Marketing Portfolio",
+    "intro": "Advertising is where SMB marketing budgets are growing fastest. Search Engine Optimization lets you capture that spend under your brand without building an agency or hiring ad specialists.",
     "items": [
       {
-        "title": "Natural attachment to your web portfolio",
-        "body": "Every website customer is an SEO prospect. Bundle Search Everywhere Optimization with websites, hosting, and OneList Plus for stronger product attachment and lower churn."
+        "title": "Higher revenue potential with advanced advertising",
+        "body": "Advertising generates the highest per-customer revenue in digital marketing. The Boost plan gives you a premium product to offer SMBs who are ready to invest in growth — expanding your ARPU significantly beyond basic web and email services."
       },
       {
-        "title": "Recurring revenue with low support overhead",
-        "body": "DIY, task-based design means SMBs self-serve month to month. Support demands stay low even across large customer bases."
+        "title": "Active ad campaigns create strong retention",
+        "body": "When SMBs are running campaigns that drive real leads and revenue, cancellation means losing that pipeline. Active advertising creates the strongest form of product dependency — your platform becomes their revenue engine."
       },
       {
-        "title": "Differentiate from basic hosting",
-        "body": "Offering guided SEO alongside websites and listings positions you as a growth partner — not just an infrastructure provider."
+        "title": "Full-service digital marketing capability",
+        "body": "Combined with listings, reputation management, and brand monitoring from the lower plans, you can now offer a complete digital marketing solution. Your brand goes from connectivity provider to full-service digital marketing partner."
+      },
+      {
+        "title": "Clear value proposition for growing businesses",
+        "body": "Advertising delivers the most tangible ROI of any digital service — more calls, more foot traffic, more online orders. That clarity makes it the easiest premium service to pitch to ambitious SMBs who are ready to invest."
       }
     ]
   },
 
   "lifecycleFit": {
     "eyebrow": "Portfolio fit",
-    "heading": "The Next Step After Getting Online",
-    "intro": "Once an SMB has a website live, the next question is always: how do I get found? Search Everywhere Optimization answers that question inside your ecosystem.",
+    "heading": "The Accelerator for Businesses Ready to Grow",
+    "intro": "Once an SMB has a website, active listings, and strong reputation, advertising is the natural next step to accelerate growth. Search Engine Optimization turns organic visibility into paid performance.",
     "steps": [
       { "step": "01", "title": "Build a Brand", "body": "Domains, logo, and professional email establish the SMB identity." },
-      { "step": "02", "title": "Get Online", "body": "Website Builder, DIFM, or custom development launches their digital presence." },
-      { "step": "03", "title": "Get Found", "body": "Search Everywhere Optimization guides SEO improvements month by month. Pair with OneList Plus and Reviews Promoter.", "highlight": true, "productName": "Search Everywhere Optimization" },
-      { "step": "04", "title": "Grow", "body": "Ecommerce, email marketing, and advanced services fuel business growth." }
+      { "step": "02", "title": "Get Online", "body": "Website Builder, DIFM design, or hosting launches their digital presence." },
+      { "step": "03", "title": "Get Found", "body": "Directories, reputation management, and brand monitoring build organic visibility and trust." },
+      { "step": "04", "title": "Grow", "body": "Search Engine Optimization amplifies reach with AI-powered advertising across search and social.", "highlight": true, "productName": "Search Engine Optimization" }
     ],
-    "positioning": "Position SEO as the natural next step after website launch, a bundle partner with directories and reputation management, and a recurring subscription that ties your value to measurable search performance."
+    "positioning": "Position advertising as the growth accelerator for SMBs who have their digital foundation in place. Bundle with websites, listings, and reputation management for a complete marketing stack — or offer it standalone for businesses ready to invest in immediate results."
   },
 
   "cta": {
-    "headline": "Ready to Turn SEO into a Scalable Revenue Stream?",
-    "body": "Connect with Hostopia to launch Search Everywhere Optimization under your brand, bundle it with your web and marketing portfolio, and help SMBs get found by the customers searching for them.",
+    "headline": "Ready to Turn AI-Powered Advertising into a Revenue Stream?",
+    "body": "Connect with Hostopia to launch Search Engine Optimization under your brand. Give your SMB customers the advertising tools they need to reach more customers, drive more revenue, and prove ROI — all managed from one platform.",
     "buttonText": "Book a Demo"
   }
 }

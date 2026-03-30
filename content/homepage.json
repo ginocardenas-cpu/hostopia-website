@@ -149,7 +149,7 @@
         "description": "Give SMBs the web presence they need — from DIY to fully managed.",
         "products": [
           {
-            "name": "Competitive Intelligence",
+            "name": "Brand Monitoring",
             "tag": "Market Intelligence",
             "description": "Brand listening and competitor insights across social, web, and media.",
             "highlights": ["Cross-channel brand listening", "Competitor and trend signals", "Sentiment and visibility context"],
@@ -238,7 +238,7 @@
             "link": "/products/email-marketing"
           },
           {
-            "name": "PPC Management",
+            "name": "Marketing 360",
             "tag": "Acquisition",
             "description": "Paid campaigns and ROI — plan, launch, and optimize ads across channels.",
             "highlights": ["Cross-channel campaigns", "Ongoing optimization", "Performance and ROI focus"],
@@ -261,7 +261,7 @@
         ]
       }
     ],
-    "notes": "Products organized by the four portfolio pillars — aligned with nav-products.ts. Includes Competitive Intelligence, Social Media Management, PPC Management, Directory Listings, Reputation Management, and Search Everywhere Optimization."
+    "notes": "Products organized by the four portfolio pillars — aligned with nav-products.ts. Includes Brand Monitoring, Social Media Management, Marketing 360, Directory Listings, Reputation Management, and Search Everywhere Optimization."
   },
 
   "migrations": {

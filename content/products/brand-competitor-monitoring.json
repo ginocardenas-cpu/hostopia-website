@@ -1,47 +1,70 @@
 {
   "slug": "brand-competitor-monitoring",
-  "label": "Competitive Intelligence",
-  "productName": "Competitive Intelligence",
+  "label": "Brand Monitoring",
+  "productName": "Brand Monitoring",
 
   "seo": {
     "primaryKeyword": "white-label brand monitoring",
-    "secondaryKeywords": ["competitor monitoring for SMBs", "brand sentiment tracking", "social listening white label"],
-    "metaTitle": "Competitive Intelligence for SMBs | White-Label | Hostopia",
-    "metaDescription": "Brand listening and competitor insights — track sentiment, monitor competitors, and stay ahead of market trends under your brand.",
+    "secondaryKeywords": [
+      "competitor monitoring for SMBs",
+      "brand sentiment tracking",
+      "social listening white label",
+      "online brand monitoring platform",
+      "competitor tracking for small business"
+    ],
+    "metaTitle": "White-Label Brand Monitoring & Competitor Insights | Hostopia",
+    "metaDescription": "White-label brand and competitor monitoring that tracks rankings, reviews, mentions, and ads in real time. Help your SMB customers stay ahead of competitors with instant alerts and centralized insights.",
     "urlSlug": "/products/brand-competitor-monitoring"
   },
 
   "hero": {
-    "eyebrow": "Competitive Intelligence by Hostopia",
-    "headline": "Brand Listening — Competitor Insights Under Your Brand",
-    "subheadline": "Track what customers say about your SMB clients, monitor competitor moves, and surface opportunities before the market shifts.",
-    "description": "Deliver competitive intelligence as a white-label service: sentiment, share of voice, and actionable alerts — without building an in-house analytics team.",
+    "eyebrow": "Brand Monitoring by Hostopia",
+    "headline": "The Fastest Way for Your Clients to Stay Ahead of Their Competition",
+    "subheadline": "Rankings shift, reviews appear, competitors launch new campaigns — and most SMBs find out too late. They need a way to track what matters without spending hours manually checking every platform.",
+    "description": "Hostopia's Brand Monitoring solution precisely captures critical market dynamics — rankings, reviews, mentions, and ads — and delivers them through an intuitive news feed and timely email alerts. Your clients stay informed, aligned, and ready to act. Delivered white-label as part of the Online Marketing Center Starter plan.",
     "cta": { "primary": "Book a Demo", "secondary": "Talk to Partner Success" },
+    "badge": "Online Marketing Center — Starter Plan",
     "sidebar": {
       "heading": "Your customers can",
       "items": [
         {
-          "title": "Monitor brand health",
-          "body": "See mentions, sentiment, and trends across channels in one partner-branded view.",
+          "title": "Stay informed in real time",
+          "body": "No more guessing what's happening with their online presence. Instant alerts notify SMBs of new online mentions, performance trend changes, and shifts in their competitive landscape — delivered directly to their inbox so they never miss a critical update that could impact their business.",
           "image": {
             "src": "https://images.unsplash.com/photo-1551288049-bebda4e38f71?q=80&w=1200&auto=format&fit=crop",
-            "alt": "Brand monitoring and analytics dashboard"
+            "alt": "Real-time brand monitoring alerts and notifications"
           }
         },
         {
-          "title": "Watch competitors",
-          "body": "Benchmark campaigns, offers, and positioning to stay a step ahead.",
+          "title": "Track competitors to stay one step ahead",
+          "body": "Monitor what competitors are doing across search results, social media, and review platforms — all from a single view. SMBs can see when a competitor launches a new ad campaign, receives a surge of reviews, or shifts their positioning, giving them the intelligence they need to respond strategically rather than reactively.",
           "image": {
             "src": "https://images.unsplash.com/photo-1552664730-d307ca884978?q=80&w=1200&auto=format&fit=crop",
-            "alt": "Competitive market analysis"
+            "alt": "Competitive analysis and market tracking"
           }
         },
         {
-          "title": "Act on alerts",
-          "body": "Surface spikes, risks, and opportunities so SMBs respond quickly.",
+          "title": "Centralize all insights in one place",
+          "body": "Reviews, rankings, ad activity, social mentions — scattered across dozens of platforms and nearly impossible to track manually. Brand Monitoring consolidates everything into a single, easy-to-navigate dashboard so SMBs can see the full picture of their market position at a glance, without logging into multiple tools or piecing together data from different sources.",
+          "image": {
+            "src": "https://images.unsplash.com/photo-1460925895917-afdab827c52f?q=80&w=1200&auto=format&fit=crop",
+            "alt": "Centralized marketing intelligence dashboard"
+          }
+        },
+        {
+          "title": "Connect and sync key platforms",
+          "body": "Seamlessly connect Google Business Profile and Meta (Facebook and Instagram) to pull in live data and publish updates directly from the dashboard. SMBs maintain a consistent presence across the platforms that matter most — without switching between apps or managing multiple logins. Changes sync automatically, keeping their profiles accurate and up to date.",
+          "image": {
+            "src": "https://images.unsplash.com/photo-1611162616305-69b3cf1bfe93?q=80&w=1200&auto=format&fit=crop",
+            "alt": "Google Business Profile and Meta platform integration"
+          }
+        },
+        {
+          "title": "Respond to reviews before they escalate",
+          "body": "New review alerts ensure SMBs never miss feedback — positive or negative. Timely responses to customer reviews demonstrate engagement and professionalism, protect brand reputation, and turn satisfied customers into vocal advocates. With review notifications built in, your clients can manage their online reputation proactively rather than discovering problems weeks later.",
           "image": {
             "src": "https://images.unsplash.com/photo-1516321318423-f06f85e504b3?q=80&w=1200&auto=format&fit=crop",
-            "alt": "Real-time notifications and alerts"
+            "alt": "Review monitoring and response management"
           }
         }
       ]
@@ -50,58 +73,81 @@
 
   "media": {
     "heroImage": {
-      "src": "https://images.unsplash.com/photo-1551288049-bebda4e38f71?q=80&w=1600&auto=format&fit=crop",
-      "alt": "Competitive intelligence and brand listening"
+      "src": "https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=2000&q=80",
+      "alt": "Brand monitoring and competitor analytics dashboard",
+      "priority": true
     }
   },
 
   "features": {
     "eyebrow": "What you deliver",
-    "heading": "Intelligence SMBs Actually Use",
-    "intro": "Purpose-built workflows for small business operators — not enterprise dashboards that overwhelm.",
+    "heading": "Market Intelligence SMBs Actually Use",
+    "intro": "Purpose-built for small business operators who need clarity, not complexity. Every feature is designed to surface the insights that drive real business decisions — without the noise of enterprise analytics tools.",
     "cards": [
-      { "icon": "Radar", "title": "Listening & alerts", "body": "Configurable keywords, competitors, and notification rules." },
-      { "icon": "BarChart3", "title": "Benchmarking", "body": "Compare performance and visibility against chosen competitors." },
-      { "icon": "MessageSquare", "title": "Sentiment & themes", "body": "Understand what customers love — and what needs fixing." },
-      { "icon": "Share2", "title": "White-label reporting", "body": "Export-ready summaries under your brand for QBRs and upsell." }
+      {
+        "icon": "Bell",
+        "title": "Instant Alerts",
+        "body": "Get notified of online mentions, performance trends, and competitive changes the moment they happen. Configurable notifications ensure SMBs see what matters and act before opportunities pass."
+      },
+      {
+        "icon": "Radar",
+        "title": "Brand & Competitor Monitoring",
+        "body": "Track brand performance and competitor activity across search, social media, and review platforms. Side-by-side comparisons reveal gaps, threats, and opportunities in real time."
+      },
+      {
+        "icon": "RefreshCw",
+        "title": "Connect and Sync",
+        "body": "Integrate directly with Google Business Profile and Meta (Facebook and Instagram) for seamless data flow, listing management, and publishing — all from a single branded dashboard."
+      },
+      {
+        "icon": "MessageSquare",
+        "title": "Review Notifications",
+        "body": "Never miss a customer review. Get alerted to new reviews across platforms for timely responses that protect reputation and demonstrate engagement to prospective customers."
+      },
+      {
+        "icon": "Upload",
+        "title": "Listing and Publishing",
+        "body": "Publish updates and maintain accurate business information on Google Business and Meta directly from the platform — keeping profiles consistent without platform-hopping."
+      }
     ]
   },
 
   "partnerAdvantage": {
     "eyebrow": "The partner advantage",
-    "heading": "Sticky, High-Value Add-On",
-    "intro": "Intelligence deepens your advisory role and creates natural upsell into marketing, SEO, and reputation products.",
+    "heading": "A Sticky Entry Point That Opens the Door to More",
+    "intro": "Brand Monitoring is more than a monitoring tool — it's your lowest-friction path to customer engagement, creating natural demand for premium marketing services.",
     "items": [
-      { "title": "Differentiate beyond connectivity", "body": "Move from pipes and products to strategic insight." },
-      { "title": "Bundle with marketing stack", "body": "Pair with SEO, directories, and social for full-funnel narratives." },
-      { "title": "Recurring engagement", "body": "Ongoing monitoring drives touchpoints and reduces churn." }
+      {
+        "title": "Increase customer engagement",
+        "body": "Alerts and insights give SMBs a reason to log in regularly, keeping your brand top of mind and creating ongoing touchpoints that deepen the relationship beyond basic connectivity."
+      },
+      {
+        "title": "Create stickiness and drive value",
+        "body": "Once SMBs rely on brand monitoring to make business decisions, the platform becomes essential to their daily workflow. That dependency translates to higher retention and lower churn."
+      },
+      {
+        "title": "Easy upsell path to premium features",
+        "body": "The Starter plan is the entry point to Hostopia's full Online Marketing Center. Customers who see the value of monitoring naturally upgrade to directory listings, reputation management, SEO, and advertising."
+      }
     ]
   },
 
   "lifecycleFit": {
     "eyebrow": "Portfolio fit",
-    "heading": "From Visibility to Action",
-    "intro": "Competitive intelligence fits after a business is online and visible — when they need to understand performance and threats.",
+    "heading": "From Visibility to Intelligence to Action",
+    "intro": "Brand Monitoring fits after a business is online and visible — when they need to understand performance, monitor threats, and make data-informed decisions about where to invest next.",
     "steps": [
-      { "step": "01", "title": "Build a Brand", "body": "Identity and email establish the business.", "highlight": false },
-      { "step": "02", "title": "Get Online", "body": "Websites and hosting create presence.", "highlight": false },
-      { "step": "03", "title": "Get Found", "body": "SEO and listings drive discovery — intelligence explains who wins.", "highlight": true },
-      { "step": "04", "title": "Grow", "body": "Paid and lifecycle campaigns capitalize on insight.", "highlight": false }
+      { "step": "01", "title": "Build a Brand", "body": "Domains, logo, and professional email establish the SMB identity.", "highlight": false },
+      { "step": "02", "title": "Get Online", "body": "Websites and hosting launch their digital presence.", "highlight": false },
+      { "step": "03", "title": "Get Found", "body": "SEO and listings drive discovery — Brand Monitoring reveals who's winning and why.", "highlight": true, "productName": "Brand Monitoring" },
+      { "step": "04", "title": "Grow", "body": "Paid campaigns, reputation management, and lifecycle marketing capitalize on competitive insights.", "highlight": false }
     ],
-    "positioning": "Sell intelligence as the layer that explains performance across search, social, and reputation — and opens the door to optimization services."
+    "positioning": "Position Brand Monitoring as the starter plan that gives SMBs immediate visibility into their market — and the natural gateway to directory listings, reputation management, SEO, and advertising under your brand."
   },
 
   "cta": {
-    "headline": "Ready to Add Competitive Intelligence?",
-    "body": "Talk to Hostopia about packaging brand and competitor monitoring under your brand.",
-    "buttonText": "Contact us"
-  },
-
-  "media": {
-    "heroImage": {
-      "src": "https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=2000&q=80",
-      "alt": "Analytics dashboards and competitive insights",
-      "priority": true
-    }
+    "headline": "Ready to Add Brand Monitoring Under Your Brand?",
+    "body": "Connect with Hostopia to launch brand and competitor monitoring as your entry-level marketing product — the Starter plan that hooks customers and opens the door to your full digital marketing portfolio.",
+    "buttonText": "Book a Demo"
   }
 }

@@ -12,7 +12,7 @@ export const productsDropdownSections = [
     heading: "Get Online",
     links: [
       {
-        label: "Competitive Intelligence",
+        label: "Brand Monitoring",
         description: "Brand listening and competitor insights",
         href: "/products/brand-competitor-monitoring",
         slug: "brand-competitor-monitoring",
@@ -58,8 +58,8 @@ export const productsDropdownSections = [
       { label: "Ecommerce", description: "Online store solutions", href: "/products/ecommerce", slug: "ecommerce" },
       { label: "Email Marketing", description: "AI-powered email campaigns", href: "/products/email-marketing", slug: "email-marketing" },
       {
-        label: "PPC Management",
-        description: "Paid campaigns and ROI",
+        label: "Marketing 360",
+        description: "Full marketing suite and paid campaigns",
         href: "/products/ppc-management",
         slug: "ppc-management",
       },
