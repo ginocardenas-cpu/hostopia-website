@@ -10,6 +10,7 @@
     "blog:migrate": "node scripts/migrate-blog-from-hostopia.js"
   },
   "dependencies": {
+    "@elevenlabs/react": "^1.0.1",
     "@fortawesome/fontawesome-svg-core": "^7.2.0",
     "@fortawesome/free-solid-svg-icons": "^7.2.0",
     "@fortawesome/react-fontawesome": "^3.3.0",
@@ -28,7 +29,8 @@
     "react": "^18",
     "react-dom": "^18",
     "recharts": "^2.12.0",
-    "tailwind-merge": "^3.5.0"
+    "tailwind-merge": "^3.5.0",
+    "zod": "^4.3.6"
   },
   "devDependencies": {
     "@types/node": "^20",

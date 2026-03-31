@@ -1,10 +1,13 @@
 import type { Metadata } from "next";
+import dynamic from "next/dynamic";
 import { config } from "@fortawesome/fontawesome-svg-core";
 import "./globals.css";
 
 config.autoAddCss = false;
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
+
+const VoiceLeadShell = dynamic(() => import("@/components/voice-lead/VoiceLeadShell"), { ssr: false });
 
 export const metadata: Metadata = {
   title: "Hostopia | The Platform That Powers Service Provider Growth",
@@ -24,6 +27,7 @@ export default function RootLayout({
       <body>
         <Navbar />
         {children}
+        <VoiceLeadShell />
         <Footer />
       </body>
     </html>
