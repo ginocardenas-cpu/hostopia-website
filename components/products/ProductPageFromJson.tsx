@@ -14,12 +14,7 @@ import { ImageComparison } from "@/components/ui/image-comparison-slider";
 import { ThreeDMarquee } from "@/components/ui/three-d-marquee";
 import { VimeoVideoSection } from "@/components/VimeoVideoSection";
 import { cn } from "@/lib/utils";
-import {
-  featureFeaturesGridClass,
-  featureGridColumnCount,
-  featureTailWrapperClass,
-  splitFeatureCards,
-} from "@/lib/feature-card-grid";
+import { featureCardGridClass } from "@/lib/feature-card-grid";
 import { normalizeVimeoId } from "@/lib/vimeo-id";
 
 function splitHeadline(headline: string): ReactNode {
@@ -313,46 +308,21 @@ export default function ProductPageFromJson({ data }: { data: ProductJson }) {
               {splitHeadline(features.heading)}
             </h2>
             <p className="mb-14 max-w-3xl font-raleway text-lg leading-relaxed text-gray-500">{features.intro}</p>
-            {(() => {
-              const cols = featureGridColumnCount(features.cards.length);
-              const { main, tail } = splitFeatureCards(features.cards, cols);
-              const cardShell =
-                "group relative h-full w-full overflow-hidden rounded-2xl border border-gray-100 bg-white p-8 transition-colors duration-300 hover:bg-gray-50";
-              const renderCardBody = (card: (typeof features.cards)[number]) => (
-                <>
+            <div className={featureCardGridClass(features.cards.length)}>
+              {features.cards.map((card) => (
+                <div
+                  key={card.title}
+                  className="group relative overflow-hidden rounded-2xl border border-gray-100 bg-white p-8 transition-colors duration-300 hover:bg-gray-50"
+                >
                   <div className="mb-6">
                     <ProductLucideIcon name={card.icon} className="h-8 w-8 text-teal" size={32} />
                   </div>
                   <div className="mb-4 h-1 w-12 bg-teal" />
                   <h3 className="mb-3 font-montserrat text-xl font-black text-charcoal">{card.title}</h3>
                   <p className="font-raleway text-sm leading-relaxed text-gray-500">{card.body}</p>
-                </>
-              );
-              const tailNoWrapLg = tail.length > 0 && tail.length <= 2;
-              return (
-                <div className={featureFeaturesGridClass(features.cards.length)}>
-                  {main.map((card) => (
-                    <div key={card.title} className={cardShell}>
-                      {renderCardBody(card)}
-                    </div>
-                  ))}
-                  {tail.length > 0 ? (
-                    <div
-                      className={cn(
-                        "col-span-full flex flex-wrap justify-center gap-8",
-                        tailNoWrapLg && "lg:flex-nowrap"
-                      )}
-                    >
-                      {tail.map((card) => (
-                        <div key={card.title} className={featureTailWrapperClass(features.cards.length)}>
-                          <div className={cardShell}>{renderCardBody(card)}</div>
-                        </div>
-                      ))}
-                    </div>
-                  ) : null}
                 </div>
-              );
-            })()}
+              ))}
+            </div>
           </div>
         </section>
       ) : null}
