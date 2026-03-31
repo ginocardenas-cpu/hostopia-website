@@ -15,9 +15,8 @@ import { ThreeDMarquee } from "@/components/ui/three-d-marquee";
 import { VimeoVideoSection } from "@/components/VimeoVideoSection";
 import { cn } from "@/lib/utils";
 import {
-  featureCompactGridClass,
+  featureFeaturesGridClass,
   featureGridColumnCount,
-  featureLgGridColsClass,
   featureTailItemClass,
   splitFeatureCards,
 } from "@/lib/feature-card-grid";
@@ -330,19 +329,14 @@ export default function ProductPageFromJson({ data }: { data: ProductJson }) {
                 </div>
               );
               return (
-                <>
-                  <div className={cn(featureCompactGridClass(), "lg:hidden")}>
-                    {features.cards.map((card) => renderCard(card))}
-                  </div>
-                  <div className={cn("hidden gap-8 lg:grid", featureLgGridColsClass(features.cards.length))}>
-                    {main.map((card) => renderCard(card))}
-                    {tail.length > 0 ? (
-                      <div className="col-span-full flex flex-wrap justify-center gap-8">
-                        {tail.map((card) => renderCard(card, featureTailItemClass(features.cards.length)))}
-                      </div>
-                    ) : null}
-                  </div>
-                </>
+                <div className={featureFeaturesGridClass(features.cards.length)}>
+                  {main.map((card) => renderCard(card))}
+                  {tail.length > 0 ? (
+                    <div className="col-span-full flex flex-wrap justify-center gap-8">
+                      {tail.map((card) => renderCard(card, featureTailItemClass(features.cards.length)))}
+                    </div>
+                  ) : null}
+                </div>
               );
             })()}
           </div>
