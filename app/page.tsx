@@ -1,3 +1,4 @@
+import dynamic from "next/dynamic";
 import Hero from "@/components/Hero";
 import Pillars from "@/components/Pillars";
 import PartnerTypes from "@/components/PartnerTypes";
@@ -10,6 +11,12 @@ import CTA from "@/components/CTA";
 import FAQ from "@/components/FAQ";
 import { VimeoVideoSection } from "@/components/VimeoVideoSection";
 import { loadHomeVimeo } from "@/lib/load-home-vimeo";
+import { isElevenLabsHomeEmbedEnabled } from "@/lib/voice-lead/home-embed";
+
+const ElevenLabsHomeConvaiSection = dynamic(
+  () => import("@/components/voice-lead/ElevenLabsHomeConvaiSection"),
+  { ssr: false },
+);
 
 export default function Home() {
   const homeVimeo = loadHomeVimeo();
@@ -36,6 +43,7 @@ export default function Home() {
       <GoToMarket />
       <WhyHostopia />
       <CTA />
+      {isElevenLabsHomeEmbedEnabled() ? <ElevenLabsHomeConvaiSection /> : null}
       <FAQ />
     </main>
   );

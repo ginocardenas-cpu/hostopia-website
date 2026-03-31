@@ -17,6 +17,7 @@ import {
   DialogHeader,
   DialogTitle,
 } from "@/components/ui/dialog";
+import { isElevenLabsHomeEmbedEnabled } from "@/lib/voice-lead/home-embed";
 import { HOSTOPIA_OPEN_BOOKING_TOOL, HOSTOPIA_SUBMIT_LEAD_TOOL } from "@/lib/voice-lead/tools";
 
 function VoiceLeadPanel({ setOpen }: { setOpen: (open: boolean) => void }) {
@@ -157,7 +158,7 @@ export default function VoiceLeadShell() {
   const agentId = process.env.NEXT_PUBLIC_ELEVENLABS_AGENT_ID?.trim();
   const [open, setOpen] = useState(false);
 
-  if (!agentId) {
+  if (!agentId || isElevenLabsHomeEmbedEnabled()) {
     return null;
   }
 
