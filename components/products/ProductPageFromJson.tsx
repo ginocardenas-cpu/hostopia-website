@@ -14,7 +14,7 @@ import { ImageComparison } from "@/components/ui/image-comparison-slider";
 import { ThreeDMarquee } from "@/components/ui/three-d-marquee";
 import { VimeoVideoSection } from "@/components/VimeoVideoSection";
 import { cn } from "@/lib/utils";
-import { featureCardGridClass } from "@/lib/feature-card-grid";
+import { featureCardGridClass, featureCardItemClass } from "@/lib/feature-card-grid";
 import { normalizeVimeoId } from "@/lib/vimeo-id";
 
 function splitHeadline(headline: string): ReactNode {
@@ -312,7 +312,10 @@ export default function ProductPageFromJson({ data }: { data: ProductJson }) {
               {features.cards.map((card) => (
                 <div
                   key={card.title}
-                  className="group relative overflow-hidden rounded-2xl border border-gray-100 bg-white p-8 transition-colors duration-300 hover:bg-gray-50"
+                  className={cn(
+                    "group relative overflow-hidden rounded-2xl border border-gray-100 bg-white p-8 transition-colors duration-300 hover:bg-gray-50",
+                    featureCardItemClass(features.cards.length)
+                  )}
                 >
                   <div className="mb-6">
                     <ProductLucideIcon name={card.icon} className="h-8 w-8 text-teal" size={32} />
