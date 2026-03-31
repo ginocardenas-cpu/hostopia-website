@@ -135,14 +135,14 @@
   "lifecycleFit": {
     "eyebrow": "Portfolio fit",
     "heading": "From Visibility to Intelligence to Action",
-    "intro": "Brand Monitoring fits after a business is online and visible — when they need to understand performance, monitor threats, and make data-informed decisions about where to invest next.",
+    "intro": "Brand Monitoring sits in the Get Online motion — alongside websites and hosting — so SMBs can track competitors, mentions, and market signals as soon as they have a digital footprint.",
     "steps": [
       { "step": "01", "title": "Build a Brand", "body": "Domains, logo, and professional email establish the SMB identity.", "highlight": false },
-      { "step": "02", "title": "Get Online", "body": "Websites and hosting launch their digital presence.", "highlight": false },
-      { "step": "03", "title": "Get Found", "body": "SEO and listings drive discovery — Brand Monitoring reveals who's winning and why.", "highlight": true, "productName": "Brand Monitoring" },
-      { "step": "04", "title": "Grow", "body": "Paid campaigns, reputation management, and lifecycle marketing capitalize on competitive insights.", "highlight": false }
+      { "step": "02", "title": "Get Online", "body": "Websites and hosting launch their digital presence — Brand Monitoring keeps them informed on rankings, reviews, mentions, and competitor moves from day one.", "highlight": true, "productName": "Brand Monitoring" },
+      { "step": "03", "title": "Get Found", "body": "Directory listings, reputation, social, and Search Everywhere Optimization expand visibility and trust once the business is live.", "highlight": false },
+      { "step": "04", "title": "Grow", "body": "Marketing 360, ecommerce, and email marketing turn visibility into revenue and long-term customer relationships.", "highlight": false }
     ],
-    "positioning": "Position Brand Monitoring as the starter plan that gives SMBs immediate visibility into their market — and the natural gateway to directory listings, reputation management, SEO, and advertising under your brand."
+    "positioning": "Position Brand Monitoring as the Get Online starter that pairs with websites and hosting — then opens the door to Get Found (listings, reputation, social, SEO) and Grow (Marketing 360) under your brand."
   },
 
   "cta": {

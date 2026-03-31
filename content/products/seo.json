@@ -139,14 +139,14 @@
   "lifecycleFit": {
     "eyebrow": "Portfolio fit",
     "heading": "The Accelerator for Businesses Ready to Grow",
-    "intro": "Once an SMB has a website, active listings, and strong reputation, advertising is the natural next step to accelerate growth. Search Engine Optimization turns organic visibility into paid performance.",
+    "intro": "Search Everywhere Optimization is core to Get Found — it amplifies how SMBs rank, appear in AI-driven search, and compete for attention alongside listings, reputation, and social.",
     "steps": [
       { "step": "01", "title": "Build a Brand", "body": "Domains, logo, and professional email establish the SMB identity." },
       { "step": "02", "title": "Get Online", "body": "Website Builder, DIFM design, or hosting launches their digital presence." },
-      { "step": "03", "title": "Get Found", "body": "Directories, reputation management, and brand monitoring build organic visibility and trust." },
-      { "step": "04", "title": "Grow", "body": "Search Engine Optimization amplifies reach with AI-powered advertising across search and social.", "highlight": true, "productName": "Search Engine Optimization" }
+      { "step": "03", "title": "Get Found", "body": "Search Everywhere Optimization works with directory listings, reputation management, and social media management to maximize discoverability and trust.", "highlight": true, "productName": "Search Engine Optimization" },
+      { "step": "04", "title": "Grow", "body": "Marketing 360, ecommerce, and email marketing scale demand once the business is easy to find and trusted online." }
     ],
-    "positioning": "Position advertising as the growth accelerator for SMBs who have their digital foundation in place. Bundle with websites, listings, and reputation management for a complete marketing stack — or offer it standalone for businesses ready to invest in immediate results."
+    "positioning": "Position Search Everywhere Optimization in the Get Found stack with listings, reputation, and social — then bundle forward into Marketing 360 for partners ready to consolidate growth under your brand."
   },
 
   "cta": {

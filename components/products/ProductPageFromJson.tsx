@@ -14,6 +14,7 @@ import { ImageComparison } from "@/components/ui/image-comparison-slider";
 import { ThreeDMarquee } from "@/components/ui/three-d-marquee";
 import { VimeoVideoSection } from "@/components/VimeoVideoSection";
 import { cn } from "@/lib/utils";
+import { featureCardGridClass } from "@/lib/feature-card-grid";
 import { normalizeVimeoId } from "@/lib/vimeo-id";
 
 function splitHeadline(headline: string): ReactNode {
@@ -307,7 +308,7 @@ export default function ProductPageFromJson({ data }: { data: ProductJson }) {
               {splitHeadline(features.heading)}
             </h2>
             <p className="mb-14 max-w-3xl font-raleway text-lg leading-relaxed text-gray-500">{features.intro}</p>
-            <div className="grid gap-8 sm:grid-cols-2 lg:grid-cols-4">
+            <div className={featureCardGridClass(features.cards.length)}>
               {features.cards.map((card) => (
                 <div
                   key={card.title}

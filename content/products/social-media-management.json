@@ -81,14 +81,14 @@
   "lifecycleFit": {
     "eyebrow": "Portfolio fit",
     "heading": "Where Social Sits in the Lifecycle",
-    "intro": "After a business is found online, social keeps the conversation going and feeds other channels.",
+    "intro": "Social Media Management belongs in Get Found — it keeps SMBs visible and active where customers spend time, alongside listings, reputation, and Search Everywhere Optimization.",
     "steps": [
       { "step": "01", "title": "Build a Brand", "body": "Logo and email set the tone.", "highlight": false },
       { "step": "02", "title": "Get Online", "body": "Websites and hosting anchor the hub.", "highlight": false },
-      { "step": "03", "title": "Get Found", "body": "SEO and listings drive discovery.", "highlight": false },
-      { "step": "04", "title": "Grow", "body": "Social, email marketing, and ads compound growth.", "highlight": true }
+      { "step": "03", "title": "Get Found", "body": "Social Media Management complements directory listings, reputation management, and SEO — consistent posting and engagement reinforce discoverability and trust.", "highlight": true, "productName": "Social Media Management" },
+      { "step": "04", "title": "Grow", "body": "Marketing 360, email marketing, and paid campaigns compound growth once the audience is engaged.", "highlight": false }
     ],
-    "positioning": "Position social as the always-on layer that supports reputation, SEO signals, and campaign creative — sold as a subscription alongside your core stack."
+    "positioning": "Position social in the Get Found portfolio with listings, reputation, and SEO — then upsell Marketing 360 for partners who want one unified suite under your brand."
   },
 
   "cta": {

@@ -62,3 +62,11 @@ All files located in: `/content/products/`
 - SEO metadata (meta titles, descriptions, keywords) updated for each page
 - No changes were made to images, lifecycle fit structure, or page layout — only content
 - URLs unchanged: `/products/brand-competitor-monitoring`, `/products/ppc-management`
+
+### Portfolio fit (lifecycle grid) — March 2026
+
+- **Get Online:** Brand Monitoring (`brand-competitor-monitoring.json`) — highlighted step 02.
+- **Get Found:** Directory Listings, Reputation Management, Social Media Management, Search Everywhere Optimization (`seo.json`) — highlighted step 03 where applicable.
+- **Grow:** Marketing 360 (`ppc-management.json`) — highlighted step 04.
+
+Feature cards on JSON product pages use a responsive column count (`lib/feature-card-grid.ts`) so five-card rows avoid a lone fifth column (e.g. 3+2 instead of 4+1).
