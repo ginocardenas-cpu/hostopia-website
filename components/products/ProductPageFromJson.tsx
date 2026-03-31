@@ -14,7 +14,13 @@ import { ImageComparison } from "@/components/ui/image-comparison-slider";
 import { ThreeDMarquee } from "@/components/ui/three-d-marquee";
 import { VimeoVideoSection } from "@/components/VimeoVideoSection";
 import { cn } from "@/lib/utils";
-import { featureCardGridClass, featureCardItemClass } from "@/lib/feature-card-grid";
+import {
+  featureCompactGridClass,
+  featureGridColumnCount,
+  featureLgGridColsClass,
+  featureTailItemClass,
+  splitFeatureCards,
+} from "@/lib/feature-card-grid";
 import { normalizeVimeoId } from "@/lib/vimeo-id";
 
 function splitHeadline(headline: string): ReactNode {
@@ -308,15 +314,13 @@ export default function ProductPageFromJson({ data }: { data: ProductJson }) {
               {splitHeadline(features.heading)}
             </h2>
             <p className="mb-14 max-w-3xl font-raleway text-lg leading-relaxed text-gray-500">{features.intro}</p>
-            <div className={featureCardGridClass(features.cards.length)}>
-              {features.cards.map((card) => (
-                <div
-                  key={card.title}
-                  className={cn(
-                    "group relative overflow-hidden rounded-2xl border border-gray-100 bg-white p-8 transition-colors duration-300 hover:bg-gray-50",
-                    featureCardItemClass(features.cards.length)
-                  )}
-                >
+            {(() => {
+              const cols = featureGridColumnCount(features.cards.length);
+              const { main, tail } = splitFeatureCards(features.cards, cols);
+              const cardShell =
+                "group relative overflow-hidden rounded-2xl border border-gray-100 bg-white p-8 transition-colors duration-300 hover:bg-gray-50";
+              const renderCard = (card: (typeof features.cards)[number], extra?: string) => (
+                <div key={card.title} className={cn(cardShell, extra)}>
                   <div className="mb-6">
                     <ProductLucideIcon name={card.icon} className="h-8 w-8 text-teal" size={32} />
                   </div>
@@ -324,8 +328,23 @@ export default function ProductPageFromJson({ data }: { data: ProductJson }) {
                   <h3 className="mb-3 font-montserrat text-xl font-black text-charcoal">{card.title}</h3>
                   <p className="font-raleway text-sm leading-relaxed text-gray-500">{card.body}</p>
                 </div>
-              ))}
-            </div>
+              );
+              return (
+                <>
+                  <div className={cn(featureCompactGridClass(), "lg:hidden")}>
+                    {features.cards.map((card) => renderCard(card))}
+                  </div>
+                  <div className={cn("hidden gap-8 lg:grid", featureLgGridColsClass(features.cards.length))}>
+                    {main.map((card) => renderCard(card))}
+                    {tail.length > 0 ? (
+                      <div className="col-span-full flex flex-wrap justify-center gap-8">
+                        {tail.map((card) => renderCard(card, featureTailItemClass(features.cards.length)))}
+                      </div>
+                    ) : null}
+                  </div>
+                </>
+              );
+            })()}
           </div>
         </section>
       ) : null}
