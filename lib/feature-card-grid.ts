@@ -21,12 +21,17 @@ export function featureFeaturesGridClass(cardCount: number, className?: string):
   return cn("grid gap-8 grid-cols-1 sm:grid-cols-2", lgCols, className);
 }
 
-/** Widths for cards in the centered tail row (match grid column width at sm and lg). */
-export function featureTailItemClass(cardCount: number, className?: string): string {
-  const smHalf = "min-w-0 w-full sm:w-[calc((100%-2rem)/2)]";
-  if (cardCount === 4) return cn(smHalf, "lg:w-[calc((100%-2rem)/2)]", className);
-  if (cardCount === 7 || cardCount === 8) {
-    return cn(smHalf, "lg:w-[calc((100%-6rem)/4)]", className);
+/**
+ * Outer wrapper for tail-row cards only. Keeps the same track width as grid cells above
+ * (flex children default to `min-width:auto` and can ignore `w-*` on the card itself).
+ */
+export function featureTailWrapperClass(cardCount: number, className?: string): string {
+  const base = "min-w-0 shrink-0 w-full sm:max-w-[calc((100%-2rem)/2)] sm:w-[calc((100%-2rem)/2)]";
+  if (cardCount === 4) {
+    return cn(base, "lg:max-w-[calc((100%-2rem)/2)] lg:w-[calc((100%-2rem)/2)]", className);
   }
-  return cn(smHalf, "lg:w-[calc((100%-4rem)/3)]", className);
+  if (cardCount === 7 || cardCount === 8) {
+    return cn(base, "lg:max-w-[calc((100%-6rem)/4)] lg:w-[calc((100%-6rem)/4)]", className);
+  }
+  return cn(base, "lg:max-w-[calc((100%-4rem)/3)] lg:w-[calc((100%-4rem)/3)]", className);
 }
