@@ -2,6 +2,7 @@
 
 import Script from "next/script";
 import { createElement, useCallback, useState } from "react";
+import { ArrowRight, MessagesSquare } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import {
   Dialog,
@@ -19,7 +20,7 @@ const inputClass =
   "w-full rounded-xl border-2 border-gray-200 px-4 py-3 font-raleway text-gray-900 placeholder-gray-400 transition-colors focus:border-teal focus:outline-none focus:ring-2 focus:ring-teal/20";
 
 /**
- * Fixed bottom control opens a modal: collect details → set `dynamic-variables` → show ElevenLabs convai widget.
+ * Fixed bottom icon opens a modal: collect details → set `dynamic-variables` → show ElevenLabs convai widget.
  */
 export default function ElevenLabsConvaiStickyLauncher() {
   const enabled = isElevenLabsConvaiLauncherEnabled();
@@ -50,17 +51,20 @@ export default function ElevenLabsConvaiStickyLauncher() {
     return null;
   }
 
+  const isWidgetStep = dynamicVariablesJson != null;
+
   return (
     <>
       {!sheetOpen ? (
         <button
           type="button"
           onClick={openLauncher}
-          className="fixed bottom-6 right-6 z-[95] min-h-12 rounded-full bg-teal px-6 py-3 font-raleway text-sm font-semibold uppercase tracking-wide text-white shadow-lg transition-colors hover:bg-teal-dark focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-teal focus-visible:ring-offset-2 md:bottom-8 md:right-8"
+          className="fixed bottom-6 right-6 z-[95] flex h-14 w-14 items-center justify-center rounded-full bg-teal text-white shadow-lg transition-colors hover:bg-teal-dark focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-teal focus-visible:ring-offset-2 md:bottom-8 md:right-8"
           aria-haspopup="dialog"
           aria-expanded={sheetOpen}
+          aria-label="Open Hostopia AI Assistant"
         >
-          Submit
+          <MessagesSquare className="h-7 w-7" strokeWidth={2} aria-hidden />
         </button>
       ) : null}
 
@@ -73,18 +77,29 @@ export default function ElevenLabsConvaiStickyLauncher() {
           }
         }}
       >
-        <DialogContent className="max-h-[min(90vh,720px)] max-w-md gap-0 overflow-y-auto p-5 sm:p-6">
-          <DialogHeader className="pb-4 text-left">
-            <DialogTitle>Partner assistant</DialogTitle>
+        <DialogContent
+          className={cn(
+            "grid w-[calc(100%-1.5rem)] gap-0 overflow-y-auto p-5 sm:p-6",
+            isWidgetStep
+              ? "max-h-[min(94vh,920px)] min-h-[min(88vh,780px)] max-w-4xl sm:max-w-4xl"
+              : "max-h-[min(90vh,720px)] max-w-md",
+          )}
+        >
+          <DialogHeader className={cn("pb-4 text-left", isWidgetStep && "shrink-0")}>
+            <DialogTitle>Hostopia AI Assistant</DialogTitle>
             <DialogDescription className="font-raleway text-sm text-gray-500">
-              {dynamicVariablesJson == null
-                ? "Add your details, then you can start a voice conversation."
-                : "Use the controls below to speak with the assistant. Allow microphone access when asked."}
+              {isWidgetStep ? (
+                <>
+                  Choose to speak to the assistant by phone or chat. Select your preference.
+                </>
+              ) : (
+                <>Provide us your contact details to start a voice or chat conversation.</>
+              )}
             </DialogDescription>
           </DialogHeader>
 
-          {dynamicVariablesJson == null ? (
-            <form onSubmit={onFormSubmit} className="space-y-4 pb-2">
+          {!isWidgetStep ? (
+            <form onSubmit={onFormSubmit} className="flex flex-col gap-4 pb-2">
               <div>
                 <label
                   htmlFor="convai-sticky-first-name"
@@ -155,21 +170,34 @@ export default function ElevenLabsConvaiStickyLauncher() {
                   placeholder="+1 …"
                 />
               </div>
-              <div className="pt-2">
-                <Button type="submit" className="w-full sm:w-auto">
-                  Submit
+              <div className="flex justify-end pt-2">
+                <Button
+                  type="submit"
+                  size="icon"
+                  className="h-12 w-12 shrink-0 rounded-full"
+                  aria-label="Continue to assistant"
+                >
+                  <ArrowRight className="h-5 w-5" aria-hidden />
                 </Button>
               </div>
             </form>
           ) : (
-            <div
-              key={widgetKey}
-              className="convai-embed-root flex min-h-[260px] w-full justify-center border-t border-gray-100 pt-6"
-            >
-              {createElement("elevenlabs-convai", {
-                "agent-id": agentId,
-                "dynamic-variables": dynamicVariablesJson,
-              })}
+            <div className="flex min-h-0 flex-1 flex-col border-t border-gray-100">
+              <div className="flex flex-1 flex-col items-center justify-center px-1 py-6 sm:px-4 sm:py-8">
+                <div
+                  key={widgetKey}
+                  className="convai-embed-root flex w-full max-w-[min(100%,480px)] flex-col items-center justify-center sm:max-w-[520px]"
+                  style={{ minHeight: "min(580px, 58vh)" }}
+                >
+                  {createElement("elevenlabs-convai", {
+                    "agent-id": agentId,
+                    "dynamic-variables": dynamicVariablesJson,
+                  })}
+                </div>
+              </div>
+              <p className="shrink-0 pb-1 pt-2 text-center font-raleway text-sm text-gray-500">
+                Allow microphone access when asked.
+              </p>
             </div>
           )}
         </DialogContent>

@@ -39,7 +39,7 @@ const DialogContent = React.forwardRef<
       {children}
       <DialogPrimitive.Close
         className="absolute right-3 top-3 rounded-full p-2 text-charcoal ring-offset-white transition-colors hover:bg-gray-100 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-teal focus-visible:ring-offset-2"
-        aria-label="Close video"
+        aria-label="Close"
       >
         <X className="h-5 w-5" />
       </DialogPrimitive.Close>
