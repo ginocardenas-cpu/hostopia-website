@@ -2,27 +2,16 @@
 
 import Script from "next/script";
 import { createElement } from "react";
+import { resolvePublicConvaiAgentId, resolvePublicConvaiScriptSrc } from "@/lib/voice-lead/convai-defaults";
 
 /**
- * Official ElevenLabs conversational widget on the home page for testing.
- *
- * Matches the typical embed:
+ * Official ElevenLabs conversational widget — same as:
  *   <elevenlabs-convai agent-id="…"></elevenlabs-convai>
  *   <script src="https://unpkg.com/@elevenlabs/convai-widget-embed" async />
- *
- * If your dashboard gives a different script URL, set NEXT_PUBLIC_ELEVENLABS_CONVAI_SCRIPT_URL.
  */
 export default function ElevenLabsHomeConvaiSection() {
-  const agentId =
-    process.env.NEXT_PUBLIC_ELEVENLABS_CONVAI_AGENT_ID?.trim() ||
-    process.env.NEXT_PUBLIC_ELEVENLABS_AGENT_ID?.trim();
-  const scriptSrc =
-    process.env.NEXT_PUBLIC_ELEVENLABS_CONVAI_SCRIPT_URL?.trim() ||
-    "https://unpkg.com/@elevenlabs/convai-widget-embed";
-
-  if (!agentId) {
-    return null;
-  }
+  const agentId = resolvePublicConvaiAgentId();
+  const scriptSrc = resolvePublicConvaiScriptSrc();
 
   return (
     <section
