@@ -8,6 +8,10 @@ import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 
 const VoiceLeadShell = dynamic(() => import("@/components/voice-lead/VoiceLeadShell"), { ssr: false });
+const ElevenLabsConvaiStickyLauncher = dynamic(
+  () => import("@/components/voice-lead/ElevenLabsConvaiStickyLauncher"),
+  { ssr: false },
+);
 
 export const metadata: Metadata = {
   title: "Hostopia | The Platform That Powers Service Provider Growth",
@@ -28,6 +32,7 @@ export default function RootLayout({
         <Navbar />
         {children}
         <VoiceLeadShell />
+        <ElevenLabsConvaiStickyLauncher />
         <Footer />
       </body>
     </html>
