@@ -20,7 +20,7 @@ const inputClass =
   "w-full rounded-xl border-2 border-gray-200 px-4 py-3 font-raleway text-gray-900 placeholder-gray-400 transition-colors focus:border-teal focus:outline-none focus:ring-2 focus:ring-teal/20";
 
 /**
- * Fixed bottom icon opens a modal: collect details → set `dynamic-variables` → show ElevenLabs convai widget.
+ * Form → ElevenLabs convai with variant expanded (full UI, not compact bubble first).
  */
 export default function ElevenLabsConvaiStickyLauncher() {
   const enabled = isElevenLabsConvaiLauncherEnabled();
@@ -79,19 +79,17 @@ export default function ElevenLabsConvaiStickyLauncher() {
       >
         <DialogContent
           className={cn(
-            "grid w-[calc(100%-1.5rem)] gap-0 overflow-y-auto p-5 sm:p-6",
+            "!flex w-[calc(100%-1.5rem)] flex-col gap-0 overflow-y-auto p-5 sm:p-6",
             isWidgetStep
-              ? "max-h-[min(94vh,920px)] min-h-[min(88vh,780px)] max-w-4xl sm:max-w-4xl"
+              ? "max-h-[min(94vh,920px)] min-h-[min(88vh,800px)] max-w-4xl sm:max-w-4xl"
               : "max-h-[min(90vh,720px)] max-w-md",
           )}
         >
-          <DialogHeader className={cn("pb-4 text-left", isWidgetStep && "shrink-0")}>
+          <DialogHeader className={cn("shrink-0 pb-4 text-left")}>
             <DialogTitle>Hostopia AI Assistant</DialogTitle>
             <DialogDescription className="font-raleway text-sm text-gray-500">
               {isWidgetStep ? (
-                <>
-                  Choose to speak to the assistant by phone or chat. Select your preference.
-                </>
+                <>Allow microphone access when asked. Use voice or chat below.</>
               ) : (
                 <>Provide us your contact details to start a voice or chat conversation.</>
               )}
@@ -182,22 +180,18 @@ export default function ElevenLabsConvaiStickyLauncher() {
               </div>
             </form>
           ) : (
-            <div className="flex min-h-0 flex-1 flex-col border-t border-gray-100">
-              <div className="flex flex-1 flex-col items-center justify-center px-1 py-6 sm:px-4 sm:py-8">
-                <div
-                  key={widgetKey}
-                  className="convai-embed-root flex w-full max-w-[min(100%,480px)] flex-col items-center justify-center sm:max-w-[520px]"
-                  style={{ minHeight: "min(580px, 58vh)" }}
-                >
-                  {createElement("elevenlabs-convai", {
-                    "agent-id": agentId,
-                    "dynamic-variables": dynamicVariablesJson,
-                  })}
-                </div>
+            <div className="flex min-h-0 w-full flex-1 flex-col border-t border-gray-100">
+              <div
+                key={widgetKey}
+                className="hostopia-convai-slot box-border min-h-[min(600px,62vh)] w-full flex-1 py-4 sm:min-h-[min(640px,65vh)] sm:py-6"
+                style={{ minWidth: 0 }}
+              >
+                {createElement("elevenlabs-convai", {
+                  "agent-id": agentId,
+                  "dynamic-variables": dynamicVariablesJson,
+                  variant: "expanded",
+                })}
               </div>
-              <p className="shrink-0 pb-1 pt-2 text-center font-raleway text-sm text-gray-500">
-                Allow microphone access when asked.
-              </p>
             </div>
           )}
         </DialogContent>
