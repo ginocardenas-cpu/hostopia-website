@@ -312,13 +312,13 @@ export default function ProductPageFromJson({ data }: { data: ProductJson }) {
               {features.cards.map((card) => (
                 <div
                   key={card.title}
-                  className="group relative overflow-hidden rounded-2xl border border-gray-100 bg-white p-8 transition-colors duration-300 hover:bg-gray-50"
+                  className="group relative overflow-hidden rounded-2xl border border-gray-100 bg-white p-5 shadow-sm transition-colors duration-300 hover:bg-gray-50 md:p-6"
                 >
-                  <div className="mb-6">
-                    <ProductLucideIcon name={card.icon} className="h-8 w-8 text-teal" size={32} />
+                  <div className="mb-3 flex h-10 w-10 items-center justify-center rounded-xl bg-teal/10">
+                    <ProductLucideIcon name={card.icon} className="h-[22px] w-[22px] text-teal" size={22} />
                   </div>
-                  <div className="mb-4 h-1 w-12 bg-teal" />
-                  <h3 className="mb-3 font-montserrat text-xl font-black text-charcoal">{card.title}</h3>
+                  <div className="mb-3 h-1 w-12 bg-teal" />
+                  <h3 className="mb-2 font-montserrat text-sm font-semibold text-charcoal">{card.title}</h3>
                   <p className="font-raleway text-sm leading-relaxed text-gray-500">{card.body}</p>
                 </div>
               ))}
