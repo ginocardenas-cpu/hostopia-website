@@ -14,7 +14,7 @@ import { ImageComparison } from "@/components/ui/image-comparison-slider";
 import { ThreeDMarquee } from "@/components/ui/three-d-marquee";
 import { VimeoVideoSection } from "@/components/VimeoVideoSection";
 import { cn } from "@/lib/utils";
-import { featureCardGridClass } from "@/lib/feature-card-grid";
+import { featureCardGridClass, partnerAdvantageGridClass } from "@/lib/feature-card-grid";
 import { normalizeVimeoId } from "@/lib/vimeo-id";
 
 function splitHeadline(headline: string): ReactNode {
@@ -441,7 +441,7 @@ export default function ProductPageFromJson({ data }: { data: ProductJson }) {
               {splitHeadlineDark(partnerAdvantage.heading)}
             </h2>
             <p className="mb-14 max-w-3xl font-raleway text-lg leading-relaxed text-white/70">{partnerAdvantage.intro}</p>
-            <div className="grid gap-10 md:grid-cols-3">
+            <div className={partnerAdvantageGridClass(partnerAdvantage.items.length)}>
               {partnerAdvantage.items.map((item) => (
                 <div key={item.title} className="border-t border-white/15 pt-6">
                   <h3 className="mb-3 font-montserrat text-lg font-black text-white">{item.title}</h3>
