@@ -12,51 +12,29 @@ export default async function Home() {
         className="relative min-h-[70vh] flex flex-col justify-center items-center px-6 py-16 bg-cover bg-center"
         style={{ backgroundImage: "url('/hero-hands.png')" }}
       >
-        <div className="absolute inset-0 bg-[#24282B]/70" aria-hidden />
+        <div className="absolute inset-0 bg-charcoal/70" aria-hidden />
         <div className="relative z-10 max-w-4xl text-center">
-          <p
-            className="uppercase mb-4 text-white"
-            style={{
-              fontFamily: "Montserrat, sans-serif",
-              fontSize: "0.7rem",
-              fontWeight: 700,
-              letterSpacing: "0.2em"
-            }}
-          >
+          <p className="mb-4 font-heading text-[0.7rem] font-bold uppercase tracking-[0.2em] text-white">
             {t("welcome")}
           </p>
-          <h1
-            className="font-black leading-tight mb-10"
-            style={{
-              fontFamily: "Montserrat, sans-serif",
-              fontSize: "clamp(2.5rem, 5vw, 4.5rem)"
-            }}
-          >
-            <span style={{ color: "#2CADB2" }}>Hostopia</span>
+          <h1 className="mb-10 font-heading text-[clamp(2.5rem,5vw,4.5rem)] font-black leading-tight">
+            <span className="text-teal">Hostopia</span>
             <span className="text-white">Connects</span>
           </h1>
-          <p
-            className="text-lg max-w-2xl mx-auto mb-10 text-white"
-            style={{
-              fontFamily: "Raleway, sans-serif",
-              lineHeight: 1.625
-            }}
-          >
+          <p className="font-body mx-auto mb-10 max-w-2xl text-lg leading-relaxed text-white">
             {t("tagline")}
           </p>
-          <div className="max-w-2xl mx-auto mb-10">
+          <div className="mx-auto mb-10 max-w-2xl">
             <input
               type="search"
               placeholder={t("searchPlaceholder")}
-              className="w-full rounded-full border border-white/30 bg-white/95 px-5 py-3 text-sm outline-none shadow-sm focus:border-[#2CADB2] focus:ring-1 focus:ring-[#2CADB2] text-[#24282B]"
-              style={{ fontFamily: "Raleway, sans-serif" }}
+              className="w-full rounded-full border border-white/30 bg-white/95 px-5 py-3 font-body text-sm text-charcoal shadow-sm outline-none focus:border-teal focus:ring-1 focus:ring-teal"
             />
           </div>
-          <div className="flex flex-wrap justify-center gap-4 mt-4">
+          <div className="mt-4 flex flex-wrap justify-center gap-4">
             <Link
               href="/how-it-works"
-              className="inline-flex items-center justify-center rounded-full px-8 py-3 text-sm font-semibold border-2 border-white/60 text-white transition hover:bg-white/10 hover:border-white"
-              style={{ fontFamily: "Montserrat, sans-serif" }}
+              className="inline-flex items-center justify-center rounded-full border-2 border-white/60 px-8 py-3 text-sm font-semibold text-white transition hover:border-white hover:bg-white/10 font-heading"
             >
               {t("howItWorks")}
             </Link>
@@ -65,7 +43,7 @@ export default async function Home() {
       </section>
       <HomeHighlights />
 
-      <section id="browse-options" className="py-10 border-t border-black/5 bg-[#f7f6f2] scroll-mt-6">
+      <section id="browse-options" className="py-10 border-t border-black/5 bg-cream scroll-mt-6">
         <div className="max-w-6xl mx-auto px-6">
           <BrowseSectionClient />
         </div>

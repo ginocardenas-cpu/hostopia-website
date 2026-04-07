@@ -43,11 +43,11 @@ export function LanguageSwitcher() {
   const current = ACTIVE_LOCALES.find((item) => item.locale === locale) ?? ACTIVE_LOCALES[0];
 
   return (
-    <div className="relative text-xs" style={{ fontFamily: "Montserrat, sans-serif" }}>
+    <div className="relative text-xs font-heading">
       <button
         type="button"
         onClick={() => setOpen((prev) => !prev)}
-        className="inline-flex items-center gap-1 rounded-full border border-black/10 bg-white/90 px-3 py-1 font-semibold text-gray-700 shadow-sm hover:border-[#2CADB2]/60 hover:text-[#2CADB2] transition-colors"
+        className="inline-flex items-center gap-1 rounded-full border border-black/10 bg-white/90 px-3 py-1 font-semibold text-gray-700 shadow-sm hover:border-teal/60 hover:text-teal transition-colors"
         aria-label={localeNames[locale]}
         aria-expanded={open}
       >
@@ -63,8 +63,8 @@ export function LanguageSwitcher() {
               key={item.locale}
               type="button"
               onClick={() => handleChange(item.locale)}
-              className={`flex w-full items-center gap-2 px-3 py-1.5 text-left text-[11px] hover:bg-[#2CADB2]/10 ${
-                locale === item.locale ? "font-bold text-[#2CADB2]" : "text-gray-700"
+              className={`flex w-full items-center gap-2 px-3 py-1.5 text-left text-[11px] hover:bg-teal/10 ${
+                locale === item.locale ? "font-bold text-teal" : "text-gray-700"
               }`}
             >
               <span className="text-base leading-none">{item.flag}</span>

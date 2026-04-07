@@ -23,10 +23,10 @@ export default async function LocaleLayout({
   return (
     <NextIntlClientProvider messages={messages} locale={locale}>
       <CartLayoutClient>
-        <div className="min-h-screen bg-[#f7f6f2] text-[#24282B] flex flex-col">
+        <div className="min-h-screen bg-cream text-charcoal flex flex-col">
           <TickerBar />
           <header className="border-b border-black/5 bg-white sticky top-0 z-20">
-            <div className="absolute inset-x-0 top-0 h-px bg-gradient-to-r from-[#2CADB2] via-[#F8CF41] to-[#2CADB2]" />
+            <div className="absolute inset-x-0 top-0 h-px bg-gradient-to-r from-teal via-gold to-teal" />
             <div className="max-w-6xl mx-auto px-6 py-3 flex items-center justify-between gap-6">
               <Link href="/" className="flex-shrink-0" aria-label="Hostopia Connects home">
                 <Image
@@ -49,10 +49,8 @@ export default async function LocaleLayout({
             {children}
           </main>
 
-          <footer className="border-t border-black/5 py-6 text-center text-xs text-gray-500" suppressHydrationWarning>
-            <span style={{ fontFamily: "Raleway, sans-serif" }}>
-              {tFooter("copyright", { year })}
-            </span>
+          <footer className="border-t border-black/5 py-6 text-center font-body text-xs text-gray-500" suppressHydrationWarning>
+            {tFooter("copyright", { year })}
           </footer>
         </div>
       </CartLayoutClient>
