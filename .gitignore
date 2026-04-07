@@ -1,6 +1,5 @@
 # dependencies
 /node_modules
-/HostopiaConnects/node_modules
 /.pnp
 .pnp.js
 .yarn/install-state.gz
@@ -10,7 +9,6 @@
 
 # next.js
 /.next/
-/HostopiaConnects/.next/
 /out/
 
 # production
