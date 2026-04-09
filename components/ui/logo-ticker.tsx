@@ -16,6 +16,8 @@ type LogoTickerProps = {
   durationSec?: number;
   ctaHref?: string;
   ctaLabel?: string;
+  /** When false, hides the link under the ticker (e.g. logo showcase with no customers CTA). */
+  showCta?: boolean;
   className?: string;
 };
 
@@ -25,11 +27,11 @@ function LogoCells({ logos, keyPrefix }: { logos: LogoTickerItem[]; keyPrefix: s
       {logos.map((logo, i) => (
         <div
           key={`${keyPrefix}-${logo.src}-${i}`}
-          className="flex shrink-0 items-center justify-center px-8 sm:px-10"
+          className="flex shrink-0 items-center justify-center px-10 sm:px-14 md:px-16"
         >
           {/* eslint-disable-next-line @next/next/no-img-element -- SVG/PNG from JSON */}
           <img
-            className="w-auto max-w-[min(100%,8rem)] object-contain opacity-90 transition-opacity duration-300 hover:opacity-100"
+            className="h-auto w-auto max-w-[min(100%,min(95vw,30rem))] object-contain opacity-90 transition-opacity duration-300 hover:opacity-100"
             src={logo.src}
             alt={logo.alt}
             loading="lazy"
@@ -50,6 +52,7 @@ export function LogoTicker({
   durationSec = 50,
   ctaHref = "/customers/telcos",
   ctaLabel = "Meet our customers",
+  showCta = true,
   className,
 }: LogoTickerProps) {
   const safeDuration = Math.min(120, Math.max(25, durationSec));
@@ -57,12 +60,12 @@ export function LogoTicker({
   return (
     <div className={cn("w-full", className)}>
       {/* Reduced motion: single static row */}
-      <div className="hidden flex-wrap justify-center gap-x-4 gap-y-6 py-2 motion-reduce:flex">
+      <div className="hidden flex-wrap justify-center gap-x-6 gap-y-10 py-4 motion-reduce:flex">
         <LogoCells logos={logos} keyPrefix="static" />
       </div>
 
       <div className="motion-reduce:hidden">
-        <div className="relative overflow-hidden py-3">
+        <div className="relative overflow-hidden py-6 md:py-8">
           <div
             className="pointer-events-none absolute inset-y-0 left-0 z-10 w-12 bg-gradient-to-r from-white to-transparent sm:w-20"
             aria-hidden
@@ -85,15 +88,17 @@ export function LogoTicker({
         </div>
       </div>
 
-      <div className="mt-8 flex justify-center">
-        <Link
-          href={ctaHref}
-          className="inline-flex items-center font-raleway text-sm text-charcoal transition-colors duration-150 hover:text-teal"
-        >
-          <span>{ctaLabel}</span>
-          <ChevronRight className="ml-1 size-3.5 shrink-0" aria-hidden />
-        </Link>
-      </div>
+      {showCta ? (
+        <div className="mt-8 flex justify-center">
+          <Link
+            href={ctaHref}
+            className="inline-flex items-center font-raleway text-sm text-charcoal transition-colors duration-150 hover:text-teal"
+          >
+            <span>{ctaLabel}</span>
+            <ChevronRight className="ml-1 size-3.5 shrink-0" aria-hidden />
+          </Link>
+        </div>
+      ) : null}
     </div>
   );
 }

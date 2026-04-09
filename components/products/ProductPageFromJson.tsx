@@ -362,6 +362,7 @@ export default function ProductPageFromJson({ data }: { data: ProductJson }) {
                 durationSec={logoShowcase.tickerDurationSec ?? 50}
                 ctaHref={logoShowcase.ctaHref ?? "/customers/telcos"}
                 ctaLabel={logoShowcase.ctaLabel ?? "Meet our customers"}
+                showCta={logoShowcase.showCta !== false}
               />
             )}
           </div>

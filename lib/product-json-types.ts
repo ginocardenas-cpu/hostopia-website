@@ -56,6 +56,8 @@ export type ProductLogoShowcase = {
   /** Defaults: “Meet our customers” → `/customers/telcos` */
   ctaLabel?: string;
   ctaHref?: string;
+  /** When false, ticker hides the CTA link below the strip (default true). */
+  showCta?: boolean;
   /**
    * `ticker` — slow infinite horizontal scroll (default). `grid` — staggered `CustomersSection`.
    */
