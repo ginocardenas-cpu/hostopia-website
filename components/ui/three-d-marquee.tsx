@@ -17,6 +17,10 @@ export type ThreeDMarqueeProps = {
   className?: string;
 };
 
+/** Prior angles were 45°; 15% more upright → multiply by 0.85. */
+const ROT_X_DEG = 45 * 0.85;
+const ROT_Z_DEG = 45 * 0.85;
+
 export function ThreeDMarquee({ images, className }: ThreeDMarqueeProps) {
   if (!images.length) return null;
 
@@ -38,7 +42,7 @@ export function ThreeDMarquee({ images, className }: ThreeDMarqueeProps) {
         <div className="aspect-square h-[min(90vw,36rem)] w-[min(90vw,36rem)] shrink-0 scale-[1.35] max-xl:h-full max-xl:w-full max-xl:scale-110 max-sm:scale-[1.3]">
           <div
             style={{
-              transform: "rotateX(45deg) rotateY(0deg) rotateZ(45deg)",
+              transform: `rotateX(${ROT_X_DEG}deg) rotateY(0deg) rotateZ(${ROT_Z_DEG}deg)`,
               transformStyle: "preserve-3d",
             }}
             className="relative right-[-55%] top-0 grid size-full origin-top-left grid-cols-3 gap-3 max-xl:-top-24 max-xl:right-[-45%] max-xl:gap-4 max-sm:top-0 max-sm:gap-2"
