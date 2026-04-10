@@ -21,8 +21,9 @@ export type VerticalTabsProps = {
 
 const AUTO_PLAY_DURATION = 5000;
 
-const DESCRIPTION_CLASS =
-  "max-w-sm pb-2 font-raleway text-sm font-normal leading-relaxed text-gray-500";
+/** Under-image copy: centered; measurement must match for stable min-height. */
+const DESCRIPTION_UNDER_IMAGE_CLASS =
+  "font-raleway text-sm font-normal leading-relaxed text-gray-500 text-center text-balance";
 
 export function VerticalTabs({ sectionHeading, items }: VerticalTabsProps) {
   const [activeIndex, setActiveIndex] = useState(0);
@@ -109,11 +110,11 @@ export function VerticalTabs({ sectionHeading, items }: VerticalTabsProps) {
         {/* Hidden: measure tallest description so each tab row reserves the same vertical space. */}
         <div
           ref={measureDescriptionsRef}
-          className="pointer-events-none absolute -left-[9999px] top-0 w-full max-w-sm opacity-0"
+          className="pointer-events-none absolute -left-[9999px] top-0 w-full max-w-lg opacity-0"
           aria-hidden
         >
           {items.map((item) => (
-            <p key={`measure-${item.id}`} data-measure-desc className={DESCRIPTION_CLASS}>
+            <p key={`measure-${item.id}`} data-measure-desc className={DESCRIPTION_UNDER_IMAGE_CLASS}>
               {item.description}
             </p>
           ))}
@@ -175,38 +176,17 @@ export function VerticalTabs({ sectionHeading, items }: VerticalTabsProps) {
                 );
               })}
             </div>
-
-            {/* One stable block (tallest copy) so tab changes do not move the divider / sections below. */}
-            <div
-              className="relative mt-6 w-full max-w-sm border-t border-gray-200/80 pt-8"
-              style={descriptionSlotPx > 0 ? { minHeight: descriptionSlotPx + 32 } : undefined}
-            >
-              <AnimatePresence mode="wait" initial={false}>
-                <motion.div
-                  key={active.id}
-                  role="tabpanel"
-                  id="vertical-tabs-description-panel"
-                  aria-labelledby={`vertical-tab-${active.id}`}
-                  initial={{ opacity: 0 }}
-                  animate={{ opacity: 1 }}
-                  exit={{ opacity: 0 }}
-                  transition={{ duration: 0.2, ease: [0.23, 1, 0.32, 1] }}
-                  className="w-full"
-                >
-                  <p className={DESCRIPTION_CLASS}>{active.description}</p>
-                </motion.div>
-              </AnimatePresence>
-            </div>
           </div>
 
           <div className="order-1 flex h-full flex-col justify-end lg:order-2 lg:col-span-7">
-            <div
-              className="relative group/gallery"
-              onMouseEnter={() => setIsPaused(true)}
-              onMouseLeave={() => setIsPaused(false)}
-            >
-              <div className="relative aspect-[4/5] overflow-hidden rounded-3xl border border-gray-200/80 bg-gray-100/50 md:aspect-[4/3] lg:aspect-[16/11] md:rounded-[2.5rem]">
-                <AnimatePresence initial={false} custom={direction} mode="popLayout">
+            <div className="mx-auto flex w-full max-w-xl flex-col lg:max-w-2xl">
+              <div
+                className="relative group/gallery"
+                onMouseEnter={() => setIsPaused(true)}
+                onMouseLeave={() => setIsPaused(false)}
+              >
+                <div className="relative aspect-[4/5] overflow-hidden rounded-3xl border border-gray-200/80 bg-gray-100/50 md:aspect-[4/3] lg:aspect-[16/10] md:rounded-[2.5rem]">
+                  <AnimatePresence initial={false} custom={direction} mode="popLayout">
                   <motion.div
                     key={activeIndex}
                     custom={direction}
@@ -225,14 +205,14 @@ export function VerticalTabs({ sectionHeading, items }: VerticalTabsProps) {
                       src={active.imageSrc}
                       alt={active.imageAlt}
                       fill
-                      sizes="(max-width: 1024px) 100vw, 58vw"
+                      sizes="(max-width: 1024px) 100vw, 672px"
                       className="m-0 block object-cover p-0 transition-transform duration-700 hover:scale-105"
                     />
                     <div className="pointer-events-none absolute inset-x-0 bottom-0 h-1/3 bg-gradient-to-t from-black/20 via-transparent to-transparent opacity-60" />
                   </motion.div>
-                </AnimatePresence>
+                  </AnimatePresence>
 
-                <div className="absolute bottom-6 right-6 z-20 flex gap-2 md:bottom-8 md:right-8 md:gap-3">
+                  <div className="absolute bottom-6 right-6 z-20 flex gap-2 md:bottom-8 md:right-8 md:gap-3">
                   <button
                     type="button"
                     onClick={(e) => {
@@ -255,7 +235,30 @@ export function VerticalTabs({ sectionHeading, items }: VerticalTabsProps) {
                   >
                     <ChevronRight className="h-5 w-5" strokeWidth={2} />
                   </button>
+                  </div>
                 </div>
+              </div>
+
+              {/* Tab detail copy: centered under image; min-height avoids jump when tabs change. */}
+              <div
+                className="relative mt-6 w-full max-w-lg self-center px-1"
+                style={descriptionSlotPx > 0 ? { minHeight: descriptionSlotPx } : undefined}
+              >
+                <AnimatePresence mode="wait" initial={false}>
+                  <motion.div
+                    key={active.id}
+                    role="tabpanel"
+                    id="vertical-tabs-description-panel"
+                    aria-labelledby={`vertical-tab-${active.id}`}
+                    initial={{ opacity: 0 }}
+                    animate={{ opacity: 1 }}
+                    exit={{ opacity: 0 }}
+                    transition={{ duration: 0.2, ease: [0.23, 1, 0.32, 1] }}
+                    className="w-full"
+                  >
+                    <p className={DESCRIPTION_UNDER_IMAGE_CLASS}>{active.description}</p>
+                  </motion.div>
+                </AnimatePresence>
               </div>
             </div>
           </div>
