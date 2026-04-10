@@ -1,6 +1,6 @@
 "use client";
 
-import React, { useState, useEffect, useCallback } from "react";
+import React, { useState, useEffect, useCallback, useRef, useLayoutEffect } from "react";
 import Image from "next/image";
 import { motion, AnimatePresence } from "framer-motion";
 import { ChevronLeft, ChevronRight } from "lucide-react";
@@ -21,10 +21,16 @@ export type VerticalTabsProps = {
 
 const AUTO_PLAY_DURATION = 5000;
 
+const DESCRIPTION_CLASS =
+  "max-w-sm pb-2 font-raleway text-sm font-normal leading-relaxed text-gray-500";
+
 export function VerticalTabs({ sectionHeading, items }: VerticalTabsProps) {
   const [activeIndex, setActiveIndex] = useState(0);
   const [direction, setDirection] = useState(0);
   const [isPaused, setIsPaused] = useState(false);
+  /** Reserved height for the description block so tab switches do not shift the layout below. */
+  const [descriptionSlotPx, setDescriptionSlotPx] = useState(0);
+  const measureDescriptionsRef = useRef<HTMLDivElement>(null);
 
   const handleNext = useCallback(() => {
     setDirection(1);
@@ -53,6 +59,29 @@ export function VerticalTabs({ sectionHeading, items }: VerticalTabsProps) {
     return () => clearInterval(interval);
   }, [activeIndex, isPaused, handleNext, items.length]);
 
+  useLayoutEffect(() => {
+    const root = measureDescriptionsRef.current;
+    if (!root) return;
+
+    const measure = () => {
+      const paragraphs = root.querySelectorAll<HTMLElement>("[data-measure-desc]");
+      let max = 0;
+      paragraphs.forEach((el) => {
+        max = Math.max(max, el.getBoundingClientRect().height);
+      });
+      setDescriptionSlotPx(max);
+    };
+
+    measure();
+    const ro = typeof ResizeObserver !== "undefined" ? new ResizeObserver(measure) : null;
+    if (ro) ro.observe(root);
+    window.addEventListener("resize", measure);
+    return () => {
+      if (ro) ro.disconnect();
+      window.removeEventListener("resize", measure);
+    };
+  }, [items]);
+
   const variants = {
     enter: (dir: number) => ({
       y: dir > 0 ? "-100%" : "100%",
@@ -77,6 +106,19 @@ export function VerticalTabs({ sectionHeading, items }: VerticalTabsProps) {
   return (
     <section className="w-full bg-white py-12 md:py-16 lg:py-24">
       <div className="mx-auto w-full max-w-7xl px-6">
+        {/* Hidden: measure tallest description so each tab row reserves the same vertical space. */}
+        <div
+          ref={measureDescriptionsRef}
+          className="pointer-events-none absolute -left-[9999px] top-0 w-full max-w-sm opacity-0"
+          aria-hidden
+        >
+          {items.map((item) => (
+            <p key={`measure-${item.id}`} data-measure-desc className={DESCRIPTION_CLASS}>
+              {item.description}
+            </p>
+          ))}
+        </div>
+
         <div className="grid grid-cols-1 items-start gap-12 lg:grid-cols-12 lg:gap-16">
           <div className="order-2 flex flex-col justify-center pt-4 lg:order-1 lg:col-span-5">
             <div className="mb-10 space-y-1 lg:mb-12">
@@ -85,13 +127,17 @@ export function VerticalTabs({ sectionHeading, items }: VerticalTabsProps) {
               </h2>
             </div>
 
-            <div className="flex flex-col space-y-0">
+            <div className="flex flex-col space-y-0" role="tablist" aria-label={sectionHeading}>
               {items.map((item, index) => {
                 const isActive = activeIndex === index;
                 return (
                   <button
                     key={item.id}
                     type="button"
+                    role="tab"
+                    id={`vertical-tab-${item.id}`}
+                    aria-selected={isActive}
+                    aria-controls="vertical-tabs-description-panel"
                     onClick={() => handleTabClick(index)}
                     className={cn(
                       "group relative flex items-start gap-4 border-t border-gray-200/80 py-6 text-left transition-all duration-500 first:border-0 md:py-8",
@@ -117,38 +163,39 @@ export function VerticalTabs({ sectionHeading, items }: VerticalTabsProps) {
                       /{item.id}
                     </span>
 
-                    <div className="flex flex-1 flex-col gap-2">
-                      <span
-                        className={cn(
-                          "font-montserrat text-xl font-black tracking-tight transition-colors duration-500",
-                          isActive ? "text-charcoal" : ""
-                        )}
-                      >
-                        {item.title}
-                      </span>
-
-                      <AnimatePresence mode="wait">
-                        {isActive ? (
-                          <motion.div
-                            initial={{ opacity: 0, height: 0 }}
-                            animate={{ opacity: 1, height: "auto" }}
-                            exit={{ opacity: 0, height: 0 }}
-                            transition={{
-                              duration: 0.3,
-                              ease: [0.23, 1, 0.32, 1],
-                            }}
-                            className="overflow-hidden"
-                          >
-                            <p className="max-w-sm pb-2 font-raleway text-sm font-normal leading-relaxed text-gray-500">
-                              {item.description}
-                            </p>
-                          </motion.div>
-                        ) : null}
-                      </AnimatePresence>
-                    </div>
+                    <span
+                      className={cn(
+                        "flex-1 font-montserrat text-xl font-black tracking-tight transition-colors duration-500",
+                        isActive ? "text-charcoal" : ""
+                      )}
+                    >
+                      {item.title}
+                    </span>
                   </button>
                 );
               })}
+            </div>
+
+            {/* One stable block (tallest copy) so tab changes do not move the divider / sections below. */}
+            <div
+              className="relative mt-6 w-full max-w-sm border-t border-gray-200/80 pt-8"
+              style={descriptionSlotPx > 0 ? { minHeight: descriptionSlotPx + 32 } : undefined}
+            >
+              <AnimatePresence mode="wait" initial={false}>
+                <motion.div
+                  key={active.id}
+                  role="tabpanel"
+                  id="vertical-tabs-description-panel"
+                  aria-labelledby={`vertical-tab-${active.id}`}
+                  initial={{ opacity: 0 }}
+                  animate={{ opacity: 1 }}
+                  exit={{ opacity: 0 }}
+                  transition={{ duration: 0.2, ease: [0.23, 1, 0.32, 1] }}
+                  className="w-full"
+                >
+                  <p className={DESCRIPTION_CLASS}>{active.description}</p>
+                </motion.div>
+              </AnimatePresence>
             </div>
           </div>
 

@@ -56,16 +56,23 @@ export function LogoTicker({
   className,
 }: LogoTickerProps) {
   const safeDuration = Math.min(120, Math.max(25, durationSec));
+  const maxLogoPx = logos.length ? Math.max(...logos.map((l) => l.height)) : 0;
 
   return (
     <div className={cn("w-full", className)}>
       {/* Reduced motion: single static row */}
-      <div className="hidden flex-wrap justify-center gap-x-6 gap-y-10 py-4 motion-reduce:flex">
+      <div
+        className="hidden flex-wrap justify-center gap-x-6 gap-y-10 py-4 motion-reduce:flex"
+        style={maxLogoPx > 0 ? { minHeight: maxLogoPx } : undefined}
+      >
         <LogoCells logos={logos} keyPrefix="static" />
       </div>
 
       <div className="motion-reduce:hidden">
-        <div className="relative overflow-hidden py-6 md:py-8">
+        <div
+          className="relative overflow-hidden py-6 md:py-8"
+          style={maxLogoPx > 0 ? { minHeight: maxLogoPx } : undefined}
+        >
           <div
             className="pointer-events-none absolute inset-y-0 left-0 z-10 w-12 bg-gradient-to-r from-white to-transparent sm:w-20"
             aria-hidden
