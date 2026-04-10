@@ -73,12 +73,12 @@
       "heading": "From cluttered to credible",
       "intro": "Drag the slider to compare a typical DIY or dated SMB web presence with a clean, professional design.",
       "before": {
-        "src": "https://images.unsplash.com/photo-1504639725590-34d0984388bf?q=80&w=1600&auto=format&fit=crop",
+        "src": "/Website%20Design%20Page/Before%20and%20After/before.jpg",
         "alt": "Cluttered screen and dated web workflow"
       },
       "after": {
-        "src": "https://images.unsplash.com/photo-1460925895917-afdab827c52f?q=80&w=1600&auto=format&fit=crop",
-        "alt": "Clean analytics dashboard and modern web experience"
+        "src": "/Website%20Design%20Page/Before%20and%20After/after.jpg",
+        "alt": "Clean, professional website design"
       }
     }
   },
