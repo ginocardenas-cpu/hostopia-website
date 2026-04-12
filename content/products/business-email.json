@@ -63,13 +63,6 @@
     }
   },
 
-  "media": {
-    "heroImage": {
-      "src": "https://images.unsplash.com/photo-1557200134-90327ee9fafa?q=80&w=1600&auto=format&fit=crop",
-      "alt": "Business email and collaboration"
-    }
-  },
-
   "features": {
     "eyebrow": "What you deliver",
     "heading": "A Complete Email Platform — Packaged Your Way",
@@ -139,13 +132,13 @@
 
   "media": {
     "heroImage": {
-      "src": "https://images.unsplash.com/photo-1563986768609-322da13575f3?w=2000&q=80",
-      "alt": "Professional working with business email on a laptop",
+      "src": "/Business%20Email/New%20Images/business%20email%20header.jpg",
+      "alt": "Professional business email under your brand",
       "priority": true
     },
     "contentImage": {
-      "src": "https://images.unsplash.com/photo-1551434678-e076c223a692?w=2400&q=80",
-      "alt": "Team collaborating on digital communication tools",
+      "src": "/Business%20Email/New%20Images/business%20email%20header.jpg",
+      "alt": "Business email platform and collaboration experience",
       "caption": "Enterprise-grade email and collaboration — white-labeled for your brand."
     }
   }
