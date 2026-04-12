@@ -100,6 +100,14 @@ const BUSINESS_EMAIL_SLUG = "business-email";
 const FALLBACK_SIDEBAR_IMAGE =
   "https://images.unsplash.com/photo-1626785774573-4b799315345d?q=80&w=1200&auto=format&fit=crop";
 
+/** Large flat hero (Domains-style): no 3D tilt, cream letterbox, sharp quality. */
+const FLAT_HERO_POP_SLUGS = new Set([
+  "domains",
+  "business-email",
+  "brand-competitor-monitoring",
+  "logo-design",
+]);
+
 export default function ProductPageFromJson({ data }: { data: ProductJson }) {
   const { hero, features, partnerAdvantage, lifecycleFit, cta, media } = data;
   const beforeAfter = media?.beforeAfter;
@@ -120,9 +128,7 @@ export default function ProductPageFromJson({ data }: { data: ProductJson }) {
   const sidebarBelowHero =
     verticalTabsLayout || heroAccordionLayout || hostingFeatureCarousel || businessEmailImageAccordion;
 
-  const isLogoDesignPage = data.slug === "logo-design";
-  /** Flat, large hero — no 3D tilt; cream letterbox instead of white when aspect differs. */
-  const isDomainsPage = data.slug === "domains";
+  const isFlatHeroPop = FLAT_HERO_POP_SLUGS.has(data.slug);
 
   return (
     <main>
@@ -189,18 +195,7 @@ export default function ProductPageFromJson({ data }: { data: ProductJson }) {
           {/* Right column: large hero visual (homepage-style) + optional sidebar */}
           <div className="relative flex w-full flex-col justify-center gap-8">
             {heroImg ? (
-              isLogoDesignPage ? (
-                <div className="relative mx-auto aspect-[4/3] w-full min-h-[196px] max-w-[644px] sm:min-h-[238px] lg:mx-0 lg:aspect-auto lg:h-[min(85vh,672px)] lg:max-h-[672px] lg:max-w-none">
-                  <ProductImage
-                    src={heroImg.src}
-                    alt={heroImg.alt}
-                    priority={heroImg.priority ?? true}
-                    sizes="(max-width: 1024px) 100vw, 50vw"
-                    quality={88}
-                    className="bg-cream object-contain object-center lg:object-right"
-                  />
-                </div>
-              ) : isDomainsPage ? (
+              isFlatHeroPop ? (
                 <div className="relative mx-auto w-full max-w-[min(100%,min(92vw,860px))] lg:mx-0 lg:max-w-[860px]">
                   <div className="relative aspect-[4/5] w-full min-h-[260px] sm:min-h-[320px] lg:max-h-[min(88vh,860px)]">
                     <ProductImage

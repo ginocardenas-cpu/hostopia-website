@@ -16,7 +16,7 @@ Use this when exporting art for **`media.heroImage`** on product pages so heroes
 
 - Next.js **Image** optimizes and serves responsive widths; we set **`sizes`** and **`quality`≈88–92** on key heroes so retina displays get enough pixels.
 - **`object-contain`** keeps the full artwork visible (no stretching). If the container aspect does not match the file, **bands** appear: we tint them **cream** (`bg-cream`) to match the hero section, not white.
-- **Domains** uses a **flat** (no 3D tilt) hero at up to **~860px** wide so the composite can read clearly.
+- These product pages share the same **flat** (no 3D tilt) hero at up to **~860px** wide: **Domains**, **Business Email**, **Brand Monitoring** (`brand-competitor-monitoring`), and **Logo Design**.
 
 ## JPG vs PNG in your workflow
 
