@@ -110,6 +110,8 @@ export default function ProductPageFromJson({ data }: { data: ProductJson }) {
   const sidebarBelowHero =
     verticalTabsLayout || heroAccordionLayout || hostingFeatureCarousel || businessEmailImageAccordion;
 
+  const isLogoDesignPage = data.slug === "logo-design";
+
   return (
     <main>
       {/* Hero — homepage rhythm: cream, large optional image column */}
@@ -175,22 +177,34 @@ export default function ProductPageFromJson({ data }: { data: ProductJson }) {
           {/* Right column: large hero visual (homepage-style) + optional sidebar */}
           <div className="relative flex w-full flex-col justify-center gap-8">
             {heroImg ? (
-              <div
-                className="mx-auto w-full max-w-[920px] pb-6 pt-2 lg:mx-0 lg:pb-10"
-                style={{ perspective: "1600px" }}
-              >
-                <div
-                  className="relative mx-auto aspect-[4/3] w-full min-h-[280px] max-w-[920px] origin-center rounded-xl shadow-[0_28px_55px_-12px_rgba(44,44,44,0.32)] ring-1 ring-charcoal/10 [transform-style:preserve-3d] [transform:rotateY(-6deg)_rotateX(3deg)] sm:min-h-[340px] sm:[transform:rotateY(-11deg)_rotateX(5deg)] lg:mx-0 lg:aspect-auto lg:h-[min(85vh,960px)] lg:max-h-[960px] lg:max-w-none"
-                >
+              isLogoDesignPage ? (
+                <div className="relative mx-auto aspect-[4/3] w-full min-h-[196px] max-w-[644px] sm:min-h-[238px] lg:mx-0 lg:aspect-auto lg:h-[min(85vh,672px)] lg:max-h-[672px] lg:max-w-none">
                   <ProductImage
                     src={heroImg.src}
                     alt={heroImg.alt}
                     priority={heroImg.priority ?? true}
                     sizes="(max-width: 1024px) 100vw, 50vw"
-                    className="rounded-xl object-contain object-center lg:object-right"
+                    className="object-contain object-center lg:object-right"
                   />
                 </div>
-              </div>
+              ) : (
+                <div
+                  className="mx-auto w-full max-w-[644px] pb-5 pt-2 lg:mx-0 lg:pb-8"
+                  style={{ perspective: "1600px" }}
+                >
+                  <div
+                    className="relative mx-auto aspect-[4/3] w-full min-h-[196px] max-w-[644px] origin-center [transform-style:preserve-3d] [transform:rotateY(-6deg)_rotateX(3deg)] shadow-[0_18px_40px_-14px_rgba(44,44,44,0.22)] sm:min-h-[238px] sm:[transform:rotateY(-11deg)_rotateX(5deg)] lg:mx-0 lg:aspect-auto lg:h-[min(85vh,672px)] lg:max-h-[672px] lg:max-w-none"
+                  >
+                    <ProductImage
+                      src={heroImg.src}
+                      alt={heroImg.alt}
+                      priority={heroImg.priority ?? true}
+                      sizes="(max-width: 1024px) 100vw, 50vw"
+                      className="object-contain object-center lg:object-right"
+                    />
+                  </div>
+                </div>
+              )
             ) : null}
 
             {!sidebarBelowHero && !heroImg && hero.sidebar ? (
@@ -420,16 +434,16 @@ export default function ProductPageFromJson({ data }: { data: ProductJson }) {
       ) : null}
 
       {contentImg ? (
-        <section className="bg-white py-0">
+        <section className="bg-cream py-0">
           <div className="mx-auto max-w-[1920px] px-0">
             <figure className="relative mx-auto w-full">
-              <div className="relative aspect-[21/9] min-h-[280px] w-full max-h-[min(85vh,1000px)] sm:min-h-[360px]">
+              <div className="relative aspect-[21/9] min-h-[196px] w-full max-h-[min(70vh,700px)] sm:min-h-[252px]">
                 <ProductImage
                   src={contentImg.src}
                   alt={contentImg.alt}
                   priority={false}
                   sizes="100vw"
-                  className="object-cover object-center"
+                  className="bg-cream object-contain object-center"
                 />
               </div>
               {contentImg.caption ? (
