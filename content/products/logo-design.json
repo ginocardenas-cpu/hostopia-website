@@ -31,7 +31,7 @@
           "title": "Professional design expertise",
           "body": "Logos created by professional designers through a guided questionnaire that captures their brand vision, values, and audience.",
           "image": {
-            "src": "/Logo%20Page/New%20Images/Under-your-brand.jpg",
+            "src": "/Logo%20Page/New%20Images/Under-your-brand%20(4).png",
             "alt": "White-label logo design delivered under your brand"
           }
         },
@@ -65,12 +65,12 @@
 
   "media": {
     "heroImage": {
-      "src": "/Logo%20Page/New%20Images/logo-page-header2.jpg",
+      "src": "/Logo%20Page/New%20Images/logo-page-header2.png",
       "alt": "Professional logo and brand identity design concepts",
       "priority": true
     },
     "contentImage": {
-      "src": "/Logo%20Page/New%20Images/Anchor-your-roll.jpg",
+      "src": "/Logo%20Page/New%20Images/Anchor-your-roll.png",
       "alt": "Logo design as the anchor for your digital product portfolio",
       "caption": "Professional identity that connects domains, email, websites, and growth — bundled under your brand."
     },

@@ -113,7 +113,7 @@ export default function ProductPageFromJson({ data }: { data: ProductJson }) {
   return (
     <main>
       {/* Hero — homepage rhythm: cream, large optional image column */}
-      <section className="relative overflow-hidden bg-cream pt-28">
+      <section className="relative overflow-x-hidden bg-cream pt-28">
         <div
           className={cn(
             "mx-auto grid max-w-7xl items-center gap-10 px-6 pb-16",
@@ -175,14 +175,21 @@ export default function ProductPageFromJson({ data }: { data: ProductJson }) {
           {/* Right column: large hero visual (homepage-style) + optional sidebar */}
           <div className="relative flex w-full flex-col justify-center gap-8">
             {heroImg ? (
-              <div className="relative mx-auto aspect-[4/3] w-full min-h-[280px] max-w-[920px] sm:min-h-[340px] lg:mx-0 lg:aspect-auto lg:h-[min(85vh,960px)] lg:max-h-[960px] lg:max-w-none">
-                <ProductImage
-                  src={heroImg.src}
-                  alt={heroImg.alt}
-                  priority={heroImg.priority ?? true}
-                  sizes="(max-width: 1024px) 100vw, 50vw"
-                  className="object-contain object-center lg:object-right"
-                />
+              <div
+                className="mx-auto w-full max-w-[920px] pb-6 pt-2 lg:mx-0 lg:pb-10"
+                style={{ perspective: "1600px" }}
+              >
+                <div
+                  className="relative mx-auto aspect-[4/3] w-full min-h-[280px] max-w-[920px] origin-center rounded-xl shadow-[0_28px_55px_-12px_rgba(44,44,44,0.32)] ring-1 ring-charcoal/10 [transform-style:preserve-3d] [transform:rotateY(-6deg)_rotateX(3deg)] sm:min-h-[340px] sm:[transform:rotateY(-11deg)_rotateX(5deg)] lg:mx-0 lg:aspect-auto lg:h-[min(85vh,960px)] lg:max-h-[960px] lg:max-w-none"
+                >
+                  <ProductImage
+                    src={heroImg.src}
+                    alt={heroImg.alt}
+                    priority={heroImg.priority ?? true}
+                    sizes="(max-width: 1024px) 100vw, 50vw"
+                    className="rounded-xl object-contain object-center lg:object-right"
+                  />
+                </div>
               </div>
             ) : null}
 

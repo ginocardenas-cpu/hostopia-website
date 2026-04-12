@@ -132,12 +132,12 @@
 
   "media": {
     "heroImage": {
-      "src": "/Business%20Email/New%20Images/business%20email%20header.jpg",
+      "src": "/Business%20Email/New%20Images/business%20email%20header.png",
       "alt": "Professional business email under your brand",
       "priority": true
     },
     "contentImage": {
-      "src": "/Business%20Email/New%20Images/business%20email%20header.jpg",
+      "src": "/Business%20Email/New%20Images/business%20email%20header.png",
       "alt": "Business email platform and collaboration experience",
       "caption": "Enterprise-grade email and collaboration — white-labeled for your brand."
     }
