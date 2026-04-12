@@ -17,9 +17,11 @@ export type ThreeDMarqueeProps = {
   className?: string;
 };
 
-/** Prior angles were 45°; 15% more upright → multiply by 0.85. */
-const ROT_X_DEG = 45 * 0.85;
-const ROT_Z_DEG = 45 * 0.85;
+/** Gentler tilt: less rotateZ = less diagonal “flow”; moderate rotateX = more upright plane. */
+const ROT_X_DEG = 22;
+const ROT_Z_DEG = 18;
+/** Larger value = less aggressive perspective (reduces stretched / pinched look). */
+const PERSPECTIVE_PX = 2000;
 
 export function ThreeDMarquee({ images, className }: ThreeDMarqueeProps) {
   if (!images.length) return null;
@@ -38,8 +40,11 @@ export function ThreeDMarquee({ images, className }: ThreeDMarqueeProps) {
         className
       )}
     >
-      <div className="flex size-full items-center justify-center [perspective:1200px]">
-        <div className="aspect-square h-[min(90vw,36rem)] w-[min(90vw,36rem)] shrink-0 scale-[1.35] max-xl:h-full max-xl:w-full max-xl:scale-110 max-sm:scale-[1.3]">
+      <div
+        className="flex size-full items-center justify-center"
+        style={{ perspective: `${PERSPECTIVE_PX}px` }}
+      >
+        <div className="aspect-square h-[min(90vw,36rem)] w-[min(90vw,36rem)] shrink-0 scale-[1.2] max-xl:h-full max-xl:w-full max-xl:scale-105 max-sm:scale-[1.15]">
           <div
             style={{
               transform: `rotateX(${ROT_X_DEG}deg) rotateY(0deg) rotateZ(${ROT_Z_DEG}deg)`,
@@ -60,14 +65,20 @@ export function ThreeDMarquee({ images, className }: ThreeDMarqueeProps) {
                 className="flex flex-col items-start gap-4 max-sm:gap-3 md:gap-6"
               >
                 {subarray.map((img, imageIndex) => (
-                  <div className="relative w-full" key={`${img.src}-${imageIndex}`}>
-                    {/* eslint-disable-next-line @next/next/no-img-element */}
-                    <img
-                      className="aspect-[4/3] h-full w-full select-none rounded-lg border border-gray-200/80 bg-gray-100 object-cover shadow-sm"
-                      src={img.src}
-                      draggable={false}
-                      alt={img.alt}
-                    />
+                  <div
+                    className="relative flex w-full items-center justify-center overflow-hidden rounded-lg border border-gray-200/80 bg-gray-100 shadow-sm"
+                    key={`${img.src}-${imageIndex}`}
+                  >
+                    {/* Frame keeps layout stable; object-contain preserves screenshot aspect ratio (no stretch). */}
+                    <div className="relative aspect-video w-full">
+                      {/* eslint-disable-next-line @next/next/no-img-element */}
+                      <img
+                        className="absolute inset-0 m-auto max-h-full max-w-full select-none object-contain object-center p-1.5"
+                        src={img.src}
+                        draggable={false}
+                        alt={img.alt}
+                      />
+                    </div>
                   </div>
                 ))}
               </motion.figure>
