@@ -66,11 +66,21 @@ type ProductImageProps = {
   priority?: boolean;
   className?: string;
   sizes: string;
+  /** Next/Image quality 1–100; higher = sharper (larger files). Default 85. */
+  quality?: number;
 };
 
-function ProductImage({ src, alt, priority, className, sizes }: ProductImageProps) {
+function ProductImage({ src, alt, priority, className, sizes, quality = 85 }: ProductImageProps) {
   return (
-    <Image src={src} alt={alt} fill priority={priority} sizes={sizes} className={className} />
+    <Image
+      src={src}
+      alt={alt}
+      fill
+      priority={priority}
+      sizes={sizes}
+      quality={quality}
+      className={className}
+    />
   );
 }
 
@@ -111,6 +121,8 @@ export default function ProductPageFromJson({ data }: { data: ProductJson }) {
     verticalTabsLayout || heroAccordionLayout || hostingFeatureCarousel || businessEmailImageAccordion;
 
   const isLogoDesignPage = data.slug === "logo-design";
+  /** Flat, large hero — no 3D tilt; cream letterbox instead of white when aspect differs. */
+  const isDomainsPage = data.slug === "domains";
 
   return (
     <main>
@@ -184,8 +196,22 @@ export default function ProductPageFromJson({ data }: { data: ProductJson }) {
                     alt={heroImg.alt}
                     priority={heroImg.priority ?? true}
                     sizes="(max-width: 1024px) 100vw, 50vw"
-                    className="object-contain object-center lg:object-right"
+                    quality={88}
+                    className="bg-cream object-contain object-center lg:object-right"
                   />
+                </div>
+              ) : isDomainsPage ? (
+                <div className="relative mx-auto w-full max-w-[min(100%,min(92vw,860px))] lg:mx-0 lg:max-w-[860px]">
+                  <div className="relative aspect-[4/5] w-full min-h-[260px] sm:min-h-[320px] lg:max-h-[min(88vh,860px)]">
+                    <ProductImage
+                      src={heroImg.src}
+                      alt={heroImg.alt}
+                      priority={heroImg.priority ?? true}
+                      sizes="(max-width: 1024px) 92vw, (max-width: 1536px) 44vw, 860px"
+                      quality={92}
+                      className="bg-cream object-contain object-center drop-shadow-[0_20px_50px_-12px_rgba(44,44,44,0.18)] lg:object-right"
+                    />
+                  </div>
                 </div>
               ) : (
                 <div
@@ -200,7 +226,8 @@ export default function ProductPageFromJson({ data }: { data: ProductJson }) {
                       alt={heroImg.alt}
                       priority={heroImg.priority ?? true}
                       sizes="(max-width: 1024px) 100vw, 50vw"
-                      className="object-contain object-center lg:object-right"
+                      quality={88}
+                      className="bg-cream object-contain object-center lg:object-right"
                     />
                   </div>
                 </div>
@@ -443,6 +470,7 @@ export default function ProductPageFromJson({ data }: { data: ProductJson }) {
                   alt={contentImg.alt}
                   priority={false}
                   sizes="100vw"
+                  quality={88}
                   className="bg-cream object-contain object-center"
                 />
               </div>
