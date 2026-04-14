@@ -1,71 +1,68 @@
 {
   "slug": "ppc-management",
   "label": "Marketing 360",
-  "productName": "Marketing 360",
+  "productName": "Marketing 360 Suite",
 
   "seo": {
-    "primaryKeyword": "white-label Marketing 360 platform",
+    "primaryKeyword": "all-in-one digital marketing software for small business",
     "secondaryKeywords": [
-      "all-in-one digital marketing platform",
-      "white-label marketing suite",
-      "SMB advertising platform reseller",
-      "AI SEO and advertising platform",
-      "complete marketing solution for service providers",
-      "suite 360 marketing platform"
+      "white-label marketing platform",
+      "Google Ads for SMBs",
+      "AI marketing suite",
+      "full-stack digital marketing",
+      "complete marketing stack"
     ],
-    "metaTitle": "Marketing 360 | Complete AI Marketing Suite | White-Label | Hostopia",
-    "metaDescription": "The ultimate all-in-one marketing platform combining AI-driven SEO, local listings, advertising, reputation management, and competitive intelligence. Enterprise-level marketing power, white-labeled for service providers.",
+    "metaTitle": "Marketing 360: All-in-One Digital Marketing | Hostopia",
+    "metaDescription": "The complete white-label digital marketing suite — AI SEO, Google Ads, listings, reputation, and brand monitoring in one powerful platform for SMBs.",
     "urlSlug": "/products/ppc-management"
   },
 
   "hero": {
-    "eyebrow": "Marketing 360 by Hostopia",
-    "headline": "The Complete Digital Marketing Powerhouse for Your Clients' Total Online Success",
-    "subheadline": "Growing businesses need more than individual marketing tools — they need a unified platform that brings SEO, advertising, local listings, reputation management, and competitive intelligence together into a single, coherent strategy.",
-    "description": "This is the ultimate all-in-one marketing platform combining every tool in Hostopia's Online Marketing Center to help businesses grow their online presence. From advanced AI-driven SEO and comprehensive local listings to full advertising capabilities and reputation management, this suite delivers enterprise-level marketing power with small-business simplicity. Delivered white-label as the Online Marketing Center Suite 360 plan.",
+    "eyebrow": "Marketing 360 Suite by Hostopia",
+    "headline": "The Complete Digital Marketing Platform for Your Clients' Total Online Success",
+    "description": "When growing small businesses are ready to stop piecing together tools, they need one platform that does it all. Hostopia's white-label Marketing 360 Suite combines AI-driven SEO, Google Ads, local listings, reputation, social, and competitive intelligence in a single product — giving your customers enterprise-grade marketing power with small-business simplicity.",
     "cta": { "primary": "Book a Demo", "secondary": "Talk to Partner Success" },
-    "badge": "Online Marketing Center — Suite 360 Plan",
     "sidebar": {
-      "heading": "Your customers get",
+      "heading": "Your SMB customers can",
       "items": [
         {
-          "title": "Maximum ROI with the complete marketing toolkit",
-          "body": "Every marketing tool working in concert delivers exponentially better results than individual products in isolation. Suite 360 gives SMBs the full stack — SEO driving organic traffic, advertising accelerating paid reach, listings ensuring local visibility, reputation building trust, and intelligence guiding strategy. The unified approach means every marketing dollar works harder because each tool amplifies the others.",
-          "image": {
-            "src": "https://images.unsplash.com/photo-1533750349088-cd871a92f312?q=80&w=1200&auto=format&fit=crop",
-            "alt": "Complete marketing toolkit delivering maximum ROI"
-          }
-        },
-        {
-          "title": "A unified strategy managed from one platform",
-          "body": "No more juggling separate tools for SEO, social media, advertising, reviews, and listings. Suite 360 brings everything into a single dashboard where SMBs can see how all their marketing activities connect and reinforce each other. One login, one view, one strategy — with integrated analytics that show the full picture of how their marketing investment is performing across every channel.",
-          "image": {
-            "src": "https://images.unsplash.com/photo-1460925895917-afdab827c52f?q=80&w=1200&auto=format&fit=crop",
-            "alt": "Unified marketing dashboard with integrated analytics"
-          }
-        },
-        {
-          "title": "Advanced capabilities without enterprise costs",
-          "body": "Enterprise companies spend hundreds of thousands on marketing platforms, agencies, and specialists. Suite 360 delivers that same depth of capability — AI-powered SEO, full advertising management, reputation monitoring, competitive intelligence — at a price point that makes sense for growing businesses. SMBs get the marketing sophistication they need to compete with larger competitors, without the budget that only larger competitors can afford.",
-          "image": {
-            "src": "https://images.unsplash.com/photo-1551288049-bebda4e38f71?q=80&w=1200&auto=format&fit=crop",
-            "alt": "Enterprise-level marketing accessible to SMBs"
-          }
-        },
-        {
-          "title": "Complete AI-driven SEO mastery",
-          "body": "Full AI-driven SEO tasks go beyond basic recommendations — automated weekly tasks use real AI technology to continuously optimize content, keywords, and site performance. The AI Content and URL Optimizer provides a complete content optimization toolkit, advanced keyword builder handles comprehensive research and analysis, integrated link checking manages backlink health, and full SEO analytics deliver complete performance tracking. This isn't a teaser — it's the full SEO engine.",
+          "title": "Master SEO with AI doing the heavy lifting",
+          "body": "Marketing 360 delivers the full SEO experience — not just recommendations. AI-powered keyword research, on-page optimization, content creation, backlink analysis, and off-page strategy all run automatically, with weekly tasks tailored to each business. Your customers see the actions, the impact, and the ranking movement in one place, without needing an in-house SEO expert. It's the difference between \"we should work on SEO\" and \"our rankings went up 23% this quarter\" — and it's the kind of result that keeps customers on your platform for years.",
           "image": {
             "src": "https://images.unsplash.com/photo-1504868584819-f8e8b4b6d7e3?q=80&w=1200&auto=format&fit=crop",
-            "alt": "AI-powered SEO optimization and analytics"
+            "alt": "AI-driven SEO and marketing dashboard"
           }
         },
         {
-          "title": "Everything managed from any device, anywhere",
-          "body": "A unified, AI-powered platform accessible on desktop and mobile means SMBs can manage all their marketing activity wherever they are. Check campaign performance between appointments, respond to reviews from the job site, approve social posts during lunch. Integrated analytics, automation, and mobile access ensure that marketing management fits into the reality of how small business owners actually work — on the go, not behind a desk.",
+          "title": "Launch and optimize Google Ads without an agency",
+          "body": "Paid ads are where growing SMBs go to accelerate — and where most waste money because they don't know what they're doing. Marketing 360's AI generates high-converting ad headlines, descriptions, and campaigns, launches them on Google in minutes, and continuously optimizes budget against real performance. Smart budget controls protect spend, AI recommendations improve results week over week, and built-in reporting shows exactly what each dollar returned. Your customers get agency-quality advertising at a subscription price — and you add a high-margin revenue stream to your portfolio.",
           "image": {
-            "src": "https://images.unsplash.com/photo-1512941937669-90a1b58e7e9c?q=80&w=1200&auto=format&fit=crop",
-            "alt": "Mobile marketing management on any device"
+            "src": "https://images.unsplash.com/photo-1533750349088-cd871a92f312?q=80&w=1200&auto=format&fit=crop",
+            "alt": "Google Ads campaign management"
+          }
+        },
+        {
+          "title": "Dominate local search across 3,000+ directories",
+          "body": "National chains don't win local search — consistency and coverage do. Marketing 360 syncs and manages your customers' business profiles across 3,000+ directories in real time, keeping names, addresses, hours, services, and photos accurate everywhere buyers look. Visibility tracking shows where they appear, how they rank, and which listings are driving calls and clicks. For multi-location businesses and local service providers, it's the difference between showing up occasionally and showing up everywhere that matters.",
+          "image": {
+            "src": "https://images.unsplash.com/photo-1460925895917-afdab827c52f?q=80&w=1200&auto=format&fit=crop",
+            "alt": "Local listings and directory visibility"
+          }
+        },
+        {
+          "title": "Build an unshakeable reputation and social presence",
+          "body": "Trust drives conversion, and nothing builds trust faster than an active, well-managed online presence. Marketing 360 generates reviews, automates responses across platforms, tracks sentiment, and publishes fresh social content on a schedule — all from the same dashboard. Your customers stay top-of-mind for existing buyers and look credible to new ones, without carving out hours a week to manage it manually. Reputation and social stop being two more things to worry about and start being a compounding competitive advantage.",
+          "image": {
+            "src": "https://images.unsplash.com/photo-1551288049-bebda4e38f71?q=80&w=1200&auto=format&fit=crop",
+            "alt": "Reputation and social media management"
+          }
+        },
+        {
+          "title": "See the full picture — and beat the competition",
+          "body": "Marketing 360 includes every brand and competitive intelligence feature in Hostopia's portfolio: rank tracking, mention monitoring, competitor ad and promotion tracking, and real-time alerts the moment anything important changes. Your customers see their own marketing performance and their competitors' moves in one view, so they can respond fast, spot opportunities early, and make data-driven decisions every week. It's the single dashboard that turns every marketing function — SEO, ads, listings, reputation, social, monitoring — into one coordinated growth engine.",
+          "image": {
+            "src": "https://images.unsplash.com/photo-1552664730-d307ca884978?q=80&w=1200&auto=format&fit=crop",
+            "alt": "Competitive intelligence and marketing analytics"
           }
         }
       ]
@@ -82,38 +79,38 @@
 
   "features": {
     "eyebrow": "What you deliver",
-    "heading": "Complete Digital Marketing Execution — Every Tool, One Platform",
-    "intro": "Everything businesses need to be found, trusted, and chosen — managed from a single platform. Suite 360 combines every capability in the Online Marketing Center into the most comprehensive marketing solution in your portfolio.",
+    "heading": "Complete Digital Marketing Execution, Every Tool, One Platform",
+    "intro": "Everything businesses need to be found, trusted, and chosen — managed from a single platform. Marketing 360 combines every capability in the Hostopia portfolio into the most comprehensive marketing solution you can offer.",
     "cards": [
       {
         "icon": "Sparkles",
         "title": "Complete SEO Mastery",
-        "body": "Full AI-driven SEO tasks with automated weekly optimization, AI Content and URL Optimizer, advanced keyword builder with comprehensive research and analysis, integrated link checker for backlink health, and complete SEO analytics with performance tracking."
+        "body": "Full AI-driven SEO, automated weekly tasks, keyword research, backlink and off-page optimization — everything customers need for sustained organic growth, without the noise of enterprise tools."
       },
       {
         "icon": "Globe",
         "title": "Local Visibility at Scale",
-        "body": "Sync and manage business profiles across 3,000+ directories with real-time updates and visibility tracking. Ensure accurate, consistent business information everywhere customers are searching."
+        "body": "Sync and manage business profiles across 3,000+ directories with real-time updates and visibility tracking. Ensure customers are searchable everywhere buyers look."
       },
       {
         "icon": "Megaphone",
         "title": "Social & Advertising Activation",
-        "body": "Plan, publish, and promote content across major platforms, with full Google Ads and social campaign management. AI generates compelling ad headlines and descriptions for high-performing campaigns."
+        "body": "Plan, publish, and promote content across major social platforms, with full Google Ads management — AI-powered campaigns, smart budget controls, and continuous optimization built in."
       },
       {
         "icon": "Shield",
         "title": "Reputation & Trust Management",
-        "body": "Generate reviews, automate AI-powered responses, and monitor sentiment to strengthen credibility and conversion. Review widgets, competitive benchmarking, and sentiment analysis — all built in."
+        "body": "Generate reviews, automate on-brand responses across platforms, and track sentiment. A meaningful contributor to overall revenue growth, built directly into the suite."
       },
       {
         "icon": "Radar",
         "title": "Competitive & Brand Intelligence",
-        "body": "Track rankings, mentions, ads, and competitors with real-time alerts and performance insights. Stay ahead of market shifts with the intelligence layer that explains what's happening and why."
+        "body": "Track rankings, mentions, ads, and competitors with real-time alerts. Turn market movement into actionable insight every week."
       },
       {
-        "icon": "Smartphone",
+        "icon": "LayoutDashboard",
         "title": "Unified, AI-Powered Platform",
-        "body": "Manage all marketing activity from one dashboard with integrated analytics, automation, and mobile access. One login for every marketing function — accessible anywhere, on any device."
+        "body": "Manage all marketing activity from one dashboard with integrated analytics, automation, and mobile access. One suite. One story. One bill."
       }
     ]
   },
@@ -121,23 +118,23 @@
   "partnerAdvantage": {
     "eyebrow": "The partner advantage",
     "heading": "Your Premium Revenue Stream — Maximum Value, Maximum Retention",
-    "intro": "Suite 360 is the pinnacle of your digital marketing portfolio. It generates the highest revenue per customer, creates the deepest product dependency, and positions your brand as a complete marketing solution.",
+    "intro": "Marketing 360 is the pinnacle of your digital marketing portfolio. It generates the highest revenue per customer, creates the deepest product dependency, and positions your brand as a complete marketing solution.",
     "items": [
       {
         "title": "Premium revenue stream offering",
-        "body": "Suite 360 commands the highest subscription price point in the Online Marketing Center. The comprehensive feature set justifies premium pricing while delivering clear value — making it your highest-ARPU digital product and a meaningful contributor to overall revenue growth."
+        "body": "Marketing 360 is the highest-subscription-price product in your digital marketing portfolio. The comprehensive feature set justifies premium pricing while delivering clear value — making it your highest ARPU digital product and a meaningful contributor to overall revenue growth."
       },
       {
         "title": "Maximum differentiation in the market",
-        "body": "No other white-label provider delivers a fully integrated marketing suite at this depth. AI-driven SEO, advertising, reputation management, competitive intelligence, and 3,000+ directory listings — all in one platform, under your brand. That combination is a market position competitors can't replicate easily."
+        "body": "No other white-label partner delivers a fully integrated marketing suite at this depth. AI-driven SEO, advertising, reputation, listings, and 3,000+ directory syncing — all under one platform, under your brand. That combination is a market-position competitors can't replicate cheaply."
       },
       {
-        "title": "Ultimate customer retention through comprehensive dependency",
-        "body": "When an SMB runs their entire marketing operation through your platform — SEO, ads, reviews, listings, social media, competitive tracking — the switching cost is enormous. Suite 360 creates the deepest product dependency in your portfolio, driving the lowest churn rates."
+        "title": "Ultimate retention through comprehensive dependency",
+        "body": "When an SMB uses every function in Marketing 360 — SEO, ads, social, reputation, listings, competitive tracking — switching cost becomes enormous. Suite 360 creates the deepest product dependency in your portfolio, driving the lowest churn rates."
       },
       {
         "title": "Complete marketing solution that replaces point tools",
-        "body": "SMBs using 5-6 separate marketing tools can consolidate everything into Suite 360 under your brand. You capture spend that currently goes to standalone SEO tools, review platforms, ad managers, and social schedulers — bringing it all into your recurring revenue."
+        "body": "SMBs using 4-6 separate marketing tools can consolidate everything into Suite 360 under your brand. You capture spend that currently goes to standalone SEO tools, review platforms, ad managers, and social schedulers — bringing it all into your recurring revenue."
       }
     ]
   },
@@ -145,19 +142,25 @@
   "lifecycleFit": {
     "eyebrow": "Portfolio fit",
     "heading": "The Complete Marketing Stack — For Businesses Ready to Dominate",
-    "intro": "Suite 360 sits at the top of the Online Marketing Center hierarchy. It's for SMBs who have outgrown individual tools and need a unified platform that manages every aspect of their digital marketing.",
+    "intro": "Marketing 360 sits at the top of your digital marketing portfolio. It's for SMBs who have outgrown individual tools and need a unified platform that manages every aspect of their digital marketing.",
     "steps": [
-      { "step": "01", "title": "Build a Brand", "body": "Domains, logo, and professional email establish the SMB identity.", "highlight": false },
-      { "step": "02", "title": "Get Online", "body": "Website Builder, hosting, and ecommerce create the digital storefront.", "highlight": false },
-      { "step": "03", "title": "Get Found", "body": "SEO, directories, and reputation build organic visibility and trust.", "highlight": false },
-      { "step": "04", "title": "Grow", "body": "Marketing 360 unifies every marketing tool for total online success — SEO, advertising, reputation, listings, and intelligence.", "highlight": true, "productName": "Marketing 360" }
+      { "step": "01", "title": "Build a Brand", "body": "Domains, logos, and professional email establish the SMB identity.", "highlight": false },
+      { "step": "02", "title": "Get Online", "body": "Websites, hosting, listings, and social presence create the digital foundation.", "highlight": false },
+      { "step": "03", "title": "Get Found", "body": "SEO, directories, and reputation build visibility and trust.", "highlight": false },
+      {
+        "step": "04",
+        "title": "Grow",
+        "body": "Marketing 360 adds every marketing tool full-time success needs: SEO, advertising, reputation, listings, and intelligence — all in one AI-powered suite.",
+        "highlight": true,
+        "productName": "Marketing 360"
+      }
     ],
-    "positioning": "Position Suite 360 as the ultimate upgrade for customers who've outgrown individual marketing products, the premium tier for ambitious businesses ready to invest in complete digital marketing, and the consolidated solution for SMBs tired of managing multiple tools."
+    "positioning": "Marketing 360 is the ultimate upgrade for customers who've outgrown individual marketing products — the premium tier for ambitious businesses ready to build a complete digital marketing engine, and the consolidated solution for SMBs tired of managing five or six separate tools."
   },
 
   "cta": {
     "headline": "Ready to Offer the Complete Digital Marketing Suite Under Your Brand?",
-    "body": "Connect with Hostopia to launch the Marketing 360 — Suite 360 — under your brand. Deliver enterprise-level marketing power with small-business simplicity, and position your brand as the only marketing partner your SMB customers will ever need.",
+    "body": "Connect with Hostopia to launch Marketing 360 under your brand. Deliver enterprise-level marketing power with small-business simplicity, and position your brand as the only marketing partner your SMB customers will ever need.",
     "buttonText": "Book a Demo"
   }
 }

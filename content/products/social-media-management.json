@@ -4,97 +4,68 @@
   "productName": "Social Media Management",
 
   "seo": {
-    "primaryKeyword": "white-label social media management",
-    "secondaryKeywords": ["SMB social posting platform", "AI social content for resellers"],
-    "metaTitle": "Social Media Management | White-Label for Service Providers | Hostopia",
-    "metaDescription": "AI-assisted content creation and scheduling, including images and video — keep SMB audiences active and growing under your brand.",
+    "primaryKeyword": "social media management software for small business",
+    "secondaryKeywords": [
+      "AI social media posting",
+      "white-label social media tool",
+      "social scheduling for SMBs",
+      "multi-network publishing"
+    ],
+    "metaTitle": "Social Media Management for SMBs | Hostopia",
+    "metaDescription": "White-label, AI-assisted social media management — plan, create, schedule, and publish across platforms. Keep SMB customers active and on-brand.",
     "urlSlug": "/products/social-media-management"
   },
 
   "hero": {
     "eyebrow": "Social Media Management by Hostopia",
-    "headline": "AI-Assisted Posting — Always On Under Your Brand",
-    "subheadline": "SMBs know they need social presence but lack time and creative resources. Give them a guided, white-label workspace to plan, create, and publish.",
-    "description": "Combine AI drafts, scheduling, and multi-network publishing so your customers stay consistent — while you retain the commercial relationship and brand experience.",
+    "headline": "AI-Assisted Posting, Always On, Under Your Brand",
+    "description": "Small businesses know they need to show up on social, but most run out of time before they run out of ideas. Hostopia's white-label Social Media Management combines AI drafts, scheduling, and multi-network publishing so your customers stay consistent, on-brand, and visible — while you own the customer relationship and the revenue.",
     "cta": { "primary": "Book a Demo", "secondary": "Talk to Partner Success" },
     "sidebar": {
-      "heading": "Your customers can",
+      "heading": "Your SMB customers can",
       "items": [
         {
-          "title": "Create faster",
-          "body": "AI-assisted captions, ideas, and variants tuned for each network.",
+          "title": "Create faster with AI drafts",
+          "body": "The hardest part of social isn't posting — it's deciding what to post. Hostopia's AI generates captions, post ideas, and on-brand variants tuned to each customer's industry, audience, and tone. Owners start with a draft instead of a blank screen, edit in seconds, and publish without hiring a copywriter. It's the difference between \"I'll post something later this week\" and \"I just scheduled a month of content in an afternoon\" — turning the hardest habit in small-business marketing into something that actually happens.",
           "image": {
             "src": "https://images.unsplash.com/photo-1611162616305-69b3cf1bfe93?q=80&w=1200&auto=format&fit=crop",
-            "alt": "Social media content creation"
+            "alt": "AI social content creation"
           }
         },
         {
-          "title": "Stay on schedule",
-          "body": "Calendar views, approvals, and publishing windows that fit their team.",
+          "title": "Stay on schedule with drag-and-drop queues",
+          "body": "Consistency beats brilliance on social media. Visual drag-and-drop calendars let your customers plan weeks ahead, fill gaps, and balance their content mix at a glance. Posts queue across Facebook, Instagram, Google Business Profile, and more — auto-publishing at the right time for each platform. Owners stop scrambling for the 9am post, and start running their social calendar the way an agency would — without the agency bill, and without another app to manage outside your platform.",
           "image": {
             "src": "https://images.unsplash.com/photo-1506784983877-45594efa4cbe?q=80&w=1200&auto=format&fit=crop",
-            "alt": "Content calendar and scheduling"
+            "alt": "Social content calendar and scheduling"
           }
         },
         {
-          "title": "Grow engagement",
-          "body": "Video and image workflows that keep feeds fresh without a full creative team.",
+          "title": "Grow engagement with smarter content",
+          "body": "Good social isn't just showing up — it's showing up with content that earns a reaction. Hostopia's tools recommend the post types, hashtags, and formats getting traction in each customer's category, and flag top-performing posts to repeat and boost. Owners see what's actually driving likes, comments, follows, and clicks — and use that signal to get better every week. It's the feedback loop most small businesses never build for themselves, delivered by default.",
           "image": {
             "src": "https://images.unsplash.com/photo-1611926653458-09294b3142bf?q=80&w=1200&auto=format&fit=crop",
-            "alt": "Video and social engagement"
+            "alt": "Social engagement and performance insights"
+          }
+        },
+        {
+          "title": "Collaborate without losing control",
+          "body": "One-owner shops don't need approval workflows. Agencies and multi-user customers absolutely do. Hostopia's role-based permissions and approval flows let teams draft, review, and publish without stepping on each other — or letting an off-brand post slip through. Partners selling into franchises, multi-location businesses, and agencies get enterprise-grade collaboration built in, which means one platform fits every customer in your base instead of a separate tool for each segment.",
+          "image": {
+            "src": "https://images.unsplash.com/photo-1522071820081-009f0129c71c?q=80&w=1200&auto=format&fit=crop",
+            "alt": "Team collaboration and approvals for social"
+          }
+        },
+        {
+          "title": "Publish across every channel from one place",
+          "body": "Nothing kills consistency faster than logging into four separate platforms to publish the same post. Hostopia's multi-network publishing reaches Facebook, Instagram, Google Business Profile, and other major platforms from a single composer — with content tailored per-platform, image sizing handled automatically, and performance tracked in one dashboard. One place to create. One place to schedule. One place to see what worked.",
+          "image": {
+            "src": "https://images.unsplash.com/photo-1533750349088-cd871a92f312?q=80&w=1200&auto=format&fit=crop",
+            "alt": "Multi-network social publishing"
           }
         }
       ]
     }
-  },
-
-  "media": {
-    "heroImage": {
-      "src": "https://images.unsplash.com/photo-1611162616305-69b3cf1bfe93?q=80&w=1600&auto=format&fit=crop",
-      "alt": "Social media management workspace"
-    }
-  },
-
-  "features": {
-    "eyebrow": "What you deliver",
-    "heading": "Social That Scales for SMBs",
-    "intro": "Operational simplicity for partners; polished output for end customers.",
-    "cards": [
-      { "icon": "Sparkles", "title": "AI content assistance", "body": "Drafts, hashtags, and variants aligned to brand tone." },
-      { "icon": "Calendar", "title": "Scheduling & queues", "body": "Plan weeks ahead with drag-and-drop calendars." },
-      { "icon": "Image", "title": "Creative tools", "body": "Templates and assets for quick, on-brand visuals." },
-      { "icon": "Users", "title": "Roles & approvals", "body": "Agency or multi-user workflows without losing control." }
-    ]
-  },
-
-  "partnerAdvantage": {
-    "eyebrow": "The partner advantage",
-    "heading": "Recurring Revenue, Low Churn",
-    "intro": "Social is never “done” — it’s a natural subscription attach to websites, listings, and ads.",
-    "items": [
-      { "title": "Bundle with web & SEO", "body": "One narrative from site to search to social." },
-      { "title": "Upsell creative services", "body": "Start with software; add done-for-you tiers where needed." },
-      { "title": "Brand-safe defaults", "body": "Guardrails and templates reduce support load." }
-    ]
-  },
-
-  "lifecycleFit": {
-    "eyebrow": "Portfolio fit",
-    "heading": "Where Social Sits in the Lifecycle",
-    "intro": "Social Media Management belongs in Get Found — it keeps SMBs visible and active where customers spend time, alongside listings, reputation, and Search Everywhere Optimization.",
-    "steps": [
-      { "step": "01", "title": "Build a Brand", "body": "Logo and email set the tone.", "highlight": false },
-      { "step": "02", "title": "Get Online", "body": "Websites and hosting anchor the hub.", "highlight": false },
-      { "step": "03", "title": "Get Found", "body": "Social Media Management complements directory listings, reputation management, and SEO — consistent posting and engagement reinforce discoverability and trust.", "highlight": true, "productName": "Social Media Management" },
-      { "step": "04", "title": "Grow", "body": "Marketing 360, email marketing, and paid campaigns compound growth once the audience is engaged.", "highlight": false }
-    ],
-    "positioning": "Position social in the Get Found portfolio with listings, reputation, and SEO — then upsell Marketing 360 for partners who want one unified suite under your brand."
-  },
-
-  "cta": {
-    "headline": "Ready to Launch Social Under Your Brand?",
-    "body": "Connect with Hostopia to package AI-assisted social for your SMB base.",
-    "buttonText": "Book a Demo"
   },
 
   "media": {
@@ -108,5 +79,88 @@
       "alt": "Social media marketing workspace",
       "caption": "Plan, create, and publish — all under your partner brand."
     }
+  },
+
+  "features": {
+    "eyebrow": "What you deliver",
+    "heading": "Social That Scales for SMBs",
+    "intro": "Operational simplicity for partners. Polished, consistent output for end customers. Every feature is designed to make social media a daily habit — not a weekly dread.",
+    "cards": [
+      {
+        "icon": "Sparkles",
+        "title": "AI Content Assistance",
+        "body": "Drafts, hashtags, and variants aligned to brand tone — generated in seconds, editable in a click."
+      },
+      {
+        "icon": "Calendar",
+        "title": "Scheduling & Queues",
+        "body": "Drag-and-drop calendars with deep-week visibility. Plan weeks ahead, fill gaps, and keep cadence consistent."
+      },
+      {
+        "icon": "Image",
+        "title": "Creative Tools",
+        "body": "Templates and built-in assets for quick, on-brand visuals — no design software, no stalled posts."
+      },
+      {
+        "icon": "Users",
+        "title": "Roles & Approvals",
+        "body": "Agency and multi-user workflows with permissions, review steps, and audit trails. Collaborate without losing control."
+      },
+      {
+        "icon": "Share2",
+        "title": "Multi-Network Publishing",
+        "body": "Publish across Facebook, Instagram, Google Business Profile, and more from a single composer, with per-platform formatting handled automatically."
+      },
+      {
+        "icon": "BarChart3",
+        "title": "Performance Insights",
+        "body": "See what's working, what's flat, and what to post next. Simple engagement analytics that fit on one screen."
+      }
+    ]
+  },
+
+  "partnerAdvantage": {
+    "eyebrow": "The partner advantage",
+    "heading": "Recurring Revenue, Low Churn",
+    "intro": "Social is never \"done\" — it's a natural subscription attach to websites, listings, and ads. Which makes it one of the lowest-churn, highest-engagement products you can add to your portfolio.",
+    "items": [
+      {
+        "title": "Bundle with web & SEO",
+        "body": "One narrative from site to search to social. Social Media Management fits naturally alongside websites, hosting, and SEO — deepening the customer relationship and raising ARPU per account."
+      },
+      {
+        "title": "Upsell creative services",
+        "body": "Start with software; add done-for-you tiers where needed. Managed social becomes a premium add-on for customers who want the outcome without the effort — high margin, easy to deliver."
+      },
+      {
+        "title": "Brand-safe defaults",
+        "body": "Guardrails and templates reduce support load and keep output consistent. Your team deploys faster, your customers stay compliant, and your brand stays protected across thousands of accounts."
+      }
+    ]
+  },
+
+  "lifecycleFit": {
+    "eyebrow": "Portfolio fit",
+    "heading": "Where Social Sits in the Lifecycle",
+    "intro": "Social Media Management belongs in the Get Found motion — it keeps SMBs visible and active where customers spend time, alongside listings, reputation, and Search Engine Optimization.",
+    "steps": [
+      { "step": "01", "title": "Build a Brand", "body": "Logos and email set the tone.", "highlight": false },
+      { "step": "02", "title": "Get Online", "body": "Websites, hosting, and Marketing Essentials anchor the digital hub.", "highlight": false },
+      {
+        "step": "03",
+        "title": "Get Found",
+        "body": "Social Media Management complements directory listings, reputation management, and SEO — consistent posting and engagement reinforce discoverability and trust.",
+        "highlight": true,
+        "productName": "Social Media Management"
+      },
+      { "step": "04", "title": "Grow", "body": "Marketing 360 adds email marketing and paid campaigns — compounding growth once the audience is engaged.", "highlight": false }
+    ],
+    "positioning": "Position Social Media Management in the Get Found portfolio with listings, reputation, and SEO — then upsell Marketing 360 for partners who want one unified suite under your brand."
+  },
+
+  "cta": {
+    "headline": "Ready to Launch Social Under Your Brand?",
+    "body": "Connect with Hostopia to package AI-assisted social for your SMB base — delivered white-label, bundled with your existing services, and engineered to become a daily habit.",
+    "buttonText": "Book a Demo"
   }
 }

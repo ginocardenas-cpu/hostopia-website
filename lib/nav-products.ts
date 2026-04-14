@@ -27,7 +27,7 @@ export const productsDropdownSections = [
     heading: "Get Found",
     links: [
       {
-        label: "Reputation Management",
+        label: "Reputation & Listing Management",
         description: "Collect/respond to Reviews",
         href: "/products/reputation-management",
         slug: "reputation-management",
@@ -45,7 +45,7 @@ export const productsDropdownSections = [
         slug: "social-media-management",
       },
       {
-        label: "Search Everywhere Optimization",
+        label: "Search Engine Optimization",
         description: "Keywords, ranking, SEO/GEO, and AEO performance",
         href: "/products/seo",
         slug: "seo",

@@ -190,10 +190,10 @@
         "description": "Drive visibility, reputation, and local discovery for SMBs.",
         "products": [
           {
-            "name": "Reputation Management",
+            "name": "Reputation & Listing Management",
             "tag": "Trust Builder",
-            "description": "Collect and respond to reviews — build trust and credibility in one place.",
-            "highlights": ["Review collection and responses", "Centralized reputation hub", "Credibility across channels"],
+            "description": "AI review responses, 30+ directory sync, and competitor benchmarking — one place to build trust and get found.",
+            "highlights": ["AI-assisted review responses", "Listings sync across directories", "Competitive reputation insights"],
             "link": "/products/reputation-management"
           },
           {
@@ -211,10 +211,10 @@
             "link": "/products/social-media-management"
           },
           {
-            "name": "Search Everywhere Optimization",
+            "name": "Search Engine Optimization",
             "tag": "Visibility Driver",
-            "description": "Keywords, ranking, and SEO, GEO, and AEO performance — research, tracking, backlinks, and optimization in one platform.",
-            "highlights": ["Keyword research & ranking", "SEO, GEO, and AEO coverage", "Backlinks and competitor insights"],
+            "description": "AI-guided SEO plans, keyword discovery, on-page recommendations, and content tools — ranking and organic traffic without hiring an agency.",
+            "highlights": ["Keyword research & tracking", "AI content and website optimization", "Performance dashboards"],
             "link": "/products/seo"
           }
         ]
@@ -261,7 +261,7 @@
         ]
       }
     ],
-    "notes": "Products organized by the four portfolio pillars — aligned with nav-products.ts. Includes Brand Monitoring, Social Media Management, Marketing 360, Directory Listings, Reputation Management, and Search Everywhere Optimization."
+    "notes": "Products organized by the four portfolio pillars — aligned with nav-products.ts. Includes Brand Monitoring, Social Media Management, Marketing 360, Directory Listings, Reputation & Listing Management, and Search Engine Optimization."
   },
 
   "migrations": {

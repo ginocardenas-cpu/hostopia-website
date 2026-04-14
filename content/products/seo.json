@@ -1,71 +1,68 @@
 {
   "slug": "seo",
-  "label": "SEO",
+  "label": "Search Engine Optimization",
   "productName": "Search Engine Optimization",
 
   "seo": {
-    "primaryKeyword": "white-label SEO platform",
+    "primaryKeyword": "SEO software for small business",
     "secondaryKeywords": [
-      "AI-powered SEO for SMBs",
-      "search engine optimization reseller",
-      "SEO software for service providers",
-      "AI campaign creation platform",
-      "white-label digital advertising",
-      "multi-channel advertising platform"
+      "AI SEO tools",
+      "white-label SEO platform",
+      "keyword research for SMBs",
+      "website optimization software",
+      "content optimization tool"
     ],
-    "metaTitle": "Search Engine Optimization & AI Advertising | White-Label | Hostopia",
-    "metaDescription": "Amplify your clients' reach with AI-powered advertising and advanced social media management. Launch high-performing campaigns across Google Ads and social channels under your brand.",
+    "metaTitle": "SEO Software for Small Business | Hostopia",
+    "metaDescription": "AI-powered, white-label SEO that helps SMBs rank higher, drive traffic, and publish optimized content — without hiring an agency or an expert.",
     "urlSlug": "/products/seo"
   },
 
   "hero": {
-    "eyebrow": "Search Engine Optimization by Hostopia",
-    "headline": "Amplify Your Clients' Reach with AI-Powered Advertising and Advanced Social Media Management",
-    "subheadline": "SMBs know they need to advertise, but few have the expertise to create effective campaigns, manage budgets across platforms, or measure what's actually working. They need a way to turn content into customers — without the complexity.",
-    "description": "Hostopia's Search Engine Optimization platform delivers comprehensive digital advertising capabilities combined with sophisticated social media tools. This package enables businesses to turn their best content into high-performing ads, manage multi-platform campaigns, and leverage AI to maximize engagement and ROI across Google Ads and social channels. Delivered white-label as part of the Online Marketing Center Boost plan.",
+    "eyebrow": "Search Engine Optimization (SEO) by Hostopia",
+    "headline": "Help Your Clients Get Found by the People Searching for Them",
+    "description": "Most small businesses know SEO matters — they just don't have the time or expertise to do it right. Hostopia's white-label SEO solution gives your customers an AI-guided plan, keyword discovery, on-page recommendations, and content tools in one place, so ranking higher finally feels achievable.",
     "cta": { "primary": "Book a Demo", "secondary": "Talk to Partner Success" },
-    "badge": "Online Marketing Center — Boost Plan",
     "sidebar": {
       "heading": "Your SMB customers can",
       "items": [
         {
-          "title": "Maximize reach across all platforms",
-          "body": "SMBs can advertise across Google, Facebook, Instagram, and other major platforms from a single interface — reaching potential customers wherever they spend time online. Multi-channel advertising activation means businesses aren't limited to one platform or audience. They can target search intent, social engagement, and display visibility simultaneously, expanding their reach without managing separate ad accounts on each platform.",
+          "title": "Follow a clear, AI-guided SEO plan",
+          "body": "SEO intimidates most small business owners because the advice they find online is either too generic or too technical. Hostopia's AI-powered SEO Strategy analyzes each customer's website, industry, and local market, then generates a prioritized, step-by-step plan they can actually follow. Weekly tasks are bite-sized and specific — update this title tag, fix this broken link, add this keyword — so progress happens even when the owner only has 20 minutes a day. It's like having an SEO consultant in their pocket, built into the services they already buy from you.",
           "image": {
-            "src": "https://images.unsplash.com/photo-1533750349088-cd871a92f312?q=80&w=1200&auto=format&fit=crop",
-            "alt": "Multi-channel advertising across search and social platforms"
+            "src": "https://images.unsplash.com/photo-1432888498266-38ffec3eaf0a?q=80&w=1200&auto=format&fit=crop",
+            "alt": "AI-guided SEO strategy and task planning"
           }
         },
         {
-          "title": "Launch AI-powered advertising campaigns",
-          "body": "AI takes the guesswork out of advertising. It generates compelling ad headlines, descriptions, and targeting parameters based on the business category and goals — so SMBs can launch high-performing campaigns without needing marketing expertise. What used to require an agency or weeks of trial-and-error now takes minutes, with AI continuously optimizing for better results over time.",
-          "image": {
-            "src": "https://images.unsplash.com/photo-1677442136019-21780ecad995?q=80&w=1200&auto=format&fit=crop",
-            "alt": "AI-powered campaign creation and optimization"
-          }
-        },
-        {
-          "title": "Maintain complete campaign control",
-          "body": "Full budget and campaign control means SMBs decide exactly how much to spend, where to spend it, and when to adjust. Set daily or monthly budgets, pause campaigns instantly, allocate spend across channels, and shift resources to what's performing best. The platform balances AI automation with hands-on control — so businesses get the efficiency of smart technology without losing oversight of their advertising investment.",
-          "image": {
-            "src": "https://images.unsplash.com/photo-1460925895917-afdab827c52f?q=80&w=1200&auto=format&fit=crop",
-            "alt": "Campaign budget management and control dashboard"
-          }
-        },
-        {
-          "title": "See proven ROI with performance intelligence",
-          "body": "Clear, actionable reporting shows exactly what's working and what isn't. Performance intelligence and optimization tools track clicks, conversions, cost-per-lead, and ROI across every channel — giving SMBs the data they need to make informed decisions about their advertising spend. No more wondering whether ads are generating results; every dollar is accounted for with transparent metrics.",
-          "image": {
-            "src": "https://images.unsplash.com/photo-1551288049-bebda4e38f71?q=80&w=1200&auto=format&fit=crop",
-            "alt": "Advertising ROI and performance analytics"
-          }
-        },
-        {
-          "title": "Turn content into immediate traffic and growth",
-          "body": "Traffic and visibility acceleration transforms existing content — blog posts, product pages, promotions — into paid advertising that drives immediate results. Instead of waiting months for organic reach to build, SMBs can boost their best-performing content to targeted audiences right away. It bridges the gap between having a great online presence and actually driving the foot traffic, phone calls, and purchases that grow the business.",
+          "title": "Discover the keywords that drive real traffic",
+          "body": "Ranking for the wrong keywords is worse than not ranking at all. Hostopia's AI Keyword Discovery surfaces the terms your customers' actual buyers are searching for, with search volume, competition, and difficulty scores in plain language. Built-in tracking shows which keywords are gaining ground, which are slipping, and where the biggest opportunities sit. Whether your customer is a local plumber, a regional retailer, or a multi-location service business, they get a keyword strategy grounded in real search behavior — not guesswork.",
           "image": {
             "src": "https://images.unsplash.com/photo-1504868584819-f8e8b4b6d7e3?q=80&w=1200&auto=format&fit=crop",
-            "alt": "Content promotion and traffic acceleration"
+            "alt": "Keyword research and search intent discovery"
+          }
+        },
+        {
+          "title": "Publish SEO-friendly content without a copywriter",
+          "body": "Fresh, optimized content is one of the strongest signals search engines use to rank a site — and one of the hardest things for small businesses to keep up with. Hostopia's AI Content Creation helps owners generate blog posts, service pages, and product descriptions that are search-ready from the first draft. Content is built around their target keywords, tuned to their brand voice, and ready to publish in minutes instead of days. Consistency becomes realistic, even for a one-person business.",
+          "image": {
+            "src": "https://images.unsplash.com/photo-1455390582262-044c7ca29a4e?q=80&w=1200&auto=format&fit=crop",
+            "alt": "AI content creation for SEO"
+          }
+        },
+        {
+          "title": "Optimize their website without touching code",
+          "body": "Technical SEO fixes often stall because owners don't know what to change or how to change it. Hostopia's Website Optimization tool scans every page and turns technical issues — slow load times, missing meta tags, weak headings, thin content — into simple, plain-English recommendations. Each fix is prioritized by impact, so your customers work on what moves rankings first and skip what doesn't matter. For partners, that means fewer support escalations and more customers who stick around because they see results.",
+          "image": {
+            "src": "https://images.unsplash.com/photo-1460925895917-afdab827c52f?q=80&w=1200&auto=format&fit=crop",
+            "alt": "Website optimization and technical SEO recommendations"
+          }
+        },
+        {
+          "title": "See what's working and where to push harder",
+          "body": "SEO is a long game, but progress should never feel invisible. Hostopia's Performance Tracking gives your customers a live view of rankings, organic traffic, top-performing pages, and how their site compares to local competitors. Easy-to-read dashboards show what's trending up, what's flat, and where the biggest wins are hiding — so they can double down on what works and cut what doesn't. Real data. Real progress. Real reasons to keep subscribing.",
+          "image": {
+            "src": "https://images.unsplash.com/photo-1551288049-bebda4e38f71?q=80&w=1200&auto=format&fit=crop",
+            "alt": "SEO performance tracking and rankings dashboard"
           }
         }
       ]
@@ -75,83 +72,95 @@
   "media": {
     "heroImage": {
       "src": "https://images.unsplash.com/photo-1504868584819-f8e8b4b6d7e3?q=80&w=1600&auto=format&fit=crop",
-      "alt": "SEO and digital advertising platform dashboard"
+      "alt": "Search engine optimization platform dashboard",
+      "priority": true
     }
   },
 
   "features": {
     "eyebrow": "What you deliver",
-    "heading": "AI-Powered Advertising and Campaign Management — Under Your Brand",
-    "intro": "Search Engine Optimization gives your SMB customers enterprise-level advertising capabilities with small-business simplicity. Every tool is designed to remove complexity while maximizing results across search and social channels.",
+    "heading": "AI-Powered SEO, Built for Small Business Reality",
+    "intro": "Search Engine Optimization gives your SMB customers enterprise-level ranking capability with small-business simplicity. Every tool is designed to remove complexity while delivering measurable results across organic search.",
     "cards": [
       {
-        "icon": "Sparkles",
-        "title": "AI-Powered Campaign Creation",
-        "body": "Launch high-performing campaigns without marketing expertise. AI generates compelling ad headlines, descriptions, and targeting — getting SMBs from idea to live campaign in minutes, not weeks."
+        "icon": "ListChecks",
+        "title": "AI-Powered SEO Strategy",
+        "body": "A clear, actionable SEO roadmap generated automatically for every customer. Weekly, bite-sized tasks replace vague recommendations — so owners make progress without needing an expert."
       },
       {
-        "icon": "Layers",
-        "title": "Multi-Channel Advertising Activation",
-        "body": "Reach customers across search and social — instantly. Manage Google Ads, Facebook, Instagram, and other platforms from one interface with centralized budget control and unified reporting."
+        "icon": "Search",
+        "title": "AI Keyword Discovery & Tracking",
+        "body": "Uncover high-intent keywords tailored to each customer's industry and location. Live tracking shows ranking movement, trend direction, and competitive share of voice."
       },
       {
-        "icon": "Eye",
-        "title": "Traffic & Visibility Acceleration",
-        "body": "Turn content into immediate growth. Boost top-performing pages, posts, and promotions to targeted audiences, bridging the gap between organic visibility and the traffic SMBs need to grow now."
+        "icon": "PenLine",
+        "title": "AI Content Creation",
+        "body": "Generate SEO-friendly blog posts, service pages, and product descriptions in minutes. Content is keyword-targeted, on-brand, and ready to publish without a copywriter."
       },
       {
-        "icon": "Settings",
-        "title": "Full Budget & Campaign Control",
-        "body": "Balance automation with oversight. Set budgets, pause campaigns, reallocate spend, and adjust targeting in real time — giving SMBs the control they want with the AI optimization they need."
+        "icon": "Wrench",
+        "title": "Website Optimization",
+        "body": "Technical SEO turned into plain-English steps. AI scans every page and prioritizes fixes by impact — from meta tags and headings to speed, structure, and content depth."
       },
       {
         "icon": "LineChart",
-        "title": "Performance Intelligence & Optimization",
-        "body": "Know what's working to outperform competitors. Track clicks, conversions, and cost-per-lead across every channel with clear dashboards and actionable recommendations that improve results over time."
+        "title": "Performance Tracking & Intelligence",
+        "body": "A single dashboard for rankings, organic traffic, top pages, and competitor benchmarks. Owners see progress at a glance; partners see a retention story they can sell."
+      },
+      {
+        "icon": "MapPin",
+        "title": "Local SEO Visibility",
+        "body": "Google Business Profile optimization, local pack monitoring, and location-based keyword tracking — purpose-built for SMBs who win or lose on local search."
       }
     ]
   },
 
   "partnerAdvantage": {
     "eyebrow": "The partner advantage",
-    "heading": "The Revenue Accelerator in Your Marketing Portfolio",
-    "intro": "Advertising is where SMB marketing budgets are growing fastest. Search Engine Optimization lets you capture that spend under your brand without building an agency or hiring ad specialists.",
+    "heading": "The Recurring Revenue Engine Your Portfolio Is Missing",
+    "intro": "SEO solves a problem every SMB has, generates measurable results, and creates one of the strongest renewal stories in digital services.",
     "items": [
       {
-        "title": "Higher revenue potential with advanced advertising",
-        "body": "Advertising generates the highest per-customer revenue in digital marketing. The Boost plan gives you a premium product to offer SMBs who are ready to invest in growth — expanding your ARPU significantly beyond basic web and email services."
+        "title": "Higher revenue potential with a premium product",
+        "body": "SEO commands higher ARPU than basic digital services and gives partners a clear, differentiated offering that justifies its price — rankings, traffic, and leads the customer can see."
       },
       {
-        "title": "Active ad campaigns create strong retention",
-        "body": "When SMBs are running campaigns that drive real leads and revenue, cancellation means losing that pipeline. Active advertising creates the strongest form of product dependency — your platform becomes their revenue engine."
+        "title": "Ranking progress creates strong retention",
+        "body": "SEO compounds over time. The longer a customer stays, the more they have to lose by leaving — which makes SEO one of the stickiest subscription products in the portfolio."
       },
       {
         "title": "Full-service digital marketing capability",
-        "body": "Combined with listings, reputation management, and brand monitoring from the lower plans, you can now offer a complete digital marketing solution. Your brand goes from connectivity provider to full-service digital marketing partner."
+        "body": "Combined with listings, reputation, and advertising, SEO completes a true marketing stack — positioning you as the partner SMBs grow with, not just a utility provider."
       },
       {
         "title": "Clear value proposition for growing businesses",
-        "body": "Advertising delivers the most tangible ROI of any digital service — more calls, more foot traffic, more online orders. That clarity makes it the easiest premium service to pitch to ambitious SMBs who are ready to invest."
+        "body": "SMBs that are past \"getting online\" and focused on \"getting found\" know they need SEO. You meet them exactly where they are — with a ready-to-sell, ready-to-deliver solution."
       }
     ]
   },
 
   "lifecycleFit": {
     "eyebrow": "Portfolio fit",
-    "heading": "The Accelerator for Businesses Ready to Grow",
-    "intro": "Search Everywhere Optimization is core to Get Found — it amplifies how SMBs rank, appear in AI-driven search, and compete for attention alongside listings, reputation, and social.",
+    "heading": "The Engine Behind Every High-Growth SMB",
+    "intro": "SEO is the product SMBs invest in once they're serious about growth. It sits in the Get Found motion — alongside listings and reputation — and sets up the natural upgrade to Marketing 360.",
     "steps": [
-      { "step": "01", "title": "Build a Brand", "body": "Domains, logo, and professional email establish the SMB identity." },
-      { "step": "02", "title": "Get Online", "body": "Website Builder, DIFM design, or hosting launches their digital presence." },
-      { "step": "03", "title": "Get Found", "body": "Search Everywhere Optimization works with directory listings, reputation management, and social media management to maximize discoverability and trust.", "highlight": true, "productName": "Search Engine Optimization" },
-      { "step": "04", "title": "Grow", "body": "Marketing 360, ecommerce, and email marketing scale demand once the business is easy to find and trusted online." }
+      { "step": "01", "title": "Build a Brand", "body": "Domains, logos, and email establish the SMB's identity.", "highlight": false },
+      { "step": "02", "title": "Get Online", "body": "Websites, hosting, and Marketing Essentials launch the digital presence SEO will amplify.", "highlight": false },
+      {
+        "step": "03",
+        "title": "Get Found",
+        "body": "Search Engine Optimization drives discoverability, organic traffic, and local search visibility — working hand-in-hand with listings and reputation.",
+        "highlight": true,
+        "productName": "Search Engine Optimization"
+      },
+      { "step": "04", "title": "Grow", "body": "Marketing 360 layers paid advertising, advanced analytics, and full-stack digital marketing on top of a strong SEO foundation.", "highlight": false }
     ],
-    "positioning": "Position Search Everywhere Optimization in the Get Found stack with listings, reputation, and social — then bundle forward into Marketing 360 for partners ready to consolidate growth under your brand."
+    "positioning": "Position SEO as the Get Found engine that converts online presence into sustained traffic — then upsell Marketing 360 for partners ready to pair organic and paid under one unified suite."
   },
 
   "cta": {
-    "headline": "Ready to Turn AI-Powered Advertising into a Revenue Stream?",
-    "body": "Connect with Hostopia to launch Search Engine Optimization under your brand. Give your SMB customers the advertising tools they need to reach more customers, drive more revenue, and prove ROI — all managed from one platform.",
+    "headline": "Ready to Offer AI-Powered SEO Under Your Brand?",
+    "body": "Connect with Hostopia to launch Search Engine Optimization for your SMB base. White-label, AI-driven, and built for owners who want results without becoming SEO experts.",
     "buttonText": "Book a Demo"
   }
 }
