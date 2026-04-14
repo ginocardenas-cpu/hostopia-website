@@ -1,5 +1,6 @@
 "use client";
 
+import { useCallback, useRef } from "react";
 import Image from "next/image";
 import {
   Accordion,
@@ -26,16 +27,38 @@ export function ProductHeroAccordion({ sectionHeading, items }: ProductHeroAccor
   if (items.length === 0) return null;
 
   const defaultOpen = items[0]?.id ?? "01";
+  const scrollYBeforeInteraction = useRef(0);
+
+  /** Prevents jump-to-bottom when height changes under `scroll-behavior: smooth` on `html`. */
+  const restoreScrollAfterToggle = useCallback(() => {
+    const y = scrollYBeforeInteraction.current;
+    requestAnimationFrame(() => {
+      requestAnimationFrame(() => {
+        window.scrollTo({ top: y, behavior: "auto" });
+      });
+    });
+  }, []);
 
   return (
-    <section className="w-full bg-white py-12 md:py-16 lg:py-24">
-      <div className="mx-auto w-full max-w-7xl px-6">
+    <section
+      className="w-full bg-white py-12 [overflow-anchor:none] md:py-16 lg:py-24"
+      onPointerDownCapture={() => {
+        scrollYBeforeInteraction.current = window.scrollY;
+      }}
+    >
+      <div className="mx-auto w-full max-w-7xl px-6 [overflow-anchor:none]">
         <h2 className="mb-8 max-w-4xl font-montserrat text-4xl font-black leading-tight tracking-tight text-charcoal text-balance md:mb-10 md:text-5xl lg:text-6xl">
           {sectionHeading}
         </h2>
 
-        <div className="w-full overflow-hidden rounded-2xl border border-gray-200/80 bg-white shadow-sm">
-          <Accordion type="single" defaultValue={defaultOpen} collapsible className="w-full">
+        <div className="w-full overflow-hidden rounded-2xl border border-gray-200/80 bg-white shadow-sm [overflow-anchor:none]">
+          <Accordion
+            type="single"
+            defaultValue={defaultOpen}
+            collapsible
+            className="w-full [overflow-anchor:none]"
+            onValueChange={restoreScrollAfterToggle}
+          >
             {items.map((item) => {
               const hasImage = Boolean(item.imageSrc);
               return (

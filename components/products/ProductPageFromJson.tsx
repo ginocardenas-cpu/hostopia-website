@@ -108,7 +108,7 @@ const FLAT_HERO_POP_SLUGS = new Set([
   "logo-design",
 ]);
 
-export default function ProductPageFromJson({ data }: { data: ProductJson }) {
+export default function ProductPageFromJson({ data, navLabel }: { data: ProductJson; navLabel: string }) {
   const { hero, features, partnerAdvantage, lifecycleFit, cta, media } = data;
   const beforeAfter = media?.beforeAfter;
   const templateMarquee = media?.templateMarquee;
@@ -150,7 +150,7 @@ export default function ProductPageFromJson({ data }: { data: ProductJson }) {
                 Products
               </Link>
               <span className="mx-2">/</span>
-              <span className="text-charcoal">{data.label}</span>
+              <span className="text-charcoal">{navLabel}</span>
             </nav>
 
             <div className="mb-8 flex items-center gap-3">
@@ -506,7 +506,7 @@ export default function ProductPageFromJson({ data }: { data: ProductJson }) {
               {lifecycleFit.heading}
             </h2>
             <p className="mb-12 max-w-3xl font-raleway text-lg leading-relaxed text-gray-500">{lifecycleFit.intro}</p>
-            <ProductLifecycleGrid steps={lifecycleFit.steps} productLabel={data.productName} />
+            <ProductLifecycleGrid steps={lifecycleFit.steps} productLabel={navLabel} />
             <p className="mt-12 max-w-4xl font-raleway text-base leading-relaxed text-gray-500">{lifecycleFit.positioning}</p>
           </div>
         </section>

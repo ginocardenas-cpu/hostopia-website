@@ -34,5 +34,5 @@ export default function ProductSlugPage({ params }: Props) {
   const json = loadProductJson(params.slug);
   if (!json) notFound();
 
-  return <ProductPageFromJson data={json} />;
+  return <ProductPageFromJson data={json} navLabel={label} />;
 }
