@@ -12,122 +12,61 @@
       "professional email for small business",
       "email platform for service providers"
     ],
-    "metaTitle": "White-Label Business Email for Service Providers | Hostopia",
-    "metaDescription": "Deliver secure, professional business email under your brand. Hostopia's white-label email platform supports domain-based and consumer email with flexible packaging, expert migrations, and 24/7 support.",
+    "metaTitle": "White-Label Business Email for Partners | Hostopia",
+    "metaDescription": "Deliver secure, professional business email under your brand. Hostopia's white-label email platform supports domain-based and consumer email with expert migrations.",
     "urlSlug": "/products/business-email"
   },
 
   "hero": {
     "eyebrow": "Business Email by Hostopia",
     "headline": "Secure, Professional Email — Delivered Under Your Brand",
-    "subheadline": "Email is mission-critical infrastructure. Every business needs it, every customer expects it, and the provider who delivers it becomes the anchor of that relationship.",
-    "description": "Hostopia's white-label Business Email gives you a scalable, enterprise-grade email platform to resell under your brand. Domain-based business email, consumer email, or both — with flexible packaging, expert migrations, and 24/7 end-user support.",
+    "description": "Email is mission-critical infrastructure. Every business needs it, every customer expects it, and the provider who delivers it becomes the anchor of that relationship. Hostopia's white-label Business Email gives you an enterprise-grade platform to resell under your brand — domain-based, consumer, or both — with expert migrations and 24/7 end-user support included.",
     "cta": { "primary": "Book a Demo", "secondary": "Talk to Partner Success" },
-    "badge": "Enterprise-grade email, white-labeled for partners",
     "sidebar": {
       "heading": "Your SMB customers get",
       "items": [
         {
-          "title": "Professional domain-based email",
-          "body": "Business email on their own domain builds credibility and trust with every message sent.",
+          "title": "Professional email on their own domain",
+          "body": "Business email tied to the customer's own domain builds credibility and trust with every message sent — the difference between being taken seriously and being filtered to spam. Hostopia activates domain-based email immediately after domain registration, so new customers go from \"I just bought my domain\" to \"I'm sending email from my new address\" in minutes, not days. For SMB owners, it's the single most visible upgrade from a generic Gmail account. For partners, it's the single highest-attach product in the portfolio.",
           "image": {
             "src": "https://images.unsplash.com/photo-1563986768609-322da13575f3?q=80&w=1200&auto=format&fit=crop",
             "alt": "Professional business email communication"
           }
         },
         {
-          "title": "Ad-free branded webmail",
-          "body": "A modern, feature-rich webmail experience with calendars, contacts, tasks, and online storage — no ads, ever.",
+          "title": "Ad-free, feature-rich branded webmail",
+          "body": "Modern webmail with calendars, contacts, tasks, traffic alerts, and online storage — all under your brand, all with zero advertising. Your customers get the productivity experience they expect from consumer tools, without having their inbox monetized by a competing service. Shared calendars and contact lists turn email into a lightweight collaboration platform for small teams, and the clean, ad-free interface reinforces the premium feel of being on your platform rather than a free tier somewhere else.",
           "image": {
             "src": "https://images.unsplash.com/photo-1611926653458-09294b3142bf?q=80&w=1200&auto=format&fit=crop",
             "alt": "Clean webmail and calendar interface"
           }
         },
         {
-          "title": "Enterprise-grade security",
-          "body": "Anti-virus protection, configurable spam filtering, trusted/blocked sender lists, and optional backups.",
+          "title": "Enterprise-grade security built in by default",
+          "body": "Most SMBs never configure their own spam filters or anti-virus rules — they just suffer the consequences. Hostopia's platform ships with enterprise-grade anti-virus protection, configurable spam filtering, trusted and blocked sender lists, and optional backup included. Security happens quietly in the background, which means fewer \"I got a virus from email\" support tickets and more customers who trust your platform to protect them automatically.",
           "image": {
             "src": "https://images.unsplash.com/photo-1563013544-824ae1b704d3?q=80&w=1200&auto=format&fit=crop",
             "alt": "Secure email and infrastructure"
           }
         },
         {
-          "title": "Access anywhere",
-          "body": "Full IMAP, POP, and SMTP support. Works with Outlook, Apple Mail, mobile clients, and webmail — any device, anywhere.",
+          "title": "Access anywhere, on any device",
+          "body": "Full IMAP, POP, and SMTP support means your customers' email works everywhere they work — Outlook on the desktop, Apple Mail on a Mac, mobile clients on iOS and Android, or clean browser-based webmail from anywhere. No workflow to change, no forced migration to a new client. Owners set up once and move seamlessly between devices. Teams stay synchronized. And you deliver the flexibility expected of modern email without building the infrastructure yourself.",
           "image": {
             "src": "https://images.unsplash.com/photo-1512941937669-90a1b58e7e9c?q=80&w=1200&auto=format&fit=crop",
             "alt": "Email on phone and laptop anywhere"
           }
+        },
+        {
+          "title": "Migrate from legacy platforms without losing a message",
+          "body": "Moving email providers is the single scariest change an SMB ever makes — one lost message can end a customer relationship. Hostopia's proprietary migration tools and experienced migrations team move users from legacy platforms with zero downtime and zero data loss, across mailboxes of any size. For partners, it's the difference between winning the migration conversation and losing it. For customers, it's the difference between \"we're switching providers\" and \"we're switching providers, and nothing broke.\"",
+          "image": {
+            "src": "https://images.unsplash.com/photo-1551288049-bebda4e38f71?q=80&w=1200&auto=format&fit=crop",
+            "alt": "Email migration and data integrity"
+          }
         }
       ]
     }
-  },
-
-  "features": {
-    "eyebrow": "What you deliver",
-    "heading": "A Complete Email Platform — Packaged Your Way",
-    "intro": "Hostopia handles the infrastructure, security, and support. You control the packaging, pricing, and customer experience.",
-    "cards": [
-      {
-        "icon": "Mail",
-        "title": "Flexible Email Tiers",
-        "body": "Domain-based business email, consumer email, or both. Flexible storage tiers at 3 GB, 6 GB, 9 GB, and 12 GB — so you can tailor plans, upsell premium options, and monetize overages."
-      },
-      {
-        "icon": "Shield",
-        "title": "Enterprise-Grade Security",
-        "body": "Built-in anti-virus, configurable spam filtering, trusted and blocked sender lists, and optional backup. Security that SMBs need but rarely configure on their own."
-      },
-      {
-        "icon": "Users",
-        "title": "Built-In Productivity Tools",
-        "body": "Shared calendars, contacts, tasks, and traffic alerts keep SMB teams synchronized — turning email into a lightweight collaboration platform."
-      },
-      {
-        "icon": "RefreshCw",
-        "title": "Expert Email Migration",
-        "body": "Hostopia's proprietary migration tools and experienced team move users from legacy platforms with zero downtime. No data loss, no disruption, no customer churn."
-      }
-    ]
-  },
-
-  "partnerAdvantage": {
-    "eyebrow": "The partner advantage",
-    "heading": "The Anchor Product That Holds Your Portfolio Together",
-    "intro": "Email is the highest-usage digital product in your stack. The partner who delivers it becomes the partner SMBs depend on every day.",
-    "items": [
-      {
-        "title": "Create a sticky, high-usage anchor",
-        "body": "Email is used daily. Once an SMB is on your email platform, switching costs are high and retention is strong — making it the foundation for long-term customer value."
-      },
-      {
-        "title": "Bundle with everything you sell",
-        "body": "Email pairs with domains, hosting, websites, and connectivity. Bundle it to increase ARPU, reduce churn, and deliver a single-provider experience SMBs prefer."
-      },
-      {
-        "title": "Consolidate legacy platforms",
-        "body": "Replace fragmented, outdated email systems with a single modern platform. Hostopia's migration team handles the transition — you reduce operational complexity and cost."
-      }
-    ]
-  },
-
-  "lifecycleFit": {
-    "eyebrow": "Portfolio fit",
-    "heading": "The Foundation of Every Business Relationship",
-    "intro": "Email is the first digital product most businesses use every day. It anchors the entire portfolio — from domains and websites to marketing and security.",
-    "steps": [
-      { "step": "01", "title": "Build a Brand", "body": "Business Email on a custom domain establishes professional identity from day one.", "highlight": true, "productName": "Business Email" },
-      { "step": "02", "title": "Get Online", "body": "Websites and hosting launch the digital presence." },
-      { "step": "03", "title": "Get Found", "body": "SEO, directories, and reputation management drive visibility." },
-      { "step": "04", "title": "Grow", "body": "Ecommerce, email marketing, and advanced services drive revenue growth." }
-    ],
-    "positioning": "Position email as the anchor product that bundles with everything — domains, hosting, websites, and connectivity. Every customer needs it, every product benefits from it, and switching costs keep retention high."
-  },
-
-  "cta": {
-    "headline": "Ready to Make Business Email Your Anchor Product?",
-    "body": "Connect with Hostopia to launch white-label Business Email, migrate existing users with zero downtime, and bundle it with the connectivity and digital services you already sell.",
-    "buttonText": "Book a Demo"
   },
 
   "media": {
@@ -136,5 +75,92 @@
       "alt": "Professional business email under your brand",
       "priority": true
     }
+  },
+
+  "features": {
+    "eyebrow": "What you deliver",
+    "heading": "A Complete Email Platform — Packaged Your Way",
+    "intro": "Hostopia handles the infrastructure, security, and support. You control the packaging, pricing, and customer experience — and position yourself as the email provider every SMB relies on every day.",
+    "cards": [
+      {
+        "icon": "Mail",
+        "title": "Flexible Email Tiers",
+        "body": "Domain-based business email, consumer email, or both. Storage tiers at 3 GB, 6 GB, 9 GB, and 12 GB — so you can tailor plans, upsell premium options, and monetize overages."
+      },
+      {
+        "icon": "Shield",
+        "title": "Enterprise-Grade Security",
+        "body": "Built-in anti-virus, configurable spam filtering, trusted and blocked sender lists, and optional backup. Security SMBs need but rarely configure on their own — delivered by default."
+      },
+      {
+        "icon": "Users",
+        "title": "Built-In Productivity Tools",
+        "body": "Shared calendars, contacts, tasks, and traffic alerts keep SMB teams synchronized — turning email into a lightweight collaboration platform with no additional apps required."
+      },
+      {
+        "icon": "RefreshCw",
+        "title": "Expert Email Migration",
+        "body": "Proprietary migration tools and an experienced migrations team move users from legacy platforms with zero downtime, zero data loss, and zero customer churn."
+      },
+      {
+        "icon": "Headphones",
+        "title": "24/7 End-User Support",
+        "body": "Hostopia's support team handles end-user email issues around the clock under your brand — reducing your support overhead without compromising the customer experience."
+      },
+      {
+        "icon": "Smartphone",
+        "title": "Universal Client Support",
+        "body": "Full IMAP, POP, and SMTP compatibility with Outlook, Apple Mail, mobile clients, and webmail. Works everywhere SMBs already work, on every device they already own."
+      }
+    ]
+  },
+
+  "partnerAdvantage": {
+    "eyebrow": "The partner advantage",
+    "heading": "The Anchor Product That Holds Your Portfolio Together",
+    "intro": "Email is the highest-usage digital product in your stack. The partner who delivers it becomes the partner SMBs depend on every day — and the one they'll never switch away from casually.",
+    "items": [
+      {
+        "title": "Highest-usage, highest-retention product in the stack",
+        "body": "SMBs check email dozens of times a day. That frequency creates the deepest possible engagement — and the strongest retention hook of any product in your portfolio."
+      },
+      {
+        "title": "Natural attach with domains and hosting",
+        "body": "Every domain registration is an email opportunity. Every website deployment is a professional email upgrade. Email bundles naturally with your core services and boosts attach across the board."
+      },
+      {
+        "title": "Zero-downtime migrations win competitive takeovers",
+        "body": "Hostopia's migration capability turns \"we can move you\" from a sales promise into a proven, no-risk outcome. You win more competitive deals and migrate bigger books of business without customer disruption."
+      },
+      {
+        "title": "Enterprise platform, SMB pricing",
+        "body": "The same infrastructure that powers enterprise email — delivered at pricing that works for SMBs and margins that work for you. No platform to build, no operations to staff."
+      }
+    ]
+  },
+
+  "lifecycleFit": {
+    "eyebrow": "Portfolio fit",
+    "heading": "The Foundation of Every Business Relationship",
+    "intro": "Email is the first digital product most businesses use every day. It anchors the entire portfolio — from domains and websites to marketing and security — and gives partners the highest-frequency touchpoint in the stack.",
+    "steps": [
+      {
+        "step": "01",
+        "title": "Build a Brand",
+        "body": "Domain-based Business Email establishes the SMB's professional identity — the address on every business card, every quote, every customer reply.",
+        "highlight": true,
+        "productName": "Business Email"
+      },
+      { "step": "02", "title": "Get Online", "body": "Websites, hosting, and Marketing Essentials build on the foundation of a professional email presence.", "highlight": false },
+      { "step": "03", "title": "Get Found", "body": "Directory listings, reputation, and SEO expand visibility once the core presence is live.", "highlight": false },
+      { "step": "04", "title": "Grow", "body": "Marketing 360 and advanced services scale the business on top of trusted, secure communications infrastructure.", "highlight": false }
+    ],
+    "positioning": "Position email as the anchor product that bundles with everything — domains, hosting, websites, and connectivity. Every customer needs it, every product benefits from it, and switching costs keep retention high for years."
+  },
+
+  "cta": {
+    "headline": "Ready to Launch White-Label Business Email Under Your Brand?",
+    "body": "Connect with Hostopia to launch white-label Business Email, migrate existing users with zero downtime, and bundle it with the connectivity and digital services you already sell.",
+    "buttonText": "Book a Demo"
   }
 }

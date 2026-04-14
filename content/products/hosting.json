@@ -12,51 +12,57 @@
       "multi-site hosting for agencies",
       "white-label WordPress hosting"
     ],
-    "metaTitle": "White-Label Website Hosting for Service Providers | Hostopia",
-    "metaDescription": "Deliver secure, scalable website hosting under your brand. Serve SMBs and agencies alike with Hostopia's white-label hosting platform — no infrastructure to build.",
+    "metaTitle": "White-Label Website Hosting for Partners | Hostopia",
+    "metaDescription": "Deliver secure, scalable hosting under your brand. Hostopia's white-label platform serves SMBs, agencies, and developers with no infrastructure to build.",
     "urlSlug": "/products/hosting"
   },
 
   "hero": {
     "eyebrow": "Website Hosting by Hostopia",
     "headline": "Enterprise-Grade Hosting Infrastructure — Sold Under Your Brand",
-    "subheadline": "Some SMBs need more than a website builder. Agencies need multi-site management. Developers need configurable environments. Your hosting platform needs to serve them all.",
-    "description": "Hostopia's white-label Website Hosting lets you deliver secure, scalable infrastructure under your brand — from simple managed hosting for SMBs to advanced multi-site environments for agencies and developers. No hosting stack to build or maintain.",
+    "description": "Some SMBs need more than a website builder, agencies need multi-site management, and developers need configurable environments. Hostopia's white-label Website Hosting delivers secure, scalable infrastructure under your brand — from managed hosting for small businesses to advanced multi-site environments for agencies and technical users — with no stack for you to build.",
     "cta": { "primary": "Book a Demo", "secondary": "Talk to Partner Success" },
-    "badge": "Secure hosting infrastructure, white-labeled",
     "sidebar": {
       "heading": "Your customers get",
       "items": [
         {
-          "title": "Deploy beyond builders",
-          "body": "Host WordPress, custom CMS sites, or any web application in a secure, managed environment.",
+          "title": "Deploy beyond what builders can handle",
+          "body": "Website builders are perfect for a huge segment of SMBs, but plenty of customers outgrow them or start out needing more. Hostopia's hosting supports WordPress, Joomla, custom CMS platforms, and any modern web application in a secure managed environment. Owners can install the themes and plugins they want, developers can access files and databases directly, and agencies can build anything a client requests. It's the platform that serves the customers your builder can't, under the same brand and the same relationship.",
           "image": {
             "src": "https://images.unsplash.com/photo-1558494949-ef010cbdcc31?q=80&w=1200&auto=format&fit=crop",
             "alt": "Server infrastructure and web hosting"
           }
         },
         {
-          "title": "Scale with confidence",
-          "body": "Resource tiers grow with traffic and complexity — no surprise outages or forced migrations.",
+          "title": "Scale confidently as traffic and complexity grow",
+          "body": "Success breaks cheap hosting. Traffic spikes, database growth, and feature sprawl expose the limits of entry-level plans — and forced migrations destroy customer trust. Hostopia's resource tiers scale cleanly as customers grow, with performance SLAs, high-availability architecture, and enterprise-grade data centers doing the heavy lifting in the background. Customers stay on your platform through their entire growth curve, and you never lose a good account to a capacity problem.",
           "image": {
             "src": "https://images.unsplash.com/photo-1451187580459-43490279c0fa?q=80&w=1200&auto=format&fit=crop",
             "alt": "Scalable cloud and network capacity"
           }
         },
         {
-          "title": "Manage multiple sites",
-          "body": "Multi-site plans let agencies and developers manage client environments from a single dashboard.",
+          "title": "Manage multiple sites from a single dashboard",
+          "body": "Agencies and freelancers live in multi-site environments — and the hosting platform either helps them or gets in their way. Hostopia's multi-site plans give agencies a single branded dashboard to provision new environments, manage access, monitor usage, and deploy client sites without logging in and out across accounts. That operational efficiency makes you the hosting provider agencies actually recommend, which turns every partner into a multiplier for your base.",
           "image": {
             "src": "https://images.unsplash.com/photo-1551288049-bebda4e38f71?q=80&w=1200&auto=format&fit=crop",
             "alt": "Multi-site hosting dashboard"
           }
         },
         {
-          "title": "Bundle everything",
-          "body": "Domains, SSL, email, and ecommerce integrate directly — one platform, one brand, one bill.",
+          "title": "Bundle domains, SSL, email, and ecommerce into one experience",
+          "body": "Hosting is the natural hub where every digital service plugs in. Domains route here, SSL installs here, business email connects here, and ecommerce deploys on top of it. Hostopia's platform ties all of those services together under a single customer dashboard, a single brand, and a single bill — turning the hosting purchase into a gateway product that pulls the rest of the portfolio along with it.",
           "image": {
             "src": "https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?q=80&w=1200&auto=format&fit=crop",
             "alt": "Integrated digital services bundle"
+          }
+        },
+        {
+          "title": "Get technical flexibility without technical burden",
+          "body": "Customers who need SSH access, custom PHP versions, cron jobs, or database tooling can have them — without you operating the underlying infrastructure. Hostopia manages the data centers, security, patching, backups, and performance so your technical customers get the configurability they demand while your operations team stays focused on selling and supporting, not running servers.",
+          "image": {
+            "src": "https://images.unsplash.com/photo-1558494949-ef010cbdcc31?q=80&w=1200&auto=format&fit=crop",
+            "alt": "Technical hosting configuration"
           }
         }
       ]
@@ -66,7 +72,8 @@
   "media": {
     "heroImage": {
       "src": "https://images.unsplash.com/photo-1558494949-ef010cbdcc31?q=80&w=1600&auto=format&fit=crop",
-      "alt": "Website hosting and data center"
+      "alt": "Website hosting and data center",
+      "priority": true
     },
     "vimeoOverview": {
       "vimeoId": "1177816892",
@@ -81,28 +88,38 @@
 
   "features": {
     "eyebrow": "What you deliver",
-    "heading": "Hosting for Every Customer Segment — Under One Platform",
-    "intro": "Tiered plans and flexible architecture mean you serve SMBs, WordPress users, developers, and agencies from the same white-label platform.",
+    "heading": "Hosting for Every Customer Segment — One Platform",
+    "intro": "Tiered plans and flexible architecture let you serve first-time SMBs, WordPress users, developers, and agencies from the same white-label platform — with centralized provisioning, SSO, and branded management built in.",
     "cards": [
       {
         "icon": "Shield",
         "title": "Secure, Reliable Infrastructure",
-        "body": "Enterprise-grade data centers, high-availability architecture, and performance SLAs your customers can depend on."
+        "body": "Enterprise-grade data centers, high-availability architecture, and performance SLAs your customers can depend on — backed by 24/7 operations your team never has to staff."
       },
       {
         "icon": "Layers",
         "title": "Multi-Site Management",
-        "body": "Purpose-built plans for agencies and developers managing multiple client websites — with virtualized environments, access controls, and usage visibility."
+        "body": "Purpose-built plans for agencies and developers managing multiple client websites — with virtualized environments, access controls, and per-site usage visibility."
       },
       {
         "icon": "Settings",
         "title": "CMS & Custom Site Support",
-        "body": "Host WordPress, Joomla, or custom-built sites. Full control over files, databases, and configurations for technically advanced customers."
+        "body": "Host WordPress, Joomla, or custom-built sites. Full control over files, databases, PHP versions, and configurations for technically advanced customers."
       },
       {
         "icon": "Link",
         "title": "Integrated Digital Services",
-        "body": "Domains, SSL, business email, and ecommerce plug directly into the hosting experience. Your customers manage everything from one branded dashboard."
+        "body": "Domains, SSL, business email, and ecommerce plug directly into the hosting experience. Customers manage everything from one branded dashboard."
+      },
+      {
+        "icon": "Zap",
+        "title": "Automated Provisioning",
+        "body": "New hosting accounts spin up automatically after purchase. No manual setup, no waiting, no bottleneck on your team — and no delay for your customer."
+      },
+      {
+        "icon": "Key",
+        "title": "White-Label Control & SSO",
+        "body": "Your brand, your URL, your pricing, your commercial model. Single sign-on ties hosting to the rest of the products in your platform for a unified experience."
       }
     ]
   },
@@ -110,23 +127,23 @@
   "partnerAdvantage": {
     "eyebrow": "The partner advantage",
     "heading": "Own the Infrastructure Layer — Without Building It",
-    "intro": "Hosting anchors your SMB customers on your platform. The longer they host with you, the harder it is to leave.",
+    "intro": "Hosting anchors your SMB customers on your platform. The longer they host with you, the harder it is to leave — and the more products they layer on top.",
     "items": [
       {
         "title": "Serve every maturity level",
-        "body": "From first-time SMB website owners to agencies managing dozens of client sites — one hosting platform serves them all under your brand."
+        "body": "From first-time SMB website owners to agencies managing dozens of client sites — one hosting platform serves them all under your brand, with the right tier for each segment."
       },
       {
         "title": "Drive recurring revenue through tiers and add-ons",
-        "body": "Tiered hosting plans plus bundled domains, SSL, and email create multiple revenue streams from a single customer relationship."
+        "body": "Tiered hosting plans plus bundled domains, SSL, and email create multiple recurring revenue streams from a single customer relationship — with attach rates that compound over time."
       },
       {
-        "title": "Retain technical customers",
-        "body": "Agencies and developers managing multi-site environments on your platform are deeply embedded — that's structural retention, not just contract retention."
+        "title": "Retain technical customers structurally",
+        "body": "Agencies and developers managing multi-site environments on your platform are deeply embedded. That's structural retention — not just contract retention — and it protects your highest-value accounts."
       },
       {
         "title": "Skip the infrastructure investment",
-        "body": "Hostopia provides the data centers, tooling, and operations. You get a white-label platform with automated provisioning, SSO, and centralized management."
+        "body": "Hostopia provides the data centers, tooling, and operations. You get a white-label platform with automated provisioning, SSO, and centralized management — with zero capital investment in infrastructure."
       }
     ]
   },
@@ -134,12 +151,18 @@
   "lifecycleFit": {
     "eyebrow": "Portfolio fit",
     "heading": "The Infrastructure Foundation for Your Digital Portfolio",
-    "intro": "Hosting sits alongside Website Builder and Website Design — ensuring you can serve every customer segment from first-time SMBs to advanced agencies.",
+    "intro": "Hosting sits alongside Website Builder and Website Design — ensuring you can serve every customer segment from first-time SMBs to advanced agencies without sending anyone elsewhere.",
     "steps": [
-      { "step": "01", "title": "Build a Brand", "body": "Domains, logo, and professional email establish the SMB identity." },
-      { "step": "02", "title": "Get Online", "body": "Website Builder for DIY, Website Design for DIFM, Hosting for technical and agency customers.", "highlight": true, "productName": "Website Hosting" },
-      { "step": "03", "title": "Get Found", "body": "SEO, directories, and reputation management drive visibility." },
-      { "step": "04", "title": "Grow", "body": "Ecommerce, email marketing, and custom development fuel growth." }
+      { "step": "01", "title": "Build a Brand", "body": "Domains, logo design, and professional email establish the SMB's identity before the site ever goes live.", "highlight": false },
+      {
+        "step": "02",
+        "title": "Get Online",
+        "body": "Website Builder covers DIY, Website Design covers done-for-me, and Hosting covers the technical and agency customers who need more control.",
+        "highlight": true,
+        "productName": "Website Hosting"
+      },
+      { "step": "03", "title": "Get Found", "body": "SEO, directories, and reputation management drive visibility once the site is live and performing.", "highlight": false },
+      { "step": "04", "title": "Grow", "body": "Ecommerce, email marketing, and custom development fuel growth on the same infrastructure — with no replatforming required.", "highlight": false }
     ],
     "positioning": "Position hosting as an upgrade path for advanced users, a foundation for ecommerce deployments, a natural attach with domains and SSL, and the core infrastructure service for agency and developer segments."
   },

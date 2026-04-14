@@ -12,51 +12,57 @@
       "ecommerce for service providers",
       "white-label online store"
     ],
-    "metaTitle": "White-Label Ecommerce & Online Store for Service Providers | Hostopia",
-    "metaDescription": "Offer a turnkey online store under your brand. Hostopia's white-label ecommerce platform helps SMBs sell online with 40+ payment gateways, social selling, and zero transaction fees.",
+    "metaTitle": "White-Label Ecommerce & Online Store | Hostopia",
+    "metaDescription": "Offer a turnkey online store under your brand. Hostopia's white-label ecommerce platform delivers 40+ payment gateways, social selling, and zero transaction fees.",
     "urlSlug": "/products/ecommerce"
   },
 
   "hero": {
     "eyebrow": "Online Store by Hostopia",
     "headline": "Help Your SMB Customers Start Selling Online — Under Your Brand",
-    "subheadline": "SMBs face growing pressure to sell online, but most lack the skills, budget, or time to manage a full ecommerce stack.",
-    "description": "Hostopia's white-label Online Store gives you a turnkey, mobile-ready ecommerce platform to resell under your brand. Integrated with Online Presence Builder, SMBs add a store to their existing website with one click — then scale as they grow.",
+    "description": "SMBs face growing pressure to sell online, but most lack the skills, budget, or time to manage a full ecommerce stack. Hostopia's white-label Online Store is a turnkey, mobile-ready ecommerce platform you resell under your brand — integrated with Online Presence Builder so SMBs add a store with one click and scale as they grow.",
     "cta": { "primary": "Book a Demo", "secondary": "Talk to Partner Success" },
-    "badge": "Integrated ecommerce, white-labeled for partners",
     "sidebar": {
       "heading": "Your SMB customers can",
       "items": [
         {
-          "title": "Launch a store fast",
-          "body": "A guided 5-step setup wizard handles products, taxes, shipping, and payment configuration.",
+          "title": "Launch a real store fast — without a consultant",
+          "body": "Most SMB ecommerce projects stall on the setup alone: tax rules, shipping rates, payment gateways, and product imports overwhelm owners before they sell a single item. Hostopia's guided 5-step setup wizard walks customers through products, taxes, shipping, and payment configuration in one session — with sensible defaults that actually work. Owners finish setup in an afternoon instead of giving up after a weekend, which means more stores go live, more products get listed, and more customers start transacting on your platform.",
           "image": {
             "src": "https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?q=80&w=1200&auto=format&fit=crop",
             "alt": "Quick online store setup and checkout"
           }
         },
         {
-          "title": "Sell everywhere",
-          "body": "Website, Facebook, Instagram, TikTok, Pinterest, Amazon, and Google Shopping — all from one dashboard.",
+          "title": "Sell everywhere their customers already are",
+          "body": "Modern commerce isn't one storefront — it's a dozen. Hostopia's Online Store publishes products to the SMB's website, Facebook, Instagram, TikTok, Pinterest, Amazon, and Google Shopping from a single dashboard, with centralized inventory and order management keeping everything synchronized. Owners never manually copy a product to three platforms again, and customers browse wherever they discover the brand. For you, that breadth differentiates your ecommerce offering from single-channel builders and justifies premium pricing.",
           "image": {
             "src": "https://images.unsplash.com/photo-1611162616305-69b3cf1bfe93?q=80&w=1200&auto=format&fit=crop",
             "alt": "Multi-channel social and online selling"
           }
         },
         {
-          "title": "Accept any payment",
-          "body": "40+ gateways including PayPal and Square, with multi-currency and real-time shipping support.",
+          "title": "Accept any payment, in any currency, on any device",
+          "body": "Payment friction kills checkouts. Hostopia supports 40+ gateways including PayPal, Square, Stripe, and regional processors, plus multi-currency support and real-time shipping quotes from major carriers. Customers check out on desktop, tablet, or smartphone with a responsive experience optimized for the device they're on — which is overwhelmingly mobile. Fewer abandoned carts, higher conversion, and no \"can I pay another way?\" emails for your support team to handle.",
           "image": {
             "src": "https://images.unsplash.com/photo-1563013544-824ae1b704d3?q=80&w=1200&auto=format&fit=crop",
             "alt": "Payment terminals and ecommerce checkout"
           }
         },
         {
-          "title": "Keep full margins",
-          "body": "Zero transaction fees. SMBs retain every dollar of margin on every sale.",
+          "title": "Keep every dollar of margin with zero transaction fees",
+          "body": "Transaction fees from some platforms quietly eat 1–2% of every sale — a massive tax on SMBs already operating on thin margins. Hostopia's Online Store charges zero transaction fees, so owners keep the full margin on every sale after payment processor costs. That's real money back in the business each month, and it's one of the easiest differentiators for your sales team to articulate against competing platforms during deal conversations.",
           "image": {
             "src": "https://images.unsplash.com/photo-1579621970563-ebec7560ff3e?q=80&w=1200&auto=format&fit=crop",
             "alt": "Revenue growth and healthy business margins"
+          }
+        },
+        {
+          "title": "Grow without replatforming as the store scales",
+          "body": "Most SMBs abandon their first store when traffic or product count outgrows the platform — and the migration to a bigger system is where they churn. Hostopia's tiered plans, multi-channel architecture, and enterprise-grade infrastructure support stores from their first 10 products to their first 10,000 — on the same platform, under the same brand, with no re-migration required. Customers stay with you through their entire growth curve, and you capture the upsell revenue instead of losing it to a new provider.",
+          "image": {
+            "src": "https://images.unsplash.com/photo-1556740758-90de374c12ad?q=80&w=1200&auto=format&fit=crop",
+            "alt": "Ecommerce scaling and growth"
           }
         }
       ]
@@ -65,35 +71,46 @@
 
   "media": {
     "heroImage": {
-      "src": "https://images.unsplash.com/photo-1556740758-90de374c12ad?q=80&w=1600&auto=format&fit=crop",
-      "alt": "Ecommerce online store and retail selling"
+      "src": "https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?w=2000&q=80",
+      "alt": "Merchant managing an online store on a tablet",
+      "priority": true
     }
   },
 
   "features": {
     "eyebrow": "What you deliver",
     "heading": "Full-Featured Ecommerce — Without the Complexity",
-    "intro": "Online Store provides everything SMBs need to sell online, integrated into the website they already have with you.",
+    "intro": "Online Store gives SMBs everything they need to sell online, integrated into the website they already have with you — and scalable across every revenue channel as they grow.",
     "cards": [
       {
         "icon": "ShoppingCart",
         "title": "One-Click Store Activation",
-        "body": "Add a fully functional online store to any Online Presence Builder website with one click. No migration, no separate platform, no disruption."
+        "body": "Add a fully functional online store to any Online Presence Builder website with one click. No migration, no separate platform, no disruption to the existing site."
       },
       {
         "icon": "Smartphone",
         "title": "Mobile-Ready Commerce",
-        "body": "Responsive storefront, checkout, and product browsing optimized for smartphones and tablets — where the majority of shopping happens."
+        "body": "Responsive storefront, checkout, and product browsing optimized for smartphones and tablets — where the majority of SMB customers actually shop."
       },
       {
         "icon": "Share2",
         "title": "Multi-Channel Selling",
-        "body": "Sell on the website plus Facebook, Instagram, TikTok, Pinterest, Amazon, and Google Shopping Ads — with centralized inventory and order management."
+        "body": "Sell on the website plus Facebook, Instagram, TikTok, Pinterest, Amazon, and Google Shopping — with centralized inventory and unified order management."
+      },
+      {
+        "icon": "CreditCard",
+        "title": "40+ Payment Gateways",
+        "body": "PayPal, Square, Stripe, and regional gateways, with multi-currency support and real-time shipping quotes. Customers check out however they prefer to pay."
       },
       {
         "icon": "TrendingUp",
         "title": "Revenue-Driving Tools",
-        "body": "Abandoned cart recovery, discount codes, promotions, social selling, and subscription support. Sell physical goods, digital products, or services."
+        "body": "Abandoned cart recovery, discount codes, promotions, subscriptions, and social selling — turning every visitor touch into a chance to convert or re-engage."
+      },
+      {
+        "icon": "Percent",
+        "title": "Zero Transaction Fees",
+        "body": "SMBs keep the full margin on every sale. Hostopia charges no platform transaction fees — a clean differentiator your sales team can own in every ecommerce conversation."
       }
     ]
   },
@@ -105,7 +122,7 @@
     "items": [
       {
         "title": "Expand ARPU from existing customers",
-        "body": "Every website customer is a potential store customer. Tiered ecommerce plans let SMBs upgrade as they add products, traffic, and revenue channels."
+        "body": "Every website customer is a potential store customer. Tiered ecommerce plans let SMBs upgrade as they add products, traffic, and revenue channels — compounding spend on your platform."
       },
       {
         "title": "Bundle into a complete digital stack",
@@ -113,7 +130,11 @@
       },
       {
         "title": "Offer DIY and managed models",
-        "body": "Self-serve setup for tech-comfortable SMBs, or managed DIFM service for higher-touch clients. Same platform, two revenue models."
+        "body": "Self-serve setup for tech-comfortable SMBs, or managed DIFM service for higher-touch clients. Same platform, two revenue models, broader addressable market."
+      },
+      {
+        "title": "Differentiate on fees and reach",
+        "body": "Zero transaction fees plus multi-channel selling give your sales team clean, quantifiable differentiators against every major competitor in the ecommerce category."
       }
     ]
   },
@@ -121,27 +142,25 @@
   "lifecycleFit": {
     "eyebrow": "Portfolio fit",
     "heading": "The Growth Layer in Your Digital Portfolio",
-    "intro": "Online Store sits at the intersection of 'Get Online' and 'Grow' — the natural next step for any SMB with a website and an audience ready to buy.",
+    "intro": "Online Store sits at the intersection of \"Get Online\" and \"Grow\" — the natural next step for any SMB with a website and an audience ready to buy.",
     "steps": [
-      { "step": "01", "title": "Build a Brand", "body": "Domains, logo, and professional email establish the SMB identity." },
-      { "step": "02", "title": "Get Online", "body": "Website Builder, DIFM design, or custom development launches their presence." },
-      { "step": "03", "title": "Get Found", "body": "SEO, directories, and reputation management drive traffic to the site." },
-      { "step": "04", "title": "Grow", "body": "Online Store converts that traffic into revenue with multi-channel selling.", "highlight": true, "productName": "Online Store" }
+      { "step": "01", "title": "Build a Brand", "body": "Domains, logo design, and professional email establish the SMB identity.", "highlight": false },
+      { "step": "02", "title": "Get Online", "body": "Website Builder, DIFM Website Design, or Custom Website Development launches the digital presence.", "highlight": false },
+      { "step": "03", "title": "Get Found", "body": "SEO, directory listings, and reputation management drive qualified traffic to the site.", "highlight": false },
+      {
+        "step": "04",
+        "title": "Grow",
+        "body": "Online Store converts that traffic into revenue with multi-channel selling, integrated payments, and growth-ready tools.",
+        "highlight": true,
+        "productName": "Online Store"
+      }
     ],
-    "positioning": "Position ecommerce as the natural upgrade for any website customer ready to sell, a bundle anchor with SSL and payment security, and the gateway to email marketing and promotional tools."
+    "positioning": "Position ecommerce as the natural upgrade for any website customer ready to sell, a bundle anchor with SSL and payment security, and the gateway into email marketing and promotional tools."
   },
 
   "cta": {
     "headline": "Ready to Make Ecommerce a Growth Engine Under Your Brand?",
-    "body": "Connect with Hostopia to launch your white-label Online Store, bundle it with web and security products, and help SMBs start selling online — quickly, confidently, and under your brand.",
+    "body": "Connect with Hostopia to launch your white-label Online Store, bundle it with web and security products, and help SMBs start selling online quickly, confidently, and under your brand.",
     "buttonText": "Book a Demo"
-  },
-
-  "media": {
-    "heroImage": {
-      "src": "https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?w=2000&q=80",
-      "alt": "Merchant managing an online store on a tablet",
-      "priority": true
-    }
   }
 }
