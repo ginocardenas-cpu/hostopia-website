@@ -28,7 +28,7 @@
           "title": "Find the perfect domain in seconds",
           "body": "The right domain is half the battle for a new small business — and the search often stalls the moment their first choice is taken. Hostopia's intelligent search spans 24+ extensions, from .com and .net to country-specific TLDs like .ca, .mx, and .us, plus premium domains from trusted secondary markets. Smart suggestions surface strong alternatives when the obvious choice isn't available, so customers walk away with a name they love instead of a registration they settle for. Fewer abandoned checkouts, more activated accounts, and a faster path to everything you sell next.",
           "image": {
-            "src": "https://images.unsplash.com/photo-1451187580459-43490279c0fa?q=80&w=1200&auto=format&fit=crop",
+            "src": "/Domain%20Page/New%20Images/domain%20page%20slider%2001.jpg",
             "alt": "Domain search and global DNS concept"
           }
         },
@@ -36,7 +36,7 @@
           "title": "Look professional from the first email",
           "body": "A Gmail address tells prospects a business is small. A domain-based email tells them it's legit. The moment the domain is registered, Hostopia makes it trivial to activate business email on that same domain — the single highest-attach service in the portfolio. Your customers project credibility from day one, and you turn every domain sale into a second product sale inside the first five minutes. For SMB owners who care about looking professional (which is all of them), it's a difference they feel instantly.",
           "image": {
-            "src": "https://images.unsplash.com/photo-1563986768609-322da13575f3?q=80&w=1200&auto=format&fit=crop",
+            "src": "/Domain%20Page/New%20Images/domain%20page%20slider%2002.jpg",
             "alt": "Professional business email and branding"
           }
         },
@@ -44,7 +44,7 @@
           "title": "Manage everything from one branded dashboard",
           "body": "Most SMB owners lose track of where their domain lives, when it renews, and who to call when DNS breaks. Hostopia's white-label dashboard consolidates DNS settings, forwarding rules, auto-renewals, expiration tracking, and bulk transfers — all under your brand, with your support as the one number to call. Renewals become effortless, accidental lapses disappear, and your support team sees fewer panicked \"my email stopped working\" tickets tied to expired domains. One dashboard, one provider, one source of truth.",
           "image": {
-            "src": "https://images.unsplash.com/photo-1551288049-bebda4e38f71?q=80&w=1200&auto=format&fit=crop",
+            "src": "/Domain%20Page/New%20Images/domain%20page%20slider%2003.jpg",
             "alt": "Dashboard for managing domains and DNS"
           }
         },
@@ -52,7 +52,7 @@
           "title": "Expand into the full digital stack when they're ready",
           "body": "A domain is a foothold. Websites, SSL, ecommerce, and marketing services are where the real relationship is built. Hostopia's platform ties every digital service back to the domain the customer already owns with you — so adding email, hosting, or a store takes a click, not a migration. Your customers get a seamless upgrade path; you get the natural attach motion that turns a $15 registration into a multi-product account with years of recurring revenue.",
           "image": {
-            "src": "https://images.unsplash.com/photo-1460925895917-afdab827c52f?q=80&w=1200&auto=format&fit=crop",
+            "src": "/Domain%20Page/New%20Images/domain%20page%20slider%2004.jpg",
             "alt": "Growing digital services connected to a domain"
           }
         },
@@ -60,7 +60,7 @@
           "title": "Stay protected with auto-renewals and security defaults",
           "body": "Domains lapse more often than they should, and lost domains break email, websites, and reputation all at once. Hostopia's auto-renewal, expiration alerts, and registrar-grade security defaults protect every customer from accidental loss. Optional privacy protection shields personal information from public WHOIS records, and two-factor authentication safeguards transfers. For partners, that means fewer escalated recovery tickets — for customers, it means one less thing to worry about.",
           "image": {
-            "src": "https://images.unsplash.com/photo-1451187580459-43490279c0fa?q=80&w=1200&auto=format&fit=crop",
+            "src": "/Domain%20Page/New%20Images/domain%20page%20slider%2005.jpg",
             "alt": "Domain security and renewal protection"
           }
         }
@@ -70,9 +70,13 @@
 
   "media": {
     "heroImage": {
-      "src": "/Domain%20Page/New%20Images/domains-page-header2.png",
+      "src": "/Domain%20Page/New%20Images/domains-page-header2%20(1).png",
       "alt": "Domain search and SMB digital presence — composite hero",
       "priority": true
+    },
+    "contentImage": {
+      "src": "/Domain%20Page/New%20Images/key-features-for-SMBs%20(1).png",
+      "alt": "SMB partner exploring domain and digital service features"
     }
   },
 

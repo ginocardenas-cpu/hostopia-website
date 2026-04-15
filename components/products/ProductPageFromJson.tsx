@@ -465,7 +465,7 @@ export default function ProductPageFromJson({ data, navLabel }: { data: ProductJ
                   alt={contentImg.alt}
                   priority={false}
                   sizes="100vw"
-                  quality={88}
+                  quality={92}
                   className="bg-cream object-contain object-center"
                 />
               </div>

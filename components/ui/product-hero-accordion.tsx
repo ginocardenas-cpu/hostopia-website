@@ -83,6 +83,7 @@ export function ProductHeroAccordion({ sectionHeading, items }: ProductHeroAccor
                             alt={item.imageAlt ?? item.title}
                             fill
                             sizes="(max-width: 768px) 100vw, 50vw"
+                            quality={92}
                             className="object-cover"
                           />
                         </div>

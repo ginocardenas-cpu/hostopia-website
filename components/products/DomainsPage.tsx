@@ -78,7 +78,7 @@ export default function DomainsPage({ label }: DomainsPageProps) {
             {/* Right-side: hero image with why-it-matters overlay */}
             <div className="relative rounded-2xl overflow-hidden">
               <Image
-                src="/Domain Page/domains-page-header.png"
+                src="/Domain Page/New Images/domains-page-header2 (1).png"
                 alt="SMB owner with domain and website"
                 width={700}
                 height={520}
@@ -198,7 +198,7 @@ export default function DomainsPage({ label }: DomainsPageProps) {
         <div className="grid md:grid-cols-2 gap-10 items-center">
           <div className="rounded-2xl overflow-hidden">
             <Image
-              src="/Domain Page/key-features-for-SMBs.png"
+              src="/Domain Page/New Images/key-features-for-SMBs (1).png"
               alt="SMB partner exploring domain features"
               width={600}
               height={520}
