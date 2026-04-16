@@ -218,7 +218,7 @@ export default function ProductPageFromJson({ data, navLabel }: { data: ProductJ
                     className={cn(
                       "relative mx-auto w-full min-h-[196px] lg:mx-0 lg:aspect-auto lg:h-[min(85vh,672px)] lg:max-h-[672px] lg:max-w-none",
                       data.slug === SSL_SLUG
-                        ? "aspect-[4/5] max-w-[min(100%,min(92vw,644px))] shadow-none"
+                        ? "aspect-[4/5] max-w-[min(100%,min(92vw,644px))] overflow-hidden shadow-none"
                         : "aspect-[4/3] max-w-[644px] origin-center [transform-style:preserve-3d] [transform:rotateY(-6deg)_rotateX(3deg)] shadow-[0_18px_40px_-14px_rgba(44,44,44,0.22)] sm:min-h-[238px] sm:[transform:rotateY(-11deg)_rotateX(5deg)]",
                     )}
                   >
@@ -230,7 +230,7 @@ export default function ProductPageFromJson({ data, navLabel }: { data: ProductJ
                       quality={data.slug === SSL_SLUG ? 92 : 88}
                       className={
                         data.slug === SSL_SLUG
-                          ? "bg-cream object-contain object-center"
+                          ? "bg-cream object-contain object-center [transform:scale(1.04)] [transform-origin:center]"
                           : "bg-cream object-contain object-center lg:object-right"
                       }
                     />
