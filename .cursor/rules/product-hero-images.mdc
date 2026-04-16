@@ -1,0 +1,25 @@
+---
+description: Product page header hero images — floating treatment, no card frame
+alwaysApply: true
+---
+
+# Product hero images (JSON-driven `/products/[slug]`)
+
+When adding or updating **`media.heroImage`** in `content/products/*.json`, follow this so headers **float on the cream section** without a fake “card,” tilt, or heavy shadow.
+
+## Layout rules (implemented in `ProductPageFromJson.tsx`)
+
+1. **No 3D tilt** — Do not wrap the hero in `perspective` / `rotateY` / `rotateX`. That read as a physical panel with its own lighting.
+2. **No container drop shadow** — Do not use `shadow-[0_18px_40px_-14px_...]` (or similar) on the hero frame; it draws a box on the page.
+3. **Match the section** — Hero image uses **`bg-cream`** with **`object-contain`** and **`object-center`** (or `lg:object-right` where the art is intentionally biased) so letterboxing matches `section.bg-cream`.
+4. **Clip soft outer fringes** — Use **`overflow-hidden`** on the hero frame and a slight **`scale(1.04)`** with **`transform-origin: center`** on the image so baked-in outer shadows or white mats in PNGs are trimmed without changing the JSON path.
+5. **Sharp delivery** — Prefer **`quality={92}`** (or equivalent) on hero `next/image` for local PNGs.
+
+## Assets
+
+- Prefer **hero PNGs** with **no extra white plate** or drop shadow around the composite (transparent or cream bleed is ideal).
+- **JPGs** in `New Images` folders are for reference only unless explicitly wired in JSON.
+
+## Accordion / tabs
+
+Sidebar images for accordions, vertical tabs, etc. stay in **`hero.sidebar.items[].image`**; use **`quality={92}`** on those `Image` components where applicable (see `product-hero-accordion.tsx`, `vertical-tabs.tsx`, `interactive-image-accordion.tsx`).
