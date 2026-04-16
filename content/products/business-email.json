@@ -29,7 +29,7 @@
           "title": "Professional email on their own domain",
           "body": "Business email tied to the customer's own domain builds credibility and trust with every message sent — the difference between being taken seriously and being filtered to spam. Hostopia activates domain-based email immediately after domain registration, so new customers go from \"I just bought my domain\" to \"I'm sending email from my new address\" in minutes, not days. For SMB owners, it's the single most visible upgrade from a generic Gmail account. For partners, it's the single highest-attach product in the portfolio.",
           "image": {
-            "src": "https://images.unsplash.com/photo-1563986768609-322da13575f3?q=80&w=1200&auto=format&fit=crop",
+            "src": "/Business%20Email/New%20Images/business%20email%20slider%2001.jpg",
             "alt": "Professional business email communication"
           }
         },
@@ -37,7 +37,7 @@
           "title": "Ad-free, feature-rich branded webmail",
           "body": "Modern webmail with calendars, contacts, tasks, traffic alerts, and online storage — all under your brand, all with zero advertising. Your customers get the productivity experience they expect from consumer tools, without having their inbox monetized by a competing service. Shared calendars and contact lists turn email into a lightweight collaboration platform for small teams, and the clean, ad-free interface reinforces the premium feel of being on your platform rather than a free tier somewhere else.",
           "image": {
-            "src": "https://images.unsplash.com/photo-1611926653458-09294b3142bf?q=80&w=1200&auto=format&fit=crop",
+            "src": "/Business%20Email/New%20Images/business%20email%20slider%2002.jpg",
             "alt": "Clean webmail and calendar interface"
           }
         },
@@ -45,7 +45,7 @@
           "title": "Enterprise-grade security built in by default",
           "body": "Most SMBs never configure their own spam filters or anti-virus rules — they just suffer the consequences. Hostopia's platform ships with enterprise-grade anti-virus protection, configurable spam filtering, trusted and blocked sender lists, and optional backup included. Security happens quietly in the background, which means fewer \"I got a virus from email\" support tickets and more customers who trust your platform to protect them automatically.",
           "image": {
-            "src": "https://images.unsplash.com/photo-1563013544-824ae1b704d3?q=80&w=1200&auto=format&fit=crop",
+            "src": "/Business%20Email/New%20Images/business%20email%20slider%2003.jpg",
             "alt": "Secure email and infrastructure"
           }
         },
@@ -53,7 +53,7 @@
           "title": "Access anywhere, on any device",
           "body": "Full IMAP, POP, and SMTP support means your customers' email works everywhere they work — Outlook on the desktop, Apple Mail on a Mac, mobile clients on iOS and Android, or clean browser-based webmail from anywhere. No workflow to change, no forced migration to a new client. Owners set up once and move seamlessly between devices. Teams stay synchronized. And you deliver the flexibility expected of modern email without building the infrastructure yourself.",
           "image": {
-            "src": "https://images.unsplash.com/photo-1512941937669-90a1b58e7e9c?q=80&w=1200&auto=format&fit=crop",
+            "src": "/Business%20Email/New%20Images/business%20email%20slider%2004.jpg",
             "alt": "Email on phone and laptop anywhere"
           }
         },
@@ -61,7 +61,7 @@
           "title": "Migrate from legacy platforms without losing a message",
           "body": "Moving email providers is the single scariest change an SMB ever makes — one lost message can end a customer relationship. Hostopia's proprietary migration tools and experienced migrations team move users from legacy platforms with zero downtime and zero data loss, across mailboxes of any size. For partners, it's the difference between winning the migration conversation and losing it. For customers, it's the difference between \"we're switching providers\" and \"we're switching providers, and nothing broke.\"",
           "image": {
-            "src": "https://images.unsplash.com/photo-1551288049-bebda4e38f71?q=80&w=1200&auto=format&fit=crop",
+            "src": "/Business%20Email/New%20Images/business%20email%20slider%2005.jpg",
             "alt": "Email migration and data integrity"
           }
         }
@@ -71,7 +71,7 @@
 
   "media": {
     "heroImage": {
-      "src": "/Business%20Email/New%20Images/business%20email%20header%20(1).png",
+      "src": "/Business%20Email/New%20Images/business%20email%20header%20(2).png",
       "alt": "Professional business email under your brand",
       "priority": true
     }

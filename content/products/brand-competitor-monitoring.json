@@ -28,7 +28,7 @@
           "title": "Stay informed in real time",
           "body": "No more guessing what's happening around their business. Instant email and in-app alerts notify SMBs the moment a new review is posted, a competitor launches a campaign, a ranking drops, or sentiment shifts — delivered straight to the inbox they already check. Instead of logging into five platforms every morning, your customers see everything in a single news feed designed for busy owners who don't have time to be everywhere at once. The result: faster decisions, fewer surprises, and real confidence that nothing important is slipping through the cracks.",
           "image": {
-            "src": "https://images.unsplash.com/photo-1551288049-bebda4e38f71?q=80&w=1200&auto=format&fit=crop",
+            "src": "/Brand%20Monitoring%20Page/New%20Images/brand%20monitoring%20slider%2001.jpg",
             "alt": "Real-time brand monitoring alerts and notifications"
           }
         },
@@ -36,7 +36,7 @@
           "title": "Track competitors to stay one step ahead",
           "body": "Great brands don't just watch themselves — they watch the businesses trying to take their customers. Brand Monitoring tracks competitor rankings, ads, promotions, new reviews, and social activity across the channels that matter most in your customers' local market. Your SMBs see what their rivals are doing, what's working, and where the gaps are — then use that intelligence to sharpen their own pricing, offers, and campaigns. It's the kind of competitive insight that used to take an agency retainer, now built into the services they already buy from you.",
           "image": {
-            "src": "https://images.unsplash.com/photo-1552664730-d307ca884978?q=80&w=1200&auto=format&fit=crop",
+            "src": "/Brand%20Monitoring%20Page/New%20Images/brand%20monitoring%20slider%2002.jpg",
             "alt": "Competitive analysis and market tracking"
           }
         },
@@ -44,7 +44,7 @@
           "title": "Centralize all insights in one place",
           "body": "Reviews live on Google. Mentions happen on Meta. Rankings shift in search. Ads run everywhere. Brand Monitoring pulls all of it into one dashboard — reviews, rankings, mentions, ads, and competitor data — so your customers stop jumping between tabs and start spotting patterns. Easy-to-read trend charts turn scattered data into clear signals, and filters let them zoom in on the channels, keywords, or competitors they care about most. One place. One view. One source of truth for their online presence.",
           "image": {
-            "src": "https://images.unsplash.com/photo-1460925895917-afdab827c52f?q=80&w=1200&auto=format&fit=crop",
+            "src": "/Brand%20Monitoring%20Page/New%20Images/brand%20monitoring%20slider%2003.jpg",
             "alt": "Centralized marketing intelligence dashboard"
           }
         },
@@ -52,7 +52,7 @@
           "title": "Connect and sync key platforms",
           "body": "Brand Monitoring integrates directly with Google Business Profile and Meta (Facebook and Instagram), so your customers can connect the accounts they already use and start monitoring in minutes. No messy setup, no technical lift, no extra tools to learn. Updates and posts sync across platforms from a single interface, which means fewer mistakes, more consistency, and less time spent managing the basics. For your support team, it means fewer setup tickets — for your customers, it means value from day one.",
           "image": {
-            "src": "https://images.unsplash.com/photo-1611162616305-69b3cf1bfe93?q=80&w=1200&auto=format&fit=crop",
+            "src": "/Brand%20Monitoring%20Page/New%20Images/brand%20monitoring%20slider%2004.jpg",
             "alt": "Google Business Profile and Meta platform integration"
           }
         },
@@ -60,7 +60,7 @@
           "title": "Respond to reviews before they escalate",
           "body": "A negative review left unanswered for a week can cost a local business dozens of customers. Brand Monitoring flags new reviews the moment they post — across Google, Facebook, Instagram, and more — and gives owners the context, prompts, and direct links they need to respond quickly and professionally. Positive reviews turn into social proof. Negative reviews get addressed before they spread. And your customers build the kind of reputation that drives repeat business, referrals, and local search visibility over time.",
           "image": {
-            "src": "https://images.unsplash.com/photo-1516321318423-f06f85e504b3?q=80&w=1200&auto=format&fit=crop",
+            "src": "/Brand%20Monitoring%20Page/New%20Images/brand%20monitoring%20slider%2005.jpg",
             "alt": "Review monitoring and response management"
           }
         }
@@ -70,7 +70,7 @@
 
   "media": {
     "heroImage": {
-      "src": "/Brand%20Monitoring%20Page/New%20Images/brand%20monitoring%20header%20(1).png",
+      "src": "/Brand%20Monitoring%20Page/New%20Images/brand%20monitoring%20header%20(2).png",
       "alt": "Brand monitoring and competitor analytics dashboard",
       "priority": true
     }
