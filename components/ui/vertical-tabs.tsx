@@ -206,6 +206,7 @@ export function VerticalTabs({ sectionHeading, items }: VerticalTabsProps) {
                       alt={active.imageAlt}
                       fill
                       sizes="(max-width: 1024px) 100vw, 672px"
+                      quality={92}
                       className="m-0 block object-cover p-0 transition-transform duration-700 hover:scale-105"
                     />
                     <div className="pointer-events-none absolute inset-x-0 bottom-0 h-1/3 bg-gradient-to-t from-black/20 via-transparent to-transparent opacity-60" />
