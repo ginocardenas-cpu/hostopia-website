@@ -35,7 +35,7 @@
         },
         {
           "title": "Scale confidently as traffic and complexity grow",
-          "Traffic spikes, database growth, and sprawl break entry plans—and forced migrations kill trust. Hostopia tiers scale with SLAs, high availability, and enterprise data centers. Customers grow on your platform; you don't lose strong accounts to capacity limits.",
+          "body": "Traffic spikes, database growth, and sprawl break entry plans—and forced migrations kill trust. Hostopia tiers scale with SLAs, high availability, and enterprise data centers. Customers grow on your platform; you don't lose strong accounts to capacity limits.",
           "image": {
             "src": "https://images.unsplash.com/photo-1451187580459-43490279c0fa?q=80&w=1200&auto=format&fit=crop",
             "alt": "Scalable cloud and network capacity"
@@ -43,7 +43,7 @@
         },
         {
           "title": "Manage multiple sites from a single dashboard",
-          "Agencies live in multi-site workflows—the stack either helps or fights them. One branded dashboard provisions environments, access, usage, and client deploys without account hopping. That speed makes you the host partners recommend and turns every agency into distribution.",
+          "body": "Agencies live in multi-site workflows—the stack either helps or fights them. One branded dashboard provisions environments, access, usage, and client deploys without account hopping. That speed makes you the host partners recommend and turns every agency into distribution.",
           "image": {
             "src": "https://images.unsplash.com/photo-1551288049-bebda4e38f71?q=80&w=1200&auto=format&fit=crop",
             "alt": "Multi-site hosting dashboard"
@@ -51,7 +51,7 @@
         },
         {
           "title": "Bundle domains, SSL, email, and ecommerce into one experience",
-          "Hosting is the hub: domains, SSL, email, and ecommerce land in one stack. One dashboard, one brand, one bill—so every hosting sale becomes the gateway that pulls the rest of your portfolio.",
+          "body": "Hosting is the hub: domains, SSL, email, and ecommerce land in one stack. One dashboard, one brand, one bill—so every hosting sale becomes the gateway that pulls the rest of your portfolio.",
           "image": {
             "src": "https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?q=80&w=1200&auto=format&fit=crop",
             "alt": "Integrated digital services bundle"
@@ -59,7 +59,7 @@
         },
         {
           "title": "Get technical flexibility without technical burden",
-          "SSH, PHP versions, cron, and database tools—without you running metal. Hostopia operates data centers, security, patching, backups, and performance so technical buyers get control while your team sells and supports, not babysits servers.",
+          "body": "SSH, PHP versions, cron, and database tools—without you running metal. Hostopia operates data centers, security, patching, backups, and performance so technical buyers get control while your team sells and supports, not babysits servers.",
           "image": {
             "src": "https://images.unsplash.com/photo-1558494949-ef010cbdcc31?q=80&w=1200&auto=format&fit=crop",
             "alt": "Technical hosting configuration"
