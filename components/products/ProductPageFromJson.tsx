@@ -96,6 +96,7 @@ const VERTICAL_TABS_LAYOUT_SLUGS = new Set([
 
 const HOSTING_SLUG = "hosting";
 const BUSINESS_EMAIL_SLUG = "business-email";
+const SSL_SLUG = "ssl";
 
 const FALLBACK_SIDEBAR_IMAGE =
   "https://images.unsplash.com/photo-1626785774573-4b799315345d?q=80&w=1200&auto=format&fit=crop";
@@ -214,15 +215,22 @@ export default function ProductPageFromJson({ data, navLabel }: { data: ProductJ
                   style={{ perspective: "1600px" }}
                 >
                   <div
-                    className="relative mx-auto aspect-[4/3] w-full min-h-[196px] max-w-[644px] origin-center [transform-style:preserve-3d] [transform:rotateY(-6deg)_rotateX(3deg)] shadow-[0_18px_40px_-14px_rgba(44,44,44,0.22)] sm:min-h-[238px] sm:[transform:rotateY(-11deg)_rotateX(5deg)] lg:mx-0 lg:aspect-auto lg:h-[min(85vh,672px)] lg:max-h-[672px] lg:max-w-none"
+                    className={cn(
+                      "relative mx-auto aspect-[4/3] w-full min-h-[196px] max-w-[644px] origin-center [transform-style:preserve-3d] [transform:rotateY(-6deg)_rotateX(3deg)] shadow-[0_18px_40px_-14px_rgba(44,44,44,0.22)] sm:min-h-[238px] sm:[transform:rotateY(-11deg)_rotateX(5deg)] lg:mx-0 lg:aspect-auto lg:h-[min(85vh,672px)] lg:max-h-[672px] lg:max-w-none",
+                      data.slug === SSL_SLUG && "bg-black",
+                    )}
                   >
                     <ProductImage
                       src={heroImg.src}
                       alt={heroImg.alt}
                       priority={heroImg.priority ?? true}
                       sizes="(max-width: 1024px) 100vw, 50vw"
-                      quality={88}
-                      className="bg-cream object-contain object-center lg:object-right"
+                      quality={data.slug === SSL_SLUG ? 92 : 88}
+                      className={
+                        data.slug === SSL_SLUG
+                          ? "bg-black object-cover object-[56%_center]"
+                          : "bg-cream object-contain object-center lg:object-right"
+                      }
                     />
                   </div>
                 </div>
