@@ -29,7 +29,8 @@ export type FeatureCarouselProps = {
   items: FeatureCarouselItem[];
 };
 
-const AUTO_PLAY_INTERVAL = 3500;
+/** Time each card stays active before auto-advance (hosting carousel; tuned for on-image copy). */
+const AUTO_PLAY_INTERVAL = 8000;
 const ITEM_HEIGHT = 68;
 
 function wrap(min: number, max: number, v: number) {
