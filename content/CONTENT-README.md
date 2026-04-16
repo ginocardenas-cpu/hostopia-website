@@ -80,7 +80,7 @@ All 14 product pages are complete. Each file maps to a slug in `lib/nav-products
 | `website-builder.json` | Online Presence Builder | `website-builder` | Rewrite of existing page |
 | `website-design.json` | DIFM Website Design | `website-design` | Rewrite of existing page |
 | `custom-website-development.json` | Custom Website Design | `custom-website-development` | NEW — needs component |
-| `hosting.json` | Website Hosting | `hosting` | Rewrite of existing page |
+| `hosting.json` | Website Hosting | `hosting` | Rewrite of existing page; accordion copy documented in `products/New Products/rewrites/md/12-hosting.md` (keep in sync with `hero.sidebar` in the JSON) |
 | `ssl.json` | SSL Certificates | `ssl` | Rewrite of existing page |
 
 ### Get Found

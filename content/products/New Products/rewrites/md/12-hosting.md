@@ -11,7 +11,7 @@
 
 ## 1 · HERO
 
-**Eyebrow:** WEBSITE HOSTING BY HOSTOPIA
+**Eyebrow:** Website Hosting by Hostopia
 
 **H1:** Enterprise-Grade Hosting Infrastructure — Sold Under Your Brand
 
@@ -24,20 +24,22 @@ Some SMBs need more than a website builder, agencies need multi-site management,
 
 ## 2 · ACCORDION — "Your customers get…"
 
+_Source of truth for on-page copy: `content/products/hosting.json` → `hero.sidebar`._
+
 ### Deploy beyond what builders can handle
-Website builders are perfect for a huge segment of SMBs, but plenty of customers outgrow them or start out needing more. Hostopia's hosting supports WordPress, Joomla, custom CMS platforms, and any modern web application in a secure managed environment. Owners can install the themes and plugins they want, developers can access files and databases directly, and agencies can build anything a client requests. It's the platform that serves the customers your builder can't, under the same brand and the same relationship.
+Many SMBs outgrow builders—or need more from day one. Hostopia runs WordPress, Joomla, custom CMS, and modern apps in a managed stack. Owners keep themes and plugins; developers reach files and databases; agencies ship client builds—all under your brand, beside your builder motion.
 
 ### Scale confidently as traffic and complexity grow
-Success breaks cheap hosting. Traffic spikes, database growth, and feature sprawl expose the limits of entry-level plans — and forced migrations destroy customer trust. Hostopia's resource tiers scale cleanly as customers grow, with performance SLAs, high-availability architecture, and enterprise-grade data centers doing the heavy lifting in the background. Customers stay on your platform through their entire growth curve, and you never lose a good account to a capacity problem.
+Traffic spikes, database growth, and sprawl break entry plans—and forced migrations kill trust. Hostopia tiers scale with SLAs, high availability, and enterprise data centers. Customers grow on your platform; you don't lose strong accounts to capacity limits.
 
 ### Manage multiple sites from a single dashboard
-Agencies and freelancers live in multi-site environments — and the hosting platform either helps them or gets in their way. Hostopia's multi-site plans give agencies a single branded dashboard to provision new environments, manage access, monitor usage, and deploy client sites without logging in and out across accounts. That operational efficiency makes you the hosting provider agencies actually recommend, which turns every partner into a multiplier for your base.
+Agencies live in multi-site workflows—the stack either helps or fights them. One branded dashboard provisions environments, access, usage, and client deploys without account hopping. That speed makes you the host partners recommend and turns every agency into distribution.
 
 ### Bundle domains, SSL, email, and ecommerce into one experience
-Hosting is the natural hub where every digital service plugs in. Domains route here, SSL installs here, business email connects here, and ecommerce deploys on top of it. Hostopia's platform ties all of those services together under a single customer dashboard, a single brand, and a single bill — turning the hosting purchase into a gateway product that pulls the rest of the portfolio along with it.
+Hosting is the hub: domains, SSL, email, and ecommerce land in one stack. One dashboard, one brand, one bill—so every hosting sale becomes the gateway that pulls the rest of your portfolio.
 
 ### Get technical flexibility without technical burden
-Customers who need SSH access, custom PHP versions, cron jobs, or database tooling can have them — without you operating the underlying infrastructure. Hostopia manages the data centers, security, patching, backups, and performance so your technical customers get the configurability they demand while your operations team stays focused on selling and supporting, not running servers.
+SSH, PHP versions, cron, and database tools—without you running metal. Hostopia operates data centers, security, patching, backups, and performance so technical buyers get control while your team sells and supports, not babysits servers.
 
 ---
 
