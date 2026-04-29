@@ -28,7 +28,7 @@
           "title": "Create faster with AI drafts",
           "body": "The hardest part of social isn't posting — it's deciding what to post. Hostopia's AI generates captions, post ideas, and on-brand variants tuned to each customer's industry, audience, and tone. Owners start with a draft instead of a blank screen, edit in seconds, and publish without hiring a copywriter. It's the difference between \"I'll post something later this week\" and \"I just scheduled a month of content in an afternoon\" — turning the hardest habit in small-business marketing into something that actually happens.",
           "image": {
-            "src": "https://images.unsplash.com/photo-1611162616305-69b3cf1bfe93?q=80&w=1200&auto=format&fit=crop",
+            "src": "/Social Media/social media slider 01.jpg",
             "alt": "AI social content creation"
           }
         },
@@ -36,7 +36,7 @@
           "title": "Stay on schedule with drag-and-drop queues",
           "body": "Consistency beats brilliance on social media. Visual drag-and-drop calendars let your customers plan weeks ahead, fill gaps, and balance their content mix at a glance. Posts queue across Facebook, Instagram, Google Business Profile, and more — auto-publishing at the right time for each platform. Owners stop scrambling for the 9am post, and start running their social calendar the way an agency would — without the agency bill, and without another app to manage outside your platform.",
           "image": {
-            "src": "https://images.unsplash.com/photo-1506784983877-45594efa4cbe?q=80&w=1200&auto=format&fit=crop",
+            "src": "/Social Media/social media slider 02.jpg",
             "alt": "Social content calendar and scheduling"
           }
         },
@@ -44,7 +44,7 @@
           "title": "Grow engagement with smarter content",
           "body": "Good social isn't just showing up — it's showing up with content that earns a reaction. Hostopia's tools recommend the post types, hashtags, and formats getting traction in each customer's category, and flag top-performing posts to repeat and boost. Owners see what's actually driving likes, comments, follows, and clicks — and use that signal to get better every week. It's the feedback loop most small businesses never build for themselves, delivered by default.",
           "image": {
-            "src": "https://images.unsplash.com/photo-1611926653458-09294b3142bf?q=80&w=1200&auto=format&fit=crop",
+            "src": "/Social Media/social media slider 03.jpg",
             "alt": "Social engagement and performance insights"
           }
         },
@@ -52,7 +52,7 @@
           "title": "Collaborate without losing control",
           "body": "One-owner shops don't need approval workflows. Agencies and multi-user customers absolutely do. Hostopia's role-based permissions and approval flows let teams draft, review, and publish without stepping on each other — or letting an off-brand post slip through. Partners selling into franchises, multi-location businesses, and agencies get enterprise-grade collaboration built in, which means one platform fits every customer in your base instead of a separate tool for each segment.",
           "image": {
-            "src": "https://images.unsplash.com/photo-1522071820081-009f0129c71c?q=80&w=1200&auto=format&fit=crop",
+            "src": "/Social Media/social media slider 04.jpg",
             "alt": "Team collaboration and approvals for social"
           }
         },
@@ -60,7 +60,7 @@
           "title": "Publish across every channel from one place",
           "body": "Nothing kills consistency faster than logging into four separate platforms to publish the same post. Hostopia's multi-network publishing reaches Facebook, Instagram, Google Business Profile, and other major platforms from a single composer — with content tailored per-platform, image sizing handled automatically, and performance tracked in one dashboard. One place to create. One place to schedule. One place to see what worked.",
           "image": {
-            "src": "https://images.unsplash.com/photo-1533750349088-cd871a92f312?q=80&w=1200&auto=format&fit=crop",
+            "src": "/Social Media/social media slider 05.jpg",
             "alt": "Multi-network social publishing"
           }
         }
@@ -70,14 +70,9 @@
 
   "media": {
     "heroImage": {
-      "src": "https://images.unsplash.com/photo-1611162617474-5b21e879e113?w=2000&q=80",
+      "src": "/Social Media/social media management header.png",
       "alt": "Creating social media content on a phone",
       "priority": true
-    },
-    "contentImage": {
-      "src": "https://images.unsplash.com/photo-1533750349088-cd871a92f312?w=2400&q=80",
-      "alt": "Social media marketing workspace",
-      "caption": "Plan, create, and publish — all under your partner brand."
     }
   },
 
