@@ -124,7 +124,7 @@ export default function ProductPageFromJson({ data, navLabel }: { data: ProductJ
   const heroImg = media?.heroImage;
   const contentImg = media?.contentImage;
   const vimeoOverview = media?.vimeoOverview;
-  const showVimeoOverview = Boolean(vimeoOverview && normalizeVimeoId(vimeoOverview.vimeoId));
+  const showVimeoOverview = Boolean(vimeoOverview && normalizeVimeoId(vimeoOverview.vimeoId ?? ""));
   const verticalTabsLayout = VERTICAL_TABS_LAYOUT_SLUGS.has(data.slug) && Boolean(hero.sidebar);
   const businessEmailImageAccordion = data.slug === BUSINESS_EMAIL_SLUG && Boolean(hero.sidebar);
   const featureTwoColumnAccordionLayout =
@@ -269,7 +269,7 @@ export default function ProductPageFromJson({ data, navLabel }: { data: ProductJ
 
       {showVimeoOverview && vimeoOverview ? (
         <VimeoVideoSection
-          vimeoId={vimeoOverview.vimeoId}
+          vimeoId={vimeoOverview.vimeoId ?? ""}
           eyebrow={vimeoOverview.eyebrow ?? "See it in action"}
           title={vimeoOverview.title}
           description={vimeoOverview.description}
