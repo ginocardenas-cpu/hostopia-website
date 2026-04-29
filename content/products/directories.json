@@ -29,7 +29,7 @@
           "title": "Save time managing every profile from one place",
           "body": "Most small business owners have lost count of the profiles they've created — Google, Facebook, Instagram, Yelp, Tripadvisor, industry directories, and more. Hostopia's centralized dashboard brings every listing into one view with one login. Update hours, addresses, photos, services, and descriptions once, and watch them sync everywhere in minutes. Owners stop hunting down forgotten logins, and your support team stops answering \"where do I update my Google hours?\" tickets — a quiet win on both sides of the relationship.",
           "image": {
-            "src": "https://images.unsplash.com/photo-1611162616305-69b3cf1bfe93?q=80&w=1200&auto=format&fit=crop",
+            "src": "/Directory Listings/directory listings slider 01.jpg",
             "alt": "Centralized directory and listing management"
           }
         },
@@ -37,7 +37,7 @@
           "title": "Post consistently with scheduling and automation",
           "body": "Active profiles outrank dormant ones, but consistency is where small businesses fall apart. Built-in scheduling lets your customers plan posts, updates, and promotions weeks in advance, then auto-publish across the platforms that matter. Automation handles the routine — publishing hours changes for holidays, posting new photos weekly, refreshing seasonal menus — so owners stay visible without staying glued to their phones. Consistency becomes the default instead of a constant effort.",
           "image": {
-            "src": "https://images.unsplash.com/photo-1522542550221-31fd19575a2d?q=80&w=1200&auto=format&fit=crop",
+            "src": "/Directory Listings/directory listings slider 02.jpg",
             "alt": "Content scheduling and automation"
           }
         },
@@ -45,7 +45,7 @@
           "title": "Get powerful insights on what's actually working",
           "body": "Visibility without measurement is guessing. Directory Listings shows your customers which profiles drive calls, clicks, directions, and conversions — by platform, by category, and over time. Easy-to-read reports surface top-performing locations, underperforming directories, and trends worth acting on. Instead of a vague sense that \"we're online,\" owners get clear signals on where to invest attention and where the next customer is actually coming from.",
           "image": {
-            "src": "https://images.unsplash.com/photo-1551288049-bebda4e38f71?q=80&w=1200&auto=format&fit=crop",
+            "src": "/Directory Listings/directory listings slider 03.jpg",
             "alt": "Listing performance insights and reporting"
           }
         },
@@ -53,7 +53,7 @@
           "title": "Create professional content with AI",
           "body": "Empty or thin profiles lose to competitors with rich content, every time. Hostopia's AI helps owners write business descriptions, service pages, post copy, and responses to reviews — all tuned to their industry, tone, and local market. What used to take hours of writing and rewriting takes minutes, and the output is consistently on-brand. For owners who hate writing and time-strapped operators who can't justify an agency, it turns \"I'll do it later\" into \"it's already done.\"",
           "image": {
-            "src": "https://images.unsplash.com/photo-1677442136019-21780ecad995?q=80&w=1200&auto=format&fit=crop",
+            "src": "/Directory Listings/directory listings slider 04.jpg",
             "alt": "AI-assisted content for listings and social"
           }
         },
@@ -61,7 +61,7 @@
           "title": "Stay on top of reviews with AI auto-reply",
           "body": "Reviews drive local rankings and purchase decisions — and they don't wait for the weekend. Directory Listings monitors reviews across Google, Meta, and other key platforms, drafts on-brand responses automatically, and flags anything that needs a human touch. Positive reviews get timely thanks. Negative reviews get addressed before they spread. Your customers build the kind of active review presence that keeps them visible in local pack results and trusted by the next buyer reading along.",
           "image": {
-            "src": "https://images.unsplash.com/photo-1516321318423-f06f85e504b3?q=80&w=1200&auto=format&fit=crop",
+            "src": "/Directory Listings/directory listings slider 05.jpg",
             "alt": "Review monitoring and AI auto-reply"
           }
         }
@@ -71,7 +71,7 @@
 
   "media": {
     "heroImage": {
-      "src": "/Directory Listings/Hero image v2.png",
+      "src": "/Directory Listings/directory listings header.png",
       "alt": "Directory Listings platform dashboard showing social media and listing management",
       "priority": true
     }

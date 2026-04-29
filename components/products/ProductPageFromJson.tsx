@@ -108,6 +108,7 @@ const FLAT_HERO_POP_SLUGS = new Set([
   "logo-design",
   "reputation-management",
   "ecommerce",
+  "directories",
 ]);
 
 export default function ProductPageFromJson({ data, navLabel }: { data: ProductJson; navLabel: string }) {
