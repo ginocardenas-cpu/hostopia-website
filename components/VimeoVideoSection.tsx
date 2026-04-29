@@ -33,7 +33,7 @@ export function VimeoVideoSection({
     <>
       <section
         className={cn(
-          "border-t border-gray-200/70 bg-cream py-20 md:py-24 lg:py-28",
+          "border-t border-gray-200/90 bg-white py-20 md:py-24 lg:py-28",
           className,
         )}
         aria-labelledby="vimeo-section-title"

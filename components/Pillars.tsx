@@ -33,7 +33,7 @@ const pillars = [
 
 export default function Pillars() {
   return (
-    <section className="py-28 bg-white">
+    <section className="border-t border-gray-200/80 bg-white py-28">
       <div className="max-w-7xl mx-auto px-6">
 
         {/* Section header */}
