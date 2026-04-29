@@ -7,6 +7,7 @@ import ProductLifecycleGrid from "@/components/products/ProductLifecycleGrid";
 import { CustomersSection } from "@/components/ui/customers-section";
 import { LogoTicker } from "@/components/ui/logo-ticker";
 import { VerticalTabs } from "@/components/ui/vertical-tabs";
+import { AccordionFeatureSection } from "@/components/ui/accordion-feature-section";
 import { ProductHeroAccordion } from "@/components/ui/product-hero-accordion";
 import { FeatureCarousel } from "@/components/ui/feature-carousel";
 import { InteractiveImageAccordion } from "@/components/ui/interactive-image-accordion";
@@ -96,6 +97,7 @@ const VERTICAL_TABS_LAYOUT_SLUGS = new Set([
 
 const HOSTING_SLUG = "hosting";
 const BUSINESS_EMAIL_SLUG = "business-email";
+const SEO_FEATURE_ACCORDION_SLUG = "seo";
 
 const FALLBACK_SIDEBAR_IMAGE =
   "https://images.unsplash.com/photo-1626785774573-4b799315345d?q=80&w=1200&auto=format&fit=crop";
@@ -125,13 +127,19 @@ export default function ProductPageFromJson({ data, navLabel }: { data: ProductJ
   const verticalTabsLayout = VERTICAL_TABS_LAYOUT_SLUGS.has(data.slug) && Boolean(hero.sidebar);
   const hostingFeatureCarousel = data.slug === HOSTING_SLUG && Boolean(hero.sidebar);
   const businessEmailImageAccordion = data.slug === BUSINESS_EMAIL_SLUG && Boolean(hero.sidebar);
+  const seoFeatureAccordionLayout = data.slug === SEO_FEATURE_ACCORDION_SLUG && Boolean(hero.sidebar);
   const heroAccordionLayout =
     !verticalTabsLayout &&
     Boolean(hero.sidebar) &&
     !hostingFeatureCarousel &&
-    !businessEmailImageAccordion;
+    !businessEmailImageAccordion &&
+    !seoFeatureAccordionLayout;
   const sidebarBelowHero =
-    verticalTabsLayout || heroAccordionLayout || hostingFeatureCarousel || businessEmailImageAccordion;
+    verticalTabsLayout ||
+    heroAccordionLayout ||
+    hostingFeatureCarousel ||
+    businessEmailImageAccordion ||
+    seoFeatureAccordionLayout;
 
   const isFlatHeroPop = FLAT_HERO_POP_SLUGS.has(data.slug);
 
@@ -295,6 +303,19 @@ export default function ProductPageFromJson({ data, navLabel }: { data: ProductJ
             title: item.title,
             content: item.body,
             imageSrc: item.image?.src,
+            imageAlt: item.image?.alt,
+          }))}
+        />
+      ) : null}
+
+      {seoFeatureAccordionLayout && hero.sidebar ? (
+        <AccordionFeatureSection
+          sectionHeading={hero.sidebar.heading}
+          items={hero.sidebar.items.map((item, i) => ({
+            id: String(i + 1).padStart(2, "0"),
+            title: item.title,
+            description: item.body,
+            image: item.image?.src ?? FALLBACK_SIDEBAR_IMAGE,
             imageAlt: item.image?.alt,
           }))}
         />
