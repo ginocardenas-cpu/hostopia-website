@@ -88,7 +88,6 @@ function ProductImage({ src, alt, priority, className, sizes, quality = 85 }: Pr
 const VERTICAL_TABS_LAYOUT_SLUGS = new Set([
   "logo-design",
   "ssl",
-  "website-builder",
   "directories",
   "ecommerce",
   "digital-fax",
@@ -97,7 +96,7 @@ const VERTICAL_TABS_LAYOUT_SLUGS = new Set([
 const BUSINESS_EMAIL_SLUG = "business-email";
 
 /** Product pages that use AccordionFeatureSection (two-column accordion + preview image). */
-const FEATURE_TWO_COLUMN_ACCORDION_SLUGS = new Set(["seo", "hosting"]);
+const FEATURE_TWO_COLUMN_ACCORDION_SLUGS = new Set(["seo", "hosting", "website-builder"]);
 
 const FALLBACK_SIDEBAR_IMAGE =
   "https://images.unsplash.com/photo-1626785774573-4b799315345d?q=80&w=1200&auto=format&fit=crop";
