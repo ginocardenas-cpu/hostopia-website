@@ -29,7 +29,7 @@
           "title": "A complete done-for-me experience from first call to launch",
           "body": "Busy owners don't want to learn a builder, pick fonts, or write homepage copy — they want a professional website, and they want someone else to handle it. Hostopia's DIFM service starts with a 1:1 consultation to capture the business vision, then pairs the customer with a designer, copywriter, and coordinator who deliver a fully built site. No technical skills required, no blank pages to fill, no decisions they don't know how to make. The owner shows up, reviews drafts, and approves a site that's ready to publish.",
           "image": {
-            "src": "https://images.unsplash.com/photo-1561070791-2526d30994b5?q=80&w=1200&auto=format&fit=crop",
+            "src": "/Website Design Page/website design slider 01.jpg",
             "alt": "Designer consultation and creative process"
           }
         },
@@ -37,7 +37,7 @@
           "title": "Mobile-responsive, SEO-ready sites that perform out of the gate",
           "body": "Every site ships fully responsive across desktop, tablet, and mobile — with SEO foundations baked in from day one. Meta titles, meta descriptions, clean URL structures, fast load times, and proper heading hierarchy are all handled by the design team as part of delivery, not as an afterthought. That means customers don't need to hire an SEO consultant after launch to fix basic issues, and you don't get support tickets about \"why isn't my site showing up on Google?\" the day after a customer goes live.",
           "image": {
-            "src": "https://images.unsplash.com/photo-1512941937669-90a1b58e7e9c?q=80&w=1200&auto=format&fit=crop",
+            "src": "/Website Design Page/website design slider 02.jpg",
             "alt": "Responsive website on multiple devices"
           }
         },
@@ -45,7 +45,7 @@
           "title": "Built-in business tools that actually drive bookings and sales",
           "body": "A website that looks great but doesn't convert is a digital poster. Hostopia's DIFM service includes the business tools SMBs actually need — contact forms, Google Maps integration, photo and video galleries, appointment scheduling, coupons, and optional Online Store setup — configured and ready on launch day. Owners get a site that captures leads, books appointments, and sells products from the first visitor. You get a product that demonstrates clear ROI in weeks, which makes every renewal conversation easier.",
           "image": {
-            "src": "https://images.unsplash.com/photo-1467232004584-a241de8bcf5d?q=80&w=1200&auto=format&fit=crop",
+            "src": "/Website Design Page/website design slider 03.jpg",
             "alt": "Website features and business tools"
           }
         },
@@ -53,7 +53,7 @@
           "title": "Ongoing maintenance that keeps the site current without effort",
           "body": "Websites decay. Hours change, menus update, seasons shift, staff turns over — and most SMBs let their sites go stale because making edits feels intimidating. DIFM plans include monthly maintenance time so the design team handles content updates, seasonal changes, holiday hours, new photos, and design refreshes on request. Owners email changes and they happen. No logins, no learning curves, no abandoned sites — just a platform that evolves with the business.",
           "image": {
-            "src": "https://images.unsplash.com/photo-1544197150-b99a580bb7a8?q=80&w=1200&auto=format&fit=crop",
+            "src": "/Website Design Page/website design slider 04.jpg",
             "alt": "Website maintenance and updates"
           }
         },
@@ -61,7 +61,7 @@
           "title": "A private-label project center that keeps everything organized",
           "body": "Chasing emails and losing feedback in threads is the fastest way to ruin a design project. Hostopia's branded project portal centralizes the entire engagement — drafts, feedback, approvals, change requests, and scheduled revisions all flow through a single experience under your brand. Customers know what's happening, designers know what's next, and your support team never has to play translator. Clean process, clean handoff, clean result.",
           "image": {
-            "src": "https://images.unsplash.com/photo-1522071820081-009f0129c71c?q=80&w=1200&auto=format&fit=crop",
+            "src": "/Website Design Page/website design slider 05.jpg",
             "alt": "Project portal and collaboration"
           }
         }
@@ -71,7 +71,7 @@
 
   "media": {
     "heroImage": {
-      "src": "https://images.unsplash.com/photo-1547658719-da2b51169166?q=80&w=1600&auto=format&fit=crop",
+      "src": "/Website Design Page/website design header.png",
       "alt": "Professional website design on laptop",
       "priority": true
     },
@@ -80,11 +80,11 @@
       "heading": "From cluttered to credible",
       "intro": "Drag the slider to compare a typical DIY or dated SMB web presence with a clean, professional design.",
       "before": {
-        "src": "/Website%20Design%20Page/Before%20and%20After/before.jpg",
+        "src": "/Website Design Page/Before and After/before.jpg",
         "alt": "Cluttered screen and dated web workflow"
       },
       "after": {
-        "src": "/Website%20Design%20Page/Before%20and%20After/after.jpg",
+        "src": "/Website Design Page/Before and After/after.jpg",
         "alt": "Clean, professional website design"
       }
     }
