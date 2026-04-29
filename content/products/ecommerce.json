@@ -29,7 +29,7 @@
           "title": "Launch a real store fast — without a consultant",
           "body": "Most SMB ecommerce projects stall on the setup alone: tax rules, shipping rates, payment gateways, and product imports overwhelm owners before they sell a single item. Hostopia's guided 5-step setup wizard walks customers through products, taxes, shipping, and payment configuration in one session — with sensible defaults that actually work. Owners finish setup in an afternoon instead of giving up after a weekend, which means more stores go live, more products get listed, and more customers start transacting on your platform.",
           "image": {
-            "src": "https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?q=80&w=1200&auto=format&fit=crop",
+            "src": "/Ecommerce%20Page/New/ecommerce%20slider%2001.jpg",
             "alt": "Quick online store setup and checkout"
           }
         },
@@ -37,7 +37,7 @@
           "title": "Sell everywhere their customers already are",
           "body": "Modern commerce isn't one storefront — it's a dozen. Hostopia's Online Store publishes products to the SMB's website, Facebook, Instagram, TikTok, Pinterest, Amazon, and Google Shopping from a single dashboard, with centralized inventory and order management keeping everything synchronized. Owners never manually copy a product to three platforms again, and customers browse wherever they discover the brand. For you, that breadth differentiates your ecommerce offering from single-channel builders and justifies premium pricing.",
           "image": {
-            "src": "https://images.unsplash.com/photo-1611162616305-69b3cf1bfe93?q=80&w=1200&auto=format&fit=crop",
+            "src": "/Ecommerce%20Page/New/ecommerce%20slider%2002.jpg",
             "alt": "Multi-channel social and online selling"
           }
         },
@@ -45,7 +45,7 @@
           "title": "Accept any payment, in any currency, on any device",
           "body": "Payment friction kills checkouts. Hostopia supports 40+ gateways including PayPal, Square, Stripe, and regional processors, plus multi-currency support and real-time shipping quotes from major carriers. Customers check out on desktop, tablet, or smartphone with a responsive experience optimized for the device they're on — which is overwhelmingly mobile. Fewer abandoned carts, higher conversion, and no \"can I pay another way?\" emails for your support team to handle.",
           "image": {
-            "src": "https://images.unsplash.com/photo-1563013544-824ae1b704d3?q=80&w=1200&auto=format&fit=crop",
+            "src": "/Ecommerce%20Page/New/ecommerce%20slider%2003.jpg",
             "alt": "Payment terminals and ecommerce checkout"
           }
         },
@@ -53,7 +53,7 @@
           "title": "Keep every dollar of margin with zero transaction fees",
           "body": "Transaction fees from some platforms quietly eat 1–2% of every sale — a massive tax on SMBs already operating on thin margins. Hostopia's Online Store charges zero transaction fees, so owners keep the full margin on every sale after payment processor costs. That's real money back in the business each month, and it's one of the easiest differentiators for your sales team to articulate against competing platforms during deal conversations.",
           "image": {
-            "src": "https://images.unsplash.com/photo-1579621970563-ebec7560ff3e?q=80&w=1200&auto=format&fit=crop",
+            "src": "/Ecommerce%20Page/New/ecommerce%20slider%2004.jpg",
             "alt": "Revenue growth and healthy business margins"
           }
         },
@@ -61,8 +61,8 @@
           "title": "Grow without replatforming as the store scales",
           "body": "Most SMBs abandon their first store when traffic or product count outgrows the platform — and the migration to a bigger system is where they churn. Hostopia's tiered plans, multi-channel architecture, and enterprise-grade infrastructure support stores from their first 10 products to their first 10,000 — on the same platform, under the same brand, with no re-migration required. Customers stay with you through their entire growth curve, and you capture the upsell revenue instead of losing it to a new provider.",
           "image": {
-            "src": "https://images.unsplash.com/photo-1556740758-90de374c12ad?q=80&w=1200&auto=format&fit=crop",
-            "alt": "Ecommerce scaling and growth"
+            "src": "/Ecommerce%20Page/New/ecommerce%20slider%2004.jpg",
+            "alt": "Ecommerce scaling and growth on one platform"
           }
         }
       ]
@@ -71,7 +71,7 @@
 
   "media": {
     "heroImage": {
-      "src": "https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?w=2000&q=80",
+      "src": "/Ecommerce%20Page/New/ecommerce%20header.png",
       "alt": "Merchant managing an online store on a tablet",
       "priority": true
     }
