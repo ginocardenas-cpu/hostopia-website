@@ -9,7 +9,6 @@ import { LogoTicker } from "@/components/ui/logo-ticker";
 import { VerticalTabs } from "@/components/ui/vertical-tabs";
 import { AccordionFeatureSection } from "@/components/ui/accordion-feature-section";
 import { ProductHeroAccordion } from "@/components/ui/product-hero-accordion";
-import { FeatureCarousel } from "@/components/ui/feature-carousel";
 import { InteractiveImageAccordion } from "@/components/ui/interactive-image-accordion";
 import { ImageComparison } from "@/components/ui/image-comparison-slider";
 import { ThreeDMarquee } from "@/components/ui/three-d-marquee";
@@ -95,9 +94,10 @@ const VERTICAL_TABS_LAYOUT_SLUGS = new Set([
   "digital-fax",
 ]);
 
-const HOSTING_SLUG = "hosting";
 const BUSINESS_EMAIL_SLUG = "business-email";
-const SEO_FEATURE_ACCORDION_SLUG = "seo";
+
+/** Product pages that use AccordionFeatureSection (two-column accordion + preview image). */
+const FEATURE_TWO_COLUMN_ACCORDION_SLUGS = new Set(["seo", "hosting"]);
 
 const FALLBACK_SIDEBAR_IMAGE =
   "https://images.unsplash.com/photo-1626785774573-4b799315345d?q=80&w=1200&auto=format&fit=crop";
@@ -125,21 +125,19 @@ export default function ProductPageFromJson({ data, navLabel }: { data: ProductJ
   const vimeoOverview = media?.vimeoOverview;
   const showVimeoOverview = Boolean(vimeoOverview && normalizeVimeoId(vimeoOverview.vimeoId));
   const verticalTabsLayout = VERTICAL_TABS_LAYOUT_SLUGS.has(data.slug) && Boolean(hero.sidebar);
-  const hostingFeatureCarousel = data.slug === HOSTING_SLUG && Boolean(hero.sidebar);
   const businessEmailImageAccordion = data.slug === BUSINESS_EMAIL_SLUG && Boolean(hero.sidebar);
-  const seoFeatureAccordionLayout = data.slug === SEO_FEATURE_ACCORDION_SLUG && Boolean(hero.sidebar);
+  const featureTwoColumnAccordionLayout =
+    FEATURE_TWO_COLUMN_ACCORDION_SLUGS.has(data.slug) && Boolean(hero.sidebar);
   const heroAccordionLayout =
     !verticalTabsLayout &&
     Boolean(hero.sidebar) &&
-    !hostingFeatureCarousel &&
     !businessEmailImageAccordion &&
-    !seoFeatureAccordionLayout;
+    !featureTwoColumnAccordionLayout;
   const sidebarBelowHero =
     verticalTabsLayout ||
     heroAccordionLayout ||
-    hostingFeatureCarousel ||
     businessEmailImageAccordion ||
-    seoFeatureAccordionLayout;
+    featureTwoColumnAccordionLayout;
 
   const isFlatHeroPop = FLAT_HERO_POP_SLUGS.has(data.slug);
 
@@ -308,7 +306,7 @@ export default function ProductPageFromJson({ data, navLabel }: { data: ProductJ
         />
       ) : null}
 
-      {seoFeatureAccordionLayout && hero.sidebar ? (
+      {featureTwoColumnAccordionLayout && hero.sidebar ? (
         <AccordionFeatureSection
           sectionHeading={hero.sidebar.heading}
           items={hero.sidebar.items.map((item, i) => ({
@@ -319,25 +317,6 @@ export default function ProductPageFromJson({ data, navLabel }: { data: ProductJ
             imageAlt: item.image?.alt,
           }))}
         />
-      ) : null}
-
-      {hostingFeatureCarousel && hero.sidebar ? (
-        <section className="w-full bg-white py-12 md:py-16 lg:py-24">
-          <div className="mx-auto max-w-7xl px-6">
-            <h2 className="mb-8 max-w-4xl font-montserrat text-4xl font-black leading-tight tracking-tight text-charcoal text-balance md:mb-10 md:text-5xl lg:text-6xl">
-              {hero.sidebar.heading}
-            </h2>
-            <FeatureCarousel
-              items={hero.sidebar.items.map((item, i) => ({
-                id: `host-${i + 1}`,
-                label: item.title,
-                description: item.body,
-                imageSrc: item.image?.src ?? FALLBACK_SIDEBAR_IMAGE,
-                imageAlt: item.image?.alt ?? item.title,
-              }))}
-            />
-          </div>
-        </section>
       ) : null}
 
       {businessEmailImageAccordion && hero.sidebar ? (
