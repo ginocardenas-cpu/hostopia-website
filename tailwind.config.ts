@@ -59,8 +59,13 @@ const config: Config = {
         "accordion-up": "accordion-up 0.2s ease-out",
         /** Seamless logo row; duration overridden inline for slower loops */
         "logo-ticker": "logoTicker 50s linear infinite",
+        marquee: "marquee var(--duration, 40s) linear infinite",
       },
       keyframes: {
+        marquee: {
+          from: { transform: "translateX(0)" },
+          to: { transform: "translateX(calc(-100% - var(--gap, 1rem)))" },
+        },
         logoTicker: {
           "0%": { transform: "translateX(0)" },
           "100%": { transform: "translateX(-50%)" },

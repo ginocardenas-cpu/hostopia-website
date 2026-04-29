@@ -11,7 +11,7 @@ import { AccordionFeatureSection } from "@/components/ui/accordion-feature-secti
 import { ProductHeroAccordion } from "@/components/ui/product-hero-accordion";
 import { InteractiveImageAccordion } from "@/components/ui/interactive-image-accordion";
 import { ImageComparison } from "@/components/ui/image-comparison-slider";
-import { ThreeDMarquee } from "@/components/ui/three-d-marquee";
+import { TemplateMarqueeRows } from "@/components/ui/template-marquee-rows";
 import { VimeoVideoSection } from "@/components/VimeoVideoSection";
 import { cn } from "@/lib/utils";
 import { featureCardGridClass, partnerAdvantageGridClass } from "@/lib/feature-card-grid";
@@ -415,7 +415,7 @@ export default function ProductPageFromJson({ data, navLabel }: { data: ProductJ
       ) : null}
 
       {templateMarquee?.images?.length ? (
-        <section className="border-t border-gray-200/80 bg-white py-16 md:py-24">
+        <section className="overflow-x-hidden border-t border-gray-200/80 bg-white py-16 md:py-24">
           <div className="mx-auto max-w-7xl px-6">
             {templateMarquee.eyebrow ? (
               <span className="section-label mb-4 inline-block">{templateMarquee.eyebrow}</span>
@@ -428,7 +428,9 @@ export default function ProductPageFromJson({ data, navLabel }: { data: ProductJ
             {templateMarquee.intro ? (
               <p className="mb-10 max-w-3xl font-raleway text-lg leading-relaxed text-gray-500">{templateMarquee.intro}</p>
             ) : null}
-            <ThreeDMarquee images={templateMarquee.images} />
+          </div>
+          <div className="relative left-1/2 w-screen -translate-x-1/2">
+            <TemplateMarqueeRows images={templateMarquee.images} />
           </div>
         </section>
       ) : null}
