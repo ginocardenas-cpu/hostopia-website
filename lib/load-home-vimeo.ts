@@ -10,9 +10,7 @@ export function loadHomeVimeo(): VimeoVideoContent | null {
     const raw = fs.readFileSync(FILE, "utf8");
     const data = JSON.parse(raw) as VimeoVideoContent & { enabled?: boolean };
     if (data.enabled === false) return null;
-    const mp4 = typeof data.mp4Src === "string" && data.mp4Src.trim().length > 0;
-    const vimeoId = typeof data.vimeoId === "string" ? data.vimeoId.trim() : "";
-    if (!mp4 && !vimeoId) return null;
+    if (!data?.vimeoId || typeof data.vimeoId !== "string") return null;
     return data;
   } catch {
     return null;

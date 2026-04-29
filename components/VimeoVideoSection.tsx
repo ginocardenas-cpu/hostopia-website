@@ -22,7 +22,7 @@ export function VimeoVideoSection({
   playLabel = "Play video",
   className,
 }: Props) {
-  const id = vimeoId ? normalizeVimeoId(vimeoId) : null;
+  const id = normalizeVimeoId(vimeoId);
   const [open, setOpen] = useState(false);
 
   if (!id) return null;
