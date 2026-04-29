@@ -28,7 +28,7 @@
           "title": "Launch a professional site in minutes",
           "body": "Traditional website projects stall for weeks between \"we need a site\" and \"we published a site.\" AI changes that math completely. With Online Presence Builder, a customer enters a business name, category, and a few details — and OPB generates a complete, multi-page website with industry-relevant copy, curated imagery, maps, and contact forms in under five minutes. The first draft is already good enough to publish, which means customers actually finish instead of abandoning halfway through. For partners, that's the difference between selling websites and activating them.",
           "image": {
-            "src": "https://images.unsplash.com/photo-1460925895917-afdab827c52f?q=80&w=1200&auto=format&fit=crop",
+            "src": "/Website Builder Page/website builder slider 01.jpg",
             "alt": "Website analytics and fast launch dashboard"
           }
         },
@@ -36,7 +36,7 @@
           "title": "Create real content without creative skills",
           "body": "Most SMBs don't have a copywriter, a photographer, or a designer — and hiring one costs more than the website. OPB's built-in AI writing and image generation fills that gap entirely. Owners type a prompt, AI produces homepage copy, about-page narrative, service descriptions, and matching imagery tailored to their industry. No more staring at blank pages, no more placeholder Latin, no more stock photos that don't fit. The output looks intentional, reads professionally, and represents the business the owner actually runs.",
           "image": {
-            "src": "https://images.unsplash.com/photo-1677442136019-21780ecad995?q=80&w=1200&auto=format&fit=crop",
+            "src": "/Website Builder Page/website builder slider 02.jpg",
             "alt": "AI-assisted creative and content generation"
           }
         },
@@ -44,7 +44,7 @@
           "title": "Convert visitors into customers, not just impressions",
           "body": "A digital brochure doesn't grow a business. OPB sites come with the conversion tools SMBs need by default — lead capture forms, clear CTAs, Google Maps integration, galleries, testimonial blocks, and social widgets — so every visitor has a clear path to contact, book, or buy. And when the business is ready to sell online, a single click activates the integrated Online Store. Your customers get sites that generate business, and you get the attach path straight into ecommerce.",
           "image": {
-            "src": "https://images.unsplash.com/photo-1467232004584-a241de8bcf5d?q=80&w=1200&auto=format&fit=crop",
+            "src": "/Website Builder Page/website builder slider 03.jpg",
             "alt": "Website layout and conversion-focused design"
           }
         },
@@ -52,7 +52,7 @@
           "title": "Manage everything from one branded dashboard",
           "body": "SMBs hate logging into four different portals to manage their website, domain, email, and billing. Hostopia consolidates all of it into a single, partner-branded dashboard where customers edit their site, update DNS, check email, and manage subscriptions in one place. That consolidation is what makes your platform sticky — the more services live under one login, the more painful it becomes to switch, and the more natural every upsell conversation becomes.",
           "image": {
-            "src": "https://images.unsplash.com/photo-1551288049-bebda4e38f71?q=80&w=1200&auto=format&fit=crop",
+            "src": "/Website Builder Page/website builder slider 04.jpg",
             "alt": "Unified dashboard for digital services"
           }
         },
@@ -60,7 +60,7 @@
           "title": "Scale from a first website to a full digital stack",
           "body": "OPB isn't the end of the journey — it's the beginning. The same platform that launched the site supports ecommerce, SEO, directory listings, reputation management, and marketing expansion as the business grows. Unlimited pages, per-page SEO controls, Google Analytics integration, and hosted infrastructure all ship standard, which means customers never outgrow the platform before they're ready to buy more from you.",
           "image": {
-            "src": "https://images.unsplash.com/photo-1460925895917-afdab827c52f?q=80&w=1200&auto=format&fit=crop",
+            "src": "/Website Builder Page/website builder slider 05.jpg",
             "alt": "Digital stack growth from one platform"
           }
         }
@@ -70,7 +70,7 @@
 
   "media": {
     "heroImage": {
-      "src": "https://images.unsplash.com/photo-1547658719-da2b51169166?q=80&w=1600&auto=format&fit=crop",
+      "src": "/Website Builder Page/website builder header.png",
       "alt": "Modern website builder and design on a laptop",
       "priority": true
     },
@@ -79,18 +79,18 @@
       "heading": "Styles for every industry",
       "intro": "From professional services to retail and trades — responsive themes and layouts SMBs can launch fast, all under your brand.",
       "images": [
-        { "src": "/Website%20Builder%20Page/Website%20Collage/accounting.png", "alt": "Accounting business website template preview" },
-        { "src": "/Website%20Builder%20Page/Website%20Collage/automechanic.png", "alt": "Auto mechanic website template preview" },
-        { "src": "/Website%20Builder%20Page/Website%20Collage/bakerybread.png", "alt": "Bakery website template preview" },
-        { "src": "/Website%20Builder%20Page/Website%20Collage/beautician.png", "alt": "Beauty salon website template preview" },
-        { "src": "/Website%20Builder%20Page/Website%20Collage/bookstore.png", "alt": "Bookstore website template preview" },
-        { "src": "/Website%20Builder%20Page/Website%20Collage/cheese.png", "alt": "Cheese shop website template preview" },
-        { "src": "/Website%20Builder%20Page/Website%20Collage/coffeeshop.png", "alt": "Coffee shop website template preview" },
-        { "src": "/Website%20Builder%20Page/Website%20Collage/coffeesupplies.png", "alt": "Coffee supplies website template preview" },
-        { "src": "/Website%20Builder%20Page/Website%20Collage/doctor.png", "alt": "Medical practice website template preview" },
-        { "src": "/Website%20Builder%20Page/Website%20Collage/homeadditions.png", "alt": "Home additions contractor website template preview" },
-        { "src": "/Website%20Builder%20Page/Website%20Collage/HomeopathicNaturaPath.png", "alt": "Holistic health website template preview" },
-        { "src": "/Website%20Builder%20Page/Website%20Collage/pharmacy.png", "alt": "Pharmacy website template preview" }
+        { "src": "/Website Builder Page/Website Collage/accounting.png", "alt": "Accounting business website template preview" },
+        { "src": "/Website Builder Page/Website Collage/automechanic.png", "alt": "Auto mechanic website template preview" },
+        { "src": "/Website Builder Page/Website Collage/bakerybread.png", "alt": "Bakery website template preview" },
+        { "src": "/Website Builder Page/Website Collage/beautician.png", "alt": "Beauty salon website template preview" },
+        { "src": "/Website Builder Page/Website Collage/bookstore.png", "alt": "Bookstore website template preview" },
+        { "src": "/Website Builder Page/Website Collage/cheese.png", "alt": "Cheese shop website template preview" },
+        { "src": "/Website Builder Page/Website Collage/coffeeshop.png", "alt": "Coffee shop website template preview" },
+        { "src": "/Website Builder Page/Website Collage/coffeesupplies.png", "alt": "Coffee supplies website template preview" },
+        { "src": "/Website Builder Page/Website Collage/doctor.png", "alt": "Medical practice website template preview" },
+        { "src": "/Website Builder Page/Website Collage/homeadditions.png", "alt": "Home additions contractor website template preview" },
+        { "src": "/Website Builder Page/Website Collage/HomeopathicNaturaPath.png", "alt": "Holistic health website template preview" },
+        { "src": "/Website Builder Page/Website Collage/pharmacy.png", "alt": "Pharmacy website template preview" }
       ]
     }
   },
