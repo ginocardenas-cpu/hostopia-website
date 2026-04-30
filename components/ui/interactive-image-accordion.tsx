@@ -18,6 +18,35 @@ export type InteractiveImageAccordionProps = {
   items: InteractiveImageAccordionItem[];
 };
 
+const BODY_LINE_CLASS =
+  "w-full text-left font-raleway text-base leading-relaxed text-gray-500 md:text-lg";
+
+function splitBodyLines(body: string): string[] {
+  return body
+    .split("\n")
+    .map((line) => line.trim())
+    .filter(Boolean);
+}
+
+function AccordionBodyText({ body }: { body: string }) {
+  const lines = splitBodyLines(body);
+  if (lines.length === 0) {
+    return null;
+  }
+  if (lines.length === 1) {
+    return <p className={BODY_LINE_CLASS}>{lines[0]}</p>;
+  }
+  return (
+    <div className="flex w-full flex-col items-start gap-2.5 text-left">
+      {lines.map((line, i) => (
+        <p key={i} className={BODY_LINE_CLASS}>
+          {line}
+        </p>
+      ))}
+    </div>
+  );
+}
+
 function AccordionStrip({
   item,
   isActive,
@@ -70,8 +99,8 @@ export function InteractiveImageAccordion({ sectionHeading, items }: Interactive
   return (
     <div className="w-full">
       <div className="flex flex-col gap-10 lg:flex-row lg:items-stretch lg:justify-between lg:gap-14">
-        <div className="w-full text-center lg:w-[46%] lg:max-w-xl lg:text-left">
-          <h2 className="mb-8 font-montserrat text-4xl font-black leading-tight tracking-tight text-charcoal text-balance md:text-5xl lg:text-6xl">
+        <div className="w-full text-left lg:w-[46%] lg:max-w-xl">
+          <h2 className="mb-8 text-left font-montserrat text-4xl font-black leading-tight tracking-tight text-charcoal text-balance md:text-5xl lg:text-6xl">
             {sectionHeading}
           </h2>
 
@@ -83,10 +112,10 @@ export function InteractiveImageAccordion({ sectionHeading, items }: Interactive
                 animate={{ opacity: 1, y: 0 }}
                 exit={{ opacity: 0, y: -6 }}
                 transition={{ duration: 0.25, ease: [0.23, 1, 0.32, 1] }}
-                className="space-y-4"
+                className="space-y-4 text-left"
               >
-                <h3 className="font-montserrat text-xl font-black text-charcoal md:text-2xl">{active.title}</h3>
-                <p className="font-raleway text-base leading-relaxed text-gray-500 md:text-lg">{active.body}</p>
+                <h3 className="text-left font-montserrat text-xl font-black text-charcoal md:text-2xl">{active.title}</h3>
+                <AccordionBodyText body={active.body} />
               </motion.div>
             ) : null}
           </AnimatePresence>
