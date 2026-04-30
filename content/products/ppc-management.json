@@ -29,7 +29,7 @@
           "title": "Master SEO with AI doing the heavy lifting",
           "body": "Marketing 360 delivers the full SEO experience — not just recommendations. AI-powered keyword research, on-page optimization, content creation, backlink analysis, and off-page strategy all run automatically, with weekly tasks tailored to each business. Your customers see the actions, the impact, and the ranking movement in one place, without needing an in-house SEO expert. It's the difference between \"we should work on SEO\" and \"our rankings went up 23% this quarter\" — and it's the kind of result that keeps customers on your platform for years.",
           "image": {
-            "src": "https://images.unsplash.com/photo-1504868584819-f8e8b4b6d7e3?q=80&w=1200&auto=format&fit=crop",
+            "src": "/Marketing 360/marketing 360 slider 01.jpg",
             "alt": "AI-driven SEO and marketing dashboard"
           }
         },
@@ -37,7 +37,7 @@
           "title": "Launch and optimize Google Ads without an agency",
           "body": "Paid ads are where growing SMBs go to accelerate — and where most waste money because they don't know what they're doing. Marketing 360's AI generates high-converting ad headlines, descriptions, and campaigns, launches them on Google in minutes, and continuously optimizes budget against real performance. Smart budget controls protect spend, AI recommendations improve results week over week, and built-in reporting shows exactly what each dollar returned. Your customers get agency-quality advertising at a subscription price — and you add a high-margin revenue stream to your portfolio.",
           "image": {
-            "src": "https://images.unsplash.com/photo-1533750349088-cd871a92f312?q=80&w=1200&auto=format&fit=crop",
+            "src": "/Marketing 360/marketing 360 slider 02.jpg",
             "alt": "Google Ads campaign management"
           }
         },
@@ -45,7 +45,7 @@
           "title": "Dominate local search across 3,000+ directories",
           "body": "National chains don't win local search — consistency and coverage do. Marketing 360 syncs and manages your customers' business profiles across 3,000+ directories in real time, keeping names, addresses, hours, services, and photos accurate everywhere buyers look. Visibility tracking shows where they appear, how they rank, and which listings are driving calls and clicks. For multi-location businesses and local service providers, it's the difference between showing up occasionally and showing up everywhere that matters.",
           "image": {
-            "src": "https://images.unsplash.com/photo-1460925895917-afdab827c52f?q=80&w=1200&auto=format&fit=crop",
+            "src": "/Marketing 360/marketing 360 slider 03.jpg",
             "alt": "Local listings and directory visibility"
           }
         },
@@ -53,7 +53,7 @@
           "title": "Build an unshakeable reputation and social presence",
           "body": "Trust drives conversion, and nothing builds trust faster than an active, well-managed online presence. Marketing 360 generates reviews, automates responses across platforms, tracks sentiment, and publishes fresh social content on a schedule — all from the same dashboard. Your customers stay top-of-mind for existing buyers and look credible to new ones, without carving out hours a week to manage it manually. Reputation and social stop being two more things to worry about and start being a compounding competitive advantage.",
           "image": {
-            "src": "https://images.unsplash.com/photo-1551288049-bebda4e38f71?q=80&w=1200&auto=format&fit=crop",
+            "src": "/Marketing 360/marketing 360 slider 04.jpg",
             "alt": "Reputation and social media management"
           }
         },
@@ -61,7 +61,7 @@
           "title": "See the full picture — and beat the competition",
           "body": "Marketing 360 includes every brand and competitive intelligence feature in Hostopia's portfolio: rank tracking, mention monitoring, competitor ad and promotion tracking, and real-time alerts the moment anything important changes. Your customers see their own marketing performance and their competitors' moves in one view, so they can respond fast, spot opportunities early, and make data-driven decisions every week. It's the single dashboard that turns every marketing function — SEO, ads, listings, reputation, social, monitoring — into one coordinated growth engine.",
           "image": {
-            "src": "https://images.unsplash.com/photo-1552664730-d307ca884978?q=80&w=1200&auto=format&fit=crop",
+            "src": "/Marketing 360/marketing 360 slider 05.jpg",
             "alt": "Competitive intelligence and marketing analytics"
           }
         }
@@ -71,7 +71,7 @@
 
   "media": {
     "heroImage": {
-      "src": "https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=2000&q=80",
+      "src": "/Marketing 360/marketing 360 header.png",
       "alt": "Complete digital marketing platform with analytics and campaign management",
       "priority": true
     }

@@ -28,7 +28,7 @@
           "title": "Create professional campaigns in minutes with AI",
           "body": "Most SMBs don't send email because campaign creation feels like a second job — writing subject lines, choosing images, laying out templates, and still ending up with something that looks amateur. Hostopia's AI changes the math. Customers describe the campaign in a sentence, AI generates on-brand copy, imagery, and layout tailored to their industry, and the owner reviews and sends. A campaign that used to take a half-day now takes ten minutes, which means SMBs actually send consistently instead of sporadically — and that consistency is what drives revenue from email.",
           "image": {
-            "src": "https://images.unsplash.com/photo-1552664730-d307ca884978?q=80&w=1200&auto=format&fit=crop",
+            "src": "/Email Marketing/email marketing slider 01.jpg",
             "alt": "Email marketing campaign creation"
           }
         },
@@ -36,7 +36,7 @@
           "title": "Automate welcome, promotional, and re-engagement flows",
           "body": "One-off campaigns are useful. Automations are where real revenue lives. Hostopia's platform lets SMBs set up welcome sequences that nurture new subscribers, promotional flows tied to holidays and product launches, and re-engagement campaigns that win back inactive customers — all running on their own once configured. Owners stop thinking about \"what should I send this week?\" and start seeing revenue arrive from campaigns they built months ago. For partners, automations dramatically extend the stickiness and perceived value of the product.",
           "image": {
-            "src": "https://images.unsplash.com/photo-1516321318423-f06f85e504b3?q=80&w=1200&auto=format&fit=crop",
+            "src": "/Email Marketing/email marketing slider 02.jpg",
             "alt": "Marketing automation and email sequences"
           }
         },
@@ -44,7 +44,7 @@
           "title": "Grow a subscriber list automatically from the website",
           "body": "Email marketing without a list is just a nicer-looking draft folder. Hostopia's embeddable signup forms drop onto OPB websites, DIFM sites, or custom builds, turning web visitors into subscribers without any developer work. Forms support segmentation fields, customized thank-you messages, and compliance-ready consent capture, so every campaign starts with a clean, legally sound audience. The tighter integration with the website platform is exactly the kind of ecosystem advantage standalone tools can't match.",
           "image": {
-            "src": "https://images.unsplash.com/photo-1434030216411-0b793f4b4173?q=80&w=1200&auto=format&fit=crop",
+            "src": "/Email Marketing/email marketing slider 03.jpg",
             "alt": "Newsletter signup and list growth"
           }
         },
@@ -52,7 +52,7 @@
           "title": "See exactly what's working and what's not",
           "body": "Email marketing only improves when the data is visible. Hostopia surfaces opens, clicks, conversions, and audience-level insights in a clean dashboard — so SMBs stop guessing which subject lines work or which segments respond. Owners iterate faster, campaigns get better month over month, and the data becomes something your partner success team can use to prompt meaningful upsell conversations: \"your opens doubled, let's talk about adding an ecommerce store to convert that engagement.\"",
           "image": {
-            "src": "https://images.unsplash.com/photo-1551288049-bebda4e38f71?q=80&w=1200&auto=format&fit=crop",
+            "src": "/Email Marketing/email marketing slider 04.jpg",
             "alt": "Email analytics and performance metrics"
           }
         },
@@ -60,7 +60,7 @@
           "title": "Bundle email with the rest of their digital stack",
           "body": "Email doesn't live alone. Hostopia's email marketing plugs directly into domain-based email, websites, ecommerce, and listings — so subscriber lists, product catalogs, and brand assets flow between systems without manual exports. Customers get a coherent experience across their marketing stack; you get a bundle customers genuinely can't replicate by stitching together SaaS tools. That integration is the real moat against commodity email platforms, and it's where your platform wins the retention argument.",
           "image": {
-            "src": "https://images.unsplash.com/photo-1460925895917-afdab827c52f?q=80&w=1200&auto=format&fit=crop",
+            "src": "/Email Marketing/email marketing slider 05.jpg",
             "alt": "Integrated marketing stack"
           }
         }
@@ -70,7 +70,7 @@
 
   "media": {
     "heroImage": {
-      "src": "https://images.unsplash.com/photo-1596526131083-e8c633c948d2?q=80&w=1600&auto=format&fit=crop",
+      "src": "/Email Marketing/email marketing header.png",
       "alt": "Email marketing on laptop and mobile",
       "priority": true
     }
