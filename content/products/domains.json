@@ -21,46 +21,71 @@
     "headline": "Every SMB Relationship Starts with a Domain — Make Sure It Starts with You",
     "description": "Domains are where SMBs choose who powers their digital presence, and the provider who registers the domain is the provider who earns everything that follows. Hostopia's white-label Domains platform lets you sell and manage domains under your brand, then seamlessly attach email, websites, SSL, and marketing services as customers grow.",
     "cta": { "primary": "Book a Demo", "secondary": "Talk to Partner Success" },
-    "sidebar": {
+    "storyAlternating": {
       "heading": "Your SMB customers can",
-      "items": [
+      "blocks": [
         {
-          "title": "Find the perfect domain in seconds",
-          "body": "The right domain is half the battle for a new small business — and the search often stalls the moment their first choice is taken. Hostopia's intelligent search spans 24+ extensions, from .com and .net to country-specific TLDs like .ca, .mx, and .us, plus premium domains from trusted secondary markets. Smart suggestions surface strong alternatives when the obvious choice isn't available, so customers walk away with a name they love instead of a registration they settle for. Fewer abandoned checkouts, more activated accounts, and a faster path to everything you sell next.",
+          "title": "Domain Search",
+          "icon": "Search",
+          "bullets": [
+            "Find the right domain fast with 24+ extensions and premium options",
+            "Get smart alternatives when your first choice is taken",
+            "Reduce drop-offs and drive more activated accounts"
+          ],
           "image": {
-            "src": "/Domain%20Page/New%20Images/domain%20page%20slider%2001.jpg",
+            "src": "/Domain Page/New Images/domain page slider 01.jpg",
             "alt": "Domain search and global DNS concept"
           }
         },
         {
-          "title": "Look professional from the first email",
-          "body": "A Gmail address tells prospects a business is small. A domain-based email tells them it's legit. The moment the domain is registered, Hostopia makes it trivial to activate business email on that same domain — the single highest-attach service in the portfolio. Your customers project credibility from day one, and you turn every domain sale into a second product sale inside the first five minutes. For SMB owners who care about looking professional (which is all of them), it's a difference they feel instantly.",
+          "title": "Look Professional",
+          "icon": "Mail",
+          "bullets": [
+            "Instantly boost credibility with domain-based email",
+            "Activate email seamlessly right after the domain purchase",
+            "Turn every domain sale into a high-converting second sale"
+          ],
           "image": {
-            "src": "/Domain%20Page/New%20Images/domain%20page%20slider%2002.jpg",
+            "src": "/Domain Page/New Images/domain page slider 02.jpg",
             "alt": "Professional business email and branding"
           }
         },
         {
-          "title": "Manage everything from one branded dashboard",
-          "body": "Most SMB owners lose track of where their domain lives, when it renews, and who to call when DNS breaks. Hostopia's white-label dashboard consolidates DNS settings, forwarding rules, auto-renewals, expiration tracking, and bulk transfers — all under your brand, with your support as the one number to call. Renewals become effortless, accidental lapses disappear, and your support team sees fewer panicked \"my email stopped working\" tickets tied to expired domains. One dashboard, one provider, one source of truth.",
+          "title": "Manage everything in 1 place",
+          "icon": "LayoutDashboard",
+          "bullets": [
+            "Centralized dashboard to manage DNS, renewals, transfers, and domain settings in one place",
+            "White-label experience keeps your brand front and center with a single support touchpoint",
+            "Reduces lapses and support tickets by simplifying renewals and domain management"
+          ],
           "image": {
-            "src": "/Domain%20Page/New%20Images/domain%20page%20slider%2003.jpg",
+            "src": "/Domain Page/New Images/domain page slider 03.jpg",
             "alt": "Dashboard for managing domains and DNS"
           }
         },
         {
-          "title": "Expand into the full digital stack when they're ready",
-          "body": "A domain is a foothold. Websites, SSL, ecommerce, and marketing services are where the real relationship is built. Hostopia's platform ties every digital service back to the domain the customer already owns with you — so adding email, hosting, or a store takes a click, not a migration. Your customers get a seamless upgrade path; you get the natural attach motion that turns a $15 registration into a multi-product account with years of recurring revenue.",
+          "title": "Easy upgrade path",
+          "icon": "TrendingUp",
+          "bullets": [
+            "Turn domains into a launchpad for websites, email, ecommerce, and more",
+            "Enable one-click upsells without migrations by tying services to the domain",
+            "Grow recurring revenue by converting low-cost domains into multi-product accounts"
+          ],
           "image": {
-            "src": "/Domain%20Page/New%20Images/domain%20page%20slider%2004.jpg",
+            "src": "/Domain Page/New Images/domain page slider 04.jpg",
             "alt": "Growing digital services connected to a domain"
           }
         },
         {
-          "title": "Stay protected with auto-renewals and security defaults",
-          "body": "Domains lapse more often than they should, and lost domains break email, websites, and reputation all at once. Hostopia's auto-renewal, expiration alerts, and registrar-grade security defaults protect every customer from accidental loss. Optional privacy protection shields personal information from public WHOIS records, and two-factor authentication safeguards transfers. For partners, that means fewer escalated recovery tickets — for customers, it means one less thing to worry about.",
+          "title": "Protect your customer's business",
+          "icon": "Shield",
+          "bullets": [
+            "Prevent domain loss with auto-renewals, expiration alerts, and built-in security",
+            "Protect customers with WHOIS privacy and two-factor authentication",
+            "Reduce support escalations while safeguarding websites, email, and brand reputation"
+          ],
           "image": {
-            "src": "/Domain%20Page/New%20Images/domain%20page%20slider%2005.jpg",
+            "src": "/Domain Page/New Images/domain page slider 05.jpg",
             "alt": "Domain security and renewal protection"
           }
         }

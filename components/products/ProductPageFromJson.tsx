@@ -7,6 +7,7 @@ import ProductLifecycleGrid from "@/components/products/ProductLifecycleGrid";
 import { CustomersSection } from "@/components/ui/customers-section";
 import { LogoTicker } from "@/components/ui/logo-ticker";
 import { VerticalTabs } from "@/components/ui/vertical-tabs";
+import { AlternatingStorySection } from "@/components/ui/alternating-story-section";
 import { AccordionFeatureSection } from "@/components/ui/accordion-feature-section";
 import { ProductHeroAccordion } from "@/components/ui/product-hero-accordion";
 import { InteractiveImageAccordion } from "@/components/ui/interactive-image-accordion";
@@ -134,6 +135,7 @@ export default function ProductPageFromJson({ data, navLabel }: { data: ProductJ
   const businessEmailImageAccordion = data.slug === BUSINESS_EMAIL_SLUG && Boolean(hero.sidebar);
   const featureTwoColumnAccordionLayout =
     FEATURE_TWO_COLUMN_ACCORDION_SLUGS.has(data.slug) && Boolean(hero.sidebar);
+  const hasStoryAlternating = Boolean(hero.storyAlternating);
   const heroAccordionLayout =
     !verticalTabsLayout &&
     Boolean(hero.sidebar) &&
@@ -143,7 +145,8 @@ export default function ProductPageFromJson({ data, navLabel }: { data: ProductJ
     verticalTabsLayout ||
     heroAccordionLayout ||
     businessEmailImageAccordion ||
-    featureTwoColumnAccordionLayout;
+    featureTwoColumnAccordionLayout ||
+    hasStoryAlternating;
 
   const isFlatHeroPop = FLAT_HERO_POP_SLUGS.has(data.slug);
 
@@ -281,6 +284,14 @@ export default function ProductPageFromJson({ data, navLabel }: { data: ProductJ
           posterSrc={vimeoOverview.posterSrc}
           posterAlt={vimeoOverview.posterAlt}
           playLabel={vimeoOverview.playLabel ?? "Play product video"}
+        />
+      ) : null}
+
+      {hasStoryAlternating && hero.storyAlternating ? (
+        <AlternatingStorySection
+          heading={hero.storyAlternating.heading}
+          blocks={hero.storyAlternating.blocks}
+          primaryCtaLabel={hero.cta.primary}
         />
       ) : null}
 

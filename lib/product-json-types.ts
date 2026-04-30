@@ -89,6 +89,20 @@ export type ProductSidebarItem = {
   image?: ProductMediaImage;
 };
 
+export type ProductStoryAlternatingBlock = {
+  title: string;
+  /** Lucide icon name (see `ProductLucideIcon`) */
+  icon: string;
+  bullets: string[];
+  image: ProductMediaImage;
+};
+
+/** Alternating text/image rows (domains test layout) — replaces hero accordion when set. */
+export type ProductStoryAlternating = {
+  heading: string;
+  blocks: ProductStoryAlternatingBlock[];
+};
+
 export type ProductHero = {
   eyebrow: string;
   headline: string;
@@ -101,6 +115,8 @@ export type ProductHero = {
     heading: string;
     items: ProductSidebarItem[];
   };
+  /** When present, renders zigzag story section instead of `ProductHeroAccordion`. */
+  storyAlternating?: ProductStoryAlternating;
 };
 
 export type ProductFeatureCard = {
