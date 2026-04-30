@@ -81,7 +81,11 @@ export function AlternatingStorySection({ heading, blocks, primaryCtaLabel }: Pr
                       src={block.image.src}
                       alt={block.image.alt}
                       fill
-                      className="object-cover"
+                      className={cn(
+                        "object-cover",
+                        /* First block art is biased left; anchor right so “Search” isn’t clipped. */
+                        i === 0 && "object-right",
+                      )}
                       sizes="(max-width: 1024px) 100vw, 50vw"
                       quality={92}
                       priority={i === 0}
