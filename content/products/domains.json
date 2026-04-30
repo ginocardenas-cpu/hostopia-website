@@ -28,8 +28,8 @@
           "title": "Domain Search",
           "icon": "Search",
           "bullets": [
-            "Find the right domain fast with 24+ extensions and premium options",
-            "Get smart alternatives when your first choice is taken",
+            "Help your customers find the right domain fast with 24+ extensions and premium options",
+            "Provide smart alternatives when their first choice is unavailable",
             "Reduce drop-offs and drive more activated accounts"
           ],
           "image": {
@@ -38,12 +38,12 @@
           }
         },
         {
-          "title": "Look Professional",
+          "title": "Professional Presence",
           "icon": "Mail",
           "bullets": [
-            "Instantly boost credibility with domain-based email",
-            "Activate email seamlessly right after the domain purchase",
-            "Turn every domain sale into a high-converting second sale"
+            "Help your customers build credibility with domain-based email",
+            "Enable seamless email activation immediately after domain purchase",
+            "Turn every domain sale into a high-converting second product sale"
           ],
           "image": {
             "src": "/Domain Page/New Images/domain page slider 02.jpg",
@@ -51,12 +51,12 @@
           }
         },
         {
-          "title": "Manage everything in 1 place",
+          "title": "Centralized Management",
           "icon": "LayoutDashboard",
           "bullets": [
-            "Centralized dashboard to manage DNS, renewals, transfers, and domain settings in one place",
-            "White-label experience keeps your brand front and center with a single support touchpoint",
-            "Reduces lapses and support tickets by simplifying renewals and domain management"
+            "Give your customers a single dashboard to manage DNS, renewals, transfers, and settings",
+            "Deliver a white-label experience with your brand as the primary support touchpoint",
+            "Reduce lapses and support tickets by simplifying domain management"
           ],
           "image": {
             "src": "/Domain Page/New Images/domain page slider 03.jpg",
@@ -64,12 +64,12 @@
           }
         },
         {
-          "title": "Easy upgrade path",
+          "title": "Easy Upgrade Path",
           "icon": "TrendingUp",
           "bullets": [
-            "Turn domains into a launchpad for websites, email, ecommerce, and more",
+            "Turn domains into a foundation for websites, email, ecommerce, and more",
             "Enable one-click upsells without migrations by tying services to the domain",
-            "Grow recurring revenue by converting low-cost domains into multi-product accounts"
+            "Grow recurring revenue by converting domains into multi-product accounts"
           ],
           "image": {
             "src": "/Domain Page/New Images/domain page slider 04.jpg",
@@ -77,12 +77,12 @@
           }
         },
         {
-          "title": "Protect your customer's business",
+          "title": "Business Protection",
           "icon": "Shield",
           "bullets": [
-            "Prevent domain loss with auto-renewals, expiration alerts, and built-in security",
-            "Protect customers with WHOIS privacy and two-factor authentication",
-            "Reduce support escalations while safeguarding websites, email, and brand reputation"
+            "Help your customers prevent domain loss with auto-renewals, alerts, and built-in security",
+            "Protect their data with WHOIS privacy and two-factor authentication",
+            "Reduce escalations while safeguarding websites, email, and brand reputation"
           ],
           "image": {
             "src": "/Domain Page/New Images/domain page slider 05.jpg",
