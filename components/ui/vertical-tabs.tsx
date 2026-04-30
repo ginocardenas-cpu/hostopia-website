@@ -23,7 +23,7 @@ const AUTO_PLAY_DURATION = 5000;
 
 /** Under-image copy: centered; measurement must match for stable min-height. */
 const DESCRIPTION_UNDER_IMAGE_CLASS =
-  "font-raleway text-sm font-normal leading-relaxed text-gray-500 text-center text-balance";
+  "whitespace-pre-line font-raleway text-sm font-normal leading-relaxed text-gray-500 text-center text-balance";
 
 export function VerticalTabs({ sectionHeading, items }: VerticalTabsProps) {
   const [activeIndex, setActiveIndex] = useState(0);
