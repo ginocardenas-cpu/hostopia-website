@@ -29,7 +29,7 @@
           "title": "Fax from anywhere, on any device",
           "body": "Legacy fax locks employees to a machine in an office — which is exactly the opposite of how modern SMBs actually work. Hostopia's Online Fax sends and receives from any device with an internet connection: laptop, tablet, smartphone, or desktop. Remote employees fax contracts from home, field reps send signed documents from customer sites, and clinicians handle patient forms from multiple locations. No phone lines, no hardware, no office tether — just the same fax workflow in a modern form factor.",
           "image": {
-            "src": "https://images.unsplash.com/photo-1512941937669-90a1b58e7e9c?q=80&w=1200&auto=format&fit=crop",
+            "src": "/Online Fax/online fax slider 01.jpg",
             "alt": "Working remotely with mobile and cloud tools"
           }
         },
@@ -37,7 +37,7 @@
           "title": "Stay compliant in regulated industries without extra configuration",
           "body": "Healthcare, legal, and financial businesses can't just replace fax with email — their compliance frameworks still specify fax for many transmissions. Hostopia's Online Fax encrypts every transmission and supports HIPAA-aligned configurations out of the box, so SMBs in regulated industries modernize without creating compliance risk. That's a big deal for partners selling into medical practices, law firms, insurance brokers, and accounting firms — industries that pay premium rates for services they can trust.",
           "image": {
-            "src": "https://images.unsplash.com/photo-1576091160399-112ba8d25d1d?q=80&w=1200&auto=format&fit=crop",
+            "src": "/Online Fax/online fax slider 02.jpg",
             "alt": "Healthcare compliance and secure communications"
           }
         },
@@ -45,7 +45,7 @@
           "title": "Keep existing numbers during the switch",
           "body": "Fax numbers end up on business cards, contracts, medical forms, and pharmacy records — they're not disposable. Hostopia's number porting migrates customers off legacy lines without changing the number anyone has on file, or activates fresh local and toll-free numbers for new customers. The switch becomes invisible to the SMB's own customers, which removes the single biggest objection to modernizing fax: \"but everyone has our old number.\"",
           "image": {
-            "src": "https://images.unsplash.com/photo-1555421689-491a97ff2040?q=80&w=1200&auto=format&fit=crop",
+            "src": "/Online Fax/online fax slider 03.jpg",
             "alt": "Business phone and fax number management"
           }
         },
@@ -53,7 +53,7 @@
           "title": "Simplify workflows with email-to-fax and fax-to-email",
           "body": "The fastest path to adoption is fitting into how SMBs already work. Hostopia's Online Fax lets customers send faxes straight from email, receive faxes directly in their inbox as PDFs, and manage everything through a browser portal when needed. No separate software to install, no new interface to learn, and no retraining of office staff. The system replaces the fax machine without adding a new system to manage.",
           "image": {
-            "src": "https://images.unsplash.com/photo-1586281380349-633531d88871?q=80&w=1200&auto=format&fit=crop",
+            "src": "/Online Fax/online fax slider 04.jpg",
             "alt": "Documents and streamlined office workflows"
           }
         },
@@ -61,7 +61,7 @@
           "title": "Scale from solo practitioner to multi-location business",
           "body": "Fax usage scales differently across industries — a solo lawyer might send two faxes a week, while a medical practice might send two hundred. Hostopia's plans include shared page pools for teams, admin roles, per-number tracking, and usage reporting — so the service fits solo practitioners, small teams, and multi-location businesses on the same platform. Customers start where they need and grow inside your offering rather than outgrowing to a different provider.",
           "image": {
-            "src": "https://images.unsplash.com/photo-1556742502-ec7c0e9f34b1?q=80&w=1200&auto=format&fit=crop",
+            "src": "/Online Fax/online fax slider 05.jpg",
             "alt": "Team and multi-location fax usage"
           }
         }
@@ -71,7 +71,7 @@
 
   "media": {
     "heroImage": {
-      "src": "https://images.unsplash.com/photo-1586953208448-b95a79798f07?q=80&w=1600&auto=format&fit=crop",
+      "src": "/Online Fax/online fax header.png",
       "alt": "Modern digital fax and document transmission",
       "priority": true
     }

@@ -117,6 +117,8 @@ const FLAT_HERO_POP_SLUGS = new Set([
   "hosting",
   "email-marketing",
   "ppc-management",
+  "custom-website-development",
+  "digital-fax",
 ]);
 
 export default function ProductPageFromJson({ data, navLabel }: { data: ProductJson; navLabel: string }) {

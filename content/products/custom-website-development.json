@@ -28,7 +28,7 @@
           "title": "A site built from scratch around their business, not a template",
           "body": "Templates save time, but they cap what a brand can become. Custom Website Design starts with a blank canvas and a structured discovery process — the designer learns the business, the customers, the competition, and the goals, then builds a site tailored to exactly those inputs. Navigation reflects how customers actually buy, layout emphasizes what matters most to the business, and the visual identity is genuinely the SMB's — not a tweaked version of something another business already uses. The result is a site that competes at the premium tier of the market.",
           "image": {
-            "src": "https://images.unsplash.com/photo-1504639725590-34d0984388bd?q=80&w=1200&auto=format&fit=crop",
+            "src": "/Custom Website Design/custome website development slider 01.jpg",
             "alt": "Custom web development and coding"
           }
         },
@@ -36,7 +36,7 @@
           "title": "A WordPress foundation that scales with the business",
           "body": "Every Hostopia custom build ships on WordPress — the most widely used, most extensible CMS in the world. That foundation means the SMB can add plugins, integrate with third-party tools, swap in new functionality, and evolve the site for years without a rebuild. Designers, developers, and marketers across the industry speak WordPress, so the SMB is never locked into a single vendor. For owners, that's long-term flexibility. For you, that's a platform strong enough to support agencies and technical customers alongside mainstream SMBs.",
           "image": {
-            "src": "https://images.unsplash.com/photo-1616469829581-73993eb86b00?q=80&w=1200&auto=format&fit=crop",
+            "src": "/Custom Website Design/custome website development slider 02.jpg",
             "alt": "WordPress development workspace"
           }
         },
@@ -44,7 +44,7 @@
           "title": "A structured, collaborative process with real designers",
           "body": "Custom design without a process becomes an expensive disaster. Hostopia runs every project through a documented discovery, proposal, design, and revision workflow — with a dedicated designer and coordinator collaborating directly with the customer. Draft reviews happen in a structured portal, revisions are scoped and tracked, and scope creep gets managed before it eats the timeline. Owners get the premium agency experience without the agency chaos, and you deliver predictable outcomes on every engagement.",
           "image": {
-            "src": "https://images.unsplash.com/photo-1561070791-2526d30994b5?q=80&w=1200&auto=format&fit=crop",
+            "src": "/Custom Website Design/custome website development slider 03.jpg",
             "alt": "Design collaboration and review"
           }
         },
@@ -52,7 +52,7 @@
           "title": "Advanced functionality and third-party integrations when the business needs them",
           "body": "Templates rarely support custom booking systems, complex product catalogs, client portals, or niche integrations — and SMBs with those needs typically leave commodity platforms in frustration. Hostopia's custom builds support the full breadth of modern web functionality: third-party APIs, custom forms, membership areas, multi-language setups, ecommerce, CRM integrations, and more. Whatever the business requires, the build supports it — which means you never lose a high-value customer because \"our platform doesn't do that.\"",
           "image": {
-            "src": "https://images.unsplash.com/photo-1461749280684-dccba630e2f6?q=80&w=1200&auto=format&fit=crop",
+            "src": "/Custom Website Design/custome website development slider 04.jpg",
             "alt": "Advanced web integrations"
           }
         },
@@ -60,7 +60,7 @@
           "title": "Full ownership, with optional maintenance to keep it running",
           "body": "When the project launches, the SMB owns the site, the content, the design files, and the database outright — no licensing traps, no platform lock-in. Optional hosting and maintenance plans keep the site secure, updated, and current over time, turning the one-time project into a recurring revenue relationship. Customers get a real asset they can grow into; you get a multi-product, multi-year engagement that doesn't end when the launch button gets pushed.",
           "image": {
-            "src": "https://images.unsplash.com/photo-1450101499163-c8848c66ca85?q=80&w=1200&auto=format&fit=crop",
+            "src": "/Custom Website Design/custome website development slider 05.jpg",
             "alt": "Business ownership and handoff"
           }
         }
@@ -70,7 +70,7 @@
 
   "media": {
     "heroImage": {
-      "src": "https://images.unsplash.com/photo-1461749280684-dccba630e2f6?q=80&w=1600&auto=format&fit=crop",
+      "src": "/Custom Website Design/custom website development header.png",
       "alt": "Custom website development and code",
       "priority": true
     }
