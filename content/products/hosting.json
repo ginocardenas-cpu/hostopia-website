@@ -29,40 +29,40 @@
           "title": "Deploy beyond what builders can handle",
           "body": "Many SMBs outgrow builders—or need more from day one. Hostopia runs WordPress, Joomla, custom CMS, and modern apps in a managed stack. Owners keep themes and plugins; developers reach files and databases; agencies ship client builds—all under your brand, beside your builder motion.",
           "image": {
-            "src": "https://images.unsplash.com/photo-1558494949-ef010cbdcc31?q=80&w=1200&auto=format&fit=crop",
-            "alt": "Server infrastructure and web hosting"
+            "src": "/Hosting/hosting slider deploy beyond.jpg",
+            "alt": "Deploy beyond builders — WordPress, Joomla, and custom apps in a managed stack"
           }
         },
         {
           "title": "Scale confidently as traffic and complexity grow",
           "body": "Traffic spikes, database growth, and sprawl break entry plans—and forced migrations kill trust. Hostopia tiers scale with SLAs, high availability, and enterprise data centers. Customers grow on your platform; you don't lose strong accounts to capacity limits.",
           "image": {
-            "src": "https://images.unsplash.com/photo-1451187580459-43490279c0fa?q=80&w=1200&auto=format&fit=crop",
-            "alt": "Scalable cloud and network capacity"
+            "src": "/Hosting/hosting slider scale confidently.jpg",
+            "alt": "Scalable hosting tiers, high availability, and enterprise data centers"
           }
         },
         {
           "title": "Manage multiple sites from a single dashboard",
           "body": "Agencies live in multi-site workflows—the stack either helps or fights them. One branded dashboard provisions environments, access, usage, and client deploys without account hopping. That speed makes you the host partners recommend and turns every agency into distribution.",
           "image": {
-            "src": "https://images.unsplash.com/photo-1551288049-bebda4e38f71?q=80&w=1200&auto=format&fit=crop",
-            "alt": "Multi-site hosting dashboard"
+            "src": "/Hosting/hosting slider manage multiple.jpg",
+            "alt": "Multi-site hosting dashboard and client management"
           }
         },
         {
           "title": "Bundle domains, SSL, email, and ecommerce into one experience",
           "body": "Hosting is the hub: domains, SSL, email, and ecommerce land in one stack. One dashboard, one brand, one bill—so every hosting sale becomes the gateway that pulls the rest of your portfolio.",
           "image": {
-            "src": "https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?q=80&w=1200&auto=format&fit=crop",
-            "alt": "Integrated digital services bundle"
+            "src": "/Hosting/hosting slider bundle domains.jpg",
+            "alt": "Domains, SSL, email, and ecommerce bundled with hosting"
           }
         },
         {
           "title": "Get technical flexibility without technical burden",
           "body": "SSH, PHP versions, cron, and database tools—without you running metal. Hostopia operates data centers, security, patching, backups, and performance so technical buyers get control while your team sells and supports, not babysits servers.",
           "image": {
-            "src": "https://images.unsplash.com/photo-1558494949-ef010cbdcc31?q=80&w=1200&auto=format&fit=crop",
-            "alt": "Technical hosting configuration"
+            "src": "/Hosting/hosting slider get technical.jpg",
+            "alt": "Technical hosting tools — SSH, PHP, cron, and databases"
           }
         }
       ]
@@ -71,8 +71,8 @@
 
   "media": {
     "heroImage": {
-      "src": "https://images.unsplash.com/photo-1558494949-ef010cbdcc31?q=80&w=1600&auto=format&fit=crop",
-      "alt": "Website hosting and data center",
+      "src": "/Hosting/hosting header.png",
+      "alt": "Website hosting infrastructure and partner dashboard",
       "priority": true
     },
     "vimeoOverview": {
@@ -80,8 +80,8 @@
       "eyebrow": "See it in action",
       "title": "Website Hosting built for partners and SMBs",
       "description": "A quick overview of how Hostopia hosting fits your white-label stack.",
-      "posterSrc": "https://images.unsplash.com/photo-1558494949-ef010cbdcc31?q=80&w=1600&auto=format&fit=crop",
-      "posterAlt": "Website hosting and data center",
+      "posterSrc": "/Hosting/hosting header.png",
+      "posterAlt": "Website hosting infrastructure and partner dashboard",
       "playLabel": "Play hosting overview"
     }
   },
