@@ -8,6 +8,9 @@ import { normalizeVimeoId } from "@/lib/vimeo-id";
 import type { VimeoVideoContent } from "@/lib/vimeo-video-types";
 import { cn } from "@/lib/utils";
 
+/** Shared Hostopia-branded poster for every Vimeo play tile (home + products). */
+const VIMEO_BRAND_POSTER_SRC = "/Hostopia Branding/hostopia-video-poster-splash.png";
+
 type Props = VimeoVideoContent & {
   className?: string;
 };
@@ -17,8 +20,8 @@ export function VimeoVideoSection({
   eyebrow = "Watch",
   title,
   description,
-  posterSrc,
-  posterAlt = "",
+  posterSrc: _posterSrc,
+  posterAlt: _posterAlt,
   playLabel = "Play video",
   className,
 }: Props) {
@@ -62,21 +65,15 @@ export function VimeoVideoSection({
                 aria-expanded={open}
               >
                 <span className="relative block aspect-video w-full">
-                  {posterSrc ? (
-                    <Image
-                      src={posterSrc}
-                      alt={posterAlt || title}
-                      fill
-                      className="object-cover transition-transform duration-500 group-hover:scale-[1.02]"
-                      sizes="(max-width: 1024px) 100vw, 50vw"
-                    />
-                  ) : (
-                    <div
-                      className="absolute inset-0 bg-gradient-to-br from-teal/25 via-cream to-gold/25"
-                      aria-hidden
-                    />
-                  )}
-                  <span className="absolute inset-0 bg-gradient-to-t from-charcoal/40 via-charcoal/10 to-transparent" aria-hidden />
+                  <Image
+                    src={VIMEO_BRAND_POSTER_SRC}
+                    alt={`Hostopia — ${playLabel}: ${title}`}
+                    fill
+                    quality={92}
+                    className="object-cover transition-transform duration-500 group-hover:scale-[1.02]"
+                    sizes="(max-width: 1024px) 100vw, 50vw"
+                  />
+                  <span className="absolute inset-0 bg-gradient-to-t from-charcoal/35 via-charcoal/5 to-transparent" aria-hidden />
                   <span className="absolute inset-0 flex items-center justify-center">
                     <span className="flex h-16 w-16 items-center justify-center rounded-full bg-white text-teal shadow-lg ring-4 ring-white/40 transition-transform duration-300 group-hover:scale-110 sm:h-[4.5rem] sm:w-[4.5rem]">
                       <Play className="ml-1 h-8 w-8 fill-current sm:h-9 sm:w-9" aria-hidden />
