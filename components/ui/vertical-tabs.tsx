@@ -21,9 +21,34 @@ export type VerticalTabsProps = {
 
 const AUTO_PLAY_DURATION = 5000;
 
-/** Under-image copy: centered; measurement must match for stable min-height. */
-const DESCRIPTION_UNDER_IMAGE_CLASS =
-  "whitespace-pre-line font-raleway text-sm font-normal leading-relaxed text-gray-500 text-center text-balance";
+/** Single line under gallery image (stacked, all centered). */
+const DESCRIPTION_LINE_CLASS =
+  "w-full max-w-lg text-center font-raleway text-sm font-normal leading-relaxed text-gray-500 text-balance";
+
+const DESCRIPTION_STACK_CLASS = "flex w-full max-w-lg flex-col items-center gap-2.5";
+
+function splitDescriptionLines(description: string): string[] {
+  return description
+    .split("\n")
+    .map((line) => line.trim())
+    .filter(Boolean);
+}
+
+function DescriptionBody({ description }: { description: string }) {
+  const lines = splitDescriptionLines(description);
+  if (lines.length === 0) {
+    return <p className={DESCRIPTION_LINE_CLASS}>{description}</p>;
+  }
+  return (
+    <div className={DESCRIPTION_STACK_CLASS}>
+      {lines.map((line, i) => (
+        <p key={i} className={DESCRIPTION_LINE_CLASS}>
+          {line}
+        </p>
+      ))}
+    </div>
+  );
+}
 
 export function VerticalTabs({ sectionHeading, items }: VerticalTabsProps) {
   const [activeIndex, setActiveIndex] = useState(0);
@@ -114,9 +139,9 @@ export function VerticalTabs({ sectionHeading, items }: VerticalTabsProps) {
           aria-hidden
         >
           {items.map((item) => (
-            <p key={`measure-${item.id}`} data-measure-desc className={DESCRIPTION_UNDER_IMAGE_CLASS}>
-              {item.description}
-            </p>
+            <div key={`measure-${item.id}`} data-measure-desc className="w-full max-w-lg">
+              <DescriptionBody description={item.description} />
+            </div>
           ))}
         </div>
 
@@ -242,7 +267,7 @@ export function VerticalTabs({ sectionHeading, items }: VerticalTabsProps) {
 
               {/* Tab detail copy: centered under image; min-height avoids jump when tabs change. */}
               <div
-                className="relative mt-6 w-full max-w-lg self-center px-1"
+                className="relative mt-6 flex w-full max-w-lg flex-col items-center self-center px-1"
                 style={descriptionSlotPx > 0 ? { minHeight: descriptionSlotPx } : undefined}
               >
                 <AnimatePresence mode="wait" initial={false}>
@@ -255,9 +280,9 @@ export function VerticalTabs({ sectionHeading, items }: VerticalTabsProps) {
                     animate={{ opacity: 1 }}
                     exit={{ opacity: 0 }}
                     transition={{ duration: 0.2, ease: [0.23, 1, 0.32, 1] }}
-                    className="w-full"
+                    className="flex w-full flex-col items-center"
                   >
-                    <p className={DESCRIPTION_UNDER_IMAGE_CLASS}>{active.description}</p>
+                    <DescriptionBody description={active.description} />
                   </motion.div>
                 </AnimatePresence>
               </div>
