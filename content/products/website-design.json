@@ -22,47 +22,72 @@
     "headline": "Professional Websites for SMBs — Built by Our Team, Branded as Yours",
     "description": "Thousands of SMBs have no website or an outdated one that hurts credibility, and most don't have the time or skills to build one themselves. Hostopia's white-label DIFM Website Design is a fully managed service you resell under your brand — our team handles consultation, design, copy, QA, and maintenance while you own the customer and the revenue.",
     "cta": { "primary": "Book a Demo", "secondary": "Talk to Partner Success" },
-    "sidebar": {
-      "heading": "Your SMB customers get",
-      "items": [
+    "storyAlternating": {
+      "heading": "DIFM Website Design",
+      "blocks": [
         {
-          "title": "A complete done-for-me experience from first call to launch",
-          "body": "Busy owners don't want to learn a builder, pick fonts, or write homepage copy — they want a professional website, and they want someone else to handle it. Hostopia's DIFM service starts with a 1:1 consultation to capture the business vision, then pairs the customer with a designer, copywriter, and coordinator who deliver a fully built site. No technical skills required, no blank pages to fill, no decisions they don't know how to make. The owner shows up, reviews drafts, and approves a site that's ready to publish.",
+          "title": "Done-for-You Website Design",
+          "icon": "PenTool",
+          "bullets": [
+            "Your customers will get fully built websites through a guided consultation performed by our expert team",
+            "Remove the need to learn builders, write copy, or make complex design decisions",
+            "Deliver a seamless path from concept to launch with minimal customer effort"
+          ],
           "image": {
             "src": "/Website Design Page/website design slider 01.jpg",
-            "alt": "Designer consultation and creative process"
+            "alt": "Designer consultation and guided website design process"
           }
         },
         {
-          "title": "Mobile-responsive, SEO-ready sites that perform out of the gate",
-          "body": "Every site ships fully responsive across desktop, tablet, and mobile — with SEO foundations baked in from day one. Meta titles, meta descriptions, clean URL structures, fast load times, and proper heading hierarchy are all handled by the design team as part of delivery, not as an afterthought. That means customers don't need to hire an SEO consultant after launch to fix basic issues, and you don't get support tickets about \"why isn't my site showing up on Google?\" the day after a customer goes live.",
+          "title": "SEO-Ready by Default",
+          "icon": "Search",
+          "bullets": [
+            "Provide fully responsive websites optimized for desktop, tablet, and mobile",
+            "Include SEO best practices like meta tags, clean URLs, and fast load speeds at launch",
+            "Reduce post-launch issues and support tickets with built-in optimization"
+          ],
           "image": {
             "src": "/Website Design Page/website design slider 02.jpg",
-            "alt": "Responsive website on multiple devices"
+            "alt": "Responsive, SEO-ready website across devices"
           }
         },
         {
-          "title": "Built-in business tools that actually drive bookings and sales",
-          "body": "A website that looks great but doesn't convert is a digital poster. Hostopia's DIFM service includes the business tools SMBs actually need — contact forms, Google Maps integration, photo and video galleries, appointment scheduling, coupons, and optional Online Store setup — configured and ready on launch day. Owners get a site that captures leads, books appointments, and sells products from the first visitor. You get a product that demonstrates clear ROI in weeks, which makes every renewal conversation easier.",
+          "title": "Conversion-Driven Sites",
+          "icon": "MousePointerClick",
+          "bullets": [
+            "Equip your customers with sites that include forms, maps, galleries, scheduling, and ecommerce options",
+            "Help them capture leads, book appointments, and sell from day one",
+            "Support stronger retention by delivering clear, measurable ROI early"
+          ],
           "image": {
             "src": "/Website Design Page/website design slider 03.jpg",
-            "alt": "Website features and business tools"
+            "alt": "Website conversion tools — forms, maps, galleries, scheduling"
           }
         },
         {
-          "title": "Ongoing maintenance that keeps the site current without effort",
-          "body": "Websites decay. Hours change, menus update, seasons shift, staff turns over — and most SMBs let their sites go stale because making edits feels intimidating. DIFM plans include monthly maintenance time so the design team handles content updates, seasonal changes, holiday hours, new photos, and design refreshes on request. Owners email changes and they happen. No logins, no learning curves, no abandoned sites — just a platform that evolves with the business.",
+          "title": "Ongoing Site Management",
+          "icon": "RefreshCw",
+          "bullets": [
+            "Offer ongoing maintenance for updates, seasonal changes, and content refreshes",
+            "Allow customers to request changes without managing the site themselves",
+            "Help your customers keep their websites current and aligned with their business needs over time"
+          ],
           "image": {
             "src": "/Website Design Page/website design slider 04.jpg",
-            "alt": "Website maintenance and updates"
+            "alt": "Ongoing website maintenance and content updates"
           }
         },
         {
-          "title": "A private-label project center that keeps everything organized",
-          "body": "Chasing emails and losing feedback in threads is the fastest way to ruin a design project. Hostopia's branded project portal centralizes the entire engagement — drafts, feedback, approvals, change requests, and scheduled revisions all flow through a single experience under your brand. Customers know what's happening, designers know what's next, and your support team never has to play translator. Clean process, clean handoff, clean result.",
+          "title": "Streamlined Project Delivery",
+          "icon": "ClipboardList",
+          "bullets": [
+            "Provide a branded portal to manage drafts, feedback, approvals, and revisions",
+            "Deliver visibility and coordination across customers, designers, and support teams",
+            "Ensure a smooth, efficient delivery process with clear communication and handoff"
+          ],
           "image": {
             "src": "/Website Design Page/website design slider 05.jpg",
-            "alt": "Project portal and collaboration"
+            "alt": "Branded project portal for drafts, feedback, and approvals"
           }
         }
       ]
