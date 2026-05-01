@@ -92,6 +92,7 @@ const VERTICAL_TABS_LAYOUT_SLUGS = new Set([
   "ecommerce",
   "digital-fax",
   "website-builder",
+  "email-marketing",
 ]);
 
 const BUSINESS_EMAIL_SLUG = "business-email";
