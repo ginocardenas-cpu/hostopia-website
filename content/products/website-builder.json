@@ -26,6 +26,7 @@
       "items": [
         {
           "title": "AI-Powered Site Creation",
+          "icon": "Sparkles",
           "body": "Enable your customers to generate complete, multi-page websites in minutes using AI\nPre-fill sites with relevant copy, images, maps, and contact forms\nIncrease activation rates by turning website sales into published sites",
           "image": {
             "src": "/Website Builder Page/website builder slider 01.jpg",
@@ -34,6 +35,7 @@
         },
         {
           "title": "Built-In Content Creation",
+          "icon": "PenLine",
           "body": "Equip your customers with AI-generated copy and imagery tailored to their business\nEliminate the need for external writers, designers, or stock assets\nHelp them launch polished, professional sites without starting from scratch",
           "image": {
             "src": "/Website Builder Page/website builder slider 02.jpg",
@@ -42,6 +44,7 @@
         },
         {
           "title": "Conversion-Ready Websites",
+          "icon": "MousePointerClick",
           "body": "Deliver sites with built-in tools like forms, CTAs, maps, testimonials, and social widgets\nGuide visitors toward clear actions like contacting, booking, or purchasing\nUnlock ecommerce with a one-click upgrade path to an online store",
           "image": {
             "src": "/Website Builder Page/website builder slider 03.jpg",
@@ -50,6 +53,7 @@
         },
         {
           "title": "All-in-One Management",
+          "icon": "LayoutDashboard",
           "body": "Centralize website, domain, email, and billing in one branded dashboard\nSimplify management with a single login and unified experience\nIncrease platform stickiness and create natural upsell opportunities",
           "image": {
             "src": "/Website Builder Page/website builder slider 04.jpg",
@@ -58,6 +62,7 @@
         },
         {
           "title": "Built to Grow",
+          "icon": "TrendingUp",
           "body": "Support long-term growth with ecommerce, SEO, listings, and marketing tools\nProvide features like unlimited pages, SEO controls, and analytics integration\nKeep customers on your platform as they scale and expand their digital presence",
           "image": {
             "src": "/Website Builder Page/website builder slider 05.jpg",
