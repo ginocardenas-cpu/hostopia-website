@@ -21,47 +21,72 @@
     "headline": "Help Your Clients Build Trust Where Buyers Are Looking",
     "description": "Today's buyers decide in seconds based on reviews, ratings, and what they see in search. Hostopia's white-label Reputation & Listing Management gives your customers one place to publish listings, respond to reviews with AI, and benchmark against local competitors — so they show up consistently, credibly, and in control.",
     "cta": { "primary": "Book a Demo", "secondary": "Talk to Partner Success" },
-    "sidebar": {
-      "heading": "Your SMB customers can",
-      "items": [
+    "storyAlternating": {
+      "heading": "Reputation & Listing Management",
+      "blocks": [
         {
-          "title": "Turn reviews into a growth engine",
-          "body": "Reviews are the new word-of-mouth — and the businesses that manage them well grow faster. Hostopia's AI monitors reviews across Google, Meta, and other key platforms, then drafts timely, on-brand responses your customers can approve and post in a single click. Positive reviews get acknowledged, negative ones get addressed quickly, and every interaction reinforces trust with the next prospect reading. It's how small businesses build a steady flow of new customers without hiring a marketing agency or spending hours a week writing replies from scratch.",
+          "title": "AI Review Management",
+          "icon": "Sparkles",
+          "bullets": [
+            "Enable your customers to monitor and respond to reviews across Google, Meta, and key platforms",
+            "Use AI to generate on-brand responses they can approve and publish in one click",
+            "Help them build trust and win more customers through fast, consistent engagement"
+          ],
           "image": {
             "src": "/Reputation Management/reputation management slider 01.jpg",
-            "alt": "AI review responses and reputation growth"
+            "alt": "AI review monitoring and response across Google and Meta"
           }
         },
         {
-          "title": "Benchmark against local competitors",
-          "body": "It's hard to improve what you can't measure. Competitive Reputation Intelligence shows your customers how their review volume, average rating, response time, and sentiment stack up against other local businesses — the ones potential buyers are comparing them to right now. AI-driven sentiment analysis surfaces the themes driving positive and negative feedback, so owners know exactly where to double down and where to fix. It turns reviews from a background worry into a clear, prioritized strategy for winning more local business.",
+          "title": "Competitive Reputation Insights",
+          "icon": "BarChart3",
+          "bullets": [
+            "Give your customers visibility into how they compare on ratings, volume, response time, and sentiment",
+            "Surface clear, actionable insights with AI-driven analysis of customer feedback",
+            "Help them turn reviews into a strategy for improving reputation and capturing more local demand"
+          ],
           "image": {
             "src": "/Reputation Management/reputation management slider 02.jpg",
-            "alt": "Competitive reputation benchmarking"
+            "alt": "Competitive reputation benchmarks and sentiment insights"
           }
         },
         {
-          "title": "Publish listings to 30+ directories in one click",
-          "body": "Inconsistent business information is one of the fastest ways to lose search visibility and customer trust. Listings Sync lets your customers publish and update their business profile across Google, Meta, and 30+ local directories in a single click — name, address, phone, hours, photos, all consistent, all current. When something changes, it changes everywhere. Your SMBs stop playing whack-a-mole with outdated listings, and start showing up accurately wherever buyers search. (Directory coverage varies by country.)",
+          "title": "Listings Sync",
+          "icon": "Globe",
+          "bullets": [
+            "Allow your customers to update business information across 30+ directories from one place",
+            "Keep critical details like name, address, hours, and photos consistent everywhere",
+            "Strengthen search visibility and customer trust with accurate, up-to-date listings"
+          ],
           "image": {
             "src": "/Reputation Management/reputation management slider 03.jpg",
-            "alt": "Directory listings sync across platforms"
+            "alt": "Business listings synced across directories"
           }
         },
         {
-          "title": "Post fresh content without a copywriter",
-          "body": "Search engines and buyers both reward businesses that stay active. Hostopia's AI Social Content tools help your customers generate, schedule, and publish fresh posts across major social platforms — tailored to their industry, tone, and audience — without hiring a copywriter or agency. Built-in scheduling keeps their feed consistent even during busy weeks, and approval controls keep everything on-brand. It's the simplest way for a time-strapped owner to stay visible between reviews, promotions, and seasonal moments.",
+          "title": "AI Social Content",
+          "icon": "Calendar",
+          "bullets": [
+            "Enable your customers to generate and schedule social content tailored to their business",
+            "Keep their presence active with built-in scheduling and approval workflows",
+            "Increase visibility without adding tools, headcount, or external agency costs"
+          ],
           "image": {
             "src": "/Reputation Management/reputation management slider 04.jpg",
-            "alt": "AI social content scheduling"
+            "alt": "AI social content generation and scheduling"
           }
         },
         {
-          "title": "Control everything from one place",
-          "body": "Most SMBs are drowning in tabs — Google, Meta, Yelp, Tripadvisor, their website, their email. Hostopia's Reputation & Listing Management consolidates reviews, listings, social posts, and competitive insights into a single dashboard with one login. Alerts, reports, and approvals live in the same place your customers already go to manage their business. Your support team answers fewer \"where do I find this?\" tickets, and your customers spend their time running the business instead of managing the tools.",
+          "title": "Unified Reputation Management",
+          "icon": "LayoutDashboard",
+          "bullets": [
+            "Give your customers a single dashboard to manage reviews, listings, social, and insights",
+            "Provide one login for alerts, reporting, and approvals across all channels",
+            "Reduce complexity while helping them stay focused on running and growing their business"
+          ],
           "image": {
             "src": "/Reputation Management/reputation management slider 05.jpg",
-            "alt": "Centralized reputation and listings dashboard"
+            "alt": "Unified dashboard for reviews, listings, and social"
           }
         }
       ]

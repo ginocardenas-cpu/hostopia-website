@@ -22,47 +22,72 @@
     "headline": "The Complete Foundation for Your Clients to Establish and Grow Their Online Presence",
     "description": "Inconsistent business information across platforms breaks search visibility and customer trust before a small business ever gets a chance. Hostopia's white-label Directory Listings platform keeps every profile accurate, synced, and active — so your customers show up correctly everywhere buyers look, from Google to Meta to local directories that drive real foot traffic.",
     "cta": { "primary": "Book a Demo", "secondary": "Talk to Partner Success" },
-    "sidebar": {
-      "heading": "Your SMB customers can",
-      "items": [
+    "storyAlternating": {
+      "heading": "Directory Listings",
+      "blocks": [
         {
-          "title": "Save time managing every profile from one place",
-          "body": "Most small business owners have lost count of the profiles they've created — Google, Facebook, Instagram, Yelp, Tripadvisor, industry directories, and more. Hostopia's centralized dashboard brings every listing into one view with one login. Update hours, addresses, photos, services, and descriptions once, and watch them sync everywhere in minutes. Owners stop hunting down forgotten logins, and your support team stops answering \"where do I update my Google hours?\" tickets — a quiet win on both sides of the relationship.",
+          "title": "AI Review Management",
+          "icon": "Sparkles",
+          "bullets": [
+            "Enable your customers to monitor and respond to reviews across Google, Meta, and key platforms",
+            "Use AI to generate on-brand responses they can approve and publish in one click",
+            "Help them build trust and win more customers through fast, consistent engagement"
+          ],
           "image": {
             "src": "/Directory Listings/directory listings slider 01.jpg",
-            "alt": "Centralized directory and listing management"
+            "alt": "AI review monitoring and response across Google and Meta"
           }
         },
         {
-          "title": "Post consistently with scheduling and automation",
-          "body": "Active profiles outrank dormant ones, but consistency is where small businesses fall apart. Built-in scheduling lets your customers plan posts, updates, and promotions weeks in advance, then auto-publish across the platforms that matter. Automation handles the routine — publishing hours changes for holidays, posting new photos weekly, refreshing seasonal menus — so owners stay visible without staying glued to their phones. Consistency becomes the default instead of a constant effort.",
+          "title": "Competitive Reputation Insights",
+          "icon": "BarChart3",
+          "bullets": [
+            "Give your customers visibility into how they compare on ratings, volume, response time, and sentiment",
+            "Surface clear, actionable insights with AI-driven analysis of customer feedback",
+            "Help them turn reviews into a strategy for improving reputation and capturing more local demand"
+          ],
           "image": {
             "src": "/Directory Listings/directory listings slider 02.jpg",
-            "alt": "Content scheduling and automation"
+            "alt": "Competitive reputation benchmarks and sentiment insights"
           }
         },
         {
-          "title": "Get powerful insights on what's actually working",
-          "body": "Visibility without measurement is guessing. Directory Listings shows your customers which profiles drive calls, clicks, directions, and conversions — by platform, by category, and over time. Easy-to-read reports surface top-performing locations, underperforming directories, and trends worth acting on. Instead of a vague sense that \"we're online,\" owners get clear signals on where to invest attention and where the next customer is actually coming from.",
+          "title": "Listings Sync",
+          "icon": "Globe",
+          "bullets": [
+            "Allow your customers to update business information across 30+ directories from one place",
+            "Keep critical details like name, address, hours, and photos consistent everywhere",
+            "Strengthen search visibility and customer trust with accurate, up-to-date listings"
+          ],
           "image": {
             "src": "/Directory Listings/directory listings slider 03.jpg",
-            "alt": "Listing performance insights and reporting"
+            "alt": "Business listings synced across directories"
           }
         },
         {
-          "title": "Create professional content with AI",
-          "body": "Empty or thin profiles lose to competitors with rich content, every time. Hostopia's AI helps owners write business descriptions, service pages, post copy, and responses to reviews — all tuned to their industry, tone, and local market. What used to take hours of writing and rewriting takes minutes, and the output is consistently on-brand. For owners who hate writing and time-strapped operators who can't justify an agency, it turns \"I'll do it later\" into \"it's already done.\"",
+          "title": "AI Social Content",
+          "icon": "Calendar",
+          "bullets": [
+            "Enable your customers to generate and schedule social content tailored to their business",
+            "Keep their presence active with built-in scheduling and approval workflows",
+            "Increase visibility without adding tools, headcount, or external agency costs"
+          ],
           "image": {
             "src": "/Directory Listings/directory listings slider 04.jpg",
-            "alt": "AI-assisted content for listings and social"
+            "alt": "AI social content generation and scheduling"
           }
         },
         {
-          "title": "Stay on top of reviews with AI auto-reply",
-          "body": "Reviews drive local rankings and purchase decisions — and they don't wait for the weekend. Directory Listings monitors reviews across Google, Meta, and other key platforms, drafts on-brand responses automatically, and flags anything that needs a human touch. Positive reviews get timely thanks. Negative reviews get addressed before they spread. Your customers build the kind of active review presence that keeps them visible in local pack results and trusted by the next buyer reading along.",
+          "title": "Unified Reputation Management",
+          "icon": "LayoutDashboard",
+          "bullets": [
+            "Give your customers a single dashboard to manage reviews, listings, social, and insights",
+            "Provide one login for alerts, reporting, and approvals across all channels",
+            "Reduce complexity while helping them stay focused on running and growing their business"
+          ],
           "image": {
             "src": "/Directory Listings/directory listings slider 05.jpg",
-            "alt": "Review monitoring and AI auto-reply"
+            "alt": "Unified dashboard for reviews, listings, and social"
           }
         }
       ]
