@@ -302,6 +302,7 @@ export default function ProductPageFromJson({ data, navLabel }: { data: ProductJ
             id: String(i + 1).padStart(2, "0"),
             title: item.title,
             description: item.body,
+            icon: item.icon,
             imageSrc:
               item.image?.src ??
               "https://images.unsplash.com/photo-1626785774573-4b799315345d?q=80&w=1200&auto=format&fit=crop",

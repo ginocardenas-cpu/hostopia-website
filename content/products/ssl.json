@@ -26,40 +26,45 @@
       "heading": "Your SMB customers get",
       "items": [
         {
-          "title": "Data protection that works the moment the site goes live",
-          "body": "Every login form, checkout page, and contact submission flows between a browser and a server — and without encryption, anyone on the network can read it. Hostopia's SSL certificates apply 128-bit encryption by default, protecting sensitive information in transit across every page of the site. Owners don't have to think about it, configure it, or monitor it. It simply works from the moment the certificate is installed, and it shields customers from the kind of data exposure that ends small businesses overnight.",
+          "title": "Built-In Encryption",
+          "icon": "Lock",
+          "body": "Protect your customers' websites with 128-bit SSL encryption across every page\nSecure sensitive data in transit without requiring setup or ongoing management\nReduce risk of data breaches while delivering always-on protection from day one",
           "image": {
             "src": "/SSL%20Page/New%20Images/ssl%20slider%2001.jpg",
             "alt": "Secure encrypted data and website protection"
           }
         },
         {
-          "title": "Visible trust signals that convert more visitors",
-          "body": "Security is only valuable if visitors can see it. Hostopia's SSL certificates activate the browser padlock, enable clickable site seals, and (for EV certificates) trigger the green address bar that signals verified identity. Those signals do real work — converting hesitant visitors into customers, validating checkout pages, and telling return visitors the site is the real one. For SMBs competing with bigger brands, visible trust is the cheapest and fastest credibility upgrade available.",
+          "title": "Visible Trust Signals",
+          "icon": "BadgeCheck",
+          "body": "Give your customers visible security indicators like the padlock, site seals, and EV address bar\nIncrease conversions by building trust with visitors at key moments like checkout\nHelp SMBs compete with larger brands through instant, recognizable credibility",
           "image": {
             "src": "/SSL%20Page/New%20Images/ssl%20slider%2002.jpg",
             "alt": "Browser security padlock and trust indicators"
           }
         },
         {
-          "title": "PCI compliance support without a compliance team",
-          "body": "Accepting credit cards online requires meeting PCI security standards, and SSL is the first requirement on the list. Hostopia's certificates support the baseline encryption requirements SMBs need to take payments compliantly — without hiring a security consultant or interpreting regulatory documents. Owners launch stores, accept cards, and pass basic compliance checks from day one, and you position yourself as the partner who made it easy instead of scary.",
+          "title": "PCI-Ready Security",
+          "icon": "CreditCard",
+          "body": "Enable your customers to meet PCI requirements with built-in SSL encryption\nHelp them accept online payments without added complexity or compliance overhead\nPosition your platform as the trusted partner that makes security simple from day one",
           "image": {
             "src": "/SSL%20Page/New%20Images/ssl%20slider%2003.jpg",
             "alt": "Secure payment and card compliance"
           }
         },
         {
-          "title": "Better search rankings as a built-in bonus",
-          "body": "Major search engines explicitly favor encrypted sites in rankings, and modern browsers now flag non-HTTPS pages as \"not secure\" — tanking both SEO and conversion at once. An SSL certificate fixes both problems in a single step, bumping search visibility while removing the \"not secure\" warnings that scare visitors off. For SMBs investing in SEO, directory listings, or paid traffic, SSL multiplies the return on every other marketing dollar they spend.",
+          "title": "SEO & Conversion Boost",
+          "icon": "LineChart",
+          "body": "Help your customers improve search rankings with HTTPS-enabled websites\nEliminate \"not secure\" browser warnings that reduce trust and conversions\nMaximize ROI on SEO and paid traffic by ensuring a secure browsing experience",
           "image": {
             "src": "/SSL%20Page/New%20Images/ssl%20slider%2004.jpg",
             "alt": "Search visibility and SEO with HTTPS"
           }
         },
         {
-          "title": "The right certificate for every stage of the business",
-          "body": "Not every SMB needs enterprise-grade encryption, and not every site can get away with the basic tier. Hostopia's portfolio spans Domain Validation (DV) for informational sites, Organization Validation (OV) for commercial use, Extended Validation (EV) for high-trust ecommerce, and Wildcard certificates for domains with multiple subdomains. Customers buy exactly what fits their stage — and you upsell naturally as they grow into stores, logins, and multi-site presences.",
+          "title": "Flexible SSL Options",
+          "icon": "Layers",
+          "body": "Offer the right level of SSL with DV, OV, EV, and Wildcard certificates\nMatch security needs to each customer's stage—from basic sites to ecommerce and multi-domain setups\nEnable natural upsell paths as customers grow into more advanced use cases",
           "image": {
             "src": "/SSL%20Page/New%20Images/ssl%20slider%2005.jpg",
             "alt": "SSL certificate types for every business stage"

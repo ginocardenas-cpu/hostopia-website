@@ -53,9 +53,12 @@ export function AlternatingStorySection({ heading, blocks, primaryCtaLabel }: Pr
                   </h3>
                   <ul className="mt-5 space-y-3.5 font-raleway text-base leading-relaxed text-gray-500 md:text-lg">
                     {block.bullets.map((line) => (
-                      <li key={line} className="flex gap-3">
-                        <span className="mt-2.5 h-1.5 w-1.5 shrink-0 rounded-full bg-teal" aria-hidden />
-                        <span>{line}</span>
+                      <li key={line} className="flex w-full items-start gap-3">
+                        <span
+                          className="mt-[0.55em] h-2 w-2 shrink-0 rounded-full bg-teal"
+                          aria-hidden
+                        />
+                        <span className="min-w-0 flex-1 text-left">{line}</span>
                       </li>
                     ))}
                   </ul>

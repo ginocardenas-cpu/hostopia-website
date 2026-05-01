@@ -4,6 +4,7 @@ import React, { useState, useEffect, useCallback, useRef, useLayoutEffect } from
 import Image from "next/image";
 import { motion, AnimatePresence } from "framer-motion";
 import { ChevronLeft, ChevronRight } from "lucide-react";
+import ProductLucideIcon from "@/components/products/ProductLucideIcon";
 import { cn } from "@/lib/utils";
 
 export type VerticalTabItem = {
@@ -12,6 +13,8 @@ export type VerticalTabItem = {
   description: string;
   imageSrc: string;
   imageAlt: string;
+  /** Optional Lucide icon shown above the description under the gallery. */
+  icon?: string;
 };
 
 export type VerticalTabsProps = {
@@ -21,11 +24,8 @@ export type VerticalTabsProps = {
 
 const AUTO_PLAY_DURATION = 5000;
 
-/** Single line under gallery image (stacked, all centered). */
-const DESCRIPTION_LINE_CLASS =
-  "w-full max-w-lg text-center font-raleway text-sm font-normal leading-relaxed text-gray-500 text-balance";
-
-const DESCRIPTION_STACK_CLASS = "flex w-full max-w-lg flex-col items-center gap-2.5";
+const PARAGRAPH_CLASS =
+  "w-full text-left font-raleway text-sm font-normal leading-relaxed text-gray-500 md:text-base";
 
 function splitDescriptionLines(description: string): string[] {
   return description
@@ -34,18 +34,59 @@ function splitDescriptionLines(description: string): string[] {
     .filter(Boolean);
 }
 
+/** Strip markdown-style or typographic bullets so teal dots are the only markers. */
+function stripLeadingBulletPrefix(text: string): string {
+  return text.replace(/^\s*[•·]\s*/, "").replace(/^\s*[-*]\s+/, "");
+}
+
 function DescriptionBody({ description }: { description: string }) {
   const lines = splitDescriptionLines(description);
   if (lines.length === 0) {
-    return <p className={DESCRIPTION_LINE_CLASS}>{description}</p>;
+    return <p className={PARAGRAPH_CLASS}>{description}</p>;
+  }
+  if (lines.length === 1) {
+    return <p className={PARAGRAPH_CLASS}>{stripLeadingBulletPrefix(lines[0]!)}</p>;
   }
   return (
-    <div className={DESCRIPTION_STACK_CLASS}>
-      {lines.map((line, i) => (
-        <p key={i} className={DESCRIPTION_LINE_CLASS}>
-          {line}
-        </p>
-      ))}
+    <ul className="w-full list-none space-y-3.5 text-left">
+      {lines.map((line, i) => {
+        const text = stripLeadingBulletPrefix(line);
+        return (
+          <li key={i} className="flex w-full items-start gap-3">
+            <span
+              className="mt-[0.55em] h-2 w-2 shrink-0 rounded-full bg-teal"
+              aria-hidden
+            />
+            <span className="min-w-0 flex-1 text-left font-raleway text-sm font-normal leading-relaxed text-gray-500 md:text-base">
+              {text}
+            </span>
+          </li>
+        );
+      })}
+    </ul>
+  );
+}
+
+function TabPanelUnderImage({
+  icon,
+  description,
+  forMeasurement,
+}: {
+  icon?: string;
+  description: string;
+  forMeasurement?: boolean;
+}) {
+  return (
+    <div
+      className="flex w-full flex-col items-start"
+      {...(forMeasurement ? { "data-measure-desc": true } : {})}
+    >
+      {icon ? (
+        <div className="mb-4 flex h-12 w-12 items-center justify-center rounded-xl bg-teal/10">
+          <ProductLucideIcon name={icon} className="h-6 w-6 text-teal" size={24} />
+        </div>
+      ) : null}
+      <DescriptionBody description={description} />
     </div>
   );
 }
@@ -135,13 +176,16 @@ export function VerticalTabs({ sectionHeading, items }: VerticalTabsProps) {
         {/* Hidden: measure tallest description so each tab row reserves the same vertical space. */}
         <div
           ref={measureDescriptionsRef}
-          className="pointer-events-none absolute -left-[9999px] top-0 w-full max-w-lg opacity-0"
+          className="pointer-events-none absolute -left-[9999px] top-0 w-full max-w-xl opacity-0 lg:max-w-2xl"
           aria-hidden
         >
           {items.map((item) => (
-            <div key={`measure-${item.id}`} data-measure-desc className="w-full max-w-lg">
-              <DescriptionBody description={item.description} />
-            </div>
+            <TabPanelUnderImage
+              key={`measure-${item.id}`}
+              icon={item.icon}
+              description={item.description}
+              forMeasurement
+            />
           ))}
         </div>
 
@@ -265,9 +309,9 @@ export function VerticalTabs({ sectionHeading, items }: VerticalTabsProps) {
                 </div>
               </div>
 
-              {/* Tab detail copy: centered under image; min-height avoids jump when tabs change. */}
+              {/* Tab detail copy: left-aligned teal bullets under image; min-height avoids jump when tabs change. */}
               <div
-                className="relative mt-6 flex w-full max-w-lg flex-col items-center self-center px-1"
+                className="relative mt-6 w-full flex flex-col items-stretch px-0"
                 style={descriptionSlotPx > 0 ? { minHeight: descriptionSlotPx } : undefined}
               >
                 <AnimatePresence mode="wait" initial={false}>
@@ -280,9 +324,9 @@ export function VerticalTabs({ sectionHeading, items }: VerticalTabsProps) {
                     animate={{ opacity: 1 }}
                     exit={{ opacity: 0 }}
                     transition={{ duration: 0.2, ease: [0.23, 1, 0.32, 1] }}
-                    className="flex w-full flex-col items-center"
+                    className="flex w-full flex-col items-start"
                   >
-                    <DescriptionBody description={active.description} />
+                    <TabPanelUnderImage icon={active.icon} description={active.description} />
                   </motion.div>
                 </AnimatePresence>
               </div>

@@ -85,6 +85,8 @@ export type ProductMedia = {
 export type ProductSidebarItem = {
   title: string;
   body: string;
+  /** Optional Lucide icon for vertical-tabs detail panel (e.g. ssl, logo-design). */
+  icon?: string;
   /** Optional tab gallery image (e.g. logo product vertical tabs) */
   image?: ProductMediaImage;
 };

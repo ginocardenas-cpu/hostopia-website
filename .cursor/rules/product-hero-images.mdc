@@ -23,3 +23,9 @@ When adding or updating **`media.heroImage`** in `content/products/*.json`, foll
 ## Accordion / tabs
 
 Sidebar images for accordions, vertical tabs, etc. stay in **`hero.sidebar.items[].image`**; use **`quality={92}`** on those `Image` components where applicable (see `product-hero-accordion.tsx`, `vertical-tabs.tsx`, `interactive-image-accordion.tsx`).
+
+### Vertical tabs (`vertical-tabs.tsx` — slugs like **logo-design**, **ssl**)
+
+- **`body`** with **multiple lines** (newline-separated) renders as a **left-aligned** list with **brand teal dots** (`bg-teal`); leading `•` in JSON is stripped so only the UI dots show.
+- **Single paragraph** `body` (no newlines) stays one left-aligned block (e.g. directories-style prose).
+- Optional **`icon`** on each sidebar item (Lucide name) shows above the copy under the gallery.
