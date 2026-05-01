@@ -25,43 +25,43 @@
       "heading": "With OPB, your SMB customers can",
       "items": [
         {
-          "title": "Launch a professional site in minutes",
-          "body": "Traditional website projects stall for weeks between \"we need a site\" and \"we published a site.\" AI changes that math completely. With Online Presence Builder, a customer enters a business name, category, and a few details — and OPB generates a complete, multi-page website with industry-relevant copy, curated imagery, maps, and contact forms in under five minutes. The first draft is already good enough to publish, which means customers actually finish instead of abandoning halfway through. For partners, that's the difference between selling websites and activating them.",
+          "title": "AI-Powered Site Creation",
+          "body": "Enable your customers to generate complete, multi-page websites in minutes using AI\nPre-fill sites with relevant copy, images, maps, and contact forms\nIncrease activation rates by turning website sales into published sites",
           "image": {
             "src": "/Website Builder Page/website builder slider 01.jpg",
-            "alt": "Website analytics and fast launch dashboard"
+            "alt": "AI-powered website creation and fast launch"
           }
         },
         {
-          "title": "Create real content without creative skills",
-          "body": "Most SMBs don't have a copywriter, a photographer, or a designer — and hiring one costs more than the website. OPB's built-in AI writing and image generation fills that gap entirely. Owners type a prompt, AI produces homepage copy, about-page narrative, service descriptions, and matching imagery tailored to their industry. No more staring at blank pages, no more placeholder Latin, no more stock photos that don't fit. The output looks intentional, reads professionally, and represents the business the owner actually runs.",
+          "title": "Built-In Content Creation",
+          "body": "Equip your customers with AI-generated copy and imagery tailored to their business\nEliminate the need for external writers, designers, or stock assets\nHelp them launch polished, professional sites without starting from scratch",
           "image": {
             "src": "/Website Builder Page/website builder slider 02.jpg",
-            "alt": "AI-assisted creative and content generation"
+            "alt": "AI-generated copy and imagery for professional sites"
           }
         },
         {
-          "title": "Convert visitors into customers, not just impressions",
-          "body": "A digital brochure doesn't grow a business. OPB sites come with the conversion tools SMBs need by default — lead capture forms, clear CTAs, Google Maps integration, galleries, testimonial blocks, and social widgets — so every visitor has a clear path to contact, book, or buy. And when the business is ready to sell online, a single click activates the integrated Online Store. Your customers get sites that generate business, and you get the attach path straight into ecommerce.",
+          "title": "Conversion-Ready Websites",
+          "body": "Deliver sites with built-in tools like forms, CTAs, maps, testimonials, and social widgets\nGuide visitors toward clear actions like contacting, booking, or purchasing\nUnlock ecommerce with a one-click upgrade path to an online store",
           "image": {
             "src": "/Website Builder Page/website builder slider 03.jpg",
-            "alt": "Website layout and conversion-focused design"
+            "alt": "Conversion-focused website with forms and CTAs"
           }
         },
         {
-          "title": "Manage everything from one branded dashboard",
-          "body": "SMBs hate logging into four different portals to manage their website, domain, email, and billing. Hostopia consolidates all of it into a single, partner-branded dashboard where customers edit their site, update DNS, check email, and manage subscriptions in one place. That consolidation is what makes your platform sticky — the more services live under one login, the more painful it becomes to switch, and the more natural every upsell conversation becomes.",
+          "title": "All-in-One Management",
+          "body": "Centralize website, domain, email, and billing in one branded dashboard\nSimplify management with a single login and unified experience\nIncrease platform stickiness and create natural upsell opportunities",
           "image": {
             "src": "/Website Builder Page/website builder slider 04.jpg",
-            "alt": "Unified dashboard for digital services"
+            "alt": "Unified branded dashboard for website and services"
           }
         },
         {
-          "title": "Scale from a first website to a full digital stack",
-          "body": "OPB isn't the end of the journey — it's the beginning. The same platform that launched the site supports ecommerce, SEO, directory listings, reputation management, and marketing expansion as the business grows. Unlimited pages, per-page SEO controls, Google Analytics integration, and hosted infrastructure all ship standard, which means customers never outgrow the platform before they're ready to buy more from you.",
+          "title": "Built to Grow",
+          "body": "Support long-term growth with ecommerce, SEO, listings, and marketing tools\nProvide features like unlimited pages, SEO controls, and analytics integration\nKeep customers on your platform as they scale and expand their digital presence",
           "image": {
             "src": "/Website Builder Page/website builder slider 05.jpg",
-            "alt": "Digital stack growth from one platform"
+            "alt": "Website platform scaling with ecommerce and marketing"
           }
         }
       ]

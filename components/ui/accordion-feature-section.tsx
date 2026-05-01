@@ -10,6 +10,44 @@ import {
 } from "@/components/ui/accordion";
 import { cn } from "@/lib/utils";
 
+function splitDescriptionLines(description: string): string[] {
+  return description
+    .split("\n")
+    .map((line) => line.trim())
+    .filter(Boolean);
+}
+
+function stripLeadingBulletPrefix(text: string): string {
+  return text.replace(/^\s*[•·]\s*/, "").replace(/^\s*[-*]\s+/, "");
+}
+
+function AccordionDescription({ text }: { text: string }) {
+  const lines = splitDescriptionLines(text);
+  if (lines.length <= 1) {
+    return (
+      <p className="mt-1 font-raleway text-sm leading-relaxed text-gray-500 md:mt-0">
+        {stripLeadingBulletPrefix(lines[0] ?? text)}
+      </p>
+    );
+  }
+  return (
+    <ul className="mt-1 list-none space-y-3 font-raleway text-sm leading-relaxed text-gray-500 md:mt-0">
+      {lines.map((line, i) => {
+        const content = stripLeadingBulletPrefix(line);
+        return (
+          <li key={i} className="flex w-full items-start gap-3">
+            <span
+              className="mt-[0.55em] h-2 w-2 shrink-0 rounded-full bg-teal"
+              aria-hidden
+            />
+            <span className="min-w-0 flex-1 text-left">{content}</span>
+          </li>
+        );
+      })}
+    </ul>
+  );
+}
+
 export type AccordionFeatureSectionItem = {
   id: string;
   title: string;
@@ -82,7 +120,7 @@ export function AccordionFeatureSection({ sectionHeading, items }: AccordionFeat
                     </span>
                   </AccordionTrigger>
                   <AccordionContent>
-                    <p className="mt-1 font-raleway text-sm leading-relaxed text-gray-500 md:mt-0">{item.description}</p>
+                    <AccordionDescription text={item.description} />
                     <div className="relative mt-4 aspect-[4/3] w-full md:hidden">
                       <Image
                         src={item.image}
