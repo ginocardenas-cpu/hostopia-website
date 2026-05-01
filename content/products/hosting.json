@@ -22,47 +22,72 @@
     "headline": "Enterprise-Grade Hosting Infrastructure — Sold Under Your Brand",
     "description": "Some SMBs need more than a website builder, agencies need multi-site management, and developers need configurable environments. Hostopia's white-label Website Hosting delivers secure, scalable infrastructure under your brand — from managed hosting for small businesses to advanced multi-site environments for agencies and technical users — with no stack for you to build.",
     "cta": { "primary": "Book a Demo", "secondary": "Talk to Partner Success" },
-    "sidebar": {
-      "heading": "Your customers get",
-      "items": [
+    "storyAlternating": {
+      "heading": "Website Hosting",
+      "blocks": [
         {
-          "title": "Deploy beyond what builders can handle",
-          "body": "Many SMBs outgrow builders—or need more from day one. Hostopia runs WordPress, Joomla, custom CMS, and modern apps in a managed stack. Owners keep themes and plugins; developers reach files and databases; agencies ship client builds—all under your brand, beside your builder motion.",
+          "title": "Flexible Hosting for Every Build",
+          "icon": "Layers",
+          "bullets": [
+            "Support WordPress, Joomla, custom CMS, and modern apps in a managed environment",
+            "Give developers and agencies full access while keeping everything under your brand",
+            "Meet advanced customer needs without losing builder-based simplicity"
+          ],
           "image": {
             "src": "/Hosting/hosting slider deploy beyond.jpg",
-            "alt": "Deploy beyond builders — WordPress, Joomla, and custom apps in a managed stack"
+            "alt": "WordPress, Joomla, and custom apps in a managed hosting environment"
           }
         },
         {
-          "title": "Scale confidently as traffic and complexity grow",
-          "body": "Traffic spikes, database growth, and sprawl break entry plans—and forced migrations kill trust. Hostopia tiers scale with SLAs, high availability, and enterprise data centers. Customers grow on your platform; you don't lose strong accounts to capacity limits.",
+          "title": "Scalable Infrastructure",
+          "icon": "TrendingUp",
+          "bullets": [
+            "Help your customers scale with high-availability tiers and enterprise-grade data centers",
+            "Handle traffic spikes, database growth, and expansion without forced migrations",
+            "Retain high-value accounts as they grow on your platform"
+          ],
           "image": {
             "src": "/Hosting/hosting slider scale confidently.jpg",
             "alt": "Scalable hosting tiers, high availability, and enterprise data centers"
           }
         },
         {
-          "title": "Manage multiple sites from a single dashboard",
-          "body": "Agencies live in multi-site workflows—the stack either helps or fights them. One branded dashboard provisions environments, access, usage, and client deploys without account hopping. That speed makes you the host partners recommend and turns every agency into distribution.",
+          "title": "Agency-Ready Platform",
+          "icon": "LayoutDashboard",
+          "bullets": [
+            "Enable agencies to manage multi-site environments from one branded dashboard",
+            "Simplify provisioning, access control, and client deployments without account switching",
+            "Turn agency workflows into a scalable distribution channel"
+          ],
           "image": {
             "src": "/Hosting/hosting slider manage multiple.jpg",
-            "alt": "Multi-site hosting dashboard and client management"
+            "alt": "Multi-site hosting dashboard for agencies"
           }
         },
         {
-          "title": "Bundle domains, SSL, email, and ecommerce into one experience",
-          "body": "Hosting is the hub: domains, SSL, email, and ecommerce land in one stack. One dashboard, one brand, one bill—so every hosting sale becomes the gateway that pulls the rest of your portfolio.",
+          "title": "Unified Hosting Hub",
+          "icon": "Link2",
+          "bullets": [
+            "Position hosting as the foundation connecting domains, SSL, email, and ecommerce",
+            "Deliver one dashboard, one brand, and one billing experience",
+            "Increase attach rates by making hosting the entry point to your full portfolio"
+          ],
           "image": {
             "src": "/Hosting/hosting slider bundle domains.jpg",
-            "alt": "Domains, SSL, email, and ecommerce bundled with hosting"
+            "alt": "Hosting hub connecting domains, SSL, email, and ecommerce"
           }
         },
         {
-          "title": "Get technical flexibility without technical burden",
-          "body": "SSH, PHP versions, cron, and database tools—without you running metal. Hostopia operates data centers, security, patching, backups, and performance so technical buyers get control while your team sells and supports, not babysits servers.",
+          "title": "Developer Control, Managed Ops",
+          "icon": "Terminal",
+          "bullets": [
+            "Provide advanced tools like SSH, PHP versioning, cron, and database access",
+            "Deliver full control to technical users without infrastructure overhead",
+            "Offload operations, security, and maintenance so your team can focus on growth"
+          ],
           "image": {
             "src": "/Hosting/hosting slider get technical.jpg",
-            "alt": "Technical hosting tools — SSH, PHP, cron, and databases"
+            "alt": "Developer hosting tools — SSH, PHP, cron, and database access"
           }
         }
       ]
