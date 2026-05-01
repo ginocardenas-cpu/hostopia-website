@@ -26,43 +26,43 @@
       "heading": "Your SMB customers can",
       "items": [
         {
-          "title": "Launch a real store fast — without a consultant",
-          "body": "Most SMB ecommerce projects stall on the setup alone: tax rules, shipping rates, payment gateways, and product imports overwhelm owners before they sell a single item. Hostopia's guided 5-step setup wizard walks customers through products, taxes, shipping, and payment configuration in one session — with sensible defaults that actually work. Owners finish setup in an afternoon instead of giving up after a weekend, which means more stores go live, more products get listed, and more customers start transacting on your platform.",
+          "title": "Launch Faster",
+          "body": "Set up their online store with a guided 5-step wizard covering products, taxes, shipping, and payments\nUse pre-configured defaults to simplify complex setup decisions\nGo live in hours instead of days, increasing activation and time-to-revenue",
           "image": {
             "src": "/Ecommerce Page/New/ecommerce slider 01.jpg",
-            "alt": "Quick online store setup and checkout"
+            "alt": "Guided online store setup wizard"
           }
         },
         {
-          "title": "Sell everywhere their customers already are",
-          "body": "Modern commerce isn't one storefront — it's a dozen. Hostopia's Online Store publishes products to the SMB's website, Facebook, Instagram, TikTok, Pinterest, Amazon, and Google Shopping from a single dashboard, with centralized inventory and order management keeping everything synchronized. Owners never manually copy a product to three platforms again, and customers browse wherever they discover the brand. For you, that breadth differentiates your ecommerce offering from single-channel builders and justifies premium pricing.",
+          "title": "Sell Everywhere",
+          "body": "Publish products across websites, social platforms, and marketplaces from one dashboard\nSync inventory and orders automatically across all channels\nReach customers wherever they discover and shop for products",
           "image": {
             "src": "/Ecommerce Page/New/ecommerce slider 02.jpg",
-            "alt": "Multi-channel social and online selling"
+            "alt": "Multi-channel selling from one dashboard"
           }
         },
         {
-          "title": "Accept any payment, in any currency, on any device",
-          "body": "Payment friction kills checkouts. Hostopia supports 40+ gateways including PayPal, Square, Stripe, and regional processors, plus multi-currency support and real-time shipping quotes from major carriers. Customers check out on desktop, tablet, or smartphone with a responsive experience optimized for the device they're on — which is overwhelmingly mobile. Fewer abandoned carts, higher conversion, and no \"can I pay another way?\" emails for your support team to handle.",
+          "title": "Optimize Checkout",
+          "body": "Accept payments with 40+ gateways, including PayPal, Stripe, Square, and regional providers\nSupport multi-currency transactions and real-time shipping rates\nReduce cart abandonment with a seamless, mobile-optimized checkout experience",
           "image": {
             "src": "/Ecommerce Page/New/ecommerce slider 03.jpg",
-            "alt": "Payment terminals and ecommerce checkout"
+            "alt": "Payment gateways and optimized checkout"
           }
         },
         {
-          "title": "Keep every dollar of margin with zero transaction fees",
-          "body": "Transaction fees from some platforms quietly eat 1–2% of every sale — a massive tax on SMBs already operating on thin margins. Hostopia's Online Store charges zero transaction fees, so owners keep the full margin on every sale after payment processor costs. That's real money back in the business each month, and it's one of the easiest differentiators for your sales team to articulate against competing platforms during deal conversations.",
+          "title": "Keep More Revenue",
+          "body": "Avoid platform transaction fees and retain more margin on every sale\nOnly pay standard payment processor fees with no hidden costs\nIncrease profitability with a more cost-efficient ecommerce model",
           "image": {
             "src": "/Ecommerce Page/New/ecommerce slider 04.jpg",
-            "alt": "Revenue growth and healthy business margins"
+            "alt": "Healthy margins and cost-efficient ecommerce"
           }
         },
         {
-          "title": "Grow without replatforming as the store scales",
-          "body": "Most SMBs abandon their first store when traffic or product count outgrows the platform — and the migration to a bigger system is where they churn. Hostopia's tiered plans, multi-channel architecture, and enterprise-grade infrastructure support stores from their first 10 products to their first 10,000 — on the same platform, under the same brand, with no re-migration required. Customers stay with you through their entire growth curve, and you capture the upsell revenue instead of losing it to a new provider.",
+          "title": "Scale Without Limits",
+          "body": "Grow from a small catalog to a large-scale inventory on the same platform\nAvoid disruptive migrations as the business expands\nStay on a single, scalable solution that supports long-term growth",
           "image": {
             "src": "/Ecommerce Page/New/ecommerce slider 04.jpg",
-            "alt": "Ecommerce scaling and growth on one platform"
+            "alt": "Ecommerce scaling on one platform"
           }
         }
       ]
