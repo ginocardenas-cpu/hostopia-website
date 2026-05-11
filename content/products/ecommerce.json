@@ -23,71 +23,58 @@
     "description": "SMBs face growing pressure to sell online, but most lack the skills, budget, or time to manage a full ecommerce stack. Hostopia's white-label Online Store is a turnkey, mobile-ready ecommerce platform you resell under your brand — integrated with Online Presence Builder so SMBs add a store with one click and scale as they grow.",
     "cta": { "primary": "Book a Demo", "secondary": "Talk to Partner Success" },
     "storyAlternating": {
-      "heading": "Give Your Customers the Tools to Build an Online Store",
+      "heading": "Help Your Customers Sell More—and Keep More of Every Sale",
       "blocks": [
         {
-          "title": "Launch Faster",
-          "icon": "Zap",
-          "bullets": [
-            "Set up their online store with a guided 5-step wizard covering products, taxes, shipping, and payments",
-            "Use pre-configured defaults to simplify complex setup decisions",
-            "Go live in hours instead of days, increasing activation and time-to-revenue"
-          ],
-          "image": {
-            "src": "/Ecommerce Page/New/ecommerce slider 01.jpg",
-            "alt": "Guided online store setup wizard"
-          }
-        },
-        {
-          "title": "Sell Everywhere",
+          "title": "Multi-Channel Selling",
           "icon": "Globe",
           "bullets": [
-            "Publish products across websites, social platforms, and marketplaces from one dashboard",
+            "Enable your customers to publish products across web, social, and marketplaces from one dashboard",
             "Sync inventory and orders automatically across all channels",
-            "Reach customers wherever they discover and shop for products"
+            "Help them reach buyers wherever they discover and shop"
           ],
           "image": {
             "src": "/Ecommerce Page/New/ecommerce slider 02.jpg",
-            "alt": "Multi-channel selling from one dashboard"
+            "alt": "Multi-channel ecommerce selling from one dashboard"
           }
         },
         {
-          "title": "Optimize Checkout",
+          "title": "Flexible Payments & Checkout",
           "icon": "CreditCard",
           "bullets": [
-            "Accept payments with 40+ gateways, including PayPal, Stripe, Square, and regional providers",
-            "Support multi-currency transactions and real-time shipping rates",
+            "Support 40+ payment gateways including PayPal, Stripe, Square, and regional providers",
+            "Enable multi-currency transactions and real-time shipping rates",
             "Reduce cart abandonment with a seamless, mobile-optimized checkout experience"
           ],
           "image": {
             "src": "/Ecommerce Page/New/ecommerce slider 03.jpg",
-            "alt": "Payment gateways and optimized checkout"
+            "alt": "Flexible payments and mobile-optimized checkout"
           }
         },
         {
-          "title": "Keep More Revenue",
+          "title": "Zero Transaction Fees",
           "icon": "CircleDollarSign",
           "bullets": [
-            "Avoid platform transaction fees and retain more margin on every sale",
-            "Only pay standard payment processor fees with no hidden costs",
+            "Help your customers avoid platform transaction fees and retain more margin on every sale",
+            "Ensure transparent pricing with only standard payment processor fees",
             "Increase profitability with a more cost-efficient ecommerce model"
           ],
           "image": {
             "src": "/Ecommerce Page/New/ecommerce slider 04.jpg",
-            "alt": "Healthy margins and cost-efficient ecommerce"
+            "alt": "Retain margin with zero platform transaction fees"
           }
         },
         {
-          "title": "Scale Without Limits",
+          "title": "Built to Scale",
           "icon": "TrendingUp",
           "bullets": [
-            "Grow from a small catalog to a large-scale inventory on the same platform",
-            "Avoid disruptive migrations as the business expands",
-            "Stay on a single, scalable solution that supports long-term growth"
+            "Support growth from small catalogs to large-scale inventories on one platform",
+            "Eliminate the need for disruptive migrations as the business expands",
+            "Keep customers on a scalable solution that grows with them"
           ],
           "image": {
-            "src": "/Ecommerce Page/New/ecommerce slider 04.jpg",
-            "alt": "Ecommerce scaling on one platform"
+            "src": "/Ecommerce Page/New/ecommerce slider 01.jpg",
+            "alt": "Ecommerce platform built to scale with the business"
           }
         }
       ]
