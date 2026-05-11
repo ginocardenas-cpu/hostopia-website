@@ -23,46 +23,51 @@
     "description": "Most small businesses know SEO matters — they just don't have the time or expertise to do it right. Hostopia's white-label SEO solution gives your customers an AI-guided plan, keyword discovery, on-page recommendations, and content tools in one place, so ranking higher finally feels achievable.",
     "cta": { "primary": "Book a Demo", "secondary": "Talk to Partner Success" },
     "sidebar": {
-      "heading": "Your SMB customers can",
+      "heading": "Help Small Businesses Reach More Customers Through Search",
       "items": [
         {
-          "title": "Follow a clear, AI-guided SEO plan",
-          "body": "SEO intimidates most small business owners because the advice they find online is either too generic or too technical. Hostopia's AI-powered SEO Strategy analyzes each customer's website, industry, and local market, then generates a prioritized, step-by-step plan they can actually follow. Weekly tasks are bite-sized and specific — update this title tag, fix this broken link, add this keyword — so progress happens even when the owner only has 20 minutes a day. It's like having an SEO consultant in their pocket, built into the services they already buy from you.",
+          "title": "AI SEO Strategy",
+          "icon": "ListChecks",
+          "body": "Enable your customers to generate a personalized, step-by-step SEO plan based on their website, industry, and local market\nBreak down SEO into simple, actionable weekly tasks they can complete quickly\nHelp them make consistent progress without needing deep technical expertise",
           "image": {
             "src": "/Search Engine Optimization/search engine optimization slider 01.jpg",
-            "alt": "AI-guided SEO strategy and task planning"
+            "alt": "AI-guided SEO strategy and weekly tasks"
           }
         },
         {
-          "title": "Discover the keywords that drive real traffic",
-          "body": "Ranking for the wrong keywords is worse than not ranking at all. Hostopia's AI Keyword Discovery surfaces the terms your customers' actual buyers are searching for, with search volume, competition, and difficulty scores in plain language. Built-in tracking shows which keywords are gaining ground, which are slipping, and where the biggest opportunities sit. Whether your customer is a local plumber, a regional retailer, or a multi-location service business, they get a keyword strategy grounded in real search behavior — not guesswork.",
+          "title": "Keyword Intelligence",
+          "icon": "Search",
+          "body": "Help your customers discover high-impact keywords based on real search behavior\nProvide clear data on search volume, competition, and ranking difficulty\nTrack performance to highlight opportunities and adjust strategy over time",
           "image": {
             "src": "/Search Engine Optimization/search engine optimization slider 02.jpg",
-            "alt": "Keyword research and search intent discovery"
+            "alt": "Keyword research and ranking tracking"
           }
         },
         {
-          "title": "Publish SEO-friendly content without a copywriter",
-          "body": "Fresh, optimized content is one of the strongest signals search engines use to rank a site — and one of the hardest things for small businesses to keep up with. Hostopia's AI Content Creation helps owners generate blog posts, service pages, and product descriptions that are search-ready from the first draft. Content is built around their target keywords, tuned to their brand voice, and ready to publish in minutes instead of days. Consistency becomes realistic, even for a one-person business.",
+          "title": "AI Content Creation",
+          "icon": "Sparkles",
+          "body": "Enable your customers to create SEO-optimized content including blogs, service pages, and product descriptions\nAlign content with target keywords and brand voice automatically\nMake consistent content creation achievable without external resources",
           "image": {
             "src": "/Search Engine Optimization/search engine optimization slider 03.jpg",
-            "alt": "AI content creation for SEO"
+            "alt": "AI SEO content creation"
           }
         },
         {
-          "title": "Optimize their website without touching code",
-          "body": "Technical SEO fixes often stall because owners don't know what to change or how to change it. Hostopia's Website Optimization tool scans every page and turns technical issues — slow load times, missing meta tags, weak headings, thin content — into simple, plain-English recommendations. Each fix is prioritized by impact, so your customers work on what moves rankings first and skip what doesn't matter. For partners, that means fewer support escalations and more customers who stick around because they see results.",
+          "title": "Website Optimization",
+          "icon": "ScanSearch",
+          "body": "Scan customer websites to identify technical SEO issues and missed opportunities\nTranslate complex fixes into clear, prioritized recommendations\nHelp customers focus on high-impact changes that improve rankings faster",
           "image": {
             "src": "/Search Engine Optimization/search engine optimization slider 04.jpg",
-            "alt": "Website optimization and technical SEO recommendations"
+            "alt": "Website optimization and technical SEO"
           }
         },
         {
-          "title": "See what's working and where to push harder",
-          "body": "SEO is a long game, but progress should never feel invisible. Hostopia's Performance Tracking gives your customers a live view of rankings, organic traffic, top-performing pages, and how their site compares to local competitors. Easy-to-read dashboards show what's trending up, what's flat, and where the biggest wins are hiding — so they can double down on what works and cut what doesn't. Real data. Real progress. Real reasons to keep subscribing.",
+          "title": "SEO Performance Tracking",
+          "icon": "BarChart3",
+          "body": "Give your customers visibility into rankings, traffic, and top-performing pages\nCompare performance against local competitors with easy-to-read dashboards\nHelp them identify trends, measure progress, and refine their SEO strategy",
           "image": {
             "src": "/Search Engine Optimization/search engine optimization slider 05.jpg",
-            "alt": "SEO performance tracking and rankings dashboard"
+            "alt": "SEO performance tracking and competitor comparison"
           }
         }
       ]
