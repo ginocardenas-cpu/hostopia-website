@@ -22,47 +22,72 @@
     "headline": "The Complete Digital Marketing Platform for Your Clients' Total Online Success",
     "description": "When growing small businesses are ready to stop piecing together tools, they need one platform that does it all. Hostopia's white-label Marketing 360 Suite combines AI-driven SEO, Google Ads, local listings, reputation, social, and competitive intelligence in a single product — giving your customers enterprise-grade marketing power with small-business simplicity.",
     "cta": { "primary": "Book a Demo", "secondary": "Talk to Partner Success" },
-    "sidebar": {
-      "heading": "Your SMB customers can",
-      "items": [
+    "storyAlternating": {
+      "heading": "Deliver a Complete Marketing Engine for Your Customers",
+      "blocks": [
         {
-          "title": "Master SEO with AI doing the heavy lifting",
-          "body": "Marketing 360 delivers the full SEO experience — not just recommendations. AI-powered keyword research, on-page optimization, content creation, backlink analysis, and off-page strategy all run automatically, with weekly tasks tailored to each business. Your customers see the actions, the impact, and the ranking movement in one place, without needing an in-house SEO expert. It's the difference between \"we should work on SEO\" and \"our rankings went up 23% this quarter\" — and it's the kind of result that keeps customers on your platform for years.",
+          "title": "Full-Service SEO Automation",
+          "icon": "ListChecks",
+          "bullets": [
+            "Enable your customers to run keyword research, on-page optimization, content creation, and backlink strategies automatically",
+            "Provide guided weekly tasks tailored to their business and market",
+            "Show clear impact with rankings, actions, and performance in one place"
+          ],
           "image": {
             "src": "/Marketing 360/marketing 360 slider 01.jpg",
-            "alt": "AI-driven SEO and marketing dashboard"
+            "alt": "AI SEO automation and weekly marketing tasks"
           }
         },
         {
-          "title": "Launch and optimize Google Ads without an agency",
-          "body": "Paid ads are where growing SMBs go to accelerate — and where most waste money because they don't know what they're doing. Marketing 360's AI generates high-converting ad headlines, descriptions, and campaigns, launches them on Google in minutes, and continuously optimizes budget against real performance. Smart budget controls protect spend, AI recommendations improve results week over week, and built-in reporting shows exactly what each dollar returned. Your customers get agency-quality advertising at a subscription price — and you add a high-margin revenue stream to your portfolio.",
+          "title": "AI-Powered Advertising",
+          "icon": "Megaphone",
+          "bullets": [
+            "Help your customers launch and optimize high-converting Google Ads campaigns in minutes",
+            "Use AI to allocate budget effectively based on results",
+            "Deliver measurable ROI with clear reporting on spend and returns"
+          ],
           "image": {
             "src": "/Marketing 360/marketing 360 slider 02.jpg",
-            "alt": "Google Ads campaign management"
+            "alt": "AI-powered Google Ads campaigns and reporting"
           }
         },
         {
-          "title": "Dominate local search across 3,000+ directories",
-          "body": "National chains don't win local search — consistency and coverage do. Marketing 360 syncs and manages your customers' business profiles across 3,000+ directories in real time, keeping names, addresses, hours, services, and photos accurate everywhere buyers look. Visibility tracking shows where they appear, how they rank, and which listings are driving calls and clicks. For multi-location businesses and local service providers, it's the difference between showing up occasionally and showing up everywhere that matters.",
+          "title": "Listings & Local Visibility",
+          "icon": "MapPin",
+          "bullets": [
+            "Sync and manage business profiles across the leading online directories in real time",
+            "Keep critical business information accurate and consistent everywhere",
+            "Track visibility, rankings, and which listings drive calls and clicks"
+          ],
           "image": {
             "src": "/Marketing 360/marketing 360 slider 03.jpg",
-            "alt": "Local listings and directory visibility"
+            "alt": "Local listings sync and visibility tracking"
           }
         },
         {
-          "title": "Build an unshakeable reputation and social presence",
-          "body": "Trust drives conversion, and nothing builds trust faster than an active, well-managed online presence. Marketing 360 generates reviews, automates responses across platforms, tracks sentiment, and publishes fresh social content on a schedule — all from the same dashboard. Your customers stay top-of-mind for existing buyers and look credible to new ones, without carving out hours a week to manage it manually. Reputation and social stop being two more things to worry about and start being a compounding competitive advantage.",
+          "title": "Reputation & Social Growth",
+          "icon": "MessageSquare",
+          "bullets": [
+            "Help your customers generate reviews, respond automatically, and track sentiment",
+            "Enable consistent social posting with built-in scheduling and content generation",
+            "Build trust and visibility without requiring ongoing manual effort"
+          ],
           "image": {
             "src": "/Marketing 360/marketing 360 slider 04.jpg",
-            "alt": "Reputation and social media management"
+            "alt": "Reputation management and social growth"
           }
         },
         {
-          "title": "See the full picture — and beat the competition",
-          "body": "Marketing 360 includes every brand and competitive intelligence feature in Hostopia's portfolio: rank tracking, mention monitoring, competitor ad and promotion tracking, and real-time alerts the moment anything important changes. Your customers see their own marketing performance and their competitors' moves in one view, so they can respond fast, spot opportunities early, and make data-driven decisions every week. It's the single dashboard that turns every marketing function — SEO, ads, listings, reputation, social, monitoring — into one coordinated growth engine.",
+          "title": "Unified Marketing Intelligence",
+          "icon": "LayoutDashboard",
+          "bullets": [
+            "Provide real-time insights into rankings, mentions, competitor activity, and performance",
+            "Enable faster decisions with alerts and competitive visibility in one dashboard",
+            "Turn all marketing efforts into a coordinated, data-driven growth strategy"
+          ],
           "image": {
             "src": "/Marketing 360/marketing 360 slider 05.jpg",
-            "alt": "Competitive intelligence and marketing analytics"
+            "alt": "Unified marketing intelligence and competitive insights"
           }
         }
       ]
