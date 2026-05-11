@@ -22,35 +22,39 @@
     "description": "Small businesses know they need to show up on social, but most run out of time before they run out of ideas. Hostopia's white-label Social Media Management combines AI drafts, scheduling, and multi-network publishing so your customers stay consistent, on-brand, and visible — while you own the customer relationship and the revenue.",
     "cta": { "primary": "Book a Demo", "secondary": "Talk to Partner Success" },
     "sidebar": {
-      "heading": "Your SMB customers can",
+      "heading": "Empower Customers to Build Their Brand on Social Media",
       "items": [
         {
-          "title": "AI Content Creation",
-          "body": "Help your customers generate captions, post ideas, and on-brand content with AI\nEliminate blank-page friction by starting from ready-to-use drafts\nEnable consistent posting without hiring a copywriter or agency",
+          "title": "AI-Powered Content Creation",
+          "icon": "Sparkles",
+          "body": "Enable your customers to generate captions, post ideas, and on-brand content with AI\nEliminate blank-page friction with ready-to-use drafts\nHelp them post consistently without hiring external resources",
           "image": {
             "src": "/Social Media/social media slider 01.jpg",
-            "alt": "AI social content creation"
+            "alt": "AI-powered social content creation"
           }
         },
         {
-          "title": "Visual Content Scheduling",
-          "body": "Provide drag-and-drop calendars to plan and schedule content across platforms\nAuto-publish posts to Facebook, Instagram, Google Business Profile, and more\nHelp customers maintain consistency without daily manual effort",
+          "title": "Visual Scheduling & Automation",
+          "icon": "Calendar",
+          "body": "Provide drag-and-drop calendars to plan and schedule content across platforms\nAuto-publish posts to Facebook, Instagram, Google Business Profile, and more\nHelp customers stay consistent without daily manual effort",
           "image": {
             "src": "/Social Media/social media slider 02.jpg",
             "alt": "Social content calendar and scheduling"
           }
         },
         {
-          "title": "Performance Optimization",
-          "body": "Show your customers which content types, hashtags, and formats drive engagement\nHighlight top-performing posts and recommend what to repeat or boost\nEnable continuous improvement with built-in performance insights",
+          "title": "Performance Insights",
+          "icon": "BarChart3",
+          "body": "Show your customers which content types, hashtags, and formats drive engagement\nHighlight top-performing posts and recommend what to repeat or boost\nEnable continuous improvement with built-in performance analytics",
           "image": {
             "src": "/Social Media/social media slider 03.jpg",
-            "alt": "Social engagement and performance insights"
+            "alt": "Social performance insights and analytics"
           }
         },
         {
           "title": "Team Collaboration Controls",
-          "body": "Support multi-user workflows with role-based permissions and approval processes\nEnable teams, agencies, and multi-location businesses to collaborate efficiently without risk\nEnsure brand consistency while scaling across different customer segments",
+          "icon": "Users",
+          "body": "Support multi-user workflows with role-based permissions and approval processes\nEnable teams, agencies, and multi-location businesses to collaborate efficiently\nEnsure brand consistency while scaling across locations and users",
           "image": {
             "src": "/Social Media/social media slider 04.jpg",
             "alt": "Team collaboration and approvals for social"
@@ -58,6 +62,7 @@
         },
         {
           "title": "Multi-Platform Publishing",
+          "icon": "Link2",
           "body": "Allow your customers to create and publish content across multiple networks from one place\nAutomatically optimize formatting and image sizing for each platform\nCentralize publishing and performance tracking in a single dashboard",
           "image": {
             "src": "/Social Media/social media slider 05.jpg",
