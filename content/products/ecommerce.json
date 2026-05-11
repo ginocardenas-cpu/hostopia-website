@@ -22,12 +22,17 @@
     "headline": "Help Your SMB Customers Start Selling Online — Under Your Brand",
     "description": "SMBs face growing pressure to sell online, but most lack the skills, budget, or time to manage a full ecommerce stack. Hostopia's white-label Online Store is a turnkey, mobile-ready ecommerce platform you resell under your brand — integrated with Online Presence Builder so SMBs add a store with one click and scale as they grow.",
     "cta": { "primary": "Book a Demo", "secondary": "Talk to Partner Success" },
-    "sidebar": {
-      "heading": "Your SMB customers can",
-      "items": [
+    "storyAlternating": {
+      "heading": "Give Your Customers the Tools to Build an Online Store",
+      "blocks": [
         {
           "title": "Launch Faster",
-          "body": "Set up their online store with a guided 5-step wizard covering products, taxes, shipping, and payments\nUse pre-configured defaults to simplify complex setup decisions\nGo live in hours instead of days, increasing activation and time-to-revenue",
+          "icon": "Zap",
+          "bullets": [
+            "Set up their online store with a guided 5-step wizard covering products, taxes, shipping, and payments",
+            "Use pre-configured defaults to simplify complex setup decisions",
+            "Go live in hours instead of days, increasing activation and time-to-revenue"
+          ],
           "image": {
             "src": "/Ecommerce Page/New/ecommerce slider 01.jpg",
             "alt": "Guided online store setup wizard"
@@ -35,7 +40,12 @@
         },
         {
           "title": "Sell Everywhere",
-          "body": "Publish products across websites, social platforms, and marketplaces from one dashboard\nSync inventory and orders automatically across all channels\nReach customers wherever they discover and shop for products",
+          "icon": "Globe",
+          "bullets": [
+            "Publish products across websites, social platforms, and marketplaces from one dashboard",
+            "Sync inventory and orders automatically across all channels",
+            "Reach customers wherever they discover and shop for products"
+          ],
           "image": {
             "src": "/Ecommerce Page/New/ecommerce slider 02.jpg",
             "alt": "Multi-channel selling from one dashboard"
@@ -43,7 +53,12 @@
         },
         {
           "title": "Optimize Checkout",
-          "body": "Accept payments with 40+ gateways, including PayPal, Stripe, Square, and regional providers\nSupport multi-currency transactions and real-time shipping rates\nReduce cart abandonment with a seamless, mobile-optimized checkout experience",
+          "icon": "CreditCard",
+          "bullets": [
+            "Accept payments with 40+ gateways, including PayPal, Stripe, Square, and regional providers",
+            "Support multi-currency transactions and real-time shipping rates",
+            "Reduce cart abandonment with a seamless, mobile-optimized checkout experience"
+          ],
           "image": {
             "src": "/Ecommerce Page/New/ecommerce slider 03.jpg",
             "alt": "Payment gateways and optimized checkout"
@@ -51,7 +66,12 @@
         },
         {
           "title": "Keep More Revenue",
-          "body": "Avoid platform transaction fees and retain more margin on every sale\nOnly pay standard payment processor fees with no hidden costs\nIncrease profitability with a more cost-efficient ecommerce model",
+          "icon": "CircleDollarSign",
+          "bullets": [
+            "Avoid platform transaction fees and retain more margin on every sale",
+            "Only pay standard payment processor fees with no hidden costs",
+            "Increase profitability with a more cost-efficient ecommerce model"
+          ],
           "image": {
             "src": "/Ecommerce Page/New/ecommerce slider 04.jpg",
             "alt": "Healthy margins and cost-efficient ecommerce"
@@ -59,7 +79,12 @@
         },
         {
           "title": "Scale Without Limits",
-          "body": "Grow from a small catalog to a large-scale inventory on the same platform\nAvoid disruptive migrations as the business expands\nStay on a single, scalable solution that supports long-term growth",
+          "icon": "TrendingUp",
+          "bullets": [
+            "Grow from a small catalog to a large-scale inventory on the same platform",
+            "Avoid disruptive migrations as the business expands",
+            "Stay on a single, scalable solution that supports long-term growth"
+          ],
           "image": {
             "src": "/Ecommerce Page/New/ecommerce slider 04.jpg",
             "alt": "Ecommerce scaling on one platform"

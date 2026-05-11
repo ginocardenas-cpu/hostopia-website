@@ -89,7 +89,6 @@ function ProductImage({ src, alt, priority, className, sizes, quality = 85 }: Pr
 const VERTICAL_TABS_LAYOUT_SLUGS = new Set([
   "logo-design",
   "ssl",
-  "ecommerce",
   "digital-fax",
   "website-builder",
   "email-marketing",
