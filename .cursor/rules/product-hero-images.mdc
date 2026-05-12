@@ -22,7 +22,7 @@ When adding or updating **`media.heroImage`** in `content/products/*.json`, foll
 
 ## Accordion / tabs
 
-**Alternating story** (`hero.storyAlternating`) uses the Brand Monitoring zigzag layout (`alternating-story-section.tsx`) — e.g. **website-design**, **hosting**, **reputation-management**, **directories**, **ecommerce**, **ppc-management** (Marketing 360).
+**Alternating story** (`hero.storyAlternating`) uses the Brand Monitoring zigzag layout (`alternating-story-section.tsx`) — e.g. **website-design**, **hosting**, **reputation-management**, **directories**, **ecommerce**, **custom-website-development**, **ppc-management** (Marketing 360).
 
 Sidebar images for accordions, vertical tabs, etc. stay in **`hero.sidebar.items[].image`**; use **`quality={92}`** on those `Image` components where applicable (see `product-hero-accordion.tsx`, `vertical-tabs.tsx`, `interactive-image-accordion.tsx`).
 
