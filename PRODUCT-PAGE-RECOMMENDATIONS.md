@@ -1,5 +1,11 @@
 # Product Page Design & Content Recommendations
 
+## Product copy — where to edit
+
+**Canonical copy** for shipped product pages is `content/products/<slug>.json` (data-driven UI). After JSON changes, regenerate markdown handoffs with `npm run content:sync-product-md` (see `content/CONTENT-README.md`).
+
+---
+
 ## Summary
 
 The home page works well: strong hero with imagery, clear hierarchy, and visual variety. The product pages feel text-heavy and repetitive. Here’s how to improve them.

@@ -1,72 +1,43 @@
-# Online Marketing Center — Product Page Copy Updates
+# Product page copy — change log & pointers
 
-**Date:** March 30, 2026  
-**Prepared for:** Gino Cardenas, VP Marketing  
-**Status:** Updated — Ready for Review
+## Canonical source (May 2026 onward)
 
----
+All **live** Hostopia product page copy lives in:
 
-## Overview
+**`content/products/<slug>.json`**
 
-All five Online Marketing Center product page JSON files have been updated to reflect the new sales slick content, features, and positioning. Each page follows the existing website design structure (hero, sidebar/"Your Customers Can", features, partner advantage, lifecycle fit, CTA) with copy adjusted to fit the current layout.
+Rendered by `components/products/ProductPageFromJson.tsx`. Markdown and Word files under `New Products/rewrites/` are **exports for humans**, not the deployment source.
 
-**Navigation labels (site-wide):** **Brand Monitoring** (slug `brand-competitor-monitoring`), **Marketing 360** (slug `ppc-management`).
+Keep editorial docs aligned with production:
 
----
+```bash
+npm run content:sync-product-md
+```
 
-## Key Changes Across All Pages
-
-### "Your Customers Can" Sections (Sidebar)
-- **Brand Monitoring:** Expanded from 3 items → **5 items** with substantially longer body copy
-- **Directory Listings:** Expanded from 4 items → **5 items** with substantially longer body copy
-- **Reputation Management:** Expanded from 4 items → **5 items** with substantially longer body copy
-- **Search Engine Optimization:** Expanded from 4 items → **5 items** with substantially longer body copy
-- **Marketing 360:** Expanded from 3 items → **5 items** with substantially longer body copy
-
-Each sidebar item now includes 3-4 sentences of descriptive copy (vs. the previous 1 sentence) to fill the white space in the design.
-
-### Plan Tier Badges
-Each page now displays its Online Marketing Center plan tier:
-- Brand Monitoring → **Starter Plan**
-- Directory Listings → **Essentials Plan**
-- Reputation Management → **Trust Plan**
-- Search Engine Optimization → **Boost Plan**
-- Marketing 360 → **Suite 360 Plan**
-
-### Feature Cards
-All feature cards updated to match the sales slick features exactly, with expanded descriptions.
-
-### Partner Advantage
-Updated to reflect the specific partner benefits from each sales slick.
+(`scripts/sync-product-md-from-json.mjs`)
 
 ---
 
-## Files Updated
+## March 2026 — Online Marketing Center JSON refresh
 
-| File | Product (nav label) | Plan Tier |
-|------|---------------------|-----------|
-| `brand-competitor-monitoring.json` | Brand Monitoring | Starter |
-| `directories.json` | Directory Listings | Essentials |
-| `reputation-management.json` | Reputation Management | Trust |
-| `seo.json` | Search Engine Optimization | Boost |
-| `ppc-management.json` | Marketing 360 | Suite 360 |
+Summary of the earlier **Online Marketing Center** batch (Brand Monitoring, Directory Listings, Reputation Management, SEO, Marketing 360): sidebar/story copy expansion, feature grids, partner advantage, SEO fields. Details of that batch are preserved in git history; the JSON files on `main` supersede any static summary tables.
 
-All files located in: `/content/products/`
+**Nav today:** Brand Monitoring (`brand-competitor-monitoring`), Marketing 360 (`ppc-management`). Plan-tier badges called out in the March note may no longer match the live UI — trust the JSON and components.
 
 ---
 
-## Notes
+## Later 2026 — layout + copy iterations (examples)
 
-- All copy maintains Hostopia's partner-facing voice (professional, educational, partner-empowering)
-- Content frames features through the partner lens first, then the SMB end-customer benefit
-- SEO metadata (meta titles, descriptions, keywords) updated for each page
-- No changes were made to images, lifecycle fit structure, or page layout — only content
-- URLs unchanged: `/products/brand-competitor-monitoring`, `/products/ppc-management`
+Site work has continued in JSON only for many products, including (non-exhaustive):
 
-### Portfolio fit (lifecycle grid) — March 2026
+- **Marketing 360** — `hero.storyAlternating` zigzag + new block copy (replaces long sidebar prose).
+- **Online Fax** — vertical-tabs sidebar: new heading + bullet-style tab bodies + icons.
+- **Custom Website Development** — `hero.storyAlternating` + new blocks (replaces accordion sidebar).
 
-- **Get Online:** Brand Monitoring (`brand-competitor-monitoring.json`) — highlighted step 02.
-- **Get Found:** Directory Listings, Reputation Management, Social Media Management, Search Everywhere Optimization (`seo.json`) — highlighted step 03 where applicable.
-- **Grow:** Marketing 360 (`ppc-management.json`) — highlighted step 04.
+For the exact wording and structure, see the corresponding JSON files and regenerated `rewrites/md/*.md` exports.
 
-Feature cards on JSON product pages use a responsive column count (`lib/feature-card-grid.ts`) so five-card rows avoid a lone fifth column (e.g. 3+2 instead of 4+1).
+---
+
+## Portfolio fit (lifecycle grid)
+
+Per-product **highlighted** lifecycle step and intros are defined in each file’s `lifecycleFit` object. Older static tables in this doc may drift; use JSON + sync output as reference.

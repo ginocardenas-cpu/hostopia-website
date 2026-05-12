@@ -1,38 +1,67 @@
-# Product Page Content Files
+# Product page content — canonical source
 
-## What This Is
+## Single source of truth
 
-Structured content for all Hostopia product pages, rewritten for tighter copy, stronger value props, and SEO optimization. Each JSON file maps directly to a product page component in `components/products/`.
+**Authoritative copy for every live Hostopia product page is in:**
 
-## How to Use These Files
+`content/products/<slug>.json`
 
-Each JSON file follows the **5-section product page template** outlined in `PRODUCT-PAGE-RECOMMENDATIONS.md`:
+Pages are rendered data-driven from that JSON via `components/products/ProductPageFromJson.tsx` and `app/products/[slug]/page.tsx`. When you change copy for production, **edit the JSON** (or the sync pipeline that feeds it), not orphaned Word/Google drafts.
 
+### Markdown exports (reference only)
+
+The folder `content/products/New Products/rewrites/md/` contains **generated** markdown mirrors (numbered `01`–`18`) for reviews, handoffs, and AI context. They are **not** the source of truth.
+
+Refresh them after JSON edits so stakeholders stay aligned:
+
+```bash
+npm run content:sync-product-md
 ```
-1. hero        → Hero section with headline, value prop, CTA, sidebar bullets
-2. features    → "What you deliver" — 4-6 feature cards with icons
-3. partnerAdvantage → "Partner advantage" — 3-4 benefit blocks (use dark bg)
-4. lifecycleFit     → Portfolio fit with lifecycle step cards
-5. cta         → Final CTA block (dark bg)
-```
 
-### JSON Structure
+Implementation: `scripts/sync-product-md-from-json.mjs` (layout labels mirror `VERTICAL_TABS_LAYOUT_SLUGS` and related logic in `ProductPageFromJson.tsx`).
+
+**Legacy file:** `04-marketing-essentials.md` — there is no live `marketing-essentials` product or JSON; the stub explains the gap.
+
+---
+
+## Page template (JSON → UI)
+
+Roughly the same six areas on every product page:
+
+1. **Hero** — `hero.eyebrow`, `headline`, optional `subheadline` / `badge`, `description`, `cta`, optional `media.heroImage`
+2. **Mid-page story** — **one of:**
+   - **`hero.storyAlternating`** — Zigzag rows (`AlternatingStorySection`): section heading + blocks with title, Lucide `icon`, `bullets[]`, `image`
+   - **`hero.sidebar`** — Then either:
+     - **`VerticalTabs`** (e.g. Logo Design, SSL, Online Fax, SEO, Website Builder, Email Marketing, Social Media Management) — tab rail + gallery + bullets under image
+     - **`ProductHeroAccordion`** — Classic accordion below hero
+     - **`InteractiveImageAccordion`** — Business Email only
+3. **`features`** — “What you deliver” grid (`eyebrow`, `heading`, `intro`, `cards[]` with Lucide `icon`)
+4. **`partnerAdvantage`** — Dark “partner advantage” block
+5. **`lifecycleFit`** — Portfolio fit steps
+6. **`cta`** — Final CTA
+
+Optional extras in JSON: `media.beforeAfter`, `media.vimeoOverview`, `media.logoShowcase`, etc.
+
+---
+
+## JSON shape (abbreviated)
 
 ```json
 {
-  "slug": "product-slug",           // matches route and nav-products.ts
-  "label": "Display Name",
-  "productName": "Full Product Name",
+  "slug": "product-slug",
+  "label": "Nav label",
+  "productName": "Full marketing name",
 
   "seo": {
     "primaryKeyword": "...",
     "secondaryKeywords": ["..."],
-    "metaTitle": "...",             // update in [slug]/page.tsx productMeta
+    "metaTitle": "...",
     "metaDescription": "...",
     "urlSlug": "/products/..."
   },
 
   "hero": { ... },
+  "media": { "heroImage": { "src", "alt", "priority" } },
   "features": { ... },
   "partnerAdvantage": { ... },
   "lifecycleFit": { ... },
@@ -40,66 +69,62 @@ Each JSON file follows the **5-section product page template** outlined in `PROD
 }
 ```
 
-### Mapping to Components
+---
 
-**Option A — Direct reference**: Read the JSON and copy text into the existing component pattern (like `WebsiteBuilderPage.tsx`).
+## Live catalog (17 products)
 
-**Option B — Data-driven**: Import the JSON and render dynamically:
-```tsx
-import content from '@/content/products/website-builder.json';
-// Use content.hero.headline, content.features.cards, etc.
-```
+Routes and labels come from `lib/nav-products.ts`.
 
-### SEO Metadata
+### Build a Brand
 
-Update `productMeta` in `app/products/[slug]/page.tsx` using the `seo` object from each content file.
+| JSON | Nav label | Slug |
+|------|-----------|------|
+| `domains.json` | Domains | `domains` |
+| `logo-design.json` | Logo Design | `logo-design` |
+| `business-email.json` | Business Email | `business-email` |
 
-### Design System Reference
+### Get Online
+
+| JSON | Nav label | Slug |
+|------|-----------|------|
+| `brand-competitor-monitoring.json` | Brand Monitoring | `brand-competitor-monitoring` |
+| `ssl.json` | SSL | `ssl` |
+| `hosting.json` | Hosting | `hosting` |
+| `website-builder.json` | Website Builder | `website-builder` |
+| `website-design.json` | Website Design | `website-design` |
+
+### Get Found
+
+| JSON | Nav label | Slug |
+|------|-----------|------|
+| `reputation-management.json` | Reputation & Listing Management | `reputation-management` |
+| `directories.json` | Directory Listings | `directories` |
+| `social-media-management.json` | Social Media Management | `social-media-management` |
+| `seo.json` | Search Engine Optimization | `seo` |
+
+### Grow their Business
+
+| JSON | Nav label | Slug |
+|------|-----------|------|
+| `ecommerce.json` | Ecommerce | `ecommerce` |
+| `email-marketing.json` | Email Marketing | `email-marketing` |
+| `ppc-management.json` | Marketing 360 | `ppc-management` |
+| `custom-website-development.json` | Custom Website Development | `custom-website-development` |
+| `digital-fax.json` | Online Fax | `digital-fax` |
+
+---
+
+## Design tokens (reference)
 
 - Fonts: Montserrat (headings), Raleway (body)
 - Teal accent: `#2CADB2`
 - Yellow CTA: `#F8CF41`
 - Dark block: `#24282B`
-- Gray bg: `#f7f6f2`
-- Icons: Lucide React (icon names in feature cards map to lucide-react exports)
+- Cream / gray backgrounds per section in components
+- Feature icons: Lucide React (`icon` string must match an export from `lucide-react`)
 
-## Files
+---
 
-All 14 product pages are complete. Each file maps to a slug in `lib/nav-products.ts`.
+## SEO metadata
 
-### Build a Brand
-| File | Product | Slug | Status |
-|------|---------|------|--------|
-| `domains.json` | Domains | `domains` | Rewrite of existing page |
-| `logo-design.json` | Professional Logo Design | `logo-design` | Rewrite of existing page |
-| `business-email.json` | Business Email | `business-email` | Rewrite of existing page |
-
-### Get Online
-| File | Product | Slug | Status |
-|------|---------|------|--------|
-| `website-builder.json` | Online Presence Builder | `website-builder` | Rewrite of existing page |
-| `website-design.json` | DIFM Website Design | `website-design` | Rewrite of existing page |
-| `custom-website-development.json` | Custom Website Design | `custom-website-development` | NEW — needs component |
-| `hosting.json` | Website Hosting | `hosting` | Rewrite of existing page; accordion copy documented in `products/New Products/rewrites/md/12-hosting.md` (keep in sync with `hero.sidebar` in the JSON) |
-| `ssl.json` | SSL Certificates | `ssl` | Rewrite of existing page |
-
-### Get Found
-| File | Product | Slug | Status |
-|------|---------|------|--------|
-| `seo.json` | Search Everywhere Optimization | `seo` | NEW — needs component + nav entry |
-| `directories.json` | OneList Plus | `directories` | Rewrite of existing page |
-| `reputation-management.json` | Reviews Promoter | `reputation-management` | Rewrite of existing page |
-
-### Grow their Business
-| File | Product | Slug | Status |
-|------|---------|------|--------|
-| `ecommerce.json` | Online Store | `ecommerce` | Rewrite of existing page |
-| `email-marketing.json` | Email Marketing | `email-marketing` | NEW — needs component + nav entry |
-| `digital-fax.json` | Online Fax | `digital-fax` | Rewrite of existing page |
-
-## Notes
-
-- **New components needed**: Email Marketing, SEO (Search Everywhere Optimization), and Custom Website Design exist in `nav-products.ts` but don't have dedicated page components yet
-- Content is written for service provider partners (Hostopia's B2B audience), not end SMBs
-- All copy follows Hostopia brand voice: professional, educational, partner-empowering, specific
-- Each JSON includes an `seo` object — use it to update `productMeta` in `app/products/[slug]/page.tsx`
+Product meta is driven from each JSON `seo` object in the product page route; keep `metaTitle`, `metaDescription`, and keywords in sync with campaigns.

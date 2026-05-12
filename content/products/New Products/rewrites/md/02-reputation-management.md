@@ -1,125 +1,199 @@
 # Reputation & Listing Management
 
-**URL slug:** `/products/reputation-management`
-**Meta title (≤60 chars):** Reputation & Listing Management for SMBs | Hostopia
-**Meta description (≤155 chars):** White-label reputation management with AI review responses, 30+ directory sync, and competitor benchmarking — help SMBs build trust and get found.
-**Primary keyword:** reputation management software for small business
-**Secondary keywords:** online review management, AI review responses, local listings management, directory publishing
-**Portfolio Fit:** Get Found
+> **Canonical source:** `content/products/reputation-management.json` — this file is generated for reference and handoffs. Edit the JSON (or adjust the site) and run `npm run content:sync-product-md` to refresh these exports.
+
+| Field | Value |
+| --- | --- |
+| **Nav label** | Reputation & Listing Management |
+| **Slug** | `reputation-management` |
+| **URL** | `/products/reputation-management` |
+| **Meta title** | Reputation & Listing Management for SMBs | Hostopia |
+| **Meta description** | White-label reputation management with AI review responses, 30+ directory sync, and competitor benchmarking — help SMBs build trust and get found. |
+| **Primary keyword** | reputation management software for small business |
+| **Secondary keywords** | `online review management`, `AI review responses`, `local listings management`, `directory publishing` |
 
 ---
 
-## 1 · HERO
+## 1 · Hero
 
-**Eyebrow:** REPUTATION & LISTING MANAGEMENT BY HOSTOPIA
+**Eyebrow:** Reputation & Listing Management by Hostopia
 
 **H1:** Help Your Clients Build Trust Where Buyers Are Looking
 
-**Sub-copy (single paragraph — Hostopia value prop only):**
+**Description:**
+
 Today's buyers decide in seconds based on reviews, ratings, and what they see in search. Hostopia's white-label Reputation & Listing Management gives your customers one place to publish listings, respond to reviews with AI, and benchmark against local competitors — so they show up consistently, credibly, and in control.
 
-**CTAs:** `Book a Demo` | `Talk to Partner Success`
+**CTAs:**
 
-*(Remove: "Online Marketing Center — Trust Plan" reference.)*
+- Primary: `Book a Demo`
+- Secondary: `Talk to Partner Success`
 
----
+### Hero media
 
-## 2 · ACCORDION — "Your SMB customers can…"
-
-### Turn reviews into a growth engine
-Reviews are the new word-of-mouth — and the businesses that manage them well grow faster. Hostopia's AI monitors reviews across Google, Meta, and other key platforms, then drafts timely, on-brand responses your customers can approve and post in a single click. Positive reviews get acknowledged, negative ones get addressed quickly, and every interaction reinforces trust with the next prospect reading. It's how small businesses build a steady flow of new customers without hiring a marketing agency or spending hours a week writing replies from scratch.
-
-### Benchmark against local competitors
-It's hard to improve what you can't measure. Competitive Reputation Intelligence shows your customers how their review volume, average rating, response time, and sentiment stack up against other local businesses — the ones potential buyers are comparing them to right now. AI-driven sentiment analysis surfaces the themes driving positive and negative feedback, so owners know exactly where to double down and where to fix. It turns reviews from a background worry into a clear, prioritized strategy for winning more local business.
-
-### Publish listings to 30+ directories in one click
-Inconsistent business information is one of the fastest ways to lose search visibility and customer trust. Listings Sync lets your customers publish and update their business profile across Google, Meta, and 30+ local directories in a single click — name, address, phone, hours, photos, all consistent, all current. When something changes, it changes everywhere. Your SMBs stop playing whack-a-mole with outdated listings, and start showing up accurately wherever buyers search. *(Directory coverage varies by country.)*
-
-### Post fresh content without a copywriter
-Search engines and buyers both reward businesses that stay active. Hostopia's AI Social Content tools help your customers generate, schedule, and publish fresh posts across major social platforms — tailored to their industry, tone, and audience — without hiring a copywriter or agency. Built-in scheduling keeps their feed consistent even during busy weeks, and approval controls keep everything on-brand. It's the simplest way for a time-strapped owner to stay visible between reviews, promotions, and seasonal moments.
-
-### Control everything from one place
-Most SMBs are drowning in tabs — Google, Meta, Yelp, Tripadvisor, their website, their email. Hostopia's Reputation & Listing Management consolidates reviews, listings, social posts, and competitive insights into a single dashboard with one login. Alerts, reports, and approvals live in the same place your customers already go to manage their business. Your support team answers fewer "where do I find this?" tickets, and your customers spend their time running the business instead of managing the tools.
+- **src:** `/Reputation Management/reputation management header.png`
+- **alt:** Reputation and listing management platform dashboard
 
 ---
 
-## 3 · WHAT YOU DELIVER
+## 2 · Alternating story (zigzag)
 
-**Section headline:** Reputation That Drives Revenue
-**Intro line:** Built for partners who want SMB customers to look credible everywhere buyers check. Every feature is engineered to protect and grow reputation without adding hours to the owner's week.
+Rendered by `AlternatingStorySection` — copy and image alternate left/right (same pattern as Ecommerce, Website Design, Marketing 360, Custom Website Development, etc., when `hero.storyAlternating` is set).
 
-**Feature grid (6 cards):**
+**Section H2:** Reputation & Listing Management
 
-**AI Review Responses**
+### AI Review Management
+**Icon (Lucide):** `Sparkles`
+**Image:** `/Reputation Management/reputation management slider 01.jpg`
+**Image alt:** AI review monitoring and response across Google and Meta
+
+- Enable your customers to monitor and respond to reviews across Google, Meta, and key platforms
+- Use AI to generate on-brand responses they can approve and publish in one click
+- Help them build trust and win more customers through fast, consistent engagement
+
+### Competitive Reputation Insights
+**Icon (Lucide):** `BarChart3`
+**Image:** `/Reputation Management/reputation management slider 02.jpg`
+**Image alt:** Competitive reputation benchmarks and sentiment insights
+
+- Give your customers visibility into how they compare on ratings, volume, response time, and sentiment
+- Surface clear, actionable insights with AI-driven analysis of customer feedback
+- Help them turn reviews into a strategy for improving reputation and capturing more local demand
+
+### Listings Sync
+**Icon (Lucide):** `Globe`
+**Image:** `/Reputation Management/reputation management slider 03.jpg`
+**Image alt:** Business listings synced across directories
+
+- Allow your customers to update business information across 30+ directories from one place
+- Keep critical details like name, address, hours, and photos consistent everywhere
+- Strengthen search visibility and customer trust with accurate, up-to-date listings
+
+### AI Social Content
+**Icon (Lucide):** `Calendar`
+**Image:** `/Reputation Management/reputation management slider 04.jpg`
+**Image alt:** AI social content generation and scheduling
+
+- Enable your customers to generate and schedule social content tailored to their business
+- Keep their presence active with built-in scheduling and approval workflows
+- Increase visibility without adding tools, headcount, or external agency costs
+
+### Unified Reputation Management
+**Icon (Lucide):** `LayoutDashboard`
+**Image:** `/Reputation Management/reputation management slider 05.jpg`
+**Image alt:** Unified dashboard for reviews, listings, and social
+
+- Give your customers a single dashboard to manage reviews, listings, social, and insights
+- Provide one login for alerts, reporting, and approvals across all channels
+- Reduce complexity while helping them stay focused on running and growing their business
+
+---
+
+## 3 · What you deliver (`features`)
+
+**Eyebrow:** What you deliver
+
+**Heading:** Reputation That Drives Revenue
+
+**Intro:** Built for partners who want SMB customers to look credible everywhere buyers check. Every feature is engineered to protect and grow reputation without adding hours to the owner's week.
+
+**Feature cards:**
+
+#### AI Review Responses
+**Icon:** `Sparkles`
+
 On-brand replies drafted in seconds across Google, Meta, and other review platforms. Owners approve and post with one tap — or let AI auto-respond within brand-safe rules.
 
-**Competitive Reputation Intelligence**
+#### Competitive Reputation Intelligence
+**Icon:** `BarChart3`
+
 See review volume, ratings, sentiment, and response time benchmarked against local competitors — with AI-driven insights on where to focus first.
 
-**30+ Directory Sync**
+#### 30+ Directory Sync
+**Icon:** `Globe`
+
 Publish once and appear everywhere that matters. Google, Meta, and 30+ local directories stay consistent and current from a single control panel.
 
-**AI Social Content & Scheduling**
+#### AI Social Content & Scheduling
+**Icon:** `Calendar`
+
 Generate, schedule, and publish on-brand social posts across major platforms. Stay visible between reviews, promotions, and campaigns without hiring a copywriter.
 
-**Centralized Reputation Control**
+#### Centralized Reputation Control
+**Icon:** `LayoutDashboard`
+
 One dashboard for reviews, listings, social, and benchmarking. One login, one source of truth, zero platform-hopping for busy owners.
 
-**Automated Workflows**
+#### Automated Workflows
+**Icon:** `RefreshCw`
+
 Route reviews to the right staff, trigger follow-ups, and escalate critical feedback automatically — so nothing slips through and every customer feels heard.
 
 ---
 
-## 4 · WHY PARTNERS WIN (dark section)
+## 4 · Partner advantage (`partnerAdvantage`)
 
-**Headline:** Reputation Is the Retention Play
+**Eyebrow:** The partner advantage
+
+**Heading:** Reputation Is the Retention Play
+
 **Intro:** Reputation management solves a problem every SMB has and almost none solve well — which makes it one of the stickiest, highest-margin products you can add to your portfolio.
 
-**Address a critical SMB pain point**
+### Address a critical SMB pain point
+
 Every local business worries about reviews and listings, and most have no system to manage them. You become the partner who finally makes it easy — and the one they won't switch away from.
 
-**High retention value**
+### High retention value
+
 Reputation data compounds. The longer a customer uses the product, the more historical insights, automated replies, and competitive benchmarks they lose by leaving. Churn drops. Lifetime value climbs.
 
-**Differentiation with advanced AI features**
+### Differentiation with advanced AI features
+
 AI review responses, sentiment analysis, and competitive intelligence position you as a premium digital partner — not another reseller of basic utilities.
 
-**Easy set-up and integration**
+### Easy set-up and integration
+
 Fast onboarding, connector-based integrations, and a white-label experience mean customers see value in minutes and your support team spends less time on deployment.
 
 ---
 
-## 5 · PORTFOLIO FIT (4-step band)
+## 5 · Portfolio fit (`lifecycleFit`)
 
-**Headline:** The Trust Layer of Every Digital Portfolio
+**Eyebrow:** Portfolio fit
+
+**Heading:** The Trust Layer of Every Digital Portfolio
+
 **Intro:** Reputation & Listing Management sits at the heart of the Get Found motion — the product that turns visibility into conversion for every SMB in your base.
 
-**01 — Build a Brand**
-Domains, logos, and email establish the SMB's identity.
+**Steps:**
 
-**02 — Get Online**
-Websites, hosting, and Marketing Essentials launch their digital presence.
+- **01 · Build a Brand**
+  Domains, logos, and email establish the SMB's identity.
 
-**03 — Get Found** *(Portfolio Fit)*
-Reputation & Listing Management ensures SMBs appear consistently across directories, protect their review presence, and benchmark against local competitors.
+- **02 · Get Online**
+  Websites, hosting, and Marketing Essentials launch their digital presence.
 
-**04 — Grow**
-Marketing 360 layers SEO, paid advertising, and full-stack digital marketing on top of a trusted, well-managed reputation.
+- **03 · Get Found** *(highlight)*
+  Reputation & Listing Management ensures SMBs appear consistently across directories, protect their review presence, and benchmark against local competitors.
+  *Product name:* Reputation & Listing Management
 
-**Positioning line:** Position Reputation & Listing Management as the Get Found anchor that converts traffic into trust — and opens the natural upsell to Marketing 360 for partners ready to scale revenue.
+- **04 · Grow**
+  Marketing 360 layers SEO, paid advertising, and full-stack digital marketing on top of a trusted, well-managed reputation.
+
+**Positioning:**
+
+Position Reputation & Listing Management as the Get Found anchor that converts traffic into trust — and opens the natural upsell to Marketing 360 for partners ready to scale revenue.
 
 ---
 
-## 6 · FINAL CTA
+## 6 · Final CTA (`cta`)
 
 **Headline:** Ready to Launch Reputation & Listings Under Your Brand?
-**Body:** Connect with Hostopia to offer SMBs the AI-powered reputation tools they need to compete locally — bundled with your existing services, delivered entirely under your brand.
-**CTA:** `Book a Demo`
+
+Connect with Hostopia to offer SMBs the AI-powered reputation tools they need to compete locally — bundled with your existing services, delivered entirely under your brand.
+
+**Button:** `Book a Demo`
 
 ---
 
-## SEO NOTES
-- H1 targets buyer-intent keywords (trust, searching, visibility) — strong for local-intent queries.
-- Section 3 answers "how to manage business listings" and "how to respond to reviews with AI" — good for featured snippets.
-- Schema: Product + LocalBusiness + FAQPage.
-- Internal link targets: Brand Monitoring, Marketing Essentials, SEO, Marketing 360.
+_Generated from `content/products/reputation-management.json` — run `npm run content:sync-product-md`._

@@ -1,60 +1,64 @@
-# Hostopia Product Page Rewrites — v4 (full 18-page catalog)
+# Hostopia product rewrites — markdown export
 
-**Scope:** All 18 product pages rewritten to a single consistent template — the 8 original pages plus 10 new pages extended from the source JSONs (domains, business email, SSL, hosting, website builder, DIFM website design, ecommerce, custom website design, online fax, email marketing).
+## Canonical source
 
-## Consistency QA (all 18 pages pass)
+**Live site copy = `content/products/*.json`.**  
+This folder’s **`.md` files are generated** for reviews, briefs, and handoffs. Do not treat them as the editable source unless you first change the JSON and re-run the sync command below.
 
-| # | Page | Hero words | Accordion items | Sections | Portfolio Fit |
-|---|---|---|---|---|---|
-| 01 | Brand Monitoring | 45 | 5 | 6 | Get Online |
-| 02 | Reputation & Listing Management | 49 | 5 | 6 | Get Found |
-| 03 | Search Engine Optimization (SEO) | 45 | 5 | 6 | Get Found |
-| 04 | Marketing Essentials | 51 | 5 | 6 | Get Online |
-| 05 | Marketing 360 Suite | 50 | 5 | 6 | Grow |
-| 06 | Social Media Management | 52 | 5 | 6 | Get Found |
-| 07 | Directory Listings | 53 | 5 | 6 | Get Online |
-| 08 | Professional Logo Design | 44 | 5 | 6 | Build a Brand |
-| 09 | Domains | 50 | 5 | 6 | Build a Brand |
-| 10 | Business Email | 52 | 5 | 6 | Build a Brand |
-| 11 | SSL Certificates | 53 | 5 | 6 | Get Online |
-| 12 | Website Hosting | 52 | 5 | 6 | Get Online |
-| 13 | Online Presence Builder | 50 | 5 | 6 | Get Online |
-| 14 | DIFM Website Design | 58 | 5 | 6 | Get Online |
-| 15 | Online Store (Ecommerce) | 55 | 5 | 6 | Grow |
-| 16 | Custom Website Design | 54 | 5 | 6 | Grow |
-| 17 | Online Fax | 53 | 5 | 6 | Grow |
-| 18 | Email Marketing | 55 | 5 | 6 | Grow |
+```bash
+# From repo root
+npm run content:sync-product-md
+```
 
-Hero sub-copy is compressed to a single paragraph (44–58 words) on every page. Every accordion has exactly 5 benefits, and every page follows the same six-section structure.
+Generator: `scripts/sync-product-md-from-json.mjs`
 
-## Page template (every product page)
-1. **Hero** — Eyebrow, H1, single value-prop paragraph, CTAs
-2. **Accordion** — "Your SMB customers can…" with 5 benefits (110–170 words each)
-3. **What You Deliver** — Light-background feature grid with 6 cards
-4. **Why Partners Win** — Dark-background partner-value section with 3–4 pillars
-5. **Portfolio Fit** — Build a Brand → Get Online → Get Found → Grow band
-6. **Final CTA** — "Ready to…" headline + demo button
+---
 
-## Rules applied across every page
-1. **Hero compressed to one paragraph** — Hostopia value prop only, no second paragraph of product description.
-2. **Plan names removed** from all customer-facing copy (Starter, Essentials, Trust, Boost, Suite 360). They belong in sales enablement, not marketing.
-3. **SEO renamed + redirected** — "Search Everywhere Optimization" → "Search Engine Optimization (SEO)" across navigation, copy, metadata, and URL.
-4. **Marketing Essentials positioned under Get Online** with the category shown in the eyebrow and referenced in positioning copy.
-5. **Accordion copy expanded** to 110–170 words per item so text visually balances the image — no empty white space.
-6. **SEO foundations** on every page: meta title, meta description, primary + secondary keywords, URL slug, internal link targets, schema recommendations.
-7. **Consistent tone** across all 18 pages: benefit-led headlines, action-verb accordion titles, partner-value framing in the dark section, and a clear Portfolio Fit placement.
+## File map
 
-## Portfolio Fit map
+| # | Markdown | JSON slug | Notes |
+|---|----------|-----------|--------|
+| 01 | `md/01-brand-monitoring.md` | `brand-competitor-monitoring` | |
+| 02 | `md/02-reputation-management.md` | `reputation-management` | |
+| 03 | `md/03-seo.md` | `seo` | |
+| 04 | `md/04-marketing-essentials.md` | — | **Legacy stub** — no live product |
+| 05 | `md/05-marketing-360.md` | `ppc-management` | Nav: Marketing 360 |
+| 06 | `md/06-social-media-management.md` | `social-media-management` | |
+| 07 | `md/07-directory-listings.md` | `directories` | |
+| 08 | `md/08-logo-design.md` | `logo-design` | |
+| 09 | `md/09-domains.md` | `domains` | |
+| 10 | `md/10-business-email.md` | `business-email` | |
+| 11 | `md/11-ssl.md` | `ssl` | |
+| 12 | `md/12-hosting.md` | `hosting` | |
+| 13 | `md/13-website-builder.md` | `website-builder` | |
+| 14 | `md/14-website-design.md` | `website-design` | |
+| 15 | `md/15-ecommerce.md` | `ecommerce` | |
+| 16 | `md/16-custom-website-development.md` | `custom-website-development` | |
+| 17 | `md/17-digital-fax.md` | `digital-fax` | Nav: Online Fax |
+| 18 | `md/18-email-marketing.md` | `email-marketing` | |
 
-| Portfolio Step | Products |
-|---|---|
-| **Build a Brand** | Professional Logo Design, Domains, Business Email |
-| **Get Online** | Brand Monitoring, Marketing Essentials, Directory Listings, SSL, Website Hosting, Online Presence Builder, DIFM Website Design |
-| **Get Found** | Social Media Management, Reputation & Listing Management, SEO |
-| **Grow** | Marketing 360 Suite, Online Store (Ecommerce), Custom Website Design, Online Fax, Email Marketing |
+**`docx/`** — Word versions, if present, are for stakeholder review only; they are not wired to the site.
 
-## Files
-- `md/` — Markdown source, one per product (01–18). Hand these to Claude Code to push into the site.
-- `docx/` — Word versions for team review.
+---
 
-All files live inside the `New Products` folder for single-source access.
+## Mid-page layout (generated section 2)
+
+The sync script labels each product’s mid-page block to match `ProductPageFromJson.tsx`:
+
+- **Alternating story (zigzag)** — `hero.storyAlternating` → `AlternatingStorySection`
+- **Vertical tabs** — `hero.sidebar` + slug in vertical-tabs set
+- **Hero accordion** — `hero.sidebar` + default accordion layout
+- **Interactive image accordion** — `business-email` only
+
+---
+
+## Portfolio fit (high level)
+
+| Portfolio step | Products (nav names) |
+|----------------|----------------------|
+| **Build a Brand** | Domains, Logo Design, Business Email |
+| **Get Online** | Brand Monitoring, SSL, Hosting, Website Builder, Website Design |
+| **Get Found** | Reputation & Listing Management, Directory Listings, Social Media Management, Search Engine Optimization |
+| **Grow their Business** | Ecommerce, Email Marketing, Marketing 360, Custom Website Development, Online Fax |
+
+Exact step highlights and intros live in each JSON `lifecycleFit` object.

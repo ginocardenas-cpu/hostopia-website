@@ -7,7 +7,8 @@
     "build": "next build",
     "start": "next start",
     "lint": "next lint",
-    "blog:migrate": "node scripts/migrate-blog-from-hostopia.js"
+    "blog:migrate": "node scripts/migrate-blog-from-hostopia.js",
+    "content:sync-product-md": "node scripts/sync-product-md-from-json.mjs"
   },
   "dependencies": {
     "@elevenlabs/react": "^1.0.1",
