@@ -23,43 +23,48 @@
     "description": "Many SMBs still rely on fax for contracts, medical records, and legal documents, yet legacy fax machines are costly, insecure, and tied to physical offices. Hostopia's white-label Online Fax delivers a secure, cloud-based service that modernizes how your customers send and receive documents — without disrupting the workflows they depend on every day.",
     "cta": { "primary": "Book a Demo", "secondary": "Talk to Partner Success" },
     "sidebar": {
-      "heading": "Your SMB customers can",
+      "heading": "Help Your Customers Modernize Fax—Without Disrupting Their Workflow",
       "items": [
         {
-          "title": "Fax from anywhere, on any device",
-          "body": "Legacy fax locks employees to a machine in an office — which is exactly the opposite of how modern SMBs actually work. Hostopia's Online Fax sends and receives from any device with an internet connection: laptop, tablet, smartphone, or desktop. Remote employees fax contracts from home, field reps send signed documents from customer sites, and clinicians handle patient forms from multiple locations. No phone lines, no hardware, no office tether — just the same fax workflow in a modern form factor.",
+          "title": "Work From Anywhere",
+          "icon": "Laptop",
+          "body": "• Enable your customers to send and receive faxes from any device — laptop, mobile, tablet, or desktop\n• Support remote teams, field staff, and multi-location businesses with no hardware required\n• Eliminate phone lines and physical machines while keeping familiar workflows intact",
           "image": {
             "src": "/Online Fax/online fax slider 01.jpg",
             "alt": "Working remotely with mobile and cloud tools"
           }
         },
         {
-          "title": "Stay compliant in regulated industries without extra configuration",
-          "body": "Healthcare, legal, and financial businesses can't just replace fax with email — their compliance frameworks still specify fax for many transmissions. Hostopia's Online Fax encrypts every transmission and supports HIPAA-aligned configurations out of the box, so SMBs in regulated industries modernize without creating compliance risk. That's a big deal for partners selling into medical practices, law firms, insurance brokers, and accounting firms — industries that pay premium rates for services they can trust.",
+          "title": "Built for Compliance",
+          "icon": "ShieldCheck",
+          "body": "• Encrypt every fax transmission to protect sensitive information\n• Support HIPAA-aligned configurations for regulated industries like healthcare and legal\n• Help customers modernize fax without introducing compliance risk",
           "image": {
             "src": "/Online Fax/online fax slider 02.jpg",
             "alt": "Healthcare compliance and secure communications"
           }
         },
         {
-          "title": "Keep existing numbers during the switch",
-          "body": "Fax numbers end up on business cards, contracts, medical forms, and pharmacy records — they're not disposable. Hostopia's number porting migrates customers off legacy lines without changing the number anyone has on file, or activates fresh local and toll-free numbers for new customers. The switch becomes invisible to the SMB's own customers, which removes the single biggest objection to modernizing fax: \"but everyone has our old number.\"",
+          "title": "Keep Existing Numbers",
+          "icon": "PhoneForwarded",
+          "body": "• Allow customers to port existing fax numbers without disruption\n• Offer new local and toll-free numbers for added flexibility\n• Remove barriers to switching by keeping customer-facing information unchanged",
           "image": {
             "src": "/Online Fax/online fax slider 03.jpg",
             "alt": "Business phone and fax number management"
           }
         },
         {
-          "title": "Simplify workflows with email-to-fax and fax-to-email",
-          "body": "The fastest path to adoption is fitting into how SMBs already work. Hostopia's Online Fax lets customers send faxes straight from email, receive faxes directly in their inbox as PDFs, and manage everything through a browser portal when needed. No separate software to install, no new interface to learn, and no retraining of office staff. The system replaces the fax machine without adding a new system to manage.",
+          "title": "Seamless Workflow Integration",
+          "icon": "Inbox",
+          "body": "• Let customers send faxes directly from email and receive them as PDFs in their inbox\n• Provide a simple browser-based portal for full visibility and control\n• Avoid new software installs or retraining with a familiar, intuitive experience",
           "image": {
             "src": "/Online Fax/online fax slider 04.jpg",
             "alt": "Documents and streamlined office workflows"
           }
         },
         {
-          "title": "Scale from solo practitioner to multi-location business",
-          "body": "Fax usage scales differently across industries — a solo lawyer might send two faxes a week, while a medical practice might send two hundred. Hostopia's plans include shared page pools for teams, admin roles, per-number tracking, and usage reporting — so the service fits solo practitioners, small teams, and multi-location businesses on the same platform. Customers start where they need and grow inside your offering rather than outgrowing to a different provider.",
+          "title": "Flexible Plans That Scale",
+          "icon": "Layers",
+          "body": "• Support usage from low-volume individuals to high-volume teams\n• Enable shared page pools, admin controls, and per-number tracking\n• Give customers a scalable solution that grows with their business",
           "image": {
             "src": "/Online Fax/online fax slider 05.jpg",
             "alt": "Team and multi-location fax usage"
