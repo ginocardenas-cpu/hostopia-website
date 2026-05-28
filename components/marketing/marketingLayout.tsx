@@ -1,3 +1,4 @@
+import Image from "next/image";
 import Link from "next/link";
 import type { ReactNode } from "react";
 import { ArrowRight } from "lucide-react";
@@ -8,6 +9,26 @@ import { ProgramIcon } from "@/components/programs/programIcon";
 export const MARKETING_ACCENT = "#2cadb2";
 export const MARKETING_GOLD = "#f8cf41";
 export const MARKETING_DARK_BG = "#24282b";
+
+/** Framed section image matching CustomerStaticImage styling, for explicit local assets. */
+export function MarketingFramedImage({ src, alt }: { src: string; alt: string }) {
+  return (
+    <div className="relative w-full">
+      <div className="relative mx-auto w-full max-w-5xl overflow-hidden rounded-2xl bg-neutral-100 shadow-xl shadow-neutral-300/30 ring-1 ring-black/[0.06]">
+        <div className="relative aspect-[16/10] w-full min-h-[280px] md:min-h-[380px] lg:min-h-[440px]">
+          <Image
+            src={src}
+            alt={alt}
+            fill
+            className="object-cover"
+            sizes="(max-width: 768px) 100vw, 1024px"
+            quality={92}
+          />
+        </div>
+      </div>
+    </div>
+  );
+}
 
 export function heroImageOnLeft(slug: string): boolean {
   let h = 0;
@@ -124,6 +145,9 @@ type MarketingCenteredSectionProps = {
   afterImage?: ReactNode;
   sectionId?: string;
   maxTextWidth?: "3xl" | "none";
+  /** When provided, render this image instead of the deterministic CustomerStaticImage. */
+  imageSrc?: string;
+  imageAlt?: string;
 };
 
 export function MarketingCenteredSection({
@@ -138,6 +162,8 @@ export function MarketingCenteredSection({
   afterImage,
   sectionId,
   maxTextWidth = "3xl",
+  imageSrc,
+  imageAlt,
 }: MarketingCenteredSectionProps) {
   const wrap = maxTextWidth === "3xl" ? "max-w-3xl mx-auto" : "mx-auto max-w-6xl";
   return (
@@ -153,7 +179,11 @@ export function MarketingCenteredSection({
         {appendBeforeImage ? <div className="mx-auto mb-10 max-w-3xl text-left">{appendBeforeImage}</div> : null}
         {details}
         <div className="mt-12">
-          <CustomerStaticImage slug={slug} salt={salt} className="w-full" />
+          {imageSrc ? (
+            <MarketingFramedImage src={imageSrc} alt={imageAlt ?? title} />
+          ) : (
+            <CustomerStaticImage slug={slug} salt={salt} className="w-full" />
+          )}
         </div>
         {afterImage}
       </div>
@@ -341,6 +371,9 @@ type MarketingPreFooterLightProps = {
   slug: string;
   salt?: number;
   details?: ReactNode;
+  /** When provided, render this image instead of the deterministic CustomerStaticImage. */
+  imageSrc?: string;
+  imageAlt?: string;
 };
 
 export function MarketingPreFooterLight({
@@ -351,6 +384,8 @@ export function MarketingPreFooterLight({
   slug,
   salt = 40,
   details,
+  imageSrc,
+  imageAlt,
 }: MarketingPreFooterLightProps) {
   return (
     <section className="bg-gray-50 py-28">
@@ -361,7 +396,11 @@ export function MarketingPreFooterLight({
         <SectionCta href="/contact">{buttonText}</SectionCta>
         {details}
         <div className="mx-auto mt-12 max-w-5xl">
-          <CustomerStaticImage slug={slug} salt={salt} className="w-full" />
+          {imageSrc ? (
+            <MarketingFramedImage src={imageSrc} alt={imageAlt ?? headline} />
+          ) : (
+            <CustomerStaticImage slug={slug} salt={salt} className="w-full" />
+          )}
         </div>
       </div>
     </section>

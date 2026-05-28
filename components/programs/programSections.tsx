@@ -73,9 +73,10 @@ type HowItWorksProps = {
   heading: string;
   intro: string;
   cards: IconCard[];
+  image?: string;
 };
 
-export function HowItWorksSection({ eyebrow, heading, intro, cards, imageKey }: HowItWorksProps & { imageKey: string }) {
+export function HowItWorksSection({ eyebrow, heading, intro, cards, image, imageKey }: HowItWorksProps & { imageKey: string }) {
   const grid =
     cards.length === 3 ? "md:grid-cols-3" : cards.length <= 4 ? "md:grid-cols-2" : "md:grid-cols-2 lg:grid-cols-3";
   return (
@@ -88,6 +89,8 @@ export function HowItWorksSection({ eyebrow, heading, intro, cards, imageKey }: 
       blurb={intro}
       sectionId="how-it-works"
       maxTextWidth="none"
+      imageSrc={image}
+      imageAlt={heading}
       afterImage={
         <div className={`mx-auto mt-16 grid max-w-5xl gap-6 ${grid}`}>
           {cards.map((card) => (
@@ -351,8 +354,18 @@ type CtaProps = {
   headline: string;
   body: string;
   buttonText: string;
+  image?: string;
 };
 
-export function ProgramCTADarkSection({ headline, body, buttonText, imageKey }: CtaProps & { imageKey: string }) {
-  return <MarketingPreFooterLight headline={headline} body={body} buttonText={buttonText} slug={imageKey} />;
+export function ProgramCTADarkSection({ headline, body, buttonText, image, imageKey }: CtaProps & { imageKey: string }) {
+  return (
+    <MarketingPreFooterLight
+      headline={headline}
+      body={body}
+      buttonText={buttonText}
+      slug={imageKey}
+      imageSrc={image}
+      imageAlt={headline}
+    />
+  );
 }

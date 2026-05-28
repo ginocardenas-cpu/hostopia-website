@@ -21,10 +21,12 @@ export default function ProgramHeroImage({ filename, alt }: ProgramHeroImageProp
     );
   }
 
+  const src = filename.startsWith("/") ? filename : `/programs/${filename}`;
+
   return (
     <div className="relative min-h-[260px] lg:min-h-[340px] rounded-2xl overflow-hidden bg-gray-200/60 border border-gray-100">
       <Image
-        src={`/programs/${filename}`}
+        src={src}
         alt={alt}
         fill
         className="object-cover"
