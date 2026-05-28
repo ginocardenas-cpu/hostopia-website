@@ -10,23 +10,31 @@ export const MARKETING_ACCENT = "#2cadb2";
 export const MARKETING_GOLD = "#f8cf41";
 export const MARKETING_DARK_BG = "#24282b";
 
-/** Framed section image matching CustomerStaticImage styling, for explicit local assets. */
-export function MarketingFramedImage({ src, alt }: { src: string; alt: string }) {
+/**
+ * Renders an explicit local composite image at its natural aspect — no crop, no card frame.
+ * Used for final PNGs that already include their own rounded corners and floating badges.
+ */
+export function MarketingFramedImage({
+  src,
+  alt,
+  width = 1600,
+  height = 1000,
+}: {
+  src: string;
+  alt: string;
+  width?: number;
+  height?: number;
+}) {
   return (
-    <div className="relative w-full">
-      <div className="relative mx-auto w-full max-w-5xl overflow-hidden rounded-2xl bg-neutral-100 shadow-xl shadow-neutral-300/30 ring-1 ring-black/[0.06]">
-        <div className="relative aspect-[16/10] w-full min-h-[280px] md:min-h-[380px] lg:min-h-[440px]">
-          <Image
-            src={src}
-            alt={alt}
-            fill
-            className="object-cover"
-            sizes="(max-width: 768px) 100vw, 1024px"
-            quality={92}
-          />
-        </div>
-      </div>
-    </div>
+    <Image
+      src={src}
+      alt={alt}
+      width={width}
+      height={height}
+      className="mx-auto h-auto w-full max-w-5xl object-contain"
+      sizes="(max-width: 768px) 100vw, 1024px"
+      quality={92}
+    />
   );
 }
 
@@ -148,6 +156,8 @@ type MarketingCenteredSectionProps = {
   /** When provided, render this image instead of the deterministic CustomerStaticImage. */
   imageSrc?: string;
   imageAlt?: string;
+  imageWidth?: number;
+  imageHeight?: number;
 };
 
 export function MarketingCenteredSection({
@@ -164,6 +174,8 @@ export function MarketingCenteredSection({
   maxTextWidth = "3xl",
   imageSrc,
   imageAlt,
+  imageWidth,
+  imageHeight,
 }: MarketingCenteredSectionProps) {
   const wrap = maxTextWidth === "3xl" ? "max-w-3xl mx-auto" : "mx-auto max-w-6xl";
   return (
@@ -180,7 +192,7 @@ export function MarketingCenteredSection({
         {details}
         <div className="mt-12">
           {imageSrc ? (
-            <MarketingFramedImage src={imageSrc} alt={imageAlt ?? title} />
+            <MarketingFramedImage src={imageSrc} alt={imageAlt ?? title} width={imageWidth} height={imageHeight} />
           ) : (
             <CustomerStaticImage slug={slug} salt={salt} className="w-full" />
           )}
@@ -374,6 +386,8 @@ type MarketingPreFooterLightProps = {
   /** When provided, render this image instead of the deterministic CustomerStaticImage. */
   imageSrc?: string;
   imageAlt?: string;
+  imageWidth?: number;
+  imageHeight?: number;
 };
 
 export function MarketingPreFooterLight({
@@ -386,6 +400,8 @@ export function MarketingPreFooterLight({
   details,
   imageSrc,
   imageAlt,
+  imageWidth,
+  imageHeight,
 }: MarketingPreFooterLightProps) {
   return (
     <section className="bg-gray-50 py-28">
@@ -397,7 +413,7 @@ export function MarketingPreFooterLight({
         {details}
         <div className="mx-auto mt-12 max-w-5xl">
           {imageSrc ? (
-            <MarketingFramedImage src={imageSrc} alt={imageAlt ?? headline} />
+            <MarketingFramedImage src={imageSrc} alt={imageAlt ?? headline} width={imageWidth} height={imageHeight} />
           ) : (
             <CustomerStaticImage slug={slug} salt={salt} className="w-full" />
           )}

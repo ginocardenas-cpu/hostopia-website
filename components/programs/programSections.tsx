@@ -37,6 +37,8 @@ type ProgramContentHero = {
   subheadline: string;
   cta: HeroCta;
   image: string;
+  imageWidth?: number;
+  imageHeight?: number;
 };
 
 export function ProgramMarketingHero({
@@ -61,7 +63,14 @@ export function ProgramMarketingHero({
           </Link>
         </p>
       }
-      visual={<ProgramHeroImage filename={content.hero.image} alt={`${content.programName} — Hostopia program`} />}
+      visual={
+        <ProgramHeroImage
+          filename={content.hero.image}
+          alt={`${content.programName} — Hostopia program`}
+          width={content.hero.imageWidth}
+          height={content.hero.imageHeight}
+        />
+      }
     />
   );
 }
@@ -74,9 +83,11 @@ type HowItWorksProps = {
   intro: string;
   cards: IconCard[];
   image?: string;
+  imageWidth?: number;
+  imageHeight?: number;
 };
 
-export function HowItWorksSection({ eyebrow, heading, intro, cards, image, imageKey }: HowItWorksProps & { imageKey: string }) {
+export function HowItWorksSection({ eyebrow, heading, intro, cards, image, imageWidth, imageHeight, imageKey }: HowItWorksProps & { imageKey: string }) {
   const grid =
     cards.length === 3 ? "md:grid-cols-3" : cards.length <= 4 ? "md:grid-cols-2" : "md:grid-cols-2 lg:grid-cols-3";
   return (
@@ -91,6 +102,8 @@ export function HowItWorksSection({ eyebrow, heading, intro, cards, image, image
       maxTextWidth="none"
       imageSrc={image}
       imageAlt={heading}
+      imageWidth={imageWidth}
+      imageHeight={imageHeight}
       afterImage={
         <div className={`mx-auto mt-16 grid max-w-5xl gap-6 ${grid}`}>
           {cards.map((card) => (
@@ -355,9 +368,11 @@ type CtaProps = {
   body: string;
   buttonText: string;
   image?: string;
+  imageWidth?: number;
+  imageHeight?: number;
 };
 
-export function ProgramCTADarkSection({ headline, body, buttonText, image, imageKey }: CtaProps & { imageKey: string }) {
+export function ProgramCTADarkSection({ headline, body, buttonText, image, imageWidth, imageHeight, imageKey }: CtaProps & { imageKey: string }) {
   return (
     <MarketingPreFooterLight
       headline={headline}
@@ -366,6 +381,8 @@ export function ProgramCTADarkSection({ headline, body, buttonText, image, image
       slug={imageKey}
       imageSrc={image}
       imageAlt={headline}
+      imageWidth={imageWidth}
+      imageHeight={imageHeight}
     />
   );
 }
