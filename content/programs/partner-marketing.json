@@ -23,13 +23,18 @@
     "headline": "Your Marketing Team, Extended",
     "subheadline": "Telecom and SMB marketing expertise at your fingertips — from go-to-market strategy and campaign execution to MDF management and turnkey creative assets.",
     "cta": { "primary": "Talk to Our Team", "secondary": "See What's Included" },
-    "image": "partner-marketing-hero.jpg"
+    "image": "/PROGRAMS/Partner Marketing/partnermarketing-hero.png",
+    "imageWidth": 2856,
+    "imageHeight": 2256
   },
 
   "howItWorks": {
     "eyebrow": "How we work with you",
     "heading": "An Extension of Your Team",
     "intro": "Hostopia's Partner Marketing managers work alongside your marketing and sales teams. We bring deep experience in telecom, SMB markets, and channel marketing — applied to your goals, your segments, and your competitive landscape.",
+    "image": "/PROGRAMS/Partner Marketing/how we work with you.png",
+    "imageWidth": 4528,
+    "imageHeight": 2515,
     "cards": [
       {
         "icon": "Rocket",
@@ -57,6 +62,9 @@
   "lifecycle": {
     "eyebrow": "Customer lifecycle",
     "heading": "Programs for Every Stage",
+    "image": "/PROGRAMS/Partner Marketing/customer lifecycle.png",
+    "imageWidth": 2756,
+    "imageHeight": 2117,
     "columns": [
       {
         "title": "Acquire",
@@ -106,6 +114,9 @@
   "cta": {
     "headline": "Let's Build Your Next Campaign",
     "body": "Tell us your goals and we'll show you how Hostopia's Partner Marketing team can help — whether it's a full go-to-market plan or a single campaign.",
-    "buttonText": "Connect with Partner Marketing"
+    "buttonText": "Connect with Partner Marketing",
+    "image": "/PROGRAMS/Partner Marketing/next step (1).png",
+    "imageWidth": 3306,
+    "imageHeight": 2156
   }
 }

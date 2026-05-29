@@ -215,6 +215,11 @@ type MarketingSplitSectionProps = {
   details?: ReactNode;
   sectionId?: string;
   visual?: ReactNode;
+  /** When provided (and no explicit `visual`), render this image instead of CustomerStaticImage. */
+  imageSrc?: string;
+  imageAlt?: string;
+  imageWidth?: number;
+  imageHeight?: number;
 };
 
 export function MarketingSplitSection({
@@ -229,9 +234,17 @@ export function MarketingSplitSection({
   details,
   sectionId,
   visual,
+  imageSrc,
+  imageAlt,
+  imageWidth,
+  imageHeight,
 }: MarketingSplitSectionProps) {
   const visualOnLeft = splitIndex % 2 === 0;
-  const defaultVisual = <CustomerStaticImage slug={slug} salt={salt} className="w-full" />;
+  const defaultVisual = imageSrc ? (
+    <MarketingFramedImage src={imageSrc} alt={imageAlt ?? title} width={imageWidth} height={imageHeight} />
+  ) : (
+    <CustomerStaticImage slug={slug} salt={salt} className="w-full" />
+  );
   const viz = visual ?? defaultVisual;
   const copy = (
     <div className="flex flex-col justify-center">

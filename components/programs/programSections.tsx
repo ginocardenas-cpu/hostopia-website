@@ -142,12 +142,18 @@ type LifecycleProps = {
   eyebrow: string;
   heading: string;
   columns: LifecycleColumn[];
+  image?: string;
+  imageWidth?: number;
+  imageHeight?: number;
 };
 
 export function LifecycleSection({
   eyebrow,
   heading,
   columns,
+  image,
+  imageWidth,
+  imageHeight,
   imageKey,
   splitIndex,
 }: LifecycleProps & { imageKey: string; splitIndex: number }) {
@@ -160,6 +166,10 @@ export function LifecycleSection({
       kicker={eyebrow}
       title={heading}
       blurb=""
+      imageSrc={image}
+      imageAlt={heading}
+      imageWidth={imageWidth}
+      imageHeight={imageHeight}
       details={
         <div className="grid gap-8 md:grid-cols-3">
           {columns.map((col) => (
