@@ -22,13 +22,18 @@
     "headline": "We Don't Service Partner Customers. We Service Customers.",
     "subheadline": "24/7, multilingual, multi-channel technical support — entirely in your brand. From Level 1 break/fix through Level 3 escalations.",
     "cta": { "primary": "Talk to Our Team", "secondary": "See Support Models" },
-    "image": "support-hero.jpg"
+    "image": "/PROGRAMS/Support/support-hero.png",
+    "imageWidth": 2800,
+    "imageHeight": 2430
   },
 
   "howItWorks": {
     "eyebrow": "How it works",
     "heading": "Your Brand. Our Expertise. Their Satisfaction.",
     "intro": "White-label customer support that scales with your business. Your customers never know we're involved.",
+    "image": "/PROGRAMS/Support/how it works (3).png",
+    "imageWidth": 4312,
+    "imageHeight": 2462,
     "cards": [
       {
         "icon": "Clock",
@@ -51,6 +56,9 @@
   "tieredSupport": {
     "eyebrow": "Flexible models",
     "heading": "Support Your Way",
+    "image": "/PROGRAMS/Support/flexible models.png",
+    "imageWidth": 2534,
+    "imageHeight": 2567,
     "tiers": [
       {
         "level": "Level 1",
@@ -77,6 +85,9 @@
     "eyebrow": "More than break/fix",
     "heading": "Support That Drives Revenue",
     "intro": "Every customer interaction is an opportunity. We call it \"Upserve\" — and it's in our DNA.",
+    "image": "/PROGRAMS/Support/more than break fix.png",
+    "imageWidth": 4446,
+    "imageHeight": 2669,
     "cards": [
       {
         "icon": "TrendingUp",
@@ -99,6 +110,9 @@
   "reporting": {
     "eyebrow": "Full visibility",
     "heading": "Complete Reporting. Total Transparency.",
+    "image": "/PROGRAMS/Support/full visibility.png",
+    "imageWidth": 2601,
+    "imageHeight": 1995,
     "items": [
       {
         "icon": "BarChart3",

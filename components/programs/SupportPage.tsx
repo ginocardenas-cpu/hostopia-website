@@ -17,7 +17,7 @@ export default function SupportPage() {
   return (
     <main className="pb-0 pt-24">
       <ProgramsBreadcrumb label={content.programName} />
-      <ProgramMarketingHero content={content} secondaryHref="#tiered-support" />
+      <ProgramMarketingHero content={content} secondaryHref="#tiered-support" wideVisual />
       <HowItWorksSection {...content.howItWorks} imageKey={imageKey} />
       <TieredSupportSection {...content.tieredSupport} imageKey={imageKey} splitIndex={splitIndex++} />
       <UpserveSection {...content.upserve} imageKey={imageKey} />

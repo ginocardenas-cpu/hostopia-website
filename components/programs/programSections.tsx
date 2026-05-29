@@ -254,12 +254,18 @@ type TieredSupportProps = {
   eyebrow: string;
   heading: string;
   tiers: Tier[];
+  image?: string;
+  imageWidth?: number;
+  imageHeight?: number;
 };
 
 export function TieredSupportSection({
   eyebrow,
   heading,
   tiers,
+  image,
+  imageWidth,
+  imageHeight,
   imageKey,
   splitIndex,
 }: TieredSupportProps & { imageKey: string; splitIndex: number }) {
@@ -273,6 +279,10 @@ export function TieredSupportSection({
       title={heading}
       blurb=""
       sectionId="tiered-support"
+      imageSrc={image}
+      imageAlt={heading}
+      imageWidth={imageWidth}
+      imageHeight={imageHeight}
       details={
         <div className="grid gap-6 md:grid-cols-3">
           {tiers.map((tier) => (
@@ -300,9 +310,12 @@ type UpserveProps = {
   heading: string;
   intro: string;
   cards: IconCard[];
+  image?: string;
+  imageWidth?: number;
+  imageHeight?: number;
 };
 
-export function UpserveSection({ eyebrow, heading, intro, cards, imageKey }: UpserveProps & { imageKey: string }) {
+export function UpserveSection({ eyebrow, heading, intro, cards, image, imageWidth, imageHeight, imageKey }: UpserveProps & { imageKey: string }) {
   return (
     <MarketingCenteredSection
       slug={imageKey}
@@ -313,6 +326,10 @@ export function UpserveSection({ eyebrow, heading, intro, cards, imageKey }: Ups
       blurb={intro}
       sectionId="upserve"
       maxTextWidth="none"
+      imageSrc={image}
+      imageAlt={heading}
+      imageWidth={imageWidth}
+      imageHeight={imageHeight}
       afterImage={
         <div className="mx-auto mt-16 grid max-w-5xl gap-6 md:grid-cols-3">
           {cards.map((card) => (
@@ -336,12 +353,18 @@ type ReportingProps = {
   eyebrow: string;
   heading: string;
   items: IconCard[];
+  image?: string;
+  imageWidth?: number;
+  imageHeight?: number;
 };
 
 export function ReportingSection({
   eyebrow,
   heading,
   items,
+  image,
+  imageWidth,
+  imageHeight,
   imageKey,
   splitIndex,
 }: ReportingProps & { imageKey: string; splitIndex: number }) {
@@ -354,6 +377,10 @@ export function ReportingSection({
       kicker={eyebrow}
       title={heading}
       blurb=""
+      imageSrc={image}
+      imageAlt={heading}
+      imageWidth={imageWidth}
+      imageHeight={imageHeight}
       details={
         <div className="grid gap-8 sm:grid-cols-2">
           {items.map((item) => (
