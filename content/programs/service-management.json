@@ -22,16 +22,16 @@
     "headline": "Your Account. Your Advocate.",
     "subheadline": "A dedicated service manager who knows your business, owns your satisfaction, and proactively keeps everything running.",
     "cta": { "primary": "Talk to Our Team", "secondary": "Learn What's Included" },
-    "image": "/PROGRAMS/Service Management/service management-hero (1).png",
-    "imageWidth": 3050,
-    "imageHeight": 1923
+    "image": "/PROGRAMS/Service Management/Newer/service management-hero (2).png",
+    "imageWidth": 2973,
+    "imageHeight": 2362
   },
 
   "howItWorks": {
     "eyebrow": "How it works",
     "heading": "A Named Resource Who Owns Your Experience",
     "intro": "Your service manager is your day-to-day point of contact — embedded in the details of your business, your KPIs, and your priorities.",
-    "image": "/PROGRAMS/Service Management/how it works (4).png",
+    "image": "/PROGRAMS/Service Management/Newer/how it works (5).png",
     "imageWidth": 4297,
     "imageHeight": 2524,
     "cards": [
@@ -94,8 +94,8 @@
     "headline": "Get a Service Manager Who Knows Your Business",
     "body": "Hostopia's Service Management program gives you a named contact invested in your outcomes.",
     "buttonText": "Request a Service Management Overview",
-    "image": "/PROGRAMS/Service Management/next step (4).png",
-    "imageWidth": 3039,
+    "image": "/PROGRAMS/Service Management/Newer/next step (5).png",
+    "imageWidth": 3273,
     "imageHeight": 2156
   }
 }
