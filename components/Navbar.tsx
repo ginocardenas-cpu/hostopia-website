@@ -366,7 +366,7 @@ export default function Navbar() {
         {/* CTA */}
         <div className="hidden md:flex items-center">
           <Link
-            href="#partner"
+            href="/#partner"
             className="rounded-full bg-gold px-5 py-2.5 font-raleway text-sm font-semibold uppercase tracking-wide text-charcoal shadow-sm transition-colors duration-200 hover:bg-gold-dark hover:shadow-md"
           >
             Become a Partner
@@ -552,7 +552,7 @@ export default function Navbar() {
             </Link>
           ))}
           <Link
-            href="#partner"
+            href="/#partner"
             className="mt-2 rounded-full bg-gold px-5 py-3 text-center font-raleway text-sm font-semibold uppercase tracking-wide text-charcoal shadow-sm transition-colors duration-200 hover:bg-gold-dark"
             onClick={closeMobile}
           >
