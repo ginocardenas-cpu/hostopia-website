@@ -22,13 +22,18 @@
     "headline": "Every Project. One Point of Contact.",
     "subheadline": "A dedicated project manager for every deployment, migration, and custom implementation — on time, on scope, and on budget.",
     "cta": { "primary": "Talk to Our Team", "secondary": "See Our Migration Track Record" },
-    "image": "project-management-hero.jpg"
+    "image": "/PROGRAMS/Project Management/project management-hero.png",
+    "imageWidth": 2834,
+    "imageHeight": 2306
   },
 
   "howItWorks": {
     "eyebrow": "How it works",
     "heading": "A Dedicated PM from Day One",
     "intro": "Every Hostopia project gets a dedicated project manager who serves as the single point of contact between your organization and our delivery teams.",
+    "image": "/PROGRAMS/Project Management/how it works (1).png",
+    "imageWidth": 4312,
+    "imageHeight": 2462,
     "cards": [
       {
         "icon": "Rocket",
@@ -56,6 +61,9 @@
   "migrationExpertise": {
     "eyebrow": "Migration expertise",
     "heading": "400+ Migrations. Millions of Accounts. Minimal Disruption.",
+    "image": "/PROGRAMS/Project Management/migration expertise.png",
+    "imageWidth": 2586,
+    "imageHeight": 3900,
     "items": [
       {
         "icon": "Cpu",
@@ -120,6 +128,9 @@
   "cta": {
     "headline": "Let's Scope Your Project",
     "body": "Hostopia's PM team has the methodology and the track record. Let's talk about your timeline.",
-    "buttonText": "Start a Project Conversation"
+    "buttonText": "Start a Project Conversation",
+    "image": "/PROGRAMS/Project Management/next step (2).png",
+    "imageWidth": 3273,
+    "imageHeight": 2156
   }
 }

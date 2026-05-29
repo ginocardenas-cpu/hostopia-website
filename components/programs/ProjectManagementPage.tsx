@@ -15,7 +15,7 @@ export default function ProjectManagementPage() {
   return (
     <main className="pb-0 pt-24">
       <ProgramsBreadcrumb label={content.programName} />
-      <ProgramMarketingHero content={content} secondaryHref="#migration-expertise" />
+      <ProgramMarketingHero content={content} secondaryHref="#migration-expertise" wideVisual />
       <HowItWorksSection {...content.howItWorks} imageKey={imageKey} />
       <MigrationExpertiseSection {...content.migrationExpertise} imageKey={imageKey} splitIndex={splitIndex++} />
       <DifferentiatorsDarkSection {...content.differentiators} />

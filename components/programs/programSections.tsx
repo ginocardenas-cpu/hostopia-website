@@ -44,14 +44,17 @@ type ProgramContentHero = {
 export function ProgramMarketingHero({
   content,
   secondaryHref,
+  wideVisual = false,
 }: {
   content: { slug: string; programName: string; hero: ProgramContentHero };
   secondaryHref: string;
+  wideVisual?: boolean;
 }) {
   return (
     <MarketingHeroSplit
       id="program-hero"
       imageOnLeft={heroImageOnLeft(content.slug)}
+      wideVisual={wideVisual}
       eyebrow={content.hero.eyebrow}
       headline={content.hero.headline}
       blurb={content.hero.subheadline}
@@ -193,12 +196,18 @@ type MigrationExpertiseProps = {
   eyebrow: string;
   heading: string;
   items: IconCard[];
+  image?: string;
+  imageWidth?: number;
+  imageHeight?: number;
 };
 
 export function MigrationExpertiseSection({
   eyebrow,
   heading,
   items,
+  image,
+  imageWidth,
+  imageHeight,
   imageKey,
   splitIndex,
 }: MigrationExpertiseProps & { imageKey: string; splitIndex: number }) {
@@ -214,6 +223,10 @@ export function MigrationExpertiseSection({
       title={heading}
       blurb={blurb}
       sectionId="migration-expertise"
+      imageSrc={image}
+      imageAlt={heading}
+      imageWidth={imageWidth}
+      imageHeight={imageHeight}
       details={
         <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
           {items.map((item) => (

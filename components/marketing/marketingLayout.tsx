@@ -90,6 +90,8 @@ type MarketingHeroSplitProps = {
   details: ReactNode;
   visual: ReactNode;
   className?: string;
+  /** Gives the image column extra width so the hero art reads as more dominant. */
+  wideVisual?: boolean;
 };
 
 export function MarketingHeroSplit({
@@ -103,8 +105,14 @@ export function MarketingHeroSplit({
   details,
   visual,
   className = "bg-gray-50",
+  wideVisual = false,
 }: MarketingHeroSplitProps) {
   const reverse = !imageOnLeft;
+  const gridCols = wideVisual
+    ? imageOnLeft
+      ? "md:grid-cols-[1.25fr_1fr]"
+      : "md:grid-cols-[1fr_1.25fr]"
+    : "md:grid-cols-2";
   const copy = (
     <div className="flex flex-col justify-center">
       <span className="section-label mb-4">{eyebrow}</span>
@@ -122,7 +130,7 @@ export function MarketingHeroSplit({
   return (
     <section id={id} className={`scroll-mt-28 py-28 ${className}`}>
       <div className="mx-auto max-w-7xl px-6">
-        <div className="grid items-center gap-12 md:grid-cols-2 md:gap-16 lg:gap-20">
+        <div className={`grid items-center gap-12 ${gridCols} md:gap-16 lg:gap-20`}>
           {reverse ? (
             <>
               {copy}
