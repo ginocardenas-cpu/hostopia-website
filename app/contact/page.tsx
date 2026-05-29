@@ -1,21 +1,22 @@
+import { Contact2 } from "@/components/ui/contact-2";
+
+export const metadata = {
+  title: "Contact Us | Hostopia",
+  description:
+    "Get in touch with Hostopia for upgrades, billing, or tech support. Call 1 800 322 9438 or email learnmore@hostopia.com.",
+};
+
 export default function ContactPage() {
   return (
-    <main className="min-h-[60vh] pt-28 pb-16 px-6" style={{ backgroundColor: "#f7f6f2" }}>
-      <div className="max-w-7xl mx-auto">
-        <div className="flex items-center gap-3 mb-5">
-          <div className="w-8 h-px" style={{ backgroundColor: "#2CADB2" }} />
-          <span className="section-label">Get in Touch</span>
-        </div>
-        <h1
-          className="font-black leading-tight mb-4"
-          style={{ fontFamily: "Montserrat, sans-serif", fontSize: "clamp(2rem, 4vw, 3.5rem)", color: "#24282B" }}
-        >
-          Contact
-        </h1>
-        <p style={{ fontFamily: "Raleway, sans-serif", color: "#555a5e" }}>
-          Content coming soon.
-        </p>
-      </div>
+    <main className="pt-24">
+      <Contact2
+        title="Contact Us"
+        description="We're here to help with upgrades, billing, technical support, or anything else. Reach out and our team will get back to you."
+        phone="1 800 322 9438"
+        phoneNote="For upgrades, billing, or tech support matters"
+        email="learnmore@hostopia.com"
+        web={{ label: "hostopia.com", url: "https://hostopia.com" }}
+      />
     </main>
   );
 }
