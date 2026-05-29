@@ -13,7 +13,7 @@ export default function ServiceManagementPage() {
   return (
     <main className="pb-0 pt-24">
       <ProgramsBreadcrumb label={content.programName} />
-      <ProgramMarketingHero content={content} secondaryHref="#how-it-works" />
+      <ProgramMarketingHero content={content} secondaryHref="#how-it-works" wideVisual />
       <HowItWorksSection {...content.howItWorks} imageKey={imageKey} />
       <DifferentiatorsDarkSection {...content.differentiators} />
       <ProgramCTADarkSection {...content.cta} imageKey={imageKey} />
