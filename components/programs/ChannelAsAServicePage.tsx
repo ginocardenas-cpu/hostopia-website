@@ -16,6 +16,7 @@ export default function ChannelAsAServicePage() {
       <ProgramMarketingHero
         content={content}
         secondaryHref="#how-it-works"
+        wideVisual
       />
       <HowItWorksSection {...content.howItWorks} imageKey={imageKey} />
       <DifferentiatorsDarkSection {...content.differentiators} />
