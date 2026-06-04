@@ -28,22 +28,22 @@ const programLinks = [
 ];
 
 const customerTypeLinks = [
-  { label: "Cablecos", description: "Cable operators", href: "/customers/cablecos" },
-  { label: "Distributors", description: "Distribution partners", href: "/customers/distributors" },
-  { label: "ISPs", description: "Internet service providers", href: "/customers/isps" },
-  { label: "Mobile Carriers", description: "Mobile network operators", href: "/customers/mobile-carriers" },
-  { label: "Registrars", description: "Domain registrars", href: "/customers/registrars" },
-  { label: "Resellers", description: "Value-added resellers", href: "/customers/resellers" },
-  { label: "Telcos", description: "Telecommunications companies", href: "/customers/telcos" },
+  { label: "Cablecos", description: "Cable operators", href: "/customers#cablecos" },
+  { label: "Telcos", description: "Telecommunications companies", href: "/customers#telcos" },
+  { label: "ISPs", description: "Internet service providers", href: "/customers#isps" },
+  { label: "Mobile Carriers", description: "Mobile network operators", href: "/customers#mobile-carriers" },
+  { label: "Registrars", description: "Domain registrars", href: "/customers#registrars" },
+  { label: "Resellers / Distributors", description: "Resellers and distributors", href: "/customers#resellers" },
+  { label: "Managed Service Providers", description: "MSPs and hosting companies", href: "/customers#msps" },
 ];
 
 const customerOutcomeLinks = [
-  { label: "Bundles", description: "Bundle products for SMBs", href: "/customers/goals/bundles" },
-  { label: "Differentiate Core", description: "Differentiate core business", href: "/customers/goals/differentiate-core" },
-  { label: "Grow Existing Revenues", description: "Expand digital revenue", href: "/customers/goals/grow-existing-revenues" },
-  { label: "Improve Retention", description: "Reduce churn", href: "/customers/goals/improve-retention" },
-  { label: "Migrate and Save", description: "Migration and cost savings", href: "/customers/goals/migrate-and-save" },
-  { label: "New Revenue Streams", description: "Add digital services", href: "/customers/goals/new-revenue-streams" },
+  { label: "Bundles", description: "Package products for SMBs", href: "/customers/goals#bundles" },
+  { label: "Differentiate Core", description: "Stand out beyond connectivity", href: "/customers/goals#differentiate-core" },
+  { label: "Stickiness via Digital Marketing", description: "Reduce churn with marketing", href: "/customers/goals#stickiness" },
+  { label: "AI Transformation of Service", description: "Add AI-powered services", href: "/customers/goals#ai-transformation" },
+  { label: "White Label Control", description: "Your brand, pricing, languages", href: "/customers/goals#white-label-control" },
+  { label: "Full Support", description: "Run the channel with Hostopia", href: "/customers/goals#full-support" },
 ];
 
 export default function Navbar() {
