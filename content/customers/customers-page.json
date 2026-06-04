@@ -1,0 +1,154 @@
+{
+  "slug": "customers",
+  "label": "Customers",
+  "pageName": "Who We Work With",
+
+  "seo": {
+    "primaryKeyword": "white-label digital services for service providers",
+    "secondaryKeywords": [
+      "telco SMB revenue",
+      "cable operator digital services",
+      "ISP value-added services",
+      "mobile carrier SMB tools",
+      "registrar upsell platform",
+      "reseller recurring revenue",
+      "MSP digital services"
+    ],
+    "metaTitle": "Who We Work With | White-Label Digital Services for Service Providers | Hostopia",
+    "metaDescription": "Telcos, cablecos, ISPs, mobile carriers, registrars, resellers, and MSPs use Hostopia's white-label digital services to turn their SMB base into recurring revenue — your brand, your pricing, our platform.",
+    "urlSlug": "/customers"
+  },
+
+  "hero": {
+    "eyebrow": "Who We Work With",
+    "headline": "You Already Own the SMB Relationship. We Give You the Products to Grow It.",
+    "subheadline": "Every major service provider category — telecom, cable, broadband, mobile, domains, distribution, and managed IT — is facing the same pressure: core revenue is flattening while SMB customers spend more than ever on digital tools, mostly with someone else. Hostopia closes that gap with a white-label portfolio you launch under your brand in weeks, not years.",
+    "cta": { "primary": "Book a Strategy Call", "secondary": "Explore the Portfolio" }
+  },
+
+  "sections": [
+    {
+      "anchor": "telcos",
+      "navLabel": "Telcos",
+      "eyebrow": "Hostopia for Telecommunications Companies",
+      "headline": "Your Network Reaches Every Small Business in Town. Your Revenue Doesn't Have to Stop at Connectivity.",
+      "body": "Telecom carries a structural revenue problem that no amount of infrastructure investment solves: global service revenue is growing at roughly 2.8% CAGR through 2029, mobile ARPU is projected to slip from $6.32 in 2024 to $6.20 by 2029, and the industry holds the highest churn rate of any major sector — over 30% a year — with replacement customers costing 6–7x more to acquire than existing ones to keep. The way out isn't a faster network; it's selling through the network you already run. Hostopia gives telcos a ready-to-launch portfolio of white-label digital services — business email, websites, ecommerce, SEO, directory listings, and reputation management — provisioned through one platform, delivered under your brand, with you setting the pricing and packaging. Attach a Starter bundle (domain + email + SSL) at point of activation, expand the installed base into Growth and Pro tiers worth $20–100+ in additional monthly ARPU, and use our AI-powered migration tooling to fold acquired or won-back accounts onto your platform without disruption. The opportunity is already validated by demand: 64% of SMBs say they would buy business tools from their telco if the option existed.",
+      "stats": [
+        { "value": "$20-100+", "label": "Monthly ARPU increase per SMB subscriber" },
+        { "value": "15-20%", "label": "Churn reduction with bundled services" },
+        { "value": "64%", "label": "Of SMBs likely to buy digital tools from their telco" }
+      ],
+      "sources": [
+        "PwC Global Telecom Outlook 2025-2029",
+        "vcita SMB Telco Survey, 2024",
+        "Analysys Mason SMB IT Spending Trends 2024-2029"
+      ]
+    },
+    {
+      "anchor": "cablecos",
+      "navLabel": "Cablecos",
+      "eyebrow": "Hostopia for Cable Operators",
+      "headline": "Video Revenue Is Declining. Broadband Is Commoditizing. Your SMB Customers Need Something You're Not Selling Yet.",
+      "body": "Cable's two traditional revenue pillars are eroding at the same time — video continues to bleed to streaming, while broadband, the reliable growth engine, now faces fiber overbuilders (28% of new fiber targets homes already served by cable) and fixed wireless providers that have more than doubled their market presence in two years. Operators have lost four percentage points of customer share in that window, and the $34.5 billion in cable M&A in the first half of 2025 signals that scale alone won't fix a structural revenue problem. But cable holds one advantage national platforms and digital-first competitors can't replicate: deep local trust. Your trucks are on the street, your brand is on the local stadium, and your service team knows the community. Hostopia lets you convert that trust into recurring digital revenue with products matched to local SMB needs — a restaurant gets an AI-built website with its menu and hours in minutes, a contractor gets distributed across every major map and directory, a salon gets automated review collection after each appointment. Bundle these with business internet — a model proven to lift ARPU 10–15% and cut churn by nearly 20% — and you replace declining video dollars with growing, high-margin digital dollars that require no network buildout.",
+      "stats": [
+        { "value": "10-15%", "label": "ARPU increase from bundled digital services" },
+        { "value": "~20%", "label": "Churn reduction with bundled services" },
+        { "value": "$34.5B", "label": "In cable M&A in first half of 2025" }
+      ],
+      "sources": [
+        "Cartesian / FCC Broadband Deployment Data, 2025",
+        "Compare Internet ISP M&A Tracker, 2025",
+        "Industry ARPU and churn benchmarks for bundled services"
+      ]
+    },
+    {
+      "anchor": "isps",
+      "navLabel": "ISPs",
+      "eyebrow": "Hostopia for Internet Service Providers",
+      "headline": "Broadband Got You in the Door. Digital Services Keep You from Getting Replaced.",
+      "body": "For an ISP, the threat isn't losing the speed test — it's that the speed test no longer matters. Cable, fiber, fixed wireless, and satellite now compete on nearly identical performance claims, satellite entrants have scaled into the millions of subscribers in just a few years, and roughly 28% of new fiber is being built to homes already served. When the product is interchangeable, the provider who owns more of the customer's digital life is the one who survives. Hostopia's angle for ISPs is the switching-cost math: a customer on your broadband alone has exactly one reason to stay and one easy exit. Layer on business email, website hosting, directory listings, and guided SEO, and a single broadband relationship becomes a five-product relationship where leaving means migrating email, rebuilding a site, and disconnecting their entire online presence. The highest-intent moment to start is business-internet activation — package a digital starter kit (domain, branded email, an AI-generated website ready to publish), then expand across the lifecycle. An $80/month broadband account becomes a $150–200/month business relationship, and the products are built for the customer you actually serve: SMBs under 20 employees with no IT staff and no time.",
+      "stats": [
+        { "value": "$40-120", "label": "Additional monthly recurring revenue per SMB" },
+        { "value": "15-20%", "label": "Churn reduction with bundled services" },
+        { "value": "33%+", "label": "Of U.S. subscriptions are now bundled" }
+      ],
+      "sources": [
+        "Cartesian / FCC Broadband Deployment Data, May 2025",
+        "ITIF Broadband Convergence Report, 2025",
+        "Compare Internet ISP M&A Tracker, 2025"
+      ]
+    },
+    {
+      "anchor": "mobile-carriers",
+      "navLabel": "Mobile Carriers",
+      "eyebrow": "Hostopia for Mobile Carriers",
+      "headline": "Your SMB Customers Run Their Business from Their Phone. Give Them a Business Worth Running Online.",
+      "body": "Mobile carriers built the 5G highway; the open question is how to monetize it beyond faster data plans. The mobile value-added services market answers it — $184.3 billion in 2025, growing 13.7% annually to $209.5 billion in 2026 — but carriers need products to sell, not just pipes to sell them through. Leading carriers are already testing the model — bundling 5G business internet with smartphone plans, using fixed wireless as an on-ramp to broader business bundles, and pairing SIM-only plans with add-on business services. Hostopia's distinct fit for carriers is mobile-native delivery: a plumber between calls, a food-truck owner during prep, a freelancer at a coffee shop — your SMB subscribers manage everything from their phone, so the digital toolkit has to work the same way. At wireless activation, when the customer is already in your app entering their business details, Hostopia plugs into that flow to let them register a domain, set up professional email, and generate an AI-powered website in under 15 minutes. Then your usage data — more lines, more data, expanded coverage — becomes the signal for the next upsell, turning every business line into an expanding digital relationship that competes with national digital-first platforms on local trust rather than ceding the category to them.",
+      "stats": [
+        { "value": "$184B", "label": "Mobile VAS market, growing 13.7% annually" },
+        { "value": "15min", "label": "To activate a full digital starter package" },
+        { "value": "3-5x", "label": "ARPU multiplier with digital services attached" }
+      ],
+      "sources": [
+        "Global Growth Insights, Mobile VAS Market 2025-2033",
+        "Ericsson Mobility Report, June 2025"
+      ]
+    },
+    {
+      "anchor": "registrars",
+      "navLabel": "Registrars",
+      "eyebrow": "Hostopia for Domain Registrars",
+      "headline": "You Own the First Click of Every Business's Digital Journey. The Question Is What Comes Next.",
+      "body": "Domain registration is the most commoditized service in the digital economy — aggressive first-year pricing, high renewal churn, and margins so thin that profitability depends entirely on what you sell after the domain. The largest registrars in the world built their businesses on exactly that insight: the domain is the loss leader that opens the door to email, hosting, websites, and marketing — and every major player runs a variation of the same model. Hostopia's distinct value for registrars is the API-driven attach path that fires at the single highest-conversion moment in the funnel — the instant a customer names their business digitally. Email on the new domain converts at 15–30% because the need is self-evident; an AI-built website follows; directory listings and SEO come next. Then lifecycle expansion does the compounding: a Year 1 domain + email + basic site at ~$25–35/month grows to ~$50–60 with listings and SSL in Year 2, and to $100–150 by Year 3 with SEO, reputation management, and ecommerce. A $12 domain customer becomes a $300–1,800/year relationship, first-year churn drops because customers who actually use their domain renew, and wholesale registrars can extend the entire white-label portfolio downstream to resellers for multi-layer recurring revenue.",
+      "stats": [
+        { "value": "5-10x", "label": "Increase in customer lifetime value" },
+        { "value": "15-30%", "label": "Email attach rate at domain registration" },
+        { "value": "$150/mo", "label": "Revenue potential per domain customer" }
+      ],
+      "sources": [
+        "OpenProvider, Best Domain Registrars 2026",
+        "WhoAPI, Largest Domain Registrars in the World",
+        "Domain Name Wire, Ranking Registrars 2025"
+      ]
+    },
+    {
+      "anchor": "resellers",
+      "navLabel": "Resellers / Distributors",
+      "eyebrow": "Hostopia for Resellers & Distributors",
+      "headline": "Your Customers Already Trust You for IT. Now Give Them the Digital Services Their Businesses Demand.",
+      "body": "IT distribution is shifting from transactional hardware and license sales to recurring, subscription-based service delivery — and the gap between resellers who adapt and those who don't is now an existential one. The software reseller market, $50 billion in 2024, is projected to reach $80 billion by 2033, but that growth is concentrated among partners who've moved to subscription models. The largest distributors are transitioning to Everything-as-a-Service and repositioning as platform businesses; yet while 97% of channel partners call recurring revenue vital, most lack the platform to deliver digital services at scale. That platform gap is exactly what Hostopia fills. Adding our portfolio instantly expands your catalog by 14+ products — domains, email, websites, ecommerce, SEO, listings, reputation management — provisioned through one platform, billed as MRR, and fully white-labeled so your customers never see Hostopia's name. This is the critical distinction from referral and affiliate models: with Hostopia you are the service provider. You set pricing, control packaging, and own the relationship, while we handle provisioning, platform operations, and end-user support — so a single SMB at $50/month becomes $600/year of compounding recurring revenue with no new headcount and no infrastructure to build.",
+      "stats": [
+        { "value": "14+", "label": "White-label products ready to sell" },
+        { "value": "$50/mo", "label": "Typical digital-services revenue per SMB" },
+        { "value": "$80B", "label": "Reseller market size by 2033" }
+      ],
+      "sources": [
+        "Market Research Intellect, Software Resellers Market Forecast 2033",
+        "IT channel platform-transition analysis"
+      ]
+    },
+    {
+      "anchor": "msps",
+      "navLabel": "Managed Service Providers",
+      "eyebrow": "Hostopia for Managed Service Providers & Hosting Companies",
+      "headline": "Your Customers Trust You with Their IT. They're Going Somewhere Else for Everything Digital. That Doesn't Have to Continue.",
+      "body": "MSPs and hosting companies sit on a relationship most providers would envy — you already manage the customer's network, devices, and security — but that relationship stops at the edge of their digital presence, and the website, listings, search visibility, and reputation work is flowing to someone else. The pressure to close that gap is rising: 35% of MSPs now cite competition as their number-one challenge (up from 29% a year earlier), 74% prefer fewer vendors, and consolidation is rewarding diversified, recurring-revenue providers while squeezing single-line ones. Hostopia's distinct play here is the digital extension of an existing managed relationship. Rather than building a website builder, SEO engine, and ecommerce platform in-house — years and millions of dollars — you extend managed IT into managed digital presence in weeks. A hosting customer paying $30/month is a prime candidate for a $15 AI website builder, a $20 SEO tool, and a $25 directory service, doubling or tripling revenue per account. Every 'can you help with our website?' call that used to be referred away becomes a productized sale with predictable MRR. And because diversified recurring revenue is exactly what acquirers pay premiums for, adding digital services doesn't just grow this year's revenue — it raises your company's valuation in a consolidating market.",
+      "stats": [
+        { "value": "35%", "label": "Of MSPs cite competition as #1 challenge" },
+        { "value": "2-3x", "label": "Revenue per hosting account with digital services" },
+        { "value": "68%", "label": "Of North American MSPs saw revenue growth" }
+      ],
+      "sources": [
+        "Axcient, 2024 Cloud Services MSP Market Trends Report",
+        "CloudMore, 5 MSP Trends 2024 and Beyond",
+        "NinjaOne, Growing Your MSP 2024"
+      ]
+    }
+  ],
+
+  "cta": {
+    "headline": "Whatever You Sell Today, There's a Bigger Relationship Waiting.",
+    "body": "Telco, cable, broadband, mobile, domains, distribution, or managed IT — the playbook is the same: launch white-label digital services under your brand, on your pricing, through one platform, with our team behind you. See how it maps to your business.",
+    "buttonText": "Book a Demo"
+  }
+}

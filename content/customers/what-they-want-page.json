@@ -1,0 +1,124 @@
+{
+  "slug": "what-they-want",
+  "label": "What They Want",
+  "pageName": "What Our Partners Want",
+
+  "seo": {
+    "primaryKeyword": "digital services strategy for service providers",
+    "secondaryKeywords": [
+      "white-label bundles",
+      "service provider differentiation",
+      "reduce SMB churn",
+      "AI services for service providers",
+      "white-label control",
+      "partner enablement and support"
+    ],
+    "metaTitle": "What Our Partners Want | Bundles, Differentiation, AI, White-Label Control & Support | Hostopia",
+    "metaDescription": "Whether you want to bundle, differentiate, create stickiness, add AI-powered services, control your white-label brand and pricing, or have a partner run it end-to-end — Hostopia delivers it on one platform.",
+    "urlSlug": "/customers/goals"
+  },
+
+  "hero": {
+    "eyebrow": "What Our Partners Want",
+    "headline": "Different Providers. Different Goals. One Platform That Delivers All of Them.",
+    "subheadline": "Some partners come to Hostopia to bundle, some to differentiate, some to stop churn, some to add AI to their portfolio, some for total control of their brand and pricing, and some to have a partner run the whole channel for them. This page maps each of those goals to exactly how Hostopia gets you there.",
+    "cta": { "primary": "Book a Strategy Call", "secondary": "Explore the Portfolio" }
+  },
+
+  "sections": [
+    {
+      "anchor": "bundles",
+      "navLabel": "Bundles",
+      "headline": "The Right Bundle Sells the Product. The Right Products Make the Bundle Unstoppable.",
+      "body": "Bundled subscriptions now account for over a third of all U.S. subscriptions, because customers prefer the simplicity of one provider, one dashboard, and one bill — and providers prefer the ARPU lift and churn reduction that come with it. The question was never whether to bundle; it's what to bundle and how to tier it. Hostopia's portfolio is built for exactly this: modular products that combine naturally and ladder up in value. Domain pairs with email; website pairs with listings; SEO pairs with reputation management; ecommerce sits on top of all of it. For telcos and ISPs, that becomes a four-tier ladder from Digital Identity ($12–18/month) to Digital Commerce ($100–150/month). For registrars, it's a triggered sequence — Get Started at checkout, Get Online on day 7, Get Found on day 30. For MSPs and hosting companies, it's 'we already manage your network, let us manage your email and website too,' adding $20–150/month per customer. The economics are proven on every side of the relationship: bundling has been shown to lift ARPU 10–15%, cut churn 15–20%, and raise cross-sell by as much as 25%.",
+      "stats": [
+        { "value": "33%+", "label": "Of U.S. subscriptions are now bundled" },
+        { "value": "10-15%", "label": "ARPU increase from bundled services" },
+        { "value": "15-20%", "label": "Churn reduction through bundling" }
+      ],
+      "sources": [
+        "Industry ARPU and churn benchmarks for bundled services",
+        "U.S. subscription bundling market data"
+      ]
+    },
+    {
+      "anchor": "differentiate-core",
+      "navLabel": "Differentiate Core",
+      "headline": "When Every Competitor Matches Your Speed, Your Price, and Your Coverage — What Makes a Customer Choose You?",
+      "body": "Broadband commoditization, wireless price wars, and domain pricing races have made core services nearly interchangeable, and the trap is that incremental improvements don't escape it — the moment you move from 500 Mbps to 1 Gbps, every competitor matches you. Sustainable differentiation comes from competing on a dimension rivals can't quickly copy: a fundamentally different value proposition. This is the bundling goal's mirror image — bundling is about packaging products for ARPU and stickiness; differentiation is about repositioning the company itself from utility provider to digital business advisor. Your competitor sells broadband; you sell 'Business Growth Internet' — connectivity plus a platform that helps SMBs build a brand, get online, get found, and grow. The customer stops comparing internet speeds and starts comparing the total value of the relationship, and the offer on the table isn't a promotional discount but a different category of value: 'Sign up with them and get internet. Sign up with us and get internet plus a professional website, listings across every major directory, and guided SEO.' That's the transformation leading service providers are already pursuing — and a position a competitor would need 12–18 months and serious investment to replicate.",
+      "stats": [
+        { "value": "12-18mo", "label": "Head start before competitors can replicate" },
+        { "value": "3-5x", "label": "More value in a digital platform vs. core service alone" },
+        { "value": "14+", "label": "White-label products to differentiate your offer" }
+      ],
+      "sources": [
+        "PwC Global Telecom Outlook 2025-2029",
+        "ITIF Broadband Convergence Report, 2025",
+        "Deloitte TMT Predictions 2025"
+      ]
+    },
+    {
+      "anchor": "stickiness",
+      "navLabel": "Stickiness via Digital Marketing",
+      "headline": "Connectivity Is Easy to Cancel. A Business's Marketing Engine Is Not.",
+      "body": "The most replaceable thing you sell is your core product on its own — an SMB paying for broadband or a domain alone has one switching cost and one easy exit. The least replaceable thing you can give them is the marketing engine their customers actually find them through. That's why digital marketing services — directory listings, SEO, reputation management, and email marketing — are the strongest stickiness layer in the portfolio: they don't just add another line item, they accumulate data and history the customer can't take with them. The directory-listings solution shows exactly which directories a business is listed on and the accuracy of each; the guided SEO solution builds months of keyword-ranking history; reputation management products accumulate a review record and automated collection workflow; the website solution reports on the traffic driving real customers through the door. After a year, switching providers doesn't mean changing an internet plan — it means abandoning the listings, the rankings, the reviews, and the reporting their business now depends on. The payoff is double: bundled digital services reduce churn 15–20% and customers with 3+ products show 40–60% lower churn than single-product subscribers, and the same engagement data gives your retention team an early warning — a dashboard that goes quiet or SEO tasks left uncompleted — long before the cancellation call that billing patterns would have surfaced too late.",
+      "stats": [
+        { "value": "15-20%", "label": "Churn reduction with bundled digital services" },
+        { "value": "40-60%", "label": "Lower churn for customers with 3+ products" },
+        { "value": "6-7x", "label": "Cost to acquire a new customer vs. retain one" }
+      ],
+      "sources": [
+        "Industry churn benchmarks for bundled digital services",
+        "Deloitte TMT Predictions 2025",
+        "vcita SMB Telco Survey, 2024"
+      ]
+    },
+    {
+      "anchor": "ai-transformation",
+      "navLabel": "AI Transformation of Service",
+      "headline": "Bring AI-Powered Services to Your Portfolio — Without Building an AI Team.",
+      "body": "Every SMB is hearing that AI will transform their business, and they're looking to providers they already trust to make it real — but few service providers have the talent or time to build AI capabilities in-house. Hostopia closes that gap by embedding AI directly into the products you resell, so 'AI transformation' becomes something you can offer, not just talk about. It shows up across the customer journey: AI-powered logo design and brand creation get a business its identity in minutes; an AI website solution generates a complete, industry-specific website from nothing more than a business name and category; a guided SEO solution turns search optimization from an expert discipline into AI-assisted tasks an owner can actually complete; and proprietary, AI-driven migration tooling moves email, domains, and websites at scale with automated validation and minimal downtime. The strategic value to you is twofold. First, it solves the SMB's real constraint — they don't have time or technical knowledge, and AI-powered services do the heavy lifting, which is precisely the value proposition that wins and keeps small-business customers. Second, it future-proofs your portfolio: as AI raises customer expectations, the providers who already deliver AI-powered services under their own brand are positioned as modern and indispensable, while those still selling static tools look dated. You introduce AI to your customers on day one — branded as yours, supported by us.",
+      "stats": [
+        { "value": "Minutes", "label": "To generate an AI-built website from a business name" },
+        { "value": "Guided", "label": "AI-assisted SEO that removes the expertise barrier" },
+        { "value": "Proprietary", "label": "AI-powered migration with automated validation" }
+      ],
+      "sources": [],
+      "note": "AI capabilities reflect Hostopia's current product portfolio (AI logo design, AI website generation, AI-assisted SEO, AI-powered migration tooling). Keep this section in sync with product releases."
+    },
+    {
+      "anchor": "white-label-control",
+      "navLabel": "White Label Control",
+      "headline": "Your Brand. Your Languages. Your Pricing. Your Promotions. Your Customer.",
+      "body": "White-label means more than putting your logo on someone else's product — it means control, and control is what separates a true platform partnership from a referral arrangement. With Hostopia, every product, dashboard, and support interaction is delivered entirely in your brand; your customers never see Hostopia's name, and that single fact is what makes you the service provider rather than a middleman. You control the brand experience end to end, the languages it's delivered in — all services are available in multiple languages and are fully cloud-based, so global providers serve every market they operate in without standing up local infrastructure — and the commercial model in full. You set the pricing, choose the packaging, and design the offers and promotions: introductory pricing to drive attach at activation, bundle discounts to move customers up a tier, seasonal campaigns to re-engage. Hostopia provides the technology, provisioning, and (optionally) billing; you own the economics and the relationship. This is the dividing line from affiliate and reseller-of-record models: with white-label control, the margin, the data, and the customer are yours, and no competitor can disintermediate you because there's no third-party brand for the customer to discover and go direct to.",
+      "stats": [
+        { "value": "100%", "label": "White-label by default" },
+        { "value": "Multi-language", "label": "Cloud-based delivery for global markets" },
+        { "value": "You set", "label": "Pricing, packaging, offers, and promotions" }
+      ],
+      "sources": [
+        "Hostopia platform capabilities — white-label provisioning, multi-language support, partner-controlled pricing and billing"
+      ]
+    },
+    {
+      "anchor": "full-support",
+      "navLabel": "Full Support",
+      "headline": "You Don't Just Get a Platform. You Get a Partner Who Can Run the Whole Channel With You.",
+      "body": "The products are only half of what it takes to build a digital services business; the other half is the go-to-market and operational muscle to launch, sell, and support it — and that's where most build-it-yourself efforts stall. Hostopia is built to operate as an extension of your teams across the entire lifecycle, in your brand. Partner Marketing functions as your marketing team extended — go-to-market strategy, demand generation, MDF management, and turnkey white-label creative through a partner asset library. Channel as a Service stands up a fully managed, white-label sales channel: we recruit, train, and run inbound and outbound consultants who sell your digital services under your name, with every call and conversion tracked. Project Management assigns a dedicated PM to every deployment, migration, and custom build — 400+ migrations and millions of accounts moved on our proprietary migration platform. Service Management gives you a named contact who owns your account, runs QBRs, monitors health, and pulls in specialists when you need them. And Support delivers 24/7, multilingual, multi-channel technical support from Level 1 through Level 3 — entirely white-labeled, with retention and upsell built into every interaction. Partner with Hostopia and you're not buying software you then have to figure out how to market, sell, deploy, and support — you're plugging into a team that does all of it with you, which is exactly why a provider can go from zero to a live, revenue-generating channel in weeks.",
+      "stats": [
+        { "value": "200+", "label": "North American-based support agents" },
+        { "value": "1M+", "label": "SMBs supported since 1999" },
+        { "value": "400+", "label": "Migrations, millions of accounts moved" }
+      ],
+      "sources": [
+        "Hostopia Programs — Partner Marketing, Channel as a Service, Project Management, Service Management, and Support"
+      ]
+    }
+  ],
+
+  "cta": {
+    "headline": "Tell Us Your Goal. We'll Show You the Path.",
+    "body": "Bundle, differentiate, reduce churn, add AI, control your brand and pricing, or hand the whole channel to a partner — Hostopia delivers each one on a single white-label platform, backed by a team that's been powering service providers since 1999.",
+    "buttonText": "Book a Strategy Call"
+  }
+}
