@@ -18,9 +18,9 @@ function ConsolidatedSectionBlock({ section, index }: { section: ConsolidatedSec
   const onWhite = index % 2 === 0;
   const sectionBg = onWhite ? "bg-white" : "bg-cream";
   const cardBg = onWhite ? "bg-cream" : "bg-white";
-  const paragraphs = section.body
+  const blocks = section.body
     .split(/\n\n+/)
-    .map((p) => p.trim())
+    .map((b) => b.trim())
     .filter(Boolean);
 
   return (
@@ -31,11 +31,33 @@ function ConsolidatedSectionBlock({ section, index }: { section: ConsolidatedSec
           {section.headline}
         </h2>
         <div className="space-y-4">
-          {paragraphs.map((paragraph, i) => (
-            <p key={i} className="max-w-3xl font-raleway text-lg leading-relaxed text-gray-500">
-              {paragraph}
-            </p>
-          ))}
+          {blocks.map((block, i) => {
+            const lines = block
+              .split("\n")
+              .map((l) => l.trim())
+              .filter(Boolean);
+            const isList = lines.length > 0 && lines.every((l) => /^[-•]\s+/.test(l));
+            if (isList) {
+              return (
+                <ul key={i} className="max-w-3xl space-y-2.5">
+                  {lines.map((line, j) => (
+                    <li
+                      key={j}
+                      className="flex gap-3 font-raleway text-lg leading-relaxed text-gray-500"
+                    >
+                      <span className="mt-[0.6rem] h-1.5 w-1.5 flex-none rounded-full bg-teal" aria-hidden />
+                      <span>{line.replace(/^[-•]\s+/, "")}</span>
+                    </li>
+                  ))}
+                </ul>
+              );
+            }
+            return (
+              <p key={i} className="max-w-3xl font-raleway text-lg leading-relaxed text-gray-500">
+                {block}
+              </p>
+            );
+          })}
         </div>
 
         {section.stats && section.stats.length > 0 ? (
