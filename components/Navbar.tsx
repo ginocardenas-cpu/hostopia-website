@@ -303,9 +303,13 @@ export default function Navbar() {
                   </p>
                   <div className="grid grid-cols-2 gap-x-10 gap-y-2">
                     <div>
-                      <p className="mb-2 font-raleway text-sm font-semibold text-teal">
+                      <Link
+                        href="/customers"
+                        onClick={() => setCustomersOpen(false)}
+                        className="mb-2 block font-raleway text-sm font-semibold text-teal transition-colors hover:underline"
+                      >
                         Who we work with
-                      </p>
+                      </Link>
                       <div className="space-y-2">
                         {customerTypeLinks.map((link) => (
                           <Link
@@ -325,9 +329,13 @@ export default function Navbar() {
                       </div>
                     </div>
                     <div>
-                      <p className="mb-2 font-raleway text-sm font-semibold text-teal">
+                      <Link
+                        href="/customers/goals"
+                        onClick={() => setCustomersOpen(false)}
+                        className="mb-2 block font-raleway text-sm font-semibold text-teal transition-colors hover:underline"
+                      >
                         What they want
-                      </p>
+                      </Link>
                       <div className="space-y-2">
                         {customerOutcomeLinks.map((link) => (
                           <Link
@@ -501,9 +509,13 @@ export default function Navbar() {
             </button>
             {customersOpen && (
               <div className="pl-3 py-2 border-b border-gray-50">
-                <p className="pb-2 font-raleway text-xs font-bold uppercase tracking-wider text-gray-400">
+                <Link
+                  href="/customers"
+                  onClick={closeMobile}
+                  className="block pb-2 font-raleway text-xs font-bold uppercase tracking-wider text-teal"
+                >
                   Who we work with
-                </p>
+                </Link>
                 {customerTypeLinks.map((link) => (
                   <Link
                     key={link.href}
@@ -519,9 +531,13 @@ export default function Navbar() {
                     </span>
                   </Link>
                 ))}
-                <p className="pb-2 pt-3 font-raleway text-xs font-bold uppercase tracking-wider text-gray-400">
+                <Link
+                  href="/customers/goals"
+                  onClick={closeMobile}
+                  className="block pb-2 pt-3 font-raleway text-xs font-bold uppercase tracking-wider text-teal"
+                >
                   What they want
-                </p>
+                </Link>
                 {customerOutcomeLinks.map((link) => (
                   <Link
                     key={link.href}
