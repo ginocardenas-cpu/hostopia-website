@@ -23,6 +23,8 @@ const nextConfig = {
       { source: "/customers/goals/grow-existing-revenues", destination: "/customers/goals", permanent: true },
       { source: "/customers/goals/new-revenue-streams", destination: "/customers/goals", permanent: true },
       { source: "/customers/goals/migrate-and-save", destination: "/customers/goals", permanent: true },
+      // Platform now has two standalone pages (DMS, Portal); no overview page
+      { source: "/platform", destination: "/platform/portal", permanent: true },
     ];
   },
   images: {

@@ -11,11 +11,8 @@ const navLinks = [
 ];
 
 const platformLinks = [
-  { label: "DMS", description: "Domain management system", href: "/platform#dms" },
-  { label: "Portal", description: "Partner portal and billing", href: "/platform#portal" },
-  { label: "Shop", description: "White-label storefront", href: "/platform#shop" },
-  { label: "Signup Server", description: "Automated provisioning", href: "/platform#signup-server" },
-  { label: "WebhostOS", description: "Hosting control panel", href: "/platform#webhostos" },
+  { label: "DMS", description: "Workflow for done-for-you services", href: "/platform/dms" },
+  { label: "Portal", description: "Branded customer & service hub", href: "/platform/portal" },
 ];
 
 const programLinks = [
@@ -214,13 +211,6 @@ export default function Navbar() {
                       </Link>
                     ))}
                   </div>
-                  <Link
-                    href="/platform"
-                    className="mt-4 flex items-center gap-1 border-t border-gray-100 pt-3 font-raleway text-sm font-semibold text-teal"
-                    onClick={() => setPlatformOpen(false)}
-                  >
-                    View Platform →
-                  </Link>
                 </div>
               </div>
             )}
