@@ -33,7 +33,7 @@
             "Create a unique brand experience that stands out from template-based sites"
           ],
           "image": {
-            "src": "/Custom Website Design/custome website development slider 01.jpg",
+            "src": "/PRODUCTS/Custom Website Design/custome website development slider 01.jpg",
             "alt": "Custom web development and bespoke design"
           }
         },
@@ -46,7 +46,7 @@
             "Avoid vendor lock-in with a platform supported by a global ecosystem"
           ],
           "image": {
-            "src": "/Custom Website Design/custome website development slider 02.jpg",
+            "src": "/PRODUCTS/Custom Website Design/custome website development slider 02.jpg",
             "alt": "WordPress development workspace"
           }
         },
@@ -59,7 +59,7 @@
             "Keep projects on track with clear scope management and review cycles"
           ],
           "image": {
-            "src": "/Custom Website Design/custome website development slider 03.jpg",
+            "src": "/PRODUCTS/Custom Website Design/custome website development slider 03.jpg",
             "alt": "Design collaboration and structured delivery"
           }
         },
@@ -72,7 +72,7 @@
             "Help you retain high-value customers with more advanced requirements"
           ],
           "image": {
-            "src": "/Custom Website Design/custome website development slider 04.jpg",
+            "src": "/PRODUCTS/Custom Website Design/custome website development slider 04.jpg",
             "alt": "Advanced web integrations and custom features"
           }
         },
@@ -85,7 +85,7 @@
             "Turn one-time builds into long-term, recurring revenue opportunities"
           ],
           "image": {
-            "src": "/Custom Website Design/custome website development slider 05.jpg",
+            "src": "/PRODUCTS/Custom Website Design/custome website development slider 05.jpg",
             "alt": "Site ownership and ongoing partner revenue"
           }
         }
@@ -95,7 +95,7 @@
 
   "media": {
     "heroImage": {
-      "src": "/Custom Website Design/custom website development header.png",
+      "src": "/PRODUCTS/Custom Website Design/custom website development header.png",
       "alt": "Custom website development and code",
       "priority": true
     }

@@ -34,7 +34,7 @@
             "Meet advanced customer needs without losing builder-based simplicity"
           ],
           "image": {
-            "src": "/Hosting/hosting slider deploy beyond.jpg",
+            "src": "/PRODUCTS/Hosting/hosting slider deploy beyond.jpg",
             "alt": "WordPress, Joomla, and custom apps in a managed hosting environment"
           }
         },
@@ -47,7 +47,7 @@
             "Retain high-value accounts as they grow on your platform"
           ],
           "image": {
-            "src": "/Hosting/hosting slider scale confidently.jpg",
+            "src": "/PRODUCTS/Hosting/hosting slider scale confidently.jpg",
             "alt": "Scalable hosting tiers, high availability, and enterprise data centers"
           }
         },
@@ -60,7 +60,7 @@
             "Turn agency workflows into a scalable distribution channel"
           ],
           "image": {
-            "src": "/Hosting/hosting slider manage multiple.jpg",
+            "src": "/PRODUCTS/Hosting/hosting slider manage multiple.jpg",
             "alt": "Multi-site hosting dashboard for agencies"
           }
         },
@@ -73,7 +73,7 @@
             "Increase attach rates by making hosting the entry point to your full portfolio"
           ],
           "image": {
-            "src": "/Hosting/hosting slider bundle domains.jpg",
+            "src": "/PRODUCTS/Hosting/hosting slider bundle domains.jpg",
             "alt": "Hosting hub connecting domains, SSL, email, and ecommerce"
           }
         },
@@ -86,7 +86,7 @@
             "Offload operations, security, and maintenance so your team can focus on growth"
           ],
           "image": {
-            "src": "/Hosting/hosting slider get technical.jpg",
+            "src": "/PRODUCTS/Hosting/hosting slider get technical.jpg",
             "alt": "Developer hosting tools — SSH, PHP, cron, and database access"
           }
         }
@@ -96,7 +96,7 @@
 
   "media": {
     "heroImage": {
-      "src": "/Hosting/hosting header.png",
+      "src": "/PRODUCTS/Hosting/hosting header.png",
       "alt": "Website hosting infrastructure and partner dashboard",
       "priority": true
     },
@@ -105,7 +105,7 @@
       "eyebrow": "See it in action",
       "title": "Website Hosting built for partners and SMBs",
       "description": "A quick overview of how Hostopia hosting fits your white-label stack.",
-      "posterSrc": "/Hosting/hosting header.png",
+      "posterSrc": "/PRODUCTS/Hosting/hosting header.png",
       "posterAlt": "Website hosting infrastructure and partner dashboard",
       "playLabel": "Play hosting overview"
     }

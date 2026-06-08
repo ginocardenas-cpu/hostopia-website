@@ -29,7 +29,7 @@
           "icon": "Sparkles",
           "body": "Enable your customers to generate complete, multi-page websites in minutes using AI\nPre-fill sites with relevant copy, images, maps, and contact forms\nIncrease activation rates by turning website sales into published sites",
           "image": {
-            "src": "/Website Builder Page/website builder slider 01.jpg",
+            "src": "/PRODUCTS/Website Builder Page/website builder slider 01.jpg",
             "alt": "AI-powered website creation and fast launch"
           }
         },
@@ -38,7 +38,7 @@
           "icon": "PenLine",
           "body": "Equip your customers with AI-generated copy and imagery tailored to their business\nEliminate the need for external writers, designers, or stock assets\nHelp them launch polished, professional sites without starting from scratch",
           "image": {
-            "src": "/Website Builder Page/website builder slider 02.jpg",
+            "src": "/PRODUCTS/Website Builder Page/website builder slider 02.jpg",
             "alt": "AI-generated copy and imagery for professional sites"
           }
         },
@@ -47,7 +47,7 @@
           "icon": "MousePointerClick",
           "body": "Deliver sites with built-in tools like forms, CTAs, maps, testimonials, and social widgets\nGuide visitors toward clear actions like contacting, booking, or purchasing\nUnlock ecommerce with a one-click upgrade path to an online store",
           "image": {
-            "src": "/Website Builder Page/website builder slider 03.jpg",
+            "src": "/PRODUCTS/Website Builder Page/website builder slider 03.jpg",
             "alt": "Conversion-focused website with forms and CTAs"
           }
         },
@@ -56,7 +56,7 @@
           "icon": "LayoutDashboard",
           "body": "Centralize website, domain, email, and billing in one branded dashboard\nSimplify management with a single login and unified experience\nIncrease platform stickiness and create natural upsell opportunities",
           "image": {
-            "src": "/Website Builder Page/website builder slider 04.jpg",
+            "src": "/PRODUCTS/Website Builder Page/website builder slider 04.jpg",
             "alt": "Unified branded dashboard for website and services"
           }
         },
@@ -65,7 +65,7 @@
           "icon": "TrendingUp",
           "body": "Support long-term growth with ecommerce, SEO, listings, and marketing tools\nProvide features like unlimited pages, SEO controls, and analytics integration\nKeep customers on your platform as they scale and expand their digital presence",
           "image": {
-            "src": "/Website Builder Page/website builder slider 05.jpg",
+            "src": "/PRODUCTS/Website Builder Page/website builder slider 05.jpg",
             "alt": "Website platform scaling with ecommerce and marketing"
           }
         }
@@ -75,7 +75,7 @@
 
   "media": {
     "heroImage": {
-      "src": "/Website Builder Page/website builder header.png",
+      "src": "/PRODUCTS/Website Builder Page/website builder header.png",
       "alt": "Modern website builder and design on a laptop",
       "priority": true
     },
@@ -84,18 +84,18 @@
       "heading": "Styles for every industry",
       "intro": "From professional services to retail and trades — responsive themes and layouts SMBs can launch fast, all under your brand.",
       "images": [
-        { "src": "/Website Builder Page/Website Collage/accounting.png", "alt": "Accounting business website template preview" },
-        { "src": "/Website Builder Page/Website Collage/automechanic.png", "alt": "Auto mechanic website template preview" },
-        { "src": "/Website Builder Page/Website Collage/bakerybread.png", "alt": "Bakery website template preview" },
-        { "src": "/Website Builder Page/Website Collage/beautician.png", "alt": "Beauty salon website template preview" },
-        { "src": "/Website Builder Page/Website Collage/bookstore.png", "alt": "Bookstore website template preview" },
-        { "src": "/Website Builder Page/Website Collage/cheese.png", "alt": "Cheese shop website template preview" },
-        { "src": "/Website Builder Page/Website Collage/coffeeshop.png", "alt": "Coffee shop website template preview" },
-        { "src": "/Website Builder Page/Website Collage/coffeesupplies.png", "alt": "Coffee supplies website template preview" },
-        { "src": "/Website Builder Page/Website Collage/doctor.png", "alt": "Medical practice website template preview" },
-        { "src": "/Website Builder Page/Website Collage/homeadditions.png", "alt": "Home additions contractor website template preview" },
-        { "src": "/Website Builder Page/Website Collage/HomeopathicNaturaPath.png", "alt": "Holistic health website template preview" },
-        { "src": "/Website Builder Page/Website Collage/pharmacy.png", "alt": "Pharmacy website template preview" }
+        { "src": "/PRODUCTS/Website Builder Page/Website Collage/accounting.png", "alt": "Accounting business website template preview" },
+        { "src": "/PRODUCTS/Website Builder Page/Website Collage/automechanic.png", "alt": "Auto mechanic website template preview" },
+        { "src": "/PRODUCTS/Website Builder Page/Website Collage/bakerybread.png", "alt": "Bakery website template preview" },
+        { "src": "/PRODUCTS/Website Builder Page/Website Collage/beautician.png", "alt": "Beauty salon website template preview" },
+        { "src": "/PRODUCTS/Website Builder Page/Website Collage/bookstore.png", "alt": "Bookstore website template preview" },
+        { "src": "/PRODUCTS/Website Builder Page/Website Collage/cheese.png", "alt": "Cheese shop website template preview" },
+        { "src": "/PRODUCTS/Website Builder Page/Website Collage/coffeeshop.png", "alt": "Coffee shop website template preview" },
+        { "src": "/PRODUCTS/Website Builder Page/Website Collage/coffeesupplies.png", "alt": "Coffee supplies website template preview" },
+        { "src": "/PRODUCTS/Website Builder Page/Website Collage/doctor.png", "alt": "Medical practice website template preview" },
+        { "src": "/PRODUCTS/Website Builder Page/Website Collage/homeadditions.png", "alt": "Home additions contractor website template preview" },
+        { "src": "/PRODUCTS/Website Builder Page/Website Collage/HomeopathicNaturaPath.png", "alt": "Holistic health website template preview" },
+        { "src": "/PRODUCTS/Website Builder Page/Website Collage/pharmacy.png", "alt": "Pharmacy website template preview" }
       ]
     }
   },

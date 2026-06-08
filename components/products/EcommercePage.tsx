@@ -77,7 +77,7 @@ export default function EcommercePage({ label }: EcommercePageProps) {
             {/* Right: hero image with key benefits overlay */}
             <div className="relative rounded-2xl overflow-hidden">
               <Image
-                src="/Ecommerce Page/New/ecommerce-hero.jpg"
+                src="/PRODUCTS/Ecommerce Page/New/ecommerce-hero.jpg"
                 alt="SMB owner with online store on laptop"
                 width={700}
                 height={500}

@@ -30,7 +30,7 @@
           "icon": "ListChecks",
           "body": "Enable your customers to generate a personalized, step-by-step SEO plan based on their website, industry, and local market\nBreak down SEO into simple, actionable weekly tasks they can complete quickly\nHelp them make consistent progress without needing deep technical expertise",
           "image": {
-            "src": "/Search Engine Optimization/search engine optimization slider 01.jpg",
+            "src": "/PRODUCTS/Search Engine Optimization/search engine optimization slider 01.jpg",
             "alt": "AI-guided SEO strategy and weekly tasks"
           }
         },
@@ -39,7 +39,7 @@
           "icon": "Search",
           "body": "Help your customers discover high-impact keywords based on real search behavior\nProvide clear data on search volume, competition, and ranking difficulty\nTrack performance to highlight opportunities and adjust strategy over time",
           "image": {
-            "src": "/Search Engine Optimization/search engine optimization slider 02.jpg",
+            "src": "/PRODUCTS/Search Engine Optimization/search engine optimization slider 02.jpg",
             "alt": "Keyword research and ranking tracking"
           }
         },
@@ -48,7 +48,7 @@
           "icon": "Sparkles",
           "body": "Enable your customers to create SEO-optimized content including blogs, service pages, and product descriptions\nAlign content with target keywords and brand voice automatically\nMake consistent content creation achievable without external resources",
           "image": {
-            "src": "/Search Engine Optimization/search engine optimization slider 03.jpg",
+            "src": "/PRODUCTS/Search Engine Optimization/search engine optimization slider 03.jpg",
             "alt": "AI SEO content creation"
           }
         },
@@ -57,7 +57,7 @@
           "icon": "ScanSearch",
           "body": "Scan customer websites to identify technical SEO issues and missed opportunities\nTranslate complex fixes into clear, prioritized recommendations\nHelp customers focus on high-impact changes that improve rankings faster",
           "image": {
-            "src": "/Search Engine Optimization/search engine optimization slider 04.jpg",
+            "src": "/PRODUCTS/Search Engine Optimization/search engine optimization slider 04.jpg",
             "alt": "Website optimization and technical SEO"
           }
         },
@@ -66,7 +66,7 @@
           "icon": "BarChart3",
           "body": "Give your customers visibility into rankings, traffic, and top-performing pages\nCompare performance against local competitors with easy-to-read dashboards\nHelp them identify trends, measure progress, and refine their SEO strategy",
           "image": {
-            "src": "/Search Engine Optimization/search engine optimization slider 05.jpg",
+            "src": "/PRODUCTS/Search Engine Optimization/search engine optimization slider 05.jpg",
             "alt": "SEO performance tracking and competitor comparison"
           }
         }
@@ -76,7 +76,7 @@
 
   "media": {
     "heroImage": {
-      "src": "/Search Engine Optimization/search everywhere optimization header.png",
+      "src": "/PRODUCTS/Search Engine Optimization/search everywhere optimization header.png",
       "alt": "Search engine optimization platform dashboard",
       "priority": true
     }

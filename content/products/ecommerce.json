@@ -34,7 +34,7 @@
             "Help them reach buyers wherever they discover and shop"
           ],
           "image": {
-            "src": "/Ecommerce Page/New/ecommerce slider 02.jpg",
+            "src": "/PRODUCTS/Ecommerce Page/New/ecommerce slider 02.jpg",
             "alt": "Multi-channel ecommerce selling from one dashboard"
           }
         },
@@ -47,7 +47,7 @@
             "Reduce cart abandonment with a seamless, mobile-optimized checkout experience"
           ],
           "image": {
-            "src": "/Ecommerce Page/New/ecommerce slider 03.jpg",
+            "src": "/PRODUCTS/Ecommerce Page/New/ecommerce slider 03.jpg",
             "alt": "Flexible payments and mobile-optimized checkout"
           }
         },
@@ -60,7 +60,7 @@
             "Increase profitability with a more cost-efficient ecommerce model"
           ],
           "image": {
-            "src": "/Ecommerce Page/New/ecommerce slider 04.jpg",
+            "src": "/PRODUCTS/Ecommerce Page/New/ecommerce slider 04.jpg",
             "alt": "Retain margin with zero platform transaction fees"
           }
         },
@@ -73,7 +73,7 @@
             "Keep customers on a scalable solution that grows with them"
           ],
           "image": {
-            "src": "/Ecommerce Page/New/ecommerce slider 01.jpg",
+            "src": "/PRODUCTS/Ecommerce Page/New/ecommerce slider 01.jpg",
             "alt": "Ecommerce platform built to scale with the business"
           }
         }
@@ -83,7 +83,7 @@
 
   "media": {
     "heroImage": {
-      "src": "/Ecommerce Page/New/ecommerce-hero-alt.png",
+      "src": "/PRODUCTS/Ecommerce Page/New/ecommerce-hero-alt.png",
       "alt": "Merchant managing an online store on a tablet",
       "priority": true
     }

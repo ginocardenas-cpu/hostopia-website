@@ -33,7 +33,7 @@
             "Help them make faster decisions with full visibility and fewer surprises"
           ],
           "image": {
-            "src": "/Brand Monitoring Page/New Images/brand monitoring slider 01.jpg",
+            "src": "/PRODUCTS/Brand Monitoring Page/New Images/brand monitoring slider 01.jpg",
             "alt": "Real-time brand monitoring alerts and notifications"
           }
         },
@@ -46,7 +46,7 @@
             "Equip them to improve pricing and campaigns with built-in competitive intelligence"
           ],
           "image": {
-            "src": "/Brand Monitoring Page/New Images/brand monitoring slider 02.jpg",
+            "src": "/PRODUCTS/Brand Monitoring Page/New Images/brand monitoring slider 02.jpg",
             "alt": "Competitive analysis and market tracking"
           }
         },
@@ -59,7 +59,7 @@
             "Eliminate tab-switching with a single source of truth for their online presence"
           ],
           "image": {
-            "src": "/Brand Monitoring Page/New Images/brand monitoring slider 03.jpg",
+            "src": "/PRODUCTS/Brand Monitoring Page/New Images/brand monitoring slider 03.jpg",
             "alt": "Centralized marketing intelligence dashboard"
           }
         },
@@ -72,7 +72,7 @@
             "Reduce setup friction and support tickets while delivering immediate value"
           ],
           "image": {
-            "src": "/Brand Monitoring Page/New Images/brand monitoring slider 04.jpg",
+            "src": "/PRODUCTS/Brand Monitoring Page/New Images/brand monitoring slider 04.jpg",
             "alt": "Google Business Profile and Meta platform integration"
           }
         },
@@ -85,7 +85,7 @@
             "Support reputation growth by turning reviews into trust, referrals, and visibility"
           ],
           "image": {
-            "src": "/Brand Monitoring Page/New Images/brand monitoring slider 05.jpg",
+            "src": "/PRODUCTS/Brand Monitoring Page/New Images/brand monitoring slider 05.jpg",
             "alt": "Review monitoring and response management"
           }
         }
@@ -95,7 +95,7 @@
 
   "media": {
     "heroImage": {
-      "src": "/Brand Monitoring Page/New Images/brand monitoring header (2).png",
+      "src": "/PRODUCTS/Brand Monitoring Page/New Images/brand monitoring header (2).png",
       "alt": "Brand monitoring and competitor analytics dashboard",
       "priority": true
     }

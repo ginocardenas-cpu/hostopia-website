@@ -30,7 +30,7 @@
           "icon": "Lock",
           "body": "• Protect your customers' websites with 128-bit SSL encryption across every page\n• Secure sensitive data in transit without requiring setup or ongoing management\n• Reduce risk of data breaches while delivering always-on protection from day one",
           "image": {
-            "src": "/SSL%20Page/New%20Images/ssl%20slider%2001.jpg",
+            "src": "/PRODUCTS/SSL%20Page/New%20Images/ssl%20slider%2001.jpg",
             "alt": "Secure encrypted data and website protection"
           }
         },
@@ -39,7 +39,7 @@
           "icon": "BadgeCheck",
           "body": "• Give your customers visible security indicators like the padlock, site seals, and EV address bar\n• Increase conversions by building trust with visitors at key moments like checkout\n• Help SMBs compete with larger brands through instant, recognizable credibility",
           "image": {
-            "src": "/SSL%20Page/New%20Images/ssl%20slider%2002.jpg",
+            "src": "/PRODUCTS/SSL%20Page/New%20Images/ssl%20slider%2002.jpg",
             "alt": "Browser security padlock and trust indicators"
           }
         },
@@ -48,7 +48,7 @@
           "icon": "CreditCard",
           "body": "• Enable your customers to meet PCI requirements with built-in SSL encryption\n• Help them accept online payments without added complexity or compliance overhead\n• Position your platform as the trusted partner that makes security simple from day one",
           "image": {
-            "src": "/SSL%20Page/New%20Images/ssl%20slider%2003.jpg",
+            "src": "/PRODUCTS/SSL%20Page/New%20Images/ssl%20slider%2003.jpg",
             "alt": "Secure payment and card compliance"
           }
         },
@@ -57,7 +57,7 @@
           "icon": "LineChart",
           "body": "• Help your customers improve search rankings with HTTPS-enabled websites\n• Eliminate \"not secure\" browser warnings that reduce trust and conversions\n• Maximize ROI on SEO and paid traffic by ensuring a secure browsing experience",
           "image": {
-            "src": "/SSL%20Page/New%20Images/ssl%20slider%2004.jpg",
+            "src": "/PRODUCTS/SSL%20Page/New%20Images/ssl%20slider%2004.jpg",
             "alt": "Search visibility and SEO with HTTPS"
           }
         },
@@ -66,7 +66,7 @@
           "icon": "Layers",
           "body": "• Offer the right level of SSL with DV, OV, EV, and Wildcard certificates\n• Match security needs to each customer's stage—from basic sites to ecommerce and multi-domain setups\n• Enable natural upsell paths as customers grow into more advanced use cases",
           "image": {
-            "src": "/SSL%20Page/New%20Images/ssl%20slider%2005.jpg",
+            "src": "/PRODUCTS/SSL%20Page/New%20Images/ssl%20slider%2005.jpg",
             "alt": "SSL certificate types for every business stage"
           }
         }
@@ -76,7 +76,7 @@
 
   "media": {
     "heroImage": {
-      "src": "/SSL%20Page/New%20Images/ssl%20header%20(1).png",
+      "src": "/PRODUCTS/SSL%20Page/New%20Images/ssl%20header%20(1).png",
       "alt": "SSL certificate and website security concept",
       "priority": true
     }

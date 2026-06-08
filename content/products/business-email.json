@@ -29,7 +29,7 @@
           "title": "Domain-Based Email",
           "body": "• Help your customers build instant credibility with professional email on their own domain\n• Enable immediate activation post-domain purchase for fast time-to-value\n• Drive higher attach rates with one of the most in-demand SMB services",
           "image": {
-            "src": "/Business Email/New Images/business email slider 01.jpg",
+            "src": "/PRODUCTS/Business Email/New Images/business email slider 01.jpg",
             "alt": "Professional business email communication"
           }
         },
@@ -37,7 +37,7 @@
           "title": "Branded Webmail Experience",
           "body": "• Offer a premium, ad-free webmail experience under your brand\n• Deliver built-in productivity tools like calendars, contacts, tasks, and storage\n• Enable simple team collaboration with shared calendars and contact lists",
           "image": {
-            "src": "/Business Email/New Images/business email slider 02.jpg",
+            "src": "/PRODUCTS/Business Email/New Images/business email slider 02.jpg",
             "alt": "Clean webmail and calendar interface"
           }
         },
@@ -45,7 +45,7 @@
           "title": "Built-In Email Security",
           "body": "• Protect your customers with enterprise-grade anti-virus and spam filtering by default\n• Give control with configurable filters, trusted/blocked senders, and optional backup\n• Reduce support tickets while building trust through automatic, always-on protection",
           "image": {
-            "src": "/Business Email/New Images/business email slider 03.jpg",
+            "src": "/PRODUCTS/Business Email/New Images/business email slider 03.jpg",
             "alt": "Secure email and infrastructure"
           }
         },
@@ -53,7 +53,7 @@
           "title": "Access Anywhere",
           "body": "• Let your customers access email on any device with full IMAP, POP, and SMTP support\n• Support existing workflows across Outlook, Apple Mail, mobile, and webmail\n• Deliver seamless, synchronized experiences without added infrastructure complexity",
           "image": {
-            "src": "/Business Email/New Images/business email slider 04.jpg",
+            "src": "/PRODUCTS/Business Email/New Images/business email slider 04.jpg",
             "alt": "Email on phone and laptop anywhere"
           }
         },
@@ -61,7 +61,7 @@
           "title": "Seamless Migration",
           "body": "• Help your customers switch providers with zero downtime and no data loss\n• Migrate mailboxes of any size using proven tools and expert support\n• Win more deals by removing the risk from email migration",
           "image": {
-            "src": "/Business Email/New Images/business email slider 05.jpg",
+            "src": "/PRODUCTS/Business Email/New Images/business email slider 05.jpg",
             "alt": "Email migration and data integrity"
           }
         }
@@ -71,7 +71,7 @@
 
   "media": {
     "heroImage": {
-      "src": "/Business Email/New Images/business email header (2).png",
+      "src": "/PRODUCTS/Business Email/New Images/business email header (2).png",
       "alt": "Professional business email under your brand",
       "priority": true
     }

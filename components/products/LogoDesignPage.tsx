@@ -82,7 +82,7 @@ export default function LogoDesignPage({ label }: LogoDesignPageProps) {
             {/* Right column: hero image with why-it-matters overlay */}
             <div className="relative rounded-2xl overflow-hidden">
               <Image
-                src="/Logo Page/logo-page-header.png"
+                src="/PRODUCTS/Logo Page/logo-page-header.png"
                 alt="Professional logo design service"
                 width={700}
                 height={520}
@@ -120,7 +120,7 @@ export default function LogoDesignPage({ label }: LogoDesignPageProps) {
           {/* Left: image */}
           <div className="rounded-2xl overflow-hidden">
             <Image
-              src="/Logo Page/Under-your-brand.png"
+              src="/PRODUCTS/Logo Page/Under-your-brand.png"
               alt="White-label logo design delivered under your brand"
               width={600}
               height={500}

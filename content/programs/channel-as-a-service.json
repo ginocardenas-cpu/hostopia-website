@@ -22,7 +22,7 @@
     "headline": "A Sales Team That Sells in Your Name",
     "subheadline": "Hostopia builds and operates a dedicated sales channel for your digital services — fully white-labeled, fully tracked, and aligned with your revenue goals.",
     "cta": { "primary": "Talk to Our Team", "secondary": "Download the Program Overview" },
-    "image": "/Channel as a Service/channel as a service-hero.png",
+    "image": "/PROGRAMS/Channel as a Service/channel as a service-hero.png",
     "imageWidth": 2345,
     "imageHeight": 2689
   },
@@ -31,7 +31,7 @@
     "eyebrow": "How it works",
     "heading": "Your Channel. Our People. Your Brand.",
     "intro": "We recruit, train, and manage sales consultants who work exclusively on your digital services — under your brand, following your processes, and selling to your customers.",
-    "image": "/Channel as a Service/how it works.png",
+    "image": "/PROGRAMS/Channel as a Service/how it works.png",
     "imageWidth": 4312,
     "imageHeight": 2512,
     "cards": [
@@ -89,7 +89,7 @@
     "headline": "Ready to Build Your Channel?",
     "body": "Hostopia can have a branded sales channel generating pipeline in weeks. Talk to our team about how Channel as a Service fits your goals.",
     "buttonText": "Schedule a Consultation",
-    "image": "/Channel as a Service/next step.png",
+    "image": "/PROGRAMS/Channel as a Service/next step.png",
     "imageWidth": 3306,
     "imageHeight": 2028
   }

@@ -14,19 +14,19 @@ const smbHubVideos: SmbHubPlaceholder[] = [
   {
     title: "Video resource 1",
     description: "Placeholder — add embed or hosted video URL when ready.",
-    imageSrc: "/Website%20Design%20Page/website%20design%20slider%2001.jpg",
+    imageSrc: "/PRODUCTS/Website%20Builder%20Page/Website%20Design%20Page/website%20design%20slider%2001.jpg",
     imageAlt: "Abstract website and design imagery for video placeholder",
   },
   {
     title: "Video resource 2",
     description: "Placeholder — add embed or hosted video URL when ready.",
-    imageSrc: "/Social%20Media/social%20media%20management%20header.png",
+    imageSrc: "/PRODUCTS/Social%20Media/social%20media%20management%20header.png",
     imageAlt: "Social media marketing imagery for video placeholder",
   },
   {
     title: "Video resource 3",
     description: "Placeholder — add embed or hosted video URL when ready.",
-    imageSrc: "/Marketing%20360/marketing%20360%20slider%2001.jpg",
+    imageSrc: "/PRODUCTS/Marketing%20360/marketing%20360%20slider%2001.jpg",
     imageAlt: "Marketing campaign imagery for video placeholder",
   },
 ];
@@ -35,19 +35,19 @@ const smbHubEbooks: SmbHubPlaceholder[] = [
   {
     title: "eBook resource 1",
     description: "Placeholder — attach PDF or gated download when ready.",
-    imageSrc: "/Email%20Marketing/email%20marketing%20header.png",
+    imageSrc: "/PRODUCTS/Email%20Marketing/email%20marketing%20header.png",
     imageAlt: "Email marketing creative for eBook placeholder",
   },
   {
     title: "eBook resource 2",
     description: "Placeholder — attach PDF or gated download when ready.",
-    imageSrc: "/Domain%20Page/New%20Images/key-features-for-SMBs%20(1).png",
+    imageSrc: "/PRODUCTS/Domain%20Page/New%20Images/key-features-for-SMBs%20(1).png",
     imageAlt: "Domain and SMB features imagery for eBook placeholder",
   },
   {
     title: "eBook resource 3",
     description: "Placeholder — attach PDF or gated download when ready.",
-    imageSrc: "/Search%20Engine%20Optimization/search%20engine%20optimization%20slider%2001.jpg",
+    imageSrc: "/PRODUCTS/Search%20Engine%20Optimization/search%20engine%20optimization%20slider%2001.jpg",
     imageAlt: "Search optimization imagery for eBook placeholder",
   },
 ];
@@ -56,19 +56,19 @@ const smbHubPodcasts: SmbHubPlaceholder[] = [
   {
     title: "Podcast resource 1",
     description: "Placeholder — add audio file or podcast episode link when ready.",
-    imageSrc: "/Brand%20Monitoring%20Page/New%20Images/brand%20monitoring%20header%20(2).png",
+    imageSrc: "/PRODUCTS/Brand%20Monitoring%20Page/New%20Images/brand%20monitoring%20header%20(2).png",
     imageAlt: "Brand monitoring concept for podcast placeholder",
   },
   {
     title: "Podcast resource 2",
     description: "Placeholder — add audio file or podcast episode link when ready.",
-    imageSrc: "/Reputation%20Management/reputation%20management%20header.jpg",
+    imageSrc: "/PRODUCTS/Reputation%20Management/reputation%20management%20header.jpg",
     imageAlt: "Reputation management imagery for podcast placeholder",
   },
   {
     title: "Podcast resource 3",
     description: "Placeholder — add audio file or podcast episode link when ready.",
-    imageSrc: "/Hosting/hosting%20slider%20manage%20multiple.jpg",
+    imageSrc: "/PRODUCTS/Hosting/hosting%20slider%20manage%20multiple.jpg",
     imageAlt: "Hosting and infrastructure imagery for podcast placeholder",
   },
 ];

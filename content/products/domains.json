@@ -33,7 +33,7 @@
             "Reduce drop-offs and drive more activated accounts"
           ],
           "image": {
-            "src": "/Domain Page/New Images/domain page slider 01.jpg",
+            "src": "/PRODUCTS/Domain Page/New Images/domain page slider 01.jpg",
             "alt": "Domain search and global DNS concept"
           }
         },
@@ -46,7 +46,7 @@
             "Turn every domain sale into a high-converting second product sale"
           ],
           "image": {
-            "src": "/Domain Page/New Images/domain page slider 02.jpg",
+            "src": "/PRODUCTS/Domain Page/New Images/domain page slider 02.jpg",
             "alt": "Professional business email and branding"
           }
         },
@@ -59,7 +59,7 @@
             "Reduce lapses and support tickets by simplifying domain management"
           ],
           "image": {
-            "src": "/Domain Page/New Images/domain page slider 03.jpg",
+            "src": "/PRODUCTS/Domain Page/New Images/domain page slider 03.jpg",
             "alt": "Dashboard for managing domains and DNS"
           }
         },
@@ -72,7 +72,7 @@
             "Grow recurring revenue by converting domains into multi-product accounts"
           ],
           "image": {
-            "src": "/Domain Page/New Images/domain page slider 04.jpg",
+            "src": "/PRODUCTS/Domain Page/New Images/domain page slider 04.jpg",
             "alt": "Growing digital services connected to a domain"
           }
         },
@@ -85,7 +85,7 @@
             "Reduce escalations while safeguarding websites, email, and brand reputation"
           ],
           "image": {
-            "src": "/Domain Page/New Images/domain page slider 05.jpg",
+            "src": "/PRODUCTS/Domain Page/New Images/domain page slider 05.jpg",
             "alt": "Domain security and renewal protection"
           }
         }
@@ -95,12 +95,12 @@
 
   "media": {
     "heroImage": {
-      "src": "/Domain%20Page/New%20Images/domains-page-header2%20(1).png",
+      "src": "/PRODUCTS/Domain%20Page/New%20Images/domains-page-header2%20(1).png",
       "alt": "Domain search and SMB digital presence — composite hero",
       "priority": true
     },
     "contentImage": {
-      "src": "/Domain%20Page/New%20Images/key-features-for-SMBs%20(1).png",
+      "src": "/PRODUCTS/Domain%20Page/New%20Images/key-features-for-SMBs%20(1).png",
       "alt": "SMB partner exploring domain and digital service features"
     }
   },

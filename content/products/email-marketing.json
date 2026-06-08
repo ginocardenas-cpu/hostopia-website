@@ -29,7 +29,7 @@
           "icon": "Sparkles",
           "body": "Generate complete email campaigns with AI-powered copy, images, and layouts\nLaunch professional emails quickly without design or writing expertise\nSend consistently, turning email into a reliable revenue channel",
           "image": {
-            "src": "/Email Marketing/email marketing slider 01.jpg",
+            "src": "/PRODUCTS/Email Marketing/email marketing slider 01.jpg",
             "alt": "AI-powered email campaign creation"
           }
         },
@@ -38,7 +38,7 @@
           "icon": "Zap",
           "body": "Set up automated flows for welcomes, promotions, and re-engagement campaigns\nNurture subscribers and recover inactive customers without manual effort\nDrive ongoing revenue from campaigns that run in the background",
           "image": {
-            "src": "/Email Marketing/email marketing slider 02.jpg",
+            "src": "/PRODUCTS/Email Marketing/email marketing slider 02.jpg",
             "alt": "Email marketing automation and sequences"
           }
         },
@@ -47,7 +47,7 @@
           "icon": "Users",
           "body": "Convert website visitors into subscribers with embedded, no-code signup forms\nCollect segmented, consent-based data for targeted campaigns\nBuild high-quality email lists directly from their digital presence",
           "image": {
-            "src": "/Email Marketing/email marketing slider 03.jpg",
+            "src": "/PRODUCTS/Email Marketing/email marketing slider 03.jpg",
             "alt": "Signup forms and audience growth"
           }
         },
@@ -56,7 +56,7 @@
           "icon": "BarChart3",
           "body": "Track opens, clicks, conversions, and audience insights in one dashboard\nIdentify what works and optimize campaigns over time\nUse performance data to guide smarter marketing decisions",
           "image": {
-            "src": "/Email Marketing/email marketing slider 04.jpg",
+            "src": "/PRODUCTS/Email Marketing/email marketing slider 04.jpg",
             "alt": "Email analytics and campaign performance"
           }
         },
@@ -65,7 +65,7 @@
           "icon": "Link2",
           "body": "Sync email marketing with websites, ecommerce, domains, and listings\nShare subscriber data, products, and brand assets across systems seamlessly\nManage marketing from a unified platform that increases efficiency and retention",
           "image": {
-            "src": "/Email Marketing/email marketing slider 05.jpg",
+            "src": "/PRODUCTS/Email Marketing/email marketing slider 05.jpg",
             "alt": "Integrated marketing stack with email"
           }
         }
@@ -75,7 +75,7 @@
 
   "media": {
     "heroImage": {
-      "src": "/Email Marketing/email marketing header.png",
+      "src": "/PRODUCTS/Email Marketing/email marketing header.png",
       "alt": "Email marketing on laptop and mobile",
       "priority": true
     }

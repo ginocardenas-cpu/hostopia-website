@@ -30,7 +30,7 @@
           "icon": "Laptop",
           "body": "• Enable your customers to send and receive faxes from any device — laptop, mobile, tablet, or desktop\n• Support remote teams, field staff, and multi-location businesses with no hardware required\n• Eliminate phone lines and physical machines while keeping familiar workflows intact",
           "image": {
-            "src": "/Online Fax/online fax slider 01.jpg",
+            "src": "/PRODUCTS/Online Fax/online fax slider 01.jpg",
             "alt": "Working remotely with mobile and cloud tools"
           }
         },
@@ -39,7 +39,7 @@
           "icon": "ShieldCheck",
           "body": "• Encrypt every fax transmission to protect sensitive information\n• Support HIPAA-aligned configurations for regulated industries like healthcare and legal\n• Help customers modernize fax without introducing compliance risk",
           "image": {
-            "src": "/Online Fax/online fax slider 02.jpg",
+            "src": "/PRODUCTS/Online Fax/online fax slider 02.jpg",
             "alt": "Healthcare compliance and secure communications"
           }
         },
@@ -48,7 +48,7 @@
           "icon": "PhoneForwarded",
           "body": "• Allow customers to port existing fax numbers without disruption\n• Offer new local and toll-free numbers for added flexibility\n• Remove barriers to switching by keeping customer-facing information unchanged",
           "image": {
-            "src": "/Online Fax/online fax slider 03.jpg",
+            "src": "/PRODUCTS/Online Fax/online fax slider 03.jpg",
             "alt": "Business phone and fax number management"
           }
         },
@@ -57,7 +57,7 @@
           "icon": "Inbox",
           "body": "• Let customers send faxes directly from email and receive them as PDFs in their inbox\n• Provide a simple browser-based portal for full visibility and control\n• Avoid new software installs or retraining with a familiar, intuitive experience",
           "image": {
-            "src": "/Online Fax/online fax slider 04.jpg",
+            "src": "/PRODUCTS/Online Fax/online fax slider 04.jpg",
             "alt": "Documents and streamlined office workflows"
           }
         },
@@ -66,7 +66,7 @@
           "icon": "Layers",
           "body": "• Support usage from low-volume individuals to high-volume teams\n• Enable shared page pools, admin controls, and per-number tracking\n• Give customers a scalable solution that grows with their business",
           "image": {
-            "src": "/Online Fax/online fax slider 05.jpg",
+            "src": "/PRODUCTS/Online Fax/online fax slider 05.jpg",
             "alt": "Team and multi-location fax usage"
           }
         }
@@ -76,7 +76,7 @@
 
   "media": {
     "heroImage": {
-      "src": "/Online Fax/online fax header.png",
+      "src": "/PRODUCTS/Online Fax/online fax header.png",
       "alt": "Modern digital fax and document transmission",
       "priority": true
     }

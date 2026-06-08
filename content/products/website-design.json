@@ -34,7 +34,7 @@
             "Deliver a seamless path from concept to launch with minimal customer effort"
           ],
           "image": {
-            "src": "/Website Design Page/website design slider 01.jpg",
+            "src": "/PRODUCTS/Website Builder Page/Website Design Page/website design slider 01.jpg",
             "alt": "Designer consultation and guided website design process"
           }
         },
@@ -47,7 +47,7 @@
             "Reduce post-launch issues and support tickets with built-in optimization"
           ],
           "image": {
-            "src": "/Website Design Page/website design slider 02.jpg",
+            "src": "/PRODUCTS/Website Builder Page/Website Design Page/website design slider 02.jpg",
             "alt": "Responsive, SEO-ready website across devices"
           }
         },
@@ -60,7 +60,7 @@
             "Support stronger retention by delivering clear, measurable ROI early"
           ],
           "image": {
-            "src": "/Website Design Page/website design slider 03.jpg",
+            "src": "/PRODUCTS/Website Builder Page/Website Design Page/website design slider 03.jpg",
             "alt": "Website conversion tools — forms, maps, galleries, scheduling"
           }
         },
@@ -73,7 +73,7 @@
             "Help your customers keep their websites current and aligned with their business needs over time"
           ],
           "image": {
-            "src": "/Website Design Page/website design slider 04.jpg",
+            "src": "/PRODUCTS/Website Builder Page/Website Design Page/website design slider 04.jpg",
             "alt": "Ongoing website maintenance and content updates"
           }
         },
@@ -86,7 +86,7 @@
             "Ensure a smooth, efficient delivery process with clear communication and handoff"
           ],
           "image": {
-            "src": "/Website Design Page/website design slider 05.jpg",
+            "src": "/PRODUCTS/Website Builder Page/Website Design Page/website design slider 05.jpg",
             "alt": "Branded project portal for drafts, feedback, and approvals"
           }
         }
@@ -96,7 +96,7 @@
 
   "media": {
     "heroImage": {
-      "src": "/Website Design Page/website design header.png",
+      "src": "/PRODUCTS/Website Builder Page/Website Design Page/website design header.png",
       "alt": "Professional website design on laptop",
       "priority": true
     },
@@ -105,11 +105,11 @@
       "heading": "From cluttered to credible",
       "intro": "Drag the slider to compare a typical DIY or dated SMB web presence with a clean, professional design.",
       "before": {
-        "src": "/Website Design Page/Before and After/before.jpg",
+        "src": "/PRODUCTS/Website Builder Page/Website Design Page/Before and After/before.jpg",
         "alt": "Cluttered screen and dated web workflow"
       },
       "after": {
-        "src": "/Website Design Page/Before and After/after.jpg",
+        "src": "/PRODUCTS/Website Builder Page/Website Design Page/Before and After/after.jpg",
         "alt": "Clean, professional website design"
       }
     }

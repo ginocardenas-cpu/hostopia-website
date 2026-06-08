@@ -33,7 +33,7 @@
             "Help them build trust and win more customers through fast, consistent engagement"
           ],
           "image": {
-            "src": "/Reputation Management/reputation management slider 01.jpg",
+            "src": "/PRODUCTS/Reputation Management/reputation management slider 01.jpg",
             "alt": "AI review monitoring and response across Google and Meta"
           }
         },
@@ -46,7 +46,7 @@
             "Help them turn reviews into a strategy for improving reputation and capturing more local demand"
           ],
           "image": {
-            "src": "/Reputation Management/reputation management slider 02.jpg",
+            "src": "/PRODUCTS/Reputation Management/reputation management slider 02.jpg",
             "alt": "Competitive reputation benchmarks and sentiment insights"
           }
         },
@@ -59,7 +59,7 @@
             "Strengthen search visibility and customer trust with accurate, up-to-date listings"
           ],
           "image": {
-            "src": "/Reputation Management/reputation management slider 03.jpg",
+            "src": "/PRODUCTS/Reputation Management/reputation management slider 03.jpg",
             "alt": "Business listings synced across directories"
           }
         },
@@ -72,7 +72,7 @@
             "Increase visibility without adding tools, headcount, or external agency costs"
           ],
           "image": {
-            "src": "/Reputation Management/reputation management slider 04.jpg",
+            "src": "/PRODUCTS/Reputation Management/reputation management slider 04.jpg",
             "alt": "AI social content generation and scheduling"
           }
         },
@@ -85,7 +85,7 @@
             "Reduce complexity while helping them stay focused on running and growing their business"
           ],
           "image": {
-            "src": "/Reputation Management/reputation management slider 05.jpg",
+            "src": "/PRODUCTS/Reputation Management/reputation management slider 05.jpg",
             "alt": "Unified dashboard for reviews, listings, and social"
           }
         }
@@ -95,7 +95,7 @@
 
   "media": {
     "heroImage": {
-      "src": "/Reputation Management/reputation management header.png",
+      "src": "/PRODUCTS/Reputation Management/reputation management header.png",
       "alt": "Reputation and listing management platform dashboard",
       "priority": true
     }

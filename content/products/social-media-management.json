@@ -29,7 +29,7 @@
           "icon": "Sparkles",
           "body": "Enable your customers to generate captions, post ideas, and on-brand content with AI\nEliminate blank-page friction with ready-to-use drafts\nHelp them post consistently without hiring external resources",
           "image": {
-            "src": "/Social Media/social media slider 01.jpg",
+            "src": "/PRODUCTS/Social Media/social media slider 01.jpg",
             "alt": "AI-powered social content creation"
           }
         },
@@ -38,7 +38,7 @@
           "icon": "Calendar",
           "body": "Provide drag-and-drop calendars to plan and schedule content across platforms\nAuto-publish posts to Facebook, Instagram, Google Business Profile, and more\nHelp customers stay consistent without daily manual effort",
           "image": {
-            "src": "/Social Media/social media slider 02.jpg",
+            "src": "/PRODUCTS/Social Media/social media slider 02.jpg",
             "alt": "Social content calendar and scheduling"
           }
         },
@@ -47,7 +47,7 @@
           "icon": "BarChart3",
           "body": "Show your customers which content types, hashtags, and formats drive engagement\nHighlight top-performing posts and recommend what to repeat or boost\nEnable continuous improvement with built-in performance analytics",
           "image": {
-            "src": "/Social Media/social media slider 03.jpg",
+            "src": "/PRODUCTS/Social Media/social media slider 03.jpg",
             "alt": "Social performance insights and analytics"
           }
         },
@@ -56,7 +56,7 @@
           "icon": "Users",
           "body": "Support multi-user workflows with role-based permissions and approval processes\nEnable teams, agencies, and multi-location businesses to collaborate efficiently\nEnsure brand consistency while scaling across locations and users",
           "image": {
-            "src": "/Social Media/social media slider 04.jpg",
+            "src": "/PRODUCTS/Social Media/social media slider 04.jpg",
             "alt": "Team collaboration and approvals for social"
           }
         },
@@ -65,7 +65,7 @@
           "icon": "Link2",
           "body": "Allow your customers to create and publish content across multiple networks from one place\nAutomatically optimize formatting and image sizing for each platform\nCentralize publishing and performance tracking in a single dashboard",
           "image": {
-            "src": "/Social Media/social media slider 05.jpg",
+            "src": "/PRODUCTS/Social Media/social media slider 05.jpg",
             "alt": "Multi-network social publishing"
           }
         }
@@ -75,7 +75,7 @@
 
   "media": {
     "heroImage": {
-      "src": "/Social Media/social media management header.png",
+      "src": "/PRODUCTS/Social Media/social media management header.png",
       "alt": "Creating social media content on a phone",
       "priority": true
     }

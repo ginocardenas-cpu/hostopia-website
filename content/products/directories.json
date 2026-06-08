@@ -34,7 +34,7 @@
             "Help them build trust and win more customers through fast, consistent engagement"
           ],
           "image": {
-            "src": "/Directory Listings/directory listings slider 01.jpg",
+            "src": "/PRODUCTS/Directory Listings/directory listings slider 01.jpg",
             "alt": "AI review monitoring and response across Google and Meta"
           }
         },
@@ -47,7 +47,7 @@
             "Help them turn reviews into a strategy for improving reputation and capturing more local demand"
           ],
           "image": {
-            "src": "/Directory Listings/directory listings slider 02.jpg",
+            "src": "/PRODUCTS/Directory Listings/directory listings slider 02.jpg",
             "alt": "Competitive reputation benchmarks and sentiment insights"
           }
         },
@@ -60,7 +60,7 @@
             "Strengthen search visibility and customer trust with accurate, up-to-date listings"
           ],
           "image": {
-            "src": "/Directory Listings/directory listings slider 03.jpg",
+            "src": "/PRODUCTS/Directory Listings/directory listings slider 03.jpg",
             "alt": "Business listings synced across directories"
           }
         },
@@ -73,7 +73,7 @@
             "Increase visibility without adding tools, headcount, or external agency costs"
           ],
           "image": {
-            "src": "/Directory Listings/directory listings slider 04.jpg",
+            "src": "/PRODUCTS/Directory Listings/directory listings slider 04.jpg",
             "alt": "AI social content generation and scheduling"
           }
         },
@@ -86,7 +86,7 @@
             "Reduce complexity while helping them stay focused on running and growing their business"
           ],
           "image": {
-            "src": "/Directory Listings/directory listings slider 05.jpg",
+            "src": "/PRODUCTS/Directory Listings/directory listings slider 05.jpg",
             "alt": "Unified dashboard for reviews, listings, and social"
           }
         }
@@ -96,7 +96,7 @@
 
   "media": {
     "heroImage": {
-      "src": "/Directory Listings/directory listings header.png",
+      "src": "/PRODUCTS/Directory Listings/directory listings header.png",
       "alt": "Directory Listings platform dashboard showing social media and listing management",
       "priority": true
     }
