@@ -43,7 +43,7 @@ export default function ReputationManagementPage({ label }: ReputationManagement
                   color: "#24282B",
                 }}
               >
-                Turn Happy Customers into 5-Star Reviews â€” Under Your Brand
+                Turn Happy Customers into 5-Star Reviews — Under Your Brand
               </h1>
               <p
                 className="text-base md:text-lg leading-relaxed mb-4"
@@ -55,7 +55,7 @@ export default function ReputationManagementPage({ label }: ReputationManagement
                 className="text-base leading-relaxed mb-6"
                 style={{ fontFamily: "Raleway, sans-serif", color: "#6b7280" }}
               >
-                Reputation Management is an AI-driven platform built for SMBs who need a simple way to generate trust, build social proof, and stay visible â€” all delivered white-label under your brand.
+                Reputation Management is an AI-driven platform built for SMBs who need a simple way to generate trust, build social proof, and stay visible — all delivered white-label under your brand.
               </p>
               <div className="flex flex-wrap gap-3">
                 <Link
@@ -91,7 +91,7 @@ export default function ReputationManagementPage({ label }: ReputationManagement
                 <li className="flex gap-3">
                   <Star size={18} className="mt-1 shrink-0" style={{ color: "#FBBF24" }} />
                   <span>
-                    <strong>Ratings influence decisions</strong>â€”customers compare stars and recent reviews before they
+                    <strong>Ratings influence decisions</strong>—customers compare stars and recent reviews before they
                     choose a provider.
                   </span>
                 </li>
@@ -122,7 +122,7 @@ export default function ReputationManagementPage({ label }: ReputationManagement
             style={{ fontFamily: "Raleway, sans-serif", color: "#6b7280" }}
           >
             Offer Reputation Management as a turnkey, white-label service that helps SMBs monitor reviews, request new
-            feedback, and respond from one placeâ€”fully branded as your own solution.
+            feedback, and respond from one place—fully branded as your own solution.
           </p>
           <p
             className="text-sm font-semibold mb-3"
@@ -135,19 +135,19 @@ export default function ReputationManagementPage({ label }: ReputationManagement
             style={{ fontFamily: "Raleway, sans-serif", color: "#6b7280" }}
           >
             <li className="flex gap-2">
-              <span className="text-teal mt-1">â€¢</span>
+              <span className="text-teal mt-1">•</span>
               <span>A branded dashboard that aggregates reviews from top platforms.</span>
             </li>
             <li className="flex gap-2">
-              <span className="text-teal mt-1">â€¢</span>
+              <span className="text-teal mt-1">•</span>
               <span>Tools to request new reviews via email or SMS campaigns.</span>
             </li>
             <li className="flex gap-2">
-              <span className="text-teal mt-1">â€¢</span>
+              <span className="text-teal mt-1">•</span>
               <span>Workflows to respond to reviews quickly using templates and approvals.</span>
             </li>
             <li className="flex gap-2">
-              <span className="text-teal mt-1">â€¢</span>
+              <span className="text-teal mt-1">•</span>
               <span>Reporting on ratings trends, review volume, and channel performance.</span>
             </li>
           </ul>
@@ -169,15 +169,15 @@ export default function ReputationManagementPage({ label }: ReputationManagement
                 style={{ fontFamily: "Raleway, sans-serif", color: "#6b7280" }}
               >
                 <li className="flex gap-2">
-                  <span className="text-teal mt-1">â€¢</span>
+                  <span className="text-teal mt-1">•</span>
                   <span>Bundle reputation with websites, listings, and SEO to grow ARPU.</span>
                 </li>
                 <li className="flex gap-2">
-                  <span className="text-teal mt-1">â€¢</span>
+                  <span className="text-teal mt-1">•</span>
                   <span>Reduce churn by tying your value to real customer outcomes and reviews.</span>
                 </li>
                 <li className="flex gap-2">
-                  <span className="text-teal mt-1">â€¢</span>
+                  <span className="text-teal mt-1">•</span>
                   <span>Position your brand as a growth advisor, not just an infrastructure provider.</span>
                 </li>
               </ul>
@@ -200,7 +200,7 @@ export default function ReputationManagementPage({ label }: ReputationManagement
             className="text-base leading-relaxed mb-8 max-w-3xl"
             style={{ fontFamily: "Raleway, sans-serif", color: "#6b7280" }}
           >
-            Reputation Management is all about helping SMBs get found and chosenâ€”turning presence into preference.
+            Reputation Management is all about helping SMBs get found and chosen—turning presence into preference.
           </p>
           <div className="flex flex-col gap-4 md:flex-row md:items-stretch md:gap-0">
             {[
@@ -212,7 +212,7 @@ export default function ReputationManagementPage({ label }: ReputationManagement
               {
                 step: "02",
                 title: "Get Online",
-                body: "Launch websites and profiles that tell the SMBâ€™s story.",
+                body: "Launch websites and profiles that tell the SMB’s story.",
               },
               {
                 step: "03",

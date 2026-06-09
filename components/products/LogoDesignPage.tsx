@@ -43,7 +43,7 @@ export default function LogoDesignPage({ label }: LogoDesignPageProps) {
                   color: "#24282B",
                 }}
               >
-                Agency-Quality Logos â€” Delivered Under Your Brand, Without an Agency
+                Agency-Quality Logos — Delivered Under Your Brand, Without an Agency
               </h1>
               <p
                 className="text-base md:text-lg leading-relaxed mb-4"
@@ -55,7 +55,7 @@ export default function LogoDesignPage({ label }: LogoDesignPageProps) {
                 className="text-base leading-relaxed mb-6"
                 style={{ fontFamily: "Raleway, sans-serif", color: "#6b7280" }}
               >
-                Hostopia&apos;s white-label Professional Logo Design gives you a managed creative service to resell under your brand. Our designers handle the entire process â€” from questionnaire to final delivery in 11 formats â€” while you own the customer relationship and the revenue.
+                Hostopia&apos;s white-label Professional Logo Design gives you a managed creative service to resell under your brand. Our designers handle the entire process — from questionnaire to final delivery in 11 formats — while you own the customer relationship and the revenue.
               </p>
               <div className="flex flex-wrap gap-3">
                 <Link
@@ -149,27 +149,27 @@ export default function LogoDesignPage({ label }: LogoDesignPageProps) {
               style={{ fontFamily: "Raleway, sans-serif", color: "#6b7280" }}
             >
               <li className="flex gap-2">
-                <span className="text-teal mt-1">â€¢</span>
+                <span className="text-teal mt-1">•</span>
                 <span>
                   White-label design expertise: professional logo designers working behind the scenes under your brand.
                 </span>
               </li>
               <li className="flex gap-2">
-                <span className="text-teal mt-1">â€¢</span>
+                <span className="text-teal mt-1">•</span>
                 <span>
                   A simple, guided creative process: your branded questionnaire and coordinator-led workflow capture each
                   SMB customer&apos;s vision, values, and audience.
                 </span>
               </li>
               <li className="flex gap-2">
-                <span className="text-teal mt-1">â€¢</span>
+                <span className="text-teal mt-1">•</span>
                 <span>
                   Flexible packages and deliverables: you define packages, and SMBs receive all key logo file formats for
                   web and print (11 formats including AI, EPS, PNG, JPG, PDF, ICO).
                 </span>
               </li>
               <li className="flex gap-2">
-                <span className="text-teal mt-1">â€¢</span>
+                <span className="text-teal mt-1">•</span>
                 <span>
                   Fast, rights-ready outcomes: initial concepts in just a few business days, plus full ownership of the
                   final logo with no ongoing licensing fees.
@@ -194,28 +194,28 @@ export default function LogoDesignPage({ label }: LogoDesignPageProps) {
             style={{ fontFamily: "Raleway, sans-serif", color: "#6b7280" }}
           >
             <li className="flex gap-2">
-              <span className="text-teal mt-1">â€¢</span>
+              <span className="text-teal mt-1">•</span>
               <span>
                 Open new revenue streams by bundling Professional Logo Design with websites, domains, connectivity, or
                 managed services.
               </span>
             </li>
             <li className="flex gap-2">
-              <span className="text-teal mt-1">â€¢</span>
+              <span className="text-teal mt-1">•</span>
               <span>
                 Boost ARPU and retention with a high-engagement branding product that keeps SMBs anchored to your
                 platform.
               </span>
             </li>
             <li className="flex gap-2">
-              <span className="text-teal mt-1">â€¢</span>
+              <span className="text-teal mt-1">•</span>
               <span>
-                Deliver agency-quality creative without hiring designersâ€”Hostopia handles fulfillment while you remain
+                Deliver agency-quality creative without hiring designers—Hostopia handles fulfillment while you remain
                 the provider of record.
               </span>
             </li>
             <li className="flex gap-2">
-              <span className="text-teal mt-1">â€¢</span>
+              <span className="text-teal mt-1">•</span>
               <span>
                 Scale quickly with onboarding, sales training, and go-to-market enablement so your teams can confidently
                 sell, bundle, and upsell the service.
@@ -239,7 +239,7 @@ export default function LogoDesignPage({ label }: LogoDesignPageProps) {
             style={{ fontFamily: "Raleway, sans-serif", color: "#6b7280" }}
           >
             Use logo design as the starting point for cross-sell motions into web, email, ecommerce, and ongoing
-            marketingâ€”delivered within the same white-label ecosystem.
+            marketing—delivered within the same white-label ecosystem.
           </p>
       </ProductSection>
 
@@ -249,7 +249,7 @@ export default function LogoDesignPage({ label }: LogoDesignPageProps) {
             className="text-base leading-relaxed mb-8 max-w-3xl"
             style={{ fontFamily: "Raleway, sans-serif", color: "#6b7280" }}
           >
-            Logo design is one of the very first steps in establishing a brand directionâ€”shaping how every other
+            Logo design is one of the very first steps in establishing a brand direction—shaping how every other
             product you sell will look and perform.
           </p>
           <div className="flex flex-col gap-4 md:flex-row md:items-stretch md:gap-0">

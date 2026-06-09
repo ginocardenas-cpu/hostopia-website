@@ -42,7 +42,7 @@ export default function OnlineFaxPage({ label }: OnlineFaxPageProps) {
                   color: "#24282B",
                 }}
               >
-                Replace Legacy Fax Machines â€” Keep Trusted Workflows
+                Replace Legacy Fax Machines — Keep Trusted Workflows
               </h1>
               <p
                 className="text-base md:text-lg leading-relaxed mb-4"
@@ -54,7 +54,7 @@ export default function OnlineFaxPage({ label }: OnlineFaxPageProps) {
                 className="text-base leading-relaxed mb-6"
                 style={{ fontFamily: "Raleway, sans-serif", color: "#6b7280" }}
               >
-                Hostopia&apos;s white-label Online Fax lets you deliver a secure, cloud-based fax service that modernizes how your SMB customers send and receive documents â€” without changing the workflows they depend on. A natural add-on to your connectivity and communications portfolio.
+                Hostopia&apos;s white-label Online Fax lets you deliver a secure, cloud-based fax service that modernizes how your SMB customers send and receive documents — without changing the workflows they depend on. A natural add-on to your connectivity and communications portfolio.
               </p>
               <div className="flex flex-wrap gap-3">
                 <Link
@@ -90,7 +90,7 @@ export default function OnlineFaxPage({ label }: OnlineFaxPageProps) {
                 <li className="flex gap-3">
                   <Globe2 size={18} className="mt-1 shrink-0" style={{ color: "#2CADB2" }} />
                   <span>
-                    <strong>Send and receive faxes securely from anywhere</strong> with an internet connectionâ€”no
+                    <strong>Send and receive faxes securely from anywhere</strong> with an internet connection—no
                     hardware required.
                   </span>
                 </li>
@@ -120,7 +120,7 @@ export default function OnlineFaxPage({ label }: OnlineFaxPageProps) {
             style={{ fontFamily: "Raleway, sans-serif", color: "#6b7280" }}
           >
             Online Fax becomes a flexible, high-attach communications service you can bundle with business internet,
-            voice, and email. You control packaging, pricing, and positioningâ€”while Hostopia powers the platform behind
+            voice, and email. You control packaging, pricing, and positioning—while Hostopia powers the platform behind
             your brand.
           </p>
           <p
@@ -134,23 +134,23 @@ export default function OnlineFaxPage({ label }: OnlineFaxPageProps) {
             style={{ fontFamily: "Raleway, sans-serif", color: "#6b7280" }}
           >
             <li className="flex gap-2">
-              <span className="text-teal mt-1">â€¢</span>
+              <span className="text-teal mt-1">•</span>
               <span>A fully white-label fax solution inside your branded portal and customer experience.</span>
             </li>
             <li className="flex gap-2">
-              <span className="text-teal mt-1">â€¢</span>
+              <span className="text-teal mt-1">•</span>
               <span>
                 Single-user and multi-user plans with shared page pools for teams and departments.
               </span>
             </li>
             <li className="flex gap-2">
-              <span className="text-teal mt-1">â€¢</span>
+              <span className="text-teal mt-1">•</span>
               <span>
                 Local and toll-free fax numbers, plus number porting to migrate customers off legacy lines.
               </span>
             </li>
             <li className="flex gap-2">
-              <span className="text-teal mt-1">â€¢</span>
+              <span className="text-teal mt-1">•</span>
               <span>
                 Flexible usage and overage models with per-number reporting to support account reviews and monetization.
               </span>
@@ -164,7 +164,7 @@ export default function OnlineFaxPage({ label }: OnlineFaxPageProps) {
             className="text-base leading-relaxed mb-8 max-w-3xl"
             style={{ fontFamily: "Raleway, sans-serif", color: "#6b7280" }}
           >
-            Online Fax replaces physical fax infrastructure with a secure, digital experienceâ€”without changing how SMBs
+            Online Fax replaces physical fax infrastructure with a secure, digital experience—without changing how SMBs
             work.
           </p>
           <div className="grid md:grid-cols-3 gap-6">
@@ -232,7 +232,7 @@ export default function OnlineFaxPage({ label }: OnlineFaxPageProps) {
             className="text-base leading-relaxed mb-6 max-w-3xl"
             style={{ fontFamily: "Raleway, sans-serif", color: "#6b7280" }}
           >
-            Online Fax modernizes a critical but often overlooked communication channelâ€”while driving incremental
+            Online Fax modernizes a critical but often overlooked communication channel—while driving incremental
             revenue.
           </p>
           <ul
@@ -240,25 +240,25 @@ export default function OnlineFaxPage({ label }: OnlineFaxPageProps) {
             style={{ fontFamily: "Raleway, sans-serif", color: "#6b7280" }}
           >
             <li className="flex gap-2">
-              <span className="text-teal mt-1">â€¢</span>
+              <span className="text-teal mt-1">•</span>
               <span>
                 Create stickier bundles by pairing Online Fax with connectivity, VoIP, and business email.
               </span>
             </li>
             <li className="flex gap-2">
-              <span className="text-teal mt-1">â€¢</span>
+              <span className="text-teal mt-1">•</span>
               <span>
                 Grow ARPU by converting paper-based fax users into recurring cloud subscriptions.
               </span>
             </li>
             <li className="flex gap-2">
-              <span className="text-teal mt-1">â€¢</span>
+              <span className="text-teal mt-1">•</span>
               <span>
                 Retire analog fax lines and hardware while keeping customers on your network and platform.
               </span>
             </li>
             <li className="flex gap-2">
-              <span className="text-teal mt-1">â€¢</span>
+              <span className="text-teal mt-1">•</span>
               <span>
                 Reduce support burden with a browser- and email-based experience that Hostopia maintains.
               </span>
@@ -300,7 +300,7 @@ export default function OnlineFaxPage({ label }: OnlineFaxPageProps) {
             className="text-base leading-relaxed mb-8 max-w-3xl"
             style={{ fontFamily: "Raleway, sans-serif", color: "#6b7280" }}
           >
-            Online Fax lives squarely in the &quot;get online&quot; stageâ€”helping SMBs move critical communications
+            Online Fax lives squarely in the &quot;get online&quot; stage—helping SMBs move critical communications
             into the cloud so they can work from anywhere.
           </p>
           <div className="flex flex-col gap-4 md:flex-row md:items-stretch md:gap-0">
@@ -368,7 +368,7 @@ export default function OnlineFaxPage({ label }: OnlineFaxPageProps) {
             className="text-base leading-relaxed mb-6 max-w-3xl"
             style={{ fontFamily: "Raleway, sans-serif", color: "#6b7280" }}
           >
-            SMBs activate quickly via web or emailâ€”no on-site installs needed. Hostopia supports you with onboarding,
+            SMBs activate quickly via web or email—no on-site installs needed. Hostopia supports you with onboarding,
             training, and go-to-market guidance so your teams can confidently             position Online Fax across segments.
           </p>
       </ProductSection>
@@ -435,7 +435,7 @@ function FeatureColumn({ title, points }: FeatureColumnProps) {
       <ul className="space-y-2 text-sm" style={{ fontFamily: "Raleway, sans-serif", color: "#6b7280" }}>
         {points.map((point) => (
           <li key={point.slice(0, 40)} className="flex gap-2">
-            <span className="text-teal mt-1">â€¢</span>
+            <span className="text-teal mt-1">•</span>
             <span>{point}</span>
           </li>
         ))}

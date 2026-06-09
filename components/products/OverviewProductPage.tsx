@@ -71,7 +71,7 @@ export default function OverviewProductPage({ label, eyebrow, headline, descript
       <ProductSection variant="white">
         <p className="text-base leading-relaxed max-w-2xl" style={{ fontFamily: "Raleway, sans-serif", color: "#6b7280" }}>
           Offer {label} fully white-labeled under your brand. Hostopia helps service providers launch, bundle, and scale
-          digital services for SMBs â€” with the operations and support already built in.
+          digital services for SMBs — with the operations and support already built in.
         </p>
       </ProductSection>
     </main>

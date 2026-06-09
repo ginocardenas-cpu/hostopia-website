@@ -50,13 +50,13 @@ export default function SearchEnginePage({ label }: SearchEnginePageProps) {
                 className="text-base md:text-lg leading-relaxed mb-4"
                 style={{ fontFamily: "Raleway, sans-serif", color: "#6b7280" }}
               >
-                Most SMBs need to show up in traditional search, local and maps (GEO), and AI-driven answer surfaces (AEO) â€” without agency budgets. They need guided, step-by-step optimization they can actually execute.
+                Most SMBs need to show up in traditional search, local and maps (GEO), and AI-driven answer surfaces (AEO) — without agency budgets. They need guided, step-by-step optimization they can actually execute.
               </p>
               <p
                 className="text-base leading-relaxed mb-6"
                 style={{ fontFamily: "Raleway, sans-serif", color: "#6b7280" }}
               >
-                Search Everywhere Optimization is a white-label, task-based platform that walks SMBs through the actions that improve visibility everywhere they&apos;re found â€” with customized plans, keyword tracking, and progress reporting. All under your brand.
+                Search Everywhere Optimization is a white-label, task-based platform that walks SMBs through the actions that improve visibility everywhere they&apos;re found — with customized plans, keyword tracking, and progress reporting. All under your brand.
               </p>
               <div className="flex flex-wrap gap-3">
                 <Link
@@ -92,25 +92,25 @@ export default function SearchEnginePage({ label }: SearchEnginePageProps) {
                 <li className="flex gap-3">
                   <Map size={18} className="mt-1 shrink-0" style={{ color: "#2CADB2" }} />
                   <span>
-                    <strong>Follow a clear SEO roadmap</strong> â€” customized plans based on their industry, location, website platform, and current rankings.
+                    <strong>Follow a clear SEO roadmap</strong> — customized plans based on their industry, location, website platform, and current rankings.
                   </span>
                 </li>
                 <li className="flex gap-3">
                   <ListChecks size={18} className="mt-1 shrink-0" style={{ color: "#2CADB2" }} />
                   <span>
-                    <strong>Execute tasks step by step</strong> â€” guided instructions and video walkthroughs for every SEO action, built for non-experts.
+                    <strong>Execute tasks step by step</strong> — guided instructions and video walkthroughs for every SEO action, built for non-experts.
                   </span>
                 </li>
                 <li className="flex gap-3">
                   <TrendingUp size={18} className="mt-1 shrink-0" style={{ color: "#2CADB2" }} />
                   <span>
-                    <strong>Track keyword rankings</strong> â€” monitor up to 20 keywords with search volume, competitiveness, and ranking history.
+                    <strong>Track keyword rankings</strong> — monitor up to 20 keywords with search volume, competitiveness, and ranking history.
                   </span>
                 </li>
                 <li className="flex gap-3">
                   <BarChart3 size={18} className="mt-1 shrink-0" style={{ color: "#2CADB2" }} />
                   <span>
-                    <strong>See measurable progress</strong> â€” monthly reports show completed tasks, ranking improvements, and recommended next steps.
+                    <strong>See measurable progress</strong> — monthly reports show completed tasks, ranking improvements, and recommended next steps.
                   </span>
                 </li>
               </ul>
@@ -120,7 +120,7 @@ export default function SearchEnginePage({ label }: SearchEnginePageProps) {
       </ProductSection>
 
       <ProductSection variant="white">
-        <SectionHeading eyebrow="What You Deliver" title="SEO Made Simple for SMBs â€” Scalable for You" />
+        <SectionHeading eyebrow="What You Deliver" title="SEO Made Simple for SMBs — Scalable for You" />
         <p
           className="text-base leading-relaxed mb-6 max-w-3xl"
           style={{ fontFamily: "Raleway, sans-serif", color: "#6b7280" }}
@@ -131,7 +131,7 @@ export default function SearchEnginePage({ label }: SearchEnginePageProps) {
           <FeatureCard
             icon={<Map size={22} />}
             title="Customized SEO Plans"
-            body="Onboarding generates a tailored roadmap based on industry, geography, website platform, and current search performance â€” so every SMB starts with relevant actions."
+            body="Onboarding generates a tailored roadmap based on industry, geography, website platform, and current search performance — so every SMB starts with relevant actions."
           />
           <FeatureCard
             icon={<ListChecks size={22} />}
@@ -146,13 +146,13 @@ export default function SearchEnginePage({ label }: SearchEnginePageProps) {
           <FeatureCard
             icon={<FileText size={22} />}
             title="Automated Reporting"
-            body="Monthly email reports showing ranking progress, completed tasks, and next steps â€” giving SMBs visibility and your team data for upsell conversations."
+            body="Monthly email reports showing ranking progress, completed tasks, and next steps — giving SMBs visibility and your team data for upsell conversations."
           />
         </div>
       </ProductSection>
 
       <ProductSection variant="gray">
-        <SectionHeading eyebrow="The Partner Advantage" title="Capture SMB SEO Spend â€” Without Building an Agency" />
+        <SectionHeading eyebrow="The Partner Advantage" title="Capture SMB SEO Spend — Without Building an Agency" />
         <p
           className="text-base leading-relaxed mb-6 max-w-3xl"
           style={{ fontFamily: "Raleway, sans-serif", color: "#6b7280" }}
@@ -177,7 +177,7 @@ export default function SearchEnginePage({ label }: SearchEnginePageProps) {
           <FeatureColumn
             title="Differentiate from basic hosting"
             points={[
-              "Offering guided SEO alongside websites and listings positions you as a growth partner â€” not just an infrastructure provider.",
+              "Offering guided SEO alongside websites and listings positions you as a growth partner — not just an infrastructure provider.",
             ]}
           />
         </div>
@@ -328,7 +328,7 @@ function FeatureColumn({ title, points }: FeatureColumnProps) {
       <ul className="space-y-2 text-sm" style={{ fontFamily: "Raleway, sans-serif", color: "#6b7280" }}>
         {points.map((point) => (
           <li key={point.slice(0, 40)} className="flex gap-2">
-            <span style={{ color: "#2CADB2" }}>â€¢</span>
+            <span style={{ color: "#2CADB2" }}>•</span>
             <span>{point}</span>
           </li>
         ))}

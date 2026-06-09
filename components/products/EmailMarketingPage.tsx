@@ -44,13 +44,13 @@ export default function EmailMarketingPage({ label }: EmailMarketingPageProps) {
                 className="text-base md:text-lg leading-relaxed mb-4"
                 style={{ fontFamily: "Raleway, sans-serif", color: "#6b7280" }}
               >
-                Your SMB customers need email marketing. The question is whether they get it from you â€” or from a tool that has no connection to your brand.
+                Your SMB customers need email marketing. The question is whether they get it from you — or from a tool that has no connection to your brand.
               </p>
               <p
                 className="text-base leading-relaxed mb-6"
                 style={{ fontFamily: "Raleway, sans-serif", color: "#6b7280" }}
               >
-                Hostopia puts an AI-powered campaign platform in their hands, under your logo â€” turning email into a recurring revenue stream you control.
+                Hostopia puts an AI-powered campaign platform in their hands, under your logo — turning email into a recurring revenue stream you control.
               </p>
               <div className="flex flex-wrap gap-3">
                 <Link
@@ -86,25 +86,25 @@ export default function EmailMarketingPage({ label }: EmailMarketingPageProps) {
                 <li className="flex gap-3">
                   <Sparkles size={18} className="mt-1 shrink-0" style={{ color: "#2CADB2" }} />
                   <span>
-                    <strong>Create campaigns in minutes</strong> â€” AI generates professional email copy, images, and layouts tailored to their business type.
+                    <strong>Create campaigns in minutes</strong> — AI generates professional email copy, images, and layouts tailored to their business type.
                   </span>
                 </li>
                 <li className="flex gap-3">
                   <Target size={18} className="mt-1 shrink-0" style={{ color: "#2CADB2" }} />
                   <span>
-                    <strong>Automate engagement</strong> â€” welcome sequences, promotions, and re-engagement flows run automatically.
+                    <strong>Automate engagement</strong> — welcome sequences, promotions, and re-engagement flows run automatically.
                   </span>
                 </li>
                 <li className="flex gap-3">
                   <Users size={18} className="mt-1 shrink-0" style={{ color: "#2CADB2" }} />
                   <span>
-                    <strong>Grow their audience</strong> â€” embeddable signup forms and list management turn website visitors into subscribers.
+                    <strong>Grow their audience</strong> — embeddable signup forms and list management turn website visitors into subscribers.
                   </span>
                 </li>
                 <li className="flex gap-3">
                   <BarChart3 size={18} className="mt-1 shrink-0" style={{ color: "#2CADB2" }} />
                   <span>
-                    <strong>See what&apos;s working</strong> â€” opens, clicks, and conversion analytics give visibility into campaign performance.
+                    <strong>See what&apos;s working</strong> — opens, clicks, and conversion analytics give visibility into campaign performance.
                   </span>
                 </li>
               </ul>
@@ -114,7 +114,7 @@ export default function EmailMarketingPage({ label }: EmailMarketingPageProps) {
       </ProductSection>
 
       <ProductSection variant="white">
-        <SectionHeading eyebrow="What You Deliver" title="Everything Your SMBs Need â€” Under Your Brand" />
+        <SectionHeading eyebrow="What You Deliver" title="Everything Your SMBs Need — Under Your Brand" />
         <p
           className="text-base leading-relaxed mb-6 max-w-3xl"
           style={{ fontFamily: "Raleway, sans-serif", color: "#6b7280" }}
@@ -130,7 +130,7 @@ export default function EmailMarketingPage({ label }: EmailMarketingPageProps) {
           <FeatureCard
             icon={<Target size={22} />}
             title="Smart Segmentation & Automation"
-            body="Automated workflows and audience segmentation deliver the right message at the right time â€” welcome sequences, promotions, re-engagement flows."
+            body="Automated workflows and audience segmentation deliver the right message at the right time — welcome sequences, promotions, re-engagement flows."
           />
           <FeatureCard
             icon={<Mail size={22} />}
@@ -145,7 +145,7 @@ export default function EmailMarketingPage({ label }: EmailMarketingPageProps) {
           <FeatureCard
             icon={<BarChart3 size={22} />}
             title="Performance Analytics"
-            body="Opens, clicks, conversions, and audience insights â€” giving SMBs visibility into what works and your team data to drive upsell conversations."
+            body="Opens, clicks, conversions, and audience insights — giving SMBs visibility into what works and your team data to drive upsell conversations."
           />
           <FeatureCard
             icon={<Package size={22} />}
@@ -161,7 +161,7 @@ export default function EmailMarketingPage({ label }: EmailMarketingPageProps) {
           className="text-base leading-relaxed mb-6 max-w-3xl"
           style={{ fontFamily: "Raleway, sans-serif", color: "#6b7280" }}
         >
-          Email marketing that integrates into your ecosystem â€” not another disconnected SaaS tool for your customers.
+          Email marketing that integrates into your ecosystem — not another disconnected SaaS tool for your customers.
         </p>
         <div className="grid md:grid-cols-3 gap-6">
           <FeatureColumn
@@ -194,7 +194,7 @@ export default function EmailMarketingPage({ label }: EmailMarketingPageProps) {
           className="text-base leading-relaxed mb-8 max-w-3xl"
           style={{ fontFamily: "Raleway, sans-serif", color: "#6b7280" }}
         >
-          When you deliver email marketing through Hostopia, you capture a service your customers are already paying for elsewhere â€” or missing entirely.
+          When you deliver email marketing through Hostopia, you capture a service your customers are already paying for elsewhere — or missing entirely.
         </p>
         <div className="flex flex-col gap-4 md:flex-row md:items-stretch md:gap-0">
           {[
@@ -333,7 +333,7 @@ function FeatureColumn({ title, points }: FeatureColumnProps) {
       <ul className="space-y-2 text-sm" style={{ fontFamily: "Raleway, sans-serif", color: "#6b7280" }}>
         {points.map((point) => (
           <li key={point.slice(0, 40)} className="flex gap-2">
-            <span style={{ color: "#2CADB2" }}>â€¢</span>
+            <span style={{ color: "#2CADB2" }}>•</span>
             <span>{point}</span>
           </li>
         ))}

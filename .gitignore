@@ -18,6 +18,11 @@
 .DS_Store
 *.pem
 
+# large design source files (keep locally, don't commit)
+*.ai
+*.psd
+*.sketch
+
 # debug
 npm-debug.log*
 yarn-debug.log*

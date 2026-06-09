@@ -127,7 +127,7 @@ export default function ProductGuideForm() {
           boxShadow: "0 4px 20px rgba(44,173,178,0.3)",
         }}
       >
-        {loading ? "Sendingâ€¦" : "Submit & Download"}
+        {loading ? "Sending…" : "Submit & Download"}
       </button>
     </form>
   );

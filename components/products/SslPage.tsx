@@ -42,7 +42,7 @@ export default function SslPage({ label }: SslPageProps) {
                   color: "#24282B",
                 }}
               >
-                Website Security That Sells Itself â€” Under Your Brand
+                Website Security That Sells Itself — Under Your Brand
               </h1>
               <p
                 className="text-base md:text-lg leading-relaxed mb-4"
@@ -54,7 +54,7 @@ export default function SslPage({ label }: SslPageProps) {
                 className="text-base leading-relaxed mb-6"
                 style={{ fontFamily: "Raleway, sans-serif", color: "#6b7280" }}
               >
-                Hostopia&apos;s white-label SSL Certificates let you offer trusted encryption, visible trust signals, and PCI compliance support â€” directly from your brand. The highest-attach add-on in your portfolio.
+                Hostopia&apos;s white-label SSL Certificates let you offer trusted encryption, visible trust signals, and PCI compliance support — directly from your brand. The highest-attach add-on in your portfolio.
               </p>
               <div className="flex flex-wrap gap-3">
                 <Link
@@ -90,7 +90,7 @@ export default function SslPage({ label }: SslPageProps) {
                 <li className="flex gap-3">
                   <ShieldCheck size={18} className="mt-1 shrink-0" style={{ color: "#2CADB2" }} />
                   <span>
-                    <strong>Protect sensitive information</strong> in transitâ€”logins, payments, and personal data
+                    <strong>Protect sensitive information</strong> in transit—logins, payments, and personal data
                     between browser and server.
                   </span>
                 </li>
@@ -134,25 +134,25 @@ export default function SslPage({ label }: SslPageProps) {
             style={{ fontFamily: "Raleway, sans-serif", color: "#6b7280" }}
           >
             <li className="flex gap-2">
-              <span className="text-teal mt-1">â€¢</span>
+              <span className="text-teal mt-1">•</span>
               <span>Fully white-label SSL products branded, sold, and supported under your name.</span>
             </li>
             <li className="flex gap-2">
-              <span className="text-teal mt-1">â€¢</span>
+              <span className="text-teal mt-1">•</span>
               <span>
                 A self-service SSL Manager where customers can set up, install, and manage certificates through your
                 dashboard.
               </span>
             </li>
             <li className="flex gap-2">
-              <span className="text-teal mt-1">â€¢</span>
+              <span className="text-teal mt-1">•</span>
               <span>
                 Bundled SSL with ecommerce sites and online stores to strengthen your &quot;secure presence&quot;
                 positioning.
               </span>
             </li>
             <li className="flex gap-2">
-              <span className="text-teal mt-1">â€¢</span>
+              <span className="text-teal mt-1">•</span>
               <span>
                 Flexible packaging (per-domain, per-store, or tiered security bundles) to match different SMB segments
                 and ARPU goals.
@@ -165,7 +165,7 @@ export default function SslPage({ label }: SslPageProps) {
             <FeatureCard
               icon={<Lock size={22} />}
               title="DV SSL"
-              body="Entry-level Domain Validation SSL with encryption, static site seal, and warrantyâ€”ideal for blogs and simple sites."
+              body="Entry-level Domain Validation SSL with encryption, static site seal, and warranty—ideal for blogs and simple sites."
             />
             <FeatureCard
               icon={<ShieldCheck size={22} />}
@@ -206,7 +206,7 @@ export default function SslPage({ label }: SslPageProps) {
             <FeatureBulletColumn
               title="Coverage and options"
               points={[
-                "Support for multiple SSL types and use casesâ€”from informational sites to ecommerce and multi-subdomain environments.",
+                "Support for multiple SSL types and use cases—from informational sites to ecommerce and multi-subdomain environments.",
                 "At least 128-bit encryption from trusted certificate authorities.",
                 "Visible site seals that visitors can click to verify site security details.",
               ]}
@@ -236,27 +236,27 @@ export default function SslPage({ label }: SslPageProps) {
             style={{ fontFamily: "Raleway, sans-serif", color: "#6b7280" }}
           >
             <li className="flex gap-2">
-              <span className="text-teal mt-1">â€¢</span>
+              <span className="text-teal mt-1">•</span>
               <span>
                 <strong>Drive one-time and recurring revenue</strong> by bundling SSL with websites, ecommerce, email,
                 and security products.
               </span>
             </li>
             <li className="flex gap-2">
-              <span className="text-teal mt-1">â€¢</span>
+              <span className="text-teal mt-1">•</span>
               <span>
                 <strong>Increase retention</strong> by embedding SSL into core hosting and presence plans.
               </span>
             </li>
             <li className="flex gap-2">
-              <span className="text-teal mt-1">â€¢</span>
+              <span className="text-teal mt-1">•</span>
               <span>
                 <strong>Differentiate beyond basic connectivity</strong> by offering a complete &quot;secure
                 presence&quot; package under your brand.
               </span>
             </li>
             <li className="flex gap-2">
-              <span className="text-teal mt-1">â€¢</span>
+              <span className="text-teal mt-1">•</span>
               <span>
                 <strong>Reduce operational complexity</strong> by relying on Hostopia&apos;s platform and support
                 model.
@@ -300,7 +300,7 @@ export default function SslPage({ label }: SslPageProps) {
             style={{ fontFamily: "Raleway, sans-serif", color: "#6b7280" }}
           >
             SSL sits at the heart of a secure online presence. It underpins domains, hosting, ecommerce, and login
-            experiencesâ€”making it a key part of your &quot;get online and grow&quot; stack.
+            experiences—making it a key part of your &quot;get online and grow&quot; stack.
           </p>
           <div className="flex flex-col gap-4 md:flex-row md:items-stretch md:gap-0">
             {[
@@ -368,15 +368,15 @@ export default function SslPage({ label }: SslPageProps) {
             style={{ fontFamily: "Raleway, sans-serif", color: "#6b7280" }}
           >
             <li className="flex gap-2">
-              <span className="text-teal mt-1">â€¢</span>
+              <span className="text-teal mt-1">•</span>
               <span>Global data center presence and enterprise-grade hosting capabilities.</span>
             </li>
             <li className="flex gap-2">
-              <span className="text-teal mt-1">â€¢</span>
+              <span className="text-teal mt-1">•</span>
               <span>Established relationships with leading certificate providers and proven SSL workflows.</span>
             </li>
             <li className="flex gap-2">
-              <span className="text-teal mt-1">â€¢</span>
+              <span className="text-teal mt-1">•</span>
               <span>
                 24/7 partner and customer support under private-label models, plus training and documentation.
               </span>
@@ -470,7 +470,7 @@ function FeatureBulletColumn({ title, points }: FeatureBulletColumnProps) {
       <ul className="space-y-2 text-sm" style={{ fontFamily: "Raleway, sans-serif", color: "#6b7280" }}>
         {points.map((point) => (
           <li key={point.slice(0, 40)} className="flex gap-2">
-            <span className="text-teal mt-1">â€¢</span>
+            <span className="text-teal mt-1">•</span>
             <span>{point}</span>
           </li>
         ))}

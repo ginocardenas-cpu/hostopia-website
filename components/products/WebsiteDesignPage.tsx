@@ -51,7 +51,7 @@ export default function WebsiteDesignPage({ label }: WebsiteDesignPageProps) {
                   color: "#24282B",
                 }}
               >
-                Professional Websites for SMBs â€” Built by Our Team, Branded as Yours
+                Professional Websites for SMBs — Built by Our Team, Branded as Yours
               </h1>
               <p
                 className="text-base md:text-lg leading-relaxed mb-4"
@@ -63,7 +63,7 @@ export default function WebsiteDesignPage({ label }: WebsiteDesignPageProps) {
                 className="text-base leading-relaxed mb-6"
                 style={{ fontFamily: "Raleway, sans-serif", color: "#6b7280" }}
               >
-                Hostopia&apos;s white-label DIFM Website Design gives you a fully managed design service to resell under your brand. Our team handles everything â€” consultation, design, copywriting, QA, and ongoing maintenance â€” while you own the customer relationship and revenue.
+                Hostopia&apos;s white-label DIFM Website Design gives you a fully managed design service to resell under your brand. Our team handles everything — consultation, design, copywriting, QA, and ongoing maintenance — while you own the customer relationship and revenue.
               </p>
               <div className="flex flex-wrap gap-3">
                 <Link
@@ -152,27 +152,27 @@ export default function WebsiteDesignPage({ label }: WebsiteDesignPageProps) {
             style={{ fontFamily: "Raleway, sans-serif", color: "#6b7280" }}
           >
             <li className="flex gap-2">
-              <span className="text-teal mt-1">â€¢</span>
+              <span className="text-teal mt-1">•</span>
               <span>
                 A complete done-for-me website package: 1:1 consultation, professional design from experts who handle
-                build and deployment, plus hosting and ongoing maintenance â€” all under your brand.
+                build and deployment, plus hosting and ongoing maintenance — all under your brand.
               </span>
             </li>
             <li className="flex gap-2">
-              <span className="text-teal mt-1">â€¢</span>
+              <span className="text-teal mt-1">•</span>
               <span>
                 Each DIFM website managed by a team of designers, copywriters, and QA.
               </span>
             </li>
             <li className="flex gap-2">
-              <span className="text-teal mt-1">â€¢</span>
+              <span className="text-teal mt-1">•</span>
               <span>
                 Flexible packages and add-ons: extra pages, lead forms, interactive galleries, appointment schedulers,
                 coupons, and optional Online Store setup for e-commerce.
               </span>
             </li>
             <li className="flex gap-2">
-              <span className="text-teal mt-1">â€¢</span>
+              <span className="text-teal mt-1">•</span>
               <span>Ongoing monthly maintenance time with no extra design work on your side.</span>
             </li>
           </ul>
@@ -227,7 +227,7 @@ export default function WebsiteDesignPage({ label }: WebsiteDesignPageProps) {
               title="For your brand"
               points={[
                 "Private-label project center where SMBs review drafts and collaborate with their Website Coordinator.",
-                "Fully white-label: your customers work with â€œyourâ€ web experts from start to finish.",
+                "Fully white-label: your customers work with “your” web experts from start to finish.",
                 "You control pricing, packaging, and bundling across channels and markets.",
               ]}
             />
@@ -256,28 +256,28 @@ export default function WebsiteDesignPage({ label }: WebsiteDesignPageProps) {
             style={{ fontFamily: "Raleway, sans-serif", color: "#6b7280" }}
           >
             <li className="flex gap-2">
-              <span className="text-teal mt-1">â€¢</span>
+              <span className="text-teal mt-1">•</span>
               <span>
                 <strong>Acquire and upgrade customers</strong> by offering &quot;we build it for you&quot; websites to
                 SMBs who don&apos;t have time or skills.
               </span>
             </li>
             <li className="flex gap-2">
-              <span className="text-teal mt-1">â€¢</span>
+              <span className="text-teal mt-1">•</span>
               <span>
                 <strong>Increase product adoption and margin</strong> by bundling DIFM websites with domains, business
                 email, hosting, and digital marketing services.
               </span>
             </li>
             <li className="flex gap-2">
-              <span className="text-teal mt-1">â€¢</span>
+              <span className="text-teal mt-1">•</span>
               <span>
-                <strong>Become a digital advisor</strong> and use this as a differentiator â€” a full-service digital
+                <strong>Become a digital advisor</strong> and use this as a differentiator — a full-service digital
                 partner without building an agency in-house.
               </span>
             </li>
             <li className="flex gap-2">
-              <span className="text-teal mt-1">â€¢</span>
+              <span className="text-teal mt-1">•</span>
               <span>
                 <strong>Scale confidently</strong> using Hostopia&apos;s experienced fulfillment team, proprietary
                 delivery platform, and proven processes for quality and consistency.
@@ -326,7 +326,7 @@ export default function WebsiteDesignPage({ label }: WebsiteDesignPageProps) {
           >
             DIFM Website Design slots into your &quot;get online and grow&quot; stack, complementing domains,
             OPB/hosting, Business Email, SSL, and marketing offers. Serve both DIY and DIFM buyers: tech-comfortable
-            SMBs can use OPB, while time-poor or less technical customers choose DIFM â€” without leaving your
+            SMBs can use OPB, while time-poor or less technical customers choose DIFM — without leaving your
             ecosystem.
           </p>
           <div className="flex flex-col gap-4 md:flex-row md:items-stretch md:gap-0">
@@ -387,9 +387,9 @@ export default function WebsiteDesignPage({ label }: WebsiteDesignPageProps) {
             className="text-base leading-relaxed mb-6 max-w-3xl"
             style={{ fontFamily: "Raleway, sans-serif", color: "#6b7280" }}
           >
-            Scale your success â€” we&apos;ll handle the rest. With Hostopia&apos;s white-label DIFM Website Design,
-            there&apos;s no need to hire new teams or build new processes. We manage the entire workflow â€” from
-            consultation and design to copy, QA, and ongoing maintenance â€” all under your brand.
+            Scale your success — we&apos;ll handle the rest. With Hostopia&apos;s white-label DIFM Website Design,
+            there&apos;s no need to hire new teams or build new processes. We manage the entire workflow — from
+            consultation and design to copy, QA, and ongoing maintenance — all under your brand.
           </p>
           <p
             className="text-base leading-relaxed mb-6 max-w-3xl"
@@ -397,7 +397,7 @@ export default function WebsiteDesignPage({ label }: WebsiteDesignPageProps) {
           >
             Your team focuses on what they do best: selling, bundling, and growing customer relationships. Behind the
             scenes, our expert Website Coordinators and designers deliver high-quality sites at scale. Plus, we provide
-            everything you need to win â€” sales enablement tools, training, scripts, and objection handlers â€” so your
+            everything you need to win — sales enablement tools, training, scripts, and objection handlers — so your
             channels can confidently compete with agencies, freelancers, and DIY site builders.
           </p>
       </ProductSection>
@@ -488,7 +488,7 @@ function FeatureBulletColumn({ title, points }: FeatureBulletColumnProps) {
       <ul className="space-y-2 text-sm" style={{ fontFamily: "Raleway, sans-serif", color: "#6b7280" }}>
         {points.map((point) => (
           <li key={point.slice(0, 40)} className="flex gap-2">
-            <span className="text-teal mt-1">â€¢</span>
+            <span className="text-teal mt-1">•</span>
             <span>{point}</span>
           </li>
         ))}

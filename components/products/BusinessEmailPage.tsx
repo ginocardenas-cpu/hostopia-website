@@ -42,7 +42,7 @@ export default function BusinessEmailPage({ label }: BusinessEmailPageProps) {
                   color: "#24282B",
                 }}
               >
-                Secure, Professional Email â€” Delivered Under Your Brand
+                Secure, Professional Email — Delivered Under Your Brand
               </h1>
               <p
                 className="text-base md:text-lg leading-relaxed mb-4"
@@ -54,7 +54,7 @@ export default function BusinessEmailPage({ label }: BusinessEmailPageProps) {
                 className="text-base leading-relaxed mb-6"
                 style={{ fontFamily: "Raleway, sans-serif", color: "#6b7280" }}
               >
-                Hostopia&apos;s white-label Business Email gives you a scalable, enterprise-grade email platform to resell under your brand. Domain-based business email, consumer email, or both â€” with flexible packaging, expert migrations, and 24/7 end-user support.
+                Hostopia&apos;s white-label Business Email gives you a scalable, enterprise-grade email platform to resell under your brand. Domain-based business email, consumer email, or both — with flexible packaging, expert migrations, and 24/7 end-user support.
               </p>
               <div className="flex flex-wrap gap-3">
                 <Link
@@ -118,7 +118,7 @@ export default function BusinessEmailPage({ label }: BusinessEmailPageProps) {
             className="text-base leading-relaxed mb-6 max-w-3xl"
             style={{ fontFamily: "Raleway, sans-serif", color: "#6b7280" }}
           >
-            Partner with Hostopia to design flexible email packages that match your go-to-market strategyâ€”whether
+            Partner with Hostopia to design flexible email packages that match your go-to-market strategy—whether
             that&apos;s the number of mailboxes you want to offer, mailbox sizes, feature tiers, or more. You can
             customize your email offering exactly the way you want for your customers.
           </p>
@@ -133,28 +133,28 @@ export default function BusinessEmailPage({ label }: BusinessEmailPageProps) {
             style={{ fontFamily: "Raleway, sans-serif", color: "#6b7280" }}
           >
             <li className="flex gap-2">
-              <span className="text-teal mt-1">â€¢</span>
+              <span className="text-teal mt-1">•</span>
               <span>
-                Domain-based business email, consumer email, or bothâ€”delivering a seamless experience that reflects
+                Domain-based business email, consumer email, or both—delivering a seamless experience that reflects
                 your brand across every customer segment.
               </span>
             </li>
             <li className="flex gap-2">
-              <span className="text-teal mt-1">â€¢</span>
+              <span className="text-teal mt-1">•</span>
               <span>
                 The right size for every user, with flexible tiers at 3 GB, 6 GB, 9 GB, and 12 GB so you can tailor
                 plans, upsell premium options, and monetize overages.
               </span>
             </li>
             <li className="flex gap-2">
-              <span className="text-teal mt-1">â€¢</span>
+              <span className="text-teal mt-1">•</span>
               <span>
                 Simple account management from a central portal where you and your customers can add mailboxes, manage
                 storage, and adjust spam controls.
               </span>
             </li>
             <li className="flex gap-2">
-              <span className="text-teal mt-1">â€¢</span>
+              <span className="text-teal mt-1">•</span>
               <span>Free legacy email migration to the Hostopia platform so you can move existing users with ease.</span>
             </li>
           </ul>
@@ -198,28 +198,28 @@ export default function BusinessEmailPage({ label }: BusinessEmailPageProps) {
             style={{ fontFamily: "Raleway, sans-serif", color: "#6b7280" }}
           >
             <li className="flex gap-2">
-              <span className="text-teal mt-1">â€¢</span>
+              <span className="text-teal mt-1">•</span>
               <span>
                 <strong>Create a sticky, high-usage product</strong> that users rely on every day for mission-critical
                 communication.
               </span>
             </li>
             <li className="flex gap-2">
-              <span className="text-teal mt-1">â€¢</span>
+              <span className="text-teal mt-1">•</span>
               <span>
                 <strong>Increase ARPU</strong> by bundling business email with domains, hosting, security, and other
                 digital services.
               </span>
             </li>
             <li className="flex gap-2">
-              <span className="text-teal mt-1">â€¢</span>
+              <span className="text-teal mt-1">•</span>
               <span>
                 <strong>Replace fragmented legacy platforms</strong> with a modern, scalable solution that simplifies
                 operations.
               </span>
             </li>
             <li className="flex gap-2">
-              <span className="text-teal mt-1">â€¢</span>
+              <span className="text-teal mt-1">•</span>
               <span>
                 <strong>Leverage Hostopia migrations and support</strong> so you can move large bases quickly while we
                 handle end-user email support under your brand.
@@ -262,7 +262,7 @@ export default function BusinessEmailPage({ label }: BusinessEmailPageProps) {
             className="text-base leading-relaxed mb-8 max-w-3xl"
             style={{ fontFamily: "Raleway, sans-serif", color: "#6b7280" }}
           >
-            Email is a natural part of your &quot;build the brand and get online&quot; stackâ€”anchoring domains, web
+            Email is a natural part of your &quot;build the brand and get online&quot; stack—anchoring domains, web
             presence, and digital services with an identity customers use every day.
           </p>
           <div className="flex flex-col gap-4 md:flex-row md:items-stretch md:gap-0">
@@ -324,7 +324,7 @@ export default function BusinessEmailPage({ label }: BusinessEmailPageProps) {
             style={{ fontFamily: "Raleway, sans-serif", color: "#6b7280" }}
           >
             Hostopia&apos;s platform lets you provision, manage, and report on mailboxes from a single, branded portal
-            â€” with no new infrastructure required.
+            — with no new infrastructure required.
           </p>
           <p
             className="text-base leading-relaxed mb-6 max-w-3xl"
