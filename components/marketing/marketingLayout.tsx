@@ -38,6 +38,31 @@ export function MarketingFramedImage({
   );
 }
 
+/** Side-by-side column image — scales to the height of the adjacent copy block. */
+export function MarketingColumnFitImage({
+  src,
+  alt,
+  width = 1600,
+  height = 1000,
+}: {
+  src: string;
+  alt: string;
+  width?: number;
+  height?: number;
+}) {
+  return (
+    <Image
+      src={src}
+      alt={alt}
+      width={width}
+      height={height}
+      className="h-auto w-full max-h-[min(20rem,70vw)] object-contain md:h-full md:max-h-full"
+      sizes="(max-width: 768px) 100vw, 50vw"
+      quality={92}
+    />
+  );
+}
+
 export function heroImageOnLeft(slug: string): boolean {
   let h = 0;
   for (let i = 0; i < slug.length; i++) h = (h * 31 + slug.charCodeAt(i)) >>> 0;

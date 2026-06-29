@@ -3,7 +3,7 @@ import CustomerStaticImage from "@/components/customers/CustomerStaticImage";
 import HashScroll from "@/components/customers/HashScroll";
 import {
   heroImageOnLeft,
-  MarketingFramedImage,
+  MarketingColumnFitImage,
   MarketingHeroSplit,
   MarketingPreFooterLight,
 } from "@/components/marketing/marketingLayout";
@@ -86,7 +86,27 @@ function SectionExtras({
   );
 }
 
-function ConsolidatedSectionBlock({ section, index }: { section: ConsolidatedSection; index: number }) {
+function SectionCopyHeader({ section, blocks }: { section: ConsolidatedSection; blocks: string[] }) {
+  return (
+    <>
+      {section.eyebrow ? <span className="section-label mb-3 inline-block">{section.eyebrow}</span> : null}
+      <h2 className="mb-6 font-montserrat text-3xl font-black leading-tight tracking-tight text-charcoal md:text-4xl">
+        {section.headline}
+      </h2>
+      <SectionBodyBlocks blocks={blocks} />
+    </>
+  );
+}
+
+function ConsolidatedSectionBlock({
+  section,
+  index,
+  imageSectionIndex,
+}: {
+  section: ConsolidatedSection;
+  index: number;
+  imageSectionIndex?: number;
+}) {
   const onWhite = index % 2 === 0;
   const sectionBg = onWhite ? "bg-white" : "bg-cream";
   const cardBg = onWhite ? "bg-cream" : "bg-white";
@@ -94,45 +114,31 @@ function ConsolidatedSectionBlock({ section, index }: { section: ConsolidatedSec
     .split(/\n\n+/)
     .map((b) => b.trim())
     .filter(Boolean);
-  const visualOnLeft = index % 2 === 0;
 
-  const copy = (
-    <div className="flex flex-col justify-center">
-      {section.eyebrow ? <span className="section-label mb-3 inline-block">{section.eyebrow}</span> : null}
-      <h2 className="mb-6 font-montserrat text-3xl font-black leading-tight tracking-tight text-charcoal md:text-4xl">
-        {section.headline}
-      </h2>
-      <SectionBodyBlocks blocks={blocks} />
-      <SectionExtras section={section} cardBg={cardBg} />
-    </div>
-  );
-
-  if (section.image) {
-    const visual = (
-      <MarketingFramedImage
-        src={section.image.src}
-        alt={section.image.alt}
-        width={section.image.width}
-        height={section.image.height}
-      />
-    );
+  if (section.image && imageSectionIndex !== undefined) {
+    const visualOnLeft = imageSectionIndex % 2 === 0;
 
     return (
       <section id={section.anchor} className={`scroll-mt-28 border-t border-neutral-200/60 ${sectionBg} py-20 md:py-24`}>
         <div className="mx-auto max-w-7xl px-6">
-          <div className="grid items-center gap-12 md:grid-cols-2 md:gap-16 lg:gap-20">
-            {visualOnLeft ? (
-              <>
-                {visual}
-                {copy}
-              </>
-            ) : (
-              <>
-                {copy}
-                {visual}
-              </>
-            )}
+          <div className="grid gap-10 md:grid-cols-2 md:items-stretch md:gap-16 lg:gap-20">
+            <div
+              className={`flex min-h-0 flex-col justify-center ${visualOnLeft ? "md:order-2" : "md:order-1"}`}
+            >
+              <SectionCopyHeader section={section} blocks={blocks} />
+            </div>
+            <div
+              className={`flex min-h-0 items-center justify-center ${visualOnLeft ? "md:order-1" : "md:order-2"}`}
+            >
+              <MarketingColumnFitImage
+                src={section.image.src}
+                alt={section.image.alt}
+                width={section.image.width}
+                height={section.image.height}
+              />
+            </div>
           </div>
+          <SectionExtras section={section} cardBg={cardBg} />
         </div>
       </section>
     );
@@ -159,6 +165,19 @@ function ConsolidatedSectionBlock({ section, index }: { section: ConsolidatedSec
 export default function ConsolidatedCustomersPage({ page }: { page: ConsolidatedPage }) {
   const secondaryHref = secondaryCtaHref(page.hero.cta.secondary);
 
+  let imageSectionCount = 0;
+  const sectionBlocks = page.sections.map((section, index) => {
+    const imageSectionIndex = section.image ? imageSectionCount++ : undefined;
+    return (
+      <ConsolidatedSectionBlock
+        key={section.anchor}
+        section={section}
+        index={index}
+        imageSectionIndex={imageSectionIndex}
+      />
+    );
+  });
+
   return (
     <main className="pb-0 pt-24">
       <HashScroll />
@@ -180,9 +199,7 @@ export default function ConsolidatedCustomersPage({ page }: { page: Consolidated
         visual={<CustomerStaticImage slug={page.slug} salt={0} priority className="w-full" />}
       />
 
-      {page.sections.map((section, index) => (
-        <ConsolidatedSectionBlock key={section.anchor} section={section} index={index} />
-      ))}
+      {sectionBlocks}
 
       <MarketingPreFooterLight
         kicker="Ready to grow?"
