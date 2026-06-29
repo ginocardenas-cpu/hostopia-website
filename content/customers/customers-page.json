@@ -33,6 +33,12 @@
       "eyebrow": "Telecommunications Companies",
       "headline": "Your network reaches every small business. Your revenue shouldn't stop at connectivity.",
       "body": "Growth in core telecom revenue is slowing, ARPU is under pressure, and churn remains high. The path forward isn't more infrastructure — it's monetizing the customers you already serve.\n\nHostopia enables telcos to layer digital services onto connectivity:\n\n- Business email, websites, ecommerce, SEO, listings, and reputation management\n- Delivered through one platform, fully white-labeled\n- Packaged into tiered bundles that grow over time\n\nStart with a simple activation bundle (domain, email, SSL), then expand into higher-value tiers.",
+      "image": {
+        "src": "/CUSTOMERS/Customers - Telcos.png",
+        "alt": "Telecommunications professional reviewing digital services bundled with connectivity on a tablet",
+        "width": 3306,
+        "height": 2028
+      },
       "stats": [
         { "value": "$20–100+", "label": "Additional ARPU per SMB" },
         { "value": "15–20%", "label": "Churn reduction" },
@@ -69,6 +75,12 @@
       "eyebrow": "Mobile Carriers",
       "headline": "Your customers run their business on their phone. Help them run it online.",
       "body": "5G created capacity — but monetization requires new services.\n\nHostopia is built for mobile-native SMBs:\n\n- Domain, email, and AI-generated website in minutes\n- Fully integrated into mobile activation flows\n- Managed directly from a phone\n\nEvery new line becomes a growth opportunity.",
+      "image": {
+        "src": "/CUSTOMERS/Customers - Mobile Carriers.png",
+        "alt": "Small business owner launching a digital presence from a smartphone with mobile carrier support",
+        "width": 1310,
+        "height": 1674
+      },
       "stats": [
         { "value": "3–5x", "label": "ARPU potential with digital services" },
         { "value": "~15 min", "label": "To launch a full digital presence" },
@@ -93,6 +105,12 @@
       "eyebrow": "Resellers & Distributors",
       "headline": "Shift from transactions to recurring revenue — without building a platform.",
       "body": "The channel is moving to subscription models, but most partners lack the infrastructure to deliver at scale.\n\nHostopia fills that gap:\n\n- 14+ white-label products ready to sell\n- One platform for provisioning, billing, and support\n- You own the customer relationship and pricing\n\nThis is not affiliate revenue — you are the provider.",
+      "image": {
+        "src": "/CUSTOMERS/Customers Resellers.png",
+        "alt": "IT reseller team reviewing a white-label digital services catalog on a shared screen",
+        "width": 1450,
+        "height": 2128
+      },
       "stats": [
         { "value": "$600/yr", "label": "Recurring per SMB (from $50/mo)" },
         { "value": "$0", "label": "New headcount or infrastructure" },

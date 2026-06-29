@@ -38,7 +38,13 @@
       "navLabel": "Differentiate Core",
       "eyebrow": "Differentiation beyond speed and price",
       "headline": "When everyone matches your speed and price, you need a different story.",
-      "body": "Connectivity, domains, and basic hosting are easy to copy. Competing only on performance or discounting pushes you into the same box as every other provider.\n\nHostopia helps you reposition:\n\n- From “utility provider” to “digital business partner”\n- From “internet only” to “internet + online presence + growth tools”\n- From commodity offers to value-led bundles that are harder to compare\n\nWith this shift, your pitch becomes less about a faster line and more about helping SMBs get online, get found, and grow through your branded platform."
+      "body": "Connectivity, domains, and basic hosting are easy to copy. Competing only on performance or discounting pushes you into the same box as every other provider.\n\nHostopia helps you reposition:\n\n- From “utility provider” to “digital business partner”\n- From “internet only” to “internet + online presence + growth tools”\n- From commodity offers to value-led bundles that are harder to compare\n\nWith this shift, your pitch becomes less about a faster line and more about helping SMBs get online, get found, and grow through your branded platform.",
+      "image": {
+        "src": "/images/customers/what-they-want/differentiate-core.png",
+        "alt": "Laptop showing a white-label platform dashboard for provisioning, billing, and support",
+        "width": 759,
+        "height": 1024
+      }
     },
     {
       "anchor": "stickiness",
@@ -66,7 +72,13 @@
       "navLabel": "Full Support",
       "eyebrow": "A platform plus a partner",
       "headline": "You don't just get software. You get a team that can run the motion with you.",
-      "body": "Launching digital services at scale takes more than technology. It requires GTM, operations, and ongoing support that many providers don't want to build from scratch.\n\nHostopia can act as an extension of your organization:\n\n- Partner marketing support, assets, and campaigns in your brand\n- Channel programs that help you stand up and run a sales motion\n- Project and service management to launch, migrate, and optimize\n- Fully white-labeled support across channels and tiers\n\nYou can choose the level of support you want — from “we run it ourselves” to “we rely on Hostopia to operate the entire channel under our brand.”"
+      "body": "Launching digital services at scale takes more than technology. It requires GTM, operations, and ongoing support that many providers don't want to build from scratch.\n\nHostopia can act as an extension of your organization:\n\n- Partner marketing support, assets, and campaigns in your brand\n- Channel programs that help you stand up and run a sales motion\n- Project and service management to launch, migrate, and optimize\n- Fully white-labeled support across channels and tiers\n\nYou can choose the level of support you want — from “we run it ourselves” to “we rely on Hostopia to operate the entire channel under our brand.”",
+      "image": {
+        "src": "/images/customers/what-they-want/full-support.png",
+        "alt": "Support team wearing headsets collaborating in a modern call center",
+        "width": 588,
+        "height": 1024
+      }
     }
   ],
 

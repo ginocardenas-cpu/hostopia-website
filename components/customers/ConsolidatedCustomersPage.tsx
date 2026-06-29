@@ -3,6 +3,7 @@ import CustomerStaticImage from "@/components/customers/CustomerStaticImage";
 import HashScroll from "@/components/customers/HashScroll";
 import {
   heroImageOnLeft,
+  MarketingFramedImage,
   MarketingHeroSplit,
   MarketingPreFooterLight,
 } from "@/components/marketing/marketingLayout";
@@ -14,6 +15,77 @@ function secondaryCtaHref(label: string): string {
   return "/contact";
 }
 
+function SectionBodyBlocks({ blocks }: { blocks: string[] }) {
+  return (
+    <>
+      <div className="space-y-4">
+        {blocks.map((block, i) => {
+          const lines = block
+            .split("\n")
+            .map((l) => l.trim())
+            .filter(Boolean);
+          const isList = lines.length > 0 && lines.every((l) => /^[-•]\s+/.test(l));
+          if (isList) {
+            return (
+              <ul key={i} className="space-y-2.5">
+                {lines.map((line, j) => (
+                  <li key={j} className="flex gap-3 font-raleway text-lg leading-relaxed text-gray-500">
+                    <span className="mt-[0.6rem] h-1.5 w-1.5 flex-none rounded-full bg-teal" aria-hidden />
+                    <span>{line.replace(/^[-•]\s+/, "")}</span>
+                  </li>
+                ))}
+              </ul>
+            );
+          }
+          return (
+            <p key={i} className="font-raleway text-lg leading-relaxed text-gray-500">
+              {block}
+            </p>
+          );
+        })}
+      </div>
+    </>
+  );
+}
+
+function SectionExtras({
+  section,
+  cardBg,
+}: {
+  section: ConsolidatedSection;
+  cardBg: string;
+}) {
+  return (
+    <>
+      {section.stats && section.stats.length > 0 ? (
+        <div className="mt-10 grid gap-5 sm:grid-cols-3">
+          {section.stats.map((stat) => (
+            <div
+              key={stat.label}
+              className={`rounded-xl border border-gray-200 border-t-4 border-t-teal ${cardBg} p-6 shadow-sm`}
+            >
+              <p className="font-montserrat text-3xl font-black text-teal">{stat.value}</p>
+              <p className="mt-2 font-raleway text-sm leading-snug text-gray-500">{stat.label}</p>
+            </div>
+          ))}
+        </div>
+      ) : null}
+
+      {section.sources && section.sources.length > 0 ? (
+        <p className="mt-6 font-raleway text-xs italic text-neutral-400">
+          Sources: {section.sources.join("; ")}.
+        </p>
+      ) : null}
+
+      {section.note ? (
+        <div className="mt-6 rounded-md border-l-4 border-gold bg-brand-gold-light p-4 font-raleway text-sm leading-relaxed text-neutral-600">
+          {section.note}
+        </div>
+      ) : null}
+    </>
+  );
+}
+
 function ConsolidatedSectionBlock({ section, index }: { section: ConsolidatedSection; index: number }) {
   const onWhite = index % 2 === 0;
   const sectionBg = onWhite ? "bg-white" : "bg-cream";
@@ -22,6 +94,49 @@ function ConsolidatedSectionBlock({ section, index }: { section: ConsolidatedSec
     .split(/\n\n+/)
     .map((b) => b.trim())
     .filter(Boolean);
+  const visualOnLeft = index % 2 === 0;
+
+  const copy = (
+    <div className="flex flex-col justify-center">
+      {section.eyebrow ? <span className="section-label mb-3 inline-block">{section.eyebrow}</span> : null}
+      <h2 className="mb-6 font-montserrat text-3xl font-black leading-tight tracking-tight text-charcoal md:text-4xl">
+        {section.headline}
+      </h2>
+      <SectionBodyBlocks blocks={blocks} />
+      <SectionExtras section={section} cardBg={cardBg} />
+    </div>
+  );
+
+  if (section.image) {
+    const visual = (
+      <MarketingFramedImage
+        src={section.image.src}
+        alt={section.image.alt}
+        width={section.image.width}
+        height={section.image.height}
+      />
+    );
+
+    return (
+      <section id={section.anchor} className={`scroll-mt-28 border-t border-neutral-200/60 ${sectionBg} py-20 md:py-24`}>
+        <div className="mx-auto max-w-7xl px-6">
+          <div className="grid items-center gap-12 md:grid-cols-2 md:gap-16 lg:gap-20">
+            {visualOnLeft ? (
+              <>
+                {visual}
+                {copy}
+              </>
+            ) : (
+              <>
+                {copy}
+                {visual}
+              </>
+            )}
+          </div>
+        </div>
+      </section>
+    );
+  }
 
   return (
     <section id={section.anchor} className={`scroll-mt-28 border-t border-neutral-200/60 ${sectionBg} py-20 md:py-24`}>
@@ -30,61 +145,12 @@ function ConsolidatedSectionBlock({ section, index }: { section: ConsolidatedSec
         <h2 className="mb-6 max-w-3xl font-montserrat text-3xl font-black leading-tight tracking-tight text-charcoal md:text-4xl">
           {section.headline}
         </h2>
-        <div className="space-y-4">
-          {blocks.map((block, i) => {
-            const lines = block
-              .split("\n")
-              .map((l) => l.trim())
-              .filter(Boolean);
-            const isList = lines.length > 0 && lines.every((l) => /^[-•]\s+/.test(l));
-            if (isList) {
-              return (
-                <ul key={i} className="max-w-3xl space-y-2.5">
-                  {lines.map((line, j) => (
-                    <li
-                      key={j}
-                      className="flex gap-3 font-raleway text-lg leading-relaxed text-gray-500"
-                    >
-                      <span className="mt-[0.6rem] h-1.5 w-1.5 flex-none rounded-full bg-teal" aria-hidden />
-                      <span>{line.replace(/^[-•]\s+/, "")}</span>
-                    </li>
-                  ))}
-                </ul>
-              );
-            }
-            return (
-              <p key={i} className="max-w-3xl font-raleway text-lg leading-relaxed text-gray-500">
-                {block}
-              </p>
-            );
-          })}
+        <div className="max-w-3xl">
+          <SectionBodyBlocks blocks={blocks} />
         </div>
-
-        {section.stats && section.stats.length > 0 ? (
-          <div className="mt-10 grid gap-5 sm:grid-cols-3">
-            {section.stats.map((stat) => (
-              <div
-                key={stat.label}
-                className={`rounded-xl border border-gray-200 border-t-4 border-t-teal ${cardBg} p-6 shadow-sm`}
-              >
-                <p className="font-montserrat text-3xl font-black text-teal">{stat.value}</p>
-                <p className="mt-2 font-raleway text-sm leading-snug text-gray-500">{stat.label}</p>
-              </div>
-            ))}
-          </div>
-        ) : null}
-
-        {section.sources && section.sources.length > 0 ? (
-          <p className="mt-6 font-raleway text-xs italic text-neutral-400">
-            Sources: {section.sources.join("; ")}.
-          </p>
-        ) : null}
-
-        {section.note ? (
-          <div className="mt-6 max-w-3xl rounded-md border-l-4 border-gold bg-brand-gold-light p-4 font-raleway text-sm leading-relaxed text-neutral-600">
-            {section.note}
-          </div>
-        ) : null}
+        <div className="max-w-3xl">
+          <SectionExtras section={section} cardBg={cardBg} />
+        </div>
       </div>
     </section>
   );
