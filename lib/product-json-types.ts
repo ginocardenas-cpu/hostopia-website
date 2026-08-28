@@ -168,12 +168,57 @@ export type ProductFinalCta = {
   buttonText: string;
 };
 
+export type ProductOpportunityStat = {
+  figure: string;
+  label: string;
+  source: string;
+};
+
+export type ProductOpportunity = {
+  eyebrow: string;
+  heading: string;
+  paragraphs: string[];
+  stats: ProductOpportunityStat[];
+};
+
+export type ProductCustomerTab = {
+  id: string;
+  label: string;
+  opportunityLine: string;
+  body: string;
+  bullets: string[];
+};
+
+export type ProductCustomerTabs = {
+  eyebrow: string;
+  heading: string;
+  intro: string;
+  tabs: ProductCustomerTab[];
+};
+
+export type ProductMigrationStep = {
+  step: string;
+  title: string;
+  body: string;
+};
+
+export type ProductMigrationProcess = {
+  eyebrow: string;
+  heading: string;
+  intro: string;
+  steps: ProductMigrationStep[];
+  closing: string;
+};
+
 export type ProductJson = {
   slug: string;
   label: string;
   productName: string;
   seo: ProductSeo;
   hero: ProductHero;
+  opportunity?: ProductOpportunity;
+  customerTabs?: ProductCustomerTabs;
+  migrationProcess?: ProductMigrationProcess;
   features?: ProductFeatures;
   partnerAdvantage?: ProductPartnerAdvantage;
   lifecycleFit?: ProductLifecycleFit;

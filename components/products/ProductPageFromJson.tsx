@@ -14,6 +14,9 @@ import { InteractiveImageAccordion } from "@/components/ui/interactive-image-acc
 import { ImageComparison } from "@/components/ui/image-comparison-slider";
 import { TemplateMarqueeRows } from "@/components/ui/template-marquee-rows";
 import { VimeoVideoSection } from "@/components/VimeoVideoSection";
+import ProductOpportunitySection from "@/components/products/ProductOpportunitySection";
+import OnlineFaxCustomerTabs from "@/components/products/OnlineFaxCustomerTabs";
+import ProductMigrationProcessSection from "@/components/products/ProductMigrationProcessSection";
 import { cn } from "@/lib/utils";
 import { featureCardGridClass, partnerAdvantageGridClass } from "@/lib/feature-card-grid";
 import { normalizeVimeoId } from "@/lib/vimeo-id";
@@ -125,7 +128,7 @@ const FLAT_HERO_POP_SLUGS = new Set([
 ]);
 
 export default function ProductPageFromJson({ data, navLabel }: { data: ProductJson; navLabel: string }) {
-  const { hero, features, partnerAdvantage, lifecycleFit, cta, media } = data;
+  const { hero, opportunity, customerTabs, migrationProcess, features, partnerAdvantage, lifecycleFit, cta, media } = data;
   const beforeAfter = media?.beforeAfter;
   const templateMarquee = media?.templateMarquee;
   const logoShowcase = media?.logoShowcase;
@@ -277,6 +280,8 @@ export default function ProductPageFromJson({ data, navLabel }: { data: ProductJ
         </div>
       </section>
 
+      {opportunity ? <ProductOpportunitySection data={opportunity} /> : null}
+
       {showVimeoOverview && vimeoOverview ? (
         <VimeoVideoSection
           vimeoId={vimeoOverview.vimeoId}
@@ -312,6 +317,10 @@ export default function ProductPageFromJson({ data, navLabel }: { data: ProductJ
           }))}
         />
       ) : null}
+
+      {customerTabs ? <OnlineFaxCustomerTabs data={customerTabs} /> : null}
+
+      {migrationProcess ? <ProductMigrationProcessSection data={migrationProcess} /> : null}
 
       {heroAccordionLayout && hero.sidebar ? (
         <ProductHeroAccordion

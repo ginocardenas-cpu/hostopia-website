@@ -12,15 +12,15 @@
       "online fax for service providers",
       "private-label fax service"
     ],
-    "metaTitle": "White-Label Online Fax for Partners | Hostopia",
-    "metaDescription": "Offer secure cloud fax under your brand. Hostopia's white-label Online Fax replaces legacy machines with HIPAA-aligned, email-integrated digital faxing.",
+    "metaTitle": "White-Label Online Fax for Service Providers | Enterprise Fax Migration | Hostopia",
+    "metaDescription": "Launch a branded cloud fax service for your SMB base and migrate high-volume fax estates in healthcare, insurance, and government. Number porting, fax data migration, HIPAA-aligned configurations, centralized administration.",
     "urlSlug": "/products/digital-fax"
   },
 
   "hero": {
     "eyebrow": "Online Fax by Hostopia",
     "headline": "Replace Legacy Fax Machines — Keep Trusted Workflows",
-    "description": "Many SMBs still rely on fax for contracts, medical records, and legal documents, yet legacy fax machines are costly, insecure, and tied to physical offices. Hostopia's white-label Online Fax delivers a secure, cloud-based service that modernizes how your customers send and receive documents — without disrupting the workflows they depend on every day.",
+    "description": "Many SMBs still rely on fax for contracts, medical records, and legal documents, yet legacy fax machines are costly, insecure, and tied to physical offices. Hostopia's white-label Online Fax delivers a secure, cloud-based service that modernizes how your customers send and receive documents — without disrupting the workflows they depend on every day. And when a customer's fax estate runs into the thousands of pages a day, we migrate the numbers, the data, and the infrastructure onto our platform.",
     "cta": { "primary": "Book a Demo", "secondary": "Talk to Partner Success" },
     "sidebar": {
       "heading": "Help Your Customers Modernize Fax—Without Disrupting Their Workflow",
@@ -37,7 +37,7 @@
         {
           "title": "Built for Compliance",
           "icon": "ShieldCheck",
-          "body": "• Encrypt every fax transmission to protect sensitive information\n• Support HIPAA-aligned configurations for regulated industries like healthcare and legal\n• Help customers modernize fax without introducing compliance risk",
+          "body": "• Encrypt every fax transmission to protect sensitive information\n• Support HIPAA-aligned configurations for regulated industries — healthcare, insurance, legal, and government\n• Help customers modernize fax without introducing compliance risk",
           "image": {
             "src": "/PRODUCTS/Online Fax/online fax slider 02.jpg",
             "alt": "Healthcare compliance and secure communications"
@@ -46,7 +46,7 @@
         {
           "title": "Keep Existing Numbers",
           "icon": "PhoneForwarded",
-          "body": "• Allow customers to port existing fax numbers without disruption\n• Offer new local and toll-free numbers for added flexibility\n• Remove barriers to switching by keeping customer-facing information unchanged",
+          "body": "• Allow customers to port existing fax numbers without disruption — from a single number to an entire estate, along with their fax archives and routing rules\n• Offer new local and toll-free numbers for added flexibility\n• Remove barriers to switching by keeping customer-facing information unchanged",
           "image": {
             "src": "/PRODUCTS/Online Fax/online fax slider 03.jpg",
             "alt": "Business phone and fax number management"
@@ -74,6 +74,134 @@
     }
   },
 
+  "opportunity": {
+    "eyebrow": "The opportunity",
+    "heading": "Fax Isn't Going Away. The Phone Lines It Runs On Are.",
+    "paragraphs": [
+      "Fax has become the last manual step in otherwise digital industries. In 2021, 78% of U.S. hospitals reported often or sometimes receiving patient summary-of-care records by mail or fax — a higher share than any electronic method surveyed. Insurers still accept claims and prior authorizations by fax because the sending party chooses the channel. Government agencies fax because procedure requires it.",
+      "At the same time, the copper networks fax depends on are being retired market by market. The UK's analogue network switches off on 31 January 2027. New Zealand's regulator has stated that fax machines may not work over fibre. In the U.S., a March 2026 FCC order removed the notice requirements around copper retirement. No carrier will guarantee analog fax over an all-IP network.",
+      "That gives you two motions on one platform: a cloud subscription for every SMB fax line in your base, and a migration conversation with every regulated enterprise that can't switch fax off."
+    ],
+    "stats": [
+      {
+        "figure": "78%",
+        "label": "of U.S. hospitals receive care records by mail or fax — more than any electronic method",
+        "source": "ONC Data Brief No. 64, 2021 data"
+      },
+      {
+        "figure": "31 Jan 2027",
+        "label": "UK analogue network switch-off, with ~350,000 business premises still on copper as of July 2026",
+        "source": "Openreach"
+      },
+      {
+        "figure": "51%",
+        "label": "of Ontario health privacy breaches in 2021 were misdirected faxes",
+        "source": "Information and Privacy Commissioner of Ontario"
+      }
+    ]
+  },
+
+  "customerTabs": {
+    "eyebrow": "Who you sell it to",
+    "heading": "One Platform, Five Conversations",
+    "intro": "The same service supports a two-person insurance brokerage and a hospital network porting four hundred numbers. Pick the conversation that matches your customer.",
+    "tabs": [
+      {
+        "id": "smb",
+        "label": "Fax For SMB",
+        "opportunityLine": "Every SMB fax line in your base is a dedicated analog line waiting to become a cloud subscription.",
+        "body": "Most small businesses that fax do it a few times a week on a line they pay for every month. They won't drop fax, because the party on the other end still requires it — but they have no reason to keep paying for hardware and a phone line to do it.",
+        "bullets": [
+          "Replace the analog line and the machine with a subscription on your platform, keeping the same fax number",
+          "Support solo practitioners, clinics, brokerages, law firms, and accountants with plans that fit their volume",
+          "Send from email and receive as PDF, so there's nothing to install and nothing to retrain",
+          "Add fax to a bundle with business email and connectivity to deepen the relationship"
+        ]
+      },
+      {
+        "id": "enterprise",
+        "label": "Fax For Enterprise",
+        "opportunityLine": "Large organizations don't have a fax line. They have a fax estate — and someone has to take it over.",
+        "body": "Hundreds of numbers across dozens of sites, on-premise fax servers, analog gateways, a third-party fax vendor invoice, and an IT team maintaining all of it. Hostopia takes over the whole estate: we port the numbers, migrate the fax data, and operate the service on our infrastructure at lower total cost.",
+        "bullets": [
+          "Port every number across every site in scheduled waves, with no renumbering and no customer-facing change",
+          "Migrate fax archives, logs, address books, and routing rules using Hostopia's proprietary migration tooling",
+          "Retire the fax servers, gateways, and analog lines, and close out the incumbent vendor contract",
+          "Manage the entire estate from one console with a parent–child account hierarchy that matches the org chart",
+          "Eliminate the IT, vendor, and administrative cost layered on top of the price per page"
+        ]
+      },
+      {
+        "id": "healthcare",
+        "label": "Fax For Healthcare",
+        "opportunityLine": "The most fax-dependent industry there is, and the one most exposed when a line goes down.",
+        "body": "Referrals, discharge summaries, prior authorizations, lab results, and prescriptions still move by fax because the receiving system accepts fax and not much else. Fax and mail remain the most commonly reported way U.S. hospitals receive summary-of-care records.",
+        "bullets": [
+          "Deploy HIPAA-aligned configurations with a Business Associate Agreement in place",
+          "Encrypt every transmission and every stored document, with a complete audit record of sends, receives, retries, and failures",
+          "Route inbound faxes per number to the right department, clinic, or practitioner",
+          "Port every published fax number without changing a single referral pad or directory listing",
+          "Reduce misdirected-fax exposure — the leading cause of unauthorized health information disclosure in Ontario"
+        ]
+      },
+      {
+        "id": "insurance",
+        "label": "Fax For Insurance",
+        "opportunityLine": "Claims, prior authorizations, and broker submissions arrive by fax because the sender picks the channel.",
+        "body": "Carriers and brokerages can't switch off inbound fax without turning away business. What they can do is stop running it themselves across a patchwork of per-site vendor contracts.",
+        "bullets": [
+          "Handle high inbound volume with automatic retry and delivery confirmation",
+          "Route by number, line of business, or region so documents land in the right queue",
+          "Give claims and underwriting teams searchable archives with retention controls",
+          "Delegate administration by department while central IT keeps global control",
+          "Replace a per-site vendor patchwork with one platform and one invoice"
+        ]
+      },
+      {
+        "id": "government",
+        "label": "Fax For Government",
+        "opportunityLine": "Agencies fax because statute and procedure require it — and public-sector fax estates are the least consolidated of all.",
+        "body": "Some regulation gives fax specific legal standing: under DEA rules, a facsimile serves as the original written prescription in certain dispensing scenarios. Meanwhile agencies tend to run the most fragmented number estates and have the least visibility into copper retirement affecting them.",
+        "bullets": [
+          "Consolidate numbers across departments and jurisdictions into a single managed estate",
+          "Map role-based administrative control to the agency's own organizational hierarchy",
+          "Maintain retention and audit records suitable for records-management obligations",
+          "Run the migration with a named project manager and a dated plan, not a ticket queue",
+          "Keep every number and every published contact point unchanged through the move"
+        ]
+      }
+    ]
+  },
+
+  "migrationProcess": {
+    "eyebrow": "How migrations work",
+    "heading": "We Port The Numbers. We Move The Data. We Own The Plan.",
+    "intro": "Every fax migration fails the same way: a number goes dark and nobody knows who was mid-transmission. Our process exists to prevent that.",
+    "steps": [
+      {
+        "step": "01",
+        "title": "Discovery",
+        "body": "Every number, every site, every routing rule, current volumes, the incumbent contract and its exit terms, and the hardware in scope for removal."
+      },
+      {
+        "step": "02",
+        "title": "Parallel Operation",
+        "body": "New numbers provisioned and inbound routing mirrored so both paths are live. Nothing is cut over until delivery is verified on real traffic."
+      },
+      {
+        "step": "03",
+        "title": "Porting And Data Migration",
+        "body": "Numbers ported in scheduled waves, by site or volume band. Archives, logs, and address books migrated in parallel. Each wave verified before the next begins."
+      },
+      {
+        "step": "04",
+        "title": "Decommission",
+        "body": "Analog lines cancelled, hardware retired, incumbent contract closed out. Administrative control handed over inside your branded portal."
+      }
+    ],
+    "closing": "Hostopia has spent more than two decades migrating email, domains, and hosting estates for the world's largest service providers. A fax estate is a smaller problem, and the same discipline."
+  },
+
   "media": {
     "heroImage": {
       "src": "/PRODUCTS/Online Fax/online fax header.png",
@@ -95,7 +223,7 @@
       {
         "icon": "Shield",
         "title": "Security & Compliance",
-        "body": "Encrypted transmission with HIPAA-aligned configurations. Built for industries that handle sensitive documents — healthcare, legal, financial, insurance."
+        "body": "Encrypted transmission with HIPAA-aligned configurations. Built for industries that handle sensitive documents — healthcare, legal, financial, insurance, and government."
       },
       {
         "icon": "Users",
@@ -113,6 +241,16 @@
         "body": "Port existing fax numbers without disruption, or provision new local and toll-free numbers on demand — customers never lose continuity."
       },
       {
+        "icon": "ArrowRightLeft",
+        "title": "Fax Migration At Scale",
+        "body": "Move an entire fax estate onto the platform — numbers, archives, logs, and routing rules — using Hostopia's proprietary migration tooling. Ported in verified waves so nothing goes dark."
+      },
+      {
+        "icon": "Network",
+        "title": "Centralized Administration",
+        "body": "Parent–child account hierarchy with delegated roles by site or department. Every number in the estate managed from one console, with reporting that rolls up to match the org chart."
+      },
+      {
         "icon": "Tag",
         "title": "White-Label Platform & Support",
         "body": "Branded portal, branded support, branded billing — Hostopia handles the platform while you own every customer touchpoint."
@@ -123,7 +261,7 @@
   "partnerAdvantage": {
     "eyebrow": "The partner advantage",
     "heading": "Monetize a Critical Communication Channel",
-    "intro": "Online Fax modernizes a service SMBs can't give up — and turns it into a recurring cloud subscription on your platform instead of a legacy landline billed by someone else.",
+    "intro": "Online Fax modernizes a service SMBs can't give up — and turns it into a recurring cloud subscription on your platform instead of a legacy landline billed by someone else. At the enterprise end, it turns a customer's fax infrastructure into a migration you win and operate.",
     "items": [
       {
         "title": "Create stickier bundles",
@@ -139,7 +277,11 @@
       },
       {
         "title": "Win regulated verticals",
-        "body": "HIPAA-aligned configurations unlock healthcare, legal, and financial industries — high-value verticals that pay premium rates for trusted, compliant communication services."
+        "body": "HIPAA-aligned configurations unlock healthcare, insurance, government, and financial industries — high-value verticals that pay premium rates for trusted, compliant communication services."
+      },
+      {
+        "title": "Win enterprise migrations",
+        "body": "Most cloud fax providers sell seats. Very few will port hundreds of numbers, migrate the fax data, decommission the hardware, and exit the incumbent contract. That capability is what makes the enterprise conversation possible — and those deals are large, long, and hard to displace."
       }
     ]
   },
@@ -165,7 +307,7 @@
 
   "cta": {
     "headline": "Ready to Turn Online Fax into a High-Value Communications Add-On?",
-    "body": "Connect with Hostopia to launch your branded Online Fax service, migrate existing fax users, and bundle it with the connectivity and digital services you already sell.",
+    "body": "Connect with Hostopia to launch your branded Online Fax service, migrate existing fax users — from a single SMB line to an entire enterprise estate — and bundle it with the connectivity and digital services you already sell.",
     "buttonText": "Book a Demo"
   }
 }
